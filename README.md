@@ -1,73 +1,82 @@
 # PDF Viewer with Direct Links
 
-This repository hosts a self-contained PDF.js viewer on GitHub Pages. It allows you to open **any PDF file**, jump to a specific page, and even highlight/search for text directly from the link.
+This repository hosts a self-contained PDF.js viewer on GitHub Pages.  
+It allows you to open **any PDF file**, jump to a specific page, and highlight/search for text directly from the link.
+
+---
 
 ## 🔗 Live Viewer
+The viewer is available at:
+https://yniwashi.github.io/pdf-viewer/viewer/web/
 
-Once deployed with GitHub Pages, your viewer will be accessible at:
-
-https\://<username>.github.io/<repo-name>/pdfjs/web/viewer.html
+---
 
 ## 📂 Adding PDFs
+- Place your PDF files inside the **/docs** folder in this repository.  
+- Example structure:
+```
 
-1. Place your PDF files in the **root** of the repository (same level as the `pdfjs` folder). Example:
+/pdf-viewer
+/viewer
+/web
+/build
+/locale
+/docs
+cpg.pdf
+sop.pdf
+checklist.pdf
 
-/pdfjs
-/my-guidelines.pdf
-/protocols.pdf
+```
 
-2. Open them with a link like:
+---
 
-https\://<username>.github.io/<repo-name>/pdfjs/web/viewer.html?file=/my-guidelines.pdf
+## 📑 Linking to Files
+Use the following URL format:
+```
 
-## 📑 Linking to a Page
+[https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/](https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/)<filename>.pdf
 
-Append `#page=<number>` to the URL:
+```
 
-...?file=/my-guidelines.pdf#page=42
+### Current Files
+- **CPG (Clinical Practice Guidelines)**  
+  - Open at page 15:  
+    https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/cpg.pdf#page=15  
+  - Open at page 15 and search for *adenosine*:  
+    https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/cpg.pdf#page=15&search=adenosine  
 
-## 🔍 Linking with Search
+(Add new files under `/docs` and follow the same pattern above.)
 
-Append `&search=<keyword>` to automatically search when the PDF loads:
+---
 
-...?file=/my-guidelines.pdf#page=15\&search=adenosine
+## 🛠 Features
+- Jump directly to any page using `#page=<number>`.
+- Highlight and search for terms using `&search=<keyword>`.
+- Clean search bar always visible with ▲ ▼ navigation.
+- Toolbar improved with **First / Last Page** buttons.
+- Theme-aware design (light and dark mode support).
 
-* The search bar will show the keyword.
-* All occurrences in the document are highlighted.
-* Use ▲ ▼ arrows in the search bar to move between matches.
+---
 
-## 🛠 Toolbar Customizations
-
-* **Previous/Next Page** buttons replaced with **First/Last Page**.
-* The **search bar** is always visible, cleaner, and adapts to light/dark mode.
-* Highlight color and spacing improved for readability.
-
-## 🚀 Deploying to GitHub Pages
-
-1. Go to your repository **Settings → Pages**.
+## 🚀 Deployment
+1. Go to **Settings → Pages** in GitHub.  
 2. Under **Build and Deployment**, select:
+   - Source: `Deploy from branch`
+   - Branch: `main` → `/ (root)`  
+3. Save and wait for GitHub Pages to build.  
+4. Your site will be available at:
+```
 
-   * **Source**: `Deploy from branch`
-   * **Branch**: `main` (or `master`) → `/ (root)`
-3. Save and wait for the site to build.
-4. Open:
+[https://yniwashi.github.io/pdf-viewer/](https://yniwashi.github.io/pdf-viewer/)
 
-https\://<username>.github.io/<repo-name>/
+```
 
-## ✅ Example Links
-
-* Open *my-guidelines.pdf* on page 10:
-
-https\://<username>.github.io/<repo-name>/pdfjs/web/viewer.html?file=/my-guidelines.pdf#page=10
-
-* Open *protocols.pdf* on page 5 and search for “epinephrine”:
-
-https\://<username>.github.io/<repo-name>/pdfjs/web/viewer.html?file=/protocols.pdf#page=5\&search=epinephrine
+---
 
 ## 💡 Notes
+- Filenames should avoid spaces. Use `-` or `_` instead.  
+- You can update this README as an **index** for your most-used files.  
+- Works best on modern browsers (desktop and mobile).  
 
-* You can rename this repo anytime (e.g., `pdf-viewer`, `guideline-viewer`, `doc-links`).
-* If you plan to use a **custom domain**, configure it under **Settings → Pages → Custom Domain**.
-* Works best on modern browsers (desktop + mobile).
+✨ With this setup, you can share direct links to **specific pages and terms** inside large PDFs — no more telling others to “scroll down to page X.”
 
-✨ With this setup, you can share **direct links to specific pages and terms** inside large PDFs — no more telling others to “scroll to page 42.”
