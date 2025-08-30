@@ -1,0 +1,3450 @@
+{
+  "version": "cpg-2.4-enriched-v2",
+  "source": "CPG.pdf",
+  "items": [
+    {
+      "id": "clinical-approach-adult",
+      "title": "Clinical Approach and Assessment of the Adult Patient",
+      "page_start": 17,
+      "page_end": 19,
+      "aliases": [],
+      "keywords": [
+        "primary survey",
+        "secondary survey"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG1.1",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "clinical-approach-paediatric",
+      "title": "Clinical Approach and Assessment of the Paediatric Patient",
+      "page_start": 20,
+      "page_end": 23,
+      "aliases": [
+        "pediatric"
+      ],
+      "keywords": [
+        "primary survey",
+        "secondary survey"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG1.2",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "peds"
+      ]
+    },
+    {
+      "id": "clinical-approach-obstetric",
+      "title": "Clinical Approach and Assessment of the Obstetric Patient",
+      "page_start": 24,
+      "page_end": 25,
+      "aliases": [],
+      "keywords": [
+        "primary survey",
+        "secondary survey"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG1.3",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "consciousness-status-assessment",
+      "title": "Consciousness Status Assessment",
+      "page_start": 26,
+      "page_end": 27,
+      "aliases": [],
+      "keywords": [
+        "AVPU",
+        "GCS"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG1.4",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "airway-respiratory-status-assessment",
+      "title": "Airway & Respiratory Status Assessment",
+      "page_start": 28,
+      "page_end": 29,
+      "aliases": [],
+      "keywords": [
+        "airway",
+        "breathing",
+        "ventilation"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG1.5",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "perfusion-status-assessment",
+      "title": "Perfusion Status Assessment",
+      "page_start": 30,
+      "page_end": 30,
+      "aliases": [],
+      "keywords": [
+        "circulation",
+        "shock"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG1.6",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "mental-status-assessment",
+      "title": "Mental Status Assessment",
+      "page_start": 31,
+      "page_end": 31,
+      "aliases": [],
+      "keywords": [
+        "orientation",
+        "neurological"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG1.7",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "qatar-early-warning-score",
+      "title": "Qatar Early Warning Score (QEWS)",
+      "page_start": 32,
+      "page_end": 33,
+      "aliases": [
+        "QEWS"
+      ],
+      "keywords": [
+        "early warning",
+        "score",
+        "QEWS",
+        "deterioration"
+      ],
+      "type": "tool",
+      "domains": [
+        "CPG1.8",
+        "Clinical Approach and Patient Assessment"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "adult-medical-cardiac-arrest",
+      "title": "Adult Medical Cardiac Arrest",
+      "page_start": 34,
+      "page_end": 37,
+      "aliases": [
+        "adult arrest",
+        "medical arrest",
+        "CPR",
+        "cardiac arrest"
+      ],
+      "keywords": [
+        "defibrillation",
+        "epinephrine",
+        "BLS",
+        "ALS",
+        "compressions",
+        "high-quality CPR",
+        "depth 5-6 cm",
+        "rate 100-120",
+        "minimize pause",
+        "AED",
+        "defibrillator",
+        "shockable",
+        "non-shockable",
+        "VF",
+        "VT",
+        "PEA",
+        "asystole",
+        "epinephrine 1 mg",
+        "adrenaline 1 mg",
+        "amiodarone 300 mg",
+        "airway",
+        "BVM",
+        "supraglottic",
+        "ETCO2",
+        "4 Hs",
+        "4 Ts",
+        "reversible causes"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG2.1",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "adult-trauma-cardiac-arrest",
+      "title": "Adult Trauma Cardiac Arrest",
+      "page_start": 38,
+      "page_end": 40,
+      "aliases": [
+        "trauma arrest",
+        "traumatic arrest",
+        "TCA"
+      ],
+      "keywords": [
+        "hemorrhage",
+        "txa",
+        "CPR",
+        "haemorrhage control",
+        "massive haemorrhage",
+        "pelvic binder",
+        "tourniquet",
+        "thoracostomy",
+        "tension pneumothorax",
+        "open chest",
+        "reversible causes",
+        "hypovolaemia",
+        "airway",
+        "BVM",
+        "ETCO2"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG2.2",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "paediatric-medical-cardiac-arrest",
+      "title": "Paediatric Medical Cardiac Arrest",
+      "page_start": 41,
+      "page_end": 44,
+      "aliases": [
+        "pediatric",
+        "pediatric cardiac arrest",
+        "peds arrest",
+        "child arrest"
+      ],
+      "keywords": [
+        "defibrillation",
+        "adrenaline",
+        "CPR",
+        "compressions",
+        "BVM",
+        "airway",
+        "epinephrine 0.01 mg/kg",
+        "adrenaline 0.01 mg/kg",
+        "IO access",
+        "4 Hs",
+        "4 Ts",
+        "ETCO2"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG2.3",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "peds"
+      ]
+    },
+    {
+      "id": "paediatric-trauma-cardiac-arrest",
+      "title": "Paediatric Trauma Cardiac Arrest",
+      "page_start": 45,
+      "page_end": 47,
+      "aliases": [
+        "pediatric",
+        "pediatric trauma arrest",
+        "peds trauma arrest"
+      ],
+      "keywords": [
+        "haemorrhage",
+        "reversible causes",
+        "CPR",
+        "massive haemorrhage",
+        "airway",
+        "thoracostomy",
+        "hypovolaemia",
+        "tension pneumothorax",
+        "tamponade",
+        "trauma CPR",
+        "tourniquet",
+        "pelvic binder"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG2.4",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "peds"
+      ]
+    },
+    {
+      "id": "resuscitation-of-the-newborn-and-neonates",
+      "title": "Resuscitation of the New-born & Neonates",
+      "page_start": 48,
+      "page_end": 50,
+      "aliases": [
+        "neonatal resuscitation",
+        "nls",
+        "newborn CPR"
+      ],
+      "keywords": [
+        "apgar",
+        "ppv",
+        "compressions",
+        "warmth",
+        "dry",
+        "stimulate",
+        "PPV 40-60/min",
+        "chest compressions 3:1",
+        "meconium",
+        "MRSOPA",
+        "epinephrine 0.01-0.03 mg/kg",
+        "umbilical venous catheter"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG2.5",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "neonatal"
+      ]
+    },
+    {
+      "id": "post-cardiac-arrest-rosc-care",
+      "title": "Post Cardiac Arrest (ROSC) Care",
+      "page_start": 51,
+      "page_end": 53,
+      "aliases": [
+        "post rosc"
+      ],
+      "keywords": [
+        "oxygenation",
+        "blood pressure",
+        "temperature",
+        "targeted temperature",
+        "TTM",
+        "oxygen titration",
+        "ETCO2",
+        "MAP",
+        "avoid hypotension",
+        "12-lead"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG2.6",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "termination-of-resuscitation",
+      "title": "Termination of Resuscitation / Declaration of Death",
+      "page_start": 54,
+      "page_end": 54,
+      "aliases": [],
+      "keywords": [
+        "termination",
+        "death"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG2.7",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "cardiac-arrest-special-circumstances",
+      "title": "Cardiac Arrest - Special Circumstances",
+      "page_start": 55,
+      "page_end": 55,
+      "aliases": [],
+      "keywords": [
+        "hypothermia",
+        "pregnancy",
+        "trauma"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG2.8",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "ecmo-pathway-inclusion-criteria",
+      "title": "ECMO Pathway Inclusion Criteria",
+      "page_start": 56,
+      "page_end": 57,
+      "aliases": [
+        "ecmo"
+      ],
+      "keywords": [
+        "ecmo",
+        "refractory arrest"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG2.9",
+        "Cardiac Arrest – Resuscitation"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "stroke",
+      "title": "Stroke",
+      "page_start": 58,
+      "page_end": 60,
+      "aliases": [
+        "cva"
+      ],
+      "keywords": [
+        "fast",
+        "thrombolysis",
+        "BE-FAST",
+        "LVO",
+        "thrombolysis window"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG3.1",
+        "Neurological"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "seizures",
+      "title": "Seizures",
+      "page_start": 61,
+      "page_end": 64,
+      "aliases": [
+        "status epilepticus"
+      ],
+      "keywords": [
+        "midazolam",
+        "benzodiazepine",
+        "status epilepticus",
+        "midazolam 10 mg",
+        "glucose check"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG3.2",
+        "Neurological"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "acute-coronary-syndrome",
+      "title": "Acute Coronary Syndrome",
+      "page_start": 65,
+      "page_end": 68,
+      "aliases": [
+        "ACS",
+        "chest pain protocol"
+      ],
+      "keywords": [
+        "stemi",
+        "chest pain",
+        "NSTEMI",
+        "12-lead",
+        "Aspirin 300 mg",
+        "GTN",
+        "Clopidogrel",
+        "MONA",
+        "12-lead ECG",
+        "ST elevation",
+        "Heparin (if applicable locally)",
+        "reperfusion"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG4.1",
+        "Cardiac"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "bradyarrhythmias",
+      "title": "Bradyarrhythmias",
+      "page_start": 69,
+      "page_end": 70,
+      "aliases": [
+        "bradycardia"
+      ],
+      "keywords": [
+        "atropine",
+        "tcp",
+        "symptomatic bradycardia",
+        "atropine 0.5 mg",
+        "transcutaneous pacing",
+        "hypotension",
+        "altered mental status",
+        "shock",
+        "ischaemic chest pain",
+        "pacing"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG4.2",
+        "Cardiac"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "tachyarrhythmias-broad",
+      "title": "Tachyarrhythmias – Broad complex",
+      "page_start": 71,
+      "page_end": 72,
+      "aliases": [
+        "wide complex tachycardia",
+        "vt"
+      ],
+      "keywords": [
+        "amiodarone",
+        "cardioversion",
+        "VT",
+        "pulseless VT",
+        "synchronized cardioversion",
+        "monomorphic VT",
+        "polymorphic VT",
+        "torsades",
+        "magnesium",
+        "unstable"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG4.3",
+        "Cardiac"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "tachyarrhythmias-narrow",
+      "title": "Tachyarrhythmias – Narrow complex",
+      "page_start": 73,
+      "page_end": 74,
+      "aliases": [
+        "svt",
+        "avnrt",
+        "avrt",
+        "narrow complex tachycardia",
+        "supraventricular tachycardia"
+      ],
+      "keywords": [
+        "adenosine",
+        "vagal",
+        "SVT",
+        "AVNRT",
+        "AVRT",
+        "adenosine 6 mg",
+        "adenosine 12 mg",
+        "vagal manoeuvres",
+        "synchronized cardioversion",
+        "regular narrow",
+        "irregular narrow",
+        "AF with RVR",
+        "unstable",
+        "modified Valsalva",
+        "REVERT"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG4.4",
+        "Cardiac"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "acute-pulmonary-oedema",
+      "title": "Acute Pulmonary Oedema",
+      "page_start": 75,
+      "page_end": 76,
+      "aliases": [
+        "pulmonary edema",
+        "apo"
+      ],
+      "keywords": [
+        "cpap",
+        "gtn",
+        "bi-level",
+        "nitroglycerin",
+        "furosemide (as per protocol)"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG4.5",
+        "Cardiac"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "cardiogenic-shock",
+      "title": "Cardiogenic Shock",
+      "page_start": 77,
+      "page_end": 79,
+      "aliases": [],
+      "keywords": [
+        "inotrope",
+        "vasopressor"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG4.6",
+        "Cardiac"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "asthma",
+      "title": "Asthma",
+      "page_start": 80,
+      "page_end": 82,
+      "aliases": [
+        "status asthmaticus"
+      ],
+      "keywords": [
+        "salbutamol",
+        "ipratropium",
+        "steroids",
+        "magnesium",
+        "wheeze",
+        "PEF",
+        "nebulizer",
+        "salbutamol 2.5 mg",
+        "magnesium sulfate",
+        "MDI spacer",
+        "silent chest",
+        "status asthmaticus",
+        "repeat neb q20"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.1",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "copd",
+      "title": "Chronic Obstructive Pulmonary Disease (COPD)",
+      "page_start": 83,
+      "page_end": 84,
+      "aliases": [
+        "chronic obstructive pulmonary disease"
+      ],
+      "keywords": [
+        "bronchodilator",
+        "steroids",
+        "oxygen",
+        "exacerbation",
+        "hypercapnia",
+        "nebulizer",
+        "controlled oxygen",
+        "SpO2 88-92%",
+        "nebulised bronchodilator",
+        "steroid early"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.2",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "croup",
+      "title": "Croup",
+      "page_start": 85,
+      "page_end": 87,
+      "aliases": [
+        "laryngotracheobronchitis"
+      ],
+      "keywords": [
+        "stridor",
+        "budesonide",
+        "adrenaline neb",
+        "seal bark cough",
+        "budesonide neb"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.3",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "peds"
+      ]
+    },
+    {
+      "id": "epiglottitis",
+      "title": "Epiglottitis",
+      "page_start": 88,
+      "page_end": 89,
+      "aliases": [],
+      "keywords": [
+        "airway",
+        "stridor",
+        "drooling",
+        "toxic child",
+        "tripod",
+        "avoid agitation"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.4",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "peds"
+      ]
+    },
+    {
+      "id": "foreign-body-airway-obstruction",
+      "title": "Foreign Body Airway Obstruction",
+      "page_start": 90,
+      "page_end": 91,
+      "aliases": [
+        "FBAO",
+        "choking"
+      ],
+      "keywords": [
+        "back blows",
+        "abdominal thrusts",
+        "choking",
+        "Magill forceps"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.5",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "hyperventilation",
+      "title": "Hyperventilation",
+      "page_start": 92,
+      "page_end": 93,
+      "aliases": [],
+      "keywords": [
+        "anxiety",
+        "alkalosis"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.6",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "pulmonary-embolism",
+      "title": "Pulmonary Embolism",
+      "page_start": 94,
+      "page_end": 95,
+      "aliases": [
+        "pe"
+      ],
+      "keywords": [
+        "dvt",
+        "rv strain",
+        "PERC",
+        "Wells",
+        "tachycardia",
+        "pleuritic chest pain",
+        "hemoptysis",
+        "syncope"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.7",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "severe-respiratory-infection",
+      "title": "Severe Respiratory Infection",
+      "page_start": 96,
+      "page_end": 97,
+      "aliases": [],
+      "keywords": [
+        "sepsis",
+        "isolation",
+        "isolation precautions",
+        "droplet",
+        "airborne"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.8",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "tracheostomy-emergencies",
+      "title": "Tracheostomy Emergencies",
+      "page_start": 98,
+      "page_end": 101,
+      "aliases": [
+        "trach emergency"
+      ],
+      "keywords": [
+        "dislodgement",
+        "occlusion",
+        "suction"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG5.9",
+        "Respiratory"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "abdominal-emergencies-non-traumatic",
+      "title": "Abdominal Emergencies (Non-traumatic)",
+      "page_start": 102,
+      "page_end": 103,
+      "aliases": [
+        "acute abdomen"
+      ],
+      "keywords": [
+        "appendicitis",
+        "aaa",
+        "gi bleed"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG6.1",
+        "Medical Conditions"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "anaphylaxis-allergic-reactions",
+      "title": "Anaphylaxis and Allergic Reactions",
+      "page_start": 104,
+      "page_end": 107,
+      "aliases": [
+        "allergic reaction",
+        "allergy emergency"
+      ],
+      "keywords": [
+        "adrenaline",
+        "antihistamine",
+        "steroid",
+        "IM thigh",
+        "epinephrine",
+        "rash",
+        "wheeze",
+        "hypotension"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG6.2",
+        "Medical Conditions"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "hypoglycaemia-hyperglycaemia",
+      "title": "Hypoglycaemia and Hyperglycaemia",
+      "page_start": 108,
+      "page_end": 110,
+      "aliases": [
+        "hypoglycemia",
+        "hyperglycemia"
+      ],
+      "keywords": [
+        "dextrose",
+        "glucagon",
+        "insulin",
+        "D10",
+        "D50",
+        "BGL",
+        "DKA",
+        "HHS",
+        "check ketones",
+        "insulin protocol (HHS/consult)",
+        "re-check BGL"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG6.3",
+        "Medical Conditions"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "nausea-and-vomiting",
+      "title": "Nausea and Vomiting",
+      "page_start": 111,
+      "page_end": 112,
+      "aliases": [
+        "emesis"
+      ],
+      "keywords": [
+        "ondansetron",
+        "metoclopramide",
+        "QT risk",
+        "fluids",
+        "antiemetics"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG6.4",
+        "Medical Conditions"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "non-traumatic-shock",
+      "title": "Non-Traumatic Shock",
+      "page_start": 113,
+      "page_end": 114,
+      "aliases": [],
+      "keywords": [
+        "septic",
+        "cardiogenic",
+        "anaphylactic",
+        "hypovolaemic",
+        "septic shock",
+        "distributive shock",
+        "MAP 65",
+        "vasopressor",
+        "shock index",
+        "lactate",
+        "ultrasound if available"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG6.5",
+        "Medical Conditions"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "sepsis",
+      "title": "Sepsis",
+      "page_start": 115,
+      "page_end": 119,
+      "aliases": [
+        "septic shock"
+      ],
+      "keywords": [
+        "infection",
+        "qsofa",
+        "lactate",
+        "antibiotics",
+        "vasopressors",
+        "fluids",
+        "septic shock",
+        "MAP 65",
+        "vasopressor",
+        "lactate >2",
+        "qSOFA ≥2",
+        "broad-spectrum antibiotics",
+        "blood cultures (hospital)",
+        "antibiotics early",
+        "30 ml/kg fluids (if local)"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG6.6",
+        "Medical Conditions"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "acute-behavioural-disturbance",
+      "title": "Acute Behavioural Disturbance",
+      "page_start": 120,
+      "page_end": 126,
+      "aliases": [
+        "ABD",
+        "excited delirium"
+      ],
+      "keywords": [
+        "sedation",
+        "safety",
+        "ABD",
+        "excited delirium",
+        "ketamine",
+        "midazolam",
+        "physical restraint"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG7.1",
+        "Mental Health and Behavioural Disturbances"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "benzodiazepine-tox",
+      "title": "Benzodiazepine",
+      "page_start": 127,
+      "page_end": 128,
+      "aliases": [
+        "benzo toxicity"
+      ],
+      "keywords": [
+        "sedation",
+        "respiratory depression",
+        "BZD",
+        "flumazenil caution"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.1",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "beta-blocker-tox",
+      "title": "Beta Blocker",
+      "page_start": 129,
+      "page_end": 130,
+      "aliases": [
+        "beta-blocker toxicity"
+      ],
+      "keywords": [
+        "bradycardia",
+        "hypotension",
+        "glucagon",
+        "BB overdose"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.2",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "calcium-channel-blocker-tox",
+      "title": "Calcium Channel Blocker",
+      "page_start": 131,
+      "page_end": 132,
+      "aliases": [
+        "ccb toxicity"
+      ],
+      "keywords": [
+        "hyperglycaemia",
+        "calcium",
+        "vasopressor",
+        "CCB overdose"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.3",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "carbon-monoxide-tox",
+      "title": "Carbon Monoxide",
+      "page_start": 133,
+      "page_end": 134,
+      "aliases": [
+        "co poisoning"
+      ],
+      "keywords": [
+        "carboxyhaemoglobin",
+        "oxygen",
+        "CO poisoning",
+        "100% oxygen"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.4",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "cyanide-tox",
+      "title": "Cyanide",
+      "page_start": 135,
+      "page_end": 136,
+      "aliases": [
+        "cyanide poisoning"
+      ],
+      "keywords": [
+        "hydroxocobalamin",
+        "smoke inhalation",
+        "lactic acidosis"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.5",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "opioids-tox",
+      "title": "Opioids",
+      "page_start": 137,
+      "page_end": 138,
+      "aliases": [
+        "opioid toxicity"
+      ],
+      "keywords": [
+        "overdose",
+        "naloxone",
+        "OD",
+        "respiratory depression",
+        "pinpoint pupils"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.6",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "organophosphates-tox",
+      "title": "Organophosphates",
+      "page_start": 139,
+      "page_end": 140,
+      "aliases": [
+        "nerve agents"
+      ],
+      "keywords": [
+        "atropine",
+        "pralidoxime",
+        "nerve agent",
+        "SLUDGE",
+        "DUMBBELS",
+        "2-PAM"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.7",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "psychostimulants-tox",
+      "title": "Psychostimulants",
+      "page_start": 141,
+      "page_end": 143,
+      "aliases": [
+        "stimulant toxicity"
+      ],
+      "keywords": [
+        "methamphetamine",
+        "cocaine",
+        "tachycardia",
+        "hypertension",
+        "agitation"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.8",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "tricyclic-antidepressants-tox",
+      "title": "Tricyclic Antidepressants",
+      "page_start": 144,
+      "page_end": 145,
+      "aliases": [
+        "tca toxicity"
+      ],
+      "keywords": [
+        "sodium bicarbonate",
+        "qrs widening",
+        "TCA",
+        "widened QRS"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.9",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "alcohol-intoxication",
+      "title": "Alcohol Intoxication",
+      "page_start": 146,
+      "page_end": 148,
+      "aliases": [
+        "ethanol intoxication"
+      ],
+      "keywords": [
+        "monitoring",
+        "hypoglycaemia screen",
+        "ethanol",
+        "trauma screen"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.10",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "envenomation",
+      "title": "Envenomation",
+      "page_start": 149,
+      "page_end": 152,
+      "aliases": [
+        "bites and stings"
+      ],
+      "keywords": [
+        "snakebite",
+        "scorpion",
+        "antivenom"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG8.11",
+        "Toxicology and Toxinology"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "heat-related-disorders",
+      "title": "Heat-Related Disorders",
+      "page_start": 153,
+      "page_end": 155,
+      "aliases": [
+        "heat stroke",
+        "heat exhaustion"
+      ],
+      "keywords": [
+        "cooling",
+        "fluids"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG9.1",
+        "Environmental"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "cold-related-disorders",
+      "title": "Cold-Related Disorders",
+      "page_start": 156,
+      "page_end": 159,
+      "aliases": [
+        "hypothermia",
+        "frostbite"
+      ],
+      "keywords": [
+        "rewarming"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG9.2",
+        "Environmental"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "major-haemorrhage-and-haemorrhagic-shock",
+      "title": "Major Haemorrhage and Haemorrhagic Shock",
+      "page_start": 160,
+      "page_end": 161,
+      "aliases": [
+        "major hemorrhage",
+        "major hemorrhage and hemorrhagic shock"
+      ],
+      "keywords": [
+        "txa",
+        "massive transfusion",
+        "tourniquet",
+        "TXA 1 g",
+        "pelvic binder"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.1",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "traumatic-brain-injury",
+      "title": "Traumatic Brain Injury",
+      "page_start": 162,
+      "page_end": 163,
+      "aliases": [
+        "tbi"
+      ],
+      "keywords": [
+        "gcs",
+        "icp",
+        "hyperventilation targets",
+        "head injury",
+        "head-up 30°",
+        "avoid hypotension",
+        "avoid hypoxia",
+        "seizure prophylaxis (per local)"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.2",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "spinal-trauma",
+      "title": "Spinal Trauma",
+      "page_start": 164,
+      "page_end": 166,
+      "aliases": [],
+      "keywords": [
+        "smr",
+        "nexus",
+        "midline tenderness",
+        "inline stabilisation",
+        "collar (selective)",
+        "log roll",
+        "neurological exam"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.3",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "chest-trauma",
+      "title": "Chest Trauma",
+      "page_start": 167,
+      "page_end": 169,
+      "aliases": [],
+      "keywords": [
+        "pneumothorax",
+        "haemothorax",
+        "thoracostomy",
+        "tension pneumothorax",
+        "decompression",
+        "needle decompression",
+        "ventilated patient",
+        "open pneumothorax 3-sided dressing"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.4",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "abdominal-trauma",
+      "title": "Abdominal Trauma",
+      "page_start": 170,
+      "page_end": 171,
+      "aliases": [],
+      "keywords": [
+        "bleeding",
+        "FAST",
+        "eFAST",
+        "solid organ injury",
+        "seatbelt sign",
+        "hypotension",
+        "pain control"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.5",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "pelvic-trauma",
+      "title": "Pelvic Trauma",
+      "page_start": 172,
+      "page_end": 173,
+      "aliases": [
+        "pelvic fracture"
+      ],
+      "keywords": [
+        "binder",
+        "bleeding",
+        "pelvic binder",
+        "haemorrhage control",
+        "binder over trochanters",
+        "don’t over-tighten",
+        "hemodynamic instability"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.6",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "limb-trauma",
+      "title": "Limb Trauma",
+      "page_start": 174,
+      "page_end": 175,
+      "aliases": [
+        "extremity trauma"
+      ],
+      "keywords": [
+        "fracture",
+        "dislocation",
+        "neurovascular",
+        "dislocation reduction",
+        "neurovascular status",
+        "splint",
+        "traction",
+        "analgesia",
+        "open fracture dressing"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.7",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "trauma-in-pregnancy",
+      "title": "Trauma in Pregnancy",
+      "page_start": 176,
+      "page_end": 177,
+      "aliases": [
+        "pregnant trauma"
+      ],
+      "keywords": [
+        "positioning",
+        "rh"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.8",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "burns",
+      "title": "Burns",
+      "page_start": 178,
+      "page_end": 180,
+      "aliases": [],
+      "keywords": [
+        "tbsa",
+        "fluids",
+        "pain",
+        "Rule of 9s",
+        "Parkland",
+        "cool water 20 min",
+        "stop the burn",
+        "cover/cling film",
+        "TBSA chart",
+        "airway burns"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.9",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "trauma-bypass-criteria",
+      "title": "Trauma Bypass Criteria",
+      "page_start": 181,
+      "page_end": 182,
+      "aliases": [],
+      "keywords": [
+        "destination",
+        "major trauma",
+        "major trauma destination",
+        "bypass",
+        "criteria",
+        "physiological/anatomical/mechanism",
+        "destination protocol"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG10.10",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "crush-injury",
+      "title": "Crush Injury",
+      "page_start": 183,
+      "page_end": 186,
+      "aliases": [],
+      "keywords": [
+        "hyperkalaemia",
+        "fluids",
+        "tourniquet",
+        "bicarbonate",
+        "calcium",
+        "pre-release fluids",
+        "ECG changes",
+        "renal protection"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG10.11",
+        "Trauma"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "rapid-sequence-induction",
+      "title": "Rapid Sequence Induction",
+      "page_start": 187,
+      "page_end": 190,
+      "aliases": [
+        "RSI"
+      ],
+      "keywords": [
+        "induction",
+        "paralysis",
+        "RSI",
+        "induction agent",
+        "Sellick",
+        "pre-oxygenation",
+        "7 Ps",
+        "pre-treatment",
+        "positioning",
+        "plan B/C",
+        "checklist"
+      ],
+      "type": "procedure",
+      "domains": [
+        "CPG11.1",
+        "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "failed-intubation-drill",
+      "title": "Failed Intubation Drill",
+      "page_start": 191,
+      "page_end": 191,
+      "aliases": [
+        "failed airway"
+      ],
+      "keywords": [
+        "bvm",
+        "supraglottic",
+        "cricothyrotomy",
+        "failed airway",
+        "bougie",
+        "supraglottic airway",
+        "cricothyrotomy kit",
+        "call for help",
+        "DL vs VL",
+        "oxygenation first",
+        "can’t intubate, can’t oxygenate"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG11.2",
+        "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "safe-sedation",
+      "title": "Safe Sedation",
+      "page_start": 192,
+      "page_end": 194,
+      "aliases": [],
+      "keywords": [
+        "monitoring",
+        "risk",
+        "airway",
+        "RASS",
+        "capnography",
+        "ketamine",
+        "midazolam",
+        "risk stratification",
+        "monitoring minimums",
+        "airway rescue plan"
+      ],
+      "type": "procedure",
+      "domains": [
+        "CPG11.3",
+        "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "mechanical-ventilation",
+      "title": "Mechanical Ventilation",
+      "page_start": 195,
+      "page_end": 197,
+      "aliases": [
+        "vent settings"
+      ],
+      "keywords": [
+        "tv",
+        "rr",
+        "peep",
+        "fio2",
+        "TV 6-8 ml/kg",
+        "I:E",
+        "ARDS",
+        "protective ventilation",
+        "plateau pressure",
+        "alarm settings",
+        "vent troubleshooting"
+      ],
+      "type": "procedure",
+      "domains": [
+        "CPG11.4",
+        "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "rsi-quick-reference-guide-and-checklist",
+      "title": "RSI Quick Reference Guide & Checklist",
+      "page_start": 198,
+      "page_end": 200,
+      "aliases": [
+        "rsi checklist"
+      ],
+      "keywords": [
+        "dose",
+        "induction",
+        "paralysis",
+        "checklist",
+        "induction dose",
+        "paralytic dose",
+        "equipment",
+        "suction",
+        "equipment check",
+        "drug checklist",
+        "weight-based dosing"
+      ],
+      "type": "tool",
+      "domains": [
+        "CPG11.5",
+        "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "ectopic-pregnancy",
+      "title": "Ectopic Pregnancy",
+      "page_start": 201,
+      "page_end": 202,
+      "aliases": [],
+      "keywords": [
+        "bleeding",
+        "pain",
+        "shock",
+        "amenorrhea",
+        "positive pregnancy test",
+        "referred shoulder pain"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.1",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "miscarriage",
+      "title": "Miscarriage",
+      "page_start": 203,
+      "page_end": 204,
+      "aliases": [
+        "spontaneous abortion"
+      ],
+      "keywords": [
+        "bleeding",
+        "pain",
+        "products of conception",
+        "expectant management",
+        "Rh status"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.2",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "placenta-abruption",
+      "title": "Placenta Abruption",
+      "page_start": 205,
+      "page_end": 206,
+      "aliases": [
+        "abruptio placentae"
+      ],
+      "keywords": [
+        "bleeding",
+        "shock",
+        "painful bleeding",
+        "uterine tenderness",
+        "shock risk"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.3",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "placenta-praevia",
+      "title": "Placenta Praevia",
+      "page_start": 207,
+      "page_end": 208,
+      "aliases": [
+        "placenta previa"
+      ],
+      "keywords": [
+        "bleeding",
+        "no pv exam",
+        "painless bleeding",
+        "no vaginal exam",
+        "placenta over os"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.4",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "pre-eclampsia-and-eclampsia",
+      "title": "Pre-eclampsia and Eclampsia",
+      "page_start": 209,
+      "page_end": 211,
+      "aliases": [
+        "preeclampsia"
+      ],
+      "keywords": [
+        "hypertension",
+        "seizure",
+        "magnesium",
+        "BP ≥140/90",
+        "proteinuria",
+        "magnesium infusion",
+        "seizure prophylaxis"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.5",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "umbilical-cord-prolapse",
+      "title": "Umbilical Cord Prolapse",
+      "page_start": 212,
+      "page_end": 213,
+      "aliases": [],
+      "keywords": [
+        "knee-chest",
+        "elevate presenting part",
+        "avoid cord compression"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.6",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "imminent-delivery",
+      "title": "Imminent Delivery",
+      "page_start": 214,
+      "page_end": 216,
+      "aliases": [
+        "precipitous birth"
+      ],
+      "keywords": [
+        "prepare",
+        "deliver",
+        "cord",
+        "controlled delivery",
+        "perineal support",
+        "nuchal cord"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.7",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "breech-presentation",
+      "title": "Breech Presentation",
+      "page_start": 217,
+      "page_end": 218,
+      "aliases": [],
+      "keywords": [
+        "hands-off",
+        "maternal positioning",
+        "hands-off breech",
+        "all-fours",
+        "burn-marshall/vujik maneuvers (if local)"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.8",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "pre-term-labour",
+      "title": "Pre-term Labour",
+      "page_start": 219,
+      "page_end": 220,
+      "aliases": [
+        "preterm labor"
+      ],
+      "keywords": [
+        "tocolysis",
+        "transfer",
+        "tocolysis per protocol",
+        "steroids (hospital)"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.9",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "post-delivery-3rd-stage-complications",
+      "title": "Post Delivery (or 3rd Stage) Complications",
+      "page_start": 221,
+      "page_end": 223,
+      "aliases": [],
+      "keywords": [
+        "pph",
+        "uterotonics",
+        "fundal massage",
+        "shock"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG12.10",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "apgar-score",
+      "title": "Apgar Score",
+      "page_start": 224,
+      "page_end": 224,
+      "aliases": [
+        "apgar"
+      ],
+      "keywords": [
+        "neonatal",
+        "score",
+        "Apgar",
+        "neonate",
+        "1 minute",
+        "5 minutes",
+        "10 minutes"
+      ],
+      "type": "tool",
+      "domains": [
+        "CPG12.11",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "neonatal"
+      ]
+    },
+    {
+      "id": "obsgyne-bypass-criteria",
+      "title": "Obs/Gynae Bypass Criteria",
+      "page_start": 225,
+      "page_end": 226,
+      "aliases": [
+        "ob bypass"
+      ],
+      "keywords": [
+        "destination",
+        "criteria"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG12.12",
+        "Obstetrics and Gynecology"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "pain-management",
+      "title": "Pain Management",
+      "page_start": 227,
+      "page_end": 229,
+      "aliases": [
+        "analgesia"
+      ],
+      "keywords": [
+        "fentanyl",
+        "ketamine",
+        "paracetamol"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG13.1",
+        "Other"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "multiple-casualty-incidents",
+      "title": "Multiple Casualty Incidents",
+      "page_start": 230,
+      "page_end": 233,
+      "aliases": [
+        "mci"
+      ],
+      "keywords": [
+        "windscreen",
+        "methane",
+        "triage",
+        "M/ETHANE",
+        "triage sieve",
+        "control zone"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG13.2",
+        "Other"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "patient-refusal-of-treatment-or-transport",
+      "title": "Patient Refusal of Treatment or Transport",
+      "page_start": 234,
+      "page_end": 234,
+      "aliases": [
+        "refusal"
+      ],
+      "keywords": [
+        "capacity",
+        "consent"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG13.3",
+        "Other"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "submersion-incident",
+      "title": "Submersion Incident",
+      "page_start": 235,
+      "page_end": 236,
+      "aliases": [
+        "drowning"
+      ],
+      "keywords": [
+        "hypoxia",
+        "rewarm",
+        "drowning",
+        "aspiration"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG13.4",
+        "Other"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "hazmat-incident",
+      "title": "HAZMAT Incident",
+      "page_start": 237,
+      "page_end": 237,
+      "aliases": [
+        "hazmat"
+      ],
+      "keywords": [
+        "pralidoxime",
+        "atropine",
+        "nerve agent dosing",
+        "HAZMAT",
+        "PPE",
+        "decontamination",
+        "zones hot/warm/cold"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG13.5",
+        "Other"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "imist-ambo-handover",
+      "title": "IMIST–AMBO Handover",
+      "page_start": 238,
+      "page_end": 238,
+      "aliases": [
+        "imist ambo"
+      ],
+      "keywords": [
+        "handover",
+        "report",
+        "IMIST AMBO",
+        "METHANE",
+        "windscreen",
+        "Identify/Mechanism/Injuries/Signs/Treatment",
+        "AT-MIST"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG13.6",
+        "Other"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "sexual-assault",
+      "title": "Sexual Assault",
+      "page_start": 239,
+      "page_end": 240,
+      "aliases": [],
+      "keywords": [
+        "forensic",
+        "support"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG13.7",
+        "Other"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "elderly-patients",
+      "title": "Elderly Patients (>65 years old)",
+      "page_start": 241,
+      "page_end": 243,
+      "aliases": [
+        "geriatrics"
+      ],
+      "keywords": [
+        "frailty",
+        "falls",
+        "polypharmacy",
+        "falls risk",
+        "frailty index"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG14.1",
+        "Vulnerable Patients"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "bariatric-patients",
+      "title": "Bariatric Patients",
+      "page_start": 244,
+      "page_end": 245,
+      "aliases": [],
+      "keywords": [
+        "equipment",
+        "positioning"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG14.2",
+        "Vulnerable Patients"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "patients-receiving-renal-dialysis",
+      "title": "Patients Receiving Renal Dialysis",
+      "page_start": 246,
+      "page_end": 249,
+      "aliases": [
+        "dialysis patient"
+      ],
+      "keywords": [
+        "av fistula",
+        "fluid",
+        "electrolytes",
+        "AV fistula care",
+        "hyperkalaemia",
+        "fluid balance"
+      ],
+      "type": "reference",
+      "domains": [
+        "CPG14.3",
+        "Vulnerable Patients"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "continuation-of-previously-prescribed-medication",
+      "title": "Continuation of Previously Prescribed Medication",
+      "page_start": 250,
+      "page_end": 251,
+      "aliases": [],
+      "keywords": [
+        "medications",
+        "continuation"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG15.1",
+        "Inter-facility Transfer Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "use-of-specialist-medication-during-transfer",
+      "title": "Use of Specialist Medication During Transfer",
+      "page_start": 252,
+      "page_end": 252,
+      "aliases": [],
+      "keywords": [
+        "specialist meds"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG15.2",
+        "Inter-facility Transfer Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "drug-chart-frequently-used-transfer-meds",
+      "title": "Drug Chart for frequently used transfer medications",
+      "page_start": 253,
+      "page_end": 255,
+      "aliases": [],
+      "keywords": [
+        "transfer",
+        "doses"
+      ],
+      "type": "tool",
+      "domains": [
+        "CPG15.3",
+        "Inter-facility Transfer Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "ap-transfer-infusion-devices",
+      "title": "AP Transfer of Patients with Infusion Devices",
+      "page_start": 256,
+      "page_end": 257,
+      "aliases": [],
+      "keywords": [
+        "infusions",
+        "transfer"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG15.4",
+        "Inter-facility Transfer Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "rass",
+      "title": "RASS",
+      "page_start": 258,
+      "page_end": 258,
+      "aliases": [],
+      "keywords": [
+        "sedation score"
+      ],
+      "type": "tool",
+      "domains": [
+        "CPG15.5",
+        "Inter-facility Transfer Guidelines"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "retrieval-service-patient-transfer-checklist",
+      "title": "Retrieval Service Patient Transfer Checklist",
+      "page_start": 259,
+      "page_end": 260,
+      "aliases": [],
+      "keywords": [
+        "checklist",
+        "transfer"
+      ],
+      "type": "tool",
+      "domains": [
+        "CPG15.6",
+        "Inter-facility Transfer Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "clinical-approach-scheduled-ambulance-service-transfer",
+      "title": "Clinical Approach to Scheduled Ambulance Service Transfer Patients",
+      "page_start": 261,
+      "page_end": 264,
+      "aliases": [],
+      "keywords": [
+        "scheduled transfer",
+        "assessment"
+      ],
+      "type": "operations",
+      "domains": [
+        "CPG16.1",
+        "Scheduled Ambulance Service Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "respiratory-distress-hypoxaemia-covid19",
+      "title": "Respiratory Distress/Hypoxaemia in Suspected/Confirmed COVID-19 Patients",
+      "page_start": 265,
+      "page_end": 266,
+      "aliases": [
+        "covid hypoxaemia"
+      ],
+      "keywords": [
+        "oxygenation",
+        "proning",
+        "cpap",
+        "ppe",
+        "COVID-19",
+        "hypoxaemia",
+        "HFNC"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG17.1",
+        "COVID-19 Clinical Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "cardiac-arrest-management-covid19",
+      "title": "Cardiac Arrest Management in Suspected/Confirmed COVID-19 Patient",
+      "page_start": 267,
+      "page_end": 268,
+      "aliases": [
+        "covid arrest"
+      ],
+      "keywords": [
+        "ppe",
+        "airway",
+        "filters",
+        "COVID-19",
+        "airway filters"
+      ],
+      "type": "algorithm",
+      "domains": [
+        "CPG17.2",
+        "COVID-19 Clinical Guidelines"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "adenosine",
+      "title": "Adenosine",
+      "page_start": 269,
+      "page_end": 271,
+      "aliases": [
+        "adenocard"
+      ],
+      "keywords": [
+        "svt",
+        "6 mg",
+        "12 mg",
+        "iv",
+        "bolus",
+        "IV bolus",
+        "flush",
+        "AVNRT"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "adrenaline",
+      "title": "Adrenaline/Epinephrine",
+      "page_start": 272,
+      "page_end": 275,
+      "aliases": [
+        "epinephrine",
+        "epi",
+        "adrenalin"
+      ],
+      "keywords": [
+        "anaphylaxis",
+        "im",
+        "neb",
+        "cardiac arrest",
+        "infusion",
+        "IM 0.5 mg",
+        "neb racemic",
+        "cardiac arrest 1 mg",
+        "1:1000 IM",
+        "1:10,000 IV",
+        "nebulised adrenaline",
+        "post-ROSC hypotension (consult)"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "amiodarone",
+      "title": "Amiodarone",
+      "page_start": 276,
+      "page_end": 278,
+      "aliases": [],
+      "keywords": [
+        "vt",
+        "vf",
+        "antiarrhythmic",
+        "VT/VF",
+        "300 mg",
+        "150 mg",
+        "infusion",
+        "refractory VF",
+        "post-shock drug"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "aspirin",
+      "title": "Aspirin (Acetylsalicylic Acid)",
+      "page_start": 279,
+      "page_end": 280,
+      "aliases": [
+        "asa"
+      ],
+      "keywords": [
+        "acs",
+        "antiplatelet",
+        "300 mg"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "atropine",
+      "title": "Atropine",
+      "page_start": 281,
+      "page_end": 283,
+      "aliases": [],
+      "keywords": [
+        "bradycardia",
+        "organophosphate",
+        "0.5 mg",
+        "organophosphate dosing",
+        "max 3 mg"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "budesonide",
+      "title": "Budesonide",
+      "page_start": 284,
+      "page_end": 285,
+      "aliases": [],
+      "keywords": [
+        "croup",
+        "asthma",
+        "neb",
+        "neb 1 mg",
+        "steroid"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "peds",
+        "adult"
+      ]
+    },
+    {
+      "id": "calcium-chloride",
+      "title": "Calcium Chloride",
+      "page_start": 286,
+      "page_end": 287,
+      "aliases": [
+        "cacl2"
+      ],
+      "keywords": [
+        "hyperkalaemia",
+        "ccb overdose",
+        "calcium 10%"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "clopidogrel",
+      "title": "Clopidogrel",
+      "page_start": 288,
+      "page_end": 289,
+      "aliases": [
+        "plavix"
+      ],
+      "keywords": [
+        "acs",
+        "antiplatelet",
+        "p2y12",
+        "loading dose 300 mg",
+        "maintenance 75 mg"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "dexamethasone",
+      "title": "Dexamethasone",
+      "page_start": 290,
+      "page_end": 292,
+      "aliases": [
+        "dex"
+      ],
+      "keywords": [
+        "airway oedema",
+        "asthma",
+        "croup",
+        "steroid"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "dextrose",
+      "title": "Dextrose (Oral & IV)",
+      "page_start": 293,
+      "page_end": 295,
+      "aliases": [
+        "glucose"
+      ],
+      "keywords": [
+        "hypoglycaemia",
+        "d10",
+        "d50",
+        "IV",
+        "IO"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "diclofenac",
+      "title": "Diclofenac",
+      "page_start": 296,
+      "page_end": 297,
+      "aliases": [],
+      "keywords": [
+        "nsaid",
+        "pain"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "diphenhydramine",
+      "title": "Diphenhydramine",
+      "page_start": 298,
+      "page_end": 300,
+      "aliases": [
+        "benadryl"
+      ],
+      "keywords": [
+        "allergy",
+        "urticaria",
+        "sedating antihistamine"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "droperidol",
+      "title": "Droperidol",
+      "page_start": 301,
+      "page_end": 303,
+      "aliases": [
+        "droleptan",
+        "inapsine",
+        "dropirodol"
+      ],
+      "keywords": [
+        "antiemetic",
+        "sedation",
+        "agitation",
+        "qt",
+        "iv",
+        "im",
+        "ABD"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "fentanyl",
+      "title": "Fentanyl",
+      "page_start": 304,
+      "page_end": 307,
+      "aliases": [],
+      "keywords": [
+        "analgesia",
+        "rsi",
+        "mcg",
+        "IV",
+        "IN",
+        "50-100 mcg",
+        "IN 1.5-2 mcg/kg",
+        "titrate to pain"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "furosemide",
+      "title": "Furosemide",
+      "page_start": 308,
+      "page_end": 309,
+      "aliases": [
+        "lasix"
+      ],
+      "keywords": [
+        "diuretic",
+        "apo",
+        "pulmonary oedema",
+        "IV"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "glucagon",
+      "title": "Glucagon",
+      "page_start": 310,
+      "page_end": 312,
+      "aliases": [],
+      "keywords": [
+        "hypoglycaemia",
+        "beta-blocker od",
+        "beta-blocker overdose",
+        "IM",
+        "IV",
+        "1 mg IM",
+        "repeat in 10 min",
+        "nausea/vomiting"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "gtn",
+      "title": "Glycerol Trinitrate – GTN (Sublingual & IV)",
+      "page_start": 313,
+      "page_end": 314,
+      "aliases": [
+        "nitroglycerin",
+        "glyceryl trinitrate",
+        "gtn"
+      ],
+      "keywords": [
+        "acs",
+        "apo",
+        "spray",
+        "infusion",
+        "BP > 100",
+        "headache",
+        "BP target",
+        "contra hypotension"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "hydrocortisone",
+      "title": "Hydrocortisone",
+      "page_start": 315,
+      "page_end": 317,
+      "aliases": [],
+      "keywords": [
+        "anaphylaxis",
+        "adrenal crisis",
+        "steroid"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "ibuprofen",
+      "title": "Ibuprofen",
+      "page_start": 318,
+      "page_end": 320,
+      "aliases": [],
+      "keywords": [
+        "nsaid",
+        "pain",
+        "fever",
+        "PO",
+        "10 mg/kg peds",
+        "400 mg adult"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "peds",
+        "adult"
+      ]
+    },
+    {
+      "id": "ipratropium-bromide",
+      "title": "Ipratropium Bromide",
+      "page_start": 321,
+      "page_end": 323,
+      "aliases": [
+        "atrovent",
+        "ipratropium"
+      ],
+      "keywords": [
+        "asthma",
+        "copd",
+        "neb"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "ketamine",
+      "title": "Ketamine",
+      "page_start": 324,
+      "page_end": 328,
+      "aliases": [],
+      "keywords": [
+        "analgesia",
+        "sedation",
+        "rsi",
+        "abd",
+        "dissociation",
+        "IM",
+        "IV",
+        "0.1-0.3 mg/kg analgesia",
+        "1-2 mg/kg IV induction",
+        "4-5 mg/kg IM",
+        "emergence reactions"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "ketorolac",
+      "title": "Ketorolac",
+      "page_start": 329,
+      "page_end": 331,
+      "aliases": [
+        "toradol"
+      ],
+      "keywords": [
+        "nsaid",
+        "pain",
+        "IM",
+        "IV",
+        "30 mg IV",
+        "15 mg elderly/renal",
+        "avoid in GI bleed/renal"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "magnesium-sulphate",
+      "title": "Magnesium Sulphate",
+      "page_start": 332,
+      "page_end": 334,
+      "aliases": [
+        "mgso4",
+        "magnesium sulfate"
+      ],
+      "keywords": [
+        "asthma",
+        "torsades",
+        "eclampsia",
+        "IV",
+        "torsades de pointes",
+        "2 g IV"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "penthrox",
+      "title": "Methoxyflurane (Penthrox)",
+      "page_start": 335,
+      "page_end": 336,
+      "aliases": [
+        "methoxyflurane"
+      ],
+      "keywords": [
+        "analgesia",
+        "inhaled"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "metoclopramide",
+      "title": "Metoclopramide",
+      "page_start": 337,
+      "page_end": 338,
+      "aliases": [
+        "maxolon"
+      ],
+      "keywords": [
+        "antiemetic",
+        "gastroparesis",
+        "nausea",
+        "migraine",
+        "10 mg"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "midazolam",
+      "title": "Midazolam",
+      "page_start": 339,
+      "page_end": 341,
+      "aliases": [
+        "versed"
+      ],
+      "keywords": [
+        "seizure",
+        "sedation",
+        "rsi",
+        "IN",
+        "IV",
+        "IM",
+        "0.1-0.2 mg/kg",
+        "5-10 mg IN",
+        "RSI co-induction"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "naloxone",
+      "title": "Naloxone",
+      "page_start": 342,
+      "page_end": 344,
+      "aliases": [
+        "narcan"
+      ],
+      "keywords": [
+        "opioid overdose",
+        "respiratory depression",
+        "IN",
+        "IV",
+        "IM"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "noradrenaline",
+      "title": "Noradrenaline",
+      "page_start": 345,
+      "page_end": 346,
+      "aliases": [
+        "norepinephrine",
+        "ne",
+        "norepi",
+        "Levophed"
+      ],
+      "keywords": [
+        "vasopressor",
+        "shock",
+        "infusion",
+        "septic shock",
+        "first-line vasopressor",
+        "MAP 65",
+        "central line preferred",
+        "0.05–0.5 mcg/kg/min",
+        "central line",
+        "peripheral start acceptable (monitor)"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "ondansetron",
+      "title": "Ondansetron",
+      "page_start": 347,
+      "page_end": 349,
+      "aliases": [
+        "zofran"
+      ],
+      "keywords": [
+        "antiemetic",
+        "nausea",
+        "QT",
+        "4 mg IV",
+        "8 mg PO",
+        "QT prolongation caution"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "paracetamol",
+      "title": "Paracetamol (Oral & IV)",
+      "page_start": 350,
+      "page_end": 352,
+      "aliases": [
+        "acetaminophen",
+        "panadol",
+        "tylenol"
+      ],
+      "keywords": [
+        "pain",
+        "fever",
+        "PO",
+        "IV",
+        "15 mg/kg",
+        "1 g adult"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "phenylephrine",
+      "title": "Phenylephrine",
+      "page_start": 353,
+      "page_end": 354,
+      "aliases": [
+        "pe"
+      ],
+      "keywords": [
+        "vasopressor",
+        "shock",
+        "bolus",
+        "alpha-agonist",
+        "50–200 mcg bolus",
+        "alpha-1 agonist",
+        "reflex bradycardia"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "prochlorperazine",
+      "title": "Prochlorperazine (Stemetil)",
+      "page_start": 355,
+      "page_end": 356,
+      "aliases": [
+        "stemetil"
+      ],
+      "keywords": [
+        "antiemetic",
+        "vertigo"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult"
+      ]
+    },
+    {
+      "id": "rocuronium",
+      "title": "Rocuronium",
+      "page_start": 357,
+      "page_end": 359,
+      "aliases": [
+        "roc"
+      ],
+      "keywords": [
+        "paralytic",
+        "rsi",
+        "1.2 mg/kg",
+        "IV",
+        "0.6-1.2 mg/kg",
+        "onset 45-60s",
+        "duration 30-60m"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "salbutamol",
+      "title": "Salbutamol",
+      "page_start": 360,
+      "page_end": 362,
+      "aliases": [
+        "albuterol",
+        "Ventolin"
+      ],
+      "keywords": [
+        "asthma",
+        "copd",
+        "neb",
+        "neb 2.5 mg",
+        "MDI"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "succinylcholine",
+      "title": "Succinylcholine (Suxamethonium)",
+      "page_start": 363,
+      "page_end": 364,
+      "aliases": [
+        "sux",
+        "suxamethonium"
+      ],
+      "keywords": [
+        "paralytic",
+        "rsi",
+        "1.5 mg/kg",
+        "contraindicated hyperkalaemia",
+        "contra: burns >24h",
+        "contra: crush >24h",
+        "fasciculations"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "tranexamic-acid",
+      "title": "Tranexamic Acid (TXA)",
+      "page_start": 365,
+      "page_end": 367,
+      "aliases": [
+        "txa"
+      ],
+      "keywords": [
+        "haemorrhage",
+        "trauma",
+        "bleeding",
+        "1 g",
+        "within 3 hours",
+        "1 g IV over 10 min",
+        "second gram over 8h (hospital)"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
+      "id": "vecuronium",
+      "title": "Vecuronium",
+      "page_start": 368,
+      "page_end": 370,
+      "aliases": [
+        "vec"
+      ],
+      "keywords": [
+        "paralytic",
+        "rsi"
+      ],
+      "type": "drug",
+      "domains": [
+        "Formulary"
+      ],
+      "age_groups": [
+        "adult",
+        "peds"
+      ]
+    }
+  ]
+}
