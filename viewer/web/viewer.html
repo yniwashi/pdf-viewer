@@ -25,14 +25,135 @@ See https://github.com/adobe-type-tools/cmap-resources
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google" content="notranslate">
-    <title>PDF.js viewer</title>
+    <title>HMCAS CPG Viewer 🚑</title>
 
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.properties">
 <script src="../build/pdf.js"></script>
 
-    <link rel="stylesheet" href="viewer.css">
+<link rel="stylesheet" href="viewer.css">
+      <style>
+  /* Make the page arrows look like First / Last */
+  #previous span, #next span { display: none !important; }
+  #previous::before { content: "⟪"; font-size: 18px; }
+  #next::before     { content: "⟫"; font-size: 18px; }
+</style>
 
+
+<style>
+  /* Keep find bar right under the main toolbar; always visible */
+  #findbar.findbar-top {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;           /* below the toolbar */
+    margin: 0 !important;
+    padding: 4px 6px !important;
+    width: 100% !important;
+    max-width: none !important;
+    background: var(--toolbar-bg-color, #1e1e1e) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    gap: 8px;
+  }
+
+  /* Input a bit smaller than before */
+  #findbar.findbar-top #findbarInputContainer {
+    flex: 1; display: flex; align-items: center; gap: 6px;
+  }
+  #findbar.findbar-top #findInput {
+    flex: 1; max-width: none;
+    height: 32px; font-size: 15px;
+    padding: 4px 8px;
+    background: #2a2a2a; color: #fff;
+    border: 1px solid #454545; border-radius: 6px;
+    box-shadow: none;
+  }
+
+  /* Bigger ▲ ▼ buttons in the find bar */
+  #findbar.findbar-top #findPrevious,
+  #findbar.findbar-top #findNext {
+    width: 34px; height: 34px; min-width: 34px;
+    border-radius: 6px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 18px; padding: 0;
+  }
+  #findbar.findbar-top #findPrevious span,
+  #findbar.findbar-top #findNext span { display: none !important; }
+  #findbar.findbar-top #findPrevious::before { content: "▲"; }
+  #findbar.findbar-top #findNext::before     { content: "▼"; }
+  #findbar.findbar-top .splitToolbarButtonSeparator { display: none !important; }
+
+  /* Keep only input + arrows + counter inside the find bar */
+  #findbarOptionsOneContainer,
+  #findbarOptionsTwoContainer,
+  #findMsg { display: none !important; }
+
+  /* Counter on the far right */
+  #findbarMessageContainer { margin-left: auto; display: flex; align-items: center; }
+  #findResultsCount {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: #f5f5f5; color: #111; border: 1px solid #cfcfcf;
+    font-size: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    #findResultsCount { background: rgba(255,255,255,0.92); color:#111; border-color: rgba(0,0,0,0.15); }
+  }
+
+  /* Hide ONLY the search icon in the main toolbar */
+  #viewFind { display: none !important; }
+
+  /* --- Stronger highlight styling --- */
+  .textLayer .highlight {
+    background-color: rgba(255, 120, 0, 0.55); /* vivid orange */
+    border-radius: 3px;
+    padding: 1px 2px;
+  }
+  .textLayer .highlight.selected {
+    background-color: rgba(255, 80, 0, 0.75);  /* stronger orange for active */
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.25);
+  }
+
+    /* --- Make the find bar theme-aware (inherit toolbar look) --- */
+#findbar.findbar-top {
+  background: inherit !important;      /* same bg as the toolbar */
+  border: 0 !important;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  #findbar.findbar-top #findInput {
+    background: #ffffff !important;
+    color: #111 !important;
+    border: 1px solid #d0d0d0 !important;
+  }
+  #findResultsCount {
+    background: #f2f2f2 !important;
+    color: #111 !important;
+    border: 1px solid #dcdcdc !important;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  #findbar.findbar-top #findInput {
+    background: #2a2a2a !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+  }
+  #findResultsCount {
+    background: rgba(255,255,255,0.92) !important;
+    color: #111 !important;
+    border: 1px solid rgba(0,0,0,0.15) !important;
+  }
+}
+</style>
+      
+
+
+
+      
   <script src="viewer.js"></script>
   </head>
 
@@ -256,15 +377,19 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <button id="viewFind" class="toolbarButton" title="Find in Document" tabindex="12" data-l10n-id="findbar" aria-expanded="false" aria-controls="findbar">
                   <span data-l10n-id="findbar_label">Find</span>
                 </button>
-                <div class="splitToolbarButton hiddenSmallView">
-                  <button class="toolbarButton" title="Previous Page" id="previous" tabindex="13" data-l10n-id="previous">
-                    <span data-l10n-id="previous_label">Previous</span>
-                  </button>
-                  <div class="splitToolbarButtonSeparator"></div>
-                  <button class="toolbarButton" title="Next Page" id="next" tabindex="14" data-l10n-id="next">
-                    <span data-l10n-id="next_label">Next</span>
-                  </button>
-                </div>
+
+
+<div class="splitToolbarButton hiddenSmallView">
+  <button class="toolbarButton" title="Previous Page" id="previous" tabindex="13" data-l10n-id="previous">
+    <span data-l10n-id="previous_label">Previous</span>
+  </button>
+  <div class="splitToolbarButtonSeparator"></div>
+  <button class="toolbarButton" title="Next Page" id="next" tabindex="14" data-l10n-id="next">
+    <span data-l10n-id="next_label">Next</span>
+  </button>
+</div>
+
+                  
                 <input type="number" id="pageNumber" class="toolbarField" title="Page" value="1" min="1" tabindex="15" data-l10n-id="page" autocomplete="off">
                 <span id="numPages" class="toolbarLabel"></span>
               </div>
@@ -482,5 +607,115 @@ See https://github.com/adobe-type-tools/cmap-resources
     <div id="printContainer"></div>
 
     <input type="file" id="fileInput" class="hidden">
+
+
+
+
+
+<script>
+  (function () {
+    // Mount the find bar under the main toolbar and keep it visible
+    const toolbarContainer = document.getElementById('toolbarContainer');
+    const findbar = document.getElementById('findbar');
+    if (toolbarContainer && findbar) {
+      findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
+      findbar.classList.add('findbar-top');
+      toolbarContainer.appendChild(findbar);
+    }
+
+    // Prefill from ?search=... or #search=...
+    const paramsFromSearch = new URLSearchParams(window.location.search);
+    const paramsFromHash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+    const searchTerm = paramsFromHash.get('search') || paramsFromSearch.get('search');
+    if (searchTerm) {
+      const input = document.getElementById('findInput');
+      if (input) {
+        input.value = searchTerm;
+        input.dispatchEvent(new Event('input', { bubbles: true })); // trigger PDF.js find
+      }
+    }
+
+    // Arrow button accessibility
+    const prevBtn = document.getElementById('findPrevious');
+    const nextBtn = document.getElementById('findNext');
+    if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
+    if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
+
+    // --------- Force a custom tab title, even after PDF metadata changes it ----------
+    const DESIRED_TITLE = "HMCAS CPG Viewer";  // <— change this text to whatever you want
+
+    function applyTitle() {
+      document.title = DESIRED_TITLE;
+    }
+    applyTitle();
+
+    // Use eventBus when available
+    function hookEvents() {
+      const app = window.PDFViewerApplication;
+      if (app && app.eventBus) {
+        app.eventBus.on('documenttitlechanged', applyTitle);
+        app.eventBus.on('documentloaded', applyTitle);
+        app.eventBus.on('pagesloaded', applyTitle);
+        return true;
+      }
+      return false;
+    }
+    if (!hookEvents()) {
+      window.addEventListener('webviewerloaded', hookEvents);
+      window.addEventListener('load', hookEvents);
+    }
+
+    // Extra safety: if something else rewrites <title>, set it back
+    const head = document.querySelector('head');
+    if (head) {
+      new MutationObserver(() => {
+        if (document.title !== DESIRED_TITLE) applyTitle();
+      }).observe(head, { subtree: true, childList: true, characterData: true });
+    }
+  })();
+</script>
+
+      <script>
+  (function () {
+    function wireFirstLast() {
+      const app = window.PDFViewerApplication;
+      const prevBtn = document.getElementById('previous');
+      const nextBtn = document.getElementById('next');
+      if (!app || !prevBtn || !nextBtn) return;
+
+      // Update tooltips
+      prevBtn.title = "Go to first page";
+      nextBtn.title = "Go to last page";
+      prevBtn.setAttribute('aria-label', 'Go to first page');
+      nextBtn.setAttribute('aria-label', 'Go to last page');
+
+      // Override the default prev/next handlers
+      const toFirst = (e) => {
+        e.preventDefault(); e.stopImmediatePropagation();
+        app.page = 1;
+      };
+      const toLast = (e) => {
+        e.preventDefault(); e.stopImmediatePropagation();
+        const n = app.pagesCount || app.pdfDocument?.numPages || 1;
+        app.page = n;
+      };
+
+      prevBtn.onclick = toFirst;
+      nextBtn.onclick = toLast;
+    }
+
+    // Wire after the viewer is ready
+    if (window.PDFViewerApplication?.eventBus) {
+      PDFViewerApplication.eventBus.on('pagesinitialized', wireFirstLast);
+      PDFViewerApplication.eventBus.on('pagesloaded', wireFirstLast);
+    } else {
+      window.addEventListener('webviewerloaded', wireFirstLast);
+      window.addEventListener('load', wireFirstLast);
+      setTimeout(wireFirstLast, 1000);
+    }
+  })();
+</script>
+      
+    
   </body>
 </html>
