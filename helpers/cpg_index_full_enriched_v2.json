@@ -1,7 +1,4 @@
-{
-  "version": "cpg-2.4-enriched-v2",
-  "source": "CPG.pdf",
-  "items": [
+[
     {
       "id": "clinical-approach-adult",
       "title": "Clinical Approach and Assessment of the Adult Patient",
@@ -3447,4 +3444,3 @@
       ]
     }
   ]
-}
