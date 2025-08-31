@@ -152,7 +152,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 <style>
-  :root { --findbar-offset: 80px; } /* tweak if your find bar height changes */
+  :root { --findbar-offset: 58px; } /* tweak if your find bar height changes */
   #viewerContainer { scroll-padding-top: var(--findbar-offset); }
   .pdfViewer .page { scroll-margin-top: var(--findbar-offset); }
 </style>
@@ -720,6 +720,51 @@ See https://github.com/adobe-type-tools/cmap-resources
       window.addEventListener('load', wireFirstLast);
       setTimeout(wireFirstLast, 1000);
     }
+  })();
+</script>
+
+
+//This runs once, right after the initial “go to page” happens, and nudges the scroll by the find bar height (+ a few px). Works great on iOS Safari.
+<script>
+  (function () {
+    const HAS_PAGE_IN_URL =
+      /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
+      /(^|[?&])page=\d+(\b|&)/i.test(location.search);
+
+    let bumped = false;
+
+    function bumpScroll() {
+      if (bumped) return;
+      const vc = document.getElementById('viewerContainer');
+      const fb = document.getElementById('findbar');
+      if (!vc) return;
+
+      const offset = (fb?.offsetHeight || 50) + 8;
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          vc.scrollTop += offset;
+          bumped = true;
+        });
+      });
+    }
+
+    function wireBump() {
+      if (!HAS_PAGE_IN_URL) return;
+      const app = window.PDFViewerApplication;
+      if (app?.eventBus) {
+        const once = () => {
+          app.eventBus.off('updateviewarea', once);
+          bumpScroll();
+        };
+        app.eventBus.on('updateviewarea', once);
+        app.eventBus.on('pagesloaded', () => setTimeout(bumpScroll, 120));
+      } else {
+        window.addEventListener('load', () => setTimeout(bumpScroll, 150));
+      }
+    }
+
+    wireBump();
+    window.addEventListener('webviewerloaded', wireBump);
   })();
 </script>
       
