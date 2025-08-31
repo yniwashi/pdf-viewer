@@ -724,8 +724,13 @@ See https://github.com/adobe-type-tools/cmap-resources
 </script>
 
 
-//This runs once, right after the initial “go to page” happens, and nudges the scroll by the find bar height (+ a few px). Works great on iOS Safari.
-<script>
+<!--
+  Fix for iPhone/iPad:
+  When opening with ?page= or #page=, PDF.js scrolls the requested page
+  right under the toolbar. Since we made the find bar always visible,
+  it overlaps the top of the page. This script bumps the scroll down
+  by the height of the find bar so the page content is not hidden.
+-->
   (function () {
     const HAS_PAGE_IN_URL =
       /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
