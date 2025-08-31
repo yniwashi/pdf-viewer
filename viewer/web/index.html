@@ -731,47 +731,69 @@ See https://github.com/adobe-type-tools/cmap-resources
   it overlaps the top of the page. This script bumps the scroll down
   by the height of the find bar so the page content is not hidden.
 -->
-  (function () {
-    const HAS_PAGE_IN_URL =
-      /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
-      /(^|[?&])page=\d+(\b|&)/i.test(location.search);
+ <!--
+  Tiny initial nudge (≈ two lines) after opening a specific page.
+  Works around PDF.js/iOS re-scrolling by retrying a few times.
+  Adjust NUDGE_PX if you want more/less (default 32px ~ two lines).
+-->
+<script>
+(function () {
+  const NUDGE_PX = 32;     // ≈ two lines; change to taste
+  const RETRIES  = 6;      // try a few times in case PDF.js scrolls again
+  const GAP_MS   = 120;    // delay between retries
 
-    let bumped = false;
+  function nudge(container) {
+    if (!container) return;
+    container.scrollTop = container.scrollTop + NUDGE_PX;
+  }
 
-    function bumpScroll() {
-      if (bumped) return;
-      const vc = document.getElementById('viewerContainer');
-      const fb = document.getElementById('findbar');
-      if (!vc) return;
+  function scheduleNudges() {
+    const vc = document.getElementById('viewerContainer');
+    let tries = 0;
 
-      const offset = (fb?.offsetHeight || 50) + 8;
+    function run() {
+      if (!vc || tries >= RETRIES) return;
+      // two RAFs to ensure we run after any ongoing layout/scroll
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          vc.scrollTop += offset;
-          bumped = true;
+          nudge(vc);
+          tries += 1;
+          setTimeout(run, GAP_MS);
         });
       });
     }
+    run();
+  }
 
-    function wireBump() {
-      if (!HAS_PAGE_IN_URL) return;
-      const app = window.PDFViewerApplication;
-      if (app?.eventBus) {
-        const once = () => {
-          app.eventBus.off('updateviewarea', once);
-          bumpScroll();
-        };
-        app.eventBus.on('updateviewarea', once);
-        app.eventBus.on('pagesloaded', () => setTimeout(bumpScroll, 120));
-      } else {
-        window.addEventListener('load', () => setTimeout(bumpScroll, 150));
-      }
+  function wire() {
+    // Only when page is specified in URL (?#)page=N
+    const hasPage =
+      /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
+      /(^|[?&])page=\d+(\b|&)/i.test(location.search);
+    if (!hasPage) return;
+
+    const app = window.PDFViewerApplication;
+    if (app && app.eventBus) {
+      // Fire after the viewer establishes its initial view
+      const once = () => {
+        app.eventBus.off('updateviewarea', once);
+        scheduleNudges();
+      };
+      app.eventBus.on('updateviewarea', once);
+      // Extra safety if pages finish later
+      app.eventBus.on('pagesloaded', () => setTimeout(scheduleNudges, 100));
+      app.eventBus.on('pagerendered', () => setTimeout(scheduleNudges, 150));
+    } else {
+      // Fallback if eventBus not ready yet
+      window.addEventListener('load', () => setTimeout(scheduleNudges, 150));
     }
+  }
 
-    wireBump();
-    window.addEventListener('webviewerloaded', wireBump);
-  })();
+  wire();
+  window.addEventListener('webviewerloaded', wire);
+})();
 </script>
+
       
     
   </body>
