@@ -148,8 +148,15 @@ See https://github.com/adobe-type-tools/cmap-resources
     border: 1px solid rgba(0,0,0,0.15) !important;
   }
 }
+
 </style>
-      
+
+<style>
+  :root { --findbar-offset: 58px; } /* tweak if your find bar height changes */
+  #viewerContainer { scroll-padding-top: var(--findbar-offset); }
+  .pdfViewer .page { scroll-margin-top: var(--findbar-offset); }
+</style>
+
 
 
 
