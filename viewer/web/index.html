@@ -23,146 +23,153 @@ See https://github.com/adobe-type-tools/cmap-resources
 <html dir="ltr" mozdisallowselectionprint>
   <head>
     <meta charset="utf-8">
-    <!-- Keep maximum-scale=1 so Safari doesn't do a *page* zoom; PDF.js handles pinch inside -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
     <meta name="google" content="notranslate">
     <title>HMCAS CPG Viewer 🚑</title>
 
-    <!-- This snippet is used in production (included from viewer.html) -->
-    <link rel="resource" type="application/l10n" href="locale/locale.properties">
-    <script src="../build/pdf.js"></script>
+<!-- This snippet is used in production (included from viewer.html) -->
+<link rel="resource" type="application/l10n" href="locale/locale.properties">
+<script src="../build/pdf.js"></script>
 
-    <link rel="stylesheet" href="viewer.css">
+<link rel="stylesheet" href="viewer.css">
+      <style>
+  /* Make the page arrows look like First / Last */
+  #previous span, #next span { display: none !important; }
+  #previous::before { content: "⟪"; font-size: 18px; }
+  #next::before     { content: "⟫"; font-size: 18px; }
+</style>
 
-    <style>
-      /* Make the page arrows look like First / Last */
-      #previous span, #next span { display: none !important; }
-      #previous::before { content: "⟪"; font-size: 18px; }
-      #next::before     { content: "⟫"; font-size: 18px; }
-    </style>
 
-    <style>
-      /* Keep find bar right under the main toolbar; always visible */
-      #findbar.findbar-top {
-        display: flex !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: static !important;           /* below the toolbar */
-        margin: 0 !important;
-        padding: 4px 6px !important;
-        width: 100% !important;
-        max-width: none !important;
-        background: var(--toolbar-bg-color, #1e1e1e) !important;
-        border: 0 !important;
-        box-shadow: none !important;
-        gap: 8px;
-      }
+<style>
+  /* Keep find bar right under the main toolbar; always visible */
+  #findbar.findbar-top {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;           /* below the toolbar */
+    margin: 0 !important;
+    padding: 4px 6px !important;
+    width: 100% !important;
+    max-width: none !important;
+    background: var(--toolbar-bg-color, #1e1e1e) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    gap: 8px;
+  }
 
-      /* Input a bit bigger for touch */
-      #findbar.findbar-top #findbarInputContainer {
-        flex: 1; display: flex; align-items: center; gap: 6px;
-      }
-      #findbar.findbar-top #findInput {
-        flex: 1; max-width: none;
-        height: 32px; font-size: 15px;
-        padding: 4px 8px;
-        background: #2a2a2a; color: #fff;
-        border: 1px solid #454545; border-radius: 6px;
-        box-shadow: none;
-      }
+  /* Input a bit smaller than before */
+  #findbar.findbar-top #findbarInputContainer {
+    flex: 1; display: flex; align-items: center; gap: 6px;
+  }
+  #findbar.findbar-top #findInput {
+    flex: 1; max-width: none;
+    height: 23px; font-size: 13px;
+    padding: 4px 8px;
+    background: #2a2a2a; color: #fff;
+    border: 1px solid #454545; border-radius: 6px;
+    box-shadow: none;
+  }
 
-      /* Bigger ▲ ▼ buttons in the find bar */
-      #findbar.findbar-top #findPrevious,
-      #findbar.findbar-top #findNext {
-        width: 34px; height: 34px; min-width: 34px;
-        border-radius: 6px;
-        display: inline-flex; align-items: center; justify-content: center;
-        font-size: 18px; padding: 0;
-      }
-      #findbar.findbar-top #findPrevious span,
-      #findbar.findbar-top #findNext span { display: none !important; }
-      #findbar.findbar-top #findPrevious::before { content: "▲"; }
-      #findbar.findbar-top #findNext::before     { content: "▼"; }
-      #findbar.findbar-top .splitToolbarButtonSeparator { display: none !important; }
+  /* Bigger ▲ ▼ buttons in the find bar */
+  #findbar.findbar-top #findPrevious,
+  #findbar.findbar-top #findNext {
+    width: 34px; height: 34px; min-width: 34px;
+    border-radius: 6px;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 18px; padding: 0;
+  }
+  #findbar.findbar-top #findPrevious span,
+  #findbar.findbar-top #findNext span { display: none !important; }
+  #findbar.findbar-top #findPrevious::before { content: "▲"; }
+  #findbar.findbar-top #findNext::before     { content: "▼"; }
+  #findbar.findbar-top .splitToolbarButtonSeparator { display: none !important; }
 
-      /* Keep only input + arrows + counter inside the find bar */
-      #findbarOptionsOneContainer,
-      #findbarOptionsTwoContainer,
-      #findMsg { display: none !important; }
+  /* Keep only input + arrows + counter inside the find bar */
+  #findbarOptionsOneContainer,
+  #findbarOptionsTwoContainer,
+  #findMsg { display: none !important; }
 
-      /* Counter on the far right */
-      #findbarMessageContainer { margin-left: auto; display: flex; align-items: center; }
-      #findResultsCount {
-        padding: 4px 8px;
-        border-radius: 6px;
-        background: #f5f5f5; color: #111; border: 1px solid #cfcfcf;
-        font-size: 12px;
-      }
-      @media (prefers-color-scheme: dark) {
-        #findResultsCount { background: rgba(255,255,255,0.92); color:#111; border-color: rgba(0,0,0,0.15); }
-      }
+  /* Counter on the far right */
+  #findbarMessageContainer { margin-left: auto; display: flex; align-items: center; }
+  #findResultsCount {
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: #f5f5f5; color: #111; border: 1px solid #cfcfcf;
+    font-size: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    #findResultsCount { background: rgba(255,255,255,0.92); color:#111; border-color: rgba(0,0,0,0.15); }
+  }
 
-      /* Hide ONLY the search icon in the main toolbar */
-      #viewFind { display: none !important; }
+  /* Hide ONLY the search icon in the main toolbar */
+  #viewFind { display: none !important; }
 
-      /* --- Stronger highlight styling --- */
-      .textLayer .highlight {
-        background-color: rgba(255, 120, 0, 0.55);
-        border-radius: 3px;
-        padding: 1px 2px;
-      }
-      .textLayer .highlight.selected {
-        background-color: rgba(255, 80, 0, 0.75);
-        box-shadow: 0 0 2px 1px rgba(0,0,0,0.25);
-      }
+  /* --- Stronger highlight styling --- */
+  .textLayer .highlight {
+    background-color: rgba(255, 120, 0, 0.55); /* vivid orange */
+    border-radius: 3px;
+    padding: 1px 2px;
+  }
+  .textLayer .highlight.selected {
+    background-color: rgba(255, 80, 0, 0.75);  /* stronger orange for active */
+    box-shadow: 0 0 2px 1px rgba(0,0,0,0.25);
+  }
 
-      /* --- Make the find bar theme-aware (inherit toolbar look) --- */
-      #findbar.findbar-top { background: inherit !important; border: 0 !important; }
+    /* --- Make the find bar theme-aware (inherit toolbar look) --- */
+#findbar.findbar-top {
+  background: inherit !important;      /* same bg as the toolbar */
+  border: 0 !important;
+}
 
-      /* Light/Dark tweaks */
-      @media (prefers-color-scheme: light) {
-        #findbar.findbar-top #findInput {
-          background: #ffffff !important;
-          color: #111 !important;
-          border: 1px solid #d0d0d0 !important;
-        }
-        #findResultsCount {
-          background: #f2f2f2 !important;
-          color: #111 !important;
-          border: 1px solid #dcdcdc !important;
-        }
-      }
-      @media (prefers-color-scheme: dark) {
-        #findbar.findbar-top #findInput {
-          background: #2a2a2a !important;
-          color: #fff !important;
-          border: 1px solid #555 !important;
-        }
-        #findResultsCount {
-          background: rgba(255,255,255,0.92) !important;
-          color: #111 !important;
-          border: 1px solid rgba(0,0,0,0.15) !important;
-        }
-      }
-    </style>
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  #findbar.findbar-top #findInput {
+    background: #ffffff !important;
+    color: #111 !important;
+    border: 1px solid #d0d0d0 !important;
+  }
+  #findResultsCount {
+    background: #f2f2f2 !important;
+    color: #111 !important;
+    border: 1px solid #dcdcdc !important;
+  }
+}
 
-    <!-- Keep the PDF content starting below the bars -->
-    <style>
-      /* Push ONLY the scrollable PDF viewport down (fixes title overlap) */
-      #viewerContainer { top: 55px !important; } /* tweak to your device if needed */
-    </style>
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  #findbar.findbar-top #findInput {
+    background: #2a2a2a !important;
+    color: #fff !important;
+    border: 1px solid #555 !important;
+  }
+  #findResultsCount {
+    background: rgba(255,255,255,0.92) !important;
+    color: #111 !important;
+    border: 1px solid rgba(0,0,0,0.15) !important;
+  }
+}
+</style>
+      
 
-    <!-- Tame iOS bounce while keeping pinch-zoom -->
-    <style>
-      html, body { overscroll-behavior: none; }
-      #viewerContainer {
-        overscroll-behavior: contain;
-        -webkit-overflow-scrolling: touch; /* smooth scrolling */
-        touch-action: pan-y;               /* allow vertical pan; keep pinch */
-      }
-    </style>
+<style>
+  /* Keep your overlap fix */
+  #viewerContainer { top: 55px !important; }
 
-    <script src="viewer.js"></script>
+  /* Let the browser do page zoom on pinch; keep scroll smooth */
+  #viewerContainer {
+    touch-action: auto !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* (Optional) prevent Safari auto font inflation on zoom */
+  html { -webkit-text-size-adjust: 100%; }
+</style>
+
+
+
+      
+  <script src="viewer.js"></script>
   </head>
 
   <body tabindex="1">
@@ -198,10 +205,14 @@ See https://github.com/adobe-type-tools/cmap-resources
           </div>
         </div>
         <div id="sidebarContent">
-          <div id="thumbnailView"></div>
-          <div id="outlineView" class="hidden"></div>
-          <div id="attachmentsView" class="hidden"></div>
-          <div id="layersView" class="hidden"></div>
+          <div id="thumbnailView">
+          </div>
+          <div id="outlineView" class="hidden">
+          </div>
+          <div id="attachmentsView" class="hidden">
+          </div>
+          <div id="layersView" class="hidden">
+          </div>
         </div>
         <div id="sidebarResizer"></div>
       </div>  <!-- sidebarContainer -->
@@ -338,7 +349,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <span data-l10n-id="scroll_page_label">Page Scrolling</span>
               </button>
               <button id="scrollVertical" class="secondaryToolbarButton toggled" title="Use Vertical Scrolling" tabindex="63" data-l10n-id="scroll_vertical" role="radio" aria-checked="true">
-                <span data-l10n-id="scroll_vertical_label">Vertical Scrolling</span>
+                <span data-l10n-id="scroll_vertical_label" >Vertical Scrolling</span>
               </button>
               <button id="scrollHorizontal" class="secondaryToolbarButton" title="Use Horizontal Scrolling" tabindex="64" data-l10n-id="scroll_horizontal" role="radio" aria-checked="false">
                 <span data-l10n-id="scroll_horizontal_label">Horizontal Scrolling</span>
@@ -382,16 +393,18 @@ See https://github.com/adobe-type-tools/cmap-resources
                   <span data-l10n-id="findbar_label">Find</span>
                 </button>
 
-                <div class="splitToolbarButton hiddenSmallView">
-                  <button class="toolbarButton" title="Previous Page" id="previous" tabindex="13" data-l10n-id="previous">
-                    <span data-l10n-id="previous_label">Previous</span>
-                  </button>
-                  <div class="splitToolbarButtonSeparator"></div>
-                  <button class="toolbarButton" title="Next Page" id="next" tabindex="14" data-l10n-id="next">
-                    <span data-l10n-id="next_label">Next</span>
-                  </button>
-                </div>
 
+<div class="splitToolbarButton hiddenSmallView">
+  <button class="toolbarButton" title="Previous Page" id="previous" tabindex="13" data-l10n-id="previous">
+    <span data-l10n-id="previous_label">Previous</span>
+  </button>
+  <div class="splitToolbarButtonSeparator"></div>
+  <button class="toolbarButton" title="Next Page" id="next" tabindex="14" data-l10n-id="next">
+    <span data-l10n-id="next_label">Next</span>
+  </button>
+</div>
+
+                  
                 <input type="number" id="pageNumber" class="toolbarField" title="Page" value="1" min="1" tabindex="15" data-l10n-id="page" autocomplete="off">
                 <span id="numPages" class="toolbarLabel"></span>
               </div>
@@ -436,7 +449,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                   <div class="splitToolbarButtonSeparator"></div>
                   <button id="zoomIn" class="toolbarButton" title="Zoom In" tabindex="22" data-l10n-id="zoom_in">
                     <span data-l10n-id="zoom_in_label">Zoom In</span>
-                  </button>
+                   </button>
                 </div>
                 <span id="scaleSelectContainer" class="dropdownToolbarButton">
                   <select id="scaleSelect" title="Zoom" tabindex="23" data-l10n-id="zoom">
@@ -459,7 +472,8 @@ See https://github.com/adobe-type-tools/cmap-resources
             </div>
             <div id="loadingBar">
               <div class="progress">
-                <div class="glimmer"></div>
+                <div class="glimmer">
+                </div>
               </div>
             </div>
           </div>
@@ -609,175 +623,114 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     <input type="file" id="fileInput" class="hidden">
 
-    <!-- Mount Findbar Script -->
-    <script>
-      (function () {
-        // Mount the find bar under the main toolbar and keep it visible
-        const toolbarContainer = document.getElementById('toolbarContainer');
-        const findbar = document.getElementById('findbar');
-        if (toolbarContainer && findbar) {
-          findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
-          findbar.classList.add('findbar-top');
-          toolbarContainer.appendChild(findbar);
-        }
 
-        // Prefill from ?search=... or #search=...
-        const paramsFromSearch = new URLSearchParams(window.location.search);
-        const paramsFromHash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
-        const searchTerm = paramsFromHash.get('search') || paramsFromSearch.get('search');
-        if (searchTerm) {
-          const input = document.getElementById('findInput');
-          if (input) {
-            input.value = searchTerm;
-            input.dispatchEvent(new Event('input', { bubbles: true })); // trigger PDF.js find
-          }
-        }
 
-        // Arrow button accessibility
-        const prevBtn = document.getElementById('findPrevious');
-        const nextBtn = document.getElementById('findNext');
-        if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
-        if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
-        // --------- Force a custom tab title, even after PDF metadata changes it ----------
-        const DESIRED_TITLE = "HMCAS CPG Viewer";  // <— change this text to whatever you want
-        function applyTitle() { document.title = DESIRED_TITLE; }
-        applyTitle();
 
-        function hookEvents() {
-          const app = window.PDFViewerApplication;
-          if (app && app.eventBus) {
-            app.eventBus.on('documenttitlechanged', applyTitle);
-            app.eventBus.on('documentloaded', applyTitle);
-            app.eventBus.on('pagesloaded', applyTitle);
-            return true;
-          }
-          return false;
-        }
-        if (!hookEvents()) {
-          window.addEventListener('webviewerloaded', hookEvents);
-          window.addEventListener('load', hookEvents);
-        }
+<script>
+  (function () {
+    // Mount the find bar under the main toolbar and keep it visible
+    const toolbarContainer = document.getElementById('toolbarContainer');
+    const findbar = document.getElementById('findbar');
+    if (toolbarContainer && findbar) {
+      findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
+      findbar.classList.add('findbar-top');
+      toolbarContainer.appendChild(findbar);
+    }
 
-        // Extra safety: if something else rewrites <title>, set it back
-        const head = document.querySelector('head');
-        if (head) {
-          new MutationObserver(() => {
-            if (document.title !== DESIRED_TITLE) applyTitle();
-          }).observe(head, { subtree: true, childList: true, characterData: true });
-        }
-      })();
-    </script>
+    // Prefill from ?search=... or #search=...
+    const paramsFromSearch = new URLSearchParams(window.location.search);
+    const paramsFromHash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+    const searchTerm = paramsFromHash.get('search') || paramsFromSearch.get('search');
+    if (searchTerm) {
+      const input = document.getElementById('findInput');
+      if (input) {
+        input.value = searchTerm;
+        input.dispatchEvent(new Event('input', { bubbles: true })); // trigger PDF.js find
+      }
+    }
 
-    <!-- First/Last buttons -->
-    <script>
-      (function () {
-        function wireFirstLast() {
-          const app = window.PDFViewerApplication;
-          const prevBtn = document.getElementById('previous');
-          const nextBtn = document.getElementById('next');
-          if (!app || !prevBtn || !nextBtn) return;
+    // Arrow button accessibility
+    const prevBtn = document.getElementById('findPrevious');
+    const nextBtn = document.getElementById('findNext');
+    if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
+    if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
-          // Update tooltips
-          prevBtn.title = "Go to first page";
-          nextBtn.title = "Go to last page";
-          prevBtn.setAttribute('aria-label', 'Go to first page');
-          nextBtn.setAttribute('aria-label', 'Go to last page');
+    // --------- Force a custom tab title, even after PDF metadata changes it ----------
+    const DESIRED_TITLE = "HMCAS CPG Viewer";  // <— change this text to whatever you want
 
-          const toFirst = (e) => { e.preventDefault(); e.stopImmediatePropagation(); app.page = 1; };
-          const toLast  = (e) => {
-            e.preventDefault(); e.stopImmediatePropagation();
-            const n = app.pagesCount || app.pdfDocument?.numPages || 1;
-            app.page = n;
-          };
+    function applyTitle() {
+      document.title = DESIRED_TITLE;
+    }
+    applyTitle();
 
-          prevBtn.onclick = toFirst;
-          nextBtn.onclick = toLast;
-        }
+    // Use eventBus when available
+    function hookEvents() {
+      const app = window.PDFViewerApplication;
+      if (app && app.eventBus) {
+        app.eventBus.on('documenttitlechanged', applyTitle);
+        app.eventBus.on('documentloaded', applyTitle);
+        app.eventBus.on('pagesloaded', applyTitle);
+        return true;
+      }
+      return false;
+    }
+    if (!hookEvents()) {
+      window.addEventListener('webviewerloaded', hookEvents);
+      window.addEventListener('load', hookEvents);
+    }
 
-        if (window.PDFViewerApplication?.eventBus) {
-          PDFViewerApplication.eventBus.on('pagesinitialized', wireFirstLast);
-          PDFViewerApplication.eventBus.on('pagesloaded', wireFirstLast);
-        } else {
-          window.addEventListener('webviewerloaded', wireFirstLast);
-          window.addEventListener('load', wireFirstLast);
-          setTimeout(wireFirstLast, 1000);
-        }
-      })();
-    </script>
+    // Extra safety: if something else rewrites <title>, set it back
+    const head = document.querySelector('head');
+    if (head) {
+      new MutationObserver(() => {
+        if (document.title !== DESIRED_TITLE) applyTitle();
+      }).observe(head, { subtree: true, childList: true, characterData: true });
+    }
+  })();
+</script>
 
-    <!-- Anchor pinch-zoom to the FIRST VISIBLE LINE so iOS doesn't "jump pages" -->
-    <script>
-      (function () {
-        function installZoomAnchorToTopLine() {
-          const app = window.PDFViewerApplication;
-          if (!app || !app.eventBus || !app.pdfViewer) return;
+      <script>
+  (function () {
+    function wireFirstLast() {
+      const app = window.PDFViewerApplication;
+      const prevBtn = document.getElementById('previous');
+      const nextBtn = document.getElementById('next');
+      if (!app || !prevBtn || !nextBtn) return;
 
-          const vc = document.getElementById('viewerContainer');
-          const viewer = app.pdfViewer;
+      // Update tooltips
+      prevBtn.title = "Go to first page";
+      nextBtn.title = "Go to last page";
+      prevBtn.setAttribute('aria-label', 'Go to first page');
+      nextBtn.setAttribute('aria-label', 'Go to last page');
 
-          let anchor = null; // { pageNumber, relY }
+      // Override the default prev/next handlers
+      const toFirst = (e) => {
+        e.preventDefault(); e.stopImmediatePropagation();
+        app.page = 1;
+      };
+      const toLast = (e) => {
+        e.preventDefault(); e.stopImmediatePropagation();
+        const n = app.pagesCount || app.pdfDocument?.numPages || 1;
+        app.page = n;
+      };
 
-          function computeAnchorFromScrollTop() {
-            const scrollTop = vc.scrollTop || 0;
-            const count = viewer.pagesCount || viewer._pages?.length || 0;
+      prevBtn.onclick = toFirst;
+      nextBtn.onclick = toLast;
+    }
 
-            for (let i = 1; i <= count; i++) {
-              const pv = viewer.getPageView(i - 1);
-              if (!pv || !pv.div) continue;
-              const top = pv.div.offsetTop;
-              const h   = pv.div.offsetHeight || 1;
-
-              if (scrollTop >= top && scrollTop < top + h) {
-                // position of the viewport's top inside the page (0..1)
-                const relY = (scrollTop - top) / h;
-                return { pageNumber: i, relY };
-              }
-            }
-            // Fallback to current page top
-            const pn = viewer.currentPageNumber || 1;
-            return { pageNumber: pn, relY: 0 };
-          }
-
-          // Before zoom applies (pinch begin / UI zoom), capture the first visible line (top of viewport)
-          app.eventBus.on('scalechanging', () => {
-            anchor = computeAnchorFromScrollTop();
-          });
-
-          // After zoom, restore scroll so that SAME line stays at the top
-          app.eventBus.on('scalechanged', () => {
-            if (!anchor) return;
-
-            const pv = viewer.getPageView(anchor.pageNumber - 1);
-            if (!pv || !pv.div) return;
-
-            const pageTop = pv.div.offsetTop;
-            const pageH   = pv.div.offsetHeight || 1;
-            const target  = pageTop + anchor.relY * pageH;
-
-            // Apply after layout settles
-            requestAnimationFrame(() => {
-              requestAnimationFrame(() => {
-                vc.scrollTop = target;
-              });
-            });
-
-            anchor = null;
-          });
-        }
-
-        function init() {
-          if (window.PDFViewerApplication?.eventBus) {
-            installZoomAnchorToTopLine();
-          } else {
-            window.addEventListener('webviewerloaded', installZoomAnchorToTopLine);
-            window.addEventListener('load', installZoomAnchorToTopLine);
-          }
-        }
-
-        init();
-      })();
-    </script>
-
+    // Wire after the viewer is ready
+    if (window.PDFViewerApplication?.eventBus) {
+      PDFViewerApplication.eventBus.on('pagesinitialized', wireFirstLast);
+      PDFViewerApplication.eventBus.on('pagesloaded', wireFirstLast);
+    } else {
+      window.addEventListener('webviewerloaded', wireFirstLast);
+      window.addEventListener('load', wireFirstLast);
+      setTimeout(wireFirstLast, 1000);
+    }
+  })();
+</script>
+      
+    
   </body>
 </html>
