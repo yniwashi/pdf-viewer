@@ -190,6 +190,25 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 
+<style id="one-finger-drag-css">
+  #viewerContainer.dragging,
+  #viewerContainer.dragging * {
+    -webkit-user-select: none !important;
+    user-select: none !important;
+  }
+  /* Avoid catching links/annotations/text while dragging */
+  #viewerContainer.dragging .textLayer,
+  #viewerContainer.dragging .annotationLayer {
+    pointer-events: none !important;
+  }
+  /* (Optional desktop nicety) */
+  @media (hover:hover) {
+    #viewerContainer.dragging { cursor: grabbing; }
+  }
+</style>
+
+
+
 
       
   <script src="viewer.js"></script>
@@ -680,7 +699,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.4";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.5";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -944,6 +963,80 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
 
+<script>
+/**
+ * One-finger horizontal drag booster for PDF.js (keeps the no-jump approach)
+ * - Activates only when zoomed in (>1.02)
+ * - Axis-locks to horizontal after a small threshold
+ * - Prevents text selection while dragging, then restores it
+ * - Adds a small gain so short swipes move farther
+ */
+(function () {
+  const app = () => window.PDFViewerApplication;
+  const vc  = document.getElementById('viewerContainer');
+  if (!vc || !app()) return;
+
+  let dragging = false;
+  let axis = null;                // 'x' | 'y' | null
+  let startX = 0, startY = 0;
+  let startLeft = 0, startTop = 0;
+  const THRESH = 8;               // px movement before we lock an axis
+  const BIAS   = 1.2;             // movement gain to reduce repeated swipes
+  const HORZ_DOMINANCE = 1.1;     // must be ~10% more horizontal than vertical to lock 'x'
+
+  function scale() { return app()?.pdfViewer?.currentScale || 1; }
+
+  vc.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) return;           // only 1-finger drags
+    if (scale() <= 1.02) return;                  // only when zoomed in
+    // We’ll decide to take over after threshold; let browser start normally
+    dragging = false;
+    axis = null;
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+    startLeft = vc.scrollLeft;
+    startTop  = vc.scrollTop;
+  }, { passive: true, capture: true });
+
+  vc.addEventListener('touchmove', (e) => {
+    if (e.touches.length !== 1) return;
+    if (scale() <= 1.02) return;
+
+    const x = e.touches[0].clientX;
+    const y = e.touches[0].clientY;
+    const dx = x - startX;
+    const dy = y - startY;
+
+    if (!dragging) {
+      // lock axis after small threshold
+      if (Math.hypot(dx, dy) < THRESH) return;
+      axis = (Math.abs(dx) > Math.abs(dy) * HORZ_DOMINANCE) ? 'x' : 'y';
+      // only take over if it’s a horizontal intent; otherwise let vertical scroll behave normally
+      if (axis !== 'x') return;
+      dragging = true;
+      vc.classList.add('dragging');
+      vc.style.touchAction = 'none';  // fully take control during horizontal drag
+      e.preventDefault();
+      return;
+    }
+
+    // We’re in a horizontal drag session
+    e.preventDefault(); // stop text selection / native gestures
+    vc.scrollLeft = startLeft - dx * BIAS;
+  }, { passive: false, capture: true });
+
+  function endDrag() {
+    if (!dragging) return;
+    dragging = false;
+    axis = null;
+    vc.classList.remove('dragging');
+    vc.style.touchAction = 'pan-x pan-y'; // allow natural pan again post-drag
+  }
+
+  vc.addEventListener('touchend', endDrag,   { capture: true });
+  vc.addEventListener('touchcancel', endDrag,{ capture: true });
+})();
+</script>
 
       
     
