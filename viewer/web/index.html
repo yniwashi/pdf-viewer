@@ -661,7 +661,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.5";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.6";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -736,6 +736,55 @@ See https://github.com/adobe-type-tools/cmap-resources
 </script>
 
 
+<script>
+/*
+  Disable every zoom path except PDF.js toolbar buttons:
+   - Page pinch-zoom (already blocked by viewport + touch-action)
+   - Ctrl/Cmd + wheel (trackpad pinch mapped to wheel)
+   - Keyboard shortcuts (Cmd/Ctrl + + / - / = / 0)
+   - iOS gesture events (older Safari)
+   - Double-tap zoom
+*/
+(function () {
+  const vc = document.getElementById('viewerContainer');
+
+  // Block Ctrl/Cmd + wheel zoom
+  (vc || window).addEventListener('wheel', function (e) {
+    if (e.ctrlKey || e.metaKey) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, { capture: true, passive: false });
+
+  // Block common keyboard zoom shortcuts
+  window.addEventListener('keydown', function (e) {
+    const k = e.key;
+    if ((e.ctrlKey || e.metaKey) && (k === '+' || k === '=' || k === '-' || k === '0')) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, true);
+
+  // iOS old-style pinch gestures (extra belt-and-suspenders)
+  ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
+    (vc || document).addEventListener(type, function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }, { capture: true, passive: false });
+  });
+
+  // Prevent double-tap zoom on iOS
+  let lastTouch = 0;
+  (vc || document).addEventListener('touchend', function (e) {
+    const now = Date.now();
+    if (now - lastTouch < 300) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+    lastTouch = now;
+  }, { capture: true, passive: false });
+})();
+</script>
 
 
 
