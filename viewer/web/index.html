@@ -152,14 +152,6 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 
-<style>
-  /* Nudge every page down by ~1 cm */
-  #viewer.pdfViewer .page {
-    margin-top: 28px !important; /* ~1 cm */
-  }
-</style>
-
-
 
 
 
@@ -621,7 +613,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
 
-
+<!-- Mount Findbar Script -->
 <script>
   (function () {
     // Mount the find bar under the main toolbar and keep it visible
@@ -631,6 +623,15 @@ See https://github.com/adobe-type-tools/cmap-resources
       findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
       findbar.classList.add('findbar-top');
       toolbarContainer.appendChild(findbar);
+
+      // >>> NEW: measure the find bar and push the viewer down
+      const setFindbarOffset = () => {
+        const h = findbar.offsetHeight || 0;
+        document.documentElement.style.setProperty('--findbar-height', h + 'px');
+      };
+      setFindbarOffset();
+      window.addEventListener('resize', setFindbarOffset);
+      requestAnimationFrame(setFindbarOffset); // iOS layout tick
     }
 
     // Prefill from ?search=... or #search=...
@@ -651,15 +652,11 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
-    // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer";  // <— change this text to whatever you want
-
-    function applyTitle() {
-      document.title = DESIRED_TITLE;
-    }
+    // --------- Keep custom tab title ----------
+    const DESIRED_TITLE = "HMCAS CPG Viewer";
+    function applyTitle() { document.title = DESIRED_TITLE; }
     applyTitle();
 
-    // Use eventBus when available
     function hookEvents() {
       const app = window.PDFViewerApplication;
       if (app && app.eventBus) {
@@ -675,7 +672,6 @@ See https://github.com/adobe-type-tools/cmap-resources
       window.addEventListener('load', hookEvents);
     }
 
-    // Extra safety: if something else rewrites <title>, set it back
     const head = document.querySelector('head');
     if (head) {
       new MutationObserver(() => {
@@ -684,6 +680,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     }
   })();
 </script>
+
 
       <script>
   (function () {
@@ -728,24 +725,8 @@ See https://github.com/adobe-type-tools/cmap-resources
 </script>
 
 
-<!--
-  Fix for iPhone/iPad:
-  When opening with ?page= or #page=, PDF.js scrolls the requested page
-  right under the toolbar. Since we made the find bar always visible,
-  it overlaps the top of the page. This script bumps the scroll down
-  by the height of the find bar so the page content is not hidden.
--->
-<!--
-  Simple one-time nudge: move the PDF view ~1 cm DOWN.
-  We capture the initial scrollTop that PDF.js sets, then set a fixed
-  target = base + 1cm. We retry setting that SAME target a couple of times
-  to beat iOS/PDF.js late adjustments without drifting further.
--->
 
-
-
-
-      
+ 
     
   </body>
 </html>
