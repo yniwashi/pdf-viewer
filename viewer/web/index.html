@@ -159,6 +159,17 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 
+<style>
+  /* Reduce iOS bounce effects that trigger page jumps */
+  html, body { overscroll-behavior: none; }
+  #viewerContainer {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch; /* momentum scroll */
+    touch-action: pan-y;                /* allow vertical pan; let Safari handle pinch */
+  }
+</style>
+
+
 
 
 
@@ -732,6 +743,66 @@ See https://github.com/adobe-type-tools/cmap-resources
 
   })();
 </script>
+
+
+
+<!-- Keep the same page anchored when the scale changes (pinch) -->
+<script>
+(function () {
+  function anchorOnZoom() {
+    const app = window.PDFViewerApplication;
+    if (!app || !app.eventBus || !app.pdfViewer) return;
+
+    let pageAtZoomStart = null;
+    let savedY = 0; // relative Y within the page (0..1)
+
+    // When zoom is about to change (pinch begin / UI zoom)
+    app.eventBus.on('scalechanging', () => {
+      const viewer = app.pdfViewer;
+      const vc = document.getElementById('viewerContainer');
+      const pn = viewer.currentPageNumber;
+      const pv = viewer.getPageView(pn - 1);
+      if (!pv || !pv.div) return;
+
+      pageAtZoomStart = pn;
+
+      // compute relative Y inside the current page (so we can restore it)
+      const pageTop = pv.div.offsetTop;
+      const pageHeight = pv.div.offsetHeight || 1;
+      const visibleTop = vc.scrollTop;
+      savedY = Math.min(Math.max((visibleTop - pageTop) / pageHeight, 0), 1);
+    });
+
+    // After the zoom finished, scroll back to the same spot of that page
+    app.eventBus.on('scalechanged', () => {
+      if (!pageAtZoomStart) return;
+      const viewer = app.pdfViewer;
+      const vc = document.getElementById('viewerContainer');
+      const pv = viewer.getPageView(pageAtZoomStart - 1);
+      if (!pv || !pv.div) return;
+
+      const pageTop = pv.div.offsetTop;
+      const pageHeight = pv.div.offsetHeight || 1;
+      const target = pageTop + savedY * pageHeight;
+
+      // Apply on the next frames so layout is settled
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          vc.scrollTop = target;
+        });
+      });
+    });
+  }
+
+  if (window.PDFViewerApplication?.eventBus) {
+    anchorOnZoom();
+  } else {
+    window.addEventListener('webviewerloaded', anchorOnZoom);
+    window.addEventListener('load', anchorOnZoom);
+  }
+})();
+</script>
+
 
 
 
