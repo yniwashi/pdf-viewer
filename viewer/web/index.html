@@ -151,13 +151,20 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 </style>
 
+
+
+
+
 <style>
+  /* extra space for the always-visible find bar */
   :root { --findbar-height: 0px; }
-  /* Push the PDF content down by toolbar + findbar */
+
+  /* ensure the PDF content starts below toolbar + find bar */
   #viewerContainer {
     top: calc(var(--toolbar-height) + var(--findbar-height)) !important;
   }
 </style>
+
 
 
 
@@ -740,28 +747,71 @@ See https://github.com/adobe-type-tools/cmap-resources
   below the fixed find bar (works on iPhone/iPad). Uses PDF.js' own
   scrollPageIntoView with an XYZ destination (top in POINTS, not pixels).
 -->
-
 <script>
-(function () {
-  const toolbarContainer = document.getElementById('toolbarContainer');
-  const findbar = document.getElementById('findbar');
-  if (toolbarContainer && findbar) {
-    findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
-    findbar.classList.add('findbar-top');
-    toolbarContainer.appendChild(findbar);
+  (function () {
+    // Mount the find bar under the main toolbar and keep it visible
+    const toolbarContainer = document.getElementById('toolbarContainer');
+    const findbar = document.getElementById('findbar');
+    if (toolbarContainer && findbar) {
+      findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
+      findbar.classList.add('findbar-top');
+      toolbarContainer.appendChild(findbar);
 
-    // Set CSS var so the viewer sits below the find bar
-    const setFindbarOffset = () => {
-      const h = findbar.offsetHeight || 0;
-      document.documentElement.style.setProperty('--findbar-height', h + 'px');
-    };
-    setFindbarOffset();
-    window.addEventListener('resize', setFindbarOffset);
-    requestAnimationFrame(setFindbarOffset); // iOS layout tick
-  }
+      // >>> NEW: measure the find bar and push the viewer down
+      const setFindbarOffset = () => {
+        const h = findbar.offsetHeight || 0;
+        document.documentElement.style.setProperty('--findbar-height', h + 'px');
+      };
+      setFindbarOffset();
+      window.addEventListener('resize', setFindbarOffset);
+      requestAnimationFrame(setFindbarOffset); // iOS layout tick
+    }
 
-  /* keep your existing prefill/title hooks here */
-})();
+    // Prefill from ?search=... or #search=...
+    const paramsFromSearch = new URLSearchParams(window.location.search);
+    const paramsFromHash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+    const searchTerm = paramsFromHash.get('search') || paramsFromSearch.get('search');
+    if (searchTerm) {
+      const input = document.getElementById('findInput');
+      if (input) {
+        input.value = searchTerm;
+        input.dispatchEvent(new Event('input', { bubbles: true })); // trigger PDF.js find
+      }
+    }
+
+    // Arrow button accessibility
+    const prevBtn = document.getElementById('findPrevious');
+    const nextBtn = document.getElementById('findNext');
+    if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
+    if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
+
+    // --------- Keep custom tab title ----------
+    const DESIRED_TITLE = "HMCAS CPG Viewer";
+    function applyTitle() { document.title = DESIRED_TITLE; }
+    applyTitle();
+
+    function hookEvents() {
+      const app = window.PDFViewerApplication;
+      if (app && app.eventBus) {
+        app.eventBus.on('documenttitlechanged', applyTitle);
+        app.eventBus.on('documentloaded', applyTitle);
+        app.eventBus.on('pagesloaded', applyTitle);
+        return true;
+      }
+      return false;
+    }
+    if (!hookEvents()) {
+      window.addEventListener('webviewerloaded', hookEvents);
+      window.addEventListener('load', hookEvents);
+    }
+
+    const head = document.querySelector('head');
+    if (head) {
+      new MutationObserver(() => {
+        if (document.title !== DESIRED_TITLE) applyTitle();
+      }).observe(head, { subtree: true, childList: true, characterData: true });
+    }
+  })();
 </script>
 
 
