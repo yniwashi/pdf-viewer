@@ -153,8 +153,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
 <style>
-  /* add fixed padding so first page text is below the find bar */
-  #viewer.pdfViewer { padding-top: 28px !important; } /* ~1 cm */
+  /* Nudge every page down by ~1 cm */
+  #viewer.pdfViewer .page {
+    margin-top: 28px !important; /* ~1 cm */
+  }
 </style>
 
 
