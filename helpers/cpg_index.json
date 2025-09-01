@@ -4,7 +4,9 @@
       "title": "Clinical Approach and Assessment of the Adult Patient",
       "page_start": 17,
       "page_end": 19,
-      "aliases": [],
+      "aliases": [
+        "Clinical Approach & Assessment of the Adult Patient"
+      ],
       "keywords": [
         "primary survey",
         "secondary survey"
@@ -24,11 +26,16 @@
       "page_start": 20,
       "page_end": 23,
       "aliases": [
-        "pediatric"
+        "pediatric",
+        "Clinical Approach and Assessment of the Pediatric Patient",
+        "paediatric",
+        "Clinical Approach & Assessment of the Paediatric Patient"
       ],
       "keywords": [
         "primary survey",
-        "secondary survey"
+        "secondary survey",
+        "Clinical Approach and Assessment of the Pediatric Patient",
+        "paediatric"
       ],
       "type": "reference",
       "domains": [
@@ -44,7 +51,9 @@
       "title": "Clinical Approach and Assessment of the Obstetric Patient",
       "page_start": 24,
       "page_end": 25,
-      "aliases": [],
+      "aliases": [
+        "Clinical Approach & Assessment of the Obstetric Patient"
+      ],
       "keywords": [
         "primary survey",
         "secondary survey"
@@ -83,7 +92,9 @@
       "title": "Airway & Respiratory Status Assessment",
       "page_start": 28,
       "page_end": 29,
-      "aliases": [],
+      "aliases": [
+        "Airway and Respiratory Status Assessment"
+      ],
       "keywords": [
         "airway",
         "breathing",
@@ -200,7 +211,9 @@
         "ETCO2",
         "4 Hs",
         "4 Ts",
-        "reversible causes"
+        "reversible causes",
+        "defib",
+        "shock"
       ],
       "type": "algorithm",
       "domains": [
@@ -219,7 +232,10 @@
       "aliases": [
         "trauma arrest",
         "traumatic arrest",
-        "TCA"
+        "TCA",
+        "haemorrhage",
+        "hemorrhage control",
+        "massive hemorrhage"
       ],
       "keywords": [
         "hemorrhage",
@@ -236,7 +252,14 @@
         "hypovolaemia",
         "airway",
         "BVM",
-        "ETCO2"
+        "ETCO2",
+        "defib",
+        "defibrillator",
+        "AED",
+        "shock",
+        "haemorrhage",
+        "hemorrhage control",
+        "massive hemorrhage"
       ],
       "type": "algorithm",
       "domains": [
@@ -256,7 +279,10 @@
         "pediatric",
         "pediatric cardiac arrest",
         "peds arrest",
-        "child arrest"
+        "child arrest",
+        "Pediatric Medical Cardiac Arrest",
+        "paediatric",
+        "paediatric cardiac arrest"
       ],
       "keywords": [
         "defibrillation",
@@ -270,7 +296,14 @@
         "IO access",
         "4 Hs",
         "4 Ts",
-        "ETCO2"
+        "ETCO2",
+        "defib",
+        "defibrillator",
+        "AED",
+        "shock",
+        "Pediatric Medical Cardiac Arrest",
+        "paediatric",
+        "paediatric cardiac arrest"
       ],
       "type": "algorithm",
       "domains": [
@@ -289,7 +322,12 @@
       "aliases": [
         "pediatric",
         "pediatric trauma arrest",
-        "peds trauma arrest"
+        "peds trauma arrest",
+        "Pediatric Trauma Cardiac Arrest",
+        "paediatric",
+        "paediatric trauma arrest",
+        "hemorrhage",
+        "massive hemorrhage"
       ],
       "keywords": [
         "haemorrhage",
@@ -303,7 +341,16 @@
         "tamponade",
         "trauma CPR",
         "tourniquet",
-        "pelvic binder"
+        "pelvic binder",
+        "defib",
+        "defibrillator",
+        "AED",
+        "shock",
+        "Pediatric Trauma Cardiac Arrest",
+        "paediatric",
+        "paediatric trauma arrest",
+        "hemorrhage",
+        "massive hemorrhage"
       ],
       "type": "algorithm",
       "domains": [
@@ -322,7 +369,8 @@
       "aliases": [
         "neonatal resuscitation",
         "nls",
-        "newborn CPR"
+        "newborn CPR",
+        "Resuscitation of the New-born and Neonates"
       ],
       "keywords": [
         "apgar",
@@ -365,7 +413,14 @@
         "ETCO2",
         "MAP",
         "avoid hypotension",
-        "12-lead"
+        "12-lead",
+        "EKG",
+        "12 lead ECG",
+        "12-lead ECG",
+        "defib",
+        "defibrillator",
+        "AED",
+        "shock"
       ],
       "type": "algorithm",
       "domains": [
@@ -404,7 +459,11 @@
       "keywords": [
         "hypothermia",
         "pregnancy",
-        "trauma"
+        "trauma",
+        "defib",
+        "defibrillator",
+        "AED",
+        "shock"
       ],
       "type": "algorithm",
       "domains": [
@@ -443,14 +502,21 @@
       "page_start": 58,
       "page_end": 60,
       "aliases": [
-        "cva"
+        "cva",
+        "Cerebrovascular Accident",
+        "Acute Stroke"
       ],
       "keywords": [
         "fast",
         "thrombolysis",
         "BE-FAST",
         "LVO",
-        "thrombolysis window"
+        "thrombolysis window",
+        "thrombectomy",
+        "onset time",
+        "CT brain",
+        "NIHSS",
+        "aspirin (post imaging)"
       ],
       "type": "algorithm",
       "domains": [
@@ -493,7 +559,8 @@
       "page_end": 68,
       "aliases": [
         "ACS",
-        "chest pain protocol"
+        "chest pain protocol",
+        "STEMI/NSTEMI"
       ],
       "keywords": [
         "stemi",
@@ -507,7 +574,14 @@
         "12-lead ECG",
         "ST elevation",
         "Heparin (if applicable locally)",
-        "reperfusion"
+        "reperfusion",
+        "ECG",
+        "PCI",
+        "cath lab",
+        "reperfusion therapy",
+        "ischemic chest pain",
+        "EKG",
+        "12 lead ECG"
       ],
       "type": "algorithm",
       "domains": [
@@ -524,7 +598,8 @@
       "page_start": 69,
       "page_end": 70,
       "aliases": [
-        "bradycardia"
+        "bradycardia",
+        "Symptomatic Bradycardia"
       ],
       "keywords": [
         "atropine",
@@ -536,7 +611,12 @@
         "altered mental status",
         "shock",
         "ischaemic chest pain",
-        "pacing"
+        "pacing",
+        "DC pacing",
+        "chronotropic",
+        "isoprenaline",
+        "isoproterenol",
+        "AV block"
       ],
       "type": "algorithm",
       "domains": [
@@ -554,7 +634,9 @@
       "page_end": 72,
       "aliases": [
         "wide complex tachycardia",
-        "vt"
+        "vt",
+        "Wide-complex Tachycardia",
+        "Ventricular Tachycardia"
       ],
       "keywords": [
         "amiodarone",
@@ -566,7 +648,10 @@
         "polymorphic VT",
         "torsades",
         "magnesium",
-        "unstable"
+        "unstable",
+        "polymorphic",
+        "torsades de pointes",
+        "stable"
       ],
       "type": "algorithm",
       "domains": [
@@ -587,7 +672,9 @@
         "avnrt",
         "avrt",
         "narrow complex tachycardia",
-        "supraventricular tachycardia"
+        "supraventricular tachycardia",
+        "PSVT",
+        "Narrow-complex Tachycardia"
       ],
       "keywords": [
         "adenosine",
@@ -604,7 +691,12 @@
         "AF with RVR",
         "unstable",
         "modified Valsalva",
-        "REVERT"
+        "REVERT",
+        "6 mg",
+        "12 mg",
+        "cardioversion",
+        "regular",
+        "irregular"
       ],
       "type": "algorithm",
       "domains": [
@@ -622,14 +714,16 @@
       "page_end": 76,
       "aliases": [
         "pulmonary edema",
-        "apo"
+        "apo",
+        "pulmonary oedema"
       ],
       "keywords": [
         "cpap",
         "gtn",
         "bi-level",
         "nitroglycerin",
-        "furosemide (as per protocol)"
+        "furosemide (as per protocol)",
+        "pulmonary oedema"
       ],
       "type": "algorithm",
       "domains": [
@@ -665,7 +759,9 @@
       "page_start": 80,
       "page_end": 82,
       "aliases": [
-        "status asthmaticus"
+        "status asthmaticus",
+        "Asthma Exacerbation",
+        "nebuliser"
       ],
       "keywords": [
         "salbutamol",
@@ -680,7 +776,13 @@
         "MDI spacer",
         "silent chest",
         "status asthmaticus",
-        "repeat neb q20"
+        "repeat neb q20",
+        "albuterol",
+        "atrovent",
+        "budesonide",
+        "PEFR",
+        "near-fatal",
+        "nebuliser"
       ],
       "type": "algorithm",
       "domains": [
@@ -698,7 +800,9 @@
       "page_start": 83,
       "page_end": 84,
       "aliases": [
-        "chronic obstructive pulmonary disease"
+        "chronic obstructive pulmonary disease",
+        "COPD Exacerbation",
+        "nebuliser"
       ],
       "keywords": [
         "bronchodilator",
@@ -710,7 +814,10 @@
         "controlled oxygen",
         "SpO2 88-92%",
         "nebulised bronchodilator",
-        "steroid early"
+        "steroid early",
+        "oxygen 88–92%",
+        "CO2 retention",
+        "nebuliser"
       ],
       "type": "algorithm",
       "domains": [
@@ -829,7 +936,9 @@
         "tachycardia",
         "pleuritic chest pain",
         "hemoptysis",
-        "syncope"
+        "syncope",
+        "hypoxia",
+        "S1Q3T3"
       ],
       "type": "algorithm",
       "domains": [
@@ -916,7 +1025,8 @@
       "page_end": 107,
       "aliases": [
         "allergic reaction",
-        "allergy emergency"
+        "allergy emergency",
+        "Anaphylaxis & Allergic Reactions"
       ],
       "keywords": [
         "adrenaline",
@@ -945,7 +1055,12 @@
       "page_end": 110,
       "aliases": [
         "hypoglycemia",
-        "hyperglycemia"
+        "hyperglycemia",
+        "Hypoglycemia and Hyperglycaemia",
+        "Hypoglycaemia and Hyperglycemia",
+        "hypoglycaemia",
+        "hyperglycaemia",
+        "Hypoglycaemia & Hyperglycaemia"
       ],
       "keywords": [
         "dextrose",
@@ -958,7 +1073,11 @@
         "HHS",
         "check ketones",
         "insulin protocol (HHS/consult)",
-        "re-check BGL"
+        "re-check BGL",
+        "Hypoglycemia and Hyperglycaemia",
+        "Hypoglycaemia and Hyperglycemia",
+        "hypoglycaemia",
+        "hyperglycaemia"
       ],
       "type": "algorithm",
       "domains": [
@@ -976,7 +1095,8 @@
       "page_start": 111,
       "page_end": 112,
       "aliases": [
-        "emesis"
+        "emesis",
+        "Nausea & Vomiting"
       ],
       "keywords": [
         "ondansetron",
@@ -1047,7 +1167,15 @@
         "broad-spectrum antibiotics",
         "blood cultures (hospital)",
         "antibiotics early",
-        "30 ml/kg fluids (if local)"
+        "30 ml/kg fluids (if local)",
+        "SOFA",
+        "SIRS",
+        "blood cultures",
+        "norepinephrine",
+        "MAP",
+        "hypotension",
+        "fever",
+        "tachycardia"
       ],
       "type": "algorithm",
       "domains": [
@@ -1141,13 +1269,15 @@
       "page_start": 131,
       "page_end": 132,
       "aliases": [
-        "ccb toxicity"
+        "ccb toxicity",
+        "hyperglycemia"
       ],
       "keywords": [
         "hyperglycaemia",
         "calcium",
         "vasopressor",
-        "CCB overdose"
+        "CCB overdose",
+        "hyperglycemia"
       ],
       "type": "algorithm",
       "domains": [
@@ -1312,13 +1442,15 @@
       "page_start": 146,
       "page_end": 148,
       "aliases": [
-        "ethanol intoxication"
+        "ethanol intoxication",
+        "hypoglycemia screen"
       ],
       "keywords": [
         "monitoring",
         "hypoglycaemia screen",
         "ethanol",
-        "trauma screen"
+        "trauma screen",
+        "hypoglycemia screen"
       ],
       "type": "algorithm",
       "domains": [
@@ -1404,14 +1536,21 @@
       "page_end": 161,
       "aliases": [
         "major hemorrhage",
-        "major hemorrhage and hemorrhagic shock"
+        "major hemorrhage and hemorrhagic shock",
+        "Major Hemorrhage and Haemorrhagic Shock",
+        "Major Haemorrhage and Hemorrhagic Shock",
+        "major haemorrhage",
+        "Major Haemorrhage & Haemorrhagic Shock"
       ],
       "keywords": [
         "txa",
         "massive transfusion",
         "tourniquet",
         "TXA 1 g",
-        "pelvic binder"
+        "pelvic binder",
+        "Major Hemorrhage and Haemorrhagic Shock",
+        "Major Haemorrhage and Hemorrhagic Shock",
+        "major haemorrhage"
       ],
       "type": "algorithm",
       "domains": [
@@ -1533,7 +1672,8 @@
       "page_start": 172,
       "page_end": 173,
       "aliases": [
-        "pelvic fracture"
+        "pelvic fracture",
+        "hemorrhage control"
       ],
       "keywords": [
         "binder",
@@ -1542,7 +1682,8 @@
         "haemorrhage control",
         "binder over trochanters",
         "don’t over-tighten",
-        "hemodynamic instability"
+        "hemodynamic instability",
+        "hemorrhage control"
       ],
       "type": "algorithm",
       "domains": [
@@ -1671,7 +1812,10 @@
         "calcium",
         "pre-release fluids",
         "ECG changes",
-        "renal protection"
+        "renal protection",
+        "EKG",
+        "12 lead ECG",
+        "12-lead ECG"
       ],
       "type": "algorithm",
       "domains": [
@@ -1702,7 +1846,11 @@
         "pre-treatment",
         "positioning",
         "plan B/C",
-        "checklist"
+        "checklist",
+        "paralytic",
+        "preoxygenation",
+        "apneic oxygenation",
+        "difficult airway"
       ],
       "type": "procedure",
       "domains": [
@@ -1810,7 +1958,8 @@
       "page_start": 198,
       "page_end": 200,
       "aliases": [
-        "rsi checklist"
+        "rsi checklist",
+        "RSI Quick Reference Guide and Checklist"
       ],
       "keywords": [
         "dose",
@@ -1936,7 +2085,8 @@
       "page_start": 209,
       "page_end": 211,
       "aliases": [
-        "preeclampsia"
+        "preeclampsia",
+        "Pre-eclampsia & Eclampsia"
       ],
       "keywords": [
         "hypertension",
@@ -2493,7 +2643,10 @@
       "page_start": 265,
       "page_end": 266,
       "aliases": [
-        "covid hypoxaemia"
+        "covid hypoxaemia",
+        "Respiratory Distress/Hypoxemia in Suspected/Confirmed COVID-19 Patients",
+        "covid hypoxemia",
+        "hypoxemia"
       ],
       "keywords": [
         "oxygenation",
@@ -2502,7 +2655,10 @@
         "ppe",
         "COVID-19",
         "hypoxaemia",
-        "HFNC"
+        "HFNC",
+        "Respiratory Distress/Hypoxemia in Suspected/Confirmed COVID-19 Patients",
+        "covid hypoxemia",
+        "hypoxemia"
       ],
       "type": "algorithm",
       "domains": [
@@ -2527,7 +2683,11 @@
         "airway",
         "filters",
         "COVID-19",
-        "airway filters"
+        "airway filters",
+        "defib",
+        "defibrillator",
+        "AED",
+        "shock"
       ],
       "type": "algorithm",
       "domains": [
@@ -2604,7 +2764,10 @@
       "title": "Amiodarone",
       "page_start": 276,
       "page_end": 278,
-      "aliases": [],
+      "aliases": [
+        "Cordarone",
+        "Pacerone"
+      ],
       "keywords": [
         "vt",
         "vf",
@@ -2631,7 +2794,8 @@
       "page_start": 279,
       "page_end": 280,
       "aliases": [
-        "asa"
+        "asa",
+        "Disprin"
       ],
       "keywords": [
         "acs",
@@ -2673,7 +2837,9 @@
       "title": "Budesonide",
       "page_start": 284,
       "page_end": 285,
-      "aliases": [],
+      "aliases": [
+        "Pulmicort"
+      ],
       "keywords": [
         "croup",
         "asthma",
@@ -2718,7 +2884,9 @@
       "page_start": 288,
       "page_end": 289,
       "aliases": [
-        "plavix"
+        "plavix",
+        "Iscover",
+        "Clovix"
       ],
       "keywords": [
         "acs",
@@ -2741,7 +2909,8 @@
       "page_start": 290,
       "page_end": 292,
       "aliases": [
-        "dex"
+        "dex",
+        "Decadron"
       ],
       "keywords": [
         "airway oedema",
@@ -2764,14 +2933,17 @@
       "page_start": 293,
       "page_end": 295,
       "aliases": [
-        "glucose"
+        "glucose",
+        "hypoglycemia",
+        "Dextrose (Oral and IV)"
       ],
       "keywords": [
         "hypoglycaemia",
         "d10",
         "d50",
         "IV",
-        "IO"
+        "IO",
+        "hypoglycemia"
       ],
       "type": "drug",
       "domains": [
@@ -2787,7 +2959,10 @@
       "title": "Diclofenac",
       "page_start": 296,
       "page_end": 297,
-      "aliases": [],
+      "aliases": [
+        "Voltaren",
+        "Cataflam"
+      ],
       "keywords": [
         "nsaid",
         "pain"
@@ -2806,7 +2981,8 @@
       "page_start": 298,
       "page_end": 300,
       "aliases": [
-        "benadryl"
+        "benadryl",
+        "Allernix"
       ],
       "keywords": [
         "allergy",
@@ -2855,7 +3031,9 @@
       "title": "Fentanyl",
       "page_start": 304,
       "page_end": 307,
-      "aliases": [],
+      "aliases": [
+        "Sublimaze"
+      ],
       "keywords": [
         "analgesia",
         "rsi",
@@ -2902,7 +3080,10 @@
       "title": "Glucagon",
       "page_start": 310,
       "page_end": 312,
-      "aliases": [],
+      "aliases": [
+        "GlucaGen",
+        "hypoglycemia"
+      ],
       "keywords": [
         "hypoglycaemia",
         "beta-blocker od",
@@ -2911,7 +3092,8 @@
         "IV",
         "1 mg IM",
         "repeat in 10 min",
-        "nausea/vomiting"
+        "nausea/vomiting",
+        "hypoglycemia"
       ],
       "type": "drug",
       "domains": [
@@ -2930,7 +3112,11 @@
       "aliases": [
         "nitroglycerin",
         "glyceryl trinitrate",
-        "gtn"
+        "gtn",
+        "Nitrostat",
+        "Nitro-Bid",
+        "Nitrolingual",
+        "Glycerol Trinitrate – GTN (Sublingual and IV)"
       ],
       "keywords": [
         "acs",
@@ -2955,7 +3141,9 @@
       "title": "Hydrocortisone",
       "page_start": 315,
       "page_end": 317,
-      "aliases": [],
+      "aliases": [
+        "Solu-Cortef"
+      ],
       "keywords": [
         "anaphylaxis",
         "adrenal crisis",
@@ -2975,7 +3163,12 @@
       "title": "Ibuprofen",
       "page_start": 318,
       "page_end": 320,
-      "aliases": [],
+      "aliases": [
+        "Brufen",
+        "Nurofen",
+        "Advil",
+        "Motrin"
+      ],
       "keywords": [
         "nsaid",
         "pain",
@@ -3021,7 +3214,9 @@
       "title": "Ketamine",
       "page_start": 324,
       "page_end": 328,
-      "aliases": [],
+      "aliases": [
+        "Ketalar"
+      ],
       "keywords": [
         "analgesia",
         "sedation",
@@ -3101,7 +3296,8 @@
       "page_start": 335,
       "page_end": 336,
       "aliases": [
-        "methoxyflurane"
+        "methoxyflurane",
+        "Green Whistle"
       ],
       "keywords": [
         "analgesia",
@@ -3121,7 +3317,8 @@
       "page_start": 337,
       "page_end": 338,
       "aliases": [
-        "maxolon"
+        "maxolon",
+        "Reglan"
       ],
       "keywords": [
         "antiemetic",
@@ -3144,7 +3341,8 @@
       "page_start": 339,
       "page_end": 341,
       "aliases": [
-        "versed"
+        "versed",
+        "Dormicum"
       ],
       "keywords": [
         "seizure",
@@ -3172,7 +3370,8 @@
       "page_start": 342,
       "page_end": 344,
       "aliases": [
-        "narcan"
+        "narcan",
+        "Evzio"
       ],
       "keywords": [
         "opioid overdose",
@@ -3254,7 +3453,8 @@
       "aliases": [
         "acetaminophen",
         "panadol",
-        "tylenol"
+        "tylenol",
+        "Paracetamol (Oral and IV)"
       ],
       "keywords": [
         "pain",
@@ -3279,7 +3479,8 @@
       "page_start": 353,
       "page_end": 354,
       "aliases": [
-        "pe"
+        "pe",
+        "Neo-Synephrine"
       ],
       "keywords": [
         "vasopressor",
@@ -3304,7 +3505,8 @@
       "page_start": 355,
       "page_end": 356,
       "aliases": [
-        "stemetil"
+        "stemetil",
+        "Compazine"
       ],
       "keywords": [
         "antiemetic",
@@ -3324,7 +3526,8 @@
       "page_start": 357,
       "page_end": 359,
       "aliases": [
-        "roc"
+        "roc",
+        "Esmeron"
       ],
       "keywords": [
         "paralytic",
@@ -3351,7 +3554,9 @@
       "page_end": 362,
       "aliases": [
         "albuterol",
-        "Ventolin"
+        "Ventolin",
+        "Proventil",
+        "AccuNeb"
       ],
       "keywords": [
         "asthma",
@@ -3376,7 +3581,8 @@
       "page_end": 364,
       "aliases": [
         "sux",
-        "suxamethonium"
+        "suxamethonium",
+        "Anectine"
       ],
       "keywords": [
         "paralytic",
@@ -3402,7 +3608,9 @@
       "page_start": 365,
       "page_end": 367,
       "aliases": [
-        "txa"
+        "txa",
+        "Cyklokapron",
+        "hemorrhage"
       ],
       "keywords": [
         "haemorrhage",
@@ -3411,7 +3619,8 @@
         "1 g",
         "within 3 hours",
         "1 g IV over 10 min",
-        "second gram over 8h (hospital)"
+        "second gram over 8h (hospital)",
+        "hemorrhage"
       ],
       "type": "drug",
       "domains": [
@@ -3428,7 +3637,8 @@
       "page_start": 368,
       "page_end": 370,
       "aliases": [
-        "vec"
+        "vec",
+        "Norcuron"
       ],
       "keywords": [
         "paralytic",
