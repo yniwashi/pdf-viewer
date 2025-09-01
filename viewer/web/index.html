@@ -731,56 +731,66 @@ See https://github.com/adobe-type-tools/cmap-resources
   it overlaps the top of the page. This script bumps the scroll down
   by the height of the find bar so the page content is not hidden.
 -->
- <!--
-  Tiny upward adjustment (≈ two lines) after PDF.js opens a page.
-  This ensures the page starts slightly lower on screen so the find bar
-  doesn’t cover the first text line.
-  Adjust NUDGE_PX if needed (default 32px ~ two lines).
+<!--
+  Small downward nudge after opening a specific page (iPhone/iPad friendly).
+  Purpose: when the URL contains ?page= or #page=, PDF.js positions the page
+  flush with the top; with a fixed/always-visible search bar, the first lines
+  feel cramped. This script scrolls **down** a tiny bit (≈ two lines).
+  How: tries viewerContainer.scrollTop += NUDGE_PX, then scrollBy on the
+  container, then window.scrollBy as a fallback. Retries a few times to win
+  against late PDF.js adjustments on iOS Safari.
 -->
 <script>
 (function () {
-  const NUDGE_PX = 32;   // ≈ two lines; increase if bar still overlaps
-  const RETRIES  = 6;    // run a few times in case PDF.js re-scrolls
-  const GAP_MS   = 120;
+  const NUDGE_PX = 40;   // ~ two lines. Increase/decrease to taste.
+  const RETRIES  = 8;    // try multiple times in case PDF.js re-positions
+  const GAP_MS   = 120;  // delay between retries
 
-  function nudge(container) {
-    if (!container) return;
-    // Move content UP by reducing scrollTop
-    container.scrollTop = Math.max(0, container.scrollTop - NUDGE_PX);
+  // Only run when a page number is specified in URL
+  const hasPage =
+    /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
+    /(^|[?&])page=\d+(\b|&)/i.test(location.search);
+  if (!hasPage) return;
+
+  function nudgeDown() {
+    const vc = document.getElementById('viewerContainer');
+
+    // Prefer nudging the PDF viewer container
+    if (vc) {
+      try { vc.scrollTop = (vc.scrollTop || 0) + NUDGE_PX; } catch {}
+      try { vc.scrollBy && vc.scrollBy(0, NUDGE_PX); } catch {}
+    }
+
+    // Fallback for odd iOS cases where the window scrolls instead
+    try { window.scrollBy(0, NUDGE_PX); } catch {}
   }
 
   function scheduleNudges() {
-    const vc = document.getElementById('viewerContainer');
     let tries = 0;
-
-    function run() {
-      if (!vc || tries >= RETRIES) return;
+    (function run() {
+      if (tries++ >= RETRIES) return;
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          nudge(vc);
-          tries++;
+          nudgeDown();
           setTimeout(run, GAP_MS);
         });
       });
-    }
-    run();
+    })();
   }
 
   function wire() {
-    const hasPage =
-      /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
-      /(^|[?&])page=\d+(\b|&)/i.test(location.search);
-    if (!hasPage) return;
-
     const app = window.PDFViewerApplication;
     if (app && app.eventBus) {
+      // After initial view is established
       const once = () => {
         app.eventBus.off('updateviewarea', once);
         scheduleNudges();
       };
       app.eventBus.on('updateviewarea', once);
       app.eventBus.on('pagesloaded', () => setTimeout(scheduleNudges, 100));
+      app.eventBus.on('pagerendered', () => setTimeout(scheduleNudges, 150));
     } else {
+      // Fallback if eventBus not ready yet
       window.addEventListener('load', () => setTimeout(scheduleNudges, 150));
     }
   }
@@ -789,6 +799,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   window.addEventListener('webviewerloaded', wire);
 })();
 </script>
+
 
       
     
