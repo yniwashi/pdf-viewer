@@ -155,16 +155,20 @@ See https://github.com/adobe-type-tools/cmap-resources
   /* Keep your overlap fix */
   #viewerContainer { top: 55px !important; }
 
-  /* Let the browser do page zoom on pinch; keep scroll smooth */
+  /* Let the browser do page zoom on pinch (whole page), keep vertical panning */
   #viewerContainer {
-    touch-action: auto !important;
+    touch-action: pinch-zoom pan-y !important;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
   }
 
-  /* (Optional) prevent Safari auto font inflation on zoom */
+  /* Remove PDF.js zoom controls so users don't trigger internal zoom */
+  #zoomIn, #zoomOut, #scaleSelectContainer { display: none !important; }
+
+  /* Optional: keep text size stable during browser zoom */
   html { -webkit-text-size-adjust: 100%; }
 </style>
+
 
 
 
@@ -730,6 +734,62 @@ See https://github.com/adobe-type-tools/cmap-resources
     }
   })();
 </script>
+
+
+
+<script>
+/*
+  Disable PDF.js internal zoom so pinch zooms the WHOLE PAGE (Safari),
+  not the PDF viewer. We:
+   - Block ctrl+wheel (trackpad-pinch style) from reaching PDF.js
+   - Block Cmd/Ctrl + (+/-/= / 0) keyboard zoom shortcuts
+   - Keep initial PDF scale on resize/orientation (avoid auto-fit jumps)
+*/
+(function () {
+  const vc = document.getElementById('viewerContainer');
+
+  // 1) Let the browser handle pinch-zoom for the whole page
+  if (vc) vc.style.touchAction = 'pinch-zoom pan-y';
+
+  // 2) Stop PDF.js from receiving ctrl+wheel zoom (Mac trackpads etc.)
+  // Use capture + passive:false so we can cancel before PDF.js.
+  (vc || window).addEventListener('wheel', function (e) {
+    if (e.ctrlKey) {           // ctrlKey wheel = "zoom" gesture
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, { capture: true, passive: false });
+
+  // 3) Stop keyboard zoom shortcuts from reaching PDF.js
+  window.addEventListener('keydown', function (e) {
+    const key = e.key;
+    const zoomKey = (key === '+' || key === '=' || key === '-' || key === '0');
+    if (zoomKey && (e.ctrlKey || e.metaKey)) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }, true); // capture
+
+  // 4) Keep initial PDF scale across resize/orientation (avoid auto-fit jumps)
+  function appReady() {
+    return window.PDFViewerApplication && PDFViewerApplication.pdfViewer;
+  }
+  function lockInitialScale() {
+    if (!appReady()) return;
+    const v = PDFViewerApplication.pdfViewer;
+    const startScale = v.currentScale; // remember whatever you start with
+    window.addEventListener('resize', () => {
+      requestAnimationFrame(() => { v.currentScale = startScale; });
+    });
+  }
+  if (document.readyState !== 'loading') lockInitialScale();
+  window.addEventListener('webviewerloaded', lockInitialScale);
+  window.addEventListener('load', lockInitialScale);
+})();
+</script>
+
+
+
       
     
   </body>
