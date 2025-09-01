@@ -666,7 +666,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.3";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.4";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -744,57 +744,125 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 <script>
 /*
-  iOS Safari pinch-zoom smoother for PDF.js:
-  - After the internal reflow completes, re-center on the same page
-    with a small top offset so titles don't sit under the find bar.
-  - Runs only on iPhone/iPad/iPod.
+  iOS Safari + PDF.js jump fix by "relative re-anchoring":
+  1) Snapshot: current page number and relative Y position on that page
+     (how far you've scrolled into the page as a fraction of its height).
+  2) After zoom/reflow/resize finish, restore scrollTop to the same
+     page + relative Y, with a small top offset so the title isn't
+     hidden under your find bar.
+
+  Safe to keep even if you later tweak other CSS; it only runs on iOS.
 */
 (function () {
-  if (!/iPhone|iPad|iPod/i.test(navigator.userAgent)) return;
+  const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (!isiOS) return;
 
-  // px -> PDF points (PDF.js XYZ top uses points). 1px ≈ 0.75pt
-  const pxToPt = (px) => Math.round(px * 0.75);
+  const OFFSET_PX = 40; // move content ~1cm below the find bar; tweak as you like
 
-  // How far below the toolbar/findbar to place the top of the page
-  const TOP_OFFSET_PX = 40; // tweak 24–56 if you want a bit more/less
-  const TOP_OFFSET_PT = pxToPt(TOP_OFFSET_PX);
+  function appReady() {
+    return window.PDFViewerApplication &&
+           PDFViewerApplication.pdfViewer &&
+           document.getElementById('viewerContainer');
+  }
 
-  function reanchorToCurrentPage() {
+  function getSnapshot() {
     const app = window.PDFViewerApplication;
-    if (!app || !app.pdfViewer) return;
+    const viewer = app.pdfViewer;
+    const vc = document.getElementById('viewerContainer');
+    const pageNumber = viewer.currentPageNumber || app.page || 1;
 
-    const pageNumber = app.pdfViewer.currentPageNumber || app.page || 1;
+    const pv = viewer.getPageView(pageNumber - 1);
+    if (!pv || !pv.div) return null;
 
-    // Use PDF.js' own scroller to avoid fighting it
-    app.pdfViewer.scrollPageIntoView({
+    const top  = pv.div.offsetTop;
+    const h    = pv.div.offsetHeight || 1;
+    const relY = (vc.scrollTop - top) / h;           // relative vertical position in page
+    const relX = (vc.scrollLeft - pv.div.offsetLeft) / (pv.div.offsetWidth || 1);
+
+    return {
       pageNumber,
-      destArray: [null, { name: 'XYZ' }, 0, TOP_OFFSET_PT, null],
-    });
+      relY: Math.max(0, Math.min(0.98, relY)),       // clamp
+      relX: Math.max(0, Math.min(0.98, relX))
+    };
   }
 
-  function wireWhenReady() {
+  function restoreSnapshot(snap) {
+    if (!snap) return;
     const app = window.PDFViewerApplication;
-    if (!app || !app.eventBus) {
-      // PDF.js not ready yet; try again shortly
-      return setTimeout(wireWhenReady, 80);
-    }
+    const viewer = app.pdfViewer;
+    const vc = document.getElementById('viewerContainer');
 
-    // After scale changes settle, re-center on the same page.
-    // Small delays help us run *after* layout thrash on iOS.
-    app.eventBus.on('scalechanged', () => {
-      requestAnimationFrame(() => {
-        setTimeout(reanchorToCurrentPage, 0);
-        setTimeout(reanchorToCurrentPage, 120); // safety re-try
-      });
-    });
+    const pv = viewer.getPageView(snap.pageNumber - 1);
+    if (!pv || !pv.div) return;
+
+    const top  = pv.div.offsetTop;
+    const left = pv.div.offsetLeft;
+    const h    = pv.div.offsetHeight || 1;
+    const w    = pv.div.offsetWidth  || 1;
+
+    const targetTop  = top  + snap.relY * h + OFFSET_PX; // keep title clear of find bar
+    const targetLeft = left + snap.relX * w;
+
+    // Do two RAFs so layout is fully settled on iOS before we jump.
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      vc.scrollTop  = targetTop;
+      vc.scrollLeft = targetLeft;
+    }));
   }
 
-  // Run once the viewer is around
-  if (document.readyState === 'complete') wireWhenReady();
-  else window.addEventListener('load', wireWhenReady);
-  window.addEventListener('webviewerloaded', wireWhenReady);
+  function install() {
+    if (!appReady()) return;
+
+    const app = window.PDFViewerApplication;
+    const viewer = app.pdfViewer;
+    const vc = document.getElementById('viewerContainer');
+
+    // Reduce browser "helpfulness" that can cause snaps.
+    vc.style.overscrollBehavior = 'contain';
+    vc.style.webkitOverflowScrolling = 'touch';
+
+    let lastSnap = null;
+    let scheduleRestore = () => {
+      // Try a few times as the canvas/text layers settle.
+      setTimeout(() => restoreSnapshot(lastSnap), 0);
+      setTimeout(() => restoreSnapshot(lastSnap), 120);
+      setTimeout(() => restoreSnapshot(lastSnap), 240);
+    };
+
+    // Take a snapshot right before things typically reflow.
+    const snapshotNow = () => { lastSnap = getSnapshot(); };
+
+    // iOS pinch lifecycle
+    vc.addEventListener('gesturestart', snapshotNow, { passive: true });
+    vc.addEventListener('gesturechange', () => { /* no-op: mid-zoom */ }, { passive: true });
+    vc.addEventListener('gestureend', () => { scheduleRestore(); }, { passive: true });
+
+    // PDF.js scale events (wheel zoom or programmatic)
+    app.eventBus.on('scalechanging', snapshotNow);
+    app.eventBus.on('scalechanged',  scheduleRestore);
+
+    // Orientation change / resize can also cause jumps
+    window.addEventListener('orientationchange', () => { snapshotNow(); scheduleRestore(); });
+    window.addEventListener('resize', () => { snapshotNow(); scheduleRestore(); });
+
+    // Also snapshot on scroll, so we always have a fresh anchor
+    vc.addEventListener('scroll', () => { lastSnap = getSnapshot(); }, { passive: true });
+
+    // Initial anchor after first layout
+    if (!lastSnap) lastSnap = getSnapshot();
+  }
+
+  function tryInstall() {
+    if (appReady()) install();
+    else setTimeout(tryInstall, 80);
+  }
+
+  if (document.readyState === 'complete') tryInstall();
+  else window.addEventListener('load', tryInstall);
+  window.addEventListener('webviewerloaded', tryInstall);
 })();
 </script>
+
 
 
 
