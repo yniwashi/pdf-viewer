@@ -635,36 +635,42 @@ See https://github.com/adobe-type-tools/cmap-resources
     toolbarContainer.appendChild(findbar);
   }
 
-  // >>> NEW: add a real spacer at the very top of the viewer content
-  function ensureTopSpacer() {
-    const vc = document.getElementById('viewerContainer');
-    const viewer = document.getElementById('viewer');
-    if (!vc || !viewer) return;
+  // >>> KEY: make PDF.js believe the toolbar is as tall as toolbar+findbar
+  function updateToolbarHeightVar() {
+    const tb = document.getElementById('toolbarContainer');
+    if (!tb) return;
 
-    let spacer = document.getElementById('viewerTopSpacer');
-    if (!spacer) {
-      spacer = document.createElement('div');
-      spacer.id = 'viewerTopSpacer';
-      spacer.style.width = '1px';
-      spacer.style.height = '0px';           // set below
-      spacer.style.pointerEvents = 'none';
-      spacer.style.flex = '0 0 auto';
-      // insert as FIRST child of the scroll content, before #viewer
-      vc.insertBefore(spacer, viewer);
+    // Real combined height (toolbar + your find bar)
+    const h = Math.ceil(tb.getBoundingClientRect().height);
+
+    // Update the CSS variable used by pdf.js viewer.css
+    document.documentElement.style.setProperty('--toolbar-height', h + 'px');
+
+    // Fallback override for themes/builds that hardcode top on containers
+    let styleEl = document.getElementById('viewer-top-override');
+    if (!styleEl) {
+      styleEl = document.createElement('style');
+      styleEl.id = 'viewer-top-override';
+      document.head.appendChild(styleEl);
     }
-
-    // Measure the find bar and give the spacer that height (+ a little breathing room)
-    const barH = findbar ? findbar.getBoundingClientRect().height : 0;
-    const extra = 8; // tweak if you want a touch more space
-    spacer.style.height = (barH + extra) + 'px';
+    styleEl.textContent =
+      `#mainContainer, #sidebarContainer { top:${h}px !important; }`;
+    // Note: #viewerContainer stays at top:0; it sits inside #mainContainer.
   }
 
-  // Run now, next frame (iOS layout), and on resize/rotation
-  ensureTopSpacer();
-  requestAnimationFrame(ensureTopSpacer);
-  window.addEventListener('resize', ensureTopSpacer);
+  // Run now, after layout ticks, and on resize/rotation
+  updateToolbarHeightVar();
+  requestAnimationFrame(updateToolbarHeightVar);
+  window.addEventListener('resize', updateToolbarHeightVar);
+  window.addEventListener('orientationchange', updateToolbarHeightVar);
 
-  // ----- your existing extras (keep them) -----
+  // If pdf.js re-measures after load, update again
+  window.addEventListener('webviewerloaded', () => {
+    requestAnimationFrame(updateToolbarHeightVar);
+    setTimeout(updateToolbarHeightVar, 150);
+  });
+
+  // ------- keep the rest of your script as-is below -------
 
   // Prefill from ?search=... or #search=...
   const paramsFromSearch = new URLSearchParams(window.location.search);
@@ -674,7 +680,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     const input = document.getElementById('findInput');
     if (input) {
       input.value = searchTerm;
-      input.dispatchEvent(new Event('input', { bubbles: true }));
+      input.dispatchEvent(new Event('input', { bubbles: true })); // trigger PDF.js find
     }
   }
 
@@ -684,7 +690,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
   if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
-  // Title lock
+  // Keep custom title
   const DESIRED_TITLE = "HMCAS CPG Viewer";
   function applyTitle() { document.title = DESIRED_TITLE; }
   applyTitle();
@@ -695,9 +701,9 @@ See https://github.com/adobe-type-tools/cmap-resources
       app.eventBus.on('documentloaded', applyTitle);
       app.eventBus.on('pagesloaded', () => {
         applyTitle();
-        // Re-assert spacer after pages load, in case layout shifted
-        ensureTopSpacer();
-        requestAnimationFrame(ensureTopSpacer);
+        // Re-assert toolbar height after pages load (iOS may shift)
+        updateToolbarHeightVar();
+        requestAnimationFrame(updateToolbarHeightVar);
       });
       return true;
     }
@@ -709,6 +715,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   }
 })();
 </script>
+
 
 
 
