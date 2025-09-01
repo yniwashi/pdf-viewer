@@ -732,66 +732,75 @@ See https://github.com/adobe-type-tools/cmap-resources
   by the height of the find bar so the page content is not hidden.
 -->
 <!--
-  Small downward nudge after opening a specific page (iPhone/iPad friendly).
-  Purpose: when the URL contains ?page= or #page=, PDF.js positions the page
-  flush with the top; with a fixed/always-visible search bar, the first lines
-  feel cramped. This script scrolls **down** a tiny bit (≈ two lines).
-  How: tries viewerContainer.scrollTop += NUDGE_PX, then scrollBy on the
-  container, then window.scrollBy as a fallback. Retries a few times to win
-  against late PDF.js adjustments on iOS Safari.
+  Align the requested page so its top sits just below the fixed find bar.
+  Works when URL has ?page= or #page=. We compute the target page's exact
+  top (via PDF.js pageView.div.offsetTop) and set viewerContainer.scrollTop
+  to (pageTop - findbarHeight - smallPadding), exactly once.
 -->
 <script>
 (function () {
-  const NUDGE_PX = 40;   // ~ two lines. Increase/decrease to taste.
-  const RETRIES  = 8;    // try multiple times in case PDF.js re-positions
-  const GAP_MS   = 120;  // delay between retries
+  const SMALL_PADDING = 8; // a little breathing room under the bar
+  let alignedOnce = false;
 
-  // Only run when a page number is specified in URL
-  const hasPage =
-    /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
-    /(^|[?&])page=\d+(\b|&)/i.test(location.search);
-  if (!hasPage) return;
-
-  function nudgeDown() {
-    const vc = document.getElementById('viewerContainer');
-
-    // Prefer nudging the PDF viewer container
-    if (vc) {
-      try { vc.scrollTop = (vc.scrollTop || 0) + NUDGE_PX; } catch {}
-      try { vc.scrollBy && vc.scrollBy(0, NUDGE_PX); } catch {}
-    }
-
-    // Fallback for odd iOS cases where the window scrolls instead
-    try { window.scrollBy(0, NUDGE_PX); } catch {}
+  function getRequestedPageNumber(app) {
+    // Prefer explicit URL page, otherwise fall back to app.page
+    const q = location.search + '&' + location.hash.substring(1);
+    const m = q.match(/(?:^|[?#&])page=(\d+)(?:$|&)/i);
+    if (m) return Math.max(1, parseInt(m[1], 10));
+    return app?.page || 1;
   }
 
-  function scheduleNudges() {
-    let tries = 0;
-    (function run() {
-      if (tries++ >= RETRIES) return;
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          nudgeDown();
-          setTimeout(run, GAP_MS);
-        });
-      });
-    })();
+  function alignExact() {
+    if (alignedOnce) return;
+    const app = window.PDFViewerApplication;
+    if (!app || !app.pdfViewer) return;
+
+    const vc = document.getElementById('viewerContainer');
+    const fb = document.getElementById('findbar');
+    if (!vc) return;
+
+    const pageNum = getRequestedPageNumber(app);
+    const viewer = app.pdfViewer;
+
+    // getPageView is stable API; index is 0-based
+    const pageView = viewer.getPageView?.(pageNum - 1);
+    if (!pageView || !pageView.div) return;
+
+    // Where the page actually starts inside the scrollable viewer
+    const pageTop = pageView.div.offsetTop;
+
+    // How much space the fixed find bar occupies
+    const barH = (fb && fb.offsetHeight) ? fb.offsetHeight : 0;
+
+    // Desired scroll so that the page's top is just under the bar
+    const target = Math.max(0, pageTop - barH - SMALL_PADDING);
+
+    vc.scrollTop = target;
+    alignedOnce = true;
   }
 
   function wire() {
     const app = window.PDFViewerApplication;
     if (app && app.eventBus) {
-      // After initial view is established
+      // Run once after layout is ready
       const once = () => {
-        app.eventBus.off('updateviewarea', once);
-        scheduleNudges();
+        app.eventBus.off('pagesloaded', once);
+        // Two RAFs ensure we run after PDF.js’ own initial scroll
+        requestAnimationFrame(() => requestAnimationFrame(alignExact));
       };
-      app.eventBus.on('updateviewarea', once);
-      app.eventBus.on('pagesloaded', () => setTimeout(scheduleNudges, 100));
-      app.eventBus.on('pagerendered', () => setTimeout(scheduleNudges, 150));
+      app.eventBus.on('pagesloaded', once);
+
+      // Safety: if view updates later (iOS oddities), align once there too
+      const onceView = () => {
+        app.eventBus.off('updateviewarea', onceView);
+        requestAnimationFrame(() => requestAnimationFrame(alignExact));
+      };
+      app.eventBus.on('updateviewarea', onceView);
     } else {
       // Fallback if eventBus not ready yet
-      window.addEventListener('load', () => setTimeout(scheduleNudges, 150));
+      window.addEventListener('load', () => {
+        requestAnimationFrame(() => requestAnimationFrame(alignExact));
+      });
     }
   }
 
