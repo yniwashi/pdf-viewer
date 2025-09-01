@@ -62,7 +62,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   }
   #findbar.findbar-top #findInput {
     flex: 1; max-width: none;
-    height: 32px; font-size: 15px;
+    height: 28px; font-size: 13px;
     padding: 4px 8px;
     background: #2a2a2a; color: #fff;
     border: 1px solid #454545; border-radius: 6px;
@@ -151,25 +151,23 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
 <style id="anti-jump-css">
-  /* Kill double-tap zoom; keep normal taps */
   html, body { height: 100%; overscroll-behavior: contain; touch-action: manipulation; }
 
-  /* Allow one-finger pan in BOTH directions when not pinching */
+  /* One-finger pan in BOTH directions when not pinching */
   #viewerContainer {
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     overflow-anchor: none;
-    touch-action: pan-x pan-y; /* was pan-y */
+    touch-action: pan-x pan-y; /* make sure it's both axes */
   }
 
-  /* Stop scroll anchoring inside pages */
   #viewer, .pdfViewer, .pdfViewer .page { overflow-anchor: none; }
 
-  /* Hide fragile layers during pinch to avoid visible “breaks” while reflowing */
+  /* Hide fragile layers during pinch so you never see desync */
   #viewerContainer.pinching .textLayer,
   #viewerContainer.pinching .annotationLayer { opacity: 0; pointer-events: none; }
 
-  /* Small rendering hints that reduce seams on iOS */
+  /* Compositing hints reduce subpixel seams on iOS */
   .pdfViewer .page, .canvasWrapper, .textLayer, .annotationLayer {
     will-change: transform;
     backface-visibility: hidden;
@@ -669,7 +667,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.4";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.5";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -747,11 +745,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 <script>
 /**
- * Anchored pinch for PDF.js 3.x (rAF-throttled + layer masking)
- * - Blocks native pinch entirely (no visual-viewport jumps)
- * - Live-zooms PDF.js during pinch (same approach as yours)
- * - rAF-throttles scale commits to avoid layer tearing
- * - Hides text/annotation layers while pinching to prevent visible “page breaks”
+ * Anchored pinch for PDF.js 3.x — CSS overlay during pinch, commit once on release.
+ * - Blocks native pinch (no visual-viewport jumps)
+ * - While pinching: CSS-transform the whole viewer (tear-free)
+ * - On release: commit final scale via _setScale(newScale, true) and restore anchor
  * - One finger pans in both axes when not pinching
  */
 (function () {
@@ -760,7 +757,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   const viewer = document.getElementById('viewer');
   if (!vc || !viewer || !app()) return;
 
-  // Hard-block Safari’s native pinch/double-tap zoom
+  // Block Safari page-level pinch / double-tap zoom
   ['gesturestart','gesturechange','gestureend'].forEach(t =>
     document.addEventListener(t, e => e.preventDefault(), { passive:false, capture:true })
   );
@@ -769,14 +766,12 @@ See https://github.com/adobe-type-tools/cmap-resources
   const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
 
   let pinch = null;
-  let scheduled = false;
-  let pendingScale = null;
 
-  function getAnchor() {
-    // keep your original "viewport center" anchor (stable and jitter-free)
+  // Finger midpoint anchor (very stable on commit)
+  function makeAnchor(midX, midY) {
     const pdfv = app().pdfViewer;
-    const cx = vc.scrollLeft + vc.clientWidth  / 2;
-    const cy = vc.scrollTop  + vc.clientHeight / 2;
+    const cx = vc.scrollLeft + midX;
+    const cy = vc.scrollTop  + midY;
 
     const pages = pdfv._pages || [];
     let pv = pages[pdfv._currentPageNumber - 1] || pages[0];
@@ -789,45 +784,28 @@ See https://github.com/adobe-type-tools/cmap-resources
   }
 
   function restore(anchor) {
+    if (!anchor || !anchor.pv) return;
     const d = anchor.pv.div;
-    const targetX = d.offsetLeft + anchor.rx * d.clientWidth  - vc.clientWidth/2;
-    const targetY = d.offsetTop  + anchor.ry * d.clientHeight - vc.clientHeight/2;
-    vc.scrollLeft = Math.max(0, Math.round(targetX));
-    vc.scrollTop  = Math.max(0, Math.round(targetY));
-  }
-
-  // rAF-coalesced commit → avoids PDF.js reflowing dozens of times per frame
-  function scheduleScaleCommit(scale, anchor) {
-    pendingScale = scale;
-    if (scheduled) return;
-    scheduled = true;
-
-    requestAnimationFrame(() => {
-      const pdfv = app().pdfViewer;
-      const s = clamp(pendingScale, MIN, MAX);
-      pendingScale = null;
-      // Prefer internal _setScale with no-scroll if available; fallback to currentScale
-      if (typeof pdfv._setScale === 'function') {
-        pdfv._setScale(s, /* noScroll */ true);
-      } else {
-        pdfv.currentScale = s;
-      }
-      // After layout, put the same content back under the viewport center
-      requestAnimationFrame(() => {
-        restore(anchor);
-        scheduled = false;
-      });
-    });
+    const x = d.offsetLeft + anchor.rx * d.clientWidth  - vc.clientWidth/2;
+    const y = d.offsetTop  + anchor.ry * d.clientHeight - vc.clientHeight/2;
+    vc.scrollLeft = Math.max(0, Math.round(x));
+    vc.scrollTop  = Math.max(0, Math.round(y));
   }
 
   function startPinch(t0, t1) {
+    const midX = (t0.clientX + t1.clientX) / 2;
+    const midY = (t0.clientY + t1.clientY) / 2;
+
     pinch = {
       startDist: Math.hypot(t0.clientX - t1.clientX, t0.clientY - t1.clientY),
       startScale: app().pdfViewer.currentScale,
-      anchor: getAnchor()
+      cssScale: 1,
+      anchor: makeAnchor(midX, midY)
     };
-    vc.classList.add('pinching');     // hide layers (via CSS)
-    vc.style.touchAction = 'none';    // block native pan while pinching
+
+    vc.classList.add('pinching');       // hides text/annotation layers
+    vc.style.touchAction = 'none';      // disable native pan while pinching
+    viewer.style.transformOrigin = '0 0';
   }
 
   function movePinch(t0, t1) {
@@ -835,21 +813,39 @@ See https://github.com/adobe-type-tools/cmap-resources
     const d = Math.hypot(t0.clientX - t1.clientX, t0.clientY - t1.clientY);
     if (!d || !pinch.startDist) return;
 
-    const factor = d / pinch.startDist;
-    const target = pinch.startScale * factor;
+    // Visual scale only (no PDF.js reflow while pinching) → no tearing
+    const targetScale = clamp(pinch.startScale * (d / pinch.startDist), MIN, MAX);
+    pinch.cssScale = targetScale / pinch.startScale;
+    viewer.style.transform = `scale(${pinch.cssScale})`;
 
-    // Commit at most once per rAF tick; avoids tearing at high zoom
-    scheduleScaleCommit(target, pinch.anchor);
+    // Keep the anchored content centered while visually scaled
+    const div = pinch.anchor.pv.div;
+    const anchorX = div.offsetLeft + pinch.anchor.rx * div.clientWidth;
+    const anchorY = div.offsetTop  + pinch.anchor.ry * div.clientHeight;
+    vc.scrollLeft = Math.max(0, Math.round(anchorX * pinch.cssScale - vc.clientWidth/2));
+    vc.scrollTop  = Math.max(0, Math.round(anchorY * pinch.cssScale - vc.clientHeight/2));
   }
 
   function endPinch() {
     if (!pinch) return;
-    // Ensure final commit happened at least once; restore anchor again for safety
-    const finalScale = clamp((app().pdfViewer.currentScale), MIN, MAX);
+
+    // Remove visual transform BEFORE committing scale to avoid flash
+    const finalScale = clamp(pinch.startScale * pinch.cssScale, MIN, MAX);
+    viewer.style.transform = '';
+    viewer.style.transformOrigin = '';
+
+    const pdfv = app().pdfViewer;
+    if (typeof pdfv._setScale === 'function') {
+      pdfv._setScale(finalScale, /* noScroll */ true);
+    } else {
+      pdfv.currentScale = finalScale;
+    }
+
+    // After layout, restore the exact anchor so nothing jumps
     requestAnimationFrame(() => requestAnimationFrame(() => restore(pinch.anchor)));
 
     vc.classList.remove('pinching');
-    vc.style.touchAction = 'pan-x pan-y'; // back to single-finger pan (both axes)
+    vc.style.touchAction = 'pan-x pan-y'; // back to single-finger pan
     pinch = null;
   }
 
@@ -868,9 +864,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
   vc.addEventListener('touchcancel', () => { if (pinch) endPinch(); }, { capture:true });
 
-  console.log('[PDF.js] Anchored pinch (throttled) active');
+  console.log('[PDF.js] Anchored pinch (CSS overlay) active');
 })();
 </script>
+
 
 
 
