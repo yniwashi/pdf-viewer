@@ -154,12 +154,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
 <style>
-  /* Add ~1 cm (28px) extra clearance below the toolbar+findbar */
-  #mainContainer,
-  #sidebarContainer {
-    top: calc(var(--toolbar-height) + 40px) !important; /* tweak 24–40px to taste */
-  }
+  /* Push ONLY the scrollable PDF viewport down ~40px (adjust to taste) */
+  #viewerContainer { top: 40px !important; }
 </style>
+
 
 
 
