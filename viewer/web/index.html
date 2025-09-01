@@ -23,7 +23,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <html dir="ltr" mozdisallowselectionprint>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google" content="notranslate">
     <title>HMCAS CPG Viewer 🚑</title>
 
@@ -63,7 +63,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   }
   #findbar.findbar-top #findInput {
     flex: 1; max-width: none;
-    height: 23px; font-size: 13px;
+    height: 32px; font-size: 15px;
     padding: 4px 8px;
     background: #2a2a2a; color: #fff;
     border: 1px solid #454545; border-radius: 6px;
@@ -149,32 +149,29 @@ See https://github.com/adobe-type-tools/cmap-resources
   }
 }
 </style>
-      
 
 
-<style>
+ <style>
   /* Keep your overlap fix */
   #viewerContainer { top: 55px !important; }
 
-</style>
+</style>      
+
 
 <style>
- /* Allow both horizontal + vertical scroll with one finger; 
-   pinch zoom still blocked by the JS script */
-html, body, #viewerContainer {
-  touch-action: pan-x pan-y !important;
-  -webkit-overflow-scrolling: touch;
-}
+  html, body { height: 100%; overscroll-behavior: contain; }
 
-#viewerContainer {
-  overflow-x: auto;
-  overscroll-behavior: contain;
-}
-  /* Stop scroll anchoring from “jumping” during layout changes */
-  #viewerContainer, #viewer, .pdfViewer, .pdfViewer .page { overflow-anchor: none; }
+  /* Let the container scroll naturally, but don't let Safari "re-anchor" it */
+  #viewerContainer {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    overflow-anchor: none;
+    touch-action: pan-y; /* one finger = scroll; we'll switch to none during pinch */
+  }
+
+  /* Stop per-page anchoring that can cause jumps when zooming */
+  #viewer, .pdfViewer, .pdfViewer .page { overflow-anchor: none; }
 </style>
-
-
 
 
 
@@ -667,7 +664,7 @@ html, body, #viewerContainer {
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.1";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.11";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -743,79 +740,128 @@ html, body, #viewerContainer {
 
 
 
-
-
-
-
 <script>
-/*
-  Hard-disable page zoom on iOS (and other browsers) so only PDF.js buttons can zoom.
-  - Blocks multi-touch pinch (touchstart/move with 2+ touches)
-  - Blocks iOS gesture events (gesturestart/change/end)
-  - Blocks Ctrl/Cmd + wheel (trackpad pinch -> wheel zoom)
-  - Blocks keyboard zoom shortcuts (Cmd/Ctrl + + / - / 0)
-  - Blocks double-tap-to-zoom on iOS
-  Notes:
-    * Listeners use {capture:true, passive:false} so preventDefault actually works.
-    * Attach at document/window to catch events even if inner elements stopPropagation.
-*/
-
+/**
+ * Anchored pinch-zoom for PDF.js on mobile Safari (and others).
+ * - One finger: normal vertical scroll.
+ * - Two fingers: prevent native pinch and drive PDF.js zoom, anchored at the pinch center.
+ */
 (function () {
-  // ----- 1) Block multi-touch pinch (most important) -----
-  function blockIfMultiTouch(e) {
-    if (e.touches && e.touches.length > 1) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }
-  }
-  document.addEventListener('touchstart', blockIfMultiTouch, { capture: true, passive: false });
-  document.addEventListener('touchmove',  blockIfMultiTouch, { capture: true, passive: false });
+  const vc = document.getElementById('viewerContainer');
+  const viewer = document.getElementById('viewer');
 
-  // ----- 2) iOS legacy gesture events (extra belt-and-suspenders) -----
-  ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
-    document.addEventListener(type, function (e) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }, { capture: true, passive: false });
+  // Guard: only run when PDF.js is available
+  function app() { return window.PDFViewerApplication; }
+
+  // ---- Pointer-based pinch (modern iOS & most browsers) ----
+  let p1 = null, p2 = null, isPinching = false;
+  let startDist = 0, startScale = 1;
+  let focalX = 0, focalY = 0;
+
+  const MIN_SCALE = 0.25;
+  const MAX_SCALE = 5;
+
+  function dist(a, b) {
+    const dx = a.clientX - b.clientX, dy = a.clientY - b.clientY;
+    return Math.hypot(dx, dy);
+  }
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+  // Switch touch-action during active pinch so the browser doesn't try to page-zoom.
+  function setPinchMode(on) {
+    vc.style.touchAction = on ? 'none' : 'pan-y';
+  }
+
+  vc.addEventListener('pointerdown', (e) => {
+    // Capture pointers that start inside the viewerContainer
+    vc.setPointerCapture?.(e.pointerId);
+    if (!p1) { p1 = e; return; }
+    if (!p2) {
+      p2 = e;
+      isPinching = true;
+      setPinchMode(true);
+
+      // Establish the pinch center in *content* coordinates (accounts for scroll)
+      const rect = viewer.getBoundingClientRect();
+      const cx = (p1.clientX + p2.clientX) / 2;
+      const cy = (p1.clientY + p2.clientY) / 2;
+      focalX = (cx - rect.left) + vc.scrollLeft;
+      focalY = (cy - rect.top)  + vc.scrollTop;
+
+      startDist  = dist(p1, p2);
+      startScale = app()?.pdfViewer?.currentScale || 1;
+    }
   });
 
-  // ----- 3) Block Ctrl/Cmd + wheel (trackpad pinch) -----
-  window.addEventListener('wheel', function (e) {
-    if (e.ctrlKey || e.metaKey) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }
-  }, { capture: true, passive: false });
+  vc.addEventListener('pointermove', (e) => {
+    if (!isPinching || !p1 || !p2) return;
+    // Keep the two tracked pointers updated
+    if (e.pointerId === p1.pointerId) p1 = e;
+    if (e.pointerId === p2.pointerId) p2 = e;
 
-  // ----- 4) Block keyboard zoom shortcuts -----
-  window.addEventListener('keydown', function (e) {
-    const k = e.key;
-    if ((e.ctrlKey || e.metaKey) && (k === '+' || k === '=' || k === '-' || k === '0')) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }
-  }, true);
+    const d = dist(p1, p2);
+    if (!d || !startDist) return;
 
-  // ----- 5) Block double-tap zoom on iOS -----
-  let lastTouchEnd = 0;
-  document.addEventListener('touchend', function (e) {
-    const now = Date.now();
-    if (now - lastTouchEnd < 300) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
+    const factor   = d / startDist;
+    const newScale = clamp(startScale * factor, MIN_SCALE, MAX_SCALE);
+    const pdfv     = app()?.pdfViewer;
+    if (!pdfv) return;
+
+    // Only update when scale actually changes a little (reduces jank)
+    if (Math.abs(newScale - pdfv.currentScale) > 0.01) {
+      const ratio = newScale / (pdfv.currentScale || newScale);
+      pdfv.currentScale = newScale;
+
+      // Keep the same content under the fingers:
+      // approximate by scaling the focal point and re-centering the viewport there.
+      const targetLeft = Math.round(focalX * (newScale / startScale) - vc.clientWidth  / 2);
+      const targetTop  = Math.round(focalY * (newScale / startScale) - vc.clientHeight / 2);
+      vc.scrollLeft = targetLeft;
+      vc.scrollTop  = targetTop;
     }
-    lastTouchEnd = now;
-  }, { capture: true, passive: false });
+
+    // Block native pinch zoom
+    e.preventDefault();
+  }, { passive: false });
+
+  function endPointer(e) {
+    if (p1 && e.pointerId === p1.pointerId) p1 = null;
+    else if (p2 && e.pointerId === p2.pointerId) p2 = null;
+
+    if (!p1 || !p2) {
+      isPinching = false;
+      setPinchMode(false);
+    }
+  }
+  vc.addEventListener('pointerup', endPointer);
+  vc.addEventListener('pointercancel', endPointer);
+  vc.addEventListener('pointerleave', (e) => { if (isPinching) endPointer(e); });
+
+  // ---- Safari fallback: legacy gesture events (some webviews) ----
+  // If Pointer Events aren’t firing, this keeps things usable.
+  let legacyStartScale = 1;
+  function legacyPdfScale() { return app()?.pdfViewer?.currentScale || 1; }
+  vc.addEventListener('gesturestart', (e) => {
+    legacyStartScale = legacyPdfScale();
+    setPinchMode(true);
+    e.preventDefault();
+  }, { passive: false });
+
+  vc.addEventListener('gesturechange', (e) => {
+    const pdfv = app()?.pdfViewer;
+    if (!pdfv) return;
+    const newScale = clamp(legacyStartScale * e.scale, MIN_SCALE, MAX_SCALE);
+    pdfv.currentScale = newScale;
+
+    // Center around the middle of the viewport in this fallback
+    vc.scrollLeft += 0;
+    vc.scrollTop  += 0;
+    e.preventDefault();
+  }, { passive: false });
+
+  vc.addEventListener('gestureend', () => setPinchMode(false));
 })();
 </script>
-
-
-
-
-
-
-
-
 
 
 
