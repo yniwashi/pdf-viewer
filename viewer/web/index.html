@@ -732,19 +732,21 @@ See https://github.com/adobe-type-tools/cmap-resources
   by the height of the find bar so the page content is not hidden.
 -->
  <!--
-  Tiny initial nudge (≈ two lines) after opening a specific page.
-  Works around PDF.js/iOS re-scrolling by retrying a few times.
-  Adjust NUDGE_PX if you want more/less (default 32px ~ two lines).
+  Tiny upward adjustment (≈ two lines) after PDF.js opens a page.
+  This ensures the page starts slightly lower on screen so the find bar
+  doesn’t cover the first text line.
+  Adjust NUDGE_PX if needed (default 32px ~ two lines).
 -->
 <script>
 (function () {
-  const NUDGE_PX = 32;     // ≈ two lines; change to taste
-  const RETRIES  = 6;      // try a few times in case PDF.js scrolls again
-  const GAP_MS   = 120;    // delay between retries
+  const NUDGE_PX = 32;   // ≈ two lines; increase if bar still overlaps
+  const RETRIES  = 6;    // run a few times in case PDF.js re-scrolls
+  const GAP_MS   = 120;
 
   function nudge(container) {
     if (!container) return;
-    container.scrollTop = container.scrollTop + NUDGE_PX;
+    // Move content UP by reducing scrollTop
+    container.scrollTop = Math.max(0, container.scrollTop - NUDGE_PX);
   }
 
   function scheduleNudges() {
@@ -753,11 +755,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     function run() {
       if (!vc || tries >= RETRIES) return;
-      // two RAFs to ensure we run after any ongoing layout/scroll
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           nudge(vc);
-          tries += 1;
+          tries++;
           setTimeout(run, GAP_MS);
         });
       });
@@ -766,7 +767,6 @@ See https://github.com/adobe-type-tools/cmap-resources
   }
 
   function wire() {
-    // Only when page is specified in URL (?#)page=N
     const hasPage =
       /(^|[?#&])page=\d+(\b|&)/i.test(location.hash) ||
       /(^|[?&])page=\d+(\b|&)/i.test(location.search);
@@ -774,17 +774,13 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     const app = window.PDFViewerApplication;
     if (app && app.eventBus) {
-      // Fire after the viewer establishes its initial view
       const once = () => {
         app.eventBus.off('updateviewarea', once);
         scheduleNudges();
       };
       app.eventBus.on('updateviewarea', once);
-      // Extra safety if pages finish later
       app.eventBus.on('pagesloaded', () => setTimeout(scheduleNudges, 100));
-      app.eventBus.on('pagerendered', () => setTimeout(scheduleNudges, 150));
     } else {
-      // Fallback if eventBus not ready yet
       window.addEventListener('load', () => setTimeout(scheduleNudges, 150));
     }
   }
