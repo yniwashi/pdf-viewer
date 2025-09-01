@@ -724,23 +724,6 @@ See https://github.com/adobe-type-tools/cmap-resources
       setTimeout(wireFirstLast, 1000);
     }
 
-(function () {
-  const toolbarContainer = document.getElementById('toolbarContainer');
-  const findbar = document.getElementById('findbar');
-  if (toolbarContainer && findbar) {
-    findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
-    findbar.classList.add('findbar-top');
-    toolbarContainer.appendChild(findbar);
-
-    // Set CSS var so the viewer sits below the find bar
-    const setFindbarOffset = () => {
-      const h = findbar.offsetHeight || 0;
-      document.documentElement.style.setProperty('--findbar-height', h + 'px');
-    };
-    setFindbarOffset();
-    window.addEventListener('resize', setFindbarOffset);
-    requestAnimationFrame(setFindbarOffset); // iOS layout tick
-  }
   })();
 </script>
 
@@ -758,6 +741,28 @@ See https://github.com/adobe-type-tools/cmap-resources
   scrollPageIntoView with an XYZ destination (top in POINTS, not pixels).
 -->
 
+<script>
+(function () {
+  const toolbarContainer = document.getElementById('toolbarContainer');
+  const findbar = document.getElementById('findbar');
+  if (toolbarContainer && findbar) {
+    findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
+    findbar.classList.add('findbar-top');
+    toolbarContainer.appendChild(findbar);
+
+    // Set CSS var so the viewer sits below the find bar
+    const setFindbarOffset = () => {
+      const h = findbar.offsetHeight || 0;
+      document.documentElement.style.setProperty('--findbar-height', h + 'px');
+    };
+    setFindbarOffset();
+    window.addEventListener('resize', setFindbarOffset);
+    requestAnimationFrame(setFindbarOffset); // iOS layout tick
+  }
+
+  /* keep your existing prefill/title hooks here */
+})();
+</script>
 
 
 
