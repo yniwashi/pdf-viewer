@@ -616,7 +616,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 <!-- Mount Findbar Script -->
 <script>
 (function () {
-  // Mount the find bar under the main toolbar (your existing behavior)
+  // Mount the find bar under the main toolbar and keep it visible
   const toolbarContainer = document.getElementById('toolbarContainer');
   const findbar = document.getElementById('findbar');
   if (toolbarContainer && findbar) {
@@ -625,41 +625,36 @@ See https://github.com/adobe-type-tools/cmap-resources
     toolbarContainer.appendChild(findbar);
   }
 
-  // >>> NEW: set viewerContainer top = toolbar-height + findbar-height (with !important)
-  function setViewerTopOffset() {
+  // >>> NEW: add a real spacer at the very top of the viewer content
+  function ensureTopSpacer() {
     const vc = document.getElementById('viewerContainer');
-    if (!vc) return;
+    const viewer = document.getElementById('viewer');
+    if (!vc || !viewer) return;
 
-    const root = document.documentElement;
-    // Read the toolbar height already defined by PDF.js CSS variables
-    const tbStr = getComputedStyle(root).getPropertyValue('--toolbar-height').trim();
-    const toolbarH = parseFloat(tbStr) || 0;
-
-    const fbH = findbar ? findbar.getBoundingClientRect().height : 0;
-    const total = Math.max(0, toolbarH + fbH);
-
-    // Try inline first
-    vc.style.top = total + 'px';
-
-    // If viewer.css was compiled with top: var(--toolbar-height) !important,
-    // inject a high-specificity override with !important.
-    const id = 'viewer-top-override';
-    let styleEl = document.getElementById(id);
-    if (!styleEl) {
-      styleEl = document.createElement('style');
-      styleEl.id = id;
-      document.head.appendChild(styleEl);
+    let spacer = document.getElementById('viewerTopSpacer');
+    if (!spacer) {
+      spacer = document.createElement('div');
+      spacer.id = 'viewerTopSpacer';
+      spacer.style.width = '1px';
+      spacer.style.height = '0px';           // set below
+      spacer.style.pointerEvents = 'none';
+      spacer.style.flex = '0 0 auto';
+      // insert as FIRST child of the scroll content, before #viewer
+      vc.insertBefore(spacer, viewer);
     }
-    styleEl.textContent =
-      `#outerContainer #mainContainer #viewerContainer{ top:${total}px !important; }`;
+
+    // Measure the find bar and give the spacer that height (+ a little breathing room)
+    const barH = findbar ? findbar.getBoundingClientRect().height : 0;
+    const extra = 8; // tweak if you want a touch more space
+    spacer.style.height = (barH + extra) + 'px';
   }
 
-  // Run now, after layout tick, and on resize/rotation
-  setViewerTopOffset();
-  requestAnimationFrame(setViewerTopOffset);
-  window.addEventListener('resize', setViewerTopOffset);
+  // Run now, next frame (iOS layout), and on resize/rotation
+  ensureTopSpacer();
+  requestAnimationFrame(ensureTopSpacer);
+  window.addEventListener('resize', ensureTopSpacer);
 
-  // ---- keep the rest of your script below (search prefill, title hooks, etc.) ----
+  // ----- your existing extras (keep them) -----
 
   // Prefill from ?search=... or #search=...
   const paramsFromSearch = new URLSearchParams(window.location.search);
@@ -673,21 +668,27 @@ See https://github.com/adobe-type-tools/cmap-resources
     }
   }
 
+  // Arrow button accessibility
   const prevBtn = document.getElementById('findPrevious');
   const nextBtn = document.getElementById('findNext');
   if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
   if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
+  // Title lock
   const DESIRED_TITLE = "HMCAS CPG Viewer";
   function applyTitle() { document.title = DESIRED_TITLE; }
   applyTitle();
-
   function hookEvents() {
     const app = window.PDFViewerApplication;
     if (app && app.eventBus) {
       app.eventBus.on('documenttitlechanged', applyTitle);
       app.eventBus.on('documentloaded', applyTitle);
-      app.eventBus.on('pagesloaded', applyTitle);
+      app.eventBus.on('pagesloaded', () => {
+        applyTitle();
+        // Re-assert spacer after pages load, in case layout shifted
+        ensureTopSpacer();
+        requestAnimationFrame(ensureTopSpacer);
+      });
       return true;
     }
     return false;
@@ -696,15 +697,9 @@ See https://github.com/adobe-type-tools/cmap-resources
     window.addEventListener('webviewerloaded', hookEvents);
     window.addEventListener('load', hookEvents);
   }
-
-  const head = document.querySelector('head');
-  if (head) {
-    new MutationObserver(() => {
-      if (document.title !== DESIRED_TITLE) applyTitle();
-    }).observe(head, { subtree: true, childList: true, characterData: true });
-  }
 })();
 </script>
+
 
 
 
