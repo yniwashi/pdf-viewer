@@ -152,10 +152,13 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 <style>
-  :root { --findbar-offset: 58px; } /* tweak if your find bar height changes */
-  #viewerContainer { scroll-padding-top: var(--findbar-offset); }
-  .pdfViewer .page { scroll-margin-top: var(--findbar-offset); }
+  :root { --findbar-height: 0px; }
+  /* Push the PDF content down by toolbar + findbar */
+  #viewerContainer {
+    top: calc(var(--toolbar-height) + var(--findbar-height)) !important;
+  }
 </style>
+
 
 
 
@@ -720,6 +723,24 @@ See https://github.com/adobe-type-tools/cmap-resources
       window.addEventListener('load', wireFirstLast);
       setTimeout(wireFirstLast, 1000);
     }
+
+(function () {
+  const toolbarContainer = document.getElementById('toolbarContainer');
+  const findbar = document.getElementById('findbar');
+  if (toolbarContainer && findbar) {
+    findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
+    findbar.classList.add('findbar-top');
+    toolbarContainer.appendChild(findbar);
+
+    // Set CSS var so the viewer sits below the find bar
+    const setFindbarOffset = () => {
+      const h = findbar.offsetHeight || 0;
+      document.documentElement.style.setProperty('--findbar-height', h + 'px');
+    };
+    setFindbarOffset();
+    window.addEventListener('resize', setFindbarOffset);
+    requestAnimationFrame(setFindbarOffset); // iOS layout tick
+  }
   })();
 </script>
 
@@ -736,59 +757,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   below the fixed find bar (works on iPhone/iPad). Uses PDF.js' own
   scrollPageIntoView with an XYZ destination (top in POINTS, not pixels).
 -->
-<script>
-(function () {
-  // Convert pixels → PDF points (1pt = 1/72", 1px = 1/96"): pt ≈ px * 0.75
-  function pxToPt(px) { return Math.round(px * 0.75); }
 
-  function getRequestedPage(app) {
-    const s = location.search + '&' + location.hash.slice(1);
-    const m = s.match(/(?:^|[?#&])page=(\d+)(?:$|&)/i);
-    return m ? Math.max(1, parseInt(m[1], 10)) : (app.page || 1);
-  }
-
-  function alignWithTopOffset() {
-    const app = window.PDFViewerApplication;
-    if (!app || !app.pdfViewer || !app.pdfLinkService) return;
-
-    const pageNumber = getRequestedPage(app);
-    const fb = document.getElementById('findbar');
-    const barPx = fb && fb.offsetHeight ? fb.offsetHeight : 0;
-    const extraPx = 8; // small breathing room under the bar
-    const topPt = pxToPt(barPx + extraPx);
-
-    // Ask PDF.js to scroll the requested page with an XYZ dest:
-    // [null, {name:'XYZ'}, left, top, zoom]; zoom=null keeps current zoom
-    app.pdfViewer.scrollPageIntoView({
-      pageNumber,
-      destArray: [null, { name: 'XYZ' }, 0, topPt, null]
-    });
-  }
-
-  function wire() {
-    const app = window.PDFViewerApplication;
-    if (app && app.eventBus) {
-      // Run once after initial location is applied, then again shortly after
-      const kick = () => {
-        // Two RAFs ensure we run after PDF.js internal positioning
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          alignWithTopOffset();
-          // Safety retries to beat late reflows on iOS
-          setTimeout(alignWithTopOffset, 120);
-          setTimeout(alignWithTopOffset, 240);
-        }));
-      };
-      app.eventBus.on('pagesinitialized', kick);
-      app.eventBus.on('pagesloaded', () => setTimeout(kick, 60));
-    } else {
-      window.addEventListener('load', () => setTimeout(alignWithTopOffset, 120));
-    }
-  }
-
-  wire();
-  window.addEventListener('webviewerloaded', wire);
-})();
-</script>
 
 
 
