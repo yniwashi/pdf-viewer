@@ -615,71 +615,97 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 <!-- Mount Findbar Script -->
 <script>
-  (function () {
-    // Mount the find bar under the main toolbar and keep it visible
-    const toolbarContainer = document.getElementById('toolbarContainer');
-    const findbar = document.getElementById('findbar');
-    if (toolbarContainer && findbar) {
-      findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
-      findbar.classList.add('findbar-top');
-      toolbarContainer.appendChild(findbar);
+(function () {
+  // Mount the find bar under the main toolbar (your existing behavior)
+  const toolbarContainer = document.getElementById('toolbarContainer');
+  const findbar = document.getElementById('findbar');
+  if (toolbarContainer && findbar) {
+    findbar.classList.remove('hidden', 'doorHanger', 'doorHangerRight');
+    findbar.classList.add('findbar-top');
+    toolbarContainer.appendChild(findbar);
+  }
 
-      // >>> NEW: measure the find bar and push the viewer down
-      const setFindbarOffset = () => {
-        const h = findbar.offsetHeight || 0;
-        document.documentElement.style.setProperty('--findbar-height', h + 'px');
-      };
-      setFindbarOffset();
-      window.addEventListener('resize', setFindbarOffset);
-      requestAnimationFrame(setFindbarOffset); // iOS layout tick
+  // >>> NEW: set viewerContainer top = toolbar-height + findbar-height (with !important)
+  function setViewerTopOffset() {
+    const vc = document.getElementById('viewerContainer');
+    if (!vc) return;
+
+    const root = document.documentElement;
+    // Read the toolbar height already defined by PDF.js CSS variables
+    const tbStr = getComputedStyle(root).getPropertyValue('--toolbar-height').trim();
+    const toolbarH = parseFloat(tbStr) || 0;
+
+    const fbH = findbar ? findbar.getBoundingClientRect().height : 0;
+    const total = Math.max(0, toolbarH + fbH);
+
+    // Try inline first
+    vc.style.top = total + 'px';
+
+    // If viewer.css was compiled with top: var(--toolbar-height) !important,
+    // inject a high-specificity override with !important.
+    const id = 'viewer-top-override';
+    let styleEl = document.getElementById(id);
+    if (!styleEl) {
+      styleEl = document.createElement('style');
+      styleEl.id = id;
+      document.head.appendChild(styleEl);
     }
+    styleEl.textContent =
+      `#outerContainer #mainContainer #viewerContainer{ top:${total}px !important; }`;
+  }
 
-    // Prefill from ?search=... or #search=...
-    const paramsFromSearch = new URLSearchParams(window.location.search);
-    const paramsFromHash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
-    const searchTerm = paramsFromHash.get('search') || paramsFromSearch.get('search');
-    if (searchTerm) {
-      const input = document.getElementById('findInput');
-      if (input) {
-        input.value = searchTerm;
-        input.dispatchEvent(new Event('input', { bubbles: true })); // trigger PDF.js find
-      }
+  // Run now, after layout tick, and on resize/rotation
+  setViewerTopOffset();
+  requestAnimationFrame(setViewerTopOffset);
+  window.addEventListener('resize', setViewerTopOffset);
+
+  // ---- keep the rest of your script below (search prefill, title hooks, etc.) ----
+
+  // Prefill from ?search=... or #search=...
+  const paramsFromSearch = new URLSearchParams(window.location.search);
+  const paramsFromHash = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+  const searchTerm = paramsFromHash.get('search') || paramsFromSearch.get('search');
+  if (searchTerm) {
+    const input = document.getElementById('findInput');
+    if (input) {
+      input.value = searchTerm;
+      input.dispatchEvent(new Event('input', { bubbles: true }));
     }
+  }
 
-    // Arrow button accessibility
-    const prevBtn = document.getElementById('findPrevious');
-    const nextBtn = document.getElementById('findNext');
-    if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
-    if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
+  const prevBtn = document.getElementById('findPrevious');
+  const nextBtn = document.getElementById('findNext');
+  if (prevBtn) { prevBtn.title = "Find previous (up)"; prevBtn.setAttribute('aria-label','Find previous'); }
+  if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
-    // --------- Keep custom tab title ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer";
-    function applyTitle() { document.title = DESIRED_TITLE; }
-    applyTitle();
+  const DESIRED_TITLE = "HMCAS CPG Viewer";
+  function applyTitle() { document.title = DESIRED_TITLE; }
+  applyTitle();
 
-    function hookEvents() {
-      const app = window.PDFViewerApplication;
-      if (app && app.eventBus) {
-        app.eventBus.on('documenttitlechanged', applyTitle);
-        app.eventBus.on('documentloaded', applyTitle);
-        app.eventBus.on('pagesloaded', applyTitle);
-        return true;
-      }
-      return false;
+  function hookEvents() {
+    const app = window.PDFViewerApplication;
+    if (app && app.eventBus) {
+      app.eventBus.on('documenttitlechanged', applyTitle);
+      app.eventBus.on('documentloaded', applyTitle);
+      app.eventBus.on('pagesloaded', applyTitle);
+      return true;
     }
-    if (!hookEvents()) {
-      window.addEventListener('webviewerloaded', hookEvents);
-      window.addEventListener('load', hookEvents);
-    }
+    return false;
+  }
+  if (!hookEvents()) {
+    window.addEventListener('webviewerloaded', hookEvents);
+    window.addEventListener('load', hookEvents);
+  }
 
-    const head = document.querySelector('head');
-    if (head) {
-      new MutationObserver(() => {
-        if (document.title !== DESIRED_TITLE) applyTitle();
-      }).observe(head, { subtree: true, childList: true, characterData: true });
-    }
-  })();
+  const head = document.querySelector('head');
+  if (head) {
+    new MutationObserver(() => {
+      if (document.title !== DESIRED_TITLE) applyTitle();
+    }).observe(head, { subtree: true, childList: true, characterData: true });
+  }
+})();
 </script>
+
 
 
       <script>
