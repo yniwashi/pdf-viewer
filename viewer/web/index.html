@@ -190,22 +190,22 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 
-<style id="one-finger-drag-css">
+<style id="one-finger-drag-v2-css">
+  /* While we’re actively dragging, prevent text selection & taps */
   #viewerContainer.dragging,
   #viewerContainer.dragging * {
     -webkit-user-select: none !important;
     user-select: none !important;
   }
-  /* Avoid catching links/annotations/text while dragging */
   #viewerContainer.dragging .textLayer,
   #viewerContainer.dragging .annotationLayer {
     pointer-events: none !important;
   }
-  /* (Optional desktop nicety) */
   @media (hover:hover) {
     #viewerContainer.dragging { cursor: grabbing; }
   }
 </style>
+
 
 
 
@@ -699,7 +699,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.5";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.1";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -965,76 +965,114 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 <script>
 /**
- * One-finger horizontal drag booster for PDF.js (keeps the no-jump approach)
- * - Activates only when zoomed in (>1.02)
- * - Axis-locks to horizontal after a small threshold
- * - Prevents text selection while dragging, then restores it
- * - Adds a small gain so short swipes move farther
+ * One-finger horizontal drag booster v2 (keeps your no-jump setup)
+ * - Activates only when zoomed in (>1.02) and the gesture is clearly horizontal
+ * - Axis-locks to horizontal after a tiny threshold
+ * - Disables selection while dragging to avoid stickiness
+ * - Adds gentle momentum on release so you don’t need repeated swipes
+ * - Coexists with your Hand Tool booster; we stop propagation when we take over
  */
 (function () {
   const app = () => window.PDFViewerApplication;
   const vc  = document.getElementById('viewerContainer');
   if (!vc || !app()) return;
 
+  // Tunables
+  const ZOOM_GATE     = 1.02;   // engage only when zoomed in
+  const THRESH        = 6;      // px before axis lock decision
+  const HORZ_DOM      = 1.12;   // must be ~12% more horizontal than vertical
+  const GAIN          = 1.35;   // horizontal movement multiplier
+  const MOMENTUM_MS   = 450;    // momentum duration (ms)
+  const EASING        = t => 1 - Math.exp(-5 * t); // smooth ease-out
+
   let dragging = false;
-  let axis = null;                // 'x' | 'y' | null
+  let axis = null;          // 'x' | null (we only take over for horizontal)
   let startX = 0, startY = 0;
-  let startLeft = 0, startTop = 0;
-  const THRESH = 8;               // px movement before we lock an axis
-  const BIAS   = 1.2;             // movement gain to reduce repeated swipes
-  const HORZ_DOMINANCE = 1.1;     // must be ~10% more horizontal than vertical to lock 'x'
+  let startLeft = 0;
+  let lastX = 0, lastT = 0, vx = 0; // simple velocity tracking
+  let momentumId = 0;
 
   function scale() { return app()?.pdfViewer?.currentScale || 1; }
 
-  vc.addEventListener('touchstart', (e) => {
-    if (e.touches.length !== 1) return;           // only 1-finger drags
-    if (scale() <= 1.02) return;                  // only when zoomed in
-    // We’ll decide to take over after threshold; let browser start normally
+  function killMomentum() {
+    if (momentumId) cancelAnimationFrame(momentumId);
+    momentumId = 0;
+  }
+
+  function onStart(e) {
+    if (e.touches.length !== 1) return;
+    if (scale() <= ZOOM_GATE) return;
+
+    killMomentum();
     dragging = false;
     axis = null;
-    startX = e.touches[0].clientX;
+    startX = lastX = e.touches[0].clientX;
     startY = e.touches[0].clientY;
     startLeft = vc.scrollLeft;
-    startTop  = vc.scrollTop;
-  }, { passive: true, capture: true });
+    lastT = performance.now();
+  }
 
-  vc.addEventListener('touchmove', (e) => {
+  function onMove(e) {
     if (e.touches.length !== 1) return;
-    if (scale() <= 1.02) return;
+    if (scale() <= ZOOM_GATE) return;
 
     const x = e.touches[0].clientX;
     const y = e.touches[0].clientY;
     const dx = x - startX;
     const dy = y - startY;
 
+    // Decide if we take over
     if (!dragging) {
-      // lock axis after small threshold
-      if (Math.hypot(dx, dy) < THRESH) return;
-      axis = (Math.abs(dx) > Math.abs(dy) * HORZ_DOMINANCE) ? 'x' : 'y';
-      // only take over if it’s a horizontal intent; otherwise let vertical scroll behave normally
-      if (axis !== 'x') return;
+      if (Math.hypot(dx, dy) < THRESH) return; // need a bit more intent
+      axis = (Math.abs(dx) > Math.abs(dy) * HORZ_DOM) ? 'x' : null;
+      if (axis !== 'x') return;                // let native vertical scroll happen
+      // Take control: block native handling & PDF.js handlers
       dragging = true;
       vc.classList.add('dragging');
-      vc.style.touchAction = 'none';  // fully take control during horizontal drag
+      vc.style.touchAction = 'none';
       e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation?.();
       return;
     }
 
     // We’re in a horizontal drag session
-    e.preventDefault(); // stop text selection / native gestures
-    vc.scrollLeft = startLeft - dx * BIAS;
-  }, { passive: false, capture: true });
+    const now = performance.now();
+    const dt = Math.max(1, now - lastT);
+    vx = (x - lastX) / dt;            // track velocity (px/ms)
+    lastX = x; lastT = now;
 
-  function endDrag() {
-    if (!dragging) return;
-    dragging = false;
-    axis = null;
-    vc.classList.remove('dragging');
-    vc.style.touchAction = 'pan-x pan-y'; // allow natural pan again post-drag
+    e.preventDefault();
+    e.stopPropagation();
+    vc.scrollLeft = startLeft - dx * GAIN;
   }
 
-  vc.addEventListener('touchend', endDrag,   { capture: true });
-  vc.addEventListener('touchcancel', endDrag,{ capture: true });
+  function onEnd(e) {
+    if (!dragging) return;
+    dragging = false;
+    vc.classList.remove('dragging');
+    vc.style.touchAction = 'pan-x pan-y';
+
+    // Momentum: project a short glide based on last vx
+    const start = performance.now();
+    const initLeft = vc.scrollLeft;
+    const pixels = Math.max(-800, Math.min(800, vx * MOMENTUM_MS * 0.6)); // clamp distance
+
+    function step(t) {
+      const p = Math.min(1, (t - start) / MOMENTUM_MS);
+      const eased = EASING(p);
+      vc.scrollLeft = initLeft - pixels * eased;
+      if (p < 1) momentumId = requestAnimationFrame(step);
+      else momentumId = 0;
+    }
+    if (Math.abs(pixels) > 4) momentumId = requestAnimationFrame(step);
+  }
+
+  // Use capture + non-passive when we might preventDefault
+  vc.addEventListener('touchstart', onStart, { capture: true, passive: true  });
+  vc.addEventListener('touchmove',  onMove,  { capture: true, passive: false });
+  vc.addEventListener('touchend',   onEnd,   { capture: true });
+  vc.addEventListener('touchcancel',onEnd,   { capture: true });
 })();
 </script>
 
