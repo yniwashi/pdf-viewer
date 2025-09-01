@@ -730,10 +730,52 @@ See https://github.com/adobe-type-tools/cmap-resources
   by the height of the find bar so the page content is not hidden.
 -->
 <!--
-  Open requested page with a small TOP offset so its first line sits just
-  below the fixed find bar (works on iPhone/iPad). Uses PDF.js' own
-  scrollPageIntoView with an XYZ destination (top in POINTS, not pixels).
+  Simple one-time nudge: move the PDF view ~1 cm DOWN.
+  We capture the initial scrollTop that PDF.js sets, then set a fixed
+  target = base + 1cm. We retry setting that SAME target a couple of times
+  to beat iOS/PDF.js late adjustments without drifting further.
 -->
+<script>
+(function () {
+  // 1 cm ≈ 37.8 CSS px (1in = 96 px, 1cm = 96/2.54)
+  const ONE_CM_PX = Math.round(96 / 2.54); // ≈ 38
+
+  function nudgeOnce() {
+    const vc = document.getElementById('viewerContainer');
+    if (!vc) return;
+
+    // Where PDF.js positioned the page initially
+    const base = vc.scrollTop || 0;
+    const target = base + ONE_CM_PX;
+
+    const apply = () => { vc.scrollTop = target; };
+
+    // Apply now and re-apply the SAME target a couple times to win races
+    requestAnimationFrame(apply);
+    setTimeout(apply, 120);
+    setTimeout(apply, 240);
+  }
+
+  function wire() {
+    const app = window.PDFViewerApplication;
+
+    if (app && app.eventBus) {
+      // After PDF.js initializes pages
+      app.eventBus.on('pagesinitialized', nudgeOnce);
+
+      // Also run once after the first view update (then detach)
+      const once = () => { app.eventBus.off('updateviewarea', once); nudgeOnce(); };
+      app.eventBus.on('updateviewarea', once);
+    } else {
+      // Fallback if eventBus not ready
+      window.addEventListener('load', () => setTimeout(nudgeOnce, 200));
+    }
+  }
+
+  wire();
+})();
+</script>
+
 
 
 
