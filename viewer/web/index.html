@@ -699,7 +699,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "🚑 HMCAS CPG Viewer v0.1";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "🚑 HMCAS CPG Viewer v0.2";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -981,8 +981,8 @@ See https://github.com/adobe-type-tools/cmap-resources
   const ZOOM_GATE     = 1.02;   // engage only when zoomed in
   const THRESH        = 6;      // px before axis lock decision
   const HORZ_DOM      = 1.12;   // must be ~12% more horizontal than vertical
-  const GAIN          = 1.35;   // horizontal movement multiplier
-  const MOMENTUM_MS   = 450;    // momentum duration (ms)
+  const GAIN          = 1.5;   // horizontal movement multiplier
+  const MOMENTUM_MS   = 600;    // momentum duration (ms)
   const EASING        = t => 1 - Math.exp(-5 * t); // smooth ease-out
 
   let dragging = false;
