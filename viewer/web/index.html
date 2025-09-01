@@ -177,7 +177,17 @@ See https://github.com/adobe-type-tools/cmap-resources
   .pdfViewer .page canvas { width: inherit !important; }
 </style>
 
+<style id="pan-ease">
+  /* Allow the inner viewer itself to accept horizontal/vertical drags */
+  #viewer { touch-action: pan-x pan-y; }
+</style>
 
+
+<style>
+  /* Keep your overlap fix */
+  #viewerContainer { top: 55px !important; }
+
+</style>
 
 
 
@@ -670,7 +680,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.1";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.2";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
