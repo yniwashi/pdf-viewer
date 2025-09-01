@@ -680,7 +680,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.3";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.4";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -922,7 +922,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
   function setHandIfZoomed() {
     const scale = app()?.pdfViewer?.currentScale || 1;
-    switchCursorTool(scale > 1.02 ? HAND : SELECT);
+    switchCursorTool(HAND);
   }
 
   // Wait for viewer to be ready, then listen for scale changes
