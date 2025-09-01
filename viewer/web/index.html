@@ -680,7 +680,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.2";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.3";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -894,6 +894,53 @@ See https://github.com/adobe-type-tools/cmap-resources
 </script>
 
 
+<script>
+/**
+ * Hand Tool booster:
+ * - When scale > 1.02 → switch to Hand Tool (drag to pan with one finger)
+ * - When scale <= 1.02 → switch back to Text Selection
+ * Works alongside your existing pinch script (no changes needed there).
+ */
+(function () {
+  const app = () => window.PDFViewerApplication;
+  const HAND = 1, SELECT = 0;
+
+  function switchCursorTool(tool) {
+    const a = app(); if (!a?.eventBus) return;
+    a.eventBus.dispatch("switchcursortool", { tool });
+
+    // Keep UI buttons visually in sync (optional but nice)
+    const handBtn = document.getElementById("cursorHandTool");
+    const selBtn  = document.getElementById("cursorSelectTool");
+    if (handBtn && selBtn) {
+      handBtn.classList.toggle("toggled", tool === HAND);
+      selBtn.classList.toggle("toggled", tool === SELECT);
+      handBtn.setAttribute("aria-checked", tool === HAND ? "true" : "false");
+      selBtn.setAttribute("aria-checked",  tool === SELECT ? "true" : "false");
+    }
+  }
+
+  function setHandIfZoomed() {
+    const scale = app()?.pdfViewer?.currentScale || 1;
+    switchCursorTool(scale > 1.02 ? HAND : SELECT);
+  }
+
+  // Wait for viewer to be ready, then listen for scale changes
+  const init = setInterval(() => {
+    const a = app(); if (!a?.eventBus) return;
+    a.eventBus.on("pagesinitialized", setHandIfZoomed);
+    a.eventBus.on("scalechanged", setHandIfZoomed);
+    clearInterval(init);
+  }, 120);
+
+  // Also re-check right after any pinch ends (touchend inside the container)
+  const vc = document.getElementById("viewerContainer");
+  vc?.addEventListener("touchend", () => setTimeout(setHandIfZoomed, 0), { capture: true });
+
+  // First run
+  document.addEventListener("DOMContentLoaded", () => setTimeout(setHandIfZoomed, 0));
+})();
+</script>
 
 
 
