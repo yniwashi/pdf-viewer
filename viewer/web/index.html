@@ -23,10 +23,9 @@ See https://github.com/adobe-type-tools/cmap-resources
 <html dir="ltr" mozdisallowselectionprint>
   <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="google" content="notranslate">
-<title>HMCAS CPG Viewer 🚑</title>
+    <title>HMCAS CPG Viewer 🚑</title>
 
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.properties">
@@ -152,6 +151,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
       
 
+
 <style>
   /* Keep your overlap fix */
   #viewerContainer { top: 55px !important; }
@@ -159,14 +159,15 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 <style>
-  /* No browser zoom, allow vertical pan only */
+  /* Allow vertical scroll, but NOT pinch-zoom gestures */
   html, body, #viewerContainer {
-    touch-action: pan-y !important; /* blocks pinch-zoom */
-    -webkit-text-size-adjust: 100%;
+    touch-action: pan-y !important;
     -webkit-overflow-scrolling: touch;
   }
-</style>
 
+  /* Stop scroll anchoring from “jumping” during layout changes */
+  #viewerContainer, #viewer, .pdfViewer, .pdfViewer .page { overflow-anchor: none; }
+</style>
 
 
 
@@ -661,7 +662,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.6";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -736,27 +737,52 @@ See https://github.com/adobe-type-tools/cmap-resources
 </script>
 
 
+
+
+
+
+
 <script>
 /*
-  Disable every zoom path except PDF.js toolbar buttons:
-   - Page pinch-zoom (already blocked by viewport + touch-action)
-   - Ctrl/Cmd + wheel (trackpad pinch mapped to wheel)
-   - Keyboard shortcuts (Cmd/Ctrl + + / - / = / 0)
-   - iOS gesture events (older Safari)
-   - Double-tap zoom
+  Hard-disable page zoom on iOS (and other browsers) so only PDF.js buttons can zoom.
+  - Blocks multi-touch pinch (touchstart/move with 2+ touches)
+  - Blocks iOS gesture events (gesturestart/change/end)
+  - Blocks Ctrl/Cmd + wheel (trackpad pinch -> wheel zoom)
+  - Blocks keyboard zoom shortcuts (Cmd/Ctrl + + / - / 0)
+  - Blocks double-tap-to-zoom on iOS
+  Notes:
+    * Listeners use {capture:true, passive:false} so preventDefault actually works.
+    * Attach at document/window to catch events even if inner elements stopPropagation.
 */
-(function () {
-  const vc = document.getElementById('viewerContainer');
 
-  // Block Ctrl/Cmd + wheel zoom
-  (vc || window).addEventListener('wheel', function (e) {
+(function () {
+  // ----- 1) Block multi-touch pinch (most important) -----
+  function blockIfMultiTouch(e) {
+    if (e.touches && e.touches.length > 1) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }
+  }
+  document.addEventListener('touchstart', blockIfMultiTouch, { capture: true, passive: false });
+  document.addEventListener('touchmove',  blockIfMultiTouch, { capture: true, passive: false });
+
+  // ----- 2) iOS legacy gesture events (extra belt-and-suspenders) -----
+  ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
+    document.addEventListener(type, function (e) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    }, { capture: true, passive: false });
+  });
+
+  // ----- 3) Block Ctrl/Cmd + wheel (trackpad pinch) -----
+  window.addEventListener('wheel', function (e) {
     if (e.ctrlKey || e.metaKey) {
       e.preventDefault();
       e.stopImmediatePropagation();
     }
   }, { capture: true, passive: false });
 
-  // Block common keyboard zoom shortcuts
+  // ----- 4) Block keyboard zoom shortcuts -----
   window.addEventListener('keydown', function (e) {
     const k = e.key;
     if ((e.ctrlKey || e.metaKey) && (k === '+' || k === '=' || k === '-' || k === '0')) {
@@ -765,23 +791,15 @@ See https://github.com/adobe-type-tools/cmap-resources
     }
   }, true);
 
-  // iOS old-style pinch gestures (extra belt-and-suspenders)
-  ['gesturestart', 'gesturechange', 'gestureend'].forEach(type => {
-    (vc || document).addEventListener(type, function (e) {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }, { capture: true, passive: false });
-  });
-
-  // Prevent double-tap zoom on iOS
-  let lastTouch = 0;
-  (vc || document).addEventListener('touchend', function (e) {
+  // ----- 5) Block double-tap zoom on iOS -----
+  let lastTouchEnd = 0;
+  document.addEventListener('touchend', function (e) {
     const now = Date.now();
-    if (now - lastTouch < 300) {
+    if (now - lastTouchEnd < 300) {
       e.preventDefault();
       e.stopImmediatePropagation();
     }
-    lastTouch = now;
+    lastTouchEnd = now;
   }, { capture: true, passive: false });
 })();
 </script>
@@ -792,6 +810,11 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
 
+
+
+
+
+      
     
   </body>
 </html>
