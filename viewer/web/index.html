@@ -151,26 +151,29 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 
- <style>
-  /* Keep your overlap fix */
-  #viewerContainer { top: 55px !important; }
-
-</style>      
-
 <style id="anti-jump-css">
   /* Kill double-tap zoom; keep normal taps */
   html, body { height: 100%; overscroll-behavior: contain; touch-action: manipulation; }
 
-  /* Normal one-finger vertical scroll; we’ll switch to none during pinch */
+  /* Allow one-finger pan in BOTH directions by default */
   #viewerContainer {
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     overflow-anchor: none;
-    touch-action: pan-y;
+    touch-action: pan-x pan-y; /* <- changed from pan-y */
   }
 
-  /* Stop scroll anchoring inside pages */
   #viewer, .pdfViewer, .pdfViewer .page { overflow-anchor: none; }
+
+  /* While pinching, hide fragile layers to prevent tearing */
+  #viewerContainer.pinching .textLayer,
+  #viewerContainer.pinching .annotationLayer { opacity: 0; pointer-events: none; }
+
+  /* Small GPU hint to reduce subpixel seams on some iPhones */
+  .pdfViewer .page, .canvasWrapper, .textLayer, .annotationLayer {
+    will-change: transform;
+    backface-visibility: hidden;
+  }
 </style>
 
 
@@ -663,7 +666,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.1";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.2";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -741,33 +744,36 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 <script>
 /**
- * iOS-safe anchored pinch for PDF.js 3.x
- * - Blocks native pinch entirely (so Safari can’t change the visual viewport)
- * - Two-finger pinch scales PDF.js and keeps the same content centered
- * - One finger still scrolls vertically
+ * Hybrid iOS pinch for PDF.js 3.x
+ * - During pinch: block native pinch, scale the entire viewer with CSS (no PDF.js reflow → no tearing)
+ * - After pinch: commit final scale to PDF.js and restore the same anchor position
+ * - One finger pans freely (pan-x pan-y); during pinch we set touchAction:none
  */
 (function () {
-  const app = () => window.PDFViewerApplication;
-  const vc  = document.getElementById('viewerContainer');
+  const vc = document.getElementById('viewerContainer');
   const viewer = document.getElementById('viewer');
-  if (!vc || !viewer) return;
+  const app = () => window.PDFViewerApplication;
+  if (!vc || !viewer || !app()) return;
 
-  // 1) HARD BLOCK Safari’s native pinch at the document level
+  // Hard-block Safari native pinch/double-tap zoom
   ['gesturestart','gesturechange','gestureend'].forEach(type => {
     document.addEventListener(type, e => e.preventDefault(), { passive:false, capture:true });
   });
 
-  // 2) Our anchored pinch (touch events; capture + passive:false so iOS obeys preventDefault)
-  let pinch = null, rafId = 0;
+  const MIN_SCALE = 0.25, MAX_SCALE = 5;
   const clamp = (v,a,b) => Math.max(a, Math.min(b, v));
 
+  let pinch = null;
+
   function getAnchor() {
-    const pdfv = app().pdfViewer;
+    // center of viewport in content coords
     const cx = vc.scrollLeft + vc.clientWidth  / 2;
     const cy = vc.scrollTop  + vc.clientHeight / 2;
-    const pages = pdfv._pages; // internal but stable in 3.x
-    let pv = pages[pdfv._currentPageNumber - 1];
 
+    // find page under center to compute relative position
+    const pdfv = app().pdfViewer;
+    const pages = pdfv._pages || [];
+    let pv = pages[pdfv._currentPageNumber - 1] || pages[0];
     for (let i = 0; i < pages.length; i++) {
       const d = pages[i].div, top = d.offsetTop, bot = top + d.clientHeight;
       if (cy >= top && cy < bot) { pv = pages[i]; break; }
@@ -777,6 +783,7 @@ See https://github.com/adobe-type-tools/cmap-resources
   }
 
   function restore(anchor) {
+    if (!anchor || !anchor.pv) return;
     const d = anchor.pv.div;
     const targetX = d.offsetLeft + anchor.rx * d.clientWidth  - vc.clientWidth/2;
     const targetY = d.offsetTop  + anchor.ry * d.clientHeight - vc.clientHeight/2;
@@ -784,43 +791,69 @@ See https://github.com/adobe-type-tools/cmap-resources
     vc.scrollTop  = Math.max(0, Math.round(targetY));
   }
 
-  function setScaleAnchored(newScale, anchor) {
-    const pdfv = app().pdfViewer;
-    pdfv.currentScale = clamp(newScale, 0.25, 5);
-    cancelAnimationFrame(rafId);
-    // Wait for layout, then put the same content back under the center
-    rafId = requestAnimationFrame(() => requestAnimationFrame(() => restore(anchor)));
-  }
+  function startPinch(t0, t1) {
+    const startDist = Math.hypot(t0.clientX - t1.clientX, t0.clientY - t1.clientY);
+    const startScale = app().pdfViewer.currentScale;
 
-  function startPinch(touches) {
-    const a = touches[0], b = touches[1];
     pinch = {
-      startDist: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY),
-      startScale: app().pdfViewer.currentScale,
+      startDist,
+      startScale,
+      cssScale: 1,
       anchor: getAnchor()
     };
-    vc.style.touchAction = 'none'; // stop native pan while pinching
+
+    // enter pinch mode
+    vc.classList.add('pinching');
+    vc.style.touchAction = 'none';
+    viewer.style.transformOrigin = '0 0';
   }
 
-  function movePinch(touches) {
-    const a = touches[0], b = touches[1];
-    const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
-    if (!d || !pinch?.startDist) return;
+  function movePinch(t0, t1) {
+    if (!pinch || !pinch.startDist) return;
+    const d = Math.hypot(t0.clientX - t1.clientX, t0.clientY - t1.clientY);
     const factor = d / pinch.startDist;
-    setScaleAnchored(pinch.startScale * factor, pinch.anchor);
+    const targetScale = clamp(pinch.startScale * factor, MIN_SCALE, MAX_SCALE);
+
+    // live CSS scale relative to the starting PDF.js scale
+    pinch.cssScale = targetScale / pinch.startScale;
+    viewer.style.transform = `scale(${pinch.cssScale})`;
+
+    // Approximate keeping anchor centered while CSS-scaled:
+    const ax = pinch.anchor.pv.div.offsetLeft + pinch.anchor.rx * pinch.anchor.pv.div.clientWidth;
+    const ay = pinch.anchor.pv.div.offsetTop  + pinch.anchor.ry * pinch.anchor.pv.div.clientHeight;
+    const scaledX = ax * pinch.cssScale - vc.clientWidth/2;
+    const scaledY = ay * pinch.cssScale - vc.clientHeight/2;
+    vc.scrollLeft = Math.max(0, Math.round(scaledX));
+    vc.scrollTop  = Math.max(0, Math.round(scaledY));
   }
 
   function endPinch() {
+    if (!pinch) return;
+    // Compute final PDF.js scale to commit
+    const finalScale = clamp(pinch.startScale * pinch.cssScale, MIN_SCALE, MAX_SCALE);
+
+    // Clear temporary CSS transform BEFORE committing (prevents visible jump)
+    viewer.style.transform = '';
+    viewer.style.transformOrigin = '';
+
+    // Commit to PDF.js and then restore anchor after layout
+    const pdfv = app().pdfViewer;
+    pdfv.currentScale = finalScale;
+    requestAnimationFrame(() => requestAnimationFrame(() => restore(pinch.anchor)));
+
+    // exit pinch mode
+    vc.classList.remove('pinching');
+    vc.style.touchAction = 'pan-x pan-y';
     pinch = null;
-    vc.style.touchAction = 'pan-y';
   }
 
+  // Touch handlers (capture + passive:false so iOS obeys preventDefault)
   vc.addEventListener('touchstart', (e) => {
-    if (e.touches.length === 2) { e.preventDefault(); startPinch([e.touches[0], e.touches[1]]); }
+    if (e.touches.length === 2) { e.preventDefault(); startPinch(e.touches[0], e.touches[1]); }
   }, { passive:false, capture:true });
 
   vc.addEventListener('touchmove', (e) => {
-    if (e.touches.length === 2 && pinch) { e.preventDefault(); movePinch([e.touches[0], e.touches[1]]); }
+    if (e.touches.length === 2 && pinch) { e.preventDefault(); movePinch(e.touches[0], e.touches[1]); }
   }, { passive:false, capture:true });
 
   vc.addEventListener('touchend', (e) => {
@@ -829,9 +862,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 
   vc.addEventListener('touchcancel', () => { if (pinch) endPinch(); }, { capture:true });
 
-  console.log('[PDF.js] Anchored pinch patch active');
+  console.log('[PDF.js] Hybrid pinch patch active');
 })();
 </script>
+
 
       
     
