@@ -23,7 +23,8 @@ See https://github.com/adobe-type-tools/cmap-resources
 <html dir="ltr" mozdisallowselectionprint>
   <head>
     <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <meta name="google" content="notranslate">
 <title>HMCAS CPG Viewer 🚑</title>
 
@@ -158,20 +159,14 @@ See https://github.com/adobe-type-tools/cmap-resources
 </style>
 
 <style>
-  /* iOS Safari: prevent scroll-anchoring from snapping to other pages during pinch-zoom */
-  #viewerContainer,
-  #viewer,
-  .pdfViewer,
-  .pdfViewer .page {
-    overflow-anchor: none;
-  }
-
-  /* Make sure pinch-zoom gestures are allowed at the container level */
-  #viewerContainer {
-    touch-action: pan-y pinch-zoom !important;
+  /* No browser zoom, allow vertical pan only */
+  html, body, #viewerContainer {
+    touch-action: pan-y !important; /* blocks pinch-zoom */
+    -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch;
   }
 </style>
+
 
 
 
@@ -666,7 +661,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     if (nextBtn) { nextBtn.title = "Find next (down)";   nextBtn.setAttribute('aria-label','Find next'); }
 
     // --------- Force a custom tab title, even after PDF metadata changes it ----------
-    const DESIRED_TITLE = "HMCAS CPG Viewer v0.4";  // <— change this text to whatever you want
+    const DESIRED_TITLE = "HMCAS CPG Viewer v0.5";  // <— change this text to whatever you want
 
     function applyTitle() {
       document.title = DESIRED_TITLE;
@@ -742,126 +737,7 @@ See https://github.com/adobe-type-tools/cmap-resources
 
 
 
-<script>
-/*
-  iOS Safari + PDF.js jump fix by "relative re-anchoring":
-  1) Snapshot: current page number and relative Y position on that page
-     (how far you've scrolled into the page as a fraction of its height).
-  2) After zoom/reflow/resize finish, restore scrollTop to the same
-     page + relative Y, with a small top offset so the title isn't
-     hidden under your find bar.
 
-  Safe to keep even if you later tweak other CSS; it only runs on iOS.
-*/
-(function () {
-  const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-  if (!isiOS) return;
-
-  const OFFSET_PX = 40; // move content ~1cm below the find bar; tweak as you like
-
-  function appReady() {
-    return window.PDFViewerApplication &&
-           PDFViewerApplication.pdfViewer &&
-           document.getElementById('viewerContainer');
-  }
-
-  function getSnapshot() {
-    const app = window.PDFViewerApplication;
-    const viewer = app.pdfViewer;
-    const vc = document.getElementById('viewerContainer');
-    const pageNumber = viewer.currentPageNumber || app.page || 1;
-
-    const pv = viewer.getPageView(pageNumber - 1);
-    if (!pv || !pv.div) return null;
-
-    const top  = pv.div.offsetTop;
-    const h    = pv.div.offsetHeight || 1;
-    const relY = (vc.scrollTop - top) / h;           // relative vertical position in page
-    const relX = (vc.scrollLeft - pv.div.offsetLeft) / (pv.div.offsetWidth || 1);
-
-    return {
-      pageNumber,
-      relY: Math.max(0, Math.min(0.98, relY)),       // clamp
-      relX: Math.max(0, Math.min(0.98, relX))
-    };
-  }
-
-  function restoreSnapshot(snap) {
-    if (!snap) return;
-    const app = window.PDFViewerApplication;
-    const viewer = app.pdfViewer;
-    const vc = document.getElementById('viewerContainer');
-
-    const pv = viewer.getPageView(snap.pageNumber - 1);
-    if (!pv || !pv.div) return;
-
-    const top  = pv.div.offsetTop;
-    const left = pv.div.offsetLeft;
-    const h    = pv.div.offsetHeight || 1;
-    const w    = pv.div.offsetWidth  || 1;
-
-    const targetTop  = top  + snap.relY * h + OFFSET_PX; // keep title clear of find bar
-    const targetLeft = left + snap.relX * w;
-
-    // Do two RAFs so layout is fully settled on iOS before we jump.
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      vc.scrollTop  = targetTop;
-      vc.scrollLeft = targetLeft;
-    }));
-  }
-
-  function install() {
-    if (!appReady()) return;
-
-    const app = window.PDFViewerApplication;
-    const viewer = app.pdfViewer;
-    const vc = document.getElementById('viewerContainer');
-
-    // Reduce browser "helpfulness" that can cause snaps.
-    vc.style.overscrollBehavior = 'contain';
-    vc.style.webkitOverflowScrolling = 'touch';
-
-    let lastSnap = null;
-    let scheduleRestore = () => {
-      // Try a few times as the canvas/text layers settle.
-      setTimeout(() => restoreSnapshot(lastSnap), 0);
-      setTimeout(() => restoreSnapshot(lastSnap), 120);
-      setTimeout(() => restoreSnapshot(lastSnap), 240);
-    };
-
-    // Take a snapshot right before things typically reflow.
-    const snapshotNow = () => { lastSnap = getSnapshot(); };
-
-    // iOS pinch lifecycle
-    vc.addEventListener('gesturestart', snapshotNow, { passive: true });
-    vc.addEventListener('gesturechange', () => { /* no-op: mid-zoom */ }, { passive: true });
-    vc.addEventListener('gestureend', () => { scheduleRestore(); }, { passive: true });
-
-    // PDF.js scale events (wheel zoom or programmatic)
-    app.eventBus.on('scalechanging', snapshotNow);
-    app.eventBus.on('scalechanged',  scheduleRestore);
-
-    // Orientation change / resize can also cause jumps
-    window.addEventListener('orientationchange', () => { snapshotNow(); scheduleRestore(); });
-    window.addEventListener('resize', () => { snapshotNow(); scheduleRestore(); });
-
-    // Also snapshot on scroll, so we always have a fresh anchor
-    vc.addEventListener('scroll', () => { lastSnap = getSnapshot(); }, { passive: true });
-
-    // Initial anchor after first layout
-    if (!lastSnap) lastSnap = getSnapshot();
-  }
-
-  function tryInstall() {
-    if (appReady()) install();
-    else setTimeout(tryInstall, 80);
-  }
-
-  if (document.readyState === 'complete') tryInstall();
-  else window.addEventListener('load', tryInstall);
-  window.addEventListener('webviewerloaded', tryInstall);
-})();
-</script>
 
 
 
