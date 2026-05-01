@@ -1,82 +1,130 @@
 # PDF Viewer with Direct Links
 
-This repository hosts a self-contained PDF.js viewer on GitHub Pages.  
-It allows you to open **any PDF file**, jump to a specific page, and highlight/search for text directly from the link.
+This repository hosts a self-contained PDF.js viewer on GitHub Pages.
+
+It allows you to open PDF files, jump to a specific page, and highlight/search for text directly from the link.
 
 ---
 
-## 🔗 Live Viewer
+## Live Viewer
+
 The viewer is available at:
-https://yniwashi.github.io/pdf-viewer/viewer/web/
+
+https://docs.niwashibase.com/viewer/web/
 
 ---
 
-## 📂 Adding PDFs
-- Place your PDF files inside the **/docs** folder in this repository.  
-- Example structure:
+## Adding or Updating PDFs
+
+Place PDF files inside the `/docs` folder in this repository.
+
+For the CPG file, keep the current filename:
+
+```txt
+/docs/cpg-81w9d1f.pdf
 ```
 
+When updating to a new CPG version, replace the existing PDF with the new file using the same filename. This keeps all app links working without changing the PDF URL.
+
+Example structure:
+
+```txt
 /pdf-viewer
-/viewer
-/web
-/build
-/locale
-/docs
-cpg.pdf
-sop.pdf
-checklist.pdf
-
+  /viewer
+    /web
+    /build
+    /locale
+  /docs
+    cpg-81w9d1f.pdf
 ```
 
 ---
 
-## 📑 Linking to Files
+## Linking to Files
+
 Use the following URL format:
+
+```txt
+https://docs.niwashibase.com/viewer/web/?file=/docs/<filename>.pdf
 ```
 
-[https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/](https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/)<filename>.pdf
+### Current CPG File
 
+Open the CPG at page 15:
+
+```txt
+https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page=15
 ```
 
-### Current Files
-- **CPG (Clinical Practice Guidelines)**  
-  - Open at page 15:  
-    https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/cpg.pdf#page=15  
-  - Open at page 15 and search for *adenosine*:  
-    https://yniwashi.github.io/pdf-viewer/viewer/web/?file=/pdf-viewer/docs/cpg.pdf#page=15&search=adenosine  
+Search the CPG for `adenosine`:
 
-(Add new files under `/docs` and follow the same pattern above.)
+```txt
+https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search=adenosine
+```
+
+Open at page 15 and search for `adenosine`:
+
+```txt
+https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page=15&search=adenosine
+```
 
 ---
 
-## 🛠 Features
+## Helper JSON Files
+
+The iOS app uses helper JSON files for CPG navigation, flowcharts, and formulary page links.
+
+Current helper paths:
+
+```txt
+/helpers/cpg_index.json
+/helpers/flowcharts.json
+/helpers/formulary.json
+```
+
+When the CPG PDF is updated and page numbers change, update these JSON files at the same time.
+
+The iOS app currently expects:
+
+```js
+urlIndex: "https://docs.niwashibase.com/helpers/cpg_index.json"
+urlFlowcharts: "https://docs.niwashibase.com/helpers/flowcharts.json"
+urlFormulary: "https://docs.niwashibase.com/helpers/formulary.json"
+urlPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page="
+urlSearchBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search="
+```
+
+---
+
+## Features
+
 - Jump directly to any page using `#page=<number>`.
-- Highlight and search for terms using `&search=<keyword>`.
-- Clean search bar always visible with ▲ ▼ navigation.
-- Toolbar improved with **First / Last Page** buttons.
-- Theme-aware design (light and dark mode support).
+- Highlight and search for terms using `#search=<keyword>`.
+- Clean search bar with navigation.
+- Toolbar with First / Last Page buttons.
+- Theme-aware design with light and dark mode support.
 
 ---
 
-## 🚀 Deployment
-1. Go to **Settings → Pages** in GitHub.  
+## Deployment
+
+1. Go to **Settings -> Pages** in GitHub.
 2. Under **Build and Deployment**, select:
    - Source: `Deploy from branch`
-   - Branch: `main` → `/ (root)`  
-3. Save and wait for GitHub Pages to build.  
+   - Branch: `main` -> `/ (root)`
+3. Save and wait for GitHub Pages to build.
 4. Your site will be available at:
-```
 
-[https://yniwashi.github.io/pdf-viewer/](https://yniwashi.github.io/pdf-viewer/)
-
+```txt
+https://docs.niwashibase.com/
 ```
 
 ---
 
-## 💡 Notes
-- Filenames should avoid spaces. Use `-` or `_` instead.  
-- You can update this README as an **index** for your most-used files.  
-- Works best on modern browsers (desktop and mobile).  
+## Notes
 
-✨ With this setup, you can share direct links to **specific pages and terms** inside large PDFs — no more telling others to “scroll down to page X.”
-
+- Keep filenames stable when app links depend on them.
+- Avoid spaces in filenames. Use `-` or `_`.
+- Replacing `/docs/cpg-81w9d1f.pdf` with a new PDF keeps existing app links working.
+- After replacing the CPG PDF, update the helper JSON files so page links match the new PDF.
+- Browser or CDN cache may temporarily show the old PDF after replacement. Test in a private window if needed.
