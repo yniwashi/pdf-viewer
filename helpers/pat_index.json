@@ -1,0 +1,377 @@
+{
+  "document": {
+    "id": "pat",
+    "title": "Pediatric Assessment and Treatment",
+    "version": "1.1",
+    "release_date": "2020",
+    "source_label": "Pediatric Assessment and Treatment Version 1.1 – 2020"
+  },
+  "items": [
+    {
+      "id": "preterm",
+      "pat_number": "PAT 1",
+      "title": "Preterm",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "Preterm",
+      "page_start": 19,
+      "page_end": 28,
+      "source_inputs": [
+        "Preterm"
+      ],
+      "aliases": [
+        "premature",
+        "pre-term",
+        "preterm neonate",
+        "premature baby",
+        "preterm newborn"
+      ],
+      "keywords": [
+        "preterm",
+        "premature",
+        "neonate",
+        "newborn",
+        "infant",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "term-to-2-months",
+      "pat_number": "PAT 2",
+      "title": "Term - 2 months",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "Term - 2 months",
+      "page_start": 29,
+      "page_end": 38,
+      "source_inputs": [
+        "1 Months",
+        "2 Months"
+      ],
+      "aliases": [
+        "term to 2 months",
+        "term - two months",
+        "0-2 months",
+        "newborn to 2 months",
+        "1 month",
+        "2 months"
+      ],
+      "keywords": [
+        "term",
+        "newborn",
+        "infant",
+        "1 month",
+        "2 months",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "3-to-7-months",
+      "pat_number": "PAT 3",
+      "title": "3 - 7 months",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "3 - 7 months",
+      "page_start": 39,
+      "page_end": 48,
+      "source_inputs": [
+        "3 Months",
+        "4 Months",
+        "5 Months",
+        "6 Months",
+        "7 Months"
+      ],
+      "aliases": [
+        "3 to 7 months",
+        "three to seven months",
+        "3-7 months",
+        "3 months",
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months"
+      ],
+      "keywords": [
+        "infant",
+        "3 months",
+        "4 months",
+        "5 months",
+        "6 months",
+        "7 months",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "8-to-12-months",
+      "pat_number": "PAT 4",
+      "title": "8 - 12 months",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "8 - 12 months",
+      "page_start": 49,
+      "page_end": 58,
+      "source_inputs": [
+        "8 Months",
+        "9 Months",
+        "10 Months",
+        "11 Months",
+        "12 Months"
+      ],
+      "aliases": [
+        "8 to 12 months",
+        "eight to twelve months",
+        "8-12 months",
+        "8 months",
+        "9 months",
+        "10 months",
+        "11 months",
+        "12 months"
+      ],
+      "keywords": [
+        "infant",
+        "8 months",
+        "9 months",
+        "10 months",
+        "11 months",
+        "12 months",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "1-to-3-years",
+      "pat_number": "PAT 5",
+      "title": "1 - 3 years",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "1 - 3 years",
+      "page_start": 59,
+      "page_end": 68,
+      "source_inputs": [
+        "1 Years",
+        "2 Years",
+        "3 Years"
+      ],
+      "aliases": [
+        "1 to 3 years",
+        "one to three years",
+        "1-3 years",
+        "1 year",
+        "2 years",
+        "3 years",
+        "toddler"
+      ],
+      "keywords": [
+        "child",
+        "toddler",
+        "1 year",
+        "2 years",
+        "3 years",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "4-to-5-years",
+      "pat_number": "PAT 6",
+      "title": "4 - 5 years",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "4 - 5 years",
+      "page_start": 69,
+      "page_end": 78,
+      "source_inputs": [
+        "4 Years",
+        "5 Years"
+      ],
+      "aliases": [
+        "4 to 5 years",
+        "four to five years",
+        "4-5 years",
+        "4 years",
+        "5 years",
+        "preschool"
+      ],
+      "keywords": [
+        "child",
+        "preschool",
+        "4 years",
+        "5 years",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "6-to-7-years",
+      "pat_number": "PAT 7",
+      "title": "6 - 7 years",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "6 - 7 years",
+      "page_start": 79,
+      "page_end": 88,
+      "source_inputs": [
+        "6 Years",
+        "7 Years"
+      ],
+      "aliases": [
+        "6 to 7 years",
+        "six to seven years",
+        "6-7 years",
+        "6 years",
+        "7 years"
+      ],
+      "keywords": [
+        "child",
+        "school age",
+        "6 years",
+        "7 years",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "8-to-9-years",
+      "pat_number": "PAT 8",
+      "title": "8 - 9 years",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "8 - 9 years",
+      "page_start": 89,
+      "page_end": 100,
+      "source_inputs": [
+        "8 Years",
+        "9 Years"
+      ],
+      "aliases": [
+        "8 to 9 years",
+        "eight to nine years",
+        "8-9 years",
+        "8 years",
+        "9 years"
+      ],
+      "keywords": [
+        "child",
+        "school age",
+        "8 years",
+        "9 years",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "10-to-11-years",
+      "pat_number": "PAT 9",
+      "title": "10 - 11 years",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "10 - 11 years",
+      "page_start": 101,
+      "page_end": 112,
+      "source_inputs": [
+        "10 Years",
+        "11 Years"
+      ],
+      "aliases": [
+        "10 to 11 years",
+        "ten to eleven years",
+        "10-11 years",
+        "10 years",
+        "11 years"
+      ],
+      "keywords": [
+        "child",
+        "school age",
+        "10 years",
+        "11 years",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "12-to-13-years",
+      "pat_number": "PAT 10",
+      "title": "12 - 13 years",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": "12 - 13 years",
+      "page_start": 113,
+      "page_end": 124,
+      "source_inputs": [
+        "12 Years",
+        "13 Years"
+      ],
+      "aliases": [
+        "12 to 13 years",
+        "twelve to thirteen years",
+        "12-13 years",
+        "12 years",
+        "13 years",
+        "early adolescent"
+      ],
+      "keywords": [
+        "child",
+        "adolescent",
+        "teen",
+        "12 years",
+        "13 years",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    },
+    {
+      "id": "14-years-and-older",
+      "pat_number": "PAT 11",
+      "title": ">= 14 years",
+      "pat_section": "Pediatric Assessment and Treatment",
+      "age_range": ">= 14 years",
+      "page_start": 125,
+      "page_end": 125,
+      "source_inputs": [
+        "14 Years"
+      ],
+      "aliases": [
+        "14 years and older",
+        "14 plus",
+        "14+",
+        "greater than or equal to 14 years",
+        ">=14 years",
+        "14 years"
+      ],
+      "keywords": [
+        "adolescent",
+        "teen",
+        "14 years",
+        "older child",
+        "paediatric",
+        "pediatric",
+        "assessment",
+        "treatment"
+      ],
+      "type": "age-group"
+    }
+  ]
+}
