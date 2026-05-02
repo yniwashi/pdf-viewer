@@ -21,7 +21,8 @@
       {
     "type": "PAT",
     "version": "1.1",
-    "pdf_url": "https://docs.niwashibase.com/docs/pat-301h6j54r.pdf"
+    "pdf_url": "https://docs.niwashibase.com/docs/pat-301h6j54r.pdf",
+    "index_url": "https://docs.niwashibase.com/helpers/pat_index.json"
      }
     ]
   }
