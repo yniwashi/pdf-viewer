@@ -1,0 +1,3797 @@
+{
+  "document": {
+    "id": "hmcas-cpm",
+    "title": "HMCAS Clinical Procedure Manual",
+    "version": "4.0",
+    "release_date": "2024",
+    "source_label": "Clinical Procedure Manual Version 4.0/2024"
+  },
+  "items": [
+    {
+      "id": "qatar-early-warning-signs-calculation",
+      "cpm_number": "1.1",
+      "title": "Qatar Early Warning Signs Calculation",
+      "cpm_section": "Patient Assessment",
+      "page_start": 27,
+      "page_end": 27,
+      "aliases": [
+        "Qatar Early Warning Signs Calculation",
+        "CPM 1.1 Qatar Early Warning Signs Calculation",
+        "1.1 Qatar Early Warning Signs Calculation"
+      ],
+      "keywords": [
+        "qatar",
+        "early",
+        "warning",
+        "signs",
+        "calculation",
+        "patient assessment",
+        "1.1",
+        "cpm 1.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "respiratory-rate-assessment",
+      "cpm_number": "1.2",
+      "title": "Respiratory rate assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 28,
+      "page_end": 29,
+      "aliases": [
+        "Respiratory rate assessment",
+        "CPM 1.2 Respiratory rate assessment",
+        "1.2 Respiratory rate assessment"
+      ],
+      "keywords": [
+        "respiratory",
+        "rate",
+        "patient assessment",
+        "1.2",
+        "cpm 1.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "lung-sound-assessment",
+      "cpm_number": "1.3",
+      "title": "Lung sound assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 30,
+      "page_end": 30,
+      "aliases": [
+        "Lung sound assessment",
+        "CPM 1.3 Lung sound assessment",
+        "1.3 Lung sound assessment"
+      ],
+      "keywords": [
+        "lung",
+        "sound",
+        "patient assessment",
+        "1.3",
+        "cpm 1.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "pulse-rate-assessment",
+      "cpm_number": "1.4",
+      "title": "Pulse rate assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 31,
+      "page_end": 32,
+      "aliases": [
+        "Pulse rate assessment",
+        "CPM 1.4 Pulse rate assessment",
+        "1.4 Pulse rate assessment"
+      ],
+      "keywords": [
+        "pulse",
+        "rate",
+        "patient assessment",
+        "1.4",
+        "cpm 1.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "random-blood-sugar-assessment",
+      "cpm_number": "1.5",
+      "title": "Random blood sugar assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 33,
+      "page_end": 34,
+      "aliases": [
+        "Random blood sugar assessment",
+        "CPM 1.5 Random blood sugar assessment",
+        "1.5 Random blood sugar assessment",
+        "Random glucose assessment"
+      ],
+      "keywords": [
+        "random",
+        "blood",
+        "sugar",
+        "patient assessment",
+        "1.5",
+        "cpm 1.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "blood-pressure-measurement-manual-adult",
+      "cpm_number": "1.6",
+      "title": "Blood pressure measurement: Manual (Adult)",
+      "cpm_section": "Patient Assessment",
+      "page_start": 35,
+      "page_end": 35,
+      "aliases": [
+        "Blood pressure measurement: Manual (Adult)",
+        "CPM 1.6 Blood pressure measurement: Manual (Adult)",
+        "1.6 Blood pressure measurement: Manual (Adult)"
+      ],
+      "keywords": [
+        "blood",
+        "pressure",
+        "measurement",
+        "patient assessment",
+        "1.6",
+        "cpm 1.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "non-invasive-blood-pressure-measurement-using-the-lifepak-15",
+      "cpm_number": "1.7",
+      "title": "Non-invasive blood pressure measurement using the LIFEPAK 15",
+      "cpm_section": "Patient Assessment",
+      "page_start": 36,
+      "page_end": 36,
+      "aliases": [
+        "Non-invasive blood pressure measurement using the LIFEPAK 15",
+        "CPM 1.7 Non-invasive blood pressure measurement using the LIFEPAK 15",
+        "1.7 Non-invasive blood pressure measurement using the LIFEPAK 15",
+        "NIBP blood pressure measurement using the LIFEPAK 15",
+        "Non-invasive blood pressure measurement using the LIFEPAK 15 LIFEPAK 15"
+      ],
+      "keywords": [
+        "non-invasive",
+        "blood",
+        "pressure",
+        "measurement",
+        "lifepak",
+        "patient assessment",
+        "1.7",
+        "cpm 1.7",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "temperature-assessment-using-genius-2-tympanic-thermometer",
+      "cpm_number": "1.8",
+      "title": "Temperature assessment using Genius 2 Tympanic Thermometer",
+      "cpm_section": "Patient Assessment",
+      "page_start": 37,
+      "page_end": 38,
+      "aliases": [
+        "Temperature assessment using Genius 2 Tympanic Thermometer",
+        "CPM 1.8 Temperature assessment using Genius 2 Tympanic Thermometer",
+        "1.8 Temperature assessment using Genius 2 Tympanic Thermometer"
+      ],
+      "keywords": [
+        "temperature",
+        "genius",
+        "tympanic",
+        "thermometer",
+        "patient assessment",
+        "1.8",
+        "cpm 1.8"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "glasgow-coma-score-assessment",
+      "cpm_number": "1.9",
+      "title": "Glasgow coma score assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 39,
+      "page_end": 41,
+      "aliases": [
+        "Glasgow coma score assessment",
+        "CPM 1.9 Glasgow coma score assessment",
+        "1.9 Glasgow coma score assessment",
+        "GCS assessment"
+      ],
+      "keywords": [
+        "glasgow",
+        "coma",
+        "score",
+        "patient assessment",
+        "1.9",
+        "cpm 1.9"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "level-of-consciousness-assessment-using-avpu-scale",
+      "cpm_number": "1.10",
+      "title": "Level of consciousness assessment using AVPU scale",
+      "cpm_section": "Patient Assessment",
+      "page_start": 42,
+      "page_end": 42,
+      "aliases": [
+        "Level of consciousness assessment using AVPU scale",
+        "CPM 1.10 Level of consciousness assessment using AVPU scale",
+        "1.10 Level of consciousness assessment using AVPU scale",
+        "LOC assessment using AVPU scale",
+        "Level of consciousness assessment using AVPU scale AVPU"
+      ],
+      "keywords": [
+        "level",
+        "consciousness",
+        "avpu",
+        "scale",
+        "patient assessment",
+        "1.10",
+        "cpm 1.10"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "pain-assessment",
+      "cpm_number": "1.11",
+      "title": "Pain assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 43,
+      "page_end": 43,
+      "aliases": [
+        "Pain assessment",
+        "CPM 1.11 Pain assessment",
+        "1.11 Pain assessment"
+      ],
+      "keywords": [
+        "pain",
+        "patient assessment",
+        "1.11",
+        "cpm 1.11"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "befast-assessment-for-stroke",
+      "cpm_number": "1.12",
+      "title": "BEFAST assessment for stroke",
+      "cpm_section": "Patient Assessment",
+      "page_start": 44,
+      "page_end": 45,
+      "aliases": [
+        "BEFAST assessment for stroke",
+        "CPM 1.12 BEFAST assessment for stroke",
+        "1.12 BEFAST assessment for stroke",
+        "BEFAST assessment for stroke BEFAST"
+      ],
+      "keywords": [
+        "befast",
+        "stroke",
+        "patient assessment",
+        "1.12",
+        "cpm 1.12",
+        "FAST"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "pulse-oximetry-using-the-lifepak-15",
+      "cpm_number": "1.13",
+      "title": "Pulse oximetry using the LIFEPAK 15",
+      "cpm_section": "Patient Assessment",
+      "page_start": 46,
+      "page_end": 46,
+      "aliases": [
+        "Pulse oximetry using the LIFEPAK 15",
+        "CPM 1.13 Pulse oximetry using the LIFEPAK 15",
+        "1.13 Pulse oximetry using the LIFEPAK 15",
+        "Pulse oximetry using the LIFEPAK 15 LIFEPAK 15"
+      ],
+      "keywords": [
+        "pulse",
+        "oximetry",
+        "lifepak",
+        "patient assessment",
+        "1.13",
+        "cpm 1.13",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "capnography-using-the-lifepak-15",
+      "cpm_number": "1.14",
+      "title": "Capnography using the LIFEPAK 15",
+      "cpm_section": "Patient Assessment",
+      "page_start": 47,
+      "page_end": 47,
+      "aliases": [
+        "Capnography using the LIFEPAK 15",
+        "CPM 1.14 Capnography using the LIFEPAK 15",
+        "1.14 Capnography using the LIFEPAK 15",
+        "Capnography using the LIFEPAK 15 LIFEPAK 15"
+      ],
+      "keywords": [
+        "capnography",
+        "lifepak",
+        "patient assessment",
+        "1.14",
+        "cpm 1.14",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-medical-patient-assessment",
+      "cpm_number": "1.15",
+      "title": "Adult medical patient assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 48,
+      "page_end": 49,
+      "aliases": [
+        "Adult medical patient assessment",
+        "CPM 1.15 Adult medical patient assessment",
+        "1.15 Adult medical patient assessment"
+      ],
+      "keywords": [
+        "medical",
+        "patient assessment",
+        "1.15",
+        "cpm 1.15"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-trauma-patient-assessment",
+      "cpm_number": "1.16",
+      "title": "Adult trauma patient assessment",
+      "cpm_section": "Patient Assessment",
+      "page_start": 50,
+      "page_end": 52,
+      "aliases": [
+        "Adult trauma patient assessment",
+        "CPM 1.16 Adult trauma patient assessment",
+        "1.16 Adult trauma patient assessment"
+      ],
+      "keywords": [
+        "trauma",
+        "patient assessment",
+        "1.16",
+        "cpm 1.16"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "mental-status-examination-for-acute-behavioural-disturbance",
+      "cpm_number": "1.17",
+      "title": "Mental Status Examination for Acute Behavioural Disturbance",
+      "cpm_section": "Patient Assessment",
+      "page_start": 53,
+      "page_end": 55,
+      "aliases": [
+        "Mental Status Examination for Acute Behavioural Disturbance",
+        "CPM 1.17 Mental Status Examination for Acute Behavioural Disturbance",
+        "1.17 Mental Status Examination for Acute Behavioural Disturbance"
+      ],
+      "keywords": [
+        "mental",
+        "status",
+        "examination",
+        "acute",
+        "behavioural",
+        "disturbance",
+        "patient assessment",
+        "1.17",
+        "cpm 1.17"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "finger-sweep-manoeuvre",
+      "cpm_number": "2.1",
+      "title": "Finger sweep manoeuvre",
+      "cpm_section": "Airway Management",
+      "page_start": 56,
+      "page_end": 56,
+      "aliases": [
+        "Finger sweep manoeuvre",
+        "CPM 2.1 Finger sweep manoeuvre",
+        "2.1 Finger sweep manoeuvre",
+        "Finger sweep maneuver"
+      ],
+      "keywords": [
+        "finger",
+        "sweep",
+        "manoeuvre",
+        "airway management",
+        "2.1",
+        "cpm 2.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "head-tilt-chin-lift-manoeuvre",
+      "cpm_number": "2.2",
+      "title": "Head-tilt-chin lift manoeuvre",
+      "cpm_section": "Airway Management",
+      "page_start": 57,
+      "page_end": 58,
+      "aliases": [
+        "Head-tilt-chin lift manoeuvre",
+        "CPM 2.2 Head-tilt-chin lift manoeuvre",
+        "2.2 Head-tilt-chin lift manoeuvre",
+        "Head-tilt-chin lift maneuver"
+      ],
+      "keywords": [
+        "head-tilt-chin",
+        "lift",
+        "manoeuvre",
+        "airway management",
+        "2.2",
+        "cpm 2.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "jaw-thrust-manoeuvre",
+      "cpm_number": "2.3",
+      "title": "Jaw-thrust manoeuvre",
+      "cpm_section": "Airway Management",
+      "page_start": 59,
+      "page_end": 60,
+      "aliases": [
+        "Jaw-thrust manoeuvre",
+        "CPM 2.3 Jaw-thrust manoeuvre",
+        "2.3 Jaw-thrust manoeuvre",
+        "Jaw-thrust maneuver"
+      ],
+      "keywords": [
+        "jaw-thrust",
+        "manoeuvre",
+        "airway management",
+        "2.3",
+        "cpm 2.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "oral-suctioning",
+      "cpm_number": "2.4",
+      "title": "Oral suctioning",
+      "cpm_section": "Airway Management",
+      "page_start": 61,
+      "page_end": 61,
+      "aliases": [
+        "Oral suctioning",
+        "CPM 2.4 Oral suctioning",
+        "2.4 Oral suctioning"
+      ],
+      "keywords": [
+        "oral",
+        "suctioning",
+        "airway management",
+        "2.4",
+        "cpm 2.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "stoma-and-tracheostomy-tube-suctioning",
+      "cpm_number": "2.5",
+      "title": "Stoma and tracheostomy tube suctioning",
+      "cpm_section": "Airway Management",
+      "page_start": 62,
+      "page_end": 63,
+      "aliases": [
+        "Stoma and tracheostomy tube suctioning",
+        "CPM 2.5 Stoma and tracheostomy tube suctioning",
+        "2.5 Stoma and tracheostomy tube suctioning"
+      ],
+      "keywords": [
+        "stoma",
+        "tracheostomy",
+        "tube",
+        "suctioning",
+        "airway management",
+        "2.5",
+        "cpm 2.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "endotracheal-tube-suctioning",
+      "cpm_number": "2.6",
+      "title": "Endotracheal tube suctioning",
+      "cpm_section": "Airway Management",
+      "page_start": 64,
+      "page_end": 65,
+      "aliases": [
+        "Endotracheal tube suctioning",
+        "CPM 2.6 Endotracheal tube suctioning",
+        "2.6 Endotracheal tube suctioning"
+      ],
+      "keywords": [
+        "endotracheal",
+        "tube",
+        "suctioning",
+        "airway management",
+        "2.6",
+        "cpm 2.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "laryngeal-tube-suctioning",
+      "cpm_number": "2.7",
+      "title": "Laryngeal tube suctioning",
+      "cpm_section": "Airway Management",
+      "page_start": 66,
+      "page_end": 66,
+      "aliases": [
+        "Laryngeal tube suctioning",
+        "CPM 2.7 Laryngeal tube suctioning",
+        "2.7 Laryngeal tube suctioning"
+      ],
+      "keywords": [
+        "laryngeal",
+        "tube",
+        "suctioning",
+        "airway management",
+        "2.7",
+        "cpm 2.7"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "foreign-body-airway-obstruction-in-adults",
+      "cpm_number": "2.8",
+      "title": "Foreign body airway obstruction in adults",
+      "cpm_section": "Airway Management",
+      "page_start": 67,
+      "page_end": 68,
+      "aliases": [
+        "Foreign body airway obstruction in adults",
+        "CPM 2.8 Foreign body airway obstruction in adults",
+        "2.8 Foreign body airway obstruction in adults"
+      ],
+      "keywords": [
+        "foreign",
+        "body",
+        "airway",
+        "obstruction",
+        "adults",
+        "airway management",
+        "2.8",
+        "cpm 2.8"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "use-of-magills-forceps",
+      "cpm_number": "2.9",
+      "title": "Use of Magill’s forceps",
+      "cpm_section": "Airway Management",
+      "page_start": 69,
+      "page_end": 70,
+      "aliases": [
+        "Use of Magill’s forceps",
+        "CPM 2.9 Use of Magill’s forceps",
+        "2.9 Use of Magill’s forceps"
+      ],
+      "keywords": [
+        "magill",
+        "forceps",
+        "airway management",
+        "2.9",
+        "cpm 2.9"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "oropharyngeal-airway-insertion",
+      "cpm_number": "2.10",
+      "title": "Oropharyngeal airway insertion",
+      "cpm_section": "Airway Management",
+      "page_start": 71,
+      "page_end": 71,
+      "aliases": [
+        "Oropharyngeal airway insertion",
+        "CPM 2.10 Oropharyngeal airway insertion",
+        "2.10 Oropharyngeal airway insertion",
+        "OPA insertion"
+      ],
+      "keywords": [
+        "oropharyngeal",
+        "airway",
+        "insertion",
+        "airway management",
+        "2.10",
+        "cpm 2.10"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "naso-pharyngeal-airway-insertion",
+      "cpm_number": "2.11",
+      "title": "Naso-pharyngeal airway insertion",
+      "cpm_section": "Airway Management",
+      "page_start": 72,
+      "page_end": 73,
+      "aliases": [
+        "Naso-pharyngeal airway insertion",
+        "CPM 2.11 Naso-pharyngeal airway insertion",
+        "2.11 Naso-pharyngeal airway insertion",
+        "NPA insertion"
+      ],
+      "keywords": [
+        "naso-pharyngeal",
+        "airway",
+        "insertion",
+        "airway management",
+        "2.11",
+        "cpm 2.11"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cricoid-pressure-manoeuvre",
+      "cpm_number": "2.12",
+      "title": "Cricoid pressure manoeuvre",
+      "cpm_section": "Airway Management",
+      "page_start": 74,
+      "page_end": 75,
+      "aliases": [
+        "Cricoid pressure manoeuvre",
+        "CPM 2.12 Cricoid pressure manoeuvre",
+        "2.12 Cricoid pressure manoeuvre",
+        "Cricoid pressure maneuver"
+      ],
+      "keywords": [
+        "cricoid",
+        "pressure",
+        "manoeuvre",
+        "airway management",
+        "2.12",
+        "cpm 2.12"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "burp-manoeuvre",
+      "cpm_number": "2.13",
+      "title": "BURP manoeuvre",
+      "cpm_section": "Airway Management",
+      "page_start": 76,
+      "page_end": 77,
+      "aliases": [
+        "BURP manoeuvre",
+        "CPM 2.13 BURP manoeuvre",
+        "2.13 BURP manoeuvre",
+        "BURP maneuver",
+        "BURP manoeuvre BURP"
+      ],
+      "keywords": [
+        "burp",
+        "manoeuvre",
+        "airway management",
+        "2.13",
+        "cpm 2.13"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-orotracheal-intubation-using-the-frova",
+      "cpm_number": "2.14",
+      "title": "Adult orotracheal intubation using the Frova",
+      "cpm_section": "Airway Management",
+      "page_start": 78,
+      "page_end": 82,
+      "aliases": [
+        "Adult orotracheal intubation using the Frova",
+        "CPM 2.14 Adult orotracheal intubation using the Frova",
+        "2.14 Adult orotracheal intubation using the Frova",
+        "Adult oro-tracheal intubation using the Frova"
+      ],
+      "keywords": [
+        "orotracheal",
+        "intubation",
+        "frova",
+        "airway management",
+        "2.14",
+        "cpm 2.14"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-orotracheal-intubation-using-the-glidescope",
+      "cpm_number": "2.15",
+      "title": "Adult orotracheal intubation using the Glidescope",
+      "cpm_section": "Airway Management",
+      "page_start": 83,
+      "page_end": 86,
+      "aliases": [
+        "Adult orotracheal intubation using the Glidescope",
+        "CPM 2.15 Adult orotracheal intubation using the Glidescope",
+        "2.15 Adult orotracheal intubation using the Glidescope",
+        "Adult oro-tracheal intubation using the Glidescope"
+      ],
+      "keywords": [
+        "orotracheal",
+        "intubation",
+        "glidescope",
+        "airway management",
+        "2.15",
+        "cpm 2.15"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-orotracheal-intubation-using-the-mcgrath",
+      "cpm_number": "2.16",
+      "title": "Adult orotracheal intubation using the McGrath",
+      "cpm_section": "Airway Management",
+      "page_start": 87,
+      "page_end": 90,
+      "aliases": [
+        "Adult orotracheal intubation using the McGrath",
+        "CPM 2.16 Adult orotracheal intubation using the McGrath",
+        "2.16 Adult orotracheal intubation using the McGrath",
+        "Adult oro-tracheal intubation using the McGrath"
+      ],
+      "keywords": [
+        "orotracheal",
+        "intubation",
+        "mcgrath",
+        "airway management",
+        "2.16",
+        "cpm 2.16"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-orotracheal-intubation-using-rapid-sequence-induction",
+      "cpm_number": "2.17",
+      "title": "Adult orotracheal intubation using Rapid Sequence Induction",
+      "cpm_section": "Airway Management",
+      "page_start": 91,
+      "page_end": 94,
+      "aliases": [
+        "Adult orotracheal intubation using Rapid Sequence Induction",
+        "CPM 2.17 Adult orotracheal intubation using Rapid Sequence Induction",
+        "2.17 Adult orotracheal intubation using Rapid Sequence Induction",
+        "Adult oro-tracheal intubation using Rapid Sequence Induction",
+        "Adult orotracheal intubation using RSI"
+      ],
+      "keywords": [
+        "orotracheal",
+        "intubation",
+        "rapid",
+        "sequence",
+        "induction",
+        "airway management",
+        "2.17",
+        "cpm 2.17"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-orotracheal-intubation-using-blind-bougie-technique",
+      "cpm_number": "2.18",
+      "title": "Adult orotracheal intubation using Blind Bougie Technique",
+      "cpm_section": "Airway Management",
+      "page_start": 95,
+      "page_end": 97,
+      "aliases": [
+        "Adult orotracheal intubation using Blind Bougie Technique",
+        "CPM 2.18 Adult orotracheal intubation using Blind Bougie Technique",
+        "2.18 Adult orotracheal intubation using Blind Bougie Technique",
+        "Adult oro-tracheal intubation using Blind Bougie Technique"
+      ],
+      "keywords": [
+        "orotracheal",
+        "intubation",
+        "blind",
+        "bougie",
+        "technique",
+        "airway management",
+        "2.18",
+        "cpm 2.18"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "failed-airway-drill",
+      "cpm_number": "2.19",
+      "title": "Failed airway drill",
+      "cpm_section": "Airway Management",
+      "page_start": 98,
+      "page_end": 101,
+      "aliases": [
+        "Failed airway drill",
+        "CPM 2.19 Failed airway drill",
+        "2.19 Failed airway drill"
+      ],
+      "keywords": [
+        "failed",
+        "airway",
+        "drill",
+        "airway management",
+        "2.19",
+        "cpm 2.19"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "adult-orotracheal-intubation-using-delayed-sequence-induction",
+      "cpm_number": "2.20",
+      "title": "Adult orotracheal intubation using Delayed Sequence Induction",
+      "cpm_section": "Airway Management",
+      "page_start": 102,
+      "page_end": 105,
+      "aliases": [
+        "Adult orotracheal intubation using Delayed Sequence Induction",
+        "CPM 2.20 Adult orotracheal intubation using Delayed Sequence Induction",
+        "2.20 Adult orotracheal intubation using Delayed Sequence Induction",
+        "Adult oro-tracheal intubation using Delayed Sequence Induction",
+        "Adult orotracheal intubation using DSI"
+      ],
+      "keywords": [
+        "orotracheal",
+        "intubation",
+        "delayed",
+        "sequence",
+        "induction",
+        "airway management",
+        "2.20",
+        "cpm 2.20"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "laryngeal-tube-airway-insertion",
+      "cpm_number": "2.21",
+      "title": "Laryngeal Tube airway insertion",
+      "cpm_section": "Airway Management",
+      "page_start": 106,
+      "page_end": 107,
+      "aliases": [
+        "Laryngeal Tube airway insertion",
+        "CPM 2.21 Laryngeal Tube airway insertion",
+        "2.21 Laryngeal Tube airway insertion"
+      ],
+      "keywords": [
+        "laryngeal",
+        "tube",
+        "airway",
+        "insertion",
+        "airway management",
+        "2.21",
+        "cpm 2.21"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intubating-laryngeal-tube-airway-insertion-ilts-d",
+      "cpm_number": "2.22",
+      "title": "Intubating laryngeal tube airway insertion (iLTS-D)",
+      "cpm_section": "Airway Management",
+      "page_start": 108,
+      "page_end": 109,
+      "aliases": [
+        "Intubating laryngeal tube airway insertion (iLTS-D)",
+        "CPM 2.22 Intubating laryngeal tube airway insertion (iLTS-D)",
+        "2.22 Intubating laryngeal tube airway insertion (iLTS-D)",
+        "Intubating LTA insertion (iLTS-D)",
+        "Intubating laryngeal tube airway insertion (iLTS-D) iLTS-D"
+      ],
+      "keywords": [
+        "intubating",
+        "laryngeal",
+        "tube",
+        "airway",
+        "insertion",
+        "ilts-d",
+        "airway management",
+        "2.22",
+        "cpm 2.22",
+        "intubating laryngeal tube"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "armored-ett-insertion-using-the-ilts-d",
+      "cpm_number": "2.23",
+      "title": "Armored ETT insertion using the iLTS-D",
+      "cpm_section": "Airway Management",
+      "page_start": 110,
+      "page_end": 111,
+      "aliases": [
+        "Armored ETT insertion using the iLTS-D",
+        "CPM 2.23 Armored ETT insertion using the iLTS-D",
+        "2.23 Armored ETT insertion using the iLTS-D",
+        "Armored ETT insertion using the iLTS-D ETT",
+        "Armored ETT insertion using the iLTS-D iLTS-D"
+      ],
+      "keywords": [
+        "armored",
+        "ett",
+        "insertion",
+        "ilts-d",
+        "airway management",
+        "2.23",
+        "cpm 2.23",
+        "endotracheal tube",
+        "intubating laryngeal tube"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "quick-trach-ii-cricothyroidotomy",
+      "cpm_number": "2.24",
+      "title": "Quick trach II cricothyroidotomy",
+      "cpm_section": "Airway Management",
+      "page_start": 112,
+      "page_end": 115,
+      "aliases": [
+        "Quick trach II cricothyroidotomy",
+        "CPM 2.24 Quick trach II cricothyroidotomy",
+        "2.24 Quick trach II cricothyroidotomy"
+      ],
+      "keywords": [
+        "quick",
+        "trach",
+        "cricothyroidotomy",
+        "airway management",
+        "2.24",
+        "cpm 2.24"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "oxygen-therapy-nasal-cannula",
+      "cpm_number": "3.1",
+      "title": "Oxygen therapy: Nasal cannula",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 116,
+      "page_end": 117,
+      "aliases": [
+        "Oxygen therapy: Nasal cannula",
+        "CPM 3.1 Oxygen therapy: Nasal cannula",
+        "3.1 Oxygen therapy: Nasal cannula"
+      ],
+      "keywords": [
+        "oxygen",
+        "therapy",
+        "nasal",
+        "cannula",
+        "oxygenation and ventilation",
+        "3.1",
+        "cpm 3.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "oxygen-therapy-simple-face-mask",
+      "cpm_number": "3.2",
+      "title": "Oxygen therapy: Simple face mask",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 118,
+      "page_end": 119,
+      "aliases": [
+        "Oxygen therapy: Simple face mask",
+        "CPM 3.2 Oxygen therapy: Simple face mask",
+        "3.2 Oxygen therapy: Simple face mask"
+      ],
+      "keywords": [
+        "oxygen",
+        "therapy",
+        "simple",
+        "face",
+        "mask",
+        "oxygenation and ventilation",
+        "3.2",
+        "cpm 3.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "oxygen-therapy-non-rebreather-mask",
+      "cpm_number": "3.3",
+      "title": "Oxygen therapy: Non-rebreather mask",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 120,
+      "page_end": 121,
+      "aliases": [
+        "Oxygen therapy: Non-rebreather mask",
+        "CPM 3.3 Oxygen therapy: Non-rebreather mask",
+        "3.3 Oxygen therapy: Non-rebreather mask"
+      ],
+      "keywords": [
+        "oxygen",
+        "therapy",
+        "non-rebreather",
+        "mask",
+        "oxygenation and ventilation",
+        "3.3",
+        "cpm 3.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "nebulization-mask",
+      "cpm_number": "3.4",
+      "title": "Nebulization: Mask",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 122,
+      "page_end": 123,
+      "aliases": [
+        "Nebulization: Mask",
+        "CPM 3.4 Nebulization: Mask",
+        "3.4 Nebulization: Mask"
+      ],
+      "keywords": [
+        "nebulization",
+        "mask",
+        "oxygenation and ventilation",
+        "3.4",
+        "cpm 3.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "nebulization-inline",
+      "cpm_number": "3.5",
+      "title": "Nebulization: Inline",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 124,
+      "page_end": 125,
+      "aliases": [
+        "Nebulization: Inline",
+        "CPM 3.5 Nebulization: Inline",
+        "3.5 Nebulization: Inline"
+      ],
+      "keywords": [
+        "nebulization",
+        "inline",
+        "oxygenation and ventilation",
+        "3.5",
+        "cpm 3.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "oxygen-therapy-pre-oxygenation-for-intubation",
+      "cpm_number": "3.6",
+      "title": "Oxygen therapy: Pre-oxygenation for intubation",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 126,
+      "page_end": 127,
+      "aliases": [
+        "Oxygen therapy: Pre-oxygenation for intubation",
+        "CPM 3.6 Oxygen therapy: Pre-oxygenation for intubation",
+        "3.6 Oxygen therapy: Pre-oxygenation for intubation"
+      ],
+      "keywords": [
+        "oxygen",
+        "therapy",
+        "pre-oxygenation",
+        "intubation",
+        "oxygenation and ventilation",
+        "3.6",
+        "cpm 3.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "bag-valve-mask-ventilation-one-person-technique",
+      "cpm_number": "3.7",
+      "title": "Bag-valve-mask ventilation: One-person-technique",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 128,
+      "page_end": 130,
+      "aliases": [
+        "Bag-valve-mask ventilation: One-person-technique",
+        "CPM 3.7 Bag-valve-mask ventilation: One-person-technique",
+        "3.7 Bag-valve-mask ventilation: One-person-technique",
+        "BVM ventilation: One-person-technique"
+      ],
+      "keywords": [
+        "bag-valve-mask",
+        "ventilation",
+        "one-person-technique",
+        "oxygenation and ventilation",
+        "3.7",
+        "cpm 3.7"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "bag-valve-mask-ventilation-two-person-technique",
+      "cpm_number": "3.8",
+      "title": "Bag-valve-mask ventilation: Two-person-technique",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 131,
+      "page_end": 133,
+      "aliases": [
+        "Bag-valve-mask ventilation: Two-person-technique",
+        "CPM 3.8 Bag-valve-mask ventilation: Two-person-technique",
+        "3.8 Bag-valve-mask ventilation: Two-person-technique",
+        "BVM ventilation: Two-person-technique"
+      ],
+      "keywords": [
+        "bag-valve-mask",
+        "ventilation",
+        "two-person-technique",
+        "oxygenation and ventilation",
+        "3.8",
+        "cpm 3.8"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "bag-valve-mask-ventilation-stoma-tracheostomy",
+      "cpm_number": "3.9",
+      "title": "Bag-valve-mask ventilation: Stoma/Tracheostomy",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 134,
+      "page_end": 135,
+      "aliases": [
+        "Bag-valve-mask ventilation: Stoma/Tracheostomy",
+        "CPM 3.9 Bag-valve-mask ventilation: Stoma/Tracheostomy",
+        "3.9 Bag-valve-mask ventilation: Stoma/Tracheostomy",
+        "BVM ventilation: Stoma/Tracheostomy"
+      ],
+      "keywords": [
+        "bag-valve-mask",
+        "ventilation",
+        "stoma",
+        "tracheostomy",
+        "oxygenation and ventilation",
+        "3.9",
+        "cpm 3.9"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "bag-valve-mask-ventilation-peep-valve",
+      "cpm_number": "3.10",
+      "title": "Bag-valve-mask ventilation: PEEP valve",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 136,
+      "page_end": 138,
+      "aliases": [
+        "Bag-valve-mask ventilation: PEEP valve",
+        "CPM 3.10 Bag-valve-mask ventilation: PEEP valve",
+        "3.10 Bag-valve-mask ventilation: PEEP valve",
+        "BVM ventilation: PEEP valve",
+        "Bag-valve-mask ventilation: PEEP valve PEEP"
+      ],
+      "keywords": [
+        "bag-valve-mask",
+        "ventilation",
+        "peep",
+        "valve",
+        "oxygenation and ventilation",
+        "3.10",
+        "cpm 3.10"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "manual-ventilation-with-bvm-to-ett-lta",
+      "cpm_number": "3.11",
+      "title": "Manual ventilation with BVM to ETT/ LTA",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 139,
+      "page_end": 140,
+      "aliases": [
+        "Manual ventilation with BVM to ETT/ LTA",
+        "CPM 3.11 Manual ventilation with BVM to ETT/ LTA",
+        "3.11 Manual ventilation with BVM to ETT/ LTA",
+        "Manual ventilation with BVM to ETT/ LTA BVM",
+        "Manual ventilation with BVM to ETT/ LTA ETT",
+        "Manual ventilation with BVM to ETT/ LTA LTA"
+      ],
+      "keywords": [
+        "ventilation",
+        "bvm",
+        "ett",
+        "lta",
+        "oxygenation and ventilation",
+        "3.11",
+        "cpm 3.11",
+        "bag valve mask",
+        "endotracheal tube",
+        "laryngeal tube airway"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "mechanical-ventilation-using-the-oxylog-3000-plus-cmv-mode",
+      "cpm_number": "3.12",
+      "title": "Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 141,
+      "page_end": 143,
+      "aliases": [
+        "Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
+        "CPM 3.12 Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
+        "3.12 Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
+        "Mechanical ventilation using the Oxylog 3000 Plus: CMV mode CMV"
+      ],
+      "keywords": [
+        "mechanical",
+        "ventilation",
+        "oxylog",
+        "3000",
+        "plus",
+        "cmv",
+        "mode",
+        "oxygenation and ventilation",
+        "3.12",
+        "cpm 3.12"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "mechanical-ventilation-using-the-oxylog-3000-plus-cpap-mode",
+      "cpm_number": "3.13",
+      "title": "Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 144,
+      "page_end": 145,
+      "aliases": [
+        "Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
+        "CPM 3.13 Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
+        "3.13 Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
+        "Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode CPAP"
+      ],
+      "keywords": [
+        "mechanical",
+        "ventilation",
+        "oxylog",
+        "3000",
+        "plus",
+        "cpap",
+        "mode",
+        "oxygenation and ventilation",
+        "3.13",
+        "cpm 3.13"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "mechanical-ventilation-using-the-oxylog-3000-plus-bipap-mode",
+      "cpm_number": "3.14",
+      "title": "Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 146,
+      "page_end": 147,
+      "aliases": [
+        "Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
+        "CPM 3.14 Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
+        "3.14 Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
+        "Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode BIPAP"
+      ],
+      "keywords": [
+        "mechanical",
+        "ventilation",
+        "oxylog",
+        "3000",
+        "plus",
+        "bipap",
+        "mode",
+        "oxygenation and ventilation",
+        "3.14",
+        "cpm 3.14"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "mechanical-ventilation-using-the-oxylog-1000",
+      "cpm_number": "3.15",
+      "title": "Mechanical ventilation using the Oxylog 1000",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 148,
+      "page_end": 150,
+      "aliases": [
+        "Mechanical ventilation using the Oxylog 1000",
+        "CPM 3.15 Mechanical ventilation using the Oxylog 1000",
+        "3.15 Mechanical ventilation using the Oxylog 1000"
+      ],
+      "keywords": [
+        "mechanical",
+        "ventilation",
+        "oxylog",
+        "1000",
+        "oxygenation and ventilation",
+        "3.15",
+        "cpm 3.15"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "mechanical-ventilation-using-the-hamilton-t1",
+      "cpm_number": "3.16",
+      "title": "Mechanical ventilation using the Hamilton T1",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 151,
+      "page_end": 153,
+      "aliases": [
+        "Mechanical ventilation using the Hamilton T1",
+        "CPM 3.16 Mechanical ventilation using the Hamilton T1",
+        "3.16 Mechanical ventilation using the Hamilton T1"
+      ],
+      "keywords": [
+        "mechanical",
+        "ventilation",
+        "hamilton",
+        "oxygenation and ventilation",
+        "3.16",
+        "cpm 3.16"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cpap-flow-safe-ii",
+      "cpm_number": "3.17",
+      "title": "CPAP: Flow-safe II",
+      "cpm_section": "Oxygenation and Ventilation",
+      "page_start": 154,
+      "page_end": 156,
+      "aliases": [
+        "CPAP: Flow-safe II",
+        "CPM 3.17 CPAP: Flow-safe II",
+        "3.17 CPAP: Flow-safe II",
+        "CPAP: Flow-safe II CPAP"
+      ],
+      "keywords": [
+        "cpap",
+        "flow-safe",
+        "oxygenation and ventilation",
+        "3.17",
+        "cpm 3.17"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intravenous-cannulation-extremities",
+      "cpm_number": "4.1",
+      "title": "Intravenous cannulation: Extremities",
+      "cpm_section": "Circulatory Management",
+      "page_start": 157,
+      "page_end": 158,
+      "aliases": [
+        "Intravenous cannulation: Extremities",
+        "CPM 4.1 Intravenous cannulation: Extremities",
+        "4.1 Intravenous cannulation: Extremities",
+        "IV cannulation: Extremities"
+      ],
+      "keywords": [
+        "intravenous",
+        "cannulation",
+        "extremities",
+        "circulatory management",
+        "4.1",
+        "cpm 4.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intravenous-cannulation-external-jugular-vein",
+      "cpm_number": "4.2",
+      "title": "Intravenous cannulation: External jugular vein",
+      "cpm_section": "Circulatory Management",
+      "page_start": 159,
+      "page_end": 160,
+      "aliases": [
+        "Intravenous cannulation: External jugular vein",
+        "CPM 4.2 Intravenous cannulation: External jugular vein",
+        "4.2 Intravenous cannulation: External jugular vein",
+        "IV cannulation: External jugular vein"
+      ],
+      "keywords": [
+        "intravenous",
+        "cannulation",
+        "external",
+        "jugular",
+        "vein",
+        "circulatory management",
+        "4.2",
+        "cpm 4.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intra-osseous-cannulation-in-adults-proximal-humerus",
+      "cpm_number": "4.3",
+      "title": "Intra-osseous cannulation in adults: Proximal humerus",
+      "cpm_section": "Circulatory Management",
+      "page_start": 161,
+      "page_end": 164,
+      "aliases": [
+        "Intra-osseous cannulation in adults: Proximal humerus",
+        "CPM 4.3 Intra-osseous cannulation in adults: Proximal humerus",
+        "4.3 Intra-osseous cannulation in adults: Proximal humerus",
+        "Intraosseous cannulation in adults: Proximal humerus"
+      ],
+      "keywords": [
+        "intra-osseous",
+        "cannulation",
+        "adults",
+        "proximal",
+        "humerus",
+        "circulatory management",
+        "4.3",
+        "cpm 4.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intra-osseous-cannulation-in-adults-proximal-tibia",
+      "cpm_number": "4.4",
+      "title": "Intra-osseous cannulation in adults: Proximal Tibia",
+      "cpm_section": "Circulatory Management",
+      "page_start": 165,
+      "page_end": 167,
+      "aliases": [
+        "Intra-osseous cannulation in adults: Proximal Tibia",
+        "CPM 4.4 Intra-osseous cannulation in adults: Proximal Tibia",
+        "4.4 Intra-osseous cannulation in adults: Proximal Tibia",
+        "Intraosseous cannulation in adults: Proximal Tibia"
+      ],
+      "keywords": [
+        "intra-osseous",
+        "cannulation",
+        "adults",
+        "proximal",
+        "tibia",
+        "circulatory management",
+        "4.4",
+        "cpm 4.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intra-osseous-cannulation-in-paediatrics-proximal-tibia",
+      "cpm_number": "4.5",
+      "title": "Intra-osseous cannulation in paediatrics: Proximal Tibia",
+      "cpm_section": "Circulatory Management",
+      "page_start": 168,
+      "page_end": 170,
+      "aliases": [
+        "Intra-osseous cannulation in paediatrics: Proximal Tibia",
+        "CPM 4.5 Intra-osseous cannulation in paediatrics: Proximal Tibia",
+        "4.5 Intra-osseous cannulation in paediatrics: Proximal Tibia",
+        "Intra-osseous cannulation in pediatrics: Proximal Tibia",
+        "Intraosseous cannulation in paediatrics: Proximal Tibia",
+        "Intra-osseous cannulation in paediatrics: Proximal Tibia AED"
+      ],
+      "keywords": [
+        "intra-osseous",
+        "cannulation",
+        "paediatrics",
+        "proximal",
+        "tibia",
+        "circulatory management",
+        "4.5",
+        "cpm 4.5",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intra-osseous-cannulation-in-paediatrics-distal-femur",
+      "cpm_number": "4.6",
+      "title": "Intra-osseous cannulation in paediatrics: Distal Femur",
+      "cpm_section": "Circulatory Management",
+      "page_start": 171,
+      "page_end": 173,
+      "aliases": [
+        "Intra-osseous cannulation in paediatrics: Distal Femur",
+        "CPM 4.6 Intra-osseous cannulation in paediatrics: Distal Femur",
+        "4.6 Intra-osseous cannulation in paediatrics: Distal Femur",
+        "Intra-osseous cannulation in pediatrics: Distal Femur",
+        "Intraosseous cannulation in paediatrics: Distal Femur",
+        "Intra-osseous cannulation in paediatrics: Distal Femur AED"
+      ],
+      "keywords": [
+        "intra-osseous",
+        "cannulation",
+        "paediatrics",
+        "distal",
+        "femur",
+        "circulatory management",
+        "4.6",
+        "cpm 4.6",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "buretrol-set-for-fluid-administration-to-paediatrics",
+      "cpm_number": "4.7",
+      "title": "Buretrol set for fluid administration to paediatrics",
+      "cpm_section": "Circulatory Management",
+      "page_start": 174,
+      "page_end": 176,
+      "aliases": [
+        "Buretrol set for fluid administration to paediatrics",
+        "CPM 4.7 Buretrol set for fluid administration to paediatrics",
+        "4.7 Buretrol set for fluid administration to paediatrics",
+        "Buretrol set for fluid administration to pediatrics",
+        "Buretrol set for fluid administration to paediatrics AED"
+      ],
+      "keywords": [
+        "buretrol",
+        "set",
+        "fluid",
+        "administration",
+        "paediatrics",
+        "circulatory management",
+        "4.7",
+        "cpm 4.7",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "medication-preparation-and-labelling",
+      "cpm_number": "5.1",
+      "title": "Medication preparation and labelling",
+      "cpm_section": "Medication Administration",
+      "page_start": 177,
+      "page_end": 177,
+      "aliases": [
+        "Medication preparation and labelling",
+        "CPM 5.1 Medication preparation and labelling",
+        "5.1 Medication preparation and labelling"
+      ],
+      "keywords": [
+        "medication",
+        "preparation",
+        "labelling",
+        "medication administration",
+        "5.1",
+        "cpm 5.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intravenous-intraosseous-medication-administration",
+      "cpm_number": "5.2",
+      "title": "Intravenous/ Intraosseous medication administration",
+      "cpm_section": "Medication Administration",
+      "page_start": 178,
+      "page_end": 178,
+      "aliases": [
+        "Intravenous/ Intraosseous medication administration",
+        "CPM 5.2 Intravenous/ Intraosseous medication administration",
+        "5.2 Intravenous/ Intraosseous medication administration",
+        "IV/ Intraosseous medication administration",
+        "Intravenous/ IO medication administration"
+      ],
+      "keywords": [
+        "intravenous",
+        "intraosseous",
+        "medication",
+        "administration",
+        "medication administration",
+        "5.2",
+        "cpm 5.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intramuscular-medication-administration",
+      "cpm_number": "5.3",
+      "title": "Intramuscular medication administration",
+      "cpm_section": "Medication Administration",
+      "page_start": 179,
+      "page_end": 180,
+      "aliases": [
+        "Intramuscular medication administration",
+        "CPM 5.3 Intramuscular medication administration",
+        "5.3 Intramuscular medication administration",
+        "IM medication administration"
+      ],
+      "keywords": [
+        "intramuscular",
+        "medication",
+        "administration",
+        "medication administration",
+        "5.3",
+        "cpm 5.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "intranasal-medication-administration",
+      "cpm_number": "5.4",
+      "title": "Intranasal medication administration",
+      "cpm_section": "Medication Administration",
+      "page_start": 181,
+      "page_end": 182,
+      "aliases": [
+        "Intranasal medication administration",
+        "CPM 5.4 Intranasal medication administration",
+        "5.4 Intranasal medication administration"
+      ],
+      "keywords": [
+        "intranasal",
+        "medication",
+        "administration",
+        "medication administration",
+        "5.4",
+        "cpm 5.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "buccal-medication-administration",
+      "cpm_number": "5.5",
+      "title": "Buccal medication administration",
+      "cpm_section": "Medication Administration",
+      "page_start": 183,
+      "page_end": 183,
+      "aliases": [
+        "Buccal medication administration",
+        "CPM 5.5 Buccal medication administration",
+        "5.5 Buccal medication administration"
+      ],
+      "keywords": [
+        "buccal",
+        "medication",
+        "administration",
+        "medication administration",
+        "5.5",
+        "cpm 5.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "sublingual-medication-administration",
+      "cpm_number": "5.6",
+      "title": "Sublingual medication administration",
+      "cpm_section": "Medication Administration",
+      "page_start": 184,
+      "page_end": 184,
+      "aliases": [
+        "Sublingual medication administration",
+        "CPM 5.6 Sublingual medication administration",
+        "5.6 Sublingual medication administration",
+        "SL medication administration"
+      ],
+      "keywords": [
+        "sublingual",
+        "medication",
+        "administration",
+        "medication administration",
+        "5.6",
+        "cpm 5.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "oral-medication-administration",
+      "cpm_number": "5.7",
+      "title": "Oral medication administration",
+      "cpm_section": "Medication Administration",
+      "page_start": 185,
+      "page_end": 185,
+      "aliases": [
+        "Oral medication administration",
+        "CPM 5.7 Oral medication administration",
+        "5.7 Oral medication administration"
+      ],
+      "keywords": [
+        "oral",
+        "medication",
+        "administration",
+        "medication administration",
+        "5.7",
+        "cpm 5.7"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "inhaled-medication-administration-methoxyflurane",
+      "cpm_number": "5.8",
+      "title": "Inhaled medication administration: Methoxyflurane",
+      "cpm_section": "Medication Administration",
+      "page_start": 186,
+      "page_end": 187,
+      "aliases": [
+        "Inhaled medication administration: Methoxyflurane",
+        "CPM 5.8 Inhaled medication administration: Methoxyflurane",
+        "5.8 Inhaled medication administration: Methoxyflurane"
+      ],
+      "keywords": [
+        "inhaled",
+        "medication",
+        "administration",
+        "methoxyflurane",
+        "medication administration",
+        "5.8",
+        "cpm 5.8"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "use-of-syringe-drivers",
+      "cpm_number": "5.9",
+      "title": "Use of syringe drivers",
+      "cpm_section": "Medication Administration",
+      "page_start": 188,
+      "page_end": 190,
+      "aliases": [
+        "Use of syringe drivers",
+        "CPM 5.9 Use of syringe drivers",
+        "5.9 Use of syringe drivers"
+      ],
+      "keywords": [
+        "syringe",
+        "drivers",
+        "medication administration",
+        "5.9",
+        "cpm 5.9"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "use-of-infusion-pumps",
+      "cpm_number": "5.10",
+      "title": "Use of infusion pumps",
+      "cpm_section": "Medication Administration",
+      "page_start": 191,
+      "page_end": 193,
+      "aliases": [
+        "Use of infusion pumps",
+        "CPM 5.10 Use of infusion pumps",
+        "5.10 Use of infusion pumps"
+      ],
+      "keywords": [
+        "infusion",
+        "pumps",
+        "medication administration",
+        "5.10",
+        "cpm 5.10"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-monitoring-4-lead-ecg",
+      "cpm_number": "6.1",
+      "title": "Cardiac monitoring: 4-Lead ECG",
+      "cpm_section": "Electrocardiogram Recording",
+      "page_start": 194,
+      "page_end": 195,
+      "aliases": [
+        "Cardiac monitoring: 4-Lead ECG",
+        "CPM 6.1 Cardiac monitoring: 4-Lead ECG",
+        "6.1 Cardiac monitoring: 4-Lead ECG",
+        "Cardiac monitoring: 4-Lead ECG ECG"
+      ],
+      "keywords": [
+        "cardiac",
+        "monitoring",
+        "4-lead",
+        "ecg",
+        "electrocardiogram recording",
+        "6.1",
+        "cpm 6.1",
+        "EKG",
+        "cardiac monitoring"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-monitoring-6-lead-ecg-acquisition",
+      "cpm_number": "6.2",
+      "title": "Cardiac monitoring: 6-Lead ECG acquisition",
+      "cpm_section": "Electrocardiogram Recording",
+      "page_start": 196,
+      "page_end": 196,
+      "aliases": [
+        "Cardiac monitoring: 6-Lead ECG acquisition",
+        "CPM 6.2 Cardiac monitoring: 6-Lead ECG acquisition",
+        "6.2 Cardiac monitoring: 6-Lead ECG acquisition",
+        "Cardiac monitoring: 6-Lead ECG acquisition ECG"
+      ],
+      "keywords": [
+        "cardiac",
+        "monitoring",
+        "6-lead",
+        "ecg",
+        "acquisition",
+        "electrocardiogram recording",
+        "6.2",
+        "cpm 6.2",
+        "EKG",
+        "cardiac monitoring"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-monitoring-12-lead-ecg-acquisition",
+      "cpm_number": "6.3",
+      "title": "Cardiac monitoring: 12-Lead ECG acquisition",
+      "cpm_section": "Electrocardiogram Recording",
+      "page_start": 197,
+      "page_end": 200,
+      "aliases": [
+        "Cardiac monitoring: 12-Lead ECG acquisition",
+        "CPM 6.3 Cardiac monitoring: 12-Lead ECG acquisition",
+        "6.3 Cardiac monitoring: 12-Lead ECG acquisition",
+        "Cardiac monitoring: 12-Lead ECG acquisition ECG"
+      ],
+      "keywords": [
+        "cardiac",
+        "monitoring",
+        "12-lead",
+        "ecg",
+        "acquisition",
+        "electrocardiogram recording",
+        "6.3",
+        "cpm 6.3",
+        "EKG",
+        "cardiac monitoring"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-monitoring-12-lead-ecg-telemetry",
+      "cpm_number": "6.4",
+      "title": "Cardiac monitoring: 12-Lead ECG telemetry",
+      "cpm_section": "Electrocardiogram Recording",
+      "page_start": 201,
+      "page_end": 203,
+      "aliases": [
+        "Cardiac monitoring: 12-Lead ECG telemetry",
+        "CPM 6.4 Cardiac monitoring: 12-Lead ECG telemetry",
+        "6.4 Cardiac monitoring: 12-Lead ECG telemetry",
+        "Cardiac monitoring: 12-Lead ECG telemetry ECG"
+      ],
+      "keywords": [
+        "cardiac",
+        "monitoring",
+        "12-lead",
+        "ecg",
+        "telemetry",
+        "electrocardiogram recording",
+        "6.4",
+        "cpm 6.4",
+        "EKG",
+        "cardiac monitoring"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "declaration-of-death-withholding-resuscitation",
+      "cpm_number": "7.1",
+      "title": "Declaration of death: withholding resuscitation",
+      "cpm_section": "Cardiac Management",
+      "page_start": 204,
+      "page_end": 204,
+      "aliases": [
+        "Declaration of death: withholding resuscitation",
+        "CPM 7.1 Declaration of death: withholding resuscitation",
+        "7.1 Declaration of death: withholding resuscitation"
+      ],
+      "keywords": [
+        "declaration",
+        "death",
+        "withholding",
+        "resuscitation",
+        "cardiac management",
+        "7.1",
+        "cpm 7.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "declaration-of-death-withdrawal-of-resuscitation-efforts",
+      "cpm_number": "7.2",
+      "title": "Declaration of death: Withdrawal of resuscitation efforts",
+      "cpm_section": "Cardiac Management",
+      "page_start": 205,
+      "page_end": 205,
+      "aliases": [
+        "Declaration of death: Withdrawal of resuscitation efforts",
+        "CPM 7.2 Declaration of death: Withdrawal of resuscitation efforts",
+        "7.2 Declaration of death: Withdrawal of resuscitation efforts"
+      ],
+      "keywords": [
+        "declaration",
+        "death",
+        "withdrawal",
+        "resuscitation",
+        "efforts",
+        "cardiac management",
+        "7.2",
+        "cpm 7.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "chest-compression-manual-adult",
+      "cpm_number": "7.3",
+      "title": "Chest compression: Manual (Adult)",
+      "cpm_section": "Cardiac Management",
+      "page_start": 206,
+      "page_end": 206,
+      "aliases": [
+        "Chest compression: Manual (Adult)",
+        "CPM 7.3 Chest compression: Manual (Adult)",
+        "7.3 Chest compression: Manual (Adult)"
+      ],
+      "keywords": [
+        "chest",
+        "compression",
+        "cardiac management",
+        "7.3",
+        "cpm 7.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "chest-compression-mechanical-lucas-device-2-3",
+      "cpm_number": "7.4",
+      "title": "Chest compression: Mechanical (LUCAS device 2/3)",
+      "cpm_section": "Cardiac Management",
+      "page_start": 207,
+      "page_end": 209,
+      "aliases": [
+        "Chest compression: Mechanical (LUCAS device 2/3)",
+        "CPM 7.4 Chest compression: Mechanical (LUCAS device 2/3)",
+        "7.4 Chest compression: Mechanical (LUCAS device 2/3)"
+      ],
+      "keywords": [
+        "chest",
+        "compression",
+        "mechanical",
+        "lucas",
+        "device",
+        "cardiac management",
+        "7.4",
+        "cpm 7.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-arrest-adult-medical-resuscitation",
+      "cpm_number": "7.5",
+      "title": "Cardiac arrest: Adult medical resuscitation",
+      "cpm_section": "Cardiac Management",
+      "page_start": 210,
+      "page_end": 212,
+      "aliases": [
+        "Cardiac arrest: Adult medical resuscitation",
+        "CPM 7.5 Cardiac arrest: Adult medical resuscitation",
+        "7.5 Cardiac arrest: Adult medical resuscitation"
+      ],
+      "keywords": [
+        "cardiac",
+        "arrest",
+        "medical",
+        "resuscitation",
+        "cardiac management",
+        "7.5",
+        "cpm 7.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-arrest-adult-trauma-resuscitation",
+      "cpm_number": "7.6",
+      "title": "Cardiac arrest: Adult trauma resuscitation",
+      "cpm_section": "Cardiac Management",
+      "page_start": 213,
+      "page_end": 214,
+      "aliases": [
+        "Cardiac arrest: Adult trauma resuscitation",
+        "CPM 7.6 Cardiac arrest: Adult trauma resuscitation",
+        "7.6 Cardiac arrest: Adult trauma resuscitation"
+      ],
+      "keywords": [
+        "cardiac",
+        "arrest",
+        "trauma",
+        "resuscitation",
+        "cardiac management",
+        "7.6",
+        "cpm 7.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-arrest-pediatric-medical-resuscitation",
+      "cpm_number": "7.7",
+      "title": "Cardiac arrest: Pediatric medical resuscitation",
+      "cpm_section": "Cardiac Management",
+      "page_start": 215,
+      "page_end": 217,
+      "aliases": [
+        "Cardiac arrest: Pediatric medical resuscitation",
+        "CPM 7.7 Cardiac arrest: Pediatric medical resuscitation",
+        "7.7 Cardiac arrest: Pediatric medical resuscitation"
+      ],
+      "keywords": [
+        "cardiac",
+        "arrest",
+        "medical",
+        "resuscitation",
+        "cardiac management",
+        "7.7",
+        "cpm 7.7"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-arrest-pediatric-trauma-resuscitation",
+      "cpm_number": "7.8",
+      "title": "Cardiac arrest: Pediatric trauma resuscitation",
+      "cpm_section": "Cardiac Management",
+      "page_start": 218,
+      "page_end": 219,
+      "aliases": [
+        "Cardiac arrest: Pediatric trauma resuscitation",
+        "CPM 7.8 Cardiac arrest: Pediatric trauma resuscitation",
+        "7.8 Cardiac arrest: Pediatric trauma resuscitation"
+      ],
+      "keywords": [
+        "cardiac",
+        "arrest",
+        "trauma",
+        "resuscitation",
+        "cardiac management",
+        "7.8",
+        "cpm 7.8"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "neonatal-resuscitation",
+      "cpm_number": "7.9",
+      "title": "Neonatal resuscitation",
+      "cpm_section": "Cardiac Management",
+      "page_start": 220,
+      "page_end": 222,
+      "aliases": [
+        "Neonatal resuscitation",
+        "CPM 7.9 Neonatal resuscitation",
+        "7.9 Neonatal resuscitation"
+      ],
+      "keywords": [
+        "neonatal",
+        "resuscitation",
+        "cardiac management",
+        "7.9",
+        "cpm 7.9"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "cardiac-arrest-obstetric-patient-resuscitation",
+      "cpm_number": "7.10",
+      "title": "Cardiac arrest: Obstetric patient resuscitation",
+      "cpm_section": "Cardiac Management",
+      "page_start": 223,
+      "page_end": 225,
+      "aliases": [
+        "Cardiac arrest: Obstetric patient resuscitation",
+        "CPM 7.10 Cardiac arrest: Obstetric patient resuscitation",
+        "7.10 Cardiac arrest: Obstetric patient resuscitation"
+      ],
+      "keywords": [
+        "cardiac",
+        "arrest",
+        "obstetric",
+        "resuscitation",
+        "cardiac management",
+        "7.10",
+        "cpm 7.10"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "defibrillation-with-the-lifepak-15-aed",
+      "cpm_number": "7.11",
+      "title": "Defibrillation with the LIFEPAK 15: AED",
+      "cpm_section": "Cardiac Management",
+      "page_start": 226,
+      "page_end": 228,
+      "aliases": [
+        "Defibrillation with the LIFEPAK 15: AED",
+        "CPM 7.11 Defibrillation with the LIFEPAK 15: AED",
+        "7.11 Defibrillation with the LIFEPAK 15: AED",
+        "defib with the LIFEPAK 15: AED",
+        "Defibrillation with the LIFEPAK 15: AED LIFEPAK 15",
+        "Defibrillation with the LIFEPAK 15: AED AED"
+      ],
+      "keywords": [
+        "defibrillation",
+        "lifepak",
+        "aed",
+        "cardiac management",
+        "7.11",
+        "cpm 7.11",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "defibrillation-with-the-lifepak-1000-aed",
+      "cpm_number": "7.12",
+      "title": "Defibrillation with the LIFEPAK 1000: AED",
+      "cpm_section": "Cardiac Management",
+      "page_start": 229,
+      "page_end": 231,
+      "aliases": [
+        "Defibrillation with the LIFEPAK 1000: AED",
+        "CPM 7.12 Defibrillation with the LIFEPAK 1000: AED",
+        "7.12 Defibrillation with the LIFEPAK 1000: AED",
+        "defib with the LIFEPAK 1000: AED",
+        "Defibrillation with the LIFEPAK 1000: AED LIFEPAK 15",
+        "Defibrillation with the LIFEPAK 1000: AED AED"
+      ],
+      "keywords": [
+        "defibrillation",
+        "lifepak",
+        "1000",
+        "aed",
+        "cardiac management",
+        "7.12",
+        "cpm 7.12",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "defibrillation-with-the-lifepak-15-manual",
+      "cpm_number": "7.13",
+      "title": "Defibrillation with the LIFEPAK 15: Manual",
+      "cpm_section": "Cardiac Management",
+      "page_start": 232,
+      "page_end": 232,
+      "aliases": [
+        "Defibrillation with the LIFEPAK 15: Manual",
+        "CPM 7.13 Defibrillation with the LIFEPAK 15: Manual",
+        "7.13 Defibrillation with the LIFEPAK 15: Manual",
+        "defib with the LIFEPAK 15: Manual",
+        "Defibrillation with the LIFEPAK 15: Manual LIFEPAK 15"
+      ],
+      "keywords": [
+        "defibrillation",
+        "lifepak",
+        "cardiac management",
+        "7.13",
+        "cpm 7.13",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "defibrillation-with-the-lifepak-1000-manual",
+      "cpm_number": "7.14",
+      "title": "Defibrillation with the LIFEPAK 1000: Manual",
+      "cpm_section": "Cardiac Management",
+      "page_start": 233,
+      "page_end": 233,
+      "aliases": [
+        "Defibrillation with the LIFEPAK 1000: Manual",
+        "CPM 7.14 Defibrillation with the LIFEPAK 1000: Manual",
+        "7.14 Defibrillation with the LIFEPAK 1000: Manual",
+        "defib with the LIFEPAK 1000: Manual",
+        "Defibrillation with the LIFEPAK 1000: Manual LIFEPAK 15"
+      ],
+      "keywords": [
+        "defibrillation",
+        "lifepak",
+        "1000",
+        "cardiac management",
+        "7.14",
+        "cpm 7.14",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "defibrillation-with-the-propag-md-manual",
+      "cpm_number": "7.15",
+      "title": "Defibrillation with the Propag MD: Manual",
+      "cpm_section": "Cardiac Management",
+      "page_start": 234,
+      "page_end": 234,
+      "aliases": [
+        "Defibrillation with the Propag MD: Manual",
+        "CPM 7.15 Defibrillation with the Propag MD: Manual",
+        "7.15 Defibrillation with the Propag MD: Manual",
+        "defib with the Propag MD: Manual"
+      ],
+      "keywords": [
+        "defibrillation",
+        "propag",
+        "cardiac management",
+        "7.15",
+        "cpm 7.15"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "3-stack-defibrillation-with-propag-md-manual",
+      "cpm_number": "7.16",
+      "title": "3-Stack Defibrillation with Propag MD: Manual",
+      "cpm_section": "Cardiac Management",
+      "page_start": 235,
+      "page_end": 236,
+      "aliases": [
+        "3-Stack Defibrillation with Propag MD: Manual",
+        "CPM 7.16 3-Stack Defibrillation with Propag MD: Manual",
+        "7.16 3-Stack Defibrillation with Propag MD: Manual",
+        "3-Stack defib with Propag MD: Manual"
+      ],
+      "keywords": [
+        "3-stack",
+        "defibrillation",
+        "propag",
+        "cardiac management",
+        "7.16",
+        "cpm 7.16"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "post-resuscitation-rosc-management",
+      "cpm_number": "7.17",
+      "title": "Post Resuscitation (ROSC) management",
+      "cpm_section": "Cardiac Management",
+      "page_start": 237,
+      "page_end": 238,
+      "aliases": [
+        "Post Resuscitation (ROSC) management",
+        "CPM 7.17 Post Resuscitation (ROSC) management",
+        "7.17 Post Resuscitation (ROSC) management",
+        "Post ROSC (ROSC) management",
+        "Post Resuscitation (ROSC) management ROSC"
+      ],
+      "keywords": [
+        "post",
+        "resuscitation",
+        "rosc",
+        "cardiac management",
+        "7.17",
+        "cpm 7.17",
+        "post arrest"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "standard-valsalva-manoeuvre",
+      "cpm_number": "7.18",
+      "title": "Standard Valsalva manoeuvre",
+      "cpm_section": "Cardiac Management",
+      "page_start": 239,
+      "page_end": 239,
+      "aliases": [
+        "Standard Valsalva manoeuvre",
+        "CPM 7.18 Standard Valsalva manoeuvre",
+        "7.18 Standard Valsalva manoeuvre",
+        "Standard Valsalva maneuver"
+      ],
+      "keywords": [
+        "standard",
+        "valsalva",
+        "manoeuvre",
+        "cardiac management",
+        "7.18",
+        "cpm 7.18"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "modified-valsalva-manoeuvre",
+      "cpm_number": "7.19",
+      "title": "Modified Valsalva manoeuvre",
+      "cpm_section": "Cardiac Management",
+      "page_start": 240,
+      "page_end": 240,
+      "aliases": [
+        "Modified Valsalva manoeuvre",
+        "CPM 7.19 Modified Valsalva manoeuvre",
+        "7.19 Modified Valsalva manoeuvre",
+        "Modified Valsalva maneuver"
+      ],
+      "keywords": [
+        "modified",
+        "valsalva",
+        "manoeuvre",
+        "cardiac management",
+        "7.19",
+        "cpm 7.19"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "synchronized-cardioversion-using-the-lifepak-15",
+      "cpm_number": "7.20",
+      "title": "Synchronized cardioversion using the LIFEPAK 15",
+      "cpm_section": "Cardiac Management",
+      "page_start": 241,
+      "page_end": 242,
+      "aliases": [
+        "Synchronized cardioversion using the LIFEPAK 15",
+        "CPM 7.20 Synchronized cardioversion using the LIFEPAK 15",
+        "7.20 Synchronized cardioversion using the LIFEPAK 15",
+        "Synchronised cardioversion using the LIFEPAK 15",
+        "Synchronized cardioversion using the LIFEPAK 15 LIFEPAK 15"
+      ],
+      "keywords": [
+        "synchronized",
+        "cardioversion",
+        "lifepak",
+        "cardiac management",
+        "7.20",
+        "cpm 7.20",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "synchronized-cardioversion-using-the-propag-md",
+      "cpm_number": "7.21",
+      "title": "Synchronized cardioversion using the Propag MD",
+      "cpm_section": "Cardiac Management",
+      "page_start": 243,
+      "page_end": 244,
+      "aliases": [
+        "Synchronized cardioversion using the Propag MD",
+        "CPM 7.21 Synchronized cardioversion using the Propag MD",
+        "7.21 Synchronized cardioversion using the Propag MD",
+        "Synchronised cardioversion using the Propag MD"
+      ],
+      "keywords": [
+        "synchronized",
+        "cardioversion",
+        "propag",
+        "cardiac management",
+        "7.21",
+        "cpm 7.21"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "transcutaneous-pacing-using-the-lifepak-15",
+      "cpm_number": "7.22",
+      "title": "Transcutaneous pacing using the LIFEPAK 15",
+      "cpm_section": "Cardiac Management",
+      "page_start": 245,
+      "page_end": 246,
+      "aliases": [
+        "Transcutaneous pacing using the LIFEPAK 15",
+        "CPM 7.22 Transcutaneous pacing using the LIFEPAK 15",
+        "7.22 Transcutaneous pacing using the LIFEPAK 15",
+        "TCP using the LIFEPAK 15",
+        "Transcutaneous pacing using the LIFEPAK 15 LIFEPAK 15"
+      ],
+      "keywords": [
+        "transcutaneous",
+        "pacing",
+        "lifepak",
+        "cardiac management",
+        "7.22",
+        "cpm 7.22",
+        "LIFEPAK 15",
+        "monitor",
+        "defibrillator"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "transcutaneous-pacing-using-the-propag-md",
+      "cpm_number": "7.23",
+      "title": "Transcutaneous pacing using the Propag MD",
+      "cpm_section": "Cardiac Management",
+      "page_start": 247,
+      "page_end": 249,
+      "aliases": [
+        "Transcutaneous pacing using the Propag MD",
+        "CPM 7.23 Transcutaneous pacing using the Propag MD",
+        "7.23 Transcutaneous pacing using the Propag MD",
+        "TCP using the Propag MD"
+      ],
+      "keywords": [
+        "transcutaneous",
+        "pacing",
+        "propag",
+        "cardiac management",
+        "7.23",
+        "cpm 7.23"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "external-haemorrhage-control-direct-pressure",
+      "cpm_number": "8.1",
+      "title": "External Haemorrhage Control: Direct Pressure",
+      "cpm_section": "Wound Care",
+      "page_start": 250,
+      "page_end": 250,
+      "aliases": [
+        "External Haemorrhage Control: Direct Pressure",
+        "CPM 8.1 External Haemorrhage Control: Direct Pressure",
+        "8.1 External Haemorrhage Control: Direct Pressure",
+        "External Hemorrhage Control: Direct Pressure"
+      ],
+      "keywords": [
+        "external",
+        "haemorrhage",
+        "control",
+        "direct",
+        "pressure",
+        "wound care",
+        "8.1",
+        "cpm 8.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "external-haemorrhage-control-chito-gauze",
+      "cpm_number": "8.2",
+      "title": "External Haemorrhage Control: Chito gauze",
+      "cpm_section": "Wound Care",
+      "page_start": 251,
+      "page_end": 251,
+      "aliases": [
+        "External Haemorrhage Control: Chito gauze",
+        "CPM 8.2 External Haemorrhage Control: Chito gauze",
+        "8.2 External Haemorrhage Control: Chito gauze",
+        "External Hemorrhage Control: Chito gauze"
+      ],
+      "keywords": [
+        "external",
+        "haemorrhage",
+        "control",
+        "chito",
+        "gauze",
+        "wound care",
+        "8.2",
+        "cpm 8.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "external-haemorrhage-control-blast-bandage",
+      "cpm_number": "8.3",
+      "title": "External haemorrhage control: Blast bandage",
+      "cpm_section": "Wound Care",
+      "page_start": 252,
+      "page_end": 252,
+      "aliases": [
+        "External haemorrhage control: Blast bandage",
+        "CPM 8.3 External haemorrhage control: Blast bandage",
+        "8.3 External haemorrhage control: Blast bandage",
+        "External hemorrhage control: Blast bandage",
+        "External bleeding control: Blast bandage"
+      ],
+      "keywords": [
+        "external",
+        "haemorrhage",
+        "control",
+        "blast",
+        "bandage",
+        "wound care",
+        "8.3",
+        "cpm 8.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-tourniquet",
+      "cpm_number": "8.4",
+      "title": "Application of tourniquet",
+      "cpm_section": "Wound Care",
+      "page_start": 253,
+      "page_end": 254,
+      "aliases": [
+        "Application of tourniquet",
+        "CPM 8.4 Application of tourniquet",
+        "8.4 Application of tourniquet"
+      ],
+      "keywords": [
+        "tourniquet",
+        "wound care",
+        "8.4",
+        "cpm 8.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "impaled-object-management",
+      "cpm_number": "8.5",
+      "title": "Impaled Object management",
+      "cpm_section": "Wound Care",
+      "page_start": 255,
+      "page_end": 255,
+      "aliases": [
+        "Impaled Object management",
+        "CPM 8.5 Impaled Object management",
+        "8.5 Impaled Object management"
+      ],
+      "keywords": [
+        "impaled",
+        "object",
+        "wound care",
+        "8.5",
+        "cpm 8.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "basic-wound-care-and-application-of-dressings-arms-and-leg",
+      "cpm_number": "8.6",
+      "title": "Basic wound care and application of dressings: Arms & leg",
+      "cpm_section": "Wound Care",
+      "page_start": 256,
+      "page_end": 256,
+      "aliases": [
+        "Basic wound care and application of dressings: Arms & leg",
+        "CPM 8.6 Basic wound care and application of dressings: Arms & leg",
+        "8.6 Basic wound care and application of dressings: Arms & leg"
+      ],
+      "keywords": [
+        "basic",
+        "wound",
+        "care",
+        "dressings",
+        "arms",
+        "leg",
+        "wound care",
+        "8.6",
+        "cpm 8.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "basic-wound-care-and-application-of-dressings-elbow-and-knee",
+      "cpm_number": "8.7",
+      "title": "Basic wound care and application of dressings: Elbow & Knee",
+      "cpm_section": "Wound Care",
+      "page_start": 257,
+      "page_end": 257,
+      "aliases": [
+        "Basic wound care and application of dressings: Elbow & Knee",
+        "CPM 8.7 Basic wound care and application of dressings: Elbow & Knee",
+        "8.7 Basic wound care and application of dressings: Elbow & Knee"
+      ],
+      "keywords": [
+        "basic",
+        "wound",
+        "care",
+        "dressings",
+        "elbow",
+        "knee",
+        "wound care",
+        "8.7",
+        "cpm 8.7"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "basic-wound-care-and-application-of-dressings-neck-shoulder-and-hip",
+      "cpm_number": "8.8",
+      "title": "Basic wound care and application of dressings: Neck, shoulder & hip",
+      "cpm_section": "Wound Care",
+      "page_start": 258,
+      "page_end": 258,
+      "aliases": [
+        "Basic wound care and application of dressings: Neck, shoulder & hip",
+        "CPM 8.8 Basic wound care and application of dressings: Neck, shoulder & hip",
+        "8.8 Basic wound care and application of dressings: Neck, shoulder & hip"
+      ],
+      "keywords": [
+        "basic",
+        "wound",
+        "care",
+        "dressings",
+        "neck",
+        "shoulder",
+        "hip",
+        "wound care",
+        "8.8",
+        "cpm 8.8"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "basic-wound-care-and-application-of-dressings-ears-eyes-and-head",
+      "cpm_number": "8.9",
+      "title": "Basic wound care and application of dressings: Ears, eyes, and head",
+      "cpm_section": "Wound Care",
+      "page_start": 259,
+      "page_end": 259,
+      "aliases": [
+        "Basic wound care and application of dressings: Ears, eyes, and head",
+        "CPM 8.9 Basic wound care and application of dressings: Ears, eyes, and head",
+        "8.9 Basic wound care and application of dressings: Ears, eyes, and head",
+        "Basic wound care and application of dressings: Ears, eyes, and head ARS needle"
+      ],
+      "keywords": [
+        "basic",
+        "wound",
+        "care",
+        "dressings",
+        "ears",
+        "eyes",
+        "head",
+        "wound care",
+        "8.9",
+        "cpm 8.9",
+        "ARS needle",
+        "decompression"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "basic-wound-care-and-application-of-dressings-top-of-head",
+      "cpm_number": "8.10",
+      "title": "Basic wound care and application of dressings: Top of head",
+      "cpm_section": "Wound Care",
+      "page_start": 260,
+      "page_end": 260,
+      "aliases": [
+        "Basic wound care and application of dressings: Top of head",
+        "CPM 8.10 Basic wound care and application of dressings: Top of head",
+        "8.10 Basic wound care and application of dressings: Top of head"
+      ],
+      "keywords": [
+        "basic",
+        "wound",
+        "care",
+        "dressings",
+        "top",
+        "head",
+        "wound care",
+        "8.10",
+        "cpm 8.10"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "basic-wound-care-and-application-of-dressings-burns",
+      "cpm_number": "8.11",
+      "title": "Basic wound care and application of dressings: Burns",
+      "cpm_section": "Wound Care",
+      "page_start": 261,
+      "page_end": 261,
+      "aliases": [
+        "Basic wound care and application of dressings: Burns",
+        "CPM 8.11 Basic wound care and application of dressings: Burns",
+        "8.11 Basic wound care and application of dressings: Burns"
+      ],
+      "keywords": [
+        "basic",
+        "wound",
+        "care",
+        "dressings",
+        "burns",
+        "wound care",
+        "8.11",
+        "cpm 8.11"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "eye-irrigation",
+      "cpm_number": "8.12",
+      "title": "Eye irrigation",
+      "cpm_section": "Wound Care",
+      "page_start": 262,
+      "page_end": 262,
+      "aliases": [
+        "Eye irrigation",
+        "CPM 8.12 Eye irrigation",
+        "8.12 Eye irrigation"
+      ],
+      "keywords": [
+        "eye",
+        "irrigation",
+        "wound care",
+        "8.12",
+        "cpm 8.12"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "bowel-evisceration-management",
+      "cpm_number": "8.13",
+      "title": "Bowel Evisceration Management",
+      "cpm_section": "Wound Care",
+      "page_start": 263,
+      "page_end": 263,
+      "aliases": [
+        "Bowel Evisceration Management",
+        "CPM 8.13 Bowel Evisceration Management",
+        "8.13 Bowel Evisceration Management"
+      ],
+      "keywords": [
+        "bowel",
+        "evisceration",
+        "wound care",
+        "8.13",
+        "cpm 8.13"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "pressure-bandage",
+      "cpm_number": "8.14",
+      "title": "Pressure bandage",
+      "cpm_section": "Wound Care",
+      "page_start": 264,
+      "page_end": 266,
+      "aliases": [
+        "Pressure bandage",
+        "CPM 8.14 Pressure bandage",
+        "8.14 Pressure bandage"
+      ],
+      "keywords": [
+        "pressure",
+        "bandage",
+        "wound care",
+        "8.14",
+        "cpm 8.14"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "manual-in-line-stabilization-mils",
+      "cpm_number": "9.1",
+      "title": "Manual in-line stabilization: MILS",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 267,
+      "page_end": 268,
+      "aliases": [
+        "Manual in-line stabilization: MILS",
+        "CPM 9.1 Manual in-line stabilization: MILS",
+        "9.1 Manual in-line stabilization: MILS",
+        "Manual in-line stabilization: MILS MILS"
+      ],
+      "keywords": [
+        "in-line",
+        "stabilization",
+        "mils",
+        "spinal motion restriction: smr",
+        "9.1",
+        "cpm 9.1",
+        "manual inline stabilization"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-cervical-collar",
+      "cpm_number": "9.2",
+      "title": "Application of cervical collar",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 269,
+      "page_end": 270,
+      "aliases": [
+        "Application of cervical collar",
+        "CPM 9.2 Application of cervical collar",
+        "9.2 Application of cervical collar"
+      ],
+      "keywords": [
+        "cervical",
+        "collar",
+        "spinal motion restriction: smr",
+        "9.2",
+        "cpm 9.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "combicarrierii-application",
+      "cpm_number": "9.3",
+      "title": "CombiCarrierII application",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 271,
+      "page_end": 271,
+      "aliases": [
+        "CombiCarrierII application",
+        "CPM 9.3 CombiCarrierII application",
+        "9.3 CombiCarrierII application"
+      ],
+      "keywords": [
+        "combicarrierii",
+        "spinal motion restriction: smr",
+        "9.3",
+        "cpm 9.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "scoop-stretcher-application",
+      "cpm_number": "9.4",
+      "title": "Scoop stretcher application",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 272,
+      "page_end": 272,
+      "aliases": [
+        "Scoop stretcher application",
+        "CPM 9.4 Scoop stretcher application",
+        "9.4 Scoop stretcher application"
+      ],
+      "keywords": [
+        "scoop",
+        "stretcher",
+        "spinal motion restriction: smr",
+        "9.4",
+        "cpm 9.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-a-spider-straps-harness",
+      "cpm_number": "9.5",
+      "title": "Application of a spider straps/harness",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 273,
+      "page_end": 273,
+      "aliases": [
+        "Application of a spider straps/harness",
+        "CPM 9.5 Application of a spider straps/harness",
+        "9.5 Application of a spider straps/harness"
+      ],
+      "keywords": [
+        "spider",
+        "straps",
+        "harness",
+        "spinal motion restriction: smr",
+        "9.5",
+        "cpm 9.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "extrication-using-the-long-backboard-lbb-supine",
+      "cpm_number": "9.6",
+      "title": "Extrication using the long backboard (LBB): Supine",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 274,
+      "page_end": 275,
+      "aliases": [
+        "Extrication using the long backboard (LBB): Supine",
+        "CPM 9.6 Extrication using the long backboard (LBB): Supine",
+        "9.6 Extrication using the long backboard (LBB): Supine",
+        "Extrication using the long backboard (LBB): Supine LBB"
+      ],
+      "keywords": [
+        "extrication",
+        "long",
+        "backboard",
+        "lbb",
+        "supine",
+        "spinal motion restriction: smr",
+        "9.6",
+        "cpm 9.6",
+        "long backboard"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "extrication-using-the-long-backboard-lbb-vehicle",
+      "cpm_number": "9.7",
+      "title": "Extrication using the long backboard (LBB): Vehicle",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 276,
+      "page_end": 277,
+      "aliases": [
+        "Extrication using the long backboard (LBB): Vehicle",
+        "CPM 9.7 Extrication using the long backboard (LBB): Vehicle",
+        "9.7 Extrication using the long backboard (LBB): Vehicle",
+        "Extrication using the long backboard (LBB): Vehicle LBB"
+      ],
+      "keywords": [
+        "extrication",
+        "long",
+        "backboard",
+        "lbb",
+        "vehicle",
+        "spinal motion restriction: smr",
+        "9.7",
+        "cpm 9.7",
+        "long backboard"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "extrication-using-kendrick-extrication-device-ked",
+      "cpm_number": "9.8",
+      "title": "Extrication using Kendrick Extrication Device: KED",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 278,
+      "page_end": 279,
+      "aliases": [
+        "Extrication using Kendrick Extrication Device: KED",
+        "CPM 9.8 Extrication using Kendrick Extrication Device: KED",
+        "9.8 Extrication using Kendrick Extrication Device: KED",
+        "Extrication using Kendrick Extrication Device: KED KED"
+      ],
+      "keywords": [
+        "extrication",
+        "kendrick",
+        "device",
+        "ked",
+        "spinal motion restriction: smr",
+        "9.8",
+        "cpm 9.8",
+        "Kendrick Extrication Device"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "motorcycle-helmet-removal",
+      "cpm_number": "9.9",
+      "title": "Motorcycle helmet removal",
+      "cpm_section": "Spinal Motion Restriction: SMR",
+      "page_start": 280,
+      "page_end": 282,
+      "aliases": [
+        "Motorcycle helmet removal",
+        "CPM 9.9 Motorcycle helmet removal",
+        "9.9 Motorcycle helmet removal"
+      ],
+      "keywords": [
+        "motorcycle",
+        "helmet",
+        "removal",
+        "spinal motion restriction: smr",
+        "9.9",
+        "cpm 9.9"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "anterior-chest-wall-decompression-using-the-ars-needle",
+      "cpm_number": "10.1",
+      "title": "Anterior chest wall decompression using the ARS needle",
+      "cpm_section": "Chest Injuries Management",
+      "page_start": 283,
+      "page_end": 284,
+      "aliases": [
+        "Anterior chest wall decompression using the ARS needle",
+        "CPM 10.1 Anterior chest wall decompression using the ARS needle",
+        "10.1 Anterior chest wall decompression using the ARS needle",
+        "Anterior chest wall decompression using the ARS needle ARS needle"
+      ],
+      "keywords": [
+        "anterior",
+        "chest",
+        "wall",
+        "decompression",
+        "ars",
+        "needle",
+        "chest injuries management",
+        "10.1",
+        "cpm 10.1",
+        "ARS needle"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "lateral-chest-wall-decompression-using-the-ars-needle",
+      "cpm_number": "10.2",
+      "title": "Lateral chest wall decompression using the ARS needle",
+      "cpm_section": "Chest Injuries Management",
+      "page_start": 285,
+      "page_end": 286,
+      "aliases": [
+        "Lateral chest wall decompression using the ARS needle",
+        "CPM 10.2 Lateral chest wall decompression using the ARS needle",
+        "10.2 Lateral chest wall decompression using the ARS needle",
+        "Lateral chest wall decompression using the ARS needle ARS needle"
+      ],
+      "keywords": [
+        "lateral",
+        "chest",
+        "wall",
+        "decompression",
+        "ars",
+        "needle",
+        "chest injuries management",
+        "10.2",
+        "cpm 10.2",
+        "ARS needle"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "finger-thoracostomy",
+      "cpm_number": "10.3",
+      "title": "Finger Thoracostomy",
+      "cpm_section": "Chest Injuries Management",
+      "page_start": 287,
+      "page_end": 288,
+      "aliases": [
+        "Finger Thoracostomy",
+        "CPM 10.3 Finger Thoracostomy",
+        "10.3 Finger Thoracostomy"
+      ],
+      "keywords": [
+        "finger",
+        "thoracostomy",
+        "chest injuries management",
+        "10.3",
+        "cpm 10.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "sucking-chest-wound-seal",
+      "cpm_number": "10.4",
+      "title": "Sucking chest wound seal",
+      "cpm_section": "Chest Injuries Management",
+      "page_start": 289,
+      "page_end": 290,
+      "aliases": [
+        "Sucking chest wound seal",
+        "CPM 10.4 Sucking chest wound seal",
+        "10.4 Sucking chest wound seal"
+      ],
+      "keywords": [
+        "sucking",
+        "chest",
+        "wound",
+        "seal",
+        "chest injuries management",
+        "10.4",
+        "cpm 10.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "flail-chest-stabilization",
+      "cpm_number": "10.5",
+      "title": "Flail chest stabilization",
+      "cpm_section": "Chest Injuries Management",
+      "page_start": 291,
+      "page_end": 293,
+      "aliases": [
+        "Flail chest stabilization",
+        "CPM 10.5 Flail chest stabilization",
+        "10.5 Flail chest stabilization"
+      ],
+      "keywords": [
+        "flail",
+        "chest",
+        "stabilization",
+        "chest injuries management",
+        "10.5",
+        "cpm 10.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "pelvic-immobilization-with-pelvic-sling",
+      "cpm_number": "11.1",
+      "title": "Pelvic immobilization with pelvic sling",
+      "cpm_section": "Splinting",
+      "page_start": 294,
+      "page_end": 295,
+      "aliases": [
+        "Pelvic immobilization with pelvic sling",
+        "CPM 11.1 Pelvic immobilization with pelvic sling",
+        "11.1 Pelvic immobilization with pelvic sling"
+      ],
+      "keywords": [
+        "pelvic",
+        "immobilization",
+        "sling",
+        "splinting",
+        "11.1",
+        "cpm 11.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-traction-splint",
+      "cpm_number": "11.2",
+      "title": "Application of traction splint",
+      "cpm_section": "Splinting",
+      "page_start": 296,
+      "page_end": 297,
+      "aliases": [
+        "Application of traction splint",
+        "CPM 11.2 Application of traction splint",
+        "11.2 Application of traction splint"
+      ],
+      "keywords": [
+        "traction",
+        "splint",
+        "splinting",
+        "11.2",
+        "cpm 11.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-vacuum-splint",
+      "cpm_number": "11.3",
+      "title": "Application of Vacuum splint",
+      "cpm_section": "Splinting",
+      "page_start": 298,
+      "page_end": 299,
+      "aliases": [
+        "Application of Vacuum splint",
+        "CPM 11.3 Application of Vacuum splint",
+        "11.3 Application of Vacuum splint"
+      ],
+      "keywords": [
+        "vacuum",
+        "splint",
+        "splinting",
+        "11.3",
+        "cpm 11.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-splints-for-joints-injuries",
+      "cpm_number": "11.4",
+      "title": "Application of splints for joints injuries",
+      "cpm_section": "Splinting",
+      "page_start": 300,
+      "page_end": 300,
+      "aliases": [
+        "Application of splints for joints injuries",
+        "CPM 11.4 Application of splints for joints injuries",
+        "11.4 Application of splints for joints injuries"
+      ],
+      "keywords": [
+        "splints",
+        "joints",
+        "injuries",
+        "splinting",
+        "11.4",
+        "cpm 11.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-splints-for-long-bone-injuries",
+      "cpm_number": "11.5",
+      "title": "Application of splints for long bone injuries",
+      "cpm_section": "Splinting",
+      "page_start": 301,
+      "page_end": 301,
+      "aliases": [
+        "Application of splints for long bone injuries",
+        "CPM 11.5 Application of splints for long bone injuries",
+        "11.5 Application of splints for long bone injuries"
+      ],
+      "keywords": [
+        "splints",
+        "long",
+        "bone",
+        "injuries",
+        "splinting",
+        "11.5",
+        "cpm 11.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "application-of-splints-sling-and-swathe",
+      "cpm_number": "11.6",
+      "title": "Application of splints: Sling and swathe",
+      "cpm_section": "Splinting",
+      "page_start": 302,
+      "page_end": 304,
+      "aliases": [
+        "Application of splints: Sling and swathe",
+        "CPM 11.6 Application of splints: Sling and swathe",
+        "11.6 Application of splints: Sling and swathe"
+      ],
+      "keywords": [
+        "splints",
+        "sling",
+        "swathe",
+        "splinting",
+        "11.6",
+        "cpm 11.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "obstetric-patient-assessment",
+      "cpm_number": "12.1",
+      "title": "Obstetric Patient Assessment",
+      "cpm_section": "Obstetrics and Gynecology",
+      "page_start": 305,
+      "page_end": 306,
+      "aliases": [
+        "Obstetric Patient Assessment",
+        "CPM 12.1 Obstetric Patient Assessment",
+        "12.1 Obstetric Patient Assessment"
+      ],
+      "keywords": [
+        "obstetric",
+        "obstetrics and gynecology",
+        "12.1",
+        "cpm 12.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "normal-vaginal-delivery",
+      "cpm_number": "12.2",
+      "title": "Normal Vaginal Delivery",
+      "cpm_section": "Obstetrics and Gynecology",
+      "page_start": 307,
+      "page_end": 308,
+      "aliases": [
+        "Normal Vaginal Delivery",
+        "CPM 12.2 Normal Vaginal Delivery",
+        "12.2 Normal Vaginal Delivery"
+      ],
+      "keywords": [
+        "normal",
+        "vaginal",
+        "delivery",
+        "obstetrics and gynecology",
+        "12.2",
+        "cpm 12.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "prolapsed-cord-management",
+      "cpm_number": "12.3",
+      "title": "Prolapsed cord management",
+      "cpm_section": "Obstetrics and Gynecology",
+      "page_start": 309,
+      "page_end": 310,
+      "aliases": [
+        "Prolapsed cord management",
+        "CPM 12.3 Prolapsed cord management",
+        "12.3 Prolapsed cord management"
+      ],
+      "keywords": [
+        "prolapsed",
+        "cord",
+        "obstetrics and gynecology",
+        "12.3",
+        "cpm 12.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "breech-presentation-management",
+      "cpm_number": "12.4",
+      "title": "Breech presentation management",
+      "cpm_section": "Obstetrics and Gynecology",
+      "page_start": 311,
+      "page_end": 312,
+      "aliases": [
+        "Breech presentation management",
+        "CPM 12.4 Breech presentation management",
+        "12.4 Breech presentation management"
+      ],
+      "keywords": [
+        "breech",
+        "presentation",
+        "obstetrics and gynecology",
+        "12.4",
+        "cpm 12.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "external-fundal-massage",
+      "cpm_number": "12.5",
+      "title": "External fundal massage",
+      "cpm_section": "Obstetrics and Gynecology",
+      "page_start": 313,
+      "page_end": 315,
+      "aliases": [
+        "External fundal massage",
+        "CPM 12.5 External fundal massage",
+        "12.5 External fundal massage"
+      ],
+      "keywords": [
+        "external",
+        "fundal",
+        "massage",
+        "obstetrics and gynecology",
+        "12.5",
+        "cpm 12.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "paediatric-patient-assessment",
+      "cpm_number": "13.1",
+      "title": "Paediatric patient assessment",
+      "cpm_section": "Paediatrics",
+      "page_start": 316,
+      "page_end": 318,
+      "aliases": [
+        "Paediatric patient assessment",
+        "CPM 13.1 Paediatric patient assessment",
+        "13.1 Paediatric patient assessment",
+        "Pediatric patient assessment",
+        "Paediatric patient assessment AED"
+      ],
+      "keywords": [
+        "paediatrics",
+        "13.1",
+        "cpm 13.1",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "ticls-paediatric-patient-assessment",
+      "cpm_number": "13.2",
+      "title": "TICLS: Paediatric patient assessment",
+      "cpm_section": "Paediatrics",
+      "page_start": 319,
+      "page_end": 319,
+      "aliases": [
+        "TICLS: Paediatric patient assessment",
+        "CPM 13.2 TICLS: Paediatric patient assessment",
+        "13.2 TICLS: Paediatric patient assessment",
+        "TICLS: Pediatric patient assessment",
+        "TICLS: Paediatric patient assessment AED",
+        "TICLS: Paediatric patient assessment TICLS"
+      ],
+      "keywords": [
+        "ticls",
+        "paediatrics",
+        "13.2",
+        "cpm 13.2",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "modified-westley-croup-score-assessment",
+      "cpm_number": "13.3",
+      "title": "Modified Westley croup score assessment",
+      "cpm_section": "Paediatrics",
+      "page_start": 320,
+      "page_end": 321,
+      "aliases": [
+        "Modified Westley croup score assessment",
+        "CPM 13.3 Modified Westley croup score assessment",
+        "13.3 Modified Westley croup score assessment"
+      ],
+      "keywords": [
+        "modified",
+        "westley",
+        "croup",
+        "score",
+        "paediatrics",
+        "13.3",
+        "cpm 13.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "paediatric-in-line-nebulization",
+      "cpm_number": "13.4",
+      "title": "Paediatric in-line Nebulization",
+      "cpm_section": "Paediatrics",
+      "page_start": 322,
+      "page_end": 323,
+      "aliases": [
+        "Paediatric in-line Nebulization",
+        "CPM 13.4 Paediatric in-line Nebulization",
+        "13.4 Paediatric in-line Nebulization",
+        "Pediatric in-line Nebulization",
+        "Paediatric in-line Nebulization AED"
+      ],
+      "keywords": [
+        "in-line",
+        "nebulization",
+        "paediatrics",
+        "13.4",
+        "cpm 13.4",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "quick-track-child-cricothyroidotomy",
+      "cpm_number": "13.5",
+      "title": "Quick Track: Child Cricothyroidotomy",
+      "cpm_section": "Paediatrics",
+      "page_start": 324,
+      "page_end": 325,
+      "aliases": [
+        "Quick Track: Child Cricothyroidotomy",
+        "CPM 13.5 Quick Track: Child Cricothyroidotomy",
+        "13.5 Quick Track: Child Cricothyroidotomy"
+      ],
+      "keywords": [
+        "quick",
+        "track",
+        "child",
+        "cricothyroidotomy",
+        "paediatrics",
+        "13.5",
+        "cpm 13.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "paediatric-orotracheal-intubation-using-rapid-sequence-induction",
+      "cpm_number": "13.6",
+      "title": "Paediatric orotracheal intubation using Rapid Sequence Induction",
+      "cpm_section": "Paediatrics",
+      "page_start": 326,
+      "page_end": 329,
+      "aliases": [
+        "Paediatric orotracheal intubation using Rapid Sequence Induction",
+        "CPM 13.6 Paediatric orotracheal intubation using Rapid Sequence Induction",
+        "13.6 Paediatric orotracheal intubation using Rapid Sequence Induction",
+        "Pediatric orotracheal intubation using Rapid Sequence Induction",
+        "Paediatric oro-tracheal intubation using Rapid Sequence Induction",
+        "Paediatric orotracheal intubation using RSI",
+        "Paediatric orotracheal intubation using Rapid Sequence Induction AED"
+      ],
+      "keywords": [
+        "orotracheal",
+        "intubation",
+        "rapid",
+        "sequence",
+        "induction",
+        "paediatrics",
+        "13.6",
+        "cpm 13.6",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "paediatric-spinal-motion-restriction-pedi-pac",
+      "cpm_number": "13.7",
+      "title": "Paediatric spinal motion restriction: Pedi-Pac",
+      "cpm_section": "Paediatrics",
+      "page_start": 330,
+      "page_end": 330,
+      "aliases": [
+        "Paediatric spinal motion restriction: Pedi-Pac",
+        "CPM 13.7 Paediatric spinal motion restriction: Pedi-Pac",
+        "13.7 Paediatric spinal motion restriction: Pedi-Pac",
+        "Pediatric spinal motion restriction: Pedi-Pac",
+        "Paediatric spinal motion restriction: Pedi-Pac AED",
+        "Paediatric spinal motion restriction: Pedi-Pac Pedi-Pac"
+      ],
+      "keywords": [
+        "spinal",
+        "motion",
+        "restriction",
+        "pedi-pac",
+        "paediatrics",
+        "13.7",
+        "cpm 13.7",
+        "AED",
+        "pediatric spinal motion restriction"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "paediatric-infant-car-seat-immobilization",
+      "cpm_number": "13.8",
+      "title": "Paediatric /Infant car seat immobilization",
+      "cpm_section": "Paediatrics",
+      "page_start": 331,
+      "page_end": 332,
+      "aliases": [
+        "Paediatric /Infant car seat immobilization",
+        "CPM 13.8 Paediatric /Infant car seat immobilization",
+        "13.8 Paediatric /Infant car seat immobilization",
+        "Pediatric /Infant car seat immobilization",
+        "Paediatric /Infant car seat immobilization AED"
+      ],
+      "keywords": [
+        "infant",
+        "car",
+        "seat",
+        "immobilization",
+        "paediatrics",
+        "13.8",
+        "cpm 13.8",
+        "AED"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "ferno-mondial-st-stretcher-operations",
+      "cpm_number": "14.1",
+      "title": "Ferno Mondial ST Stretcher operations",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 333,
+      "page_end": 335,
+      "aliases": [
+        "Ferno Mondial ST Stretcher operations",
+        "CPM 14.1 Ferno Mondial ST Stretcher operations",
+        "14.1 Ferno Mondial ST Stretcher operations"
+      ],
+      "keywords": [
+        "ferno",
+        "mondial",
+        "stretcher",
+        "operations",
+        "lifting and moving",
+        "14.1",
+        "cpm 14.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "lifting-a-stretcher-using-body-mechanics",
+      "cpm_number": "14.2",
+      "title": "Lifting a stretcher using body mechanics",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 336,
+      "page_end": 336,
+      "aliases": [
+        "Lifting a stretcher using body mechanics",
+        "CPM 14.2 Lifting a stretcher using body mechanics",
+        "14.2 Lifting a stretcher using body mechanics"
+      ],
+      "keywords": [
+        "lifting",
+        "stretcher",
+        "body",
+        "mechanics",
+        "lifting and moving",
+        "14.2",
+        "cpm 14.2"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "stretcher-to-bed-transfer",
+      "cpm_number": "14.3",
+      "title": "Stretcher to bed transfer",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 337,
+      "page_end": 337,
+      "aliases": [
+        "Stretcher to bed transfer",
+        "CPM 14.3 Stretcher to bed transfer",
+        "14.3 Stretcher to bed transfer"
+      ],
+      "keywords": [
+        "stretcher",
+        "bed",
+        "transfer",
+        "lifting and moving",
+        "14.3",
+        "cpm 14.3"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "floor-to-stretcher-transfer",
+      "cpm_number": "14.4",
+      "title": "Floor to stretcher transfer",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 338,
+      "page_end": 338,
+      "aliases": [
+        "Floor to stretcher transfer",
+        "CPM 14.4 Floor to stretcher transfer",
+        "14.4 Floor to stretcher transfer"
+      ],
+      "keywords": [
+        "floor",
+        "stretcher",
+        "transfer",
+        "lifting and moving",
+        "14.4",
+        "cpm 14.4"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "chair-to-stretcher-transfer",
+      "cpm_number": "14.5",
+      "title": "Chair to stretcher transfer",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 339,
+      "page_end": 339,
+      "aliases": [
+        "Chair to stretcher transfer",
+        "CPM 14.5 Chair to stretcher transfer",
+        "14.5 Chair to stretcher transfer"
+      ],
+      "keywords": [
+        "chair",
+        "stretcher",
+        "transfer",
+        "lifting and moving",
+        "14.5",
+        "cpm 14.5"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "patient-walking",
+      "cpm_number": "14.6",
+      "title": "Patient walking",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 340,
+      "page_end": 340,
+      "aliases": [
+        "Patient walking",
+        "CPM 14.6 Patient walking",
+        "14.6 Patient walking"
+      ],
+      "keywords": [
+        "walking",
+        "lifting and moving",
+        "14.6",
+        "cpm 14.6"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "stair-chair",
+      "cpm_number": "14.7",
+      "title": "Stair chair",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 341,
+      "page_end": 341,
+      "aliases": [
+        "Stair chair",
+        "CPM 14.7 Stair chair",
+        "14.7 Stair chair"
+      ],
+      "keywords": [
+        "stair",
+        "chair",
+        "lifting and moving",
+        "14.7",
+        "cpm 14.7"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "use-of-xtract-2-carry-sheet",
+      "cpm_number": "14.8",
+      "title": "Use of Xtract 2 Carry Sheet",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 342,
+      "page_end": 342,
+      "aliases": [
+        "Use of Xtract 2 Carry Sheet",
+        "CPM 14.8 Use of Xtract 2 Carry Sheet",
+        "14.8 Use of Xtract 2 Carry Sheet"
+      ],
+      "keywords": [
+        "xtract",
+        "carry",
+        "sheet",
+        "lifting and moving",
+        "14.8",
+        "cpm 14.8"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "use-of-carry-sheet",
+      "cpm_number": "14.9",
+      "title": "Use of Carry Sheet",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 343,
+      "page_end": 343,
+      "aliases": [
+        "Use of Carry Sheet",
+        "CPM 14.9 Use of Carry Sheet",
+        "14.9 Use of Carry Sheet"
+      ],
+      "keywords": [
+        "carry",
+        "sheet",
+        "lifting and moving",
+        "14.9",
+        "cpm 14.9"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "use-of-stokes-basket-basket-stretcher",
+      "cpm_number": "14.10",
+      "title": "Use of Stokes Basket (Basket Stretcher)",
+      "cpm_section": "Lifting and Moving",
+      "page_start": 344,
+      "page_end": 346,
+      "aliases": [
+        "Use of Stokes Basket (Basket Stretcher)",
+        "CPM 14.10 Use of Stokes Basket (Basket Stretcher)",
+        "14.10 Use of Stokes Basket (Basket Stretcher)"
+      ],
+      "keywords": [
+        "stokes",
+        "basket",
+        "stretcher",
+        "lifting and moving",
+        "14.10",
+        "cpm 14.10"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "nasogastric-tube-insertion",
+      "cpm_number": "15.1",
+      "title": "Nasogastric tube insertion",
+      "cpm_section": "Miscellaneous",
+      "page_start": 347,
+      "page_end": 348,
+      "aliases": [
+        "Nasogastric tube insertion",
+        "CPM 15.1 Nasogastric tube insertion",
+        "15.1 Nasogastric tube insertion"
+      ],
+      "keywords": [
+        "nasogastric",
+        "tube",
+        "insertion",
+        "miscellaneous",
+        "15.1",
+        "cpm 15.1"
+      ],
+      "type": "procedure"
+    },
+    {
+      "id": "clinical-handover-imist-ambo",
+      "cpm_number": "15.2",
+      "title": "Clinical handover: IMIST-AMBO",
+      "cpm_section": "Miscellaneous",
+      "page_start": 349,
+      "page_end": 349,
+      "aliases": [
+        "Clinical handover: IMIST-AMBO",
+        "CPM 15.2 Clinical handover: IMIST-AMBO",
+        "15.2 Clinical handover: IMIST-AMBO",
+        "Clinical handover: IMIST-AMBO IMIST AMBO"
+      ],
+      "keywords": [
+        "clinical",
+        "handover",
+        "imist-ambo",
+        "miscellaneous",
+        "15.2",
+        "cpm 15.2",
+        "IMIST AMBO"
+      ],
+      "type": "procedure"
+    }
+  ]
+}
