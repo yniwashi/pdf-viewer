@@ -1,0 +1,27 @@
+{
+    "documents": [
+      {
+        "type": "CPG",
+        "version": "2.5",
+        "pdf_url": "https://docs.niwashibase.com/docs/cpg-81w9d1f.pdf",
+        "index_url": "https://docs.niwashibase.com/helpers/cpg_index.json"
+      },
+      {
+        "type": "SOP",
+        "version": "4.4",
+        "pdf_url": "https://docs.niwashibase.com/docs/sop-101qq9f2w.pdf",
+        "index_url": "https://docs.niwashibase.com/helpers/sop_index.json"
+      },
+      {
+        "type": "CPM",
+        "version": "4.0",
+        "pdf_url": "https://docs.niwashibase.com/docs/cpm-202e9d33q.pdf",
+        "index_url": "https://docs.niwashibase.com/helpers/cpm_index.json"
+      },
+      {
+    "type": "PAT",
+    "version": "1.1",
+    "pdf_url": "https://docs.niwashibase.com/docs/pat-301h6j54r.pdf"
+     }
+    ]
+  }
