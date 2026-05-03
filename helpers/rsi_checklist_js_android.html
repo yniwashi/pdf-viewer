@@ -1012,7 +1012,7 @@ window.addEventListener('beforeunload', releaseWake);
       if (window.__rsiTimerRunning) { stop(); return; }
       window.__rsiTimerRunning = true;
       requestWake();                // keep screen on
-      ensureAudioReady();           // unlock audio immediately
+      primeAudio();                 // unlock/preload audio immediately
       setButtonsLabel('Stop 60s');
 
       remaining = 60;
