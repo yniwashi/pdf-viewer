@@ -23,6 +23,13 @@
     "version": "1.1",
     "pdf_url": "https://docs.niwashibase.com/docs/pat-301h6j54r.pdf",
     "index_url": "https://docs.niwashibase.com/helpers/pat_index.json"
+     },
+     {
+    "id": "rsi_checklist",
+    "type": "html",
+    "version": "4.0",
+    "url": "https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html",
+    "show_image": false
      }
     ]
   }
