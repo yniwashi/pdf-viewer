@@ -1,6 +1,74 @@
 <!DOCTYPE html>
 <!--
 THIS IS A COPY OF THE IOS CHECKLIST BUT WITHOUT A BCK BUTTON
+  ANDROID REMOTE TEMPLATE GUIDE
+  ---------------------------------------------------------------------------
+  This file is the remote HTML template used by the Android app.
+  It is downloaded from:
+  https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
+
+  Important:
+  - The app will NOT load this remote file directly as a normal WebView URL.
+  - The app checks document_manifest.json at most once every 24 hours.
+  - The app downloads this HTML only when the manifest version for
+    id "rsi_checklist" is newer/different than the cached RSI version.
+  - After downloading, the app replaces Android placeholders, caches the
+    processed HTML on the device, then displays that cached file in WebView.
+  - This allows the checklist HTML to be updated remotely while keeping the
+    large image and audio files bundled inside the Android app.
+
+  Variables you can safely edit in this HTML:
+  - HTML_VERSION:
+      Informational. Keep this number aligned with document_manifest.json.
+      Example: if the manifest says RSI checklist version "4.0", this should
+      also say "4.0". The manifest version is the real app update trigger.
+
+  - SHOW_IMAGE:
+      true  = show the RSI quick reference image.
+      false = hide the image completely.
+      Current Android app behavior: if document_manifest.json contains
+      "show_image", that manifest value overrides this template value while
+      processing. If manifest omits "show_image", this HTML value is used.
+
+  Android placeholders replaced by the app:
+  - __ANDROID_RSI_IMAGE_SRC__
+      Replaced by: file:///android_asset/rsi_quick_ref.jpg
+
+  - __ANDROID_RSI_AUDIO_BASE__
+      Replaced by: file:///android_res/raw/
+      The JavaScript then appends sec30.mp3, sec20.mp3, time.mp3, etc.
+
+  Recommended app update behavior with document_manifest.json:
+  1. Show cached processed HTML immediately if it exists.
+  2. If the last RSI manifest check was less than 24 hours ago, do not call
+     the website again.
+  3. If the last check was 24+ hours ago, fetch document_manifest.json.
+  4. Find the RSI checklist helper item in the manifest.
+  5. If the manifest version differs from the cached RSI version, download this
+     HTML template, process placeholders, save processed HTML and version, then
+     reload the WebView.
+  6. If the manifest/html fetch fails, keep using cached HTML.
+  7. If there is no cache yet, fall back to app/src/main/assets/rsichecklist.html.
+
+  Manifest entry example:
+  {
+    "id": "rsi_checklist",
+    "type": "html",
+    "version": "4.0",
+    "url": "https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html",
+    "show_image": true
+  }
+
+  Update rule:
+  - If you edit checklist content, increase the manifest version to "4.1",
+    "4.2", etc. Then update HTML_VERSION here to match.
+  - If you only want to hide/show the image, change show_image in the manifest.
+    To force devices to pick that image visibility change immediately on the
+    next allowed 24-hour check, also bump the manifest version.
+  - If you change SHOW_IMAGE inside this HTML instead of the manifest, bump the
+    manifest version or devices with cached HTML will not download this file.
+  ---------------------------------------------------------------------------
+
   CHANGELOG (2026-05-03):
   - Removed the back button from the RSI checklist header.
 
@@ -16,6 +84,21 @@ THIS IS A COPY OF THE IOS CHECKLIST BUT WITHOUT A BCK BUTTON
 <html>
 <head>
   <title>SOAPPPME</title>
+  <script>
+    /*
+      ANDROID CONFIG
+      Edit these values when maintaining the remote helper file.
+      HTML_VERSION should match the rsi_checklist version in document_manifest.json.
+      SHOW_IMAGE is used only when the manifest does not include show_image.
+      The Android app replaces the __ANDROID_* placeholders before displaying.
+    */
+    window.RSI_ANDROID_CONFIG = {
+      HTML_VERSION: "4.0",
+      SHOW_IMAGE: true,
+      IMAGE_SRC: "__ANDROID_RSI_IMAGE_SRC__",
+      AUDIO_BASE: "__ANDROID_RSI_AUDIO_BASE__"
+    };
+  </script>
   <style>
     #soapmetable {
       font-family: Tahoma, sans-serif;
@@ -476,16 +559,18 @@ THIS IS A COPY OF THE IOS CHECKLIST BUT WITHOUT A BCK BUTTON
 <script>
 let audioCtx;
 const audioBuffers = {};
+const rsiAndroidConfig = window.RSI_ANDROID_CONFIG || {};
+const rsiAudioBase = rsiAndroidConfig.AUDIO_BASE || "";
 const audioFiles = {
-  s30: '../ambulance/audio/sec30.mp3',
-  s20: '../ambulance/audio/sec20.mp3',
-  s10: '../ambulance/audio/sec10.mp3',
-  s5:  '../ambulance/audio/sec5.mp3',
-  s4:  '../ambulance/audio/sec4.mp3',
-  s3:  '../ambulance/audio/sec3.mp3',
-  s2:  '../ambulance/audio/sec2.mp3',
-  s1:  '../ambulance/audio/sec1.mp3',
-  time: '../ambulance/audio/time.mp3'
+  s30: rsiAudioBase + 'sec30.mp3',
+  s20: rsiAudioBase + 'sec20.mp3',
+  s10: rsiAudioBase + 'sec10.mp3',
+  s5:  rsiAudioBase + 'sec5.mp3',
+  s4:  rsiAudioBase + 'sec4.mp3',
+  s3:  rsiAudioBase + 'sec3.mp3',
+  s2:  rsiAudioBase + 'sec2.mp3',
+  s1:  rsiAudioBase + 'sec1.mp3',
+  time: rsiAudioBase + 'time.mp3'
 };
 
 function primeAudio(){
@@ -606,8 +691,25 @@ window.addEventListener('beforeunload', releaseWake);
 <button class="countdown-btn" id="countdownTop">Start 60s Countdown</button>
 <div class="timer" id="timerTop" aria-live="polite"></div>
 
-<!-- Image -->
-<img class="hero-img" src="../ambulance/images/rsi_quick_ref.jpg" alt="RSI quick reference" />
+<!-- Image
+     Android processing:
+     - SHOW_IMAGE true/false is controlled by RSI_ANDROID_CONFIG above.
+     - IMAGE_SRC is replaced by the app with file:///android_asset/rsi_quick_ref.jpg.
+-->
+<img class="hero-img" id="rsiQuickRefImage" alt="RSI quick reference" />
+<script>
+  (function(){
+    const config = window.RSI_ANDROID_CONFIG || {};
+    const img = document.getElementById('rsiQuickRefImage');
+    if (!img) return;
+    if (config.SHOW_IMAGE === false) {
+      img.style.display = 'none';
+      return;
+    }
+    img.src = config.IMAGE_SRC || "";
+    img.style.display = 'block';
+  })();
+</script>
 
 <!-- Shock Index card -->
 <section class="si-card" aria-label="Shock Index guidance">
