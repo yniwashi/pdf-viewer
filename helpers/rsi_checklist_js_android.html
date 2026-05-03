@@ -555,98 +555,57 @@ THIS IS A COPY OF THE IOS CHECKLIST BUT WITHOUT A BCK BUTTON
   </div>
 </header>
 
-<!-- ===== AUDIO (CPR-style priming, using Web Audio) ===== -->
+<!-- ===== AUDIO
+     Android processing:
+     - AUDIO_BASE is replaced by the app with file:///android_res/raw/.
+     - Use direct Audio() objects like the bundled local Android file.
+     - Do not use fetch() for file:///android_res/raw/ audio because Android
+       WebView may block/deny that path for fetch, causing only fallback beeps.
+-->
 <script>
-let audioCtx;
-const audioBuffers = {};
 const rsiAndroidConfig = window.RSI_ANDROID_CONFIG || {};
 const rsiAudioBase = rsiAndroidConfig.AUDIO_BASE || "";
-const audioFiles = {
-  s30: rsiAudioBase + 'sec30.mp3',
-  s20: rsiAudioBase + 'sec20.mp3',
-  s10: rsiAudioBase + 'sec10.mp3',
-  s5:  rsiAudioBase + 'sec5.mp3',
-  s4:  rsiAudioBase + 'sec4.mp3',
-  s3:  rsiAudioBase + 'sec3.mp3',
-  s2:  rsiAudioBase + 'sec2.mp3',
-  s1:  rsiAudioBase + 'sec1.mp3',
-  time: rsiAudioBase + 'time.mp3'
+const audio = {
+   30: new Audio(rsiAudioBase + 'sec30.mp3'),
+   20: new Audio(rsiAudioBase + 'sec20.mp3'),
+   10: new Audio(rsiAudioBase + 'sec10.mp3'),
+    5: new Audio(rsiAudioBase + 'sec5.mp3'),
+    4: new Audio(rsiAudioBase + 'sec4.mp3'),
+    3: new Audio(rsiAudioBase + 'sec3.mp3'),
+    2: new Audio(rsiAudioBase + 'sec2.mp3'),
+    1: new Audio(rsiAudioBase + 'sec1.mp3'),
+  time: new Audio(rsiAudioBase + 'time.mp3')
 };
+Object.values(audio).forEach(a => { try { a.load(); } catch(e){} });
 
 function primeAudio(){
-  try {
-    if(!audioCtx){ audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
-    if(audioCtx.state === 'suspended'){ audioCtx.resume().catch(()=>{}); }
-    // iOS unlock hack (silent blip)
-    const osc = audioCtx.createOscillator();
-    const g = audioCtx.createGain();
-    g.gain.value = 0.0001;
-    osc.connect(g).connect(audioCtx.destination);
-    osc.start();
-    setTimeout(()=>{ try{osc.stop();}catch{} }, 1);
-
-    // Preload all files (once)
-    (async ()=>{
-      for(const [k, url] of Object.entries(audioFiles)){
-        if(audioBuffers[k]) continue;
-        try{
-          const ab = await fetch(url, {cache:'force-cache'}).then(r=>r.arrayBuffer());
-          audioBuffers[k] = await audioCtx.decodeAudioData(ab);
-        }catch(e){}
+  Object.values(audio).forEach(a => {
+    try {
+      a.muted = true;
+      const p = a.play();
+      if (p && typeof p.then === 'function') {
+        p.then(() => {
+          try { a.pause(); a.currentTime = 0; a.muted = false; } catch(e){}
+        }).catch(() => { try { a.muted = false; } catch(e){} });
+      } else {
+        try { a.pause(); a.currentTime = 0; a.muted = false; } catch(e){}
       }
-    })();
-  } catch(e){}
-}
-
-async function ensureAudioReady(){
-  if(!audioCtx) primeAudio();
-  if(audioCtx && audioCtx.state === 'suspended'){
-    try{ await audioCtx.resume(); }catch(e){}
-  }
-}
-
-function playBuffer(key, vol=1){
-  const buf = audioBuffers[key];
-  if(!audioCtx || !buf) return false;
-  try{
-    const src = audioCtx.createBufferSource();
-    const g = audioCtx.createGain();
-    g.gain.value = vol;
-    src.buffer = buf;
-    src.connect(g).connect(audioCtx.destination);
-    src.start();
-    return true;
-  }catch(e){ return false; }
-}
-
-// Fallback beep if buffer isn't ready
-function beep(vol=1){
-  try{
-    if(!audioCtx) return;
-    const o = audioCtx.createOscillator();
-    const g = audioCtx.createGain();
-    o.type='square'; o.frequency.value=800;
-    g.gain.value = 0.08 * vol;
-    o.connect(g).connect(audioCtx.destination);
-    o.start();
-    setTimeout(()=>{ try{o.stop();}catch{} }, 120);
-  }catch(e){}
+    } catch(e) {
+      try { a.muted = false; } catch(_){}
+    }
+  });
 }
 
 function playSecond(n){
-  ensureAudioReady().then(()=>{
-    const key = 's'+String(n);
-    if(!playBuffer(key)) beep();
-  });
+  const a = audio[n];
+  if (!a) return;
+  try { a.muted = false; a.currentTime = 0; a.play(); } catch(e){}
 }
 
 function playTime(){
-  ensureAudioReady().then(()=>{
-    if(!playBuffer('time')) beep();
-  });
+  try { audio.time.muted = false; audio.time.currentTime = 0; audio.time.play(); } catch(e){}
 }
 
-// Prime on first user interaction (covers iOS)
 ['pointerdown','touchstart','click','keydown'].forEach(ev=>{
   window.addEventListener(ev, primeAudio, {once:true, passive:true});
 });
