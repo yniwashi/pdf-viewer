@@ -1,36 +1,77 @@
-# CCP Pediatric Dosing Helper Guide
+# CCP and AP Pediatric Dosing Helper Guide
 
-This guide explains how to update `ccp_pediatric_dosing_helper.json` safely.
+This guide explains how to update the remote pediatric dosing helpers safely.
 
 ## Files
 
-Live helper:
+CCP live helper:
 
 ```text
 https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
 ```
 
-Working copy:
+AP live helper:
+
+```text
+https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
+```
+
+Working copies:
 
 ```text
 TEMP/ccp_pediatric_dosing_helper.json
+TEMP/ap_pediatric_dosing_helper.json
 ```
 
-Android bundled fallback:
+Android bundled fallbacks:
 
 ```text
 app/src/main/assets/ccp_pediatric_dosing_helper.json
+app/src/main/assets/ap_pediatric_dosing_helper.json
 ```
 
-App config entry:
+App config entries:
 
 ```text
 ambulance_app_config.json -> pediatric_dosing.helpers[id=ccp_pediatric_dosing]
+ambulance_app_config.json -> pediatric_dosing.helpers[id=ap_pediatric_dosing]
+```
+
+## App Config
+
+Both helpers must be listed under `pediatric_dosing.helpers`:
+
+```json
+"pediatric_dosing": {
+  "enabled": true,
+  "helpers": [
+    {
+      "id": "ccp_pediatric_dosing",
+      "scope": "CCP",
+      "age_groups": ["months", "years"],
+      "schema_version": "0.1",
+      "version": "0.1",
+      "url": "https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json",
+      "fallback_asset": "ccp_pediatric_dosing_helper.json",
+      "enabled": true
+    },
+    {
+      "id": "ap_pediatric_dosing",
+      "scope": "AP",
+      "age_groups": ["months", "years"],
+      "schema_version": "0.1",
+      "version": "0.1",
+      "url": "https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json",
+      "fallback_asset": "ap_pediatric_dosing_helper.json",
+      "enabled": true
+    }
+  ]
+}
 ```
 
 ## Version Rules
 
-The Android app accepts the helper only when these values match app config:
+The Android app accepts a helper only when these values match the matching app-config helper entry:
 
 ```json
 {
@@ -40,31 +81,41 @@ The Android app accepts the helper only when these values match app config:
 }
 ```
 
-Use this rule:
+```json
+{
+  "schema_version": "0.1",
+  "helper_type": "ap_pediatric_dosing",
+  "version": "0.1"
+}
+```
 
-- Change helper `"version"` for dose/content changes.
-- Change helper `"schema_version"` only when the JSON structure/contract changes.
+Use these rules:
+
+- Change helper `version` for dose/content changes.
+- Change helper `schema_version` only when the JSON structure/contract changes and Android support is updated.
 - After changing either value in the helper, update the same value in `ambulance_app_config.json`.
+- Ask before increasing any helper or app-config version during testing.
 
 If the values do not match, Android rejects the remote helper and uses cached or bundled fallback data.
 
 ## Safe Update Workflow
 
-1. Edit `TEMP/ccp_pediatric_dosing_helper.json`.
+1. Edit the matching TEMP helper file.
 2. Validate JSON syntax.
 3. Review every changed medication and section clinically.
-4. Increase helper `"version"` if any medication, indication, route, dose, note, warning, color, concentration guide, or enabled flag changed.
-5. Increase helper `"schema_version"` only if the app contract changed.
+4. Increase helper `version` if any medication, indication, route, dose, note, warning, color, concentration guide, or enabled flag changed.
+5. Increase helper `schema_version` only if the app contract changed.
 6. Upload the helper to the docs URL.
 7. Update `TEMP/ambulance_app_config.json` with the same helper `version` and `schema_version`.
 8. Upload the app config.
-9. Copy the helper into `app/src/main/assets/ccp_pediatric_dosing_helper.json` before release.
+9. Copy the helper into the matching Android bundled fallback before release.
 10. Build and test Android.
 
-Validation command:
+Validation commands:
 
 ```bash
 python3 -m json.tool TEMP/ccp_pediatric_dosing_helper.json > /tmp/ccp_peds_validated.json
+python3 -m json.tool TEMP/ap_pediatric_dosing_helper.json > /tmp/ap_peds_validated.json
 ```
 
 Android verification:
@@ -155,7 +206,7 @@ Use for ranges such as `1-2 mcg/kg`.
 
 ### Conditional Rule
 
-Use when CCP Months and CCP Years differ.
+Use when months and years differ, or when one profile has a fixed dose and another is calculated.
 
 ```json
 "dose_rule": {
@@ -190,10 +241,25 @@ Use when the dose is selected by age tier or weight tier, such as Hydrocortisone
 
 Important behavior:
 
-- If the user entered age, the app uses `age_tiers`.
-- If the user entered direct weight, the app uses `weight_tiers`.
+- If the screen has direct age input, the app can use `age_tiers`.
+- If the screen has direct weight input, the app can use `weight_tiers`.
+- AP screens are currently age-input driven and estimate weight from age.
 - Tiers are checked in the listed order.
 - The first matching tier is used.
+
+## Profiles
+
+CCP profiles:
+
+- `ccp_months`
+- `ccp_years`
+
+AP profiles:
+
+- `ap_months`
+- `ap_years`
+
+Every visible section should list the correct profiles in `applies_to`.
 
 ## Blocking Or Not Indicated
 
@@ -212,7 +278,7 @@ For conditional blocking, use an override to `not_indicated`. Do not use old or 
 
 The helper should keep original medication packaging as a guide only.
 
-Supported concentration modes:
+Supported concentration mode for user-confirmed volume calculation:
 
 ```json
 "concentration": {
@@ -278,7 +344,7 @@ For every medication update, check:
 
 - Medication `id` is stable and unique.
 - `enabled` is correct.
-- `applies_to` includes the correct profiles: `ccp_months`, `ccp_years`, or both.
+- `applies_to` includes the correct profiles.
 - Every visible section has a clear `indication`.
 - Route is correct.
 - Dose rule type is supported by Android.
@@ -292,7 +358,8 @@ For every medication update, check:
 
 ## Current Next Steps
 
-- Device-test CCP Months and CCP Years with remote helper, cached helper, and bundled fallback behavior.
+- Copy AP helper into Android bundled assets as `ap_pediatric_dosing_helper.json`.
+- Wire AP Months and AP Years to load `ap_pediatric_dosing` from the same repository/engine pattern as CCP.
+- Update Android validation so CCP accepts `ccp_pediatric_dosing` and AP accepts `ap_pediatric_dosing`.
+- Device-test CCP and AP remote helper, cached helper, and bundled fallback behavior.
 - Test disabled medications, blocked sections, conditional/static/tiered dose rules, max caps, and concentration/volume calculations.
-- Add a helper source/status indicator only if needed for testing.
-- After CCP is approved, create an AP Pediatric helper and wire AP Months/Years to the same architecture.
