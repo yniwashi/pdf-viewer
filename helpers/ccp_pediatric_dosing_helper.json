@@ -621,10 +621,10 @@
       "ui": {
         "group": "Resuscitation",
         "sort_order": 20,
-        "theme_color": "#DC2626",
-        "background_color": "#BA68C8",
+        "theme_color": "#C77AD3",
+        "background_color": "#C77AD3",
         "text_color": "#111827",
-        "accent_color": "#8E24AA",
+        "accent_color": "#A84BB8",
         "icon_key": "cardiac",
         "badge": "CCP"
       },
