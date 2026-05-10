@@ -622,9 +622,9 @@
         "group": "Resuscitation",
         "sort_order": 20,
         "theme_color": "#DC2626",
-        "background_color": "#FEF2F2",
-        "text_color": "#7F1D1D",
-        "accent_color": "#B91C1C",
+        "background_color": "#BA68C8",
+        "text_color": "#111827",
+        "accent_color": "#8E24AA",
         "icon_key": "cardiac",
         "badge": "CCP"
       },
