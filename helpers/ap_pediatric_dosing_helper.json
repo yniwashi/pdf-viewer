@@ -417,10 +417,10 @@
       "ui": {
         "group": "Fluids",
         "sort_order": 50,
-        "theme_color": "#FFCC80",
-        "background_color": "#FFCC80",
+        "theme_color": "#81D4FA",
+        "background_color": "#81D4FA",
         "text_color": "#111827",
-        "accent_color": "#FB8C00",
+        "accent_color": "#0288D1",
         "icon_key": "fluids",
         "badge": "AP"
       },
