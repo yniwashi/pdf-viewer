@@ -1,12 +1,12 @@
 {
   "schema_version": "0.1",
   "helper_type": "ccp_pediatric_dosing",
-  "version": "0.1-draft-2026-05-10",
-  "status": "draft_for_clinical_and_code_review",
+  "version": "0.1",
+  "status": "active",
   "source": {
     "based_on": "Current Android CcpMonths.kt and CcpYears.kt logic",
     "created_for": "Remote-configurable CCP pediatric medication dosing",
-    "important": "This file is a draft data contract. Do not use for live dosing until every medication, dose rule, UI field, and parser behavior is validated against the clinical source documents.",
+    "important": "This helper is active remote dosing data. Validate every update before publishing, and increase version/schema_version when the helper content or contract changes.",
     "schema_versioning": "schema_version is a string. Increase it as 0.2, 0.3, etc. when the helper contract changes."
   },
   "app_support_contract": {
@@ -4070,9 +4070,9 @@
   "schema_version_history": [
     {
       "schema_version": "0.1",
-      "status": "draft",
+      "status": "active",
       "date": "2026-05-10",
-      "summary": "Initial remote CCP pediatric dosing helper contract with medication metadata, UI metadata, concentration behavior, conditional rules, age/weight tier rules, and disabled-item lifecycle rules."
+      "summary": "Initial active remote CCP pediatric dosing helper contract with medication metadata, UI metadata, concentration behavior, conditional rules, age/weight tier rules, and disabled-item lifecycle rules."
     }
   ],
   "medication_lifecycle_contract": {
