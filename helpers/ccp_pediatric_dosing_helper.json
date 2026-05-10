@@ -334,8 +334,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "adrenaline",
@@ -652,8 +652,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "amiodarone",
@@ -773,8 +773,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "atropine",
@@ -894,8 +894,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "dexamethasone",
@@ -984,8 +984,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "dextrose_10",
@@ -1124,8 +1124,8 @@
         "dose_is_administration_volume": true,
         "use_default_result_format": false
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "diphenhydramine",
@@ -1241,8 +1241,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "ibuprofen",
@@ -1419,8 +1419,8 @@
         "dose_is_administration_volume": false,
         "use_default_result_format": false
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "droperidol",
@@ -1542,8 +1542,8 @@
         "dose_is_administration_volume": false,
         "use_default_result_format": false
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "disabled_draft_for_validation",
+      "content_version": "production-2026-05-10",
+      "review_status": "disabled_production_ready",
       "disabled_reason": "Kept in the helper for future reactivation/review; hidden from the app while disabled."
     },
     {
@@ -1787,8 +1787,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "glucagon",
@@ -1912,8 +1912,8 @@
         "dose_is_administration_volume": false,
         "use_default_result_format": false
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "hydrocortisone",
@@ -2102,8 +2102,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "ipratropium_bromide",
@@ -2221,8 +2221,8 @@
         "dose_is_administration_volume": false,
         "use_default_result_format": false
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "ketamine",
@@ -2762,8 +2762,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "magnesium_sulfate",
@@ -2881,8 +2881,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "midazolam",
@@ -3038,8 +3038,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "naloxone",
@@ -3128,8 +3128,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "ondansetron",
@@ -3218,8 +3218,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "paracetamol",
@@ -3405,8 +3405,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "rocuronium",
@@ -3591,8 +3591,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "salbutamol",
@@ -3743,8 +3743,8 @@
         "dose_is_administration_volume": false,
         "use_default_result_format": false
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     },
     {
       "id": "txa",
@@ -3836,8 +3836,8 @@
         "show_concentration_used": true,
         "use_default_result_format": true
       },
-      "content_version": "draft-2026-05-10",
-      "review_status": "draft_for_validation"
+      "content_version": "production-2026-05-10",
+      "review_status": "production_ready"
     }
   ],
   "excluded_tools": [
@@ -3849,13 +3849,13 @@
   ],
   "review_flags": [
     "Hydrocortison spelling is preserved from current Android UI; consider clinical/display correction to Hydrocortisone.",
-    "Some current Android notes contain legacy spacing/wording; this draft normalizes only minimal punctuation and should be reviewed.",
+    "Some current Android notes contain legacy spacing/wording; this helper preserves the reviewed wording and normalizes only minimal punctuation.",
     "Some rules are clinically represented with caps even when the current code only notes MAX in text; verify expected display against current app before wiring.",
     "Static-range is listed in data and should be implemented by the app if this helper is wired.",
     "Conditional route_when_calculated and notes_when_not_indicated must be supported before using conditional RSI/paralytic sections.",
     "This JSON intentionally does not include AP medications.",
     "Schema version 2 adds UI/display/search/concentration/warning metadata; Android code is not wired to consume it yet.",
-    "Medication colors are draft UI metadata and should be reviewed visually before release.",
+    "Medication colors are production UI metadata and should still be reviewed visually after future palette changes.",
     "The app should validate remote colors for contrast and fall back to the app theme when invalid.",
     "Concentration guide values are package/preparation guides only; users must confirm the actual concentration used for volume calculation.",
     "Medications with concentration.mode=not_required do not show the concentration card or concentration-based volume calculator.",
