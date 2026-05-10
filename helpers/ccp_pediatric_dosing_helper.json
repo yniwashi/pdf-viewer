@@ -1310,6 +1310,16 @@
             ],
             "age_tiers": [
               {
+                "profile": "ccp_months",
+                "age_months_min": 12,
+                "age_months_max": 12,
+                "rule": {
+                  "type": "static",
+                  "amount": 50,
+                  "unit": "mg"
+                }
+              },
+              {
                 "profile": "ccp_years",
                 "age_years_min": 1,
                 "age_years_max": 2,
@@ -3948,7 +3958,8 @@
     "Normalized exact age conditions to age_years_min/age_years_max instead of age_years for parser consistency.",
     "schema_version changed to string \"0.1\" so future helper contract revisions can be increased as \"0.2\", \"0.3\", etc.",
     "Disabled medications should stay in the helper when they may be reactivated later; deleting the medication object removes it completely after helper refresh.",
-    "Droperidol is intentionally kept in the helper with enabled=false and availability.enabled=false."
+    "Droperidol is intentionally kept in the helper with enabled=false and availability.enabled=false.",
+    "Ibuprofen includes a 12-month CCP Months age tier mapping to the 1-year 50 mg dose because it is not for use under 1 year old."
   ],
   "ui_contract": {
     "color_format": "#RRGGBB",
