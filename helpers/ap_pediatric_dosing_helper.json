@@ -1,0 +1,939 @@
+{
+  "schema_version": "0.1",
+  "helper_type": "ap_pediatric_dosing",
+  "version": "0.1",
+  "status": "active",
+  "source": {
+    "based_on": "Current Android ApMedicationCalculations.kt logic",
+    "created_for": "Remote-configurable AP pediatric medication dosing",
+    "important": "This helper is active remote dosing data. Validate every update before publishing, and keep version/schema_version aligned with app config."
+  },
+  "input_profiles": {
+    "ap_months": {
+      "label": "AP Months",
+      "age_unit": "months",
+      "min_age": 1,
+      "max_age": 12,
+      "estimated_weight_formula": {
+        "type": "linear",
+        "expression": "age_months * 0.5 + 4"
+      },
+      "range_message": "This age exceeds 12 months. Please choose the years section in pediatrics for appropriate guidance."
+    },
+    "ap_years": {
+      "label": "AP Years",
+      "age_unit": "years",
+      "min_age": 1,
+      "max_age": 14,
+      "estimated_weight_formula": {
+        "type": "piecewise",
+        "rules": [
+          {
+            "when": {
+              "age_years_min": 1,
+              "age_years_max": 5
+            },
+            "expression": "age_years * 2 + 8"
+          },
+          {
+            "when": {
+              "age_years_min": 6,
+              "age_years_max": 14
+            },
+            "expression": "age_years * 3 + 7"
+          }
+        ]
+      },
+      "range_message": "This age exceeds the pediatric range. Please refer to the CPG by pressing the view icon for appropriate medication guidance."
+    }
+  },
+  "app_support_contract": {
+    "supported_rule_types": [
+      "static",
+      "static_range",
+      "not_indicated",
+      "weight_based_single",
+      "weight_based_range",
+      "conditional",
+      "age_or_weight_tier",
+      "display_only"
+    ],
+    "rendering_rules": [
+      "Medications with enabled=false are hidden.",
+      "Sections with enabled=false are hidden.",
+      "Unknown fields should be ignored safely.",
+      "Unknown dose_rule types must not be calculated.",
+      "This AP helper is age-input driven to match the current Android AP screens.",
+      "Weight is estimated from age using the selected AP profile.",
+      "WAAFELSS is included because it is shown in the current AP Months/Years medication grid."
+    ]
+  },
+  "medications": [
+    {
+      "id": "adrenaline",
+      "enabled": true,
+      "name": "Adrenaline",
+      "display": {
+        "name": "Adrenaline",
+        "subtitle": "Cardiac Arrest, Bradycardia, Anaphylaxis, Upper Airway Swelling"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "formulary",
+        "query": "Adrenaline"
+      },
+      "ui": {
+        "group": "Resuscitation",
+        "sort_order": 10,
+        "theme_color": "#CE93D8",
+        "background_color": "#CE93D8",
+        "text_color": "#111827",
+        "accent_color": "#8E24AA",
+        "icon_key": "cardiac",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "user_entered",
+        "guide": {
+          "amount": 1,
+          "unit": "mg",
+          "volume_ml": 1,
+          "label": "1mg/1ml ampule"
+        }
+      },
+      "sections": [
+        {
+          "id": "adrenaline_cardiac_arrest",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Cardiac Arrest",
+          "dose_rule": {
+            "type": "weight_based_single",
+            "factor": 0.01,
+            "unit": "mg",
+            "per": "kg"
+          },
+          "route": "IV / IO",
+          "notes_template": "Repeat every 4 minutes.\n\nRef.Dose Calculation: {weight_kg}kg x 0.01",
+          "display": {
+            "show_volume_calculator": true
+          }
+        },
+        {
+          "id": "adrenaline_anaphylaxis",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Anaphylaxis",
+          "dose_rule": {
+            "type": "weight_based_single",
+            "factor": 0.01,
+            "unit": "mg",
+            "per": "kg",
+            "max": 0.5
+          },
+          "route": "IM",
+          "notes_template": "Max dose 0.5mg\nRepeat PRN every 5 minutes.\nAge < 6 years: Adrenalin dose 0.15mg\nAge 6 - 12 years: Adrenaline dose 0.3mg\nAge > 12 years: Adrenaline dose 0.5mg\n \nRef.Dose Calculation: {weight_kg}kg x 0.01",
+          "display": {
+            "show_volume_calculator": true
+          }
+        },
+        {
+          "id": "adrenaline_upper_airway_swelling",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Upper Airway Swelling",
+          "dose_rule": {
+            "type": "weight_based_single",
+            "factor": 0.5,
+            "unit": "mg",
+            "per": "kg",
+            "max": 5
+          },
+          "route": "NEB",
+          "notes_template": "Max dose 5mg.\nRepeat PRN every 5 minutes.\n\nRef.Dose Calculation: {weight_kg}kg x 0.5",
+          "display": {
+            "show_volume_calculator": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "amiodarone",
+      "enabled": true,
+      "name": "Amiodarone",
+      "display": {
+        "name": "Amiodarone",
+        "subtitle": "Cardiac Arrest"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "formulary",
+        "query": "Amiodarone"
+      },
+      "ui": {
+        "group": "Cardiac",
+        "sort_order": 20,
+        "theme_color": "#CE93D8",
+        "background_color": "#CE93D8",
+        "text_color": "#111827",
+        "accent_color": "#8E24AA",
+        "icon_key": "cardiac",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "user_entered",
+        "guide": {
+          "amount": 150,
+          "unit": "mg",
+          "volume_ml": 3,
+          "label": "150mg/3ml ampule"
+        }
+      },
+      "sections": [
+        {
+          "id": "amiodarone_cardiac_arrest",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Cardiac Arrest",
+          "dose_rule": {
+            "type": "weight_based_single",
+            "factor": 5,
+            "unit": "mg",
+            "per": "kg",
+            "max": 300
+          },
+          "route": "IV / IO",
+          "notes_template": "This is only for CCP.\n5mg/kg after 3rd shock.\nRepeat twice up to 15mg per kg.\nMAX Dose is 300mg (Up to a total of 3 doses).\n\nRef. Dose Calculation: {weight_kg}kg x 5",
+          "display": {
+            "show_volume_calculator": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "defibrillation",
+      "enabled": true,
+      "name": "Defibrillation",
+      "display": {
+        "name": "Defibrillation",
+        "subtitle": "Electrical Therapy"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "formulary",
+        "query": "Defibrillation"
+      },
+      "ui": {
+        "group": "Electrical Therapy",
+        "sort_order": 30,
+        "theme_color": "#A5D6A7",
+        "background_color": "#A5D6A7",
+        "text_color": "#111827",
+        "accent_color": "#388E3C",
+        "icon_key": "shock",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "not_required",
+        "reason": "Electrical therapy; no concentration or volume calculation."
+      },
+      "sections": [
+        {
+          "id": "defibrillation",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Defibrillation",
+          "dose_rule": {
+            "type": "weight_based_single",
+            "factor": 4,
+            "unit": "J",
+            "per": "kg",
+            "max": 360
+          },
+          "route": "Electrical Therapy",
+          "notes_template": "Ref. For Calculation: {weight_kg}kg x 4",
+          "display": {
+            "show_volume_calculator": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "dextrose_10",
+      "enabled": true,
+      "name": "Dextrose 10%",
+      "display": {
+        "name": "Dextrose 10%",
+        "subtitle": "Hypoglycemia"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "formulary",
+        "query": "Dextrose"
+      },
+      "ui": {
+        "group": "Endocrine",
+        "sort_order": 40,
+        "theme_color": "#A5D6A7",
+        "background_color": "#A5D6A7",
+        "text_color": "#111827",
+        "accent_color": "#388E3C",
+        "icon_key": "endocrine",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "not_required",
+        "dose_is_administration_volume": true,
+        "reason": "Dose is already calculated in ml/kg for Dextrose 10%; no concentration conversion is needed."
+      },
+      "sections": [
+        {
+          "id": "dextrose_hypoglycemia",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Hypoglycemia",
+          "dose_rule": {
+            "type": "conditional",
+            "default": {
+              "type": "weight_based_single",
+              "factor": 5,
+              "unit": "ml",
+              "per": "kg"
+            },
+            "overrides": [
+              {
+                "when": {
+                  "profile": "ap_months",
+                  "age_months_max": 2
+                },
+                "rule": {
+                  "type": "weight_based_single",
+                  "factor": 2,
+                  "unit": "ml",
+                  "per": "kg"
+                }
+              }
+            ]
+          },
+          "route": "IV",
+          "notes_template": "Repeat if patient remains hypoglycemic.\nRef. Dose Calculation: {weight_kg} kg x {dose_factor}ml",
+          "display": {
+            "title": "Hypoglycemia",
+            "show_route": true,
+            "show_notes": true,
+            "show_volume_calculator": false,
+            "dose_label": "Volume to administer"
+          }
+        },
+        {
+          "id": "dextrose_hypoglycemia_cardiac_arrest_or_rosc",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Hypoglycemia in cardiac arrest or ROSC",
+          "dose_rule": {
+            "type": "weight_based_single",
+            "factor": 2.5,
+            "unit": "ml",
+            "per": "kg",
+            "max": 50
+          },
+          "route": "IV",
+          "notes_template": "Repeat if patient remains hypoglycemic.\nRef. Dose Calculation: {weight_kg} kg x 2.5ml",
+          "display": {
+            "show_volume_calculator": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "fluids",
+      "enabled": true,
+      "name": "Fluids",
+      "display": {
+        "name": "Fluids",
+        "subtitle": "AP Fluid Bolus"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "reference",
+        "query": "AP Fluid Bolus"
+      },
+      "ui": {
+        "group": "Fluids",
+        "sort_order": 50,
+        "theme_color": "#FFCC80",
+        "background_color": "#FFCC80",
+        "text_color": "#111827",
+        "accent_color": "#FB8C00",
+        "icon_key": "fluids",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "not_required",
+        "reason": "Fluid bolus dose is already calculated as administration volume."
+      },
+      "sections": [
+        {
+          "id": "fluids_anaphylaxis",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Anaphylaxis",
+          "dose_rule": {
+            "type": "weight_based_range",
+            "min_factor": 10,
+            "max_factor": 20,
+            "unit": "ml",
+            "per": "kg"
+          },
+          "route": "IV",
+          "notes_template": "Ref. Dose Calculation: {weight_kg}kg x 10 - {weight_kg}kg x 20",
+          "display": {
+            "show_volume_calculator": false
+          }
+        },
+        {
+          "id": "fluids_hemorrhagic_shock",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Hemorrhagic Shock",
+          "dose_rule": {
+            "type": "weight_based_range",
+            "min_factor": 10,
+            "max_factor": 20,
+            "unit": "ml",
+            "per": "kg"
+          },
+          "route": "IV",
+          "notes_template": "Boluses, MAX 2 boluses OR 1L.\nRef. Dose Calculation: {weight_kg}kg x 10 - {weight_kg}kg x 20",
+          "display": {
+            "show_volume_calculator": false
+          }
+        },
+        {
+          "id": "fluids_non_traumatic_shock",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Non-Traumatic Shock",
+          "dose_rule": {
+            "type": "weight_based_single",
+            "factor": 10,
+            "unit": "ml",
+            "per": "kg"
+          },
+          "route": "IV / IO",
+          "notes_template": "Repeat as required.\nRef. Dose Calculation: {weight_kg}kg x 10",
+          "display": {
+            "show_volume_calculator": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "ipratropium_bromide",
+      "enabled": true,
+      "name": "Ipratropium Bromide",
+      "display": {
+        "name": "Ipratropium Bromide",
+        "subtitle": "Respiratory"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "formulary",
+        "query": "Ipratropium"
+      },
+      "ui": {
+        "group": "Respiratory",
+        "sort_order": 60,
+        "theme_color": "#AED581",
+        "background_color": "#AED581",
+        "text_color": "#111827",
+        "accent_color": "#7CB342",
+        "icon_key": "respiratory",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "not_required",
+        "reason": "Nebulized Ipratropium is administered as a nebule dose in the current app logic."
+      },
+      "sections": [
+        {
+          "id": "ipratropium_bronchoconstriction_neb",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Bronchoconstriction - Neb",
+          "dose_rule": {
+            "type": "conditional",
+            "default": {
+              "type": "static",
+              "amount": 0.25,
+              "unit": "mg"
+            },
+            "overrides": [
+              {
+                "when": {
+                  "profile": "ap_years",
+                  "age_years_min": 7
+                },
+                "rule": {
+                  "type": "static_range",
+                  "min": 0.25,
+                  "max": 0.5,
+                  "unit": "mg"
+                }
+              },
+              {
+                "when": {
+                  "profile": "ap_years",
+                  "weight_kg_min_exclusive": 21
+                },
+                "rule": {
+                  "type": "static_range",
+                  "min": 0.25,
+                  "max": 0.5,
+                  "unit": "mg"
+                }
+              }
+            ]
+          },
+          "route": "NEB",
+          "notes": "Neb should be mixed to a volume of 5 ml\n\nIpratropium Bromide should not routinely be administered on its own.\nIpratropium Bromide can be administered together with Salbutamol in the same nebuliser. \nIpratropium Bromide is a single dose. If additional doses are required then request for CCP assistance.",
+          "ui": {
+            "sort_order": 10,
+            "priority": "normal",
+            "badge": null,
+            "accent_color": "#0369A1"
+          },
+          "display": {
+            "title": "Bronchoconstriction - Neb",
+            "show_route": true,
+            "show_notes": true,
+            "show_volume_calculator": false,
+            "dose_label": "Dose"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paracetamol",
+      "enabled": true,
+      "name": "Paracetamol",
+      "display": {
+        "name": "Paracetamol",
+        "subtitle": "Analgesia"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "formulary",
+        "query": "Paracetamol"
+      },
+      "ui": {
+        "group": "Analgesia",
+        "sort_order": 70,
+        "theme_color": "#A5D6A7",
+        "background_color": "#A5D6A7",
+        "text_color": "#111827",
+        "accent_color": "#388E3C",
+        "icon_key": "analgesia",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "user_entered",
+        "guide": {
+          "amount": 1,
+          "unit": "g",
+          "volume_ml": 100,
+          "label": "1g/100ml vial"
+        }
+      },
+      "sections": [
+        {
+          "id": "paracetamol_pain_fever_oral",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Pain and/or fever (Oral)",
+          "dose_rule": {
+            "type": "conditional",
+            "default": {
+              "type": "weight_based_single",
+              "factor": 15,
+              "unit": "mg",
+              "per": "kg"
+            },
+            "overrides": [
+              {
+                "when": {
+                  "profile": "ap_months",
+                  "age_months_max": 2
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Not recommended for < 2 months old"
+                }
+              },
+              {
+                "when": {
+                  "profile": "ap_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Not recommended for < 2 months old"
+                }
+              }
+            ]
+          },
+          "route": "PO",
+          "notes_template": "Paracetamol syrup: 120mg/5ml\n\nRef. Dose Calculation: {weight_kg}kg x 15mg",
+          "display": {
+            "show_volume_calculator": true
+          }
+        },
+        {
+          "id": "paracetamol_moderate_pain_iv",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Moderate Pain (IV)",
+          "dose_rule": {
+            "type": "conditional",
+            "default": {
+              "type": "weight_based_single",
+              "factor": 15,
+              "unit": "mg",
+              "per": "kg"
+            },
+            "overrides": [
+              {
+                "when": {
+                  "profile": "ap_months"
+                },
+                "rule": {
+                  "type": "weight_based_single",
+                  "factor": 7.5,
+                  "unit": "mg",
+                  "per": "kg"
+                }
+              },
+              {
+                "when": {
+                  "profile": "ap_years",
+                  "age_years_min": 1,
+                  "age_years_max": 1
+                },
+                "rule": {
+                  "type": "weight_based_single",
+                  "factor": 7.5,
+                  "unit": "mg",
+                  "per": "kg"
+                }
+              },
+              {
+                "when": {
+                  "profile": "ap_years",
+                  "weight_kg_max": 11
+                },
+                "rule": {
+                  "type": "weight_based_single",
+                  "factor": 7.5,
+                  "unit": "mg",
+                  "per": "kg"
+                }
+              }
+            ]
+          },
+          "route": "IV",
+          "notes_template": "MAX dose is 20mg/kg.\nUndiluted: 1000mg/100ml = 10mg/1ml\n\nRef. Dose Calculation: {weight_kg}kg x {dose_factor}mg",
+          "display": {
+            "show_volume_calculator": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "salbutamol",
+      "enabled": true,
+      "name": "Salbutamol",
+      "display": {
+        "name": "Salbutamol",
+        "subtitle": "Respiratory"
+      },
+      "availability": {
+        "enabled": true,
+        "scope": "AP",
+        "profiles": [
+          "ap_months",
+          "ap_years"
+        ]
+      },
+      "formulary_reference": {
+        "type": "formulary",
+        "query": "Salbutamol"
+      },
+      "ui": {
+        "group": "Respiratory",
+        "sort_order": 80,
+        "theme_color": "#AED581",
+        "background_color": "#AED581",
+        "text_color": "#111827",
+        "accent_color": "#7CB342",
+        "icon_key": "respiratory",
+        "badge": "AP"
+      },
+      "concentration": {
+        "mode": "not_required",
+        "reason": "Nebulized Salbutamol uses a prepared nebule dose."
+      },
+      "sections": [
+        {
+          "id": "salbutamol_bronchoconstriction_neb",
+          "enabled": true,
+          "applies_to": [
+            "ap_months",
+            "ap_years"
+          ],
+          "indication": "Bronchoconstriction (Neb)",
+          "dose_rule": {
+            "type": "conditional",
+            "default": {
+              "type": "static",
+              "amount": 2.5,
+              "unit": "mg"
+            },
+            "overrides": [
+              {
+                "when": {
+                  "profile": "ap_years",
+                  "age_years_min": 6
+                },
+                "rule": {
+                  "type": "static_range",
+                  "min": 2.5,
+                  "max": 5,
+                  "unit": "mg"
+                }
+              },
+              {
+                "when": {
+                  "profile": "ap_years",
+                  "weight_kg_min_exclusive": 21
+                },
+                "rule": {
+                  "type": "static_range",
+                  "min": 2.5,
+                  "max": 5,
+                  "unit": "mg"
+                }
+              }
+            ]
+          },
+          "route": "NEB",
+          "notes": "2.5mg/3ml nebule - Neb should be mixed to a volume of 5ml\nCan be given with Ipratropium Bromide",
+          "display": {
+            "show_volume_calculator": false
+          }
+        }
+      ]
+    }
+  ],
+  "excluded_tools": [
+    {
+      "id": "waafells",
+      "name": "WAAFELSS",
+      "reason": "WAAFELSS is a calculation tool, not a medication dosing helper entry."
+    }
+  ],
+  "review_notes": [
+    "This helper is production-ready remote dosing data after clinical review; Android wiring can use it as the AP helper source.",
+    "The current Android AP screen accepts age only, not direct weight. This helper mirrors that age-driven behavior.",
+    "Adrenaline, Amiodarone, Defibrillation, Dextrose, Fluids, Ipratropium, Paracetamol Syrup, Salbutamol, and WAAFELSS are included because they are the current AP button set.",
+    "Button colors match the soft palette currently used for AP/CCP medication buttons.",
+    "WAAFELSS contains display-only formulas/placeholders that may need implementation support before wiring.",
+    "Paracetamol Syrup uses AP-specific age tiers and marks 6-14 years as not indicated for the HMCAS infant syrup bottle.",
+    "Dextrose 10% and Fluids are administration volumes, not concentration-based draw-up calculations."
+  ],
+  "section_schema_contract": {
+    "required_section_fields": [
+      "id",
+      "enabled",
+      "applies_to",
+      "indication",
+      "dose_rule"
+    ],
+    "standard_optional_section_fields": [
+      "route",
+      "route_when_calculated",
+      "route_when_not_indicated",
+      "notes",
+      "notes_template",
+      "notes_template_when_calculated",
+      "notes_when_not_indicated",
+      "ui",
+      "display"
+    ],
+    "conditional_rule_contract": {
+      "evaluation": "Use the default rule unless an override condition matches. If multiple overrides match, use the first matching override in array order.",
+      "when_supported_fields": [
+        "profile",
+        "age_months_min",
+        "age_months_max",
+        "age_years_min",
+        "age_years_max",
+        "weight_kg_min",
+        "weight_kg_max",
+        "weight_kg_min_exclusive",
+        "weight_kg_max_exclusive",
+        "age_months_min_exclusive",
+        "age_months_max_exclusive",
+        "age_years_min_exclusive",
+        "age_years_max_exclusive"
+      ]
+    },
+    "age_or_weight_tier_rule_contract": {
+      "selection": "Use age_tiers when AP input is age based. Direct weight tiers should only be used later if the AP UI adds direct weight input.",
+      "tier_result_types": [
+        "static",
+        "display_only",
+        "not_indicated"
+      ],
+      "block_when": "Optional list of profile/age/weight conditions that return a not-indicated reason before tiers are evaluated."
+    }
+  },
+  "medication_lifecycle_contract": {
+    "enabled_true": "Medication can be shown if availability also allows the current AP profile.",
+    "enabled_false": "Medication remains in the helper for review or future reactivation but must be hidden from app medication lists, search, and calculators.",
+    "deleted_from_helper": "Medication should disappear completely from the app after the helper is refreshed. Cached copies should be replaced by the latest valid helper.",
+    "availability_enabled_false": "Also hides the medication. Use this together with enabled=false to make review intent obvious.",
+    "section_enabled_false": "Section remains in the helper but must be hidden from the medication result sheet.",
+    "unknown_medication_field": "Ignore safely.",
+    "unknown_section_field": "Ignore safely.",
+    "unknown_rule_type": "Do not calculate. Show a safe unsupported-rule message."
+  },
+  "schema_version_history": [
+    {
+      "schema_version": "0.1",
+      "status": "active",
+      "date": "2026-05-10",
+      "summary": "Initial active AP pediatric dosing helper with AP Months/Years profiles, medication UI metadata, concentration modes, conditional dose rules, and AP-focused medication sections."
+    }
+  ],
+  "editor_guide": {
+    "hide_medication": "Set both medication.enabled=false and medication.availability.enabled=false.",
+    "show_medication_again": "Set both medication.enabled=true and medication.availability.enabled=true after reviewing all sections.",
+    "remove_medication_completely": "Delete the medication object from the medications array.",
+    "hide_section": "Set section.enabled=false.",
+    "add_indication": "Add a new object to medication.sections using the required section fields and a supported dose_rule type.",
+    "choose_rule_type": {
+      "static": "Fixed dose such as 0.25 mg.",
+      "static_range": "Fixed range such as 2.5-5 mg.",
+      "weight_based_single": "Dose = estimated weight x factor, optionally with min/max caps.",
+      "weight_based_range": "Dose range = estimated weight x min_factor to estimated weight x max_factor.",
+      "conditional": "Use default rule unless a profile/age/weight override matches.",
+      "age_or_weight_tier": "Use fixed age bands or weight bands if AP later supports direct weight input.",
+      "not_indicated": "Show not indicated/no calculation.",
+      "display_only": "Show text only; no calculation."
+    },
+    "volume_calculation": {
+      "user_entered": "Use when the dose amount must be converted to volume using a confirmed prepared concentration.",
+      "not_required": "Use when dose is already a volume, PO/oral, nebulized/prepared dose, electrical therapy, or no draw-up volume should be calculated."
+    },
+    "versioning": {
+      "version": "Increase helper version when medication content changes after approval. Ask before increasing versions during testing.",
+      "schema_version": "Increase schema_version only when the helper contract changes and Android support is updated."
+    }
+  },
+  "implementation_notes": [
+    "AP helper is intentionally smaller than CCP because AP has fewer medications and fewer indications in the current app.",
+    "Current AP Android screens are age-input based. The helper keeps AP Months and AP Years estimated-weight formulas in input_profiles.",
+    "Future AP wiring should reuse the CCP helper repository/engine pattern where possible, but helper_type must remain ap_pediatric_dosing.",
+    "Keep parsers tolerant of unknown metadata fields. Do not let editor-guide metadata affect dose calculations."
+  ]
+}
