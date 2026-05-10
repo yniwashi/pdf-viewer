@@ -300,10 +300,10 @@
       "ui": {
         "group": "Cardiac",
         "sort_order": 10,
-        "theme_color": "#2563EB",
-        "background_color": "#EFF6FF",
-        "text_color": "#1E3A8A",
-        "accent_color": "#1D4ED8",
+        "theme_color": "#B39DDB",
+        "background_color": "#B39DDB",
+        "text_color": "#111827",
+        "accent_color": "#7E57C2",
         "icon_key": "cardiac",
         "badge": "CCP"
       },
@@ -327,13 +327,7 @@
           "volume_ml": 2
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -621,10 +615,10 @@
       "ui": {
         "group": "Resuscitation",
         "sort_order": 20,
-        "theme_color": "#D697DE",
-        "background_color": "#D697DE",
+        "theme_color": "#CE93D8",
+        "background_color": "#CE93D8",
         "text_color": "#111827",
-        "accent_color": "#C58BD0",
+        "accent_color": "#8E24AA",
         "icon_key": "cardiac",
         "badge": "CCP"
       },
@@ -651,13 +645,7 @@
           "volume_ml": 1
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -750,10 +738,10 @@
       "ui": {
         "group": "Cardiac",
         "sort_order": 30,
-        "theme_color": "#7C3AED",
-        "background_color": "#F5F3FF",
-        "text_color": "#4C1D95",
-        "accent_color": "#6D28D9",
+        "theme_color": "#CE93D8",
+        "background_color": "#CE93D8",
+        "text_color": "#111827",
+        "accent_color": "#8E24AA",
         "icon_key": "cardiac",
         "badge": "CCP"
       },
@@ -778,13 +766,7 @@
           "volume_ml": 3
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -878,10 +860,10 @@
       "ui": {
         "group": "Cardiac",
         "sort_order": 40,
-        "theme_color": "#EA580C",
-        "background_color": "#FFF7ED",
-        "text_color": "#7C2D12",
-        "accent_color": "#C2410C",
+        "theme_color": "#B39DDB",
+        "background_color": "#B39DDB",
+        "text_color": "#111827",
+        "accent_color": "#7E57C2",
         "icon_key": "toxicology",
         "badge": "CCP"
       },
@@ -905,13 +887,7 @@
           "volume_ml": 1
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -974,10 +950,10 @@
       "ui": {
         "group": "Steroid",
         "sort_order": 50,
-        "theme_color": "#0891B2",
-        "background_color": "#ECFEFF",
-        "text_color": "#164E63",
-        "accent_color": "#0E7490",
+        "theme_color": "#BCAAA4",
+        "background_color": "#BCAAA4",
+        "text_color": "#111827",
+        "accent_color": "#795548",
         "icon_key": "steroid",
         "badge": "CCP"
       },
@@ -1001,13 +977,7 @@
           "volume_ml": 2
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -1118,10 +1088,10 @@
       "ui": {
         "group": "Endocrine",
         "sort_order": 60,
-        "theme_color": "#16A34A",
-        "background_color": "#F0FDF4",
-        "text_color": "#14532D",
-        "accent_color": "#15803D",
+        "theme_color": "#A5D6A7",
+        "background_color": "#A5D6A7",
+        "text_color": "#111827",
+        "accent_color": "#388E3C",
         "icon_key": "endocrine",
         "badge": "CCP"
       },
@@ -1237,10 +1207,10 @@
       "ui": {
         "group": "Allergy",
         "sort_order": 70,
-        "theme_color": "#DB2777",
-        "background_color": "#FDF2F8",
-        "text_color": "#831843",
-        "accent_color": "#BE185D",
+        "theme_color": "#80CBC4",
+        "background_color": "#80CBC4",
+        "text_color": "#111827",
+        "accent_color": "#00897B",
         "icon_key": "allergy",
         "badge": "CCP"
       },
@@ -1264,13 +1234,7 @@
           "volume_ml": 1
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -1418,10 +1382,10 @@
       "ui": {
         "group": "Analgesia / Anti-inflammatory",
         "sort_order": 80,
-        "theme_color": "#F59E0B",
-        "background_color": "#FFFBEB",
-        "text_color": "#78350F",
-        "accent_color": "#D97706",
+        "theme_color": "#FFE082",
+        "background_color": "#FFE082",
+        "text_color": "#111827",
+        "accent_color": "#F9A825",
         "icon_key": "analgesia",
         "badge": "CCP"
       },
@@ -1543,10 +1507,10 @@
       "ui": {
         "group": "Sedation",
         "sort_order": 90,
-        "theme_color": "#9333EA",
-        "background_color": "#FAF5FF",
-        "text_color": "#581C87",
-        "accent_color": "#7E22CE",
+        "theme_color": "#FFCC80",
+        "background_color": "#FFCC80",
+        "text_color": "#111827",
+        "accent_color": "#FB8C00",
         "icon_key": "sedation",
         "badge": "CCP"
       },
@@ -1782,10 +1746,10 @@
       "ui": {
         "group": "Analgesia / Sedation",
         "sort_order": 100,
-        "theme_color": "#475569",
-        "background_color": "#F8FAFC",
-        "text_color": "#0F172A",
-        "accent_color": "#334155",
+        "theme_color": "#81D4FA",
+        "background_color": "#81D4FA",
+        "text_color": "#111827",
+        "accent_color": "#0288D1",
         "icon_key": "analgesia",
         "badge": "CCP"
       },
@@ -1811,11 +1775,6 @@
         }
       },
       "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        },
         {
           "level": "caution",
           "title": "High-risk medication",
@@ -1919,10 +1878,10 @@
       "ui": {
         "group": "Endocrine",
         "sort_order": 110,
-        "theme_color": "#65A30D",
-        "background_color": "#F7FEE7",
-        "text_color": "#365314",
-        "accent_color": "#4D7C0F",
+        "theme_color": "#B39DDB",
+        "background_color": "#B39DDB",
+        "text_color": "#111827",
+        "accent_color": "#7E57C2",
         "icon_key": "endocrine",
         "badge": "CCP"
       },
@@ -2106,10 +2065,10 @@
       "ui": {
         "group": "Steroid",
         "sort_order": 120,
-        "theme_color": "#0D9488",
-        "background_color": "#F0FDFA",
-        "text_color": "#134E4A",
-        "accent_color": "#0F766E",
+        "theme_color": "#BCAAA4",
+        "background_color": "#BCAAA4",
+        "text_color": "#111827",
+        "accent_color": "#795548",
         "icon_key": "steroid",
         "badge": "CCP"
       },
@@ -2136,13 +2095,7 @@
           "reason": "Powder/reconstitution concentration varies."
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -2233,10 +2186,10 @@
       "ui": {
         "group": "Respiratory",
         "sort_order": 130,
-        "theme_color": "#0284C7",
-        "background_color": "#F0F9FF",
-        "text_color": "#0C4A6E",
-        "accent_color": "#0369A1",
+        "theme_color": "#AED581",
+        "background_color": "#AED581",
+        "text_color": "#111827",
+        "accent_color": "#7CB342",
         "icon_key": "respiratory",
         "badge": "CCP"
       },
@@ -2768,10 +2721,10 @@
       "ui": {
         "group": "Analgesia / Sedation",
         "sort_order": 140,
-        "theme_color": "#7C2D12",
-        "background_color": "#FFF7ED",
-        "text_color": "#431407",
-        "accent_color": "#9A3412",
+        "theme_color": "#FFF59D",
+        "background_color": "#FFF59D",
+        "text_color": "#111827",
+        "accent_color": "#C0A900",
         "icon_key": "sedation",
         "badge": "CCP"
       },
@@ -2797,11 +2750,6 @@
         }
       },
       "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        },
         {
           "level": "caution",
           "title": "High-risk medication",
@@ -2902,10 +2850,10 @@
       "ui": {
         "group": "Medication",
         "sort_order": 150,
-        "theme_color": "#2563EB",
-        "background_color": "#EFF6FF",
-        "text_color": "#1E3A8A",
-        "accent_color": "#2563EB",
+        "theme_color": "#AED581",
+        "background_color": "#AED581",
+        "text_color": "#111827",
+        "accent_color": "#7CB342",
         "icon_key": "medication",
         "badge": "CCP"
       },
@@ -2926,13 +2874,7 @@
           "volume_ml": 10
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -3055,10 +2997,10 @@
       "ui": {
         "group": "Seizure / Sedation",
         "sort_order": 160,
-        "theme_color": "#9333EA",
-        "background_color": "#FAF5FF",
-        "text_color": "#581C87",
-        "accent_color": "#7E22CE",
+        "theme_color": "#FFCC80",
+        "background_color": "#FFCC80",
+        "text_color": "#111827",
+        "accent_color": "#FB8C00",
         "icon_key": "seizure",
         "badge": "CCP"
       },
@@ -3084,11 +3026,6 @@
         }
       },
       "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        },
         {
           "level": "caution",
           "title": "High-risk medication",
@@ -3157,10 +3094,10 @@
       "ui": {
         "group": "Toxicology",
         "sort_order": 170,
-        "theme_color": "#059669",
-        "background_color": "#ECFDF5",
-        "text_color": "#064E3B",
-        "accent_color": "#047857",
+        "theme_color": "#80CBC4",
+        "background_color": "#80CBC4",
+        "text_color": "#111827",
+        "accent_color": "#00897B",
         "icon_key": "toxicology",
         "badge": "CCP"
       },
@@ -3184,13 +3121,7 @@
           "volume_ml": 1
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -3253,10 +3184,10 @@
       "ui": {
         "group": "Antiemetic",
         "sort_order": 180,
-        "theme_color": "#0EA5E9",
-        "background_color": "#F0F9FF",
-        "text_color": "#075985",
-        "accent_color": "#0284C7",
+        "theme_color": "#AED581",
+        "background_color": "#AED581",
+        "text_color": "#111827",
+        "accent_color": "#7CB342",
         "icon_key": "antiemetic",
         "badge": "CCP"
       },
@@ -3280,13 +3211,7 @@
           "volume_ml": 2
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -3445,10 +3370,10 @@
       "ui": {
         "group": "Analgesia",
         "sort_order": 190,
-        "theme_color": "#F59E0B",
-        "background_color": "#FFFBEB",
-        "text_color": "#78350F",
-        "accent_color": "#D97706",
+        "theme_color": "#A5D6A7",
+        "background_color": "#A5D6A7",
+        "text_color": "#111827",
+        "accent_color": "#388E3C",
         "icon_key": "analgesia",
         "badge": "CCP"
       },
@@ -3473,13 +3398,7 @@
           "volume_ml": 100
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
@@ -3538,7 +3457,7 @@
             ]
           },
           "route_when_calculated": "IV",
-          "notes_template_when_calculated": "NOTE: AGE RESTRICTIONS FOR RSI STANDARDIZED TO \u2265 8 YEARS FOR BOTH MEDICAL AND TRAUMA\nUndiluted: 10 mg/1 ml.\nRef. Dose Calculation: {weight_kg} kg x 1.5mg",
+          "notes_template_when_calculated": "NOTE: AGE RESTRICTIONS FOR RSI STANDARDIZED TO ≥ 8 YEARS FOR BOTH MEDICAL AND TRAUMA\nUndiluted: 10 mg/1 ml.\nRef. Dose Calculation: {weight_kg} kg x 1.5mg",
           "notes_when_not_indicated": "Rocuronium not indicated in this age group for PRE intubation.",
           "ui": {
             "sort_order": 10,
@@ -3626,10 +3545,10 @@
       "ui": {
         "group": "Paralytic",
         "sort_order": 200,
-        "theme_color": "#BE123C",
-        "background_color": "#FFF1F2",
-        "text_color": "#881337",
-        "accent_color": "#9F1239",
+        "theme_color": "#EF9A9A",
+        "background_color": "#EF9A9A",
+        "text_color": "#111827",
+        "accent_color": "#D32F2F",
         "icon_key": "paralytic",
         "badge": "CCP"
       },
@@ -3655,11 +3574,6 @@
         }
       },
       "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        },
         {
           "level": "caution",
           "title": "High-risk medication",
@@ -3792,10 +3706,10 @@
       "ui": {
         "group": "Respiratory",
         "sort_order": 210,
-        "theme_color": "#2563EB",
-        "background_color": "#EFF6FF",
-        "text_color": "#1E3A8A",
-        "accent_color": "#1D4ED8",
+        "theme_color": "#AED581",
+        "background_color": "#AED581",
+        "text_color": "#111827",
+        "accent_color": "#7CB342",
         "icon_key": "respiratory",
         "badge": "CCP"
       },
@@ -3885,10 +3799,10 @@
       "ui": {
         "group": "Bleeding",
         "sort_order": 220,
-        "theme_color": "#DC2626",
-        "background_color": "#FEF2F2",
-        "text_color": "#7F1D1D",
-        "accent_color": "#B91C1C",
+        "theme_color": "#B39DDB",
+        "background_color": "#B39DDB",
+        "text_color": "#111827",
+        "accent_color": "#7E57C2",
         "icon_key": "bleeding",
         "badge": "CCP"
       },
@@ -3915,13 +3829,7 @@
           "volume_ml": 5
         }
       },
-      "warnings": [
-        {
-          "level": "critical",
-          "title": "Confirm concentration",
-          "message": "Confirm the prepared concentration before using the calculated volume."
-        }
-      ],
+      "warnings": [],
       "result_format": {
         "show_dose": true,
         "show_volume": true,
