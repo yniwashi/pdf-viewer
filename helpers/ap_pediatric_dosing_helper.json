@@ -259,10 +259,10 @@
       "ui": {
         "group": "Electrical Therapy",
         "sort_order": 30,
-        "theme_color": "#A5D6A7",
-        "background_color": "#A5D6A7",
+        "theme_color": "#FFE082",
+        "background_color": "#FFE082",
         "text_color": "#111827",
-        "accent_color": "#388E3C",
+        "accent_color": "#F9A825",
         "icon_key": "shock",
         "badge": "AP"
       },
