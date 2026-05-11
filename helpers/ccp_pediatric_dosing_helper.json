@@ -239,7 +239,7 @@
             "max": 6
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose of 6mg (Undiluted 6mg per 2ml).\nRef.Dose Calculation: {weight_kg}kg x 0.1mg",
+          "notes_template": "MAX dose of 6mg (Undiluted 6mg per 2ml).\nRef.Dose Calculation: {weight_kg} kg x 0.1mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -269,7 +269,7 @@
             "max": 12
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose of 12mg (Undiluted 6mg per 2ml).\nRef.Dose Calculation: {weight_kg}kg x 0.2mg",
+          "notes_template": "MAX dose of 12mg (Undiluted 6mg per 2ml).\nRef.Dose Calculation: {weight_kg} kg x 0.2mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -358,7 +358,7 @@
             "per": "kg"
           },
           "route": "IV/IO",
-          "notes_template": "Repeat every 4 minutes\nRef.Dose Calculation: {weight_kg}kg x 0.01mg",
+          "notes_template": "Repeat every 4 minutes\nRef.Dose Calculation: {weight_kg} kg x 0.01mg",
           "ui": {
             "sort_order": 10,
             "priority": "high",
@@ -388,7 +388,7 @@
             "max": 50
           },
           "route": "IV/IO",
-          "notes_template": "MAX Dose 50 mcg.\nRepeat PRN every 2-4 minutes.\nRef.Dose Calculation: {weight_kg}kg x 1mcg",
+          "notes_template": "MAX Dose 50 mcg.\nRepeat PRN every 2-4 minutes.\nRef.Dose Calculation: {weight_kg} kg x 1mcg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -419,7 +419,7 @@
             "time": "min"
           },
           "route": "IV/IO infusion",
-          "notes_template": "Mix 1mg (1:1000) in 100ml NS. Draw 50ml into 50ml syringe\nRef.Dose Calculation: {weight_kg}kg x 0.05mcg - {weight_kg}kg x 0.3mcg",
+          "notes_template": "Mix 1mg (1:1000) in 100ml NS. Draw 50ml into 50ml syringe\nRef.Dose Calculation: {weight_kg} kg x 0.05mcg - {weight_kg} kg x 0.3mcg",
           "ui": {
             "sort_order": 30,
             "priority": "normal",
@@ -449,7 +449,7 @@
             "max": 0.5
           },
           "route": "IM",
-          "notes_template": "Repeat PRN every 5 minutes.\nRef.Dose Calculation: {weight_kg}kg x 0.01mg",
+          "notes_template": "Repeat PRN every 5 minutes.\nRef.Dose Calculation: {weight_kg} kg x 0.01mg",
           "ui": {
             "sort_order": 40,
             "priority": "normal",
@@ -479,7 +479,7 @@
             "max": 50
           },
           "route": "IV/IO",
-          "notes_template": "MAX Single Dose 50 mcg.\nRepeat PRN every 1-10 minutes.\nRef.Dose Calculation: {weight_kg}kg x 1mcg",
+          "notes_template": "MAX Single Dose 50 mcg.\nRepeat PRN every 1-10 minutes.\nRef.Dose Calculation: {weight_kg} kg x 1mcg",
           "ui": {
             "sort_order": 50,
             "priority": "normal",
@@ -524,7 +524,7 @@
             ]
           },
           "route": "NEB",
-          "notes_template": "MAX dose of 5mg\nRepeat PRN every 5 minutes\nRef.Dose Calculation: {weight_kg}kg x 0.5mg",
+          "notes_template": "MAX dose of 5mg\nRepeat PRN every 5 minutes\nRef.Dose Calculation: {weight_kg} kg x 0.5mg",
           "ui": {
             "sort_order": 60,
             "priority": "normal",
@@ -554,7 +554,7 @@
             "max": 0.5
           },
           "route": "IM",
-          "notes_template": "MAX dose is 0.5mg\nRepeat PRN every 5 minutes\nRef.Dose Calculation: {weight_kg}kg x 0.01mg",
+          "notes_template": "MAX dose is 0.5mg\nRepeat PRN every 5 minutes\nRef.Dose Calculation: {weight_kg} kg x 0.01mg",
           "ui": {
             "sort_order": 70,
             "priority": "normal",
@@ -584,7 +584,7 @@
             "max": 50
           },
           "route": "IV/IO",
-          "notes_template": "MAX single dose is 50mcg. Repeat every 1-10 mins\nRef.Dose Calculation: {weight_kg}kg x 1mcg",
+          "notes_template": "MAX single dose is 50mcg. Repeat every 1-10 mins\nRef.Dose Calculation: {weight_kg} kg x 1mcg",
           "ui": {
             "sort_order": 80,
             "priority": "normal",
@@ -677,7 +677,7 @@
             "max": 300
           },
           "route": "IV/IO",
-          "notes_template": "After 3rd shock. Repeat twice up to 15mg per kg\nMAX Dose is 300mg (Up to a total of 3 doses).\nRef. Dose Calculation: {weight_kg}kg x 5mg",
+          "notes_template": "After 3rd shock. Repeat twice up to 15mg per kg\nMAX Dose is 300mg (Up to a total of 3 doses).\nRef. Dose Calculation: {weight_kg} kg x 5mg",
           "ui": {
             "sort_order": 10,
             "priority": "high",
@@ -707,7 +707,7 @@
             "max": 300
           },
           "route": "IV/IO infusion",
-          "notes_template": "Over 20 to 60 minutes\nMAX dose of 300mg.\nRef. Dose Calculation: {weight_kg}kg x 5mg",
+          "notes_template": "Over 20 to 60 minutes\nMAX dose of 300mg.\nRef. Dose Calculation: {weight_kg} kg x 5mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -799,7 +799,7 @@
             "max": 0.5
           },
           "route": "IV/IO",
-          "notes_template": "MIN single dose is 0.1 mg and MAX single dose 0.5 mg. Repeat once if required.\nRef. Dose Calculation: {weight_kg}kg x 0.02mg",
+          "notes_template": "MIN single dose is 0.1 mg and MAX single dose 0.5 mg. Repeat once if required.\nRef. Dose Calculation: {weight_kg} kg x 0.02mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -829,7 +829,7 @@
             "max": 2
           },
           "route": "IV/IO or IM",
-          "notes_template": "MAX dose is 2 mg. Repeat PRN every 5 minutes, until clinical condition improves.\nRef. Dose Calculation: {weight_kg}kg x 0.05mg",
+          "notes_template": "MAX dose is 2 mg. Repeat PRN every 5 minutes, until clinical condition improves.\nRef. Dose Calculation: {weight_kg} kg x 0.05mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -1567,7 +1567,7 @@
             "per": "kg"
           },
           "route": "IV/IO",
-          "notes_template": "MAX Total Dose {weight_kg * 2} mcg\nRef. Dose Calculation: {weight_kg} kg x 1mcg",
+          "notes_template": "MAX Total Dose 2 mcg/kg\nRef. Dose Calculation: {weight_kg} kg x 1mcg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -1937,7 +1937,7 @@
             "max": 200
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose is 200mg\nSingle dose\nRef. Dose Calculation: {weight_kg}kg x 5mg",
+          "notes_template": "MAX dose is 200mg\nSingle dose\nRef. Dose Calculation: {weight_kg} kg x 5mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2262,7 +2262,7 @@
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. IV/IO Dose Calculation:\n{weight_kg}kg x 0.25mg - {weight_kg}kg x 0.5mg",
+          "notes_template": "Ref. IV/IO Dose Calculation:\n{weight_kg} kg x 0.25mg - {weight_kg} kg x 0.5mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2308,7 +2308,7 @@
             ]
           },
           "route": "IM/IN",
-          "notes_template": "Ref. IM/IN Dose Calculation:\n{weight_kg}kg x 0.5mg - {weight_kg}kg x 1mg",
+          "notes_template": "Ref. IM/IN Dose Calculation:\n{weight_kg} kg x 0.5mg - {weight_kg} kg x 1mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -2353,7 +2353,7 @@
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. IV/IO Dose Calculation:\n{weight_kg}kg x 0.5mg",
+          "notes_template": "Ref. IV/IO Dose Calculation:\n{weight_kg} kg x 0.5mg",
           "ui": {
             "sort_order": 30,
             "priority": "normal",
@@ -2398,7 +2398,7 @@
             ]
           },
           "route": "IM/IN",
-          "notes_template": "Ref. IM/IN Dose Calculation:\n{weight_kg}kg x 1mg",
+          "notes_template": "Ref. IM/IN Dose Calculation:\n{weight_kg} kg x 1mg",
           "ui": {
             "sort_order": 40,
             "priority": "normal",
@@ -2443,7 +2443,7 @@
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. IV/IO Dose Calculation: {weight_kg}kg x 1mg",
+          "notes_template": "Ref. IV/IO Dose Calculation: {weight_kg} kg x 1mg",
           "ui": {
             "sort_order": 50,
             "priority": "normal",
@@ -2488,7 +2488,7 @@
             ]
           },
           "route": "IM/IN",
-          "notes_template": "Ref. IM/IN Dose Calculation: {weight_kg}kg x 2mg",
+          "notes_template": "Ref. IM/IN Dose Calculation: {weight_kg} kg x 2mg",
           "ui": {
             "sort_order": 60,
             "priority": "normal",
@@ -2643,7 +2643,7 @@
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. Dose Calculation: {weight_kg}kg x 0.5mg",
+          "notes_template": "Ref. Dose Calculation: {weight_kg} kg x 0.5mg",
           "ui": {
             "sort_order": 90,
             "priority": "high",
@@ -2788,7 +2788,7 @@
             "max": 2000
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation: {weight_kg}kg x 25mg - {weight_kg}kg x 50mg",
+          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation: {weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2819,7 +2819,7 @@
             "max": 2000
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation: {weight_kg}kg x 25mg - {weight_kg}kg x 50mg",
+          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation: {weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -2906,7 +2906,7 @@
             "max": 5
           },
           "route": "IV/IO",
-          "notes_template": "MAX single dose of 5mg to MAX total dose of 10mg\nRepeat PRN after 5 minutes\nRef. Dose Calculation: {weight_kg}kg x 0.1mg",
+          "notes_template": "MAX single dose of 5mg to MAX total dose of 10mg\nRepeat PRN after 5 minutes\nRef. Dose Calculation: {weight_kg} kg x 0.1mg",
           "ui": {
             "sort_order": 10,
             "priority": "high",
@@ -2936,7 +2936,7 @@
             "max": 10
           },
           "route": "IM",
-          "notes_template": "Max single dose of 10mg\nRepeat PRN after 15 minutes\nRef. Dose Calculation: {weight_kg}kg x 0.2mg",
+          "notes_template": "Max single dose of 10mg\nRepeat PRN after 15 minutes\nRef. Dose Calculation: {weight_kg} kg x 0.2mg",
           "ui": {
             "sort_order": 20,
             "priority": "high",
@@ -2966,7 +2966,7 @@
             "max": 10
           },
           "route": "IN/Buccal",
-          "notes_template": "MAX of 1ml per nostril/dose\nRef. Dose Calculation: {weight_kg}kg x 0.2mg",
+          "notes_template": "MAX of 1ml per nostril/dose\nRef. Dose Calculation: {weight_kg} kg x 0.2mg",
           "ui": {
             "sort_order": 30,
             "priority": "high",
@@ -3063,7 +3063,7 @@
             "max": 0.4
           },
           "route": "IV/IO/IM",
-          "notes_template": "MAX single dose is 0.4mg\nMAX total dose 2mg\nRepeat PRN every 2-3 minutes\n\nRef. Dose Calculation: {weight_kg}kg x 0.01mg",
+          "notes_template": "MAX single dose is 0.4mg\nMAX total dose 2mg\nRepeat PRN every 2-3 minutes\n\nRef. Dose Calculation: {weight_kg} kg x 0.01mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -3153,7 +3153,7 @@
             "max": 4
           },
           "route": "IV/IM",
-          "notes_template": "MAX dose is 4 mg. Given Slowly.\nDilution: 4 mg (2 ml) + 8 ml NaCl = 4 mg/10 ml = 0.4 mg/1 ml\n\nRef. Dose Calculation: {weight_kg}kg x 0.1mg",
+          "notes_template": "MAX dose is 4 mg. Given Slowly.\nDilution: 4 mg (2 ml) + 8 ml NaCl = 4 mg/10 ml = 0.4 mg/1 ml\n\nRef. Dose Calculation: {weight_kg} kg x 0.1mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -3269,7 +3269,7 @@
             ]
           },
           "route": "PO",
-          "notes_template": "Paracetamol syrup: 120mg/5ml\n\nRef. Dose Calculation: {weight_kg}kg x 15mg",
+          "notes_template": "Paracetamol syrup: 120mg/5ml\n\nRef. Dose Calculation: {weight_kg} kg x 15mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -3339,7 +3339,7 @@
             ]
           },
           "route": "IV",
-          "notes_template": "MAX dose is 20mg/kg.\nUndiluted: 1000mg/100ml = 10mg/1ml\n\nRef. Dose Calculation: {weight_kg}kg x {dose_factor}mg",
+          "notes_template": "MAX dose is 20mg/kg.\nUndiluted: 1000mg/100ml = 10mg/1ml\n\nRef. Dose Calculation: {weight_kg} kg x {dose_factor}mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -3674,7 +3674,7 @@
             "max": 250
           },
           "route": "IV/IO infusion",
-          "notes_template": "MAX dose is 250mcg\nInfused over 10 minutes\n\nRef. Dose Calculation: {weight_kg}kg x 10mcg",
+          "notes_template": "MAX dose is 250mcg\nInfused over 10 minutes\n\nRef. Dose Calculation: {weight_kg} kg x 10mcg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -3768,7 +3768,7 @@
             "max": 1000
           },
           "route": "IV/IO",
-          "notes_template": "Paediatric (<14 years old) with (major trauma < 3 hours old) with suspected or confirmed (major haemorrhage)\nInfused over 10 minutes\nMAX of 1g\n\nRef. Dose Calculation: {weight_kg}kg x 15mg",
+          "notes_template": "Paediatric (<14 years old) with (major trauma < 3 hours old) with suspected or confirmed (major haemorrhage)\nInfused over 10 minutes\nMAX of 1g\n\nRef. Dose Calculation: {weight_kg} kg x 15mg",
           "ui": {
             "sort_order": 10,
             "priority": "high",
