@@ -2251,7 +2251,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2297,7 +2297,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2342,7 +2342,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2387,7 +2387,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2432,7 +2432,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2477,7 +2477,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2632,7 +2632,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2679,7 +2679,7 @@
               {
                 "when": {
                   "profile": "ccp_months",
-                  "age_months_max": 3
+                  "age_months_max": 2
                 },
                 "rule": {
                   "type": "not_indicated",
