@@ -1,11 +1,5 @@
 # Helpers Guide
 
-This file belongs in:
-
-```text
-yniwashi/pdf-viewer/helpers/README.md
-```
-
 The `helpers/` folder stores JSON and HTML helper files served from:
 
 ```text
