@@ -1,11 +1,5 @@
 # Documents Guide
 
-This file belongs in:
-
-```text
-yniwashi/pdf-viewer/docs/README.md
-```
-
 The `docs/` folder stores the PDF documents served from:
 
 ```text
