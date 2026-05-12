@@ -60,6 +60,395 @@ Current app-supported note placeholders are only:
 
 `{concentration_label}` is not used in medication notes. It is reserved metadata for volume/concentration display wording and is not currently rendered by Android.
 
+## Rendering Contract
+
+This is what the current Android app actually renders from the helpers.
+
+### Medication Button Grid
+
+Each visible medication becomes one button in the AP/CCP medication grid.
+
+Required for a medication button:
+
+- `id`
+- `enabled: true`
+- `availability.enabled` must not be `false`
+- At least one visible section for the selected profile
+
+Rendered fields:
+
+- Button text: `display.name`, fallback `name`, fallback `id`
+- Button order: `ui.sort_order`
+- Button background: `ui.background_color`, fallback `ui.theme_color`, fallback app default
+- Button text color: `ui.text_color`, fallback app default
+- Button border/accent: `ui.accent_color`, fallback `ui.theme_color`, fallback app default
+
+Optional fields that are currently metadata only:
+
+- Medication `display.subtitle`
+- Medication `ui.badge` such as `CCP` or `AP`
+- Medication `ui.icon_key`
+- Medication `ui.group`
+- Medication `search.aliases`
+- Medication `search.keywords`
+
+These optional fields can stay in the helper for future use, but they do not currently render on the medication grid.
+
+### Medication Sheet
+
+When the user taps a medication button, the app opens a medication sheet.
+
+Rendered medication-level fields:
+
+- Sheet title: `display.name`, fallback `name`, fallback `id`
+- Warning cards: `warnings[].title`, `warnings[].message`, and `warnings[].level`
+- Formulary/reference action: `reference_query` or `formulary_reference.query`, depending on helper structure
+- Concentration panel, if `concentration.mode = user_entered`
+
+Rendered section-level fields:
+
+- `indication`, fallback `display.title`
+- Dose generated from `dose_rule`
+- Dose label from `display.dose_label`, fallback `Dose`
+- `route`
+- Notes from `notes`, `notes_template`, `notes_template_when_calculated`, or `notes_when_not_indicated`
+- Volume display if `display.show_volume_calculator = true`, concentration is saved, route is supported, and dose can be parsed
+
+Section fields that are currently metadata only:
+
+- `ui.badge`
+- `ui.priority`
+- `ui.accent_color`
+- `display.show_route`
+- `display.show_notes`
+
+Important: section `ui.badge` used to render above the indication and looked confusing. Current Android does not render section badges in AP/CCP medication sheets. You can keep badges as metadata, set them to `null`, or set them to an empty string.
+
+### Empty String And Null Rules
+
+The app treats these as missing values for rendered text:
+
+```json
+""
+```
+
+```json
+null
+```
+
+```json
+"null"
+```
+
+Blank spaces are also treated as missing.
+
+Practical examples:
+
+- If `ui.badge` is `""`, it does not render.
+- If `route` is `""`, the Route row does not render.
+- If `notes_template` is `""`, Notes do not render.
+- If `display.dose_label` is `""`, the app uses `Dose`.
+- If a color value is `""` or invalid, the app uses a safe fallback color.
+- If `display.name` is `""`, the app falls back to `name`, then `id`.
+
+If a section has no visible indication, dose, route, or notes after cleanup, the app drops that section from the sheet.
+
+Do not depend on empty strings to hide medications or sections. Use `enabled: false` for that.
+
+## Required And Optional Fields
+
+### Medication Object
+
+Recommended medication structure:
+
+```json
+{
+  "id": "fentanyl",
+  "name": "Fentanyl",
+  "enabled": true,
+  "reference_query": "Fentanyl",
+  "sections": [],
+  "display": {
+    "name": "Fentanyl",
+    "subtitle": "Analgesia"
+  },
+  "availability": {
+    "enabled": true,
+    "profiles": ["ccp_months", "ccp_years"],
+    "requires_scope": "CCP"
+  },
+  "ui": {
+    "sort_order": 100,
+    "background_color": "#B39DDB",
+    "text_color": "#111827",
+    "accent_color": "#7E57C2"
+  },
+  "concentration": {
+    "mode": "user_entered",
+    "guide": {
+      "amount": 100,
+      "unit": "mcg",
+      "volume_ml": 2
+    }
+  }
+}
+```
+
+Medication fields required for current rendering:
+
+- `id`
+- `name` or `display.name`
+- `enabled`
+- `sections`
+
+Strongly recommended:
+
+- `availability.enabled`
+- `availability.profiles`
+- `ui.sort_order`
+- `ui.background_color`
+- `ui.text_color`
+- `ui.accent_color`
+- `reference_query` or `formulary_reference.query`
+- `concentration.mode`
+
+Optional / future metadata:
+
+- `display.subtitle`
+- `ui.group`
+- `ui.theme_color`
+- `ui.icon_key`
+- `ui.badge`
+- `search`
+- `content_version`
+- `review_status`
+
+### Section Object
+
+Recommended section structure:
+
+```json
+{
+  "id": "fentanyl_analgesia_iv_io",
+  "enabled": true,
+  "applies_to": ["ccp_months", "ccp_years"],
+  "indication": "Analgesia (IV/IO)",
+  "dose_rule": {
+    "type": "weight_based_single",
+    "factor": 1,
+    "unit": "mcg",
+    "per": "kg"
+  },
+  "route": "IV/IO",
+  "notes_template": "MAX Total Dose 2 mcg/kg\nRef. Dose Calculation: {weight_kg} kg x 1mcg",
+  "display": {
+    "show_volume_calculator": true,
+    "dose_label": "Dose"
+  },
+  "ui": {
+    "sort_order": 10,
+    "badge": null
+  }
+}
+```
+
+Section fields required for current rendering:
+
+- `id`
+- `enabled`
+- `applies_to`
+- `dose_rule`
+
+Strongly recommended:
+
+- `indication`
+- `route`
+- one of `notes`, `notes_template`, `notes_template_when_calculated`, or `notes_when_not_indicated` when extra guidance is needed
+- `display.show_volume_calculator`
+- `ui.sort_order`
+
+Optional / currently metadata only:
+
+- `ui.badge`
+- `ui.priority`
+- `ui.accent_color`
+- `display.show_route`
+- `display.show_notes`
+
+Current Android ignores section `ui.sort_order`; sections render in the order they appear in the `sections` array. Keep the array order correct.
+
+## Common Editing Tasks
+
+### Update A Medication Dose
+
+1. Find the medication by `id`.
+2. Find the matching section by `section.id`.
+3. Update only the relevant `dose_rule` values such as `factor`, `amount`, `min_factor`, `max_factor`, `min`, or `max`.
+4. Update `notes_template` only if the explanatory note needs to change.
+5. Validate JSON.
+6. Increase helper `version` and update app config version when ready to publish.
+7. Upload helper and app config.
+8. Device-test the medication in Months and/or Years as applicable.
+
+Do not change `id` unless you are intentionally creating a new medication/section identity.
+
+### Update A Medication Name Or Button Color
+
+Name:
+
+```json
+"display": {
+  "name": "Fentanyl"
+}
+```
+
+Button colors:
+
+```json
+"ui": {
+  "background_color": "#B39DDB",
+  "text_color": "#111827",
+  "accent_color": "#7E57C2"
+}
+```
+
+If a color is empty or invalid, Android falls back to a safe default. Still keep colors valid `#RRGGBB` values.
+
+### Hide A Medication Temporarily
+
+Use this when you may want to bring the medication back later:
+
+```json
+"enabled": false,
+"availability": {
+  "enabled": false
+}
+```
+
+The medication button will disappear from AP/CCP screens after the helper refreshes.
+
+### Remove A Medication Permanently
+
+Delete the medication object from the `medications` array.
+
+Use this only when you are sure it should no longer exist in the helper. After refresh, the app will no longer show it.
+
+### Hide A Section Temporarily
+
+```json
+"enabled": false
+```
+
+The section will not render in the medication sheet.
+
+### Remove A Section Permanently
+
+Delete the section object from the medication `sections` array.
+
+### Add A New Medication
+
+1. Copy an existing medication with a similar type.
+2. Change `id` to a stable lowercase identifier.
+3. Set `name` and `display.name`.
+4. Set `enabled: true`.
+5. Set `availability.enabled: true`.
+6. Set correct profiles:
+   - CCP: `ccp_months`, `ccp_years`
+   - AP: `ap_months`, `ap_years`
+7. Set `ui.sort_order` so the button appears in the right place.
+8. Set valid button colors.
+9. Add at least one section with a supported `dose_rule`.
+10. Set concentration mode:
+    - `user_entered` if volume can be calculated from a prepared concentration
+    - `not_required` if no draw-up volume should be calculated
+11. Add formulary/reference key.
+12. Validate JSON, publish with version update, and device-test.
+
+Minimum visible medication example:
+
+```json
+{
+  "id": "example_medication",
+  "name": "Example Medication",
+  "enabled": true,
+  "reference_query": "Example Medication",
+  "availability": {
+    "enabled": true,
+    "profiles": ["ccp_months", "ccp_years"]
+  },
+  "ui": {
+    "sort_order": 999,
+    "background_color": "#BFDBFE",
+    "text_color": "#111827",
+    "accent_color": "#2563EB"
+  },
+  "concentration": {
+    "mode": "not_required"
+  },
+  "sections": [
+    {
+      "id": "example_medication_indication",
+      "enabled": true,
+      "applies_to": ["ccp_months", "ccp_years"],
+      "indication": "Example Indication",
+      "dose_rule": {
+        "type": "static",
+        "amount": 1,
+        "unit": "mg"
+      },
+      "route": "IV",
+      "display": {
+        "show_volume_calculator": false
+      }
+    }
+  ]
+}
+```
+
+### Add A New Indication To An Existing Medication
+
+Add a new object inside that medication's `sections` array.
+
+Required:
+
+- new stable `id`
+- `enabled: true`
+- correct `applies_to`
+- `indication`
+- supported `dose_rule`
+- `route`
+
+Optional:
+
+- `notes_template`
+- `display.dose_label`
+- `display.show_volume_calculator`
+- `ui.sort_order` for editor readability, though current Android follows array order
+
+### Remove Strange Extra Text From The Sheet
+
+If you see unexpected text above an indication, check whether it is a section badge:
+
+```json
+"ui": {
+  "badge": "Arrest"
+}
+```
+
+Current Android no longer renders section badges, but older builds did. To avoid confusion across builds, use:
+
+```json
+"badge": null
+```
+
+or:
+
+```json
+"badge": ""
+```
+
+Do not use `badge` for route values like `PO`; use the section `route` field.
+
 ## Files
 
 CCP live helper:
