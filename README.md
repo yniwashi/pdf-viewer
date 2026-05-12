@@ -1,90 +1,103 @@
-# PDF Viewer with Direct Links
+# Niwashi Docs Host / PDF Viewer
 
-This repository hosts a self-contained PDF.js viewer on GitHub Pages.
+This repository hosts the static files used by the iOS webapp and the Android Ambulance app.
 
-It allows you to open PDF files, jump to a specific page, and highlight/search for text directly from the link.
+Live host:
 
----
+```text
+https://docs.niwashibase.com
+```
+
+Repository:
+
+```text
+https://github.com/yniwashi/pdf-viewer
+```
+
+## Repository Structure
+
+```text
+pdf-viewer/
+  docs/
+  helpers/
+  viewer/
+  README.md
+  CNAME
+  robots.txt
+  .nojekyll
+```
+
+## What Each Folder Does
+
+```text
+docs/
+```
+
+Stores PDF files such as CPG, SOP, CPM, and PAT.
+
+Folder guide:
+
+```text
+https://github.com/yniwashi/pdf-viewer/blob/main/docs/README.md
+```
+
+```text
+helpers/
+```
+
+Stores JSON and HTML helper files such as document indexes, flowcharts, formulary, RSI checklist HTML, and pediatric dosing helpers.
+
+Folder guide:
+
+```text
+https://github.com/yniwashi/pdf-viewer/blob/main/helpers/README.md
+```
+
+```text
+viewer/
+```
+
+Stores the bundled PDF.js viewer used for direct PDF links, page jumps, and text search.
+
+Folder guide:
+
+```text
+https://github.com/yniwashi/pdf-viewer/blob/main/viewer/README.md
+```
 
 ## Live Viewer
 
-The viewer is available at:
+The PDF.js viewer is available at:
 
+```text
 https://docs.niwashibase.com/viewer/web/
-
----
-
-## Adding or Updating PDFs
-
-Place PDF files inside the `/docs` folder in this repository.
-
-For the CPG file, keep the current filename:
-
-```txt
-/docs/cpg-81w9d1f.pdf
 ```
 
-When updating to a new CPG version, replace the existing PDF with the new file using the same filename. This keeps all app links working without changing the PDF URL.
+Open a PDF:
 
-Example structure:
-
-```txt
-/pdf-viewer
-  /viewer
-    /web
-    /build
-    /locale
-  /docs
-    cpg-81w9d1f.pdf
+```text
+https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf
 ```
 
----
+Open a page:
 
-## Linking to Files
-
-Use the following URL format:
-
-```txt
-https://docs.niwashibase.com/viewer/web/?file=/docs/<filename>.pdf
-```
-
-### Current CPG File
-
-Open the CPG at page 15:
-
-```txt
+```text
 https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page=15
 ```
 
-Search the CPG for `adenosine`:
+Search inside a PDF:
 
-```txt
+```text
 https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search=adenosine
 ```
 
-Open at page 15 and search for `adenosine`:
+## Used By
 
-```txt
-https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page=15&search=adenosine
-```
+### iOS Webapp
 
----
+The iOS webapp uses this repository directly for document viewing and helper JSON files.
 
-## Helper JSON Files
-
-The iOS app uses helper JSON files for CPG navigation, flowcharts, and formulary page links.
-
-Current helper paths:
-
-```txt
-/helpers/cpg_index.json
-/helpers/flowcharts.json
-/helpers/formulary.json
-```
-
-When the CPG PDF is updated and page numbers change, update these JSON files at the same time.
-
-The iOS app currently expects:
+Current iOS-style helper examples:
 
 ```js
 urlIndex: "https://docs.niwashibase.com/helpers/cpg_index.json"
@@ -94,37 +107,100 @@ urlPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pd
 urlSearchBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search="
 ```
 
----
+Do not remove or rename these files unless the iOS webapp has been updated.
 
-## Features
+### Android App
 
-- Jump directly to any page using `#page=<number>`.
-- Highlight and search for terms using `#search=<keyword>`.
-- Clean search bar with navigation.
-- Toolbar with First / Last Page buttons.
-- Theme-aware design with light and dark mode support.
+The Android app does not hardcode every docs URL in the UI. Version `2.1+` reads most remote document/helper URLs from:
 
----
+```text
+ambulance_app_config.json
+```
+
+The app config is hosted separately in a `yazan414` Gist:
+
+```text
+https://gist.github.com/yazan414/2ed2d30193b3dedffcf789981ad14c0e
+```
+
+The Android app config points to files hosted here, for example:
+
+```text
+https://docs.niwashibase.com/docs/cpg-81w9d1f.pdf
+https://docs.niwashibase.com/helpers/cpg_index.json
+https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
+https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
+https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
+```
+
+Full Android app config guide:
+
+```text
+https://github.com/yniwashi/ambulance-app-dist/blob/main/README.md
+```
+
+## Current Important Live Paths
+
+PDFs:
+
+```text
+https://docs.niwashibase.com/docs/cpg-81w9d1f.pdf
+https://docs.niwashibase.com/docs/sop-101qq9f2w.pdf
+https://docs.niwashibase.com/docs/cpm-202e9d33q.pdf
+https://docs.niwashibase.com/docs/pat-301h6j54r.pdf
+```
+
+Document indexes:
+
+```text
+https://docs.niwashibase.com/helpers/cpg_index.json
+https://docs.niwashibase.com/helpers/sop_index.json
+https://docs.niwashibase.com/helpers/cpm_index.json
+https://docs.niwashibase.com/helpers/pat_index.json
+```
+
+Shared helpers:
+
+```text
+https://docs.niwashibase.com/helpers/flowcharts.json
+https://docs.niwashibase.com/helpers/formulary.json
+```
+
+Android-specific helpers:
+
+```text
+https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
+https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
+https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
+```
 
 ## Deployment
 
-1. Go to **Settings -> Pages** in GitHub.
-2. Under **Build and Deployment**, select:
-   - Source: `Deploy from branch`
-   - Branch: `main` -> `/ (root)`
-3. Save and wait for GitHub Pages to build.
-4. Your site will be available at:
+GitHub Pages should be configured as:
 
-```txt
-https://docs.niwashibase.com/
+```text
+Source: Deploy from branch
+Branch: main
+Folder: / (root)
 ```
 
----
+The custom domain is controlled by:
 
-## Notes
+```text
+CNAME
+```
+
+The current domain should be:
+
+```text
+docs.niwashibase.com
+```
+
+## Rules
 
 - Keep filenames stable when app links depend on them.
 - Avoid spaces in filenames. Use `-` or `_`.
-- Replacing `/docs/cpg-81w9d1f.pdf` with a new PDF keeps existing app links working.
-- After replacing the CPG PDF, update the helper JSON files so page links match the new PDF.
-- Browser or CDN cache may temporarily show the old PDF after replacement. Test in a private window if needed.
+- Use exact direct URLs. Folder URLs may return `404` because GitHub Pages does not list directories.
+- After replacing PDFs, update matching index JSON files if page numbers changed.
+- For Android, increase the matching version in `ambulance_app_config.json` when a document/helper should refresh.
+- Browser/CDN cache may temporarily show old files. Test in a private window or wait for GitHub Pages cache to expire.
