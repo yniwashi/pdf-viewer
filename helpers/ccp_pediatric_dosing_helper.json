@@ -1,7 +1,7 @@
 {
-  "schema_version": "0.2",
+  "schema_version": "0.1",
   "helper_type": "ccp_pediatric_dosing",
-  "version": "0.2",
+  "version": "0.1",
   "status": "active",
   "source": {
     "based_on": "Current Android CcpMonths.kt and CcpYears.kt logic",
