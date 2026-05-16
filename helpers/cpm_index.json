@@ -17,7 +17,11 @@
       "aliases": [
         "Qatar Early Warning Signs Calculation",
         "CPM 1.1 Qatar Early Warning Signs Calculation",
-        "1.1 Qatar Early Warning Signs Calculation"
+        "1.1 Qatar Early Warning Signs Calculation",
+        "QEWSC",
+        "1.1",
+        "CPM 1.1",
+        "CPM1.1"
       ],
       "keywords": [
         "qatar",
@@ -27,7 +31,14 @@
         "calculation",
         "patient assessment",
         "1.1",
-        "cpm 1.1"
+        "cpm 1.1",
+        "procedure",
+        "QEWSC",
+        "CPM1.1",
+        "1.1 Qatar Early Warning Signs Calculation",
+        "CPM 1.1 Qatar Early Warning Signs Calculation",
+        "early warning score",
+        "qatar early warning score"
       ],
       "type": "procedure"
     },
@@ -41,14 +52,30 @@
       "aliases": [
         "Respiratory rate assessment",
         "CPM 1.2 Respiratory rate assessment",
-        "1.2 Respiratory rate assessment"
+        "1.2 Respiratory rate assessment",
+        "RRA",
+        "1.2",
+        "CPM 1.2",
+        "CPM1.2"
       ],
       "keywords": [
         "respiratory",
         "rate",
         "patient assessment",
         "1.2",
-        "cpm 1.2"
+        "cpm 1.2",
+        "procedure",
+        "RRA",
+        "CPM1.2",
+        "1.2 Respiratory rate assessment",
+        "CPM 1.2 Respiratory rate assessment",
+        "breathing",
+        "dyspnea",
+        "shortness of breath",
+        "SOB",
+        "oxygen",
+        "SpO2",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -62,14 +89,24 @@
       "aliases": [
         "Lung sound assessment",
         "CPM 1.3 Lung sound assessment",
-        "1.3 Lung sound assessment"
+        "1.3 Lung sound assessment",
+        "LSA",
+        "1.3",
+        "CPM 1.3",
+        "CPM1.3"
       ],
       "keywords": [
         "lung",
         "sound",
         "patient assessment",
         "1.3",
-        "cpm 1.3"
+        "cpm 1.3",
+        "procedure",
+        "LSA",
+        "CPM1.3",
+        "1.3 Lung sound assessment",
+        "CPM 1.3 Lung sound assessment",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -83,14 +120,24 @@
       "aliases": [
         "Pulse rate assessment",
         "CPM 1.4 Pulse rate assessment",
-        "1.4 Pulse rate assessment"
+        "1.4 Pulse rate assessment",
+        "PRA",
+        "1.4",
+        "CPM 1.4",
+        "CPM1.4"
       ],
       "keywords": [
         "pulse",
         "rate",
         "patient assessment",
         "1.4",
-        "cpm 1.4"
+        "cpm 1.4",
+        "procedure",
+        "PRA",
+        "CPM1.4",
+        "1.4 Pulse rate assessment",
+        "CPM 1.4 Pulse rate assessment",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -105,7 +152,11 @@
         "Random blood sugar assessment",
         "CPM 1.5 Random blood sugar assessment",
         "1.5 Random blood sugar assessment",
-        "Random glucose assessment"
+        "Random glucose assessment",
+        "RBSA",
+        "1.5",
+        "CPM 1.5",
+        "CPM1.5"
       ],
       "keywords": [
         "random",
@@ -113,7 +164,17 @@
         "sugar",
         "patient assessment",
         "1.5",
-        "cpm 1.5"
+        "cpm 1.5",
+        "procedure",
+        "RBSA",
+        "CPM1.5",
+        "1.5 Random blood sugar assessment",
+        "CPM 1.5 Random blood sugar assessment",
+        "RBS",
+        "BGL",
+        "blood glucose",
+        "blood sugar",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -127,7 +188,12 @@
       "aliases": [
         "Blood pressure measurement: Manual (Adult)",
         "CPM 1.6 Blood pressure measurement: Manual (Adult)",
-        "1.6 Blood pressure measurement: Manual (Adult)"
+        "1.6 Blood pressure measurement: Manual (Adult)",
+        "Blood pressure measurement: Manual",
+        "BPMMA",
+        "1.6",
+        "CPM 1.6",
+        "CPM1.6"
       ],
       "keywords": [
         "blood",
@@ -135,7 +201,20 @@
         "measurement",
         "patient assessment",
         "1.6",
-        "cpm 1.6"
+        "cpm 1.6",
+        "procedure",
+        "Blood pressure measurement: Manual",
+        "Blood pressure measurement Manual Adult",
+        "BPMMA",
+        "CPM1.6",
+        "1.6 Blood pressure measurement: Manual (Adult)",
+        "CPM 1.6 Blood pressure measurement: Manual (Adult)",
+        "BP",
+        "NIBP",
+        "hypertension",
+        "hypotension",
+        "Manual",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -151,7 +230,11 @@
         "CPM 1.7 Non-invasive blood pressure measurement using the LIFEPAK 15",
         "1.7 Non-invasive blood pressure measurement using the LIFEPAK 15",
         "NIBP blood pressure measurement using the LIFEPAK 15",
-        "Non-invasive blood pressure measurement using the LIFEPAK 15 LIFEPAK 15"
+        "Non-invasive blood pressure measurement using the LIFEPAK 15 LIFEPAK 15",
+        "NIBPML",
+        "1.7",
+        "CPM 1.7",
+        "CPM1.7"
       ],
       "keywords": [
         "non-invasive",
@@ -164,7 +247,18 @@
         "cpm 1.7",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "Non invasive blood pressure measurement using the LIFEPAK 15",
+        "NIBPML",
+        "CPM1.7",
+        "1.7 Non-invasive blood pressure measurement using the LIFEPAK 15",
+        "CPM 1.7 Non-invasive blood pressure measurement using the LIFEPAK 15",
+        "BP",
+        "NIBP",
+        "hypertension",
+        "hypotension",
+        "invasive"
       ],
       "type": "procedure"
     },
@@ -178,7 +272,11 @@
       "aliases": [
         "Temperature assessment using Genius 2 Tympanic Thermometer",
         "CPM 1.8 Temperature assessment using Genius 2 Tympanic Thermometer",
-        "1.8 Temperature assessment using Genius 2 Tympanic Thermometer"
+        "1.8 Temperature assessment using Genius 2 Tympanic Thermometer",
+        "TAGTT",
+        "1.8",
+        "CPM 1.8",
+        "CPM1.8"
       ],
       "keywords": [
         "temperature",
@@ -187,7 +285,13 @@
         "thermometer",
         "patient assessment",
         "1.8",
-        "cpm 1.8"
+        "cpm 1.8",
+        "procedure",
+        "TAGTT",
+        "CPM1.8",
+        "1.8 Temperature assessment using Genius 2 Tympanic Thermometer",
+        "CPM 1.8 Temperature assessment using Genius 2 Tympanic Thermometer",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -202,7 +306,11 @@
         "Glasgow coma score assessment",
         "CPM 1.9 Glasgow coma score assessment",
         "1.9 Glasgow coma score assessment",
-        "GCS assessment"
+        "GCS assessment",
+        "GCSA",
+        "1.9",
+        "CPM 1.9",
+        "CPM1.9"
       ],
       "keywords": [
         "glasgow",
@@ -210,7 +318,16 @@
         "score",
         "patient assessment",
         "1.9",
-        "cpm 1.9"
+        "cpm 1.9",
+        "procedure",
+        "GCSA",
+        "CPM1.9",
+        "1.9 Glasgow coma score assessment",
+        "CPM 1.9 Glasgow coma score assessment",
+        "glasgow coma scale",
+        "consciousness",
+        "neuro assessment",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -226,7 +343,11 @@
         "CPM 1.10 Level of consciousness assessment using AVPU scale",
         "1.10 Level of consciousness assessment using AVPU scale",
         "LOC assessment using AVPU scale",
-        "Level of consciousness assessment using AVPU scale AVPU"
+        "Level of consciousness assessment using AVPU scale AVPU",
+        "LCAAS",
+        "1.10",
+        "CPM 1.10",
+        "CPM1.10"
       ],
       "keywords": [
         "level",
@@ -235,7 +356,15 @@
         "scale",
         "patient assessment",
         "1.10",
-        "cpm 1.10"
+        "cpm 1.10",
+        "procedure",
+        "LCAAS",
+        "CPM1.10",
+        "1.10 Level of consciousness assessment using AVPU scale",
+        "CPM 1.10 Level of consciousness assessment using AVPU scale",
+        "alert voice pain unresponsive",
+        "level of consciousness",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -249,13 +378,29 @@
       "aliases": [
         "Pain assessment",
         "CPM 1.11 Pain assessment",
-        "1.11 Pain assessment"
+        "1.11 Pain assessment",
+        "PA",
+        "1.11",
+        "CPM 1.11",
+        "CPM1.11"
       ],
       "keywords": [
         "pain",
         "patient assessment",
         "1.11",
-        "cpm 1.11"
+        "cpm 1.11",
+        "procedure",
+        "PA",
+        "CPM1.11",
+        "1.11 Pain assessment",
+        "CPM 1.11 Pain assessment",
+        "analgesia",
+        "pain relief",
+        "fentanyl",
+        "morphine",
+        "ketamine",
+        "paracetamol",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -270,7 +415,11 @@
         "BEFAST assessment for stroke",
         "CPM 1.12 BEFAST assessment for stroke",
         "1.12 BEFAST assessment for stroke",
-        "BEFAST assessment for stroke BEFAST"
+        "BEFAST assessment for stroke BEFAST",
+        "BAS",
+        "1.12",
+        "CPM 1.12",
+        "CPM1.12"
       ],
       "keywords": [
         "befast",
@@ -278,7 +427,19 @@
         "patient assessment",
         "1.12",
         "cpm 1.12",
-        "FAST"
+        "FAST",
+        "procedure",
+        "BAS",
+        "CPM1.12",
+        "1.12 BEFAST assessment for stroke",
+        "CPM 1.12 BEFAST assessment for stroke",
+        "CVA",
+        "facial droop",
+        "arm weakness",
+        "speech difficulty",
+        "large vessel occlusion",
+        "LVO",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -293,7 +454,11 @@
         "Pulse oximetry using the LIFEPAK 15",
         "CPM 1.13 Pulse oximetry using the LIFEPAK 15",
         "1.13 Pulse oximetry using the LIFEPAK 15",
-        "Pulse oximetry using the LIFEPAK 15 LIFEPAK 15"
+        "Pulse oximetry using the LIFEPAK 15 LIFEPAK 15",
+        "POL",
+        "1.13",
+        "CPM 1.13",
+        "CPM1.13"
       ],
       "keywords": [
         "pulse",
@@ -304,7 +469,15 @@
         "cpm 1.13",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "POL",
+        "CPM1.13",
+        "1.13 Pulse oximetry using the LIFEPAK 15",
+        "CPM 1.13 Pulse oximetry using the LIFEPAK 15",
+        "SpO2",
+        "oxygen saturation",
+        "sats"
       ],
       "type": "procedure"
     },
@@ -319,7 +492,11 @@
         "Capnography using the LIFEPAK 15",
         "CPM 1.14 Capnography using the LIFEPAK 15",
         "1.14 Capnography using the LIFEPAK 15",
-        "Capnography using the LIFEPAK 15 LIFEPAK 15"
+        "Capnography using the LIFEPAK 15 LIFEPAK 15",
+        "CL",
+        "1.14",
+        "CPM 1.14",
+        "CPM1.14"
       ],
       "keywords": [
         "capnography",
@@ -329,7 +506,15 @@
         "cpm 1.14",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "CL",
+        "CPM1.14",
+        "1.14 Capnography using the LIFEPAK 15",
+        "CPM 1.14 Capnography using the LIFEPAK 15",
+        "ETCO2",
+        "end tidal CO2",
+        "CO2 monitoring"
       ],
       "type": "procedure"
     },
@@ -343,13 +528,25 @@
       "aliases": [
         "Adult medical patient assessment",
         "CPM 1.15 Adult medical patient assessment",
-        "1.15 Adult medical patient assessment"
+        "1.15 Adult medical patient assessment",
+        "AMPA",
+        "1.15",
+        "CPM 1.15",
+        "CPM1.15"
       ],
       "keywords": [
         "medical",
         "patient assessment",
         "1.15",
-        "cpm 1.15"
+        "cpm 1.15",
+        "procedure",
+        "AMPA",
+        "CPM1.15",
+        "1.15 Adult medical patient assessment",
+        "CPM 1.15 Adult medical patient assessment",
+        "Adult",
+        "patient",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -363,13 +560,29 @@
       "aliases": [
         "Adult trauma patient assessment",
         "CPM 1.16 Adult trauma patient assessment",
-        "1.16 Adult trauma patient assessment"
+        "1.16 Adult trauma patient assessment",
+        "ATPA",
+        "1.16",
+        "CPM 1.16",
+        "CPM1.16"
       ],
       "keywords": [
         "trauma",
         "patient assessment",
         "1.16",
-        "cpm 1.16"
+        "cpm 1.16",
+        "procedure",
+        "ATPA",
+        "CPM1.16",
+        "1.16 Adult trauma patient assessment",
+        "CPM 1.16 Adult trauma patient assessment",
+        "injury",
+        "accident",
+        "RTC",
+        "MVA",
+        "Adult",
+        "patient",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -383,7 +596,14 @@
       "aliases": [
         "Mental Status Examination for Acute Behavioural Disturbance",
         "CPM 1.17 Mental Status Examination for Acute Behavioural Disturbance",
-        "1.17 Mental Status Examination for Acute Behavioural Disturbance"
+        "1.17 Mental Status Examination for Acute Behavioural Disturbance",
+        "MSEABD",
+        "1.17",
+        "CPM 1.17",
+        "CPM1.17",
+        "Mental Status Examination for Acute behavioral Disturbance",
+        "CPM 1.17 Mental Status Examination for Acute behavioral Disturbance",
+        "1.17 Mental Status Examination for Acute behavioral Disturbance"
       ],
       "keywords": [
         "mental",
@@ -394,7 +614,17 @@
         "disturbance",
         "patient assessment",
         "1.17",
-        "cpm 1.17"
+        "cpm 1.17",
+        "procedure",
+        "MSEABD",
+        "CPM1.17",
+        "1.17 Mental Status Examination for Acute Behavioural Disturbance",
+        "CPM 1.17 Mental Status Examination for Acute Behavioural Disturbance",
+        "Mental Status Examination for Acute behavioral Disturbance",
+        "CPM 1.17 Mental Status Examination for Acute behavioral Disturbance",
+        "1.17 Mental Status Examination for Acute behavioral Disturbance",
+        "Mental Status Examination for Acute behavioural Disturbance",
+        "behavioral"
       ],
       "type": "procedure"
     },
@@ -409,7 +639,13 @@
         "Finger sweep manoeuvre",
         "CPM 2.1 Finger sweep manoeuvre",
         "2.1 Finger sweep manoeuvre",
-        "Finger sweep maneuver"
+        "Finger sweep maneuver",
+        "FSM",
+        "2.1",
+        "CPM 2.1",
+        "CPM2.1",
+        "CPM 2.1 Finger sweep maneuver",
+        "2.1 Finger sweep maneuver"
       ],
       "keywords": [
         "finger",
@@ -417,7 +653,21 @@
         "manoeuvre",
         "airway management",
         "2.1",
-        "cpm 2.1"
+        "cpm 2.1",
+        "procedure",
+        "FSM",
+        "CPM2.1",
+        "2.1 Finger sweep manoeuvre",
+        "CPM 2.1 Finger sweep manoeuvre",
+        "Finger sweep maneuver",
+        "CPM 2.1 Finger sweep maneuver",
+        "2.1 Finger sweep maneuver",
+        "Finger sweep manoeuvre",
+        "maneuver",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -432,7 +682,13 @@
         "Head-tilt-chin lift manoeuvre",
         "CPM 2.2 Head-tilt-chin lift manoeuvre",
         "2.2 Head-tilt-chin lift manoeuvre",
-        "Head-tilt-chin lift maneuver"
+        "Head-tilt-chin lift maneuver",
+        "HTCLM",
+        "2.2",
+        "CPM 2.2",
+        "CPM2.2",
+        "CPM 2.2 Head-tilt-chin lift maneuver",
+        "2.2 Head-tilt-chin lift maneuver"
       ],
       "keywords": [
         "head-tilt-chin",
@@ -440,7 +696,24 @@
         "manoeuvre",
         "airway management",
         "2.2",
-        "cpm 2.2"
+        "cpm 2.2",
+        "procedure",
+        "Head tilt chin lift manoeuvre",
+        "HTCLM",
+        "CPM2.2",
+        "2.2 Head-tilt-chin lift manoeuvre",
+        "CPM 2.2 Head-tilt-chin lift manoeuvre",
+        "Head-tilt-chin lift maneuver",
+        "CPM 2.2 Head-tilt-chin lift maneuver",
+        "2.2 Head-tilt-chin lift maneuver",
+        "maneuver",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "Head",
+        "tilt",
+        "chin"
       ],
       "type": "procedure"
     },
@@ -455,14 +728,35 @@
         "Jaw-thrust manoeuvre",
         "CPM 2.3 Jaw-thrust manoeuvre",
         "2.3 Jaw-thrust manoeuvre",
-        "Jaw-thrust maneuver"
+        "Jaw-thrust maneuver",
+        "JTM",
+        "2.3",
+        "CPM 2.3",
+        "CPM2.3",
+        "CPM 2.3 Jaw-thrust maneuver",
+        "2.3 Jaw-thrust maneuver"
       ],
       "keywords": [
         "jaw-thrust",
         "manoeuvre",
         "airway management",
         "2.3",
-        "cpm 2.3"
+        "cpm 2.3",
+        "procedure",
+        "Jaw thrust manoeuvre",
+        "JTM",
+        "CPM2.3",
+        "2.3 Jaw-thrust manoeuvre",
+        "CPM 2.3 Jaw-thrust manoeuvre",
+        "Jaw-thrust maneuver",
+        "CPM 2.3 Jaw-thrust maneuver",
+        "2.3 Jaw-thrust maneuver",
+        "maneuver",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "thrust"
       ],
       "type": "procedure"
     },
@@ -476,14 +770,27 @@
       "aliases": [
         "Oral suctioning",
         "CPM 2.4 Oral suctioning",
-        "2.4 Oral suctioning"
+        "2.4 Oral suctioning",
+        "OS",
+        "2.4",
+        "CPM 2.4",
+        "CPM2.4"
       ],
       "keywords": [
         "oral",
         "suctioning",
         "airway management",
         "2.4",
-        "cpm 2.4"
+        "cpm 2.4",
+        "procedure",
+        "OS",
+        "CPM2.4",
+        "2.4 Oral suctioning",
+        "CPM 2.4 Oral suctioning",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -497,7 +804,12 @@
       "aliases": [
         "Stoma and tracheostomy tube suctioning",
         "CPM 2.5 Stoma and tracheostomy tube suctioning",
-        "2.5 Stoma and tracheostomy tube suctioning"
+        "2.5 Stoma and tracheostomy tube suctioning",
+        "Stoma & tracheostomy tube suctioning",
+        "STTS",
+        "2.5",
+        "CPM 2.5",
+        "CPM2.5"
       ],
       "keywords": [
         "stoma",
@@ -506,7 +818,17 @@
         "suctioning",
         "airway management",
         "2.5",
-        "cpm 2.5"
+        "cpm 2.5",
+        "procedure",
+        "Stoma & tracheostomy tube suctioning",
+        "STTS",
+        "CPM2.5",
+        "2.5 Stoma and tracheostomy tube suctioning",
+        "CPM 2.5 Stoma and tracheostomy tube suctioning",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -520,7 +842,11 @@
       "aliases": [
         "Endotracheal tube suctioning",
         "CPM 2.6 Endotracheal tube suctioning",
-        "2.6 Endotracheal tube suctioning"
+        "2.6 Endotracheal tube suctioning",
+        "ETS",
+        "2.6",
+        "CPM 2.6",
+        "CPM2.6"
       ],
       "keywords": [
         "endotracheal",
@@ -528,7 +854,16 @@
         "suctioning",
         "airway management",
         "2.6",
-        "cpm 2.6"
+        "cpm 2.6",
+        "procedure",
+        "ETS",
+        "CPM2.6",
+        "2.6 Endotracheal tube suctioning",
+        "CPM 2.6 Endotracheal tube suctioning",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -542,7 +877,11 @@
       "aliases": [
         "Laryngeal tube suctioning",
         "CPM 2.7 Laryngeal tube suctioning",
-        "2.7 Laryngeal tube suctioning"
+        "2.7 Laryngeal tube suctioning",
+        "LTS",
+        "2.7",
+        "CPM 2.7",
+        "CPM2.7"
       ],
       "keywords": [
         "laryngeal",
@@ -550,7 +889,16 @@
         "suctioning",
         "airway management",
         "2.7",
-        "cpm 2.7"
+        "cpm 2.7",
+        "procedure",
+        "LTS",
+        "CPM2.7",
+        "2.7 Laryngeal tube suctioning",
+        "CPM 2.7 Laryngeal tube suctioning",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -564,7 +912,11 @@
       "aliases": [
         "Foreign body airway obstruction in adults",
         "CPM 2.8 Foreign body airway obstruction in adults",
-        "2.8 Foreign body airway obstruction in adults"
+        "2.8 Foreign body airway obstruction in adults",
+        "FBAOA",
+        "2.8",
+        "CPM 2.8",
+        "CPM2.8"
       ],
       "keywords": [
         "foreign",
@@ -574,7 +926,20 @@
         "adults",
         "airway management",
         "2.8",
-        "cpm 2.8"
+        "cpm 2.8",
+        "procedure",
+        "FBAOA",
+        "CPM2.8",
+        "2.8 Foreign body airway obstruction in adults",
+        "CPM 2.8 Foreign body airway obstruction in adults",
+        "FBAO",
+        "choking",
+        "airway obstruction",
+        "magill forceps",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -588,14 +953,27 @@
       "aliases": [
         "Use of Magill’s forceps",
         "CPM 2.9 Use of Magill’s forceps",
-        "2.9 Use of Magill’s forceps"
+        "2.9 Use of Magill’s forceps",
+        "UMSF",
+        "2.9",
+        "CPM 2.9",
+        "CPM2.9"
       ],
       "keywords": [
         "magill",
         "forceps",
         "airway management",
         "2.9",
-        "cpm 2.9"
+        "cpm 2.9",
+        "procedure",
+        "UMSF",
+        "CPM2.9",
+        "2.9 Use of Magill’s forceps",
+        "CPM 2.9 Use of Magill’s forceps",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -610,7 +988,11 @@
         "Oropharyngeal airway insertion",
         "CPM 2.10 Oropharyngeal airway insertion",
         "2.10 Oropharyngeal airway insertion",
-        "OPA insertion"
+        "OPA insertion",
+        "OAI",
+        "2.10",
+        "CPM 2.10",
+        "CPM2.10"
       ],
       "keywords": [
         "oropharyngeal",
@@ -618,7 +1000,16 @@
         "insertion",
         "airway management",
         "2.10",
-        "cpm 2.10"
+        "cpm 2.10",
+        "procedure",
+        "OAI",
+        "CPM2.10",
+        "2.10 Oropharyngeal airway insertion",
+        "CPM 2.10 Oropharyngeal airway insertion",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -633,7 +1024,11 @@
         "Naso-pharyngeal airway insertion",
         "CPM 2.11 Naso-pharyngeal airway insertion",
         "2.11 Naso-pharyngeal airway insertion",
-        "NPA insertion"
+        "NPA insertion",
+        "NPAI",
+        "2.11",
+        "CPM 2.11",
+        "CPM2.11"
       ],
       "keywords": [
         "naso-pharyngeal",
@@ -641,7 +1036,19 @@
         "insertion",
         "airway management",
         "2.11",
-        "cpm 2.11"
+        "cpm 2.11",
+        "procedure",
+        "Naso pharyngeal airway insertion",
+        "NPAI",
+        "CPM2.11",
+        "2.11 Naso-pharyngeal airway insertion",
+        "CPM 2.11 Naso-pharyngeal airway insertion",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "Naso",
+        "pharyngeal"
       ],
       "type": "procedure"
     },
@@ -656,7 +1063,13 @@
         "Cricoid pressure manoeuvre",
         "CPM 2.12 Cricoid pressure manoeuvre",
         "2.12 Cricoid pressure manoeuvre",
-        "Cricoid pressure maneuver"
+        "Cricoid pressure maneuver",
+        "CPM",
+        "2.12",
+        "CPM 2.12",
+        "CPM2.12",
+        "CPM 2.12 Cricoid pressure maneuver",
+        "2.12 Cricoid pressure maneuver"
       ],
       "keywords": [
         "cricoid",
@@ -664,7 +1077,21 @@
         "manoeuvre",
         "airway management",
         "2.12",
-        "cpm 2.12"
+        "cpm 2.12",
+        "procedure",
+        "CPM",
+        "CPM2.12",
+        "2.12 Cricoid pressure manoeuvre",
+        "CPM 2.12 Cricoid pressure manoeuvre",
+        "Cricoid pressure maneuver",
+        "CPM 2.12 Cricoid pressure maneuver",
+        "2.12 Cricoid pressure maneuver",
+        "Cricoid pressure manoeuvre",
+        "maneuver",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -680,14 +1107,37 @@
         "CPM 2.13 BURP manoeuvre",
         "2.13 BURP manoeuvre",
         "BURP maneuver",
-        "BURP manoeuvre BURP"
+        "BURP manoeuvre BURP",
+        "BM",
+        "2.13",
+        "CPM 2.13",
+        "CPM2.13",
+        "CPM 2.13 BURP maneuver",
+        "2.13 BURP maneuver",
+        "BURP maneuver BURP"
       ],
       "keywords": [
         "burp",
         "manoeuvre",
         "airway management",
         "2.13",
-        "cpm 2.13"
+        "cpm 2.13",
+        "procedure",
+        "BM",
+        "CPM2.13",
+        "2.13 BURP manoeuvre",
+        "CPM 2.13 BURP manoeuvre",
+        "BURP maneuver",
+        "CPM 2.13 BURP maneuver",
+        "2.13 BURP maneuver",
+        "BURP manoeuvre",
+        "BURP maneuver BURP",
+        "BURP manoeuvre BURP",
+        "maneuver",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -702,7 +1152,11 @@
         "Adult orotracheal intubation using the Frova",
         "CPM 2.14 Adult orotracheal intubation using the Frova",
         "2.14 Adult orotracheal intubation using the Frova",
-        "Adult oro-tracheal intubation using the Frova"
+        "Adult oro-tracheal intubation using the Frova",
+        "AOIF",
+        "2.14",
+        "CPM 2.14",
+        "CPM2.14"
       ],
       "keywords": [
         "orotracheal",
@@ -710,7 +1164,20 @@
         "frova",
         "airway management",
         "2.14",
-        "cpm 2.14"
+        "cpm 2.14",
+        "procedure",
+        "AOIF",
+        "CPM2.14",
+        "2.14 Adult orotracheal intubation using the Frova",
+        "CPM 2.14 Adult orotracheal intubation using the Frova",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -725,7 +1192,11 @@
         "Adult orotracheal intubation using the Glidescope",
         "CPM 2.15 Adult orotracheal intubation using the Glidescope",
         "2.15 Adult orotracheal intubation using the Glidescope",
-        "Adult oro-tracheal intubation using the Glidescope"
+        "Adult oro-tracheal intubation using the Glidescope",
+        "AOIG",
+        "2.15",
+        "CPM 2.15",
+        "CPM2.15"
       ],
       "keywords": [
         "orotracheal",
@@ -733,7 +1204,20 @@
         "glidescope",
         "airway management",
         "2.15",
-        "cpm 2.15"
+        "cpm 2.15",
+        "procedure",
+        "AOIG",
+        "CPM2.15",
+        "2.15 Adult orotracheal intubation using the Glidescope",
+        "CPM 2.15 Adult orotracheal intubation using the Glidescope",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -748,7 +1232,11 @@
         "Adult orotracheal intubation using the McGrath",
         "CPM 2.16 Adult orotracheal intubation using the McGrath",
         "2.16 Adult orotracheal intubation using the McGrath",
-        "Adult oro-tracheal intubation using the McGrath"
+        "Adult oro-tracheal intubation using the McGrath",
+        "AOIM",
+        "2.16",
+        "CPM 2.16",
+        "CPM2.16"
       ],
       "keywords": [
         "orotracheal",
@@ -756,7 +1244,20 @@
         "mcgrath",
         "airway management",
         "2.16",
-        "cpm 2.16"
+        "cpm 2.16",
+        "procedure",
+        "AOIM",
+        "CPM2.16",
+        "2.16 Adult orotracheal intubation using the McGrath",
+        "CPM 2.16 Adult orotracheal intubation using the McGrath",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -772,7 +1273,11 @@
         "CPM 2.17 Adult orotracheal intubation using Rapid Sequence Induction",
         "2.17 Adult orotracheal intubation using Rapid Sequence Induction",
         "Adult oro-tracheal intubation using Rapid Sequence Induction",
-        "Adult orotracheal intubation using RSI"
+        "Adult orotracheal intubation using RSI",
+        "AOIRSI",
+        "2.17",
+        "CPM 2.17",
+        "CPM2.17"
       ],
       "keywords": [
         "orotracheal",
@@ -782,7 +1287,20 @@
         "induction",
         "airway management",
         "2.17",
-        "cpm 2.17"
+        "cpm 2.17",
+        "procedure",
+        "AOIRSI",
+        "CPM2.17",
+        "2.17 Adult orotracheal intubation using Rapid Sequence Induction",
+        "CPM 2.17 Adult orotracheal intubation using Rapid Sequence Induction",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -797,7 +1315,11 @@
         "Adult orotracheal intubation using Blind Bougie Technique",
         "CPM 2.18 Adult orotracheal intubation using Blind Bougie Technique",
         "2.18 Adult orotracheal intubation using Blind Bougie Technique",
-        "Adult oro-tracheal intubation using Blind Bougie Technique"
+        "Adult oro-tracheal intubation using Blind Bougie Technique",
+        "AOIBBT",
+        "2.18",
+        "CPM 2.18",
+        "CPM2.18"
       ],
       "keywords": [
         "orotracheal",
@@ -807,7 +1329,20 @@
         "technique",
         "airway management",
         "2.18",
-        "cpm 2.18"
+        "cpm 2.18",
+        "procedure",
+        "AOIBBT",
+        "CPM2.18",
+        "2.18 Adult orotracheal intubation using Blind Bougie Technique",
+        "CPM 2.18 Adult orotracheal intubation using Blind Bougie Technique",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -821,7 +1356,11 @@
       "aliases": [
         "Failed airway drill",
         "CPM 2.19 Failed airway drill",
-        "2.19 Failed airway drill"
+        "2.19 Failed airway drill",
+        "FAD",
+        "2.19",
+        "CPM 2.19",
+        "CPM2.19"
       ],
       "keywords": [
         "failed",
@@ -829,7 +1368,16 @@
         "drill",
         "airway management",
         "2.19",
-        "cpm 2.19"
+        "cpm 2.19",
+        "procedure",
+        "FAD",
+        "CPM2.19",
+        "2.19 Failed airway drill",
+        "CPM 2.19 Failed airway drill",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -845,7 +1393,11 @@
         "CPM 2.20 Adult orotracheal intubation using Delayed Sequence Induction",
         "2.20 Adult orotracheal intubation using Delayed Sequence Induction",
         "Adult oro-tracheal intubation using Delayed Sequence Induction",
-        "Adult orotracheal intubation using DSI"
+        "Adult orotracheal intubation using DSI",
+        "AOIDSI",
+        "2.20",
+        "CPM 2.20",
+        "CPM2.20"
       ],
       "keywords": [
         "orotracheal",
@@ -855,7 +1407,20 @@
         "induction",
         "airway management",
         "2.20",
-        "cpm 2.20"
+        "cpm 2.20",
+        "procedure",
+        "AOIDSI",
+        "CPM2.20",
+        "2.20 Adult orotracheal intubation using Delayed Sequence Induction",
+        "CPM 2.20 Adult orotracheal intubation using Delayed Sequence Induction",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -869,7 +1434,11 @@
       "aliases": [
         "Laryngeal Tube airway insertion",
         "CPM 2.21 Laryngeal Tube airway insertion",
-        "2.21 Laryngeal Tube airway insertion"
+        "2.21 Laryngeal Tube airway insertion",
+        "LTAI",
+        "2.21",
+        "CPM 2.21",
+        "CPM2.21"
       ],
       "keywords": [
         "laryngeal",
@@ -878,7 +1447,16 @@
         "insertion",
         "airway management",
         "2.21",
-        "cpm 2.21"
+        "cpm 2.21",
+        "procedure",
+        "LTAI",
+        "CPM2.21",
+        "2.21 Laryngeal Tube airway insertion",
+        "CPM 2.21 Laryngeal Tube airway insertion",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -894,7 +1472,12 @@
         "CPM 2.22 Intubating laryngeal tube airway insertion (iLTS-D)",
         "2.22 Intubating laryngeal tube airway insertion (iLTS-D)",
         "Intubating LTA insertion (iLTS-D)",
-        "Intubating laryngeal tube airway insertion (iLTS-D) iLTS-D"
+        "Intubating laryngeal tube airway insertion (iLTS-D) iLTS-D",
+        "Intubating laryngeal tube airway insertion",
+        "ILTAIID",
+        "2.22",
+        "CPM 2.22",
+        "CPM2.22"
       ],
       "keywords": [
         "intubating",
@@ -906,7 +1489,19 @@
         "airway management",
         "2.22",
         "cpm 2.22",
-        "intubating laryngeal tube"
+        "intubating laryngeal tube",
+        "procedure",
+        "Intubating laryngeal tube airway insertion (iLTS D)",
+        "Intubating laryngeal tube airway insertion",
+        "ILTAIID",
+        "CPM2.22",
+        "2.22 Intubating laryngeal tube airway insertion (iLTS-D)",
+        "CPM 2.22 Intubating laryngeal tube airway insertion (iLTS-D)",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "iLTS"
       ],
       "type": "procedure"
     },
@@ -922,7 +1517,11 @@
         "CPM 2.23 Armored ETT insertion using the iLTS-D",
         "2.23 Armored ETT insertion using the iLTS-D",
         "Armored ETT insertion using the iLTS-D ETT",
-        "Armored ETT insertion using the iLTS-D iLTS-D"
+        "Armored ETT insertion using the iLTS-D iLTS-D",
+        "AEIID",
+        "2.23",
+        "CPM 2.23",
+        "CPM2.23"
       ],
       "keywords": [
         "armored",
@@ -933,7 +1532,18 @@
         "2.23",
         "cpm 2.23",
         "endotracheal tube",
-        "intubating laryngeal tube"
+        "intubating laryngeal tube",
+        "procedure",
+        "Armored ETT insertion using the iLTS D",
+        "AEIID",
+        "CPM2.23",
+        "2.23 Armored ETT insertion using the iLTS-D",
+        "CPM 2.23 Armored ETT insertion using the iLTS-D",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation",
+        "iLTS"
       ],
       "type": "procedure"
     },
@@ -947,7 +1557,11 @@
       "aliases": [
         "Quick trach II cricothyroidotomy",
         "CPM 2.24 Quick trach II cricothyroidotomy",
-        "2.24 Quick trach II cricothyroidotomy"
+        "2.24 Quick trach II cricothyroidotomy",
+        "QTIC",
+        "2.24",
+        "CPM 2.24",
+        "CPM2.24"
       ],
       "keywords": [
         "quick",
@@ -955,7 +1569,16 @@
         "cricothyroidotomy",
         "airway management",
         "2.24",
-        "cpm 2.24"
+        "cpm 2.24",
+        "procedure",
+        "QTIC",
+        "CPM2.24",
+        "2.24 Quick trach II cricothyroidotomy",
+        "CPM 2.24 Quick trach II cricothyroidotomy",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "ventilation"
       ],
       "type": "procedure"
     },
@@ -969,7 +1592,11 @@
       "aliases": [
         "Oxygen therapy: Nasal cannula",
         "CPM 3.1 Oxygen therapy: Nasal cannula",
-        "3.1 Oxygen therapy: Nasal cannula"
+        "3.1 Oxygen therapy: Nasal cannula",
+        "OTNC",
+        "3.1",
+        "CPM 3.1",
+        "CPM3.1"
       ],
       "keywords": [
         "oxygen",
@@ -978,7 +1605,13 @@
         "cannula",
         "oxygenation and ventilation",
         "3.1",
-        "cpm 3.1"
+        "cpm 3.1",
+        "procedure",
+        "Oxygen therapy Nasal cannula",
+        "OTNC",
+        "CPM3.1",
+        "3.1 Oxygen therapy: Nasal cannula",
+        "CPM 3.1 Oxygen therapy: Nasal cannula"
       ],
       "type": "procedure"
     },
@@ -992,7 +1625,11 @@
       "aliases": [
         "Oxygen therapy: Simple face mask",
         "CPM 3.2 Oxygen therapy: Simple face mask",
-        "3.2 Oxygen therapy: Simple face mask"
+        "3.2 Oxygen therapy: Simple face mask",
+        "OTSFM",
+        "3.2",
+        "CPM 3.2",
+        "CPM3.2"
       ],
       "keywords": [
         "oxygen",
@@ -1002,7 +1639,13 @@
         "mask",
         "oxygenation and ventilation",
         "3.2",
-        "cpm 3.2"
+        "cpm 3.2",
+        "procedure",
+        "Oxygen therapy Simple face mask",
+        "OTSFM",
+        "CPM3.2",
+        "3.2 Oxygen therapy: Simple face mask",
+        "CPM 3.2 Oxygen therapy: Simple face mask"
       ],
       "type": "procedure"
     },
@@ -1016,7 +1659,11 @@
       "aliases": [
         "Oxygen therapy: Non-rebreather mask",
         "CPM 3.3 Oxygen therapy: Non-rebreather mask",
-        "3.3 Oxygen therapy: Non-rebreather mask"
+        "3.3 Oxygen therapy: Non-rebreather mask",
+        "OTNRM",
+        "3.3",
+        "CPM 3.3",
+        "CPM3.3"
       ],
       "keywords": [
         "oxygen",
@@ -1025,7 +1672,14 @@
         "mask",
         "oxygenation and ventilation",
         "3.3",
-        "cpm 3.3"
+        "cpm 3.3",
+        "procedure",
+        "Oxygen therapy: Non rebreather mask",
+        "OTNRM",
+        "CPM3.3",
+        "3.3 Oxygen therapy: Non-rebreather mask",
+        "CPM 3.3 Oxygen therapy: Non-rebreather mask",
+        "rebreather"
       ],
       "type": "procedure"
     },
@@ -1039,14 +1693,24 @@
       "aliases": [
         "Nebulization: Mask",
         "CPM 3.4 Nebulization: Mask",
-        "3.4 Nebulization: Mask"
+        "3.4 Nebulization: Mask",
+        "NM",
+        "3.4",
+        "CPM 3.4",
+        "CPM3.4"
       ],
       "keywords": [
         "nebulization",
         "mask",
         "oxygenation and ventilation",
         "3.4",
-        "cpm 3.4"
+        "cpm 3.4",
+        "procedure",
+        "Nebulization Mask",
+        "NM",
+        "CPM3.4",
+        "3.4 Nebulization: Mask",
+        "CPM 3.4 Nebulization: Mask"
       ],
       "type": "procedure"
     },
@@ -1060,14 +1724,24 @@
       "aliases": [
         "Nebulization: Inline",
         "CPM 3.5 Nebulization: Inline",
-        "3.5 Nebulization: Inline"
+        "3.5 Nebulization: Inline",
+        "NI",
+        "3.5",
+        "CPM 3.5",
+        "CPM3.5"
       ],
       "keywords": [
         "nebulization",
         "inline",
         "oxygenation and ventilation",
         "3.5",
-        "cpm 3.5"
+        "cpm 3.5",
+        "procedure",
+        "Nebulization Inline",
+        "NI",
+        "CPM3.5",
+        "3.5 Nebulization: Inline",
+        "CPM 3.5 Nebulization: Inline"
       ],
       "type": "procedure"
     },
@@ -1081,7 +1755,11 @@
       "aliases": [
         "Oxygen therapy: Pre-oxygenation for intubation",
         "CPM 3.6 Oxygen therapy: Pre-oxygenation for intubation",
-        "3.6 Oxygen therapy: Pre-oxygenation for intubation"
+        "3.6 Oxygen therapy: Pre-oxygenation for intubation",
+        "OTPOI",
+        "3.6",
+        "CPM 3.6",
+        "CPM3.6"
       ],
       "keywords": [
         "oxygen",
@@ -1090,7 +1768,17 @@
         "intubation",
         "oxygenation and ventilation",
         "3.6",
-        "cpm 3.6"
+        "cpm 3.6",
+        "procedure",
+        "Oxygen therapy: Pre oxygenation for intubation",
+        "OTPOI",
+        "CPM3.6",
+        "3.6 Oxygen therapy: Pre-oxygenation for intubation",
+        "CPM 3.6 Oxygen therapy: Pre-oxygenation for intubation",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "oxygenation"
       ],
       "type": "procedure"
     },
@@ -1105,7 +1793,11 @@
         "Bag-valve-mask ventilation: One-person-technique",
         "CPM 3.7 Bag-valve-mask ventilation: One-person-technique",
         "3.7 Bag-valve-mask ventilation: One-person-technique",
-        "BVM ventilation: One-person-technique"
+        "BVM ventilation: One-person-technique",
+        "BVMVOPT",
+        "3.7",
+        "CPM 3.7",
+        "CPM3.7"
       ],
       "keywords": [
         "bag-valve-mask",
@@ -1113,7 +1805,17 @@
         "one-person-technique",
         "oxygenation and ventilation",
         "3.7",
-        "cpm 3.7"
+        "cpm 3.7",
+        "procedure",
+        "Bag valve mask ventilation: One person technique",
+        "BVMVOPT",
+        "CPM3.7",
+        "3.7 Bag-valve-mask ventilation: One-person-technique",
+        "CPM 3.7 Bag-valve-mask ventilation: One-person-technique",
+        "valve",
+        "mask",
+        "person",
+        "technique"
       ],
       "type": "procedure"
     },
@@ -1128,7 +1830,11 @@
         "Bag-valve-mask ventilation: Two-person-technique",
         "CPM 3.8 Bag-valve-mask ventilation: Two-person-technique",
         "3.8 Bag-valve-mask ventilation: Two-person-technique",
-        "BVM ventilation: Two-person-technique"
+        "BVM ventilation: Two-person-technique",
+        "BVMVTPT",
+        "3.8",
+        "CPM 3.8",
+        "CPM3.8"
       ],
       "keywords": [
         "bag-valve-mask",
@@ -1136,7 +1842,17 @@
         "two-person-technique",
         "oxygenation and ventilation",
         "3.8",
-        "cpm 3.8"
+        "cpm 3.8",
+        "procedure",
+        "Bag valve mask ventilation: Two person technique",
+        "BVMVTPT",
+        "CPM3.8",
+        "3.8 Bag-valve-mask ventilation: Two-person-technique",
+        "CPM 3.8 Bag-valve-mask ventilation: Two-person-technique",
+        "valve",
+        "mask",
+        "person",
+        "technique"
       ],
       "type": "procedure"
     },
@@ -1151,7 +1867,12 @@
         "Bag-valve-mask ventilation: Stoma/Tracheostomy",
         "CPM 3.9 Bag-valve-mask ventilation: Stoma/Tracheostomy",
         "3.9 Bag-valve-mask ventilation: Stoma/Tracheostomy",
-        "BVM ventilation: Stoma/Tracheostomy"
+        "BVM ventilation: Stoma/Tracheostomy",
+        "Bag-valve-mask ventilation: Stoma and Tracheostomy",
+        "BVMVST",
+        "3.9",
+        "CPM 3.9",
+        "CPM3.9"
       ],
       "keywords": [
         "bag-valve-mask",
@@ -1160,7 +1881,16 @@
         "tracheostomy",
         "oxygenation and ventilation",
         "3.9",
-        "cpm 3.9"
+        "cpm 3.9",
+        "procedure",
+        "Bag-valve-mask ventilation: Stoma / Tracheostomy",
+        "Bag-valve-mask ventilation: Stoma and Tracheostomy",
+        "BVMVST",
+        "CPM3.9",
+        "3.9 Bag-valve-mask ventilation: Stoma/Tracheostomy",
+        "CPM 3.9 Bag-valve-mask ventilation: Stoma/Tracheostomy",
+        "valve",
+        "mask"
       ],
       "type": "procedure"
     },
@@ -1176,7 +1906,11 @@
         "CPM 3.10 Bag-valve-mask ventilation: PEEP valve",
         "3.10 Bag-valve-mask ventilation: PEEP valve",
         "BVM ventilation: PEEP valve",
-        "Bag-valve-mask ventilation: PEEP valve PEEP"
+        "Bag-valve-mask ventilation: PEEP valve PEEP",
+        "BVMVPV",
+        "3.10",
+        "CPM 3.10",
+        "CPM3.10"
       ],
       "keywords": [
         "bag-valve-mask",
@@ -1185,7 +1919,14 @@
         "valve",
         "oxygenation and ventilation",
         "3.10",
-        "cpm 3.10"
+        "cpm 3.10",
+        "procedure",
+        "Bag valve mask ventilation: PEEP valve",
+        "BVMVPV",
+        "CPM3.10",
+        "3.10 Bag-valve-mask ventilation: PEEP valve",
+        "CPM 3.10 Bag-valve-mask ventilation: PEEP valve",
+        "mask"
       ],
       "type": "procedure"
     },
@@ -1202,7 +1943,12 @@
         "3.11 Manual ventilation with BVM to ETT/ LTA",
         "Manual ventilation with BVM to ETT/ LTA BVM",
         "Manual ventilation with BVM to ETT/ LTA ETT",
-        "Manual ventilation with BVM to ETT/ LTA LTA"
+        "Manual ventilation with BVM to ETT/ LTA LTA",
+        "Manual ventilation with BVM to ETT and LTA",
+        "MVBEL",
+        "3.11",
+        "CPM 3.11",
+        "CPM3.11"
       ],
       "keywords": [
         "ventilation",
@@ -1214,7 +1960,18 @@
         "cpm 3.11",
         "bag valve mask",
         "endotracheal tube",
-        "laryngeal tube airway"
+        "laryngeal tube airway",
+        "procedure",
+        "Manual ventilation with BVM to ETT / LTA",
+        "Manual ventilation with BVM to ETT and LTA",
+        "MVBEL",
+        "CPM3.11",
+        "3.11 Manual ventilation with BVM to ETT/ LTA",
+        "CPM 3.11 Manual ventilation with BVM to ETT/ LTA",
+        "breathing",
+        "respiratory",
+        "oxygenation",
+        "Manual"
       ],
       "type": "procedure"
     },
@@ -1229,7 +1986,11 @@
         "Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
         "CPM 3.12 Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
         "3.12 Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
-        "Mechanical ventilation using the Oxylog 3000 Plus: CMV mode CMV"
+        "Mechanical ventilation using the Oxylog 3000 Plus: CMV mode CMV",
+        "MVOPCM",
+        "3.12",
+        "CPM 3.12",
+        "CPM3.12"
       ],
       "keywords": [
         "mechanical",
@@ -1241,7 +2002,13 @@
         "mode",
         "oxygenation and ventilation",
         "3.12",
-        "cpm 3.12"
+        "cpm 3.12",
+        "procedure",
+        "Mechanical ventilation using the Oxylog 3000 Plus CMV mode",
+        "MVOPCM",
+        "CPM3.12",
+        "3.12 Mechanical ventilation using the Oxylog 3000 Plus: CMV mode",
+        "CPM 3.12 Mechanical ventilation using the Oxylog 3000 Plus: CMV mode"
       ],
       "type": "procedure"
     },
@@ -1256,7 +2023,11 @@
         "Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
         "CPM 3.13 Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
         "3.13 Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
-        "Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode CPAP"
+        "Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode CPAP",
+        "MVOPCM",
+        "3.13",
+        "CPM 3.13",
+        "CPM3.13"
       ],
       "keywords": [
         "mechanical",
@@ -1268,7 +2039,13 @@
         "mode",
         "oxygenation and ventilation",
         "3.13",
-        "cpm 3.13"
+        "cpm 3.13",
+        "procedure",
+        "Mechanical ventilation using the Oxylog 3000 Plus CPAP mode",
+        "MVOPCM",
+        "CPM3.13",
+        "3.13 Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode",
+        "CPM 3.13 Mechanical ventilation using the Oxylog 3000 Plus: CPAP mode"
       ],
       "type": "procedure"
     },
@@ -1283,7 +2060,11 @@
         "Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
         "CPM 3.14 Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
         "3.14 Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
-        "Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode BIPAP"
+        "Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode BIPAP",
+        "MVOPBM",
+        "3.14",
+        "CPM 3.14",
+        "CPM3.14"
       ],
       "keywords": [
         "mechanical",
@@ -1295,7 +2076,13 @@
         "mode",
         "oxygenation and ventilation",
         "3.14",
-        "cpm 3.14"
+        "cpm 3.14",
+        "procedure",
+        "Mechanical ventilation using the Oxylog 3000 Plus BIPAP mode",
+        "MVOPBM",
+        "CPM3.14",
+        "3.14 Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode",
+        "CPM 3.14 Mechanical ventilation using the Oxylog 3000 Plus: BIPAP mode"
       ],
       "type": "procedure"
     },
@@ -1309,7 +2096,11 @@
       "aliases": [
         "Mechanical ventilation using the Oxylog 1000",
         "CPM 3.15 Mechanical ventilation using the Oxylog 1000",
-        "3.15 Mechanical ventilation using the Oxylog 1000"
+        "3.15 Mechanical ventilation using the Oxylog 1000",
+        "MVO",
+        "3.15",
+        "CPM 3.15",
+        "CPM3.15"
       ],
       "keywords": [
         "mechanical",
@@ -1318,7 +2109,12 @@
         "1000",
         "oxygenation and ventilation",
         "3.15",
-        "cpm 3.15"
+        "cpm 3.15",
+        "procedure",
+        "MVO",
+        "CPM3.15",
+        "3.15 Mechanical ventilation using the Oxylog 1000",
+        "CPM 3.15 Mechanical ventilation using the Oxylog 1000"
       ],
       "type": "procedure"
     },
@@ -1332,7 +2128,11 @@
       "aliases": [
         "Mechanical ventilation using the Hamilton T1",
         "CPM 3.16 Mechanical ventilation using the Hamilton T1",
-        "3.16 Mechanical ventilation using the Hamilton T1"
+        "3.16 Mechanical ventilation using the Hamilton T1",
+        "MVHT",
+        "3.16",
+        "CPM 3.16",
+        "CPM3.16"
       ],
       "keywords": [
         "mechanical",
@@ -1340,7 +2140,12 @@
         "hamilton",
         "oxygenation and ventilation",
         "3.16",
-        "cpm 3.16"
+        "cpm 3.16",
+        "procedure",
+        "MVHT",
+        "CPM3.16",
+        "3.16 Mechanical ventilation using the Hamilton T1",
+        "CPM 3.16 Mechanical ventilation using the Hamilton T1"
       ],
       "type": "procedure"
     },
@@ -1355,14 +2160,26 @@
         "CPAP: Flow-safe II",
         "CPM 3.17 CPAP: Flow-safe II",
         "3.17 CPAP: Flow-safe II",
-        "CPAP: Flow-safe II CPAP"
+        "CPAP: Flow-safe II CPAP",
+        "CFSI",
+        "3.17",
+        "CPM 3.17",
+        "CPM3.17"
       ],
       "keywords": [
         "cpap",
         "flow-safe",
         "oxygenation and ventilation",
         "3.17",
-        "cpm 3.17"
+        "cpm 3.17",
+        "procedure",
+        "CPAP: Flow safe II",
+        "CFSI",
+        "CPM3.17",
+        "3.17 CPAP: Flow-safe II",
+        "CPM 3.17 CPAP: Flow-safe II",
+        "Flow",
+        "safe"
       ],
       "type": "procedure"
     },
@@ -1377,7 +2194,11 @@
         "Intravenous cannulation: Extremities",
         "CPM 4.1 Intravenous cannulation: Extremities",
         "4.1 Intravenous cannulation: Extremities",
-        "IV cannulation: Extremities"
+        "IV cannulation: Extremities",
+        "ICE",
+        "4.1",
+        "CPM 4.1",
+        "CPM4.1"
       ],
       "keywords": [
         "intravenous",
@@ -1385,7 +2206,13 @@
         "extremities",
         "circulatory management",
         "4.1",
-        "cpm 4.1"
+        "cpm 4.1",
+        "procedure",
+        "Intravenous cannulation Extremities",
+        "ICE",
+        "CPM4.1",
+        "4.1 Intravenous cannulation: Extremities",
+        "CPM 4.1 Intravenous cannulation: Extremities"
       ],
       "type": "procedure"
     },
@@ -1400,7 +2227,11 @@
         "Intravenous cannulation: External jugular vein",
         "CPM 4.2 Intravenous cannulation: External jugular vein",
         "4.2 Intravenous cannulation: External jugular vein",
-        "IV cannulation: External jugular vein"
+        "IV cannulation: External jugular vein",
+        "ICEJV",
+        "4.2",
+        "CPM 4.2",
+        "CPM4.2"
       ],
       "keywords": [
         "intravenous",
@@ -1410,7 +2241,13 @@
         "vein",
         "circulatory management",
         "4.2",
-        "cpm 4.2"
+        "cpm 4.2",
+        "procedure",
+        "Intravenous cannulation External jugular vein",
+        "ICEJV",
+        "CPM4.2",
+        "4.2 Intravenous cannulation: External jugular vein",
+        "CPM 4.2 Intravenous cannulation: External jugular vein"
       ],
       "type": "procedure"
     },
@@ -1425,7 +2262,11 @@
         "Intra-osseous cannulation in adults: Proximal humerus",
         "CPM 4.3 Intra-osseous cannulation in adults: Proximal humerus",
         "4.3 Intra-osseous cannulation in adults: Proximal humerus",
-        "Intraosseous cannulation in adults: Proximal humerus"
+        "Intraosseous cannulation in adults: Proximal humerus",
+        "IOCAPH",
+        "4.3",
+        "CPM 4.3",
+        "CPM4.3"
       ],
       "keywords": [
         "intra-osseous",
@@ -1435,7 +2276,15 @@
         "humerus",
         "circulatory management",
         "4.3",
-        "cpm 4.3"
+        "cpm 4.3",
+        "procedure",
+        "Intra osseous cannulation in adults: Proximal humerus",
+        "IOCAPH",
+        "CPM4.3",
+        "4.3 Intra-osseous cannulation in adults: Proximal humerus",
+        "CPM 4.3 Intra-osseous cannulation in adults: Proximal humerus",
+        "Intra",
+        "osseous"
       ],
       "type": "procedure"
     },
@@ -1450,7 +2299,11 @@
         "Intra-osseous cannulation in adults: Proximal Tibia",
         "CPM 4.4 Intra-osseous cannulation in adults: Proximal Tibia",
         "4.4 Intra-osseous cannulation in adults: Proximal Tibia",
-        "Intraosseous cannulation in adults: Proximal Tibia"
+        "Intraosseous cannulation in adults: Proximal Tibia",
+        "IOCAPT",
+        "4.4",
+        "CPM 4.4",
+        "CPM4.4"
       ],
       "keywords": [
         "intra-osseous",
@@ -1460,7 +2313,15 @@
         "tibia",
         "circulatory management",
         "4.4",
-        "cpm 4.4"
+        "cpm 4.4",
+        "procedure",
+        "Intra osseous cannulation in adults: Proximal Tibia",
+        "IOCAPT",
+        "CPM4.4",
+        "4.4 Intra-osseous cannulation in adults: Proximal Tibia",
+        "CPM 4.4 Intra-osseous cannulation in adults: Proximal Tibia",
+        "Intra",
+        "osseous"
       ],
       "type": "procedure"
     },
@@ -1477,7 +2338,15 @@
         "4.5 Intra-osseous cannulation in paediatrics: Proximal Tibia",
         "Intra-osseous cannulation in pediatrics: Proximal Tibia",
         "Intraosseous cannulation in paediatrics: Proximal Tibia",
-        "Intra-osseous cannulation in paediatrics: Proximal Tibia AED"
+        "Intra-osseous cannulation in paediatrics: Proximal Tibia AED",
+        "IOCPPT",
+        "4.5",
+        "CPM 4.5",
+        "CPM4.5",
+        "CPM 4.5 Intra-osseous cannulation in pediatrics: Proximal Tibia",
+        "4.5 Intra-osseous cannulation in pediatrics: Proximal Tibia",
+        "Intraosseous cannulation in pediatrics: Proximal Tibia",
+        "Intra-osseous cannulation in pediatrics: Proximal Tibia AED"
       ],
       "keywords": [
         "intra-osseous",
@@ -1488,7 +2357,23 @@
         "circulatory management",
         "4.5",
         "cpm 4.5",
-        "AED"
+        "AED",
+        "procedure",
+        "Intra osseous cannulation in paediatrics: Proximal Tibia",
+        "IOCPPT",
+        "CPM4.5",
+        "4.5 Intra-osseous cannulation in paediatrics: Proximal Tibia",
+        "CPM 4.5 Intra-osseous cannulation in paediatrics: Proximal Tibia",
+        "Intra-osseous cannulation in pediatrics: Proximal Tibia",
+        "CPM 4.5 Intra-osseous cannulation in pediatrics: Proximal Tibia",
+        "4.5 Intra-osseous cannulation in pediatrics: Proximal Tibia",
+        "Intraosseous cannulation in pediatrics: Proximal Tibia",
+        "Intra-osseous cannulation in pediatrics: Proximal Tibia AED",
+        "Intraosseous cannulation in paediatrics: Proximal Tibia",
+        "Intra-osseous cannulation in paediatrics: Proximal Tibia AED",
+        "pediatrics",
+        "Intra",
+        "osseous"
       ],
       "type": "procedure"
     },
@@ -1505,7 +2390,15 @@
         "4.6 Intra-osseous cannulation in paediatrics: Distal Femur",
         "Intra-osseous cannulation in pediatrics: Distal Femur",
         "Intraosseous cannulation in paediatrics: Distal Femur",
-        "Intra-osseous cannulation in paediatrics: Distal Femur AED"
+        "Intra-osseous cannulation in paediatrics: Distal Femur AED",
+        "IOCPDF",
+        "4.6",
+        "CPM 4.6",
+        "CPM4.6",
+        "CPM 4.6 Intra-osseous cannulation in pediatrics: Distal Femur",
+        "4.6 Intra-osseous cannulation in pediatrics: Distal Femur",
+        "Intraosseous cannulation in pediatrics: Distal Femur",
+        "Intra-osseous cannulation in pediatrics: Distal Femur AED"
       ],
       "keywords": [
         "intra-osseous",
@@ -1516,7 +2409,23 @@
         "circulatory management",
         "4.6",
         "cpm 4.6",
-        "AED"
+        "AED",
+        "procedure",
+        "Intra osseous cannulation in paediatrics: Distal Femur",
+        "IOCPDF",
+        "CPM4.6",
+        "4.6 Intra-osseous cannulation in paediatrics: Distal Femur",
+        "CPM 4.6 Intra-osseous cannulation in paediatrics: Distal Femur",
+        "Intra-osseous cannulation in pediatrics: Distal Femur",
+        "CPM 4.6 Intra-osseous cannulation in pediatrics: Distal Femur",
+        "4.6 Intra-osseous cannulation in pediatrics: Distal Femur",
+        "Intraosseous cannulation in pediatrics: Distal Femur",
+        "Intra-osseous cannulation in pediatrics: Distal Femur AED",
+        "Intraosseous cannulation in paediatrics: Distal Femur",
+        "Intra-osseous cannulation in paediatrics: Distal Femur AED",
+        "pediatrics",
+        "Intra",
+        "osseous"
       ],
       "type": "procedure"
     },
@@ -1532,7 +2441,14 @@
         "CPM 4.7 Buretrol set for fluid administration to paediatrics",
         "4.7 Buretrol set for fluid administration to paediatrics",
         "Buretrol set for fluid administration to pediatrics",
-        "Buretrol set for fluid administration to paediatrics AED"
+        "Buretrol set for fluid administration to paediatrics AED",
+        "BSFAP",
+        "4.7",
+        "CPM 4.7",
+        "CPM4.7",
+        "CPM 4.7 Buretrol set for fluid administration to pediatrics",
+        "4.7 Buretrol set for fluid administration to pediatrics",
+        "Buretrol set for fluid administration to pediatrics AED"
       ],
       "keywords": [
         "buretrol",
@@ -1543,7 +2459,19 @@
         "circulatory management",
         "4.7",
         "cpm 4.7",
-        "AED"
+        "AED",
+        "procedure",
+        "BSFAP",
+        "CPM4.7",
+        "4.7 Buretrol set for fluid administration to paediatrics",
+        "CPM 4.7 Buretrol set for fluid administration to paediatrics",
+        "Buretrol set for fluid administration to pediatrics",
+        "CPM 4.7 Buretrol set for fluid administration to pediatrics",
+        "4.7 Buretrol set for fluid administration to pediatrics",
+        "Buretrol set for fluid administration to paediatrics",
+        "Buretrol set for fluid administration to pediatrics AED",
+        "Buretrol set for fluid administration to paediatrics AED",
+        "pediatrics"
       ],
       "type": "procedure"
     },
@@ -1557,7 +2485,12 @@
       "aliases": [
         "Medication preparation and labelling",
         "CPM 5.1 Medication preparation and labelling",
-        "5.1 Medication preparation and labelling"
+        "5.1 Medication preparation and labelling",
+        "Medication preparation & labelling",
+        "MPL",
+        "5.1",
+        "CPM 5.1",
+        "CPM5.1"
       ],
       "keywords": [
         "medication",
@@ -1565,7 +2498,13 @@
         "labelling",
         "medication administration",
         "5.1",
-        "cpm 5.1"
+        "cpm 5.1",
+        "procedure",
+        "Medication preparation & labelling",
+        "MPL",
+        "CPM5.1",
+        "5.1 Medication preparation and labelling",
+        "CPM 5.1 Medication preparation and labelling"
       ],
       "type": "procedure"
     },
@@ -1581,7 +2520,12 @@
         "CPM 5.2 Intravenous/ Intraosseous medication administration",
         "5.2 Intravenous/ Intraosseous medication administration",
         "IV/ Intraosseous medication administration",
-        "Intravenous/ IO medication administration"
+        "Intravenous/ IO medication administration",
+        "Intravenous and Intraosseous medication administration",
+        "IIMA",
+        "5.2",
+        "CPM 5.2",
+        "CPM5.2"
       ],
       "keywords": [
         "intravenous",
@@ -1590,7 +2534,14 @@
         "administration",
         "medication administration",
         "5.2",
-        "cpm 5.2"
+        "cpm 5.2",
+        "procedure",
+        "Intravenous / Intraosseous medication administration",
+        "Intravenous and Intraosseous medication administration",
+        "IIMA",
+        "CPM5.2",
+        "5.2 Intravenous/ Intraosseous medication administration",
+        "CPM 5.2 Intravenous/ Intraosseous medication administration"
       ],
       "type": "procedure"
     },
@@ -1605,7 +2556,11 @@
         "Intramuscular medication administration",
         "CPM 5.3 Intramuscular medication administration",
         "5.3 Intramuscular medication administration",
-        "IM medication administration"
+        "IM medication administration",
+        "IMA",
+        "5.3",
+        "CPM 5.3",
+        "CPM5.3"
       ],
       "keywords": [
         "intramuscular",
@@ -1613,7 +2568,12 @@
         "administration",
         "medication administration",
         "5.3",
-        "cpm 5.3"
+        "cpm 5.3",
+        "procedure",
+        "IMA",
+        "CPM5.3",
+        "5.3 Intramuscular medication administration",
+        "CPM 5.3 Intramuscular medication administration"
       ],
       "type": "procedure"
     },
@@ -1627,7 +2587,11 @@
       "aliases": [
         "Intranasal medication administration",
         "CPM 5.4 Intranasal medication administration",
-        "5.4 Intranasal medication administration"
+        "5.4 Intranasal medication administration",
+        "IMA",
+        "5.4",
+        "CPM 5.4",
+        "CPM5.4"
       ],
       "keywords": [
         "intranasal",
@@ -1635,7 +2599,12 @@
         "administration",
         "medication administration",
         "5.4",
-        "cpm 5.4"
+        "cpm 5.4",
+        "procedure",
+        "IMA",
+        "CPM5.4",
+        "5.4 Intranasal medication administration",
+        "CPM 5.4 Intranasal medication administration"
       ],
       "type": "procedure"
     },
@@ -1649,7 +2618,11 @@
       "aliases": [
         "Buccal medication administration",
         "CPM 5.5 Buccal medication administration",
-        "5.5 Buccal medication administration"
+        "5.5 Buccal medication administration",
+        "BMA",
+        "5.5",
+        "CPM 5.5",
+        "CPM5.5"
       ],
       "keywords": [
         "buccal",
@@ -1657,7 +2630,12 @@
         "administration",
         "medication administration",
         "5.5",
-        "cpm 5.5"
+        "cpm 5.5",
+        "procedure",
+        "BMA",
+        "CPM5.5",
+        "5.5 Buccal medication administration",
+        "CPM 5.5 Buccal medication administration"
       ],
       "type": "procedure"
     },
@@ -1672,7 +2650,11 @@
         "Sublingual medication administration",
         "CPM 5.6 Sublingual medication administration",
         "5.6 Sublingual medication administration",
-        "SL medication administration"
+        "SL medication administration",
+        "SMA",
+        "5.6",
+        "CPM 5.6",
+        "CPM5.6"
       ],
       "keywords": [
         "sublingual",
@@ -1680,7 +2662,12 @@
         "administration",
         "medication administration",
         "5.6",
-        "cpm 5.6"
+        "cpm 5.6",
+        "procedure",
+        "SMA",
+        "CPM5.6",
+        "5.6 Sublingual medication administration",
+        "CPM 5.6 Sublingual medication administration"
       ],
       "type": "procedure"
     },
@@ -1694,7 +2681,11 @@
       "aliases": [
         "Oral medication administration",
         "CPM 5.7 Oral medication administration",
-        "5.7 Oral medication administration"
+        "5.7 Oral medication administration",
+        "OMA",
+        "5.7",
+        "CPM 5.7",
+        "CPM5.7"
       ],
       "keywords": [
         "oral",
@@ -1702,7 +2693,12 @@
         "administration",
         "medication administration",
         "5.7",
-        "cpm 5.7"
+        "cpm 5.7",
+        "procedure",
+        "OMA",
+        "CPM5.7",
+        "5.7 Oral medication administration",
+        "CPM 5.7 Oral medication administration"
       ],
       "type": "procedure"
     },
@@ -1716,7 +2712,11 @@
       "aliases": [
         "Inhaled medication administration: Methoxyflurane",
         "CPM 5.8 Inhaled medication administration: Methoxyflurane",
-        "5.8 Inhaled medication administration: Methoxyflurane"
+        "5.8 Inhaled medication administration: Methoxyflurane",
+        "IMAM",
+        "5.8",
+        "CPM 5.8",
+        "CPM5.8"
       ],
       "keywords": [
         "inhaled",
@@ -1725,7 +2725,13 @@
         "methoxyflurane",
         "medication administration",
         "5.8",
-        "cpm 5.8"
+        "cpm 5.8",
+        "procedure",
+        "Inhaled medication administration Methoxyflurane",
+        "IMAM",
+        "CPM5.8",
+        "5.8 Inhaled medication administration: Methoxyflurane",
+        "CPM 5.8 Inhaled medication administration: Methoxyflurane"
       ],
       "type": "procedure"
     },
@@ -1739,14 +2745,23 @@
       "aliases": [
         "Use of syringe drivers",
         "CPM 5.9 Use of syringe drivers",
-        "5.9 Use of syringe drivers"
+        "5.9 Use of syringe drivers",
+        "USD",
+        "5.9",
+        "CPM 5.9",
+        "CPM5.9"
       ],
       "keywords": [
         "syringe",
         "drivers",
         "medication administration",
         "5.9",
-        "cpm 5.9"
+        "cpm 5.9",
+        "procedure",
+        "USD",
+        "CPM5.9",
+        "5.9 Use of syringe drivers",
+        "CPM 5.9 Use of syringe drivers"
       ],
       "type": "procedure"
     },
@@ -1760,14 +2775,23 @@
       "aliases": [
         "Use of infusion pumps",
         "CPM 5.10 Use of infusion pumps",
-        "5.10 Use of infusion pumps"
+        "5.10 Use of infusion pumps",
+        "UIP",
+        "5.10",
+        "CPM 5.10",
+        "CPM5.10"
       ],
       "keywords": [
         "infusion",
         "pumps",
         "medication administration",
         "5.10",
-        "cpm 5.10"
+        "cpm 5.10",
+        "procedure",
+        "UIP",
+        "CPM5.10",
+        "5.10 Use of infusion pumps",
+        "CPM 5.10 Use of infusion pumps"
       ],
       "type": "procedure"
     },
@@ -1782,7 +2806,11 @@
         "Cardiac monitoring: 4-Lead ECG",
         "CPM 6.1 Cardiac monitoring: 4-Lead ECG",
         "6.1 Cardiac monitoring: 4-Lead ECG",
-        "Cardiac monitoring: 4-Lead ECG ECG"
+        "Cardiac monitoring: 4-Lead ECG ECG",
+        "CMLE",
+        "6.1",
+        "CPM 6.1",
+        "CPM6.1"
       ],
       "keywords": [
         "cardiac",
@@ -1793,7 +2821,16 @@
         "6.1",
         "cpm 6.1",
         "EKG",
-        "cardiac monitoring"
+        "cardiac monitoring",
+        "procedure",
+        "Cardiac monitoring: 4 Lead ECG",
+        "CMLE",
+        "CPM6.1",
+        "6.1 Cardiac monitoring: 4-Lead ECG",
+        "CPM 6.1 Cardiac monitoring: 4-Lead ECG",
+        "12 lead",
+        "electrocardiogram",
+        "Lead"
       ],
       "type": "procedure"
     },
@@ -1808,7 +2845,11 @@
         "Cardiac monitoring: 6-Lead ECG acquisition",
         "CPM 6.2 Cardiac monitoring: 6-Lead ECG acquisition",
         "6.2 Cardiac monitoring: 6-Lead ECG acquisition",
-        "Cardiac monitoring: 6-Lead ECG acquisition ECG"
+        "Cardiac monitoring: 6-Lead ECG acquisition ECG",
+        "CMLEA",
+        "6.2",
+        "CPM 6.2",
+        "CPM6.2"
       ],
       "keywords": [
         "cardiac",
@@ -1820,7 +2861,16 @@
         "6.2",
         "cpm 6.2",
         "EKG",
-        "cardiac monitoring"
+        "cardiac monitoring",
+        "procedure",
+        "Cardiac monitoring: 6 Lead ECG acquisition",
+        "CMLEA",
+        "CPM6.2",
+        "6.2 Cardiac monitoring: 6-Lead ECG acquisition",
+        "CPM 6.2 Cardiac monitoring: 6-Lead ECG acquisition",
+        "12 lead",
+        "electrocardiogram",
+        "Lead"
       ],
       "type": "procedure"
     },
@@ -1835,7 +2885,11 @@
         "Cardiac monitoring: 12-Lead ECG acquisition",
         "CPM 6.3 Cardiac monitoring: 12-Lead ECG acquisition",
         "6.3 Cardiac monitoring: 12-Lead ECG acquisition",
-        "Cardiac monitoring: 12-Lead ECG acquisition ECG"
+        "Cardiac monitoring: 12-Lead ECG acquisition ECG",
+        "CMLEA",
+        "6.3",
+        "CPM 6.3",
+        "CPM6.3"
       ],
       "keywords": [
         "cardiac",
@@ -1847,7 +2901,15 @@
         "6.3",
         "cpm 6.3",
         "EKG",
-        "cardiac monitoring"
+        "cardiac monitoring",
+        "procedure",
+        "Cardiac monitoring: 12 Lead ECG acquisition",
+        "CMLEA",
+        "CPM6.3",
+        "6.3 Cardiac monitoring: 12-Lead ECG acquisition",
+        "CPM 6.3 Cardiac monitoring: 12-Lead ECG acquisition",
+        "electrocardiogram",
+        "Lead"
       ],
       "type": "procedure"
     },
@@ -1862,7 +2924,11 @@
         "Cardiac monitoring: 12-Lead ECG telemetry",
         "CPM 6.4 Cardiac monitoring: 12-Lead ECG telemetry",
         "6.4 Cardiac monitoring: 12-Lead ECG telemetry",
-        "Cardiac monitoring: 12-Lead ECG telemetry ECG"
+        "Cardiac monitoring: 12-Lead ECG telemetry ECG",
+        "CMLET",
+        "6.4",
+        "CPM 6.4",
+        "CPM6.4"
       ],
       "keywords": [
         "cardiac",
@@ -1874,7 +2940,15 @@
         "6.4",
         "cpm 6.4",
         "EKG",
-        "cardiac monitoring"
+        "cardiac monitoring",
+        "procedure",
+        "Cardiac monitoring: 12 Lead ECG telemetry",
+        "CMLET",
+        "CPM6.4",
+        "6.4 Cardiac monitoring: 12-Lead ECG telemetry",
+        "CPM 6.4 Cardiac monitoring: 12-Lead ECG telemetry",
+        "electrocardiogram",
+        "Lead"
       ],
       "type": "procedure"
     },
@@ -1888,7 +2962,11 @@
       "aliases": [
         "Declaration of death: withholding resuscitation",
         "CPM 7.1 Declaration of death: withholding resuscitation",
-        "7.1 Declaration of death: withholding resuscitation"
+        "7.1 Declaration of death: withholding resuscitation",
+        "DDWR",
+        "7.1",
+        "CPM 7.1",
+        "CPM7.1"
       ],
       "keywords": [
         "declaration",
@@ -1897,7 +2975,13 @@
         "resuscitation",
         "cardiac management",
         "7.1",
-        "cpm 7.1"
+        "cpm 7.1",
+        "procedure",
+        "Declaration of death withholding resuscitation",
+        "DDWR",
+        "CPM7.1",
+        "7.1 Declaration of death: withholding resuscitation",
+        "CPM 7.1 Declaration of death: withholding resuscitation"
       ],
       "type": "procedure"
     },
@@ -1911,7 +2995,11 @@
       "aliases": [
         "Declaration of death: Withdrawal of resuscitation efforts",
         "CPM 7.2 Declaration of death: Withdrawal of resuscitation efforts",
-        "7.2 Declaration of death: Withdrawal of resuscitation efforts"
+        "7.2 Declaration of death: Withdrawal of resuscitation efforts",
+        "DDWRE",
+        "7.2",
+        "CPM 7.2",
+        "CPM7.2"
       ],
       "keywords": [
         "declaration",
@@ -1921,7 +3009,13 @@
         "efforts",
         "cardiac management",
         "7.2",
-        "cpm 7.2"
+        "cpm 7.2",
+        "procedure",
+        "Declaration of death Withdrawal of resuscitation efforts",
+        "DDWRE",
+        "CPM7.2",
+        "7.2 Declaration of death: Withdrawal of resuscitation efforts",
+        "CPM 7.2 Declaration of death: Withdrawal of resuscitation efforts"
       ],
       "type": "procedure"
     },
@@ -1935,14 +3029,28 @@
       "aliases": [
         "Chest compression: Manual (Adult)",
         "CPM 7.3 Chest compression: Manual (Adult)",
-        "7.3 Chest compression: Manual (Adult)"
+        "7.3 Chest compression: Manual (Adult)",
+        "Chest compression: Manual",
+        "CCMA",
+        "7.3",
+        "CPM 7.3",
+        "CPM7.3"
       ],
       "keywords": [
         "chest",
         "compression",
         "cardiac management",
         "7.3",
-        "cpm 7.3"
+        "cpm 7.3",
+        "procedure",
+        "Chest compression: Manual",
+        "Chest compression Manual Adult",
+        "CCMA",
+        "CPM7.3",
+        "7.3 Chest compression: Manual (Adult)",
+        "CPM 7.3 Chest compression: Manual (Adult)",
+        "Manual",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -1956,7 +3064,13 @@
       "aliases": [
         "Chest compression: Mechanical (LUCAS device 2/3)",
         "CPM 7.4 Chest compression: Mechanical (LUCAS device 2/3)",
-        "7.4 Chest compression: Mechanical (LUCAS device 2/3)"
+        "7.4 Chest compression: Mechanical (LUCAS device 2/3)",
+        "Chest compression: Mechanical (LUCAS device 2 and 3)",
+        "Chest compression: Mechanical",
+        "CCMLD",
+        "7.4",
+        "CPM 7.4",
+        "CPM7.4"
       ],
       "keywords": [
         "chest",
@@ -1966,7 +3080,15 @@
         "device",
         "cardiac management",
         "7.4",
-        "cpm 7.4"
+        "cpm 7.4",
+        "procedure",
+        "Chest compression: Mechanical (LUCAS device 2 / 3)",
+        "Chest compression: Mechanical (LUCAS device 2 and 3)",
+        "Chest compression: Mechanical",
+        "CCMLD",
+        "CPM7.4",
+        "7.4 Chest compression: Mechanical (LUCAS device 2/3)",
+        "CPM 7.4 Chest compression: Mechanical (LUCAS device 2/3)"
       ],
       "type": "procedure"
     },
@@ -1980,7 +3102,11 @@
       "aliases": [
         "Cardiac arrest: Adult medical resuscitation",
         "CPM 7.5 Cardiac arrest: Adult medical resuscitation",
-        "7.5 Cardiac arrest: Adult medical resuscitation"
+        "7.5 Cardiac arrest: Adult medical resuscitation",
+        "CAAMR",
+        "7.5",
+        "CPM 7.5",
+        "CPM7.5"
       ],
       "keywords": [
         "cardiac",
@@ -1989,7 +3115,22 @@
         "resuscitation",
         "cardiac management",
         "7.5",
-        "cpm 7.5"
+        "cpm 7.5",
+        "procedure",
+        "Cardiac arrest Adult medical resuscitation",
+        "CAAMR",
+        "CPM7.5",
+        "7.5 Cardiac arrest: Adult medical resuscitation",
+        "CPM 7.5 Cardiac arrest: Adult medical resuscitation",
+        "CPR",
+        "defibrillation",
+        "shock",
+        "VF",
+        "VT",
+        "PEA",
+        "asystole",
+        "ROSC",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -2003,7 +3144,11 @@
       "aliases": [
         "Cardiac arrest: Adult trauma resuscitation",
         "CPM 7.6 Cardiac arrest: Adult trauma resuscitation",
-        "7.6 Cardiac arrest: Adult trauma resuscitation"
+        "7.6 Cardiac arrest: Adult trauma resuscitation",
+        "CAATR",
+        "7.6",
+        "CPM 7.6",
+        "CPM7.6"
       ],
       "keywords": [
         "cardiac",
@@ -2012,7 +3157,26 @@
         "resuscitation",
         "cardiac management",
         "7.6",
-        "cpm 7.6"
+        "cpm 7.6",
+        "procedure",
+        "Cardiac arrest Adult trauma resuscitation",
+        "CAATR",
+        "CPM7.6",
+        "7.6 Cardiac arrest: Adult trauma resuscitation",
+        "CPM 7.6 Cardiac arrest: Adult trauma resuscitation",
+        "CPR",
+        "defibrillation",
+        "shock",
+        "VF",
+        "VT",
+        "PEA",
+        "asystole",
+        "ROSC",
+        "injury",
+        "accident",
+        "RTC",
+        "MVA",
+        "Adult"
       ],
       "type": "procedure"
     },
@@ -2026,7 +3190,14 @@
       "aliases": [
         "Cardiac arrest: Pediatric medical resuscitation",
         "CPM 7.7 Cardiac arrest: Pediatric medical resuscitation",
-        "7.7 Cardiac arrest: Pediatric medical resuscitation"
+        "7.7 Cardiac arrest: Pediatric medical resuscitation",
+        "CAPMR",
+        "7.7",
+        "CPM 7.7",
+        "CPM7.7",
+        "Cardiac arrest: paediatric medical resuscitation",
+        "CPM 7.7 Cardiac arrest: paediatric medical resuscitation",
+        "7.7 Cardiac arrest: paediatric medical resuscitation"
       ],
       "keywords": [
         "cardiac",
@@ -2035,7 +3206,25 @@
         "resuscitation",
         "cardiac management",
         "7.7",
-        "cpm 7.7"
+        "cpm 7.7",
+        "procedure",
+        "Cardiac arrest Pediatric medical resuscitation",
+        "CAPMR",
+        "CPM7.7",
+        "7.7 Cardiac arrest: Pediatric medical resuscitation",
+        "CPM 7.7 Cardiac arrest: Pediatric medical resuscitation",
+        "Cardiac arrest: paediatric medical resuscitation",
+        "CPM 7.7 Cardiac arrest: paediatric medical resuscitation",
+        "7.7 Cardiac arrest: paediatric medical resuscitation",
+        "CPR",
+        "defibrillation",
+        "shock",
+        "VF",
+        "VT",
+        "PEA",
+        "asystole",
+        "ROSC",
+        "Pediatric"
       ],
       "type": "procedure"
     },
@@ -2049,7 +3238,14 @@
       "aliases": [
         "Cardiac arrest: Pediatric trauma resuscitation",
         "CPM 7.8 Cardiac arrest: Pediatric trauma resuscitation",
-        "7.8 Cardiac arrest: Pediatric trauma resuscitation"
+        "7.8 Cardiac arrest: Pediatric trauma resuscitation",
+        "CAPTR",
+        "7.8",
+        "CPM 7.8",
+        "CPM7.8",
+        "Cardiac arrest: paediatric trauma resuscitation",
+        "CPM 7.8 Cardiac arrest: paediatric trauma resuscitation",
+        "7.8 Cardiac arrest: paediatric trauma resuscitation"
       ],
       "keywords": [
         "cardiac",
@@ -2058,7 +3254,29 @@
         "resuscitation",
         "cardiac management",
         "7.8",
-        "cpm 7.8"
+        "cpm 7.8",
+        "procedure",
+        "Cardiac arrest Pediatric trauma resuscitation",
+        "CAPTR",
+        "CPM7.8",
+        "7.8 Cardiac arrest: Pediatric trauma resuscitation",
+        "CPM 7.8 Cardiac arrest: Pediatric trauma resuscitation",
+        "Cardiac arrest: paediatric trauma resuscitation",
+        "CPM 7.8 Cardiac arrest: paediatric trauma resuscitation",
+        "7.8 Cardiac arrest: paediatric trauma resuscitation",
+        "CPR",
+        "defibrillation",
+        "shock",
+        "VF",
+        "VT",
+        "PEA",
+        "asystole",
+        "ROSC",
+        "injury",
+        "accident",
+        "RTC",
+        "MVA",
+        "Pediatric"
       ],
       "type": "procedure"
     },
@@ -2072,14 +3290,23 @@
       "aliases": [
         "Neonatal resuscitation",
         "CPM 7.9 Neonatal resuscitation",
-        "7.9 Neonatal resuscitation"
+        "7.9 Neonatal resuscitation",
+        "NR",
+        "7.9",
+        "CPM 7.9",
+        "CPM7.9"
       ],
       "keywords": [
         "neonatal",
         "resuscitation",
         "cardiac management",
         "7.9",
-        "cpm 7.9"
+        "cpm 7.9",
+        "procedure",
+        "NR",
+        "CPM7.9",
+        "7.9 Neonatal resuscitation",
+        "CPM 7.9 Neonatal resuscitation"
       ],
       "type": "procedure"
     },
@@ -2093,7 +3320,11 @@
       "aliases": [
         "Cardiac arrest: Obstetric patient resuscitation",
         "CPM 7.10 Cardiac arrest: Obstetric patient resuscitation",
-        "7.10 Cardiac arrest: Obstetric patient resuscitation"
+        "7.10 Cardiac arrest: Obstetric patient resuscitation",
+        "CAOPR",
+        "7.10",
+        "CPM 7.10",
+        "CPM7.10"
       ],
       "keywords": [
         "cardiac",
@@ -2102,7 +3333,27 @@
         "resuscitation",
         "cardiac management",
         "7.10",
-        "cpm 7.10"
+        "cpm 7.10",
+        "procedure",
+        "Cardiac arrest Obstetric patient resuscitation",
+        "CAOPR",
+        "CPM7.10",
+        "7.10 Cardiac arrest: Obstetric patient resuscitation",
+        "CPM 7.10 Cardiac arrest: Obstetric patient resuscitation",
+        "CPR",
+        "defibrillation",
+        "shock",
+        "VF",
+        "VT",
+        "PEA",
+        "asystole",
+        "ROSC",
+        "pregnancy",
+        "pregnant",
+        "maternity",
+        "labour",
+        "labor",
+        "patient"
       ],
       "type": "procedure"
     },
@@ -2119,7 +3370,11 @@
         "7.11 Defibrillation with the LIFEPAK 15: AED",
         "defib with the LIFEPAK 15: AED",
         "Defibrillation with the LIFEPAK 15: AED LIFEPAK 15",
-        "Defibrillation with the LIFEPAK 15: AED AED"
+        "Defibrillation with the LIFEPAK 15: AED AED",
+        "DLA",
+        "7.11",
+        "CPM 7.11",
+        "CPM7.11"
       ],
       "keywords": [
         "defibrillation",
@@ -2130,7 +3385,15 @@
         "cpm 7.11",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "Defibrillation with the LIFEPAK 15 AED",
+        "DLA",
+        "CPM7.11",
+        "7.11 Defibrillation with the LIFEPAK 15: AED",
+        "CPM 7.11 Defibrillation with the LIFEPAK 15: AED",
+        "defib",
+        "shock"
       ],
       "type": "procedure"
     },
@@ -2147,7 +3410,11 @@
         "7.12 Defibrillation with the LIFEPAK 1000: AED",
         "defib with the LIFEPAK 1000: AED",
         "Defibrillation with the LIFEPAK 1000: AED LIFEPAK 15",
-        "Defibrillation with the LIFEPAK 1000: AED AED"
+        "Defibrillation with the LIFEPAK 1000: AED AED",
+        "DLA",
+        "7.12",
+        "CPM 7.12",
+        "CPM7.12"
       ],
       "keywords": [
         "defibrillation",
@@ -2159,7 +3426,15 @@
         "cpm 7.12",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "Defibrillation with the LIFEPAK 1000 AED",
+        "DLA",
+        "CPM7.12",
+        "7.12 Defibrillation with the LIFEPAK 1000: AED",
+        "CPM 7.12 Defibrillation with the LIFEPAK 1000: AED",
+        "defib",
+        "shock"
       ],
       "type": "procedure"
     },
@@ -2175,7 +3450,11 @@
         "CPM 7.13 Defibrillation with the LIFEPAK 15: Manual",
         "7.13 Defibrillation with the LIFEPAK 15: Manual",
         "defib with the LIFEPAK 15: Manual",
-        "Defibrillation with the LIFEPAK 15: Manual LIFEPAK 15"
+        "Defibrillation with the LIFEPAK 15: Manual LIFEPAK 15",
+        "DLM",
+        "7.13",
+        "CPM 7.13",
+        "CPM7.13"
       ],
       "keywords": [
         "defibrillation",
@@ -2185,7 +3464,17 @@
         "cpm 7.13",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "Defibrillation with the LIFEPAK 15 Manual",
+        "DLM",
+        "CPM7.13",
+        "7.13 Defibrillation with the LIFEPAK 15: Manual",
+        "CPM 7.13 Defibrillation with the LIFEPAK 15: Manual",
+        "defib",
+        "shock",
+        "AED",
+        "Manual"
       ],
       "type": "procedure"
     },
@@ -2201,7 +3490,11 @@
         "CPM 7.14 Defibrillation with the LIFEPAK 1000: Manual",
         "7.14 Defibrillation with the LIFEPAK 1000: Manual",
         "defib with the LIFEPAK 1000: Manual",
-        "Defibrillation with the LIFEPAK 1000: Manual LIFEPAK 15"
+        "Defibrillation with the LIFEPAK 1000: Manual LIFEPAK 15",
+        "DLM",
+        "7.14",
+        "CPM 7.14",
+        "CPM7.14"
       ],
       "keywords": [
         "defibrillation",
@@ -2212,7 +3505,17 @@
         "cpm 7.14",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "Defibrillation with the LIFEPAK 1000 Manual",
+        "DLM",
+        "CPM7.14",
+        "7.14 Defibrillation with the LIFEPAK 1000: Manual",
+        "CPM 7.14 Defibrillation with the LIFEPAK 1000: Manual",
+        "defib",
+        "shock",
+        "AED",
+        "Manual"
       ],
       "type": "procedure"
     },
@@ -2227,14 +3530,28 @@
         "Defibrillation with the Propag MD: Manual",
         "CPM 7.15 Defibrillation with the Propag MD: Manual",
         "7.15 Defibrillation with the Propag MD: Manual",
-        "defib with the Propag MD: Manual"
+        "defib with the Propag MD: Manual",
+        "DPMM",
+        "7.15",
+        "CPM 7.15",
+        "CPM7.15"
       ],
       "keywords": [
         "defibrillation",
         "propag",
         "cardiac management",
         "7.15",
-        "cpm 7.15"
+        "cpm 7.15",
+        "procedure",
+        "Defibrillation with the Propag MD Manual",
+        "DPMM",
+        "CPM7.15",
+        "7.15 Defibrillation with the Propag MD: Manual",
+        "CPM 7.15 Defibrillation with the Propag MD: Manual",
+        "defib",
+        "shock",
+        "AED",
+        "Manual"
       ],
       "type": "procedure"
     },
@@ -2249,7 +3566,11 @@
         "3-Stack Defibrillation with Propag MD: Manual",
         "CPM 7.16 3-Stack Defibrillation with Propag MD: Manual",
         "7.16 3-Stack Defibrillation with Propag MD: Manual",
-        "3-Stack defib with Propag MD: Manual"
+        "3-Stack defib with Propag MD: Manual",
+        "SDPMM",
+        "7.16",
+        "CPM 7.16",
+        "CPM7.16"
       ],
       "keywords": [
         "3-stack",
@@ -2257,7 +3578,18 @@
         "propag",
         "cardiac management",
         "7.16",
-        "cpm 7.16"
+        "cpm 7.16",
+        "procedure",
+        "3 Stack Defibrillation with Propag MD: Manual",
+        "SDPMM",
+        "CPM7.16",
+        "7.16 3-Stack Defibrillation with Propag MD: Manual",
+        "CPM 7.16 3-Stack Defibrillation with Propag MD: Manual",
+        "defib",
+        "shock",
+        "AED",
+        "Stack",
+        "Manual"
       ],
       "type": "procedure"
     },
@@ -2273,7 +3605,12 @@
         "CPM 7.17 Post Resuscitation (ROSC) management",
         "7.17 Post Resuscitation (ROSC) management",
         "Post ROSC (ROSC) management",
-        "Post Resuscitation (ROSC) management ROSC"
+        "Post Resuscitation (ROSC) management ROSC",
+        "Post Resuscitation management",
+        "PRRM",
+        "7.17",
+        "CPM 7.17",
+        "CPM7.17"
       ],
       "keywords": [
         "post",
@@ -2282,7 +3619,17 @@
         "cardiac management",
         "7.17",
         "cpm 7.17",
-        "post arrest"
+        "post arrest",
+        "procedure",
+        "Post Resuscitation management",
+        "Post Resuscitation ROSC management",
+        "PRRM",
+        "CPM7.17",
+        "7.17 Post Resuscitation (ROSC) management",
+        "CPM 7.17 Post Resuscitation (ROSC) management",
+        "return of spontaneous circulation",
+        "post cardiac arrest",
+        "management"
       ],
       "type": "procedure"
     },
@@ -2297,7 +3644,13 @@
         "Standard Valsalva manoeuvre",
         "CPM 7.18 Standard Valsalva manoeuvre",
         "7.18 Standard Valsalva manoeuvre",
-        "Standard Valsalva maneuver"
+        "Standard Valsalva maneuver",
+        "SVM",
+        "7.18",
+        "CPM 7.18",
+        "CPM7.18",
+        "CPM 7.18 Standard Valsalva maneuver",
+        "7.18 Standard Valsalva maneuver"
       ],
       "keywords": [
         "standard",
@@ -2305,7 +3658,17 @@
         "manoeuvre",
         "cardiac management",
         "7.18",
-        "cpm 7.18"
+        "cpm 7.18",
+        "procedure",
+        "SVM",
+        "CPM7.18",
+        "7.18 Standard Valsalva manoeuvre",
+        "CPM 7.18 Standard Valsalva manoeuvre",
+        "Standard Valsalva maneuver",
+        "CPM 7.18 Standard Valsalva maneuver",
+        "7.18 Standard Valsalva maneuver",
+        "Standard Valsalva manoeuvre",
+        "maneuver"
       ],
       "type": "procedure"
     },
@@ -2320,7 +3683,13 @@
         "Modified Valsalva manoeuvre",
         "CPM 7.19 Modified Valsalva manoeuvre",
         "7.19 Modified Valsalva manoeuvre",
-        "Modified Valsalva maneuver"
+        "Modified Valsalva maneuver",
+        "MVM",
+        "7.19",
+        "CPM 7.19",
+        "CPM7.19",
+        "CPM 7.19 Modified Valsalva maneuver",
+        "7.19 Modified Valsalva maneuver"
       ],
       "keywords": [
         "modified",
@@ -2328,7 +3697,17 @@
         "manoeuvre",
         "cardiac management",
         "7.19",
-        "cpm 7.19"
+        "cpm 7.19",
+        "procedure",
+        "MVM",
+        "CPM7.19",
+        "7.19 Modified Valsalva manoeuvre",
+        "CPM 7.19 Modified Valsalva manoeuvre",
+        "Modified Valsalva maneuver",
+        "CPM 7.19 Modified Valsalva maneuver",
+        "7.19 Modified Valsalva maneuver",
+        "Modified Valsalva manoeuvre",
+        "maneuver"
       ],
       "type": "procedure"
     },
@@ -2344,7 +3723,11 @@
         "CPM 7.20 Synchronized cardioversion using the LIFEPAK 15",
         "7.20 Synchronized cardioversion using the LIFEPAK 15",
         "Synchronised cardioversion using the LIFEPAK 15",
-        "Synchronized cardioversion using the LIFEPAK 15 LIFEPAK 15"
+        "Synchronized cardioversion using the LIFEPAK 15 LIFEPAK 15",
+        "SCL",
+        "7.20",
+        "CPM 7.20",
+        "CPM7.20"
       ],
       "keywords": [
         "synchronized",
@@ -2355,7 +3738,14 @@
         "cpm 7.20",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "SCL",
+        "CPM7.20",
+        "7.20 Synchronized cardioversion using the LIFEPAK 15",
+        "CPM 7.20 Synchronized cardioversion using the LIFEPAK 15",
+        "SVT",
+        "tachyarrhythmia"
       ],
       "type": "procedure"
     },
@@ -2370,7 +3760,11 @@
         "Synchronized cardioversion using the Propag MD",
         "CPM 7.21 Synchronized cardioversion using the Propag MD",
         "7.21 Synchronized cardioversion using the Propag MD",
-        "Synchronised cardioversion using the Propag MD"
+        "Synchronised cardioversion using the Propag MD",
+        "SCPM",
+        "7.21",
+        "CPM 7.21",
+        "CPM7.21"
       ],
       "keywords": [
         "synchronized",
@@ -2378,7 +3772,14 @@
         "propag",
         "cardiac management",
         "7.21",
-        "cpm 7.21"
+        "cpm 7.21",
+        "procedure",
+        "SCPM",
+        "CPM7.21",
+        "7.21 Synchronized cardioversion using the Propag MD",
+        "CPM 7.21 Synchronized cardioversion using the Propag MD",
+        "SVT",
+        "tachyarrhythmia"
       ],
       "type": "procedure"
     },
@@ -2394,7 +3795,11 @@
         "CPM 7.22 Transcutaneous pacing using the LIFEPAK 15",
         "7.22 Transcutaneous pacing using the LIFEPAK 15",
         "TCP using the LIFEPAK 15",
-        "Transcutaneous pacing using the LIFEPAK 15 LIFEPAK 15"
+        "Transcutaneous pacing using the LIFEPAK 15 LIFEPAK 15",
+        "TPL",
+        "7.22",
+        "CPM 7.22",
+        "CPM7.22"
       ],
       "keywords": [
         "transcutaneous",
@@ -2405,7 +3810,14 @@
         "cpm 7.22",
         "LIFEPAK 15",
         "monitor",
-        "defibrillator"
+        "defibrillator",
+        "procedure",
+        "TPL",
+        "CPM7.22",
+        "7.22 Transcutaneous pacing using the LIFEPAK 15",
+        "CPM 7.22 Transcutaneous pacing using the LIFEPAK 15",
+        "transcutaneous pacing",
+        "bradycardia"
       ],
       "type": "procedure"
     },
@@ -2420,7 +3832,11 @@
         "Transcutaneous pacing using the Propag MD",
         "CPM 7.23 Transcutaneous pacing using the Propag MD",
         "7.23 Transcutaneous pacing using the Propag MD",
-        "TCP using the Propag MD"
+        "TCP using the Propag MD",
+        "TPPM",
+        "7.23",
+        "CPM 7.23",
+        "CPM7.23"
       ],
       "keywords": [
         "transcutaneous",
@@ -2428,7 +3844,14 @@
         "propag",
         "cardiac management",
         "7.23",
-        "cpm 7.23"
+        "cpm 7.23",
+        "procedure",
+        "TPPM",
+        "CPM7.23",
+        "7.23 Transcutaneous pacing using the Propag MD",
+        "CPM 7.23 Transcutaneous pacing using the Propag MD",
+        "transcutaneous pacing",
+        "bradycardia"
       ],
       "type": "procedure"
     },
@@ -2443,7 +3866,13 @@
         "External Haemorrhage Control: Direct Pressure",
         "CPM 8.1 External Haemorrhage Control: Direct Pressure",
         "8.1 External Haemorrhage Control: Direct Pressure",
-        "External Hemorrhage Control: Direct Pressure"
+        "External Hemorrhage Control: Direct Pressure",
+        "EHCDP",
+        "8.1",
+        "CPM 8.1",
+        "CPM8.1",
+        "CPM 8.1 External hemorrhage Control: Direct Pressure",
+        "8.1 External hemorrhage Control: Direct Pressure"
       ],
       "keywords": [
         "external",
@@ -2453,7 +3882,22 @@
         "pressure",
         "wound care",
         "8.1",
-        "cpm 8.1"
+        "cpm 8.1",
+        "procedure",
+        "External Haemorrhage Control Direct Pressure",
+        "EHCDP",
+        "CPM8.1",
+        "8.1 External Haemorrhage Control: Direct Pressure",
+        "CPM 8.1 External Haemorrhage Control: Direct Pressure",
+        "External hemorrhage Control: Direct Pressure",
+        "CPM 8.1 External hemorrhage Control: Direct Pressure",
+        "8.1 External hemorrhage Control: Direct Pressure",
+        "hemorrhage",
+        "bleeding",
+        "major bleed",
+        "blood loss",
+        "TXA",
+        "tranexamic acid"
       ],
       "type": "procedure"
     },
@@ -2468,7 +3912,13 @@
         "External Haemorrhage Control: Chito gauze",
         "CPM 8.2 External Haemorrhage Control: Chito gauze",
         "8.2 External Haemorrhage Control: Chito gauze",
-        "External Hemorrhage Control: Chito gauze"
+        "External Hemorrhage Control: Chito gauze",
+        "EHCCG",
+        "8.2",
+        "CPM 8.2",
+        "CPM8.2",
+        "CPM 8.2 External hemorrhage Control: Chito gauze",
+        "8.2 External hemorrhage Control: Chito gauze"
       ],
       "keywords": [
         "external",
@@ -2478,7 +3928,22 @@
         "gauze",
         "wound care",
         "8.2",
-        "cpm 8.2"
+        "cpm 8.2",
+        "procedure",
+        "External Haemorrhage Control Chito gauze",
+        "EHCCG",
+        "CPM8.2",
+        "8.2 External Haemorrhage Control: Chito gauze",
+        "CPM 8.2 External Haemorrhage Control: Chito gauze",
+        "External hemorrhage Control: Chito gauze",
+        "CPM 8.2 External hemorrhage Control: Chito gauze",
+        "8.2 External hemorrhage Control: Chito gauze",
+        "hemorrhage",
+        "bleeding",
+        "major bleed",
+        "blood loss",
+        "TXA",
+        "tranexamic acid"
       ],
       "type": "procedure"
     },
@@ -2494,7 +3959,13 @@
         "CPM 8.3 External haemorrhage control: Blast bandage",
         "8.3 External haemorrhage control: Blast bandage",
         "External hemorrhage control: Blast bandage",
-        "External bleeding control: Blast bandage"
+        "External bleeding control: Blast bandage",
+        "EHCBB",
+        "8.3",
+        "CPM 8.3",
+        "CPM8.3",
+        "CPM 8.3 External hemorrhage control: Blast bandage",
+        "8.3 External hemorrhage control: Blast bandage"
       ],
       "keywords": [
         "external",
@@ -2504,7 +3975,22 @@
         "bandage",
         "wound care",
         "8.3",
-        "cpm 8.3"
+        "cpm 8.3",
+        "procedure",
+        "External haemorrhage control Blast bandage",
+        "EHCBB",
+        "CPM8.3",
+        "8.3 External haemorrhage control: Blast bandage",
+        "CPM 8.3 External haemorrhage control: Blast bandage",
+        "External hemorrhage control: Blast bandage",
+        "CPM 8.3 External hemorrhage control: Blast bandage",
+        "8.3 External hemorrhage control: Blast bandage",
+        "hemorrhage",
+        "bleeding",
+        "major bleed",
+        "blood loss",
+        "TXA",
+        "tranexamic acid"
       ],
       "type": "procedure"
     },
@@ -2518,13 +4004,23 @@
       "aliases": [
         "Application of tourniquet",
         "CPM 8.4 Application of tourniquet",
-        "8.4 Application of tourniquet"
+        "8.4 Application of tourniquet",
+        "AT",
+        "8.4",
+        "CPM 8.4",
+        "CPM8.4"
       ],
       "keywords": [
         "tourniquet",
         "wound care",
         "8.4",
-        "cpm 8.4"
+        "cpm 8.4",
+        "procedure",
+        "AT",
+        "CPM8.4",
+        "8.4 Application of tourniquet",
+        "CPM 8.4 Application of tourniquet",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -2538,14 +4034,24 @@
       "aliases": [
         "Impaled Object management",
         "CPM 8.5 Impaled Object management",
-        "8.5 Impaled Object management"
+        "8.5 Impaled Object management",
+        "IOM",
+        "8.5",
+        "CPM 8.5",
+        "CPM8.5"
       ],
       "keywords": [
         "impaled",
         "object",
         "wound care",
         "8.5",
-        "cpm 8.5"
+        "cpm 8.5",
+        "procedure",
+        "IOM",
+        "CPM8.5",
+        "8.5 Impaled Object management",
+        "CPM 8.5 Impaled Object management",
+        "management"
       ],
       "type": "procedure"
     },
@@ -2559,7 +4065,13 @@
       "aliases": [
         "Basic wound care and application of dressings: Arms & leg",
         "CPM 8.6 Basic wound care and application of dressings: Arms & leg",
-        "8.6 Basic wound care and application of dressings: Arms & leg"
+        "8.6 Basic wound care and application of dressings: Arms & leg",
+        "Basic wound care and application of dressings: Arms and leg",
+        "Basic wound care & application of dressings: Arms & leg",
+        "BWCADAL",
+        "8.6",
+        "CPM 8.6",
+        "CPM8.6"
       ],
       "keywords": [
         "basic",
@@ -2570,7 +4082,16 @@
         "leg",
         "wound care",
         "8.6",
-        "cpm 8.6"
+        "cpm 8.6",
+        "procedure",
+        "Basic wound care and application of dressings: Arms and leg",
+        "Basic wound care & application of dressings: Arms & leg",
+        "Basic wound care and application of dressings Arms & leg",
+        "BWCADAL",
+        "CPM8.6",
+        "8.6 Basic wound care and application of dressings: Arms & leg",
+        "CPM 8.6 Basic wound care and application of dressings: Arms & leg",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2584,7 +4105,13 @@
       "aliases": [
         "Basic wound care and application of dressings: Elbow & Knee",
         "CPM 8.7 Basic wound care and application of dressings: Elbow & Knee",
-        "8.7 Basic wound care and application of dressings: Elbow & Knee"
+        "8.7 Basic wound care and application of dressings: Elbow & Knee",
+        "Basic wound care and application of dressings: Elbow and Knee",
+        "Basic wound care & application of dressings: Elbow & Knee",
+        "BWCADEK",
+        "8.7",
+        "CPM 8.7",
+        "CPM8.7"
       ],
       "keywords": [
         "basic",
@@ -2595,7 +4122,16 @@
         "knee",
         "wound care",
         "8.7",
-        "cpm 8.7"
+        "cpm 8.7",
+        "procedure",
+        "Basic wound care and application of dressings: Elbow and Knee",
+        "Basic wound care & application of dressings: Elbow & Knee",
+        "Basic wound care and application of dressings Elbow & Knee",
+        "BWCADEK",
+        "CPM8.7",
+        "8.7 Basic wound care and application of dressings: Elbow & Knee",
+        "CPM 8.7 Basic wound care and application of dressings: Elbow & Knee",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2609,7 +4145,13 @@
       "aliases": [
         "Basic wound care and application of dressings: Neck, shoulder & hip",
         "CPM 8.8 Basic wound care and application of dressings: Neck, shoulder & hip",
-        "8.8 Basic wound care and application of dressings: Neck, shoulder & hip"
+        "8.8 Basic wound care and application of dressings: Neck, shoulder & hip",
+        "Basic wound care and application of dressings: Neck, shoulder and hip",
+        "Basic wound care & application of dressings: Neck, shoulder & hip",
+        "BWCADNSH",
+        "8.8",
+        "CPM 8.8",
+        "CPM8.8"
       ],
       "keywords": [
         "basic",
@@ -2621,7 +4163,16 @@
         "hip",
         "wound care",
         "8.8",
-        "cpm 8.8"
+        "cpm 8.8",
+        "procedure",
+        "Basic wound care and application of dressings: Neck, shoulder and hip",
+        "Basic wound care & application of dressings: Neck, shoulder & hip",
+        "Basic wound care and application of dressings Neck, shoulder & hip",
+        "BWCADNSH",
+        "CPM8.8",
+        "8.8 Basic wound care and application of dressings: Neck, shoulder & hip",
+        "CPM 8.8 Basic wound care and application of dressings: Neck, shoulder & hip",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2636,7 +4187,12 @@
         "Basic wound care and application of dressings: Ears, eyes, and head",
         "CPM 8.9 Basic wound care and application of dressings: Ears, eyes, and head",
         "8.9 Basic wound care and application of dressings: Ears, eyes, and head",
-        "Basic wound care and application of dressings: Ears, eyes, and head ARS needle"
+        "Basic wound care and application of dressings: Ears, eyes, and head ARS needle",
+        "Basic wound care & application of dressings: Ears, eyes, & head",
+        "BWCADEEH",
+        "8.9",
+        "CPM 8.9",
+        "CPM8.9"
       ],
       "keywords": [
         "basic",
@@ -2650,7 +4206,15 @@
         "8.9",
         "cpm 8.9",
         "ARS needle",
-        "decompression"
+        "decompression",
+        "procedure",
+        "Basic wound care & application of dressings: Ears, eyes, & head",
+        "Basic wound care and application of dressings Ears, eyes, and head",
+        "BWCADEEH",
+        "CPM8.9",
+        "8.9 Basic wound care and application of dressings: Ears, eyes, and head",
+        "CPM 8.9 Basic wound care and application of dressings: Ears, eyes, and head",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2664,7 +4228,12 @@
       "aliases": [
         "Basic wound care and application of dressings: Top of head",
         "CPM 8.10 Basic wound care and application of dressings: Top of head",
-        "8.10 Basic wound care and application of dressings: Top of head"
+        "8.10 Basic wound care and application of dressings: Top of head",
+        "Basic wound care & application of dressings: Top of head",
+        "BWCADTH",
+        "8.10",
+        "CPM 8.10",
+        "CPM8.10"
       ],
       "keywords": [
         "basic",
@@ -2675,7 +4244,15 @@
         "head",
         "wound care",
         "8.10",
-        "cpm 8.10"
+        "cpm 8.10",
+        "procedure",
+        "Basic wound care & application of dressings: Top of head",
+        "Basic wound care and application of dressings Top of head",
+        "BWCADTH",
+        "CPM8.10",
+        "8.10 Basic wound care and application of dressings: Top of head",
+        "CPM 8.10 Basic wound care and application of dressings: Top of head",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2689,7 +4266,12 @@
       "aliases": [
         "Basic wound care and application of dressings: Burns",
         "CPM 8.11 Basic wound care and application of dressings: Burns",
-        "8.11 Basic wound care and application of dressings: Burns"
+        "8.11 Basic wound care and application of dressings: Burns",
+        "Basic wound care & application of dressings: Burns",
+        "BWCADB",
+        "8.11",
+        "CPM 8.11",
+        "CPM8.11"
       ],
       "keywords": [
         "basic",
@@ -2699,7 +4281,19 @@
         "burns",
         "wound care",
         "8.11",
-        "cpm 8.11"
+        "cpm 8.11",
+        "procedure",
+        "Basic wound care & application of dressings: Burns",
+        "Basic wound care and application of dressings Burns",
+        "BWCADB",
+        "CPM8.11",
+        "8.11 Basic wound care and application of dressings: Burns",
+        "CPM 8.11 Basic wound care and application of dressings: Burns",
+        "burn injury",
+        "thermal injury",
+        "scald",
+        "fluid resuscitation",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2713,14 +4307,23 @@
       "aliases": [
         "Eye irrigation",
         "CPM 8.12 Eye irrigation",
-        "8.12 Eye irrigation"
+        "8.12 Eye irrigation",
+        "EI",
+        "8.12",
+        "CPM 8.12",
+        "CPM8.12"
       ],
       "keywords": [
         "eye",
         "irrigation",
         "wound care",
         "8.12",
-        "cpm 8.12"
+        "cpm 8.12",
+        "procedure",
+        "EI",
+        "CPM8.12",
+        "8.12 Eye irrigation",
+        "CPM 8.12 Eye irrigation"
       ],
       "type": "procedure"
     },
@@ -2734,14 +4337,24 @@
       "aliases": [
         "Bowel Evisceration Management",
         "CPM 8.13 Bowel Evisceration Management",
-        "8.13 Bowel Evisceration Management"
+        "8.13 Bowel Evisceration Management",
+        "BEM",
+        "8.13",
+        "CPM 8.13",
+        "CPM8.13"
       ],
       "keywords": [
         "bowel",
         "evisceration",
         "wound care",
         "8.13",
-        "cpm 8.13"
+        "cpm 8.13",
+        "procedure",
+        "BEM",
+        "CPM8.13",
+        "8.13 Bowel Evisceration Management",
+        "CPM 8.13 Bowel Evisceration Management",
+        "Management"
       ],
       "type": "procedure"
     },
@@ -2755,14 +4368,23 @@
       "aliases": [
         "Pressure bandage",
         "CPM 8.14 Pressure bandage",
-        "8.14 Pressure bandage"
+        "8.14 Pressure bandage",
+        "PB",
+        "8.14",
+        "CPM 8.14",
+        "CPM8.14"
       ],
       "keywords": [
         "pressure",
         "bandage",
         "wound care",
         "8.14",
-        "cpm 8.14"
+        "cpm 8.14",
+        "procedure",
+        "PB",
+        "CPM8.14",
+        "8.14 Pressure bandage",
+        "CPM 8.14 Pressure bandage"
       ],
       "type": "procedure"
     },
@@ -2777,7 +4399,11 @@
         "Manual in-line stabilization: MILS",
         "CPM 9.1 Manual in-line stabilization: MILS",
         "9.1 Manual in-line stabilization: MILS",
-        "Manual in-line stabilization: MILS MILS"
+        "Manual in-line stabilization: MILS MILS",
+        "MLSM",
+        "9.1",
+        "CPM 9.1",
+        "CPM9.1"
       ],
       "keywords": [
         "in-line",
@@ -2786,7 +4412,15 @@
         "spinal motion restriction: smr",
         "9.1",
         "cpm 9.1",
-        "manual inline stabilization"
+        "manual inline stabilization",
+        "procedure",
+        "Manual in line stabilization: MILS",
+        "MLSM",
+        "CPM9.1",
+        "9.1 Manual in-line stabilization: MILS",
+        "CPM 9.1 Manual in-line stabilization: MILS",
+        "Manual",
+        "line"
       ],
       "type": "procedure"
     },
@@ -2800,14 +4434,24 @@
       "aliases": [
         "Application of cervical collar",
         "CPM 9.2 Application of cervical collar",
-        "9.2 Application of cervical collar"
+        "9.2 Application of cervical collar",
+        "ACC",
+        "9.2",
+        "CPM 9.2",
+        "CPM9.2"
       ],
       "keywords": [
         "cervical",
         "collar",
         "spinal motion restriction: smr",
         "9.2",
-        "cpm 9.2"
+        "cpm 9.2",
+        "procedure",
+        "ACC",
+        "CPM9.2",
+        "9.2 Application of cervical collar",
+        "CPM 9.2 Application of cervical collar",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -2821,13 +4465,23 @@
       "aliases": [
         "CombiCarrierII application",
         "CPM 9.3 CombiCarrierII application",
-        "9.3 CombiCarrierII application"
+        "9.3 CombiCarrierII application",
+        "CA",
+        "9.3",
+        "CPM 9.3",
+        "CPM9.3"
       ],
       "keywords": [
         "combicarrierii",
         "spinal motion restriction: smr",
         "9.3",
-        "cpm 9.3"
+        "cpm 9.3",
+        "procedure",
+        "CA",
+        "CPM9.3",
+        "9.3 CombiCarrierII application",
+        "CPM 9.3 CombiCarrierII application",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2841,14 +4495,24 @@
       "aliases": [
         "Scoop stretcher application",
         "CPM 9.4 Scoop stretcher application",
-        "9.4 Scoop stretcher application"
+        "9.4 Scoop stretcher application",
+        "SSA",
+        "9.4",
+        "CPM 9.4",
+        "CPM9.4"
       ],
       "keywords": [
         "scoop",
         "stretcher",
         "spinal motion restriction: smr",
         "9.4",
-        "cpm 9.4"
+        "cpm 9.4",
+        "procedure",
+        "SSA",
+        "CPM9.4",
+        "9.4 Scoop stretcher application",
+        "CPM 9.4 Scoop stretcher application",
+        "application"
       ],
       "type": "procedure"
     },
@@ -2862,7 +4526,12 @@
       "aliases": [
         "Application of a spider straps/harness",
         "CPM 9.5 Application of a spider straps/harness",
-        "9.5 Application of a spider straps/harness"
+        "9.5 Application of a spider straps/harness",
+        "Application of a spider straps and harness",
+        "ASSH",
+        "9.5",
+        "CPM 9.5",
+        "CPM9.5"
       ],
       "keywords": [
         "spider",
@@ -2870,7 +4539,15 @@
         "harness",
         "spinal motion restriction: smr",
         "9.5",
-        "cpm 9.5"
+        "cpm 9.5",
+        "procedure",
+        "Application of a spider straps / harness",
+        "Application of a spider straps and harness",
+        "ASSH",
+        "CPM9.5",
+        "9.5 Application of a spider straps/harness",
+        "CPM 9.5 Application of a spider straps/harness",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -2885,7 +4562,12 @@
         "Extrication using the long backboard (LBB): Supine",
         "CPM 9.6 Extrication using the long backboard (LBB): Supine",
         "9.6 Extrication using the long backboard (LBB): Supine",
-        "Extrication using the long backboard (LBB): Supine LBB"
+        "Extrication using the long backboard (LBB): Supine LBB",
+        "Extrication using the long backboard : Supine",
+        "ELBLS",
+        "9.6",
+        "CPM 9.6",
+        "CPM9.6"
       ],
       "keywords": [
         "extrication",
@@ -2896,7 +4578,14 @@
         "spinal motion restriction: smr",
         "9.6",
         "cpm 9.6",
-        "long backboard"
+        "long backboard",
+        "procedure",
+        "Extrication using the long backboard : Supine",
+        "Extrication using the long backboard LBB Supine",
+        "ELBLS",
+        "CPM9.6",
+        "9.6 Extrication using the long backboard (LBB): Supine",
+        "CPM 9.6 Extrication using the long backboard (LBB): Supine"
       ],
       "type": "procedure"
     },
@@ -2911,7 +4600,12 @@
         "Extrication using the long backboard (LBB): Vehicle",
         "CPM 9.7 Extrication using the long backboard (LBB): Vehicle",
         "9.7 Extrication using the long backboard (LBB): Vehicle",
-        "Extrication using the long backboard (LBB): Vehicle LBB"
+        "Extrication using the long backboard (LBB): Vehicle LBB",
+        "Extrication using the long backboard : Vehicle",
+        "ELBLV",
+        "9.7",
+        "CPM 9.7",
+        "CPM9.7"
       ],
       "keywords": [
         "extrication",
@@ -2922,7 +4616,14 @@
         "spinal motion restriction: smr",
         "9.7",
         "cpm 9.7",
-        "long backboard"
+        "long backboard",
+        "procedure",
+        "Extrication using the long backboard : Vehicle",
+        "Extrication using the long backboard LBB Vehicle",
+        "ELBLV",
+        "CPM9.7",
+        "9.7 Extrication using the long backboard (LBB): Vehicle",
+        "CPM 9.7 Extrication using the long backboard (LBB): Vehicle"
       ],
       "type": "procedure"
     },
@@ -2937,7 +4638,11 @@
         "Extrication using Kendrick Extrication Device: KED",
         "CPM 9.8 Extrication using Kendrick Extrication Device: KED",
         "9.8 Extrication using Kendrick Extrication Device: KED",
-        "Extrication using Kendrick Extrication Device: KED KED"
+        "Extrication using Kendrick Extrication Device: KED KED",
+        "EKEDK",
+        "9.8",
+        "CPM 9.8",
+        "CPM9.8"
       ],
       "keywords": [
         "extrication",
@@ -2947,7 +4652,13 @@
         "spinal motion restriction: smr",
         "9.8",
         "cpm 9.8",
-        "Kendrick Extrication Device"
+        "Kendrick Extrication Device",
+        "procedure",
+        "Extrication using Kendrick Extrication Device KED",
+        "EKEDK",
+        "CPM9.8",
+        "9.8 Extrication using Kendrick Extrication Device: KED",
+        "CPM 9.8 Extrication using Kendrick Extrication Device: KED"
       ],
       "type": "procedure"
     },
@@ -2961,7 +4672,11 @@
       "aliases": [
         "Motorcycle helmet removal",
         "CPM 9.9 Motorcycle helmet removal",
-        "9.9 Motorcycle helmet removal"
+        "9.9 Motorcycle helmet removal",
+        "MHR",
+        "9.9",
+        "CPM 9.9",
+        "CPM9.9"
       ],
       "keywords": [
         "motorcycle",
@@ -2969,7 +4684,12 @@
         "removal",
         "spinal motion restriction: smr",
         "9.9",
-        "cpm 9.9"
+        "cpm 9.9",
+        "procedure",
+        "MHR",
+        "CPM9.9",
+        "9.9 Motorcycle helmet removal",
+        "CPM 9.9 Motorcycle helmet removal"
       ],
       "type": "procedure"
     },
@@ -2984,7 +4704,11 @@
         "Anterior chest wall decompression using the ARS needle",
         "CPM 10.1 Anterior chest wall decompression using the ARS needle",
         "10.1 Anterior chest wall decompression using the ARS needle",
-        "Anterior chest wall decompression using the ARS needle ARS needle"
+        "Anterior chest wall decompression using the ARS needle ARS needle",
+        "ACWDAN",
+        "10.1",
+        "CPM 10.1",
+        "CPM10.1"
       ],
       "keywords": [
         "anterior",
@@ -2996,7 +4720,12 @@
         "chest injuries management",
         "10.1",
         "cpm 10.1",
-        "ARS needle"
+        "ARS needle",
+        "procedure",
+        "ACWDAN",
+        "CPM10.1",
+        "10.1 Anterior chest wall decompression using the ARS needle",
+        "CPM 10.1 Anterior chest wall decompression using the ARS needle"
       ],
       "type": "procedure"
     },
@@ -3011,7 +4740,11 @@
         "Lateral chest wall decompression using the ARS needle",
         "CPM 10.2 Lateral chest wall decompression using the ARS needle",
         "10.2 Lateral chest wall decompression using the ARS needle",
-        "Lateral chest wall decompression using the ARS needle ARS needle"
+        "Lateral chest wall decompression using the ARS needle ARS needle",
+        "LCWDAN",
+        "10.2",
+        "CPM 10.2",
+        "CPM10.2"
       ],
       "keywords": [
         "lateral",
@@ -3023,7 +4756,12 @@
         "chest injuries management",
         "10.2",
         "cpm 10.2",
-        "ARS needle"
+        "ARS needle",
+        "procedure",
+        "LCWDAN",
+        "CPM10.2",
+        "10.2 Lateral chest wall decompression using the ARS needle",
+        "CPM 10.2 Lateral chest wall decompression using the ARS needle"
       ],
       "type": "procedure"
     },
@@ -3037,14 +4775,23 @@
       "aliases": [
         "Finger Thoracostomy",
         "CPM 10.3 Finger Thoracostomy",
-        "10.3 Finger Thoracostomy"
+        "10.3 Finger Thoracostomy",
+        "FT",
+        "10.3",
+        "CPM 10.3",
+        "CPM10.3"
       ],
       "keywords": [
         "finger",
         "thoracostomy",
         "chest injuries management",
         "10.3",
-        "cpm 10.3"
+        "cpm 10.3",
+        "procedure",
+        "FT",
+        "CPM10.3",
+        "10.3 Finger Thoracostomy",
+        "CPM 10.3 Finger Thoracostomy"
       ],
       "type": "procedure"
     },
@@ -3058,7 +4805,11 @@
       "aliases": [
         "Sucking chest wound seal",
         "CPM 10.4 Sucking chest wound seal",
-        "10.4 Sucking chest wound seal"
+        "10.4 Sucking chest wound seal",
+        "SCWS",
+        "10.4",
+        "CPM 10.4",
+        "CPM10.4"
       ],
       "keywords": [
         "sucking",
@@ -3067,7 +4818,12 @@
         "seal",
         "chest injuries management",
         "10.4",
-        "cpm 10.4"
+        "cpm 10.4",
+        "procedure",
+        "SCWS",
+        "CPM10.4",
+        "10.4 Sucking chest wound seal",
+        "CPM 10.4 Sucking chest wound seal"
       ],
       "type": "procedure"
     },
@@ -3081,7 +4837,11 @@
       "aliases": [
         "Flail chest stabilization",
         "CPM 10.5 Flail chest stabilization",
-        "10.5 Flail chest stabilization"
+        "10.5 Flail chest stabilization",
+        "FCS",
+        "10.5",
+        "CPM 10.5",
+        "CPM10.5"
       ],
       "keywords": [
         "flail",
@@ -3089,7 +4849,12 @@
         "stabilization",
         "chest injuries management",
         "10.5",
-        "cpm 10.5"
+        "cpm 10.5",
+        "procedure",
+        "FCS",
+        "CPM10.5",
+        "10.5 Flail chest stabilization",
+        "CPM 10.5 Flail chest stabilization"
       ],
       "type": "procedure"
     },
@@ -3103,7 +4868,14 @@
       "aliases": [
         "Pelvic immobilization with pelvic sling",
         "CPM 11.1 Pelvic immobilization with pelvic sling",
-        "11.1 Pelvic immobilization with pelvic sling"
+        "11.1 Pelvic immobilization with pelvic sling",
+        "PIPS",
+        "11.1",
+        "CPM 11.1",
+        "CPM11.1",
+        "Pelvic immobilisation with pelvic sling",
+        "CPM 11.1 Pelvic immobilisation with pelvic sling",
+        "11.1 Pelvic immobilisation with pelvic sling"
       ],
       "keywords": [
         "pelvic",
@@ -3111,7 +4883,17 @@
         "sling",
         "splinting",
         "11.1",
-        "cpm 11.1"
+        "cpm 11.1",
+        "procedure",
+        "PIPS",
+        "CPM11.1",
+        "11.1 Pelvic immobilization with pelvic sling",
+        "CPM 11.1 Pelvic immobilization with pelvic sling",
+        "Pelvic immobilisation with pelvic sling",
+        "CPM 11.1 Pelvic immobilisation with pelvic sling",
+        "11.1 Pelvic immobilisation with pelvic sling",
+        "Pelvic immobilization with pelvic sling",
+        "immobilisation"
       ],
       "type": "procedure"
     },
@@ -3125,14 +4907,24 @@
       "aliases": [
         "Application of traction splint",
         "CPM 11.2 Application of traction splint",
-        "11.2 Application of traction splint"
+        "11.2 Application of traction splint",
+        "ATS",
+        "11.2",
+        "CPM 11.2",
+        "CPM11.2"
       ],
       "keywords": [
         "traction",
         "splint",
         "splinting",
         "11.2",
-        "cpm 11.2"
+        "cpm 11.2",
+        "procedure",
+        "ATS",
+        "CPM11.2",
+        "11.2 Application of traction splint",
+        "CPM 11.2 Application of traction splint",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -3146,14 +4938,24 @@
       "aliases": [
         "Application of Vacuum splint",
         "CPM 11.3 Application of Vacuum splint",
-        "11.3 Application of Vacuum splint"
+        "11.3 Application of Vacuum splint",
+        "AVS",
+        "11.3",
+        "CPM 11.3",
+        "CPM11.3"
       ],
       "keywords": [
         "vacuum",
         "splint",
         "splinting",
         "11.3",
-        "cpm 11.3"
+        "cpm 11.3",
+        "procedure",
+        "AVS",
+        "CPM11.3",
+        "11.3 Application of Vacuum splint",
+        "CPM 11.3 Application of Vacuum splint",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -3167,7 +4969,11 @@
       "aliases": [
         "Application of splints for joints injuries",
         "CPM 11.4 Application of splints for joints injuries",
-        "11.4 Application of splints for joints injuries"
+        "11.4 Application of splints for joints injuries",
+        "ASJI",
+        "11.4",
+        "CPM 11.4",
+        "CPM11.4"
       ],
       "keywords": [
         "splints",
@@ -3175,7 +4981,13 @@
         "injuries",
         "splinting",
         "11.4",
-        "cpm 11.4"
+        "cpm 11.4",
+        "procedure",
+        "ASJI",
+        "CPM11.4",
+        "11.4 Application of splints for joints injuries",
+        "CPM 11.4 Application of splints for joints injuries",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -3189,7 +5001,11 @@
       "aliases": [
         "Application of splints for long bone injuries",
         "CPM 11.5 Application of splints for long bone injuries",
-        "11.5 Application of splints for long bone injuries"
+        "11.5 Application of splints for long bone injuries",
+        "ASLBI",
+        "11.5",
+        "CPM 11.5",
+        "CPM11.5"
       ],
       "keywords": [
         "splints",
@@ -3198,7 +5014,13 @@
         "injuries",
         "splinting",
         "11.5",
-        "cpm 11.5"
+        "cpm 11.5",
+        "procedure",
+        "ASLBI",
+        "CPM11.5",
+        "11.5 Application of splints for long bone injuries",
+        "CPM 11.5 Application of splints for long bone injuries",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -3212,7 +5034,12 @@
       "aliases": [
         "Application of splints: Sling and swathe",
         "CPM 11.6 Application of splints: Sling and swathe",
-        "11.6 Application of splints: Sling and swathe"
+        "11.6 Application of splints: Sling and swathe",
+        "Application of splints: Sling & swathe",
+        "ASSS",
+        "11.6",
+        "CPM 11.6",
+        "CPM11.6"
       ],
       "keywords": [
         "splints",
@@ -3220,7 +5047,15 @@
         "swathe",
         "splinting",
         "11.6",
-        "cpm 11.6"
+        "cpm 11.6",
+        "procedure",
+        "Application of splints: Sling & swathe",
+        "Application of splints Sling and swathe",
+        "ASSS",
+        "CPM11.6",
+        "11.6 Application of splints: Sling and swathe",
+        "CPM 11.6 Application of splints: Sling and swathe",
+        "Application"
       ],
       "type": "procedure"
     },
@@ -3234,13 +5069,30 @@
       "aliases": [
         "Obstetric Patient Assessment",
         "CPM 12.1 Obstetric Patient Assessment",
-        "12.1 Obstetric Patient Assessment"
+        "12.1 Obstetric Patient Assessment",
+        "OPA",
+        "12.1",
+        "CPM 12.1",
+        "CPM12.1"
       ],
       "keywords": [
         "obstetric",
         "obstetrics and gynecology",
         "12.1",
-        "cpm 12.1"
+        "cpm 12.1",
+        "procedure",
+        "OPA",
+        "CPM12.1",
+        "12.1 Obstetric Patient Assessment",
+        "CPM 12.1 Obstetric Patient Assessment",
+        "obstetrics and gynaecology",
+        "pregnancy",
+        "pregnant",
+        "maternity",
+        "labour",
+        "labor",
+        "Patient",
+        "Assessment"
       ],
       "type": "procedure"
     },
@@ -3254,7 +5106,11 @@
       "aliases": [
         "Normal Vaginal Delivery",
         "CPM 12.2 Normal Vaginal Delivery",
-        "12.2 Normal Vaginal Delivery"
+        "12.2 Normal Vaginal Delivery",
+        "NVD",
+        "12.2",
+        "CPM 12.2",
+        "CPM12.2"
       ],
       "keywords": [
         "normal",
@@ -3262,7 +5118,18 @@
         "delivery",
         "obstetrics and gynecology",
         "12.2",
-        "cpm 12.2"
+        "cpm 12.2",
+        "procedure",
+        "NVD",
+        "CPM12.2",
+        "12.2 Normal Vaginal Delivery",
+        "CPM 12.2 Normal Vaginal Delivery",
+        "obstetrics and gynaecology",
+        "pregnancy",
+        "pregnant",
+        "maternity",
+        "labour",
+        "labor"
       ],
       "type": "procedure"
     },
@@ -3276,14 +5143,30 @@
       "aliases": [
         "Prolapsed cord management",
         "CPM 12.3 Prolapsed cord management",
-        "12.3 Prolapsed cord management"
+        "12.3 Prolapsed cord management",
+        "PCM",
+        "12.3",
+        "CPM 12.3",
+        "CPM12.3"
       ],
       "keywords": [
         "prolapsed",
         "cord",
         "obstetrics and gynecology",
         "12.3",
-        "cpm 12.3"
+        "cpm 12.3",
+        "procedure",
+        "PCM",
+        "CPM12.3",
+        "12.3 Prolapsed cord management",
+        "CPM 12.3 Prolapsed cord management",
+        "obstetrics and gynaecology",
+        "pregnancy",
+        "pregnant",
+        "maternity",
+        "labour",
+        "labor",
+        "management"
       ],
       "type": "procedure"
     },
@@ -3297,14 +5180,30 @@
       "aliases": [
         "Breech presentation management",
         "CPM 12.4 Breech presentation management",
-        "12.4 Breech presentation management"
+        "12.4 Breech presentation management",
+        "BPM",
+        "12.4",
+        "CPM 12.4",
+        "CPM12.4"
       ],
       "keywords": [
         "breech",
         "presentation",
         "obstetrics and gynecology",
         "12.4",
-        "cpm 12.4"
+        "cpm 12.4",
+        "procedure",
+        "BPM",
+        "CPM12.4",
+        "12.4 Breech presentation management",
+        "CPM 12.4 Breech presentation management",
+        "obstetrics and gynaecology",
+        "pregnancy",
+        "pregnant",
+        "maternity",
+        "labour",
+        "labor",
+        "management"
       ],
       "type": "procedure"
     },
@@ -3318,7 +5217,11 @@
       "aliases": [
         "External fundal massage",
         "CPM 12.5 External fundal massage",
-        "12.5 External fundal massage"
+        "12.5 External fundal massage",
+        "EFM",
+        "12.5",
+        "CPM 12.5",
+        "CPM12.5"
       ],
       "keywords": [
         "external",
@@ -3326,7 +5229,18 @@
         "massage",
         "obstetrics and gynecology",
         "12.5",
-        "cpm 12.5"
+        "cpm 12.5",
+        "procedure",
+        "EFM",
+        "CPM12.5",
+        "12.5 External fundal massage",
+        "CPM 12.5 External fundal massage",
+        "obstetrics and gynaecology",
+        "pregnancy",
+        "pregnant",
+        "maternity",
+        "labour",
+        "labor"
       ],
       "type": "procedure"
     },
@@ -3342,13 +5256,35 @@
         "CPM 13.1 Paediatric patient assessment",
         "13.1 Paediatric patient assessment",
         "Pediatric patient assessment",
-        "Paediatric patient assessment AED"
+        "Paediatric patient assessment AED",
+        "PPA",
+        "13.1",
+        "CPM 13.1",
+        "CPM13.1",
+        "CPM 13.1 pediatric patient assessment",
+        "13.1 pediatric patient assessment",
+        "pediatric patient assessment AED"
       ],
       "keywords": [
         "paediatrics",
         "13.1",
         "cpm 13.1",
-        "AED"
+        "AED",
+        "procedure",
+        "PPA",
+        "CPM13.1",
+        "13.1 Paediatric patient assessment",
+        "CPM 13.1 Paediatric patient assessment",
+        "pediatric patient assessment",
+        "CPM 13.1 pediatric patient assessment",
+        "13.1 pediatric patient assessment",
+        "paediatric patient assessment",
+        "pediatric patient assessment AED",
+        "paediatric patient assessment AED",
+        "pediatrics",
+        "Paediatric",
+        "patient",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -3365,14 +5301,39 @@
         "13.2 TICLS: Paediatric patient assessment",
         "TICLS: Pediatric patient assessment",
         "TICLS: Paediatric patient assessment AED",
-        "TICLS: Paediatric patient assessment TICLS"
+        "TICLS: Paediatric patient assessment TICLS",
+        "TPPA",
+        "13.2",
+        "CPM 13.2",
+        "CPM13.2",
+        "CPM 13.2 TICLS: pediatric patient assessment",
+        "13.2 TICLS: pediatric patient assessment",
+        "TICLS: pediatric patient assessment AED",
+        "TICLS: pediatric patient assessment TICLS"
       ],
       "keywords": [
         "ticls",
         "paediatrics",
         "13.2",
         "cpm 13.2",
-        "AED"
+        "AED",
+        "procedure",
+        "TICLS Paediatric patient assessment",
+        "TPPA",
+        "CPM13.2",
+        "13.2 TICLS: Paediatric patient assessment",
+        "CPM 13.2 TICLS: Paediatric patient assessment",
+        "TICLS: pediatric patient assessment",
+        "CPM 13.2 TICLS: pediatric patient assessment",
+        "13.2 TICLS: pediatric patient assessment",
+        "TICLS: pediatric patient assessment AED",
+        "TICLS: pediatric patient assessment TICLS",
+        "TICLS: paediatric patient assessment AED",
+        "TICLS: paediatric patient assessment TICLS",
+        "pediatrics",
+        "Paediatric",
+        "patient",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -3386,7 +5347,11 @@
       "aliases": [
         "Modified Westley croup score assessment",
         "CPM 13.3 Modified Westley croup score assessment",
-        "13.3 Modified Westley croup score assessment"
+        "13.3 Modified Westley croup score assessment",
+        "MWCSA",
+        "13.3",
+        "CPM 13.3",
+        "CPM13.3"
       ],
       "keywords": [
         "modified",
@@ -3395,7 +5360,18 @@
         "score",
         "paediatrics",
         "13.3",
-        "cpm 13.3"
+        "cpm 13.3",
+        "procedure",
+        "MWCSA",
+        "CPM13.3",
+        "13.3 Modified Westley croup score assessment",
+        "CPM 13.3 Modified Westley croup score assessment",
+        "pediatrics",
+        "stridor",
+        "barking cough",
+        "adrenaline nebuliser",
+        "dexamethasone",
+        "assessment"
       ],
       "type": "procedure"
     },
@@ -3411,7 +5387,14 @@
         "CPM 13.4 Paediatric in-line Nebulization",
         "13.4 Paediatric in-line Nebulization",
         "Pediatric in-line Nebulization",
-        "Paediatric in-line Nebulization AED"
+        "Paediatric in-line Nebulization AED",
+        "PLN",
+        "13.4",
+        "CPM 13.4",
+        "CPM13.4",
+        "CPM 13.4 pediatric in-line Nebulization",
+        "13.4 pediatric in-line Nebulization",
+        "pediatric in-line Nebulization AED"
       ],
       "keywords": [
         "in-line",
@@ -3419,7 +5402,21 @@
         "paediatrics",
         "13.4",
         "cpm 13.4",
-        "AED"
+        "AED",
+        "procedure",
+        "Paediatric in line Nebulization",
+        "PLN",
+        "CPM13.4",
+        "13.4 Paediatric in-line Nebulization",
+        "CPM 13.4 Paediatric in-line Nebulization",
+        "pediatric in-line Nebulization",
+        "CPM 13.4 pediatric in-line Nebulization",
+        "13.4 pediatric in-line Nebulization",
+        "pediatric in-line Nebulization AED",
+        "paediatric in-line Nebulization AED",
+        "pediatrics",
+        "Paediatric",
+        "line"
       ],
       "type": "procedure"
     },
@@ -3433,7 +5430,11 @@
       "aliases": [
         "Quick Track: Child Cricothyroidotomy",
         "CPM 13.5 Quick Track: Child Cricothyroidotomy",
-        "13.5 Quick Track: Child Cricothyroidotomy"
+        "13.5 Quick Track: Child Cricothyroidotomy",
+        "QTCC",
+        "13.5",
+        "CPM 13.5",
+        "CPM13.5"
       ],
       "keywords": [
         "quick",
@@ -3442,7 +5443,14 @@
         "cricothyroidotomy",
         "paediatrics",
         "13.5",
-        "cpm 13.5"
+        "cpm 13.5",
+        "procedure",
+        "Quick Track Child Cricothyroidotomy",
+        "QTCC",
+        "CPM13.5",
+        "13.5 Quick Track: Child Cricothyroidotomy",
+        "CPM 13.5 Quick Track: Child Cricothyroidotomy",
+        "pediatrics"
       ],
       "type": "procedure"
     },
@@ -3460,7 +5468,16 @@
         "Pediatric orotracheal intubation using Rapid Sequence Induction",
         "Paediatric oro-tracheal intubation using Rapid Sequence Induction",
         "Paediatric orotracheal intubation using RSI",
-        "Paediatric orotracheal intubation using Rapid Sequence Induction AED"
+        "Paediatric orotracheal intubation using Rapid Sequence Induction AED",
+        "POIRSI",
+        "13.6",
+        "CPM 13.6",
+        "CPM13.6",
+        "CPM 13.6 pediatric orotracheal intubation using Rapid Sequence Induction",
+        "13.6 pediatric orotracheal intubation using Rapid Sequence Induction",
+        "pediatric oro-tracheal intubation using Rapid Sequence Induction",
+        "pediatric orotracheal intubation using RSI",
+        "pediatric orotracheal intubation using Rapid Sequence Induction AED"
       ],
       "keywords": [
         "orotracheal",
@@ -3471,7 +5488,27 @@
         "paediatrics",
         "13.6",
         "cpm 13.6",
-        "AED"
+        "AED",
+        "procedure",
+        "POIRSI",
+        "CPM13.6",
+        "13.6 Paediatric orotracheal intubation using Rapid Sequence Induction",
+        "CPM 13.6 Paediatric orotracheal intubation using Rapid Sequence Induction",
+        "pediatric orotracheal intubation using Rapid Sequence Induction",
+        "CPM 13.6 pediatric orotracheal intubation using Rapid Sequence Induction",
+        "13.6 pediatric orotracheal intubation using Rapid Sequence Induction",
+        "paediatric orotracheal intubation using Rapid Sequence Induction",
+        "pediatric oro-tracheal intubation using Rapid Sequence Induction",
+        "pediatric orotracheal intubation using RSI",
+        "pediatric orotracheal intubation using Rapid Sequence Induction AED",
+        "paediatric oro-tracheal intubation using Rapid Sequence Induction",
+        "paediatric orotracheal intubation using RSI",
+        "paediatric orotracheal intubation using Rapid Sequence Induction AED",
+        "pediatrics",
+        "ETT",
+        "endotracheal tube",
+        "airway",
+        "Paediatric"
       ],
       "type": "procedure"
     },
@@ -3488,7 +5525,15 @@
         "13.7 Paediatric spinal motion restriction: Pedi-Pac",
         "Pediatric spinal motion restriction: Pedi-Pac",
         "Paediatric spinal motion restriction: Pedi-Pac AED",
-        "Paediatric spinal motion restriction: Pedi-Pac Pedi-Pac"
+        "Paediatric spinal motion restriction: Pedi-Pac Pedi-Pac",
+        "PSMRPP",
+        "13.7",
+        "CPM 13.7",
+        "CPM13.7",
+        "CPM 13.7 pediatric spinal motion restriction: Pedi-Pac",
+        "13.7 pediatric spinal motion restriction: Pedi-Pac",
+        "pediatric spinal motion restriction: Pedi-Pac AED",
+        "pediatric spinal motion restriction: Pedi-Pac Pedi-Pac"
       ],
       "keywords": [
         "spinal",
@@ -3499,7 +5544,24 @@
         "13.7",
         "cpm 13.7",
         "AED",
-        "pediatric spinal motion restriction"
+        "pediatric spinal motion restriction",
+        "procedure",
+        "Paediatric spinal motion restriction: Pedi Pac",
+        "PSMRPP",
+        "CPM13.7",
+        "13.7 Paediatric spinal motion restriction: Pedi-Pac",
+        "CPM 13.7 Paediatric spinal motion restriction: Pedi-Pac",
+        "pediatric spinal motion restriction: Pedi-Pac",
+        "CPM 13.7 pediatric spinal motion restriction: Pedi-Pac",
+        "13.7 pediatric spinal motion restriction: Pedi-Pac",
+        "pediatric spinal motion restriction: Pedi-Pac AED",
+        "pediatric spinal motion restriction: Pedi-Pac Pedi-Pac",
+        "paediatric spinal motion restriction: Pedi-Pac AED",
+        "paediatric spinal motion restriction: Pedi-Pac Pedi-Pac",
+        "pediatrics",
+        "paediatric spinal motion restriction",
+        "Paediatric",
+        "Pedi"
       ],
       "type": "procedure"
     },
@@ -3515,7 +5577,22 @@
         "CPM 13.8 Paediatric /Infant car seat immobilization",
         "13.8 Paediatric /Infant car seat immobilization",
         "Pediatric /Infant car seat immobilization",
-        "Paediatric /Infant car seat immobilization AED"
+        "Paediatric /Infant car seat immobilization AED",
+        "Paediatric and Infant car seat immobilization",
+        "PICSI",
+        "13.8",
+        "CPM 13.8",
+        "CPM13.8",
+        "Paediatric /Infant car seat immobilisation",
+        "CPM 13.8 pediatric /Infant car seat immobilization",
+        "CPM 13.8 Paediatric /Infant car seat immobilisation",
+        "13.8 pediatric /Infant car seat immobilization",
+        "13.8 Paediatric /Infant car seat immobilisation",
+        "Pediatric /Infant car seat immobilisation",
+        "pediatric /Infant car seat immobilization AED",
+        "Paediatric /Infant car seat immobilisation AED",
+        "pediatric and Infant car seat immobilization",
+        "Paediatric and Infant car seat immobilisation"
       ],
       "keywords": [
         "infant",
@@ -3525,7 +5602,33 @@
         "paediatrics",
         "13.8",
         "cpm 13.8",
-        "AED"
+        "AED",
+        "procedure",
+        "Paediatric / Infant car seat immobilization",
+        "Paediatric and Infant car seat immobilization",
+        "PICSI",
+        "CPM13.8",
+        "13.8 Paediatric /Infant car seat immobilization",
+        "CPM 13.8 Paediatric /Infant car seat immobilization",
+        "pediatric /Infant car seat immobilization",
+        "Paediatric /Infant car seat immobilisation",
+        "CPM 13.8 pediatric /Infant car seat immobilization",
+        "CPM 13.8 Paediatric /Infant car seat immobilisation",
+        "13.8 pediatric /Infant car seat immobilization",
+        "13.8 Paediatric /Infant car seat immobilisation",
+        "Pediatric /Infant car seat immobilisation",
+        "pediatric /Infant car seat immobilization AED",
+        "Paediatric /Infant car seat immobilisation AED",
+        "pediatric and Infant car seat immobilization",
+        "Paediatric and Infant car seat immobilisation",
+        "CPM 13.8 pediatric /Infant car seat immobilisation",
+        "13.8 pediatric /Infant car seat immobilisation",
+        "paediatric /Infant car seat immobilization AED",
+        "pediatric /Infant car seat immobilisation AED",
+        "pediatric and Infant car seat immobilisation",
+        "immobilisation",
+        "pediatrics",
+        "Paediatric"
       ],
       "type": "procedure"
     },
@@ -3539,7 +5642,11 @@
       "aliases": [
         "Ferno Mondial ST Stretcher operations",
         "CPM 14.1 Ferno Mondial ST Stretcher operations",
-        "14.1 Ferno Mondial ST Stretcher operations"
+        "14.1 Ferno Mondial ST Stretcher operations",
+        "FMSSO",
+        "14.1",
+        "CPM 14.1",
+        "CPM14.1"
       ],
       "keywords": [
         "ferno",
@@ -3548,7 +5655,12 @@
         "operations",
         "lifting and moving",
         "14.1",
-        "cpm 14.1"
+        "cpm 14.1",
+        "procedure",
+        "FMSSO",
+        "CPM14.1",
+        "14.1 Ferno Mondial ST Stretcher operations",
+        "CPM 14.1 Ferno Mondial ST Stretcher operations"
       ],
       "type": "procedure"
     },
@@ -3562,7 +5674,11 @@
       "aliases": [
         "Lifting a stretcher using body mechanics",
         "CPM 14.2 Lifting a stretcher using body mechanics",
-        "14.2 Lifting a stretcher using body mechanics"
+        "14.2 Lifting a stretcher using body mechanics",
+        "LSBM",
+        "14.2",
+        "CPM 14.2",
+        "CPM14.2"
       ],
       "keywords": [
         "lifting",
@@ -3571,7 +5687,12 @@
         "mechanics",
         "lifting and moving",
         "14.2",
-        "cpm 14.2"
+        "cpm 14.2",
+        "procedure",
+        "LSBM",
+        "CPM14.2",
+        "14.2 Lifting a stretcher using body mechanics",
+        "CPM 14.2 Lifting a stretcher using body mechanics"
       ],
       "type": "procedure"
     },
@@ -3585,7 +5706,11 @@
       "aliases": [
         "Stretcher to bed transfer",
         "CPM 14.3 Stretcher to bed transfer",
-        "14.3 Stretcher to bed transfer"
+        "14.3 Stretcher to bed transfer",
+        "SBT",
+        "14.3",
+        "CPM 14.3",
+        "CPM14.3"
       ],
       "keywords": [
         "stretcher",
@@ -3593,7 +5718,12 @@
         "transfer",
         "lifting and moving",
         "14.3",
-        "cpm 14.3"
+        "cpm 14.3",
+        "procedure",
+        "SBT",
+        "CPM14.3",
+        "14.3 Stretcher to bed transfer",
+        "CPM 14.3 Stretcher to bed transfer"
       ],
       "type": "procedure"
     },
@@ -3607,7 +5737,11 @@
       "aliases": [
         "Floor to stretcher transfer",
         "CPM 14.4 Floor to stretcher transfer",
-        "14.4 Floor to stretcher transfer"
+        "14.4 Floor to stretcher transfer",
+        "FST",
+        "14.4",
+        "CPM 14.4",
+        "CPM14.4"
       ],
       "keywords": [
         "floor",
@@ -3615,7 +5749,12 @@
         "transfer",
         "lifting and moving",
         "14.4",
-        "cpm 14.4"
+        "cpm 14.4",
+        "procedure",
+        "FST",
+        "CPM14.4",
+        "14.4 Floor to stretcher transfer",
+        "CPM 14.4 Floor to stretcher transfer"
       ],
       "type": "procedure"
     },
@@ -3629,7 +5768,11 @@
       "aliases": [
         "Chair to stretcher transfer",
         "CPM 14.5 Chair to stretcher transfer",
-        "14.5 Chair to stretcher transfer"
+        "14.5 Chair to stretcher transfer",
+        "CST",
+        "14.5",
+        "CPM 14.5",
+        "CPM14.5"
       ],
       "keywords": [
         "chair",
@@ -3637,7 +5780,12 @@
         "transfer",
         "lifting and moving",
         "14.5",
-        "cpm 14.5"
+        "cpm 14.5",
+        "procedure",
+        "CST",
+        "CPM14.5",
+        "14.5 Chair to stretcher transfer",
+        "CPM 14.5 Chair to stretcher transfer"
       ],
       "type": "procedure"
     },
@@ -3651,13 +5799,23 @@
       "aliases": [
         "Patient walking",
         "CPM 14.6 Patient walking",
-        "14.6 Patient walking"
+        "14.6 Patient walking",
+        "PW",
+        "14.6",
+        "CPM 14.6",
+        "CPM14.6"
       ],
       "keywords": [
         "walking",
         "lifting and moving",
         "14.6",
-        "cpm 14.6"
+        "cpm 14.6",
+        "procedure",
+        "PW",
+        "CPM14.6",
+        "14.6 Patient walking",
+        "CPM 14.6 Patient walking",
+        "Patient"
       ],
       "type": "procedure"
     },
@@ -3671,14 +5829,23 @@
       "aliases": [
         "Stair chair",
         "CPM 14.7 Stair chair",
-        "14.7 Stair chair"
+        "14.7 Stair chair",
+        "SC",
+        "14.7",
+        "CPM 14.7",
+        "CPM14.7"
       ],
       "keywords": [
         "stair",
         "chair",
         "lifting and moving",
         "14.7",
-        "cpm 14.7"
+        "cpm 14.7",
+        "procedure",
+        "SC",
+        "CPM14.7",
+        "14.7 Stair chair",
+        "CPM 14.7 Stair chair"
       ],
       "type": "procedure"
     },
@@ -3692,7 +5859,11 @@
       "aliases": [
         "Use of Xtract 2 Carry Sheet",
         "CPM 14.8 Use of Xtract 2 Carry Sheet",
-        "14.8 Use of Xtract 2 Carry Sheet"
+        "14.8 Use of Xtract 2 Carry Sheet",
+        "UXCS",
+        "14.8",
+        "CPM 14.8",
+        "CPM14.8"
       ],
       "keywords": [
         "xtract",
@@ -3700,7 +5871,12 @@
         "sheet",
         "lifting and moving",
         "14.8",
-        "cpm 14.8"
+        "cpm 14.8",
+        "procedure",
+        "UXCS",
+        "CPM14.8",
+        "14.8 Use of Xtract 2 Carry Sheet",
+        "CPM 14.8 Use of Xtract 2 Carry Sheet"
       ],
       "type": "procedure"
     },
@@ -3714,14 +5890,23 @@
       "aliases": [
         "Use of Carry Sheet",
         "CPM 14.9 Use of Carry Sheet",
-        "14.9 Use of Carry Sheet"
+        "14.9 Use of Carry Sheet",
+        "UCS",
+        "14.9",
+        "CPM 14.9",
+        "CPM14.9"
       ],
       "keywords": [
         "carry",
         "sheet",
         "lifting and moving",
         "14.9",
-        "cpm 14.9"
+        "cpm 14.9",
+        "procedure",
+        "UCS",
+        "CPM14.9",
+        "14.9 Use of Carry Sheet",
+        "CPM 14.9 Use of Carry Sheet"
       ],
       "type": "procedure"
     },
@@ -3735,7 +5920,12 @@
       "aliases": [
         "Use of Stokes Basket (Basket Stretcher)",
         "CPM 14.10 Use of Stokes Basket (Basket Stretcher)",
-        "14.10 Use of Stokes Basket (Basket Stretcher)"
+        "14.10 Use of Stokes Basket (Basket Stretcher)",
+        "Use of Stokes Basket",
+        "USBBS",
+        "14.10",
+        "CPM 14.10",
+        "CPM14.10"
       ],
       "keywords": [
         "stokes",
@@ -3743,7 +5933,14 @@
         "stretcher",
         "lifting and moving",
         "14.10",
-        "cpm 14.10"
+        "cpm 14.10",
+        "procedure",
+        "Use of Stokes Basket",
+        "Use of Stokes Basket Basket Stretcher",
+        "USBBS",
+        "CPM14.10",
+        "14.10 Use of Stokes Basket (Basket Stretcher)",
+        "CPM 14.10 Use of Stokes Basket (Basket Stretcher)"
       ],
       "type": "procedure"
     },
@@ -3757,7 +5954,11 @@
       "aliases": [
         "Nasogastric tube insertion",
         "CPM 15.1 Nasogastric tube insertion",
-        "15.1 Nasogastric tube insertion"
+        "15.1 Nasogastric tube insertion",
+        "NTI",
+        "15.1",
+        "CPM 15.1",
+        "CPM15.1"
       ],
       "keywords": [
         "nasogastric",
@@ -3765,7 +5966,12 @@
         "insertion",
         "miscellaneous",
         "15.1",
-        "cpm 15.1"
+        "cpm 15.1",
+        "procedure",
+        "NTI",
+        "CPM15.1",
+        "15.1 Nasogastric tube insertion",
+        "CPM 15.1 Nasogastric tube insertion"
       ],
       "type": "procedure"
     },
@@ -3780,7 +5986,11 @@
         "Clinical handover: IMIST-AMBO",
         "CPM 15.2 Clinical handover: IMIST-AMBO",
         "15.2 Clinical handover: IMIST-AMBO",
-        "Clinical handover: IMIST-AMBO IMIST AMBO"
+        "Clinical handover: IMIST-AMBO IMIST AMBO",
+        "CHIA",
+        "15.2",
+        "CPM 15.2",
+        "CPM15.2"
       ],
       "keywords": [
         "clinical",
@@ -3789,7 +5999,15 @@
         "miscellaneous",
         "15.2",
         "cpm 15.2",
-        "IMIST AMBO"
+        "IMIST AMBO",
+        "procedure",
+        "Clinical handover: IMIST AMBO",
+        "CHIA",
+        "CPM15.2",
+        "15.2 Clinical handover: IMIST-AMBO",
+        "CPM 15.2 Clinical handover: IMIST-AMBO",
+        "IMIST",
+        "AMBO"
       ],
       "type": "procedure"
     }
