@@ -5,11 +5,31 @@
     "page_start": 17,
     "page_end": 19,
     "aliases": [
-      "Clinical Approach & Assessment of the Adult Patient"
+      "Clinical Approach & Assessment of the Adult Patient",
+      "CAAAP",
+      "1.1",
+      "CPG 1.1",
+      "CPG1.1",
+      "1.1 Clinical Approach and Assessment of the Adult Patient",
+      "CPG 1.1 Clinical Approach and Assessment of the Adult Patient"
     ],
     "keywords": [
       "primary survey",
-      "secondary survey"
+      "secondary survey",
+      "reference",
+      "CPG1.1",
+      "Clinical Approach and Patient Assessment",
+      "adult",
+      "Clinical Approach & Assessment of the Adult Patient",
+      "CAAAP",
+      "1.1",
+      "CPG 1.1",
+      "1.1 Clinical Approach and Assessment of the Adult Patient",
+      "CPG 1.1 Clinical Approach and Assessment of the Adult Patient",
+      "Clinical",
+      "Approach",
+      "Assessment",
+      "Patient"
     ],
     "type": "reference",
     "domains": [
@@ -29,13 +49,42 @@
       "pediatric",
       "Clinical Approach and Assessment of the Pediatric Patient",
       "paediatric",
-      "Clinical Approach & Assessment of the Paediatric Patient"
+      "Clinical Approach & Assessment of the Paediatric Patient",
+      "CAAPP",
+      "1.2",
+      "CPG 1.2",
+      "CPG1.2",
+      "1.2 Clinical Approach and Assessment of the Paediatric Patient",
+      "CPG 1.2 Clinical Approach and Assessment of the Paediatric Patient",
+      "Clinical Approach and Assessment of the paediatric Patient",
+      "Clinical Approach & Assessment of the pediatric Patient",
+      "1.2 Clinical Approach and Assessment of the pediatric Patient",
+      "CPG 1.2 Clinical Approach and Assessment of the pediatric Patient"
     ],
     "keywords": [
       "primary survey",
       "secondary survey",
       "Clinical Approach and Assessment of the Pediatric Patient",
-      "paediatric"
+      "paediatric",
+      "reference",
+      "CPG1.2",
+      "Clinical Approach and Patient Assessment",
+      "peds",
+      "Clinical Approach & Assessment of the Paediatric Patient",
+      "CAAPP",
+      "1.2",
+      "CPG 1.2",
+      "1.2 Clinical Approach and Assessment of the Paediatric Patient",
+      "CPG 1.2 Clinical Approach and Assessment of the Paediatric Patient",
+      "Clinical Approach and Assessment of the paediatric Patient",
+      "pediatric",
+      "Clinical Approach & Assessment of the pediatric Patient",
+      "1.2 Clinical Approach and Assessment of the pediatric Patient",
+      "CPG 1.2 Clinical Approach and Assessment of the pediatric Patient",
+      "Clinical",
+      "Approach",
+      "Assessment",
+      "Patient"
     ],
     "type": "reference",
     "domains": [
@@ -52,11 +101,37 @@
     "page_start": 24,
     "page_end": 25,
     "aliases": [
-      "Clinical Approach & Assessment of the Obstetric Patient"
+      "Clinical Approach & Assessment of the Obstetric Patient",
+      "CAAOP",
+      "1.3",
+      "CPG 1.3",
+      "CPG1.3",
+      "1.3 Clinical Approach and Assessment of the Obstetric Patient",
+      "CPG 1.3 Clinical Approach and Assessment of the Obstetric Patient"
     ],
     "keywords": [
       "primary survey",
-      "secondary survey"
+      "secondary survey",
+      "reference",
+      "CPG1.3",
+      "Clinical Approach and Patient Assessment",
+      "adult",
+      "Clinical Approach & Assessment of the Obstetric Patient",
+      "CAAOP",
+      "1.3",
+      "CPG 1.3",
+      "1.3 Clinical Approach and Assessment of the Obstetric Patient",
+      "CPG 1.3 Clinical Approach and Assessment of the Obstetric Patient",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Clinical",
+      "Approach",
+      "Assessment",
+      "Obstetric",
+      "Patient"
     ],
     "type": "reference",
     "domains": [
@@ -72,10 +147,34 @@
     "title": "Consciousness Status Assessment",
     "page_start": 26,
     "page_end": 27,
-    "aliases": [],
+    "aliases": [
+      "CSA",
+      "1.4",
+      "CPG 1.4",
+      "CPG1.4",
+      "1.4 Consciousness Status Assessment",
+      "CPG 1.4 Consciousness Status Assessment"
+    ],
     "keywords": [
       "AVPU",
-      "GCS"
+      "GCS",
+      "reference",
+      "CPG1.4",
+      "Clinical Approach and Patient Assessment",
+      "adult",
+      "peds",
+      "CSA",
+      "1.4",
+      "CPG 1.4",
+      "1.4 Consciousness Status Assessment",
+      "CPG 1.4 Consciousness Status Assessment",
+      "glasgow coma scale",
+      "consciousness",
+      "neuro assessment",
+      "alert voice pain unresponsive",
+      "level of consciousness",
+      "Status",
+      "Assessment"
     ],
     "type": "reference",
     "domains": [
@@ -93,12 +192,38 @@
     "page_start": 28,
     "page_end": 29,
     "aliases": [
-      "Airway and Respiratory Status Assessment"
+      "Airway and Respiratory Status Assessment",
+      "ARSA",
+      "1.5",
+      "CPG 1.5",
+      "CPG1.5",
+      "1.5 Airway & Respiratory Status Assessment",
+      "CPG 1.5 Airway & Respiratory Status Assessment"
     ],
     "keywords": [
       "airway",
       "breathing",
-      "ventilation"
+      "ventilation",
+      "reference",
+      "CPG1.5",
+      "Clinical Approach and Patient Assessment",
+      "adult",
+      "peds",
+      "Airway and Respiratory Status Assessment",
+      "ARSA",
+      "1.5",
+      "CPG 1.5",
+      "1.5 Airway & Respiratory Status Assessment",
+      "CPG 1.5 Airway & Respiratory Status Assessment",
+      "respiratory",
+      "oxygenation",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "Status",
+      "Assessment"
     ],
     "type": "reference",
     "domains": [
@@ -115,10 +240,33 @@
     "title": "Perfusion Status Assessment",
     "page_start": 30,
     "page_end": 30,
-    "aliases": [],
+    "aliases": [
+      "PSA",
+      "1.6",
+      "CPG 1.6",
+      "CPG1.6",
+      "1.6 Perfusion Status Assessment",
+      "CPG 1.6 Perfusion Status Assessment"
+    ],
     "keywords": [
       "circulation",
-      "shock"
+      "shock",
+      "reference",
+      "CPG1.6",
+      "Clinical Approach and Patient Assessment",
+      "adult",
+      "peds",
+      "PSA",
+      "1.6",
+      "CPG 1.6",
+      "1.6 Perfusion Status Assessment",
+      "CPG 1.6 Perfusion Status Assessment",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "Perfusion",
+      "Status",
+      "Assessment"
     ],
     "type": "reference",
     "domains": [
@@ -135,10 +283,30 @@
     "title": "Mental Status Assessment",
     "page_start": 31,
     "page_end": 31,
-    "aliases": [],
+    "aliases": [
+      "MSA",
+      "1.7",
+      "CPG 1.7",
+      "CPG1.7",
+      "1.7 Mental Status Assessment",
+      "CPG 1.7 Mental Status Assessment"
+    ],
     "keywords": [
       "orientation",
-      "neurological"
+      "neurological",
+      "reference",
+      "CPG1.7",
+      "Clinical Approach and Patient Assessment",
+      "adult",
+      "peds",
+      "MSA",
+      "1.7",
+      "CPG 1.7",
+      "1.7 Mental Status Assessment",
+      "CPG 1.7 Mental Status Assessment",
+      "Mental",
+      "Status",
+      "Assessment"
     ],
     "type": "reference",
     "domains": [
@@ -156,13 +324,36 @@
     "page_start": 32,
     "page_end": 33,
     "aliases": [
-      "QEWS"
+      "QEWS",
+      "Qatar Early Warning Score",
+      "Qatar Early Warning Score QEWS",
+      "QEWSQ",
+      "1.8",
+      "CPG 1.8",
+      "CPG1.8",
+      "1.8 Qatar Early Warning Score (QEWS)",
+      "CPG 1.8 Qatar Early Warning Score (QEWS)"
     ],
     "keywords": [
       "early warning",
       "score",
       "QEWS",
-      "deterioration"
+      "deterioration",
+      "tool",
+      "CPG1.8",
+      "Clinical Approach and Patient Assessment",
+      "adult",
+      "Qatar Early Warning Score",
+      "Qatar Early Warning Score QEWS",
+      "QEWSQ",
+      "1.8",
+      "CPG 1.8",
+      "1.8 Qatar Early Warning Score (QEWS)",
+      "CPG 1.8 Qatar Early Warning Score (QEWS)",
+      "early warning score",
+      "Qatar",
+      "Early",
+      "Warning"
     ],
     "type": "tool",
     "domains": [
@@ -182,7 +373,13 @@
       "adult arrest",
       "medical arrest",
       "CPR",
-      "cardiac arrest"
+      "cardiac arrest",
+      "AMCA",
+      "2.1",
+      "CPG 2.1",
+      "CPG2.1",
+      "2.1 Adult Medical Cardiac Arrest",
+      "CPG 2.1 Adult Medical Cardiac Arrest"
     ],
     "keywords": [
       "defibrillation",
@@ -213,7 +410,32 @@
       "4 Ts",
       "reversible causes",
       "defib",
-      "shock"
+      "shock",
+      "algorithm",
+      "CPG2.1",
+      "Cardiac Arrest – Resuscitation",
+      "adult",
+      "AMCA",
+      "2.1",
+      "CPG 2.1",
+      "2.1 Adult Medical Cardiac Arrest",
+      "CPG 2.1 Adult Medical Cardiac Arrest",
+      "CPR",
+      "resuscitation",
+      "ROSC",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "SGA",
+      "i-gel",
+      "laryngeal tube",
+      "Medical",
+      "Cardiac",
+      "Arrest"
     ],
     "type": "algorithm",
     "domains": [
@@ -235,7 +457,16 @@
       "TCA",
       "haemorrhage",
       "hemorrhage control",
-      "massive hemorrhage"
+      "massive hemorrhage",
+      "ATCA",
+      "2.2",
+      "CPG 2.2",
+      "CPG2.2",
+      "2.2 Adult Trauma Cardiac Arrest",
+      "CPG 2.2 Adult Trauma Cardiac Arrest",
+      "hemorrhage",
+      "haemorrhage control",
+      "massive haemorrhage"
     ],
     "keywords": [
       "hemorrhage",
@@ -259,7 +490,41 @@
       "shock",
       "haemorrhage",
       "hemorrhage control",
-      "massive hemorrhage"
+      "massive hemorrhage",
+      "algorithm",
+      "CPG2.2",
+      "Cardiac Arrest – Resuscitation",
+      "adult",
+      "ATCA",
+      "2.2",
+      "CPG 2.2",
+      "2.2 Adult Trauma Cardiac Arrest",
+      "CPG 2.2 Adult Trauma Cardiac Arrest",
+      "resuscitation",
+      "defibrillation",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "bleeding",
+      "major bleed",
+      "blood loss",
+      "tranexamic acid",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Trauma",
+      "Cardiac",
+      "Arrest"
     ],
     "type": "algorithm",
     "domains": [
@@ -282,7 +547,16 @@
       "child arrest",
       "Pediatric Medical Cardiac Arrest",
       "paediatric",
-      "paediatric cardiac arrest"
+      "paediatric cardiac arrest",
+      "PMCA",
+      "2.3",
+      "CPG 2.3",
+      "CPG2.3",
+      "2.3 Paediatric Medical Cardiac Arrest",
+      "CPG 2.3 Paediatric Medical Cardiac Arrest",
+      "paediatric Medical Cardiac Arrest",
+      "2.3 pediatric Medical Cardiac Arrest",
+      "CPG 2.3 pediatric Medical Cardiac Arrest"
     ],
     "keywords": [
       "defibrillation",
@@ -303,7 +577,37 @@
       "shock",
       "Pediatric Medical Cardiac Arrest",
       "paediatric",
-      "paediatric cardiac arrest"
+      "paediatric cardiac arrest",
+      "algorithm",
+      "CPG2.3",
+      "Cardiac Arrest – Resuscitation",
+      "peds",
+      "PMCA",
+      "2.3",
+      "CPG 2.3",
+      "2.3 Paediatric Medical Cardiac Arrest",
+      "CPG 2.3 Paediatric Medical Cardiac Arrest",
+      "paediatric Medical Cardiac Arrest",
+      "pediatric",
+      "pediatric cardiac arrest",
+      "2.3 pediatric Medical Cardiac Arrest",
+      "CPG 2.3 pediatric Medical Cardiac Arrest",
+      "resuscitation",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "Medical",
+      "Cardiac",
+      "Arrest"
     ],
     "type": "algorithm",
     "domains": [
@@ -327,7 +631,18 @@
       "paediatric",
       "paediatric trauma arrest",
       "hemorrhage",
-      "massive hemorrhage"
+      "massive hemorrhage",
+      "PTCA",
+      "2.4",
+      "CPG 2.4",
+      "CPG2.4",
+      "2.4 Paediatric Trauma Cardiac Arrest",
+      "CPG 2.4 Paediatric Trauma Cardiac Arrest",
+      "paediatric Trauma Cardiac Arrest",
+      "haemorrhage",
+      "massive haemorrhage",
+      "2.4 pediatric Trauma Cardiac Arrest",
+      "CPG 2.4 pediatric Trauma Cardiac Arrest"
     ],
     "keywords": [
       "haemorrhage",
@@ -350,7 +665,47 @@
       "paediatric",
       "paediatric trauma arrest",
       "hemorrhage",
-      "massive hemorrhage"
+      "massive hemorrhage",
+      "algorithm",
+      "CPG2.4",
+      "Cardiac Arrest – Resuscitation",
+      "peds",
+      "PTCA",
+      "2.4",
+      "CPG 2.4",
+      "2.4 Paediatric Trauma Cardiac Arrest",
+      "CPG 2.4 Paediatric Trauma Cardiac Arrest",
+      "paediatric Trauma Cardiac Arrest",
+      "pediatric",
+      "pediatric trauma arrest",
+      "2.4 pediatric Trauma Cardiac Arrest",
+      "CPG 2.4 pediatric Trauma Cardiac Arrest",
+      "resuscitation",
+      "defibrillation",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "bleeding",
+      "major bleed",
+      "blood loss",
+      "TXA",
+      "tranexamic acid",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Trauma",
+      "Cardiac",
+      "Arrest"
     ],
     "type": "algorithm",
     "domains": [
@@ -370,7 +725,14 @@
       "neonatal resuscitation",
       "nls",
       "newborn CPR",
-      "Resuscitation of the New-born and Neonates"
+      "Resuscitation of the New-born and Neonates",
+      "Resuscitation of the New born & Neonates",
+      "RNBN",
+      "2.5",
+      "CPG 2.5",
+      "CPG2.5",
+      "2.5 Resuscitation of the New-born & Neonates",
+      "CPG 2.5 Resuscitation of the New-born & Neonates"
     ],
     "keywords": [
       "apgar",
@@ -384,7 +746,32 @@
       "meconium",
       "MRSOPA",
       "epinephrine 0.01-0.03 mg/kg",
-      "umbilical venous catheter"
+      "umbilical venous catheter",
+      "algorithm",
+      "CPG2.5",
+      "Cardiac Arrest – Resuscitation",
+      "neonatal",
+      "Resuscitation of the New-born and Neonates",
+      "Resuscitation of the New born & Neonates",
+      "RNBN",
+      "2.5",
+      "CPG 2.5",
+      "2.5 Resuscitation of the New-born & Neonates",
+      "CPG 2.5 Resuscitation of the New-born & Neonates",
+      "CPR",
+      "resuscitation",
+      "defibrillation",
+      "shock",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "newborn",
+      "neonate",
+      "new-born",
+      "born",
+      "Neonates"
     ],
     "type": "algorithm",
     "domains": [
@@ -401,7 +788,15 @@
     "page_start": 51,
     "page_end": 53,
     "aliases": [
-      "post rosc"
+      "post rosc",
+      "Post Cardiac Arrest Care",
+      "Post Cardiac Arrest ROSC Care",
+      "PCARC",
+      "2.6",
+      "CPG 2.6",
+      "CPG2.6",
+      "2.6 Post Cardiac Arrest (ROSC) Care",
+      "CPG 2.6 Post Cardiac Arrest (ROSC) Care"
     ],
     "keywords": [
       "oxygenation",
@@ -420,7 +815,40 @@
       "defib",
       "defibrillator",
       "AED",
-      "shock"
+      "shock",
+      "algorithm",
+      "CPG2.6",
+      "Cardiac Arrest – Resuscitation",
+      "adult",
+      "Post Cardiac Arrest Care",
+      "Post Cardiac Arrest ROSC Care",
+      "PCARC",
+      "2.6",
+      "CPG 2.6",
+      "2.6 Post Cardiac Arrest (ROSC) Care",
+      "CPG 2.6 Post Cardiac Arrest (ROSC) Care",
+      "CPR",
+      "resuscitation",
+      "defibrillation",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "return of spontaneous circulation",
+      "post cardiac arrest",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "cardiac monitoring",
+      "electrocardiogram",
+      "BP",
+      "NIBP",
+      "hypertension",
+      "Post",
+      "Cardiac",
+      "Arrest",
+      "Care"
     ],
     "type": "algorithm",
     "domains": [
@@ -436,10 +864,40 @@
     "title": "Termination of Resuscitation / Declaration of Death",
     "page_start": 54,
     "page_end": 54,
-    "aliases": [],
+    "aliases": [
+      "Termination of Resuscitation / Declaration of Death",
+      "Termination of Resuscitation and Declaration of Death",
+      "TRDD",
+      "2.7",
+      "CPG 2.7",
+      "CPG2.7",
+      "2.7 Termination of Resuscitation / Declaration of Death",
+      "CPG 2.7 Termination of Resuscitation / Declaration of Death"
+    ],
     "keywords": [
       "termination",
-      "death"
+      "death",
+      "operations",
+      "CPG2.7",
+      "Cardiac Arrest – Resuscitation",
+      "adult",
+      "Termination of Resuscitation / Declaration of Death",
+      "Termination of Resuscitation and Declaration of Death",
+      "TRDD",
+      "2.7",
+      "CPG 2.7",
+      "2.7 Termination of Resuscitation / Declaration of Death",
+      "CPG 2.7 Termination of Resuscitation / Declaration of Death",
+      "CPR",
+      "resuscitation",
+      "defibrillation",
+      "shock",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "Declaration"
     ],
     "type": "operations",
     "domains": [
@@ -455,7 +913,15 @@
     "title": "Cardiac Arrest - Special Circumstances",
     "page_start": 55,
     "page_end": 55,
-    "aliases": [],
+    "aliases": [
+      "Cardiac Arrest Special Circumstances",
+      "CASC",
+      "2.8",
+      "CPG 2.8",
+      "CPG2.8",
+      "2.8 Cardiac Arrest - Special Circumstances",
+      "CPG 2.8 Cardiac Arrest - Special Circumstances"
+    ],
     "keywords": [
       "hypothermia",
       "pregnancy",
@@ -463,7 +929,37 @@
       "defib",
       "defibrillator",
       "AED",
-      "shock"
+      "shock",
+      "algorithm",
+      "CPG2.8",
+      "Cardiac Arrest – Resuscitation",
+      "adult",
+      "peds",
+      "Cardiac Arrest Special Circumstances",
+      "CASC",
+      "2.8",
+      "CPG 2.8",
+      "2.8 Cardiac Arrest - Special Circumstances",
+      "CPG 2.8 Cardiac Arrest - Special Circumstances",
+      "CPR",
+      "resuscitation",
+      "defibrillation",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Cardiac",
+      "Arrest",
+      "Special",
+      "Circumstances"
     ],
     "type": "algorithm",
     "domains": [
@@ -481,11 +977,38 @@
     "page_start": 56,
     "page_end": 57,
     "aliases": [
-      "ecmo"
+      "ecmo",
+      "EPIC",
+      "2.9",
+      "CPG 2.9",
+      "CPG2.9",
+      "2.9 ECMO Pathway Inclusion Criteria",
+      "CPG 2.9 ECMO Pathway Inclusion Criteria"
     ],
     "keywords": [
       "ecmo",
-      "refractory arrest"
+      "refractory arrest",
+      "operations",
+      "CPG2.9",
+      "Cardiac Arrest – Resuscitation",
+      "adult",
+      "EPIC",
+      "2.9",
+      "CPG 2.9",
+      "2.9 ECMO Pathway Inclusion Criteria",
+      "CPG 2.9 ECMO Pathway Inclusion Criteria",
+      "CPR",
+      "resuscitation",
+      "defibrillation",
+      "shock",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "Pathway",
+      "Inclusion",
+      "Criteria"
     ],
     "type": "operations",
     "domains": [
@@ -504,7 +1027,12 @@
     "aliases": [
       "cva",
       "Cerebrovascular Accident",
-      "Acute Stroke"
+      "Acute Stroke",
+      "3.1",
+      "CPG 3.1",
+      "CPG3.1",
+      "3.1 Stroke",
+      "CPG 3.1 Stroke"
     ],
     "keywords": [
       "fast",
@@ -516,7 +1044,22 @@
       "onset time",
       "CT brain",
       "NIHSS",
-      "aspirin (post imaging)"
+      "aspirin (post imaging)",
+      "algorithm",
+      "CPG3.1",
+      "Neurological",
+      "adult",
+      "3.1",
+      "CPG 3.1",
+      "3.1 Stroke",
+      "CPG 3.1 Stroke",
+      "CVA",
+      "BEFAST",
+      "facial droop",
+      "arm weakness",
+      "speech difficulty",
+      "large vessel occlusion",
+      "Stroke"
     ],
     "type": "algorithm",
     "domains": [
@@ -533,14 +1076,31 @@
     "page_start": 61,
     "page_end": 64,
     "aliases": [
-      "status epilepticus"
+      "status epilepticus",
+      "3.2",
+      "CPG 3.2",
+      "CPG3.2",
+      "3.2 Seizures",
+      "CPG 3.2 Seizures"
     ],
     "keywords": [
       "midazolam",
       "benzodiazepine",
       "status epilepticus",
       "midazolam 10 mg",
-      "glucose check"
+      "glucose check",
+      "algorithm",
+      "CPG3.2",
+      "Neurological",
+      "adult",
+      "peds",
+      "3.2",
+      "CPG 3.2",
+      "3.2 Seizures",
+      "CPG 3.2 Seizures",
+      "seizures",
+      "fit",
+      "convulsion"
     ],
     "type": "algorithm",
     "domains": [
@@ -560,7 +1120,12 @@
     "aliases": [
       "ACS",
       "chest pain protocol",
-      "STEMI/NSTEMI"
+      "STEMI/NSTEMI",
+      "4.1",
+      "CPG 4.1",
+      "CPG4.1",
+      "4.1 Acute Coronary Syndrome",
+      "CPG 4.1 Acute Coronary Syndrome"
     ],
     "keywords": [
       "stemi",
@@ -581,7 +1146,31 @@
       "reperfusion therapy",
       "ischemic chest pain",
       "EKG",
-      "12 lead ECG"
+      "12 lead ECG",
+      "algorithm",
+      "CPG4.1",
+      "Cardiac",
+      "adult",
+      "ACS",
+      "4.1",
+      "CPG 4.1",
+      "4.1 Acute Coronary Syndrome",
+      "CPG 4.1 Acute Coronary Syndrome",
+      "cardiac chest pain",
+      "heart attack",
+      "MI",
+      "myocardial infarction",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "cardiac monitoring",
+      "electrocardiogram",
+      "Acute",
+      "Coronary",
+      "Syndrome"
     ],
     "type": "algorithm",
     "domains": [
@@ -599,7 +1188,12 @@
     "page_end": 70,
     "aliases": [
       "bradycardia",
-      "Symptomatic Bradycardia"
+      "Symptomatic Bradycardia",
+      "4.2",
+      "CPG 4.2",
+      "CPG4.2",
+      "4.2 Bradyarrhythmias",
+      "CPG 4.2 Bradyarrhythmias"
     ],
     "keywords": [
       "atropine",
@@ -616,7 +1210,25 @@
       "chronotropic",
       "isoprenaline",
       "isoproterenol",
-      "AV block"
+      "AV block",
+      "algorithm",
+      "CPG4.2",
+      "Cardiac",
+      "adult",
+      "4.2",
+      "CPG 4.2",
+      "4.2 Bradyarrhythmias",
+      "CPG 4.2 Bradyarrhythmias",
+      "low blood pressure",
+      "poor perfusion",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "bradycardia",
+      "Bradyarrhythmias"
     ],
     "type": "algorithm",
     "domains": [
@@ -636,7 +1248,13 @@
       "wide complex tachycardia",
       "vt",
       "Wide-complex Tachycardia",
-      "Ventricular Tachycardia"
+      "Ventricular Tachycardia",
+      "TBC",
+      "4.3",
+      "CPG 4.3",
+      "CPG4.3",
+      "4.3 Tachyarrhythmias – Broad complex",
+      "CPG 4.3 Tachyarrhythmias – Broad complex"
     ],
     "keywords": [
       "amiodarone",
@@ -651,7 +1269,21 @@
       "unstable",
       "polymorphic",
       "torsades de pointes",
-      "stable"
+      "stable",
+      "algorithm",
+      "CPG4.3",
+      "Cardiac",
+      "adult",
+      "TBC",
+      "4.3",
+      "CPG 4.3",
+      "4.3 Tachyarrhythmias – Broad complex",
+      "CPG 4.3 Tachyarrhythmias – Broad complex",
+      "SVT",
+      "tachyarrhythmia",
+      "Tachyarrhythmias",
+      "Broad",
+      "complex"
     ],
     "type": "algorithm",
     "domains": [
@@ -674,7 +1306,13 @@
       "narrow complex tachycardia",
       "supraventricular tachycardia",
       "PSVT",
-      "Narrow-complex Tachycardia"
+      "Narrow-complex Tachycardia",
+      "TNC",
+      "4.4",
+      "CPG 4.4",
+      "CPG4.4",
+      "4.4 Tachyarrhythmias – Narrow complex",
+      "CPG 4.4 Tachyarrhythmias – Narrow complex"
     ],
     "keywords": [
       "adenosine",
@@ -696,7 +1334,21 @@
       "12 mg",
       "cardioversion",
       "regular",
-      "irregular"
+      "irregular",
+      "algorithm",
+      "CPG4.4",
+      "Cardiac",
+      "adult",
+      "TNC",
+      "4.4",
+      "CPG 4.4",
+      "4.4 Tachyarrhythmias – Narrow complex",
+      "CPG 4.4 Tachyarrhythmias – Narrow complex",
+      "vagal maneuvers",
+      "tachyarrhythmia",
+      "Tachyarrhythmias",
+      "Narrow",
+      "complex"
     ],
     "type": "algorithm",
     "domains": [
@@ -715,7 +1367,19 @@
     "aliases": [
       "pulmonary edema",
       "apo",
-      "pulmonary oedema"
+      "pulmonary oedema",
+      "4.5",
+      "CPG 4.5",
+      "CPG4.5",
+      "4.5 Acute Pulmonary Oedema",
+      "CPG 4.5 Acute Pulmonary Oedema",
+      "Acute Pulmonary edema",
+      "Acute Pulmonary Ooedema",
+      "pulmonary ooedema",
+      "4.5 Acute Pulmonary edema",
+      "4.5 Acute Pulmonary Ooedema",
+      "CPG 4.5 Acute Pulmonary edema",
+      "CPG 4.5 Acute Pulmonary Ooedema"
     ],
     "keywords": [
       "cpap",
@@ -723,7 +1387,33 @@
       "bi-level",
       "nitroglycerin",
       "furosemide (as per protocol)",
-      "pulmonary oedema"
+      "pulmonary oedema",
+      "algorithm",
+      "CPG4.5",
+      "Cardiac",
+      "adult",
+      "APO",
+      "4.5",
+      "CPG 4.5",
+      "4.5 Acute Pulmonary Oedema",
+      "CPG 4.5 Acute Pulmonary Oedema",
+      "Acute Pulmonary edema",
+      "Acute Pulmonary Ooedema",
+      "pulmonary edema",
+      "pulmonary ooedema",
+      "4.5 Acute Pulmonary edema",
+      "4.5 Acute Pulmonary Ooedema",
+      "CPG 4.5 Acute Pulmonary edema",
+      "CPG 4.5 Acute Pulmonary Ooedema",
+      "Acute Pulmonary oedema",
+      "Acute Pulmonary Oooedema",
+      "pulmonary oooedema",
+      "4.5 Acute Pulmonary Oooedema",
+      "CPG 4.5 Acute Pulmonary Oooedema",
+      "heart failure",
+      "Acute",
+      "Pulmonary",
+      "Oedema"
     ],
     "type": "algorithm",
     "domains": [
@@ -739,10 +1429,32 @@
     "title": "Cardiogenic Shock",
     "page_start": 78,
     "page_end": 79,
-    "aliases": [],
+    "aliases": [
+      "CS",
+      "4.6",
+      "CPG 4.6",
+      "CPG4.6",
+      "4.6 Cardiogenic Shock",
+      "CPG 4.6 Cardiogenic Shock"
+    ],
     "keywords": [
       "inotrope",
-      "vasopressor"
+      "vasopressor",
+      "algorithm",
+      "CPG4.6",
+      "Cardiac",
+      "adult",
+      "CS",
+      "4.6",
+      "CPG 4.6",
+      "4.6 Cardiogenic Shock",
+      "CPG 4.6 Cardiogenic Shock",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "heart failure",
+      "Cardiogenic",
+      "Shock"
     ],
     "type": "algorithm",
     "domains": [
@@ -761,7 +1473,13 @@
     "aliases": [
       "aortic dissection",
       "dissection",
-      "acute aortic syndrome"
+      "acute aortic syndrome",
+      "AAD",
+      "4.7",
+      "CPG 4.7",
+      "CPG4.7",
+      "4.7 Acute Aortic Dissection",
+      "CPG 4.7 Acute Aortic Dissection"
     ],
     "keywords": [
       "aortic dissection",
@@ -773,7 +1491,27 @@
       "hypertension",
       "hypotension",
       "malperfusion",
-      "syncope"
+      "syncope",
+      "algorithm",
+      "CPG4.7",
+      "Cardiac",
+      "adult",
+      "AAD",
+      "4.7",
+      "CPG 4.7",
+      "4.7 Acute Aortic Dissection",
+      "CPG 4.7 Acute Aortic Dissection",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "BP",
+      "NIBP",
+      "Acute",
+      "Aortic",
+      "Dissection"
     ],
     "type": "algorithm",
     "domains": [
@@ -792,7 +1530,13 @@
     "aliases": [
       "status asthmaticus",
       "Asthma Exacerbation",
-      "nebuliser"
+      "nebuliser",
+      "5.1",
+      "CPG 5.1",
+      "CPG5.1",
+      "5.1 Asthma",
+      "CPG 5.1 Asthma",
+      "nebulizer"
     ],
     "keywords": [
       "salbutamol",
@@ -813,7 +1557,26 @@
       "budesonide",
       "PEFR",
       "near-fatal",
-      "nebuliser"
+      "nebuliser",
+      "algorithm",
+      "CPG5.1",
+      "Respiratory",
+      "adult",
+      "peds",
+      "5.1",
+      "CPG 5.1",
+      "5.1 Asthma",
+      "CPG 5.1 Asthma",
+      "magnesium sulphate",
+      "bronchospasm",
+      "shortness of breath",
+      "SOB",
+      "ventolin",
+      "breathing",
+      "dyspnea",
+      "oxygen",
+      "SpO2",
+      "Asthma"
     ],
     "type": "algorithm",
     "domains": [
@@ -833,7 +1596,15 @@
     "aliases": [
       "chronic obstructive pulmonary disease",
       "COPD Exacerbation",
-      "nebuliser"
+      "nebuliser",
+      "Chronic Obstructive Pulmonary Disease COPD",
+      "COPDC",
+      "5.2",
+      "CPG 5.2",
+      "CPG5.2",
+      "5.2 Chronic Obstructive Pulmonary Disease (COPD)",
+      "CPG 5.2 Chronic Obstructive Pulmonary Disease (COPD)",
+      "nebulizer"
     ],
     "keywords": [
       "bronchodilator",
@@ -848,7 +1619,28 @@
       "steroid early",
       "oxygen 88–92%",
       "CO2 retention",
-      "nebuliser"
+      "nebuliser",
+      "algorithm",
+      "CPG5.2",
+      "Respiratory",
+      "adult",
+      "Chronic Obstructive Pulmonary Disease",
+      "Chronic Obstructive Pulmonary Disease COPD",
+      "COPDC",
+      "5.2",
+      "CPG 5.2",
+      "5.2 Chronic Obstructive Pulmonary Disease (COPD)",
+      "CPG 5.2 Chronic Obstructive Pulmonary Disease (COPD)",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "SpO2",
+      "Chronic",
+      "Obstructive",
+      "Pulmonary",
+      "Disease",
+      "COPD"
     ],
     "type": "algorithm",
     "domains": [
@@ -865,14 +1657,37 @@
     "page_start": 89,
     "page_end": 91,
     "aliases": [
-      "laryngotracheobronchitis"
+      "laryngotracheobronchitis",
+      "5.3",
+      "CPG 5.3",
+      "CPG5.3",
+      "5.3 Croup",
+      "CPG 5.3 Croup"
     ],
     "keywords": [
       "stridor",
       "budesonide",
       "adrenaline neb",
       "seal bark cough",
-      "budesonide neb"
+      "budesonide neb",
+      "algorithm",
+      "CPG5.3",
+      "Respiratory",
+      "peds",
+      "5.3",
+      "CPG 5.3",
+      "5.3 Croup",
+      "CPG 5.3 Croup",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "barking cough",
+      "adrenaline nebuliser",
+      "dexamethasone",
+      "Croup"
     ],
     "type": "algorithm",
     "domains": [
@@ -888,14 +1703,37 @@
     "title": "Epiglottitis",
     "page_start": 92,
     "page_end": 93,
-    "aliases": [],
+    "aliases": [
+      "5.4",
+      "CPG 5.4",
+      "CPG5.4",
+      "5.4 Epiglottitis",
+      "CPG 5.4 Epiglottitis"
+    ],
     "keywords": [
       "airway",
       "stridor",
       "drooling",
       "toxic child",
       "tripod",
-      "avoid agitation"
+      "avoid agitation",
+      "algorithm",
+      "CPG5.4",
+      "Respiratory",
+      "peds",
+      "5.4",
+      "CPG 5.4",
+      "5.4 Epiglottitis",
+      "CPG 5.4 Epiglottitis",
+      "breathing",
+      "oxygenation",
+      "ventilation",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "Epiglottitis"
     ],
     "type": "algorithm",
     "domains": [
@@ -913,13 +1751,41 @@
     "page_end": 95,
     "aliases": [
       "FBAO",
-      "choking"
+      "choking",
+      "5.5",
+      "CPG 5.5",
+      "CPG5.5",
+      "5.5 Foreign Body Airway Obstruction",
+      "CPG 5.5 Foreign Body Airway Obstruction"
     ],
     "keywords": [
       "back blows",
       "abdominal thrusts",
       "choking",
-      "Magill forceps"
+      "Magill forceps",
+      "algorithm",
+      "CPG5.5",
+      "Respiratory",
+      "adult",
+      "peds",
+      "FBAO",
+      "5.5",
+      "CPG 5.5",
+      "5.5 Foreign Body Airway Obstruction",
+      "CPG 5.5 Foreign Body Airway Obstruction",
+      "airway obstruction",
+      "breathing",
+      "oxygenation",
+      "ventilation",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "Foreign",
+      "Body",
+      "Airway",
+      "Obstruction"
     ],
     "type": "algorithm",
     "domains": [
@@ -936,10 +1802,32 @@
     "title": "Hyperventilation",
     "page_start": 96,
     "page_end": 97,
-    "aliases": [],
+    "aliases": [
+      "5.6",
+      "CPG 5.6",
+      "CPG5.6",
+      "5.6 Hyperventilation",
+      "CPG 5.6 Hyperventilation"
+    ],
     "keywords": [
       "anxiety",
-      "alkalosis"
+      "alkalosis",
+      "algorithm",
+      "CPG5.6",
+      "Respiratory",
+      "adult",
+      "peds",
+      "5.6",
+      "CPG 5.6",
+      "5.6 Hyperventilation",
+      "CPG 5.6 Hyperventilation",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "Hyperventilation"
     ],
     "type": "algorithm",
     "domains": [
@@ -957,7 +1845,12 @@
     "page_start": 98,
     "page_end": 99,
     "aliases": [
-      "pe"
+      "pe",
+      "5.7",
+      "CPG 5.7",
+      "CPG5.7",
+      "5.7 Pulmonary Embolism",
+      "CPG 5.7 Pulmonary Embolism"
     ],
     "keywords": [
       "dvt",
@@ -969,7 +1862,30 @@
       "hemoptysis",
       "syncope",
       "hypoxia",
-      "S1Q3T3"
+      "S1Q3T3",
+      "algorithm",
+      "CPG5.7",
+      "Respiratory",
+      "adult",
+      "PE",
+      "5.7",
+      "CPG 5.7",
+      "5.7 Pulmonary Embolism",
+      "CPG 5.7 Pulmonary Embolism",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "Pulmonary",
+      "Embolism"
     ],
     "type": "algorithm",
     "domains": [
@@ -985,13 +1901,38 @@
     "title": "Severe Respiratory Infection",
     "page_start": 100,
     "page_end": 101,
-    "aliases": [],
+    "aliases": [
+      "SRI",
+      "5.8",
+      "CPG 5.8",
+      "CPG5.8",
+      "5.8 Severe Respiratory Infection",
+      "CPG 5.8 Severe Respiratory Infection"
+    ],
     "keywords": [
       "sepsis",
       "isolation",
       "isolation precautions",
       "droplet",
-      "airborne"
+      "airborne",
+      "algorithm",
+      "CPG5.8",
+      "Respiratory",
+      "adult",
+      "peds",
+      "SRI",
+      "5.8",
+      "CPG 5.8",
+      "5.8 Severe Respiratory Infection",
+      "CPG 5.8 Severe Respiratory Infection",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "Severe",
+      "Infection"
     ],
     "type": "algorithm",
     "domains": [
@@ -1009,12 +1950,36 @@
     "page_start": 102,
     "page_end": 105,
     "aliases": [
-      "trach emergency"
+      "trach emergency",
+      "TE",
+      "5.9",
+      "CPG 5.9",
+      "CPG5.9",
+      "5.9 Tracheostomy Emergencies",
+      "CPG 5.9 Tracheostomy Emergencies"
     ],
     "keywords": [
       "dislodgement",
       "occlusion",
-      "suction"
+      "suction",
+      "algorithm",
+      "CPG5.9",
+      "Respiratory",
+      "adult",
+      "peds",
+      "TE",
+      "5.9",
+      "CPG 5.9",
+      "5.9 Tracheostomy Emergencies",
+      "CPG 5.9 Tracheostomy Emergencies",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "Tracheostomy",
+      "Emergencies"
     ],
     "type": "algorithm",
     "domains": [
@@ -1032,12 +1997,39 @@
     "page_start": 106,
     "page_end": 107,
     "aliases": [
-      "acute abdomen"
+      "acute abdomen",
+      "Abdominal Emergencies (Non traumatic)",
+      "Abdominal Emergencies",
+      "AENT",
+      "6.1",
+      "CPG 6.1",
+      "CPG6.1",
+      "6.1 Abdominal Emergencies (Non-traumatic)",
+      "CPG 6.1 Abdominal Emergencies (Non-traumatic)"
     ],
     "keywords": [
       "appendicitis",
       "aaa",
-      "gi bleed"
+      "gi bleed",
+      "algorithm",
+      "CPG6.1",
+      "Medical Conditions",
+      "adult",
+      "peds",
+      "Abdominal Emergencies (Non traumatic)",
+      "Abdominal Emergencies",
+      "AENT",
+      "6.1",
+      "CPG 6.1",
+      "6.1 Abdominal Emergencies (Non-traumatic)",
+      "CPG 6.1 Abdominal Emergencies (Non-traumatic)",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Abdominal",
+      "Emergencies",
+      "traumatic"
     ],
     "type": "algorithm",
     "domains": [
@@ -1057,7 +2049,13 @@
     "aliases": [
       "allergic reaction",
       "allergy emergency",
-      "Anaphylaxis & Allergic Reactions"
+      "Anaphylaxis & Allergic Reactions",
+      "AAR",
+      "6.2",
+      "CPG 6.2",
+      "CPG6.2",
+      "6.2 Anaphylaxis and Allergic Reactions",
+      "CPG 6.2 Anaphylaxis and Allergic Reactions"
     ],
     "keywords": [
       "adrenaline",
@@ -1067,7 +2065,26 @@
       "epinephrine",
       "rash",
       "wheeze",
-      "hypotension"
+      "hypotension",
+      "algorithm",
+      "CPG6.2",
+      "Medical Conditions",
+      "adult",
+      "peds",
+      "Anaphylaxis & Allergic Reactions",
+      "AAR",
+      "6.2",
+      "CPG 6.2",
+      "6.2 Anaphylaxis and Allergic Reactions",
+      "CPG 6.2 Anaphylaxis and Allergic Reactions",
+      "allergic reaction",
+      "allergy",
+      "hives",
+      "urticaria",
+      "epipen",
+      "Anaphylaxis",
+      "Allergic",
+      "Reactions"
     ],
     "type": "algorithm",
     "domains": [
@@ -1091,7 +2108,13 @@
       "Hypoglycaemia and Hyperglycemia",
       "hypoglycaemia",
       "hyperglycaemia",
-      "Hypoglycaemia & Hyperglycaemia"
+      "Hypoglycaemia & Hyperglycaemia",
+      "HH",
+      "6.3",
+      "CPG 6.3",
+      "CPG6.3",
+      "6.3 Hypoglycaemia and Hyperglycaemia",
+      "CPG 6.3 Hypoglycaemia and Hyperglycaemia"
     ],
     "keywords": [
       "dextrose",
@@ -1108,7 +2131,24 @@
       "Hypoglycemia and Hyperglycaemia",
       "Hypoglycaemia and Hyperglycemia",
       "hypoglycaemia",
-      "hyperglycaemia"
+      "hyperglycaemia",
+      "algorithm",
+      "CPG6.3",
+      "Medical Conditions",
+      "adult",
+      "peds",
+      "Hypoglycaemia & Hyperglycaemia",
+      "HH",
+      "6.3",
+      "CPG 6.3",
+      "6.3 Hypoglycaemia and Hyperglycaemia",
+      "CPG 6.3 Hypoglycaemia and Hyperglycaemia",
+      "hypoglycemia",
+      "low sugar",
+      "low blood glucose",
+      "hyperglycemia",
+      "high sugar",
+      "high blood glucose"
     ],
     "type": "algorithm",
     "domains": [
@@ -1127,14 +2167,36 @@
     "page_end": 116,
     "aliases": [
       "emesis",
-      "Nausea & Vomiting"
+      "Nausea & Vomiting",
+      "NV",
+      "6.4",
+      "CPG 6.4",
+      "CPG6.4",
+      "6.4 Nausea and Vomiting",
+      "CPG 6.4 Nausea and Vomiting"
     ],
     "keywords": [
       "ondansetron",
       "metoclopramide",
       "QT risk",
       "fluids",
-      "antiemetics"
+      "antiemetics",
+      "algorithm",
+      "CPG6.4",
+      "Medical Conditions",
+      "adult",
+      "peds",
+      "Nausea & Vomiting",
+      "NV",
+      "6.4",
+      "CPG 6.4",
+      "6.4 Nausea and Vomiting",
+      "CPG 6.4 Nausea and Vomiting",
+      "vomiting",
+      "antiemetic",
+      "zofran",
+      "reglan",
+      "Nausea"
     ],
     "type": "algorithm",
     "domains": [
@@ -1151,7 +2213,15 @@
     "title": "Non-Traumatic Shock",
     "page_start": 117,
     "page_end": 118,
-    "aliases": [],
+    "aliases": [
+      "Non Traumatic Shock",
+      "NTS",
+      "6.5",
+      "CPG 6.5",
+      "CPG6.5",
+      "6.5 Non-Traumatic Shock",
+      "CPG 6.5 Non-Traumatic Shock"
+    ],
     "keywords": [
       "septic",
       "cardiogenic",
@@ -1163,7 +2233,30 @@
       "vasopressor",
       "shock index",
       "lactate",
-      "ultrasound if available"
+      "ultrasound if available",
+      "algorithm",
+      "CPG6.5",
+      "Medical Conditions",
+      "adult",
+      "peds",
+      "Non Traumatic Shock",
+      "NTS",
+      "6.5",
+      "CPG 6.5",
+      "6.5 Non-Traumatic Shock",
+      "CPG 6.5 Non-Traumatic Shock",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "sepsis",
+      "hypovolaemia",
+      "hypovolemia",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Traumatic",
+      "Shock"
     ],
     "type": "algorithm",
     "domains": [
@@ -1181,7 +2274,12 @@
     "page_start": 119,
     "page_end": 122,
     "aliases": [
-      "septic shock"
+      "septic shock",
+      "6.6",
+      "CPG 6.6",
+      "CPG6.6",
+      "6.6 Sepsis",
+      "CPG 6.6 Sepsis"
     ],
     "keywords": [
       "infection",
@@ -1206,7 +2304,19 @@
       "MAP",
       "hypotension",
       "fever",
-      "tachycardia"
+      "tachycardia",
+      "algorithm",
+      "CPG6.6",
+      "Medical Conditions",
+      "adult",
+      "peds",
+      "6.6",
+      "CPG 6.6",
+      "6.6 Sepsis",
+      "CPG 6.6 Sepsis",
+      "low blood pressure",
+      "poor perfusion",
+      "Sepsis"
     ],
     "type": "algorithm",
     "domains": [
@@ -1227,7 +2337,13 @@
       "adrenal crisis",
       "Addisonian crisis",
       "Addison disease",
-      "Addison’s disease"
+      "Addison’s disease",
+      "AI",
+      "6.7",
+      "CPG 6.7",
+      "CPG6.7",
+      "6.7 Adrenal Insufficiency",
+      "CPG 6.7 Adrenal Insufficiency"
     ],
     "keywords": [
       "adrenal insufficiency",
@@ -1240,7 +2356,21 @@
       "vomiting",
       "weakness",
       "hyponatraemia",
-      "hyperkalaemia"
+      "hyperkalaemia",
+      "algorithm",
+      "CPG6.7",
+      "Medical Conditions",
+      "adult",
+      "peds",
+      "AI",
+      "6.7",
+      "CPG 6.7",
+      "6.7 Adrenal Insufficiency",
+      "CPG 6.7 Adrenal Insufficiency",
+      "low blood pressure",
+      "poor perfusion",
+      "Adrenal",
+      "Insufficiency"
     ],
     "type": "algorithm",
     "domains": [
@@ -1259,7 +2389,15 @@
     "page_end": 133,
     "aliases": [
       "ABD",
-      "excited delirium"
+      "excited delirium",
+      "7.1",
+      "CPG 7.1",
+      "CPG7.1",
+      "7.1 Acute Behavioural Disturbance",
+      "CPG 7.1 Acute Behavioural Disturbance",
+      "Acute behavioral Disturbance",
+      "7.1 Acute behavioral Disturbance",
+      "CPG 7.1 Acute behavioral Disturbance"
     ],
     "keywords": [
       "sedation",
@@ -1268,7 +2406,24 @@
       "excited delirium",
       "ketamine",
       "midazolam",
-      "physical restraint"
+      "physical restraint",
+      "algorithm",
+      "CPG7.1",
+      "Mental Health and Behavioural Disturbances",
+      "adult",
+      "peds",
+      "7.1",
+      "CPG 7.1",
+      "7.1 Acute Behavioural Disturbance",
+      "CPG 7.1 Acute Behavioural Disturbance",
+      "Acute behavioral Disturbance",
+      "7.1 Acute behavioral Disturbance",
+      "CPG 7.1 Acute behavioral Disturbance",
+      "Acute behavioural Disturbance",
+      "Mental Health and behavioral Disturbances",
+      "Acute",
+      "Behavioural",
+      "Disturbance"
     ],
     "type": "algorithm",
     "domains": [
@@ -1286,13 +2441,34 @@
     "page_start": 134,
     "page_end": 135,
     "aliases": [
-      "benzo toxicity"
+      "benzo toxicity",
+      "8.1",
+      "CPG 8.1",
+      "CPG8.1",
+      "8.1 Benzodiazepine",
+      "CPG 8.1 Benzodiazepine"
     ],
     "keywords": [
       "sedation",
       "respiratory depression",
       "BZD",
-      "flumazenil caution"
+      "flumazenil caution",
+      "algorithm",
+      "CPG8.1",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "8.1",
+      "CPG 8.1",
+      "8.1 Benzodiazepine",
+      "CPG 8.1 Benzodiazepine",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "Benzodiazepine"
     ],
     "type": "algorithm",
     "domains": [
@@ -1310,13 +2486,36 @@
     "page_start": 136,
     "page_end": 137,
     "aliases": [
-      "beta-blocker toxicity"
+      "beta-blocker toxicity",
+      "BB",
+      "8.2",
+      "CPG 8.2",
+      "CPG8.2",
+      "8.2 Beta Blocker",
+      "CPG 8.2 Beta Blocker"
     ],
     "keywords": [
       "bradycardia",
       "hypotension",
       "glucagon",
-      "BB overdose"
+      "BB overdose",
+      "algorithm",
+      "CPG8.2",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "BB",
+      "8.2",
+      "CPG 8.2",
+      "8.2 Beta Blocker",
+      "CPG 8.2 Beta Blocker",
+      "poisoning",
+      "toxicity",
+      "OD",
+      "naloxone",
+      "narcan",
+      "Beta",
+      "Blocker"
     ],
     "type": "algorithm",
     "domains": [
@@ -1335,14 +2534,40 @@
     "page_end": 139,
     "aliases": [
       "ccb toxicity",
-      "hyperglycemia"
+      "hyperglycemia",
+      "CCB",
+      "8.3",
+      "CPG 8.3",
+      "CPG8.3",
+      "8.3 Calcium Channel Blocker",
+      "CPG 8.3 Calcium Channel Blocker"
     ],
     "keywords": [
       "hyperglycaemia",
       "calcium",
       "vasopressor",
       "CCB overdose",
-      "hyperglycemia"
+      "hyperglycemia",
+      "algorithm",
+      "CPG8.3",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "CCB",
+      "8.3",
+      "CPG 8.3",
+      "8.3 Calcium Channel Blocker",
+      "CPG 8.3 Calcium Channel Blocker",
+      "high sugar",
+      "high blood glucose",
+      "DKA",
+      "poisoning",
+      "toxicity",
+      "OD",
+      "naloxone",
+      "narcan",
+      "Channel",
+      "Blocker"
     ],
     "type": "algorithm",
     "domains": [
@@ -1360,13 +2585,31 @@
     "page_start": 140,
     "page_end": 141,
     "aliases": [
-      "co poisoning"
+      "co poisoning",
+      "CM",
+      "8.4",
+      "CPG 8.4",
+      "CPG8.4",
+      "8.4 Carbon Monoxide",
+      "CPG 8.4 Carbon Monoxide"
     ],
     "keywords": [
       "carboxyhaemoglobin",
       "oxygen",
       "CO poisoning",
-      "100% oxygen"
+      "100% oxygen",
+      "algorithm",
+      "CPG8.4",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "CM",
+      "8.4",
+      "CPG 8.4",
+      "8.4 Carbon Monoxide",
+      "CPG 8.4 Carbon Monoxide",
+      "Carbon",
+      "Monoxide"
     ],
     "type": "algorithm",
     "domains": [
@@ -1384,12 +2627,27 @@
     "page_start": 142,
     "page_end": 143,
     "aliases": [
-      "cyanide poisoning"
+      "cyanide poisoning",
+      "8.5",
+      "CPG 8.5",
+      "CPG8.5",
+      "8.5 Cyanide",
+      "CPG 8.5 Cyanide"
     ],
     "keywords": [
       "hydroxocobalamin",
       "smoke inhalation",
-      "lactic acidosis"
+      "lactic acidosis",
+      "algorithm",
+      "CPG8.5",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "8.5",
+      "CPG 8.5",
+      "8.5 Cyanide",
+      "CPG 8.5 Cyanide",
+      "Cyanide"
     ],
     "type": "algorithm",
     "domains": [
@@ -1407,14 +2665,39 @@
     "page_start": 144,
     "page_end": 145,
     "aliases": [
-      "opioid toxicity"
+      "opioid toxicity",
+      "8.6",
+      "CPG 8.6",
+      "CPG8.6",
+      "8.6 Opioids",
+      "CPG 8.6 Opioids"
     ],
     "keywords": [
       "overdose",
       "naloxone",
       "OD",
       "respiratory depression",
-      "pinpoint pupils"
+      "pinpoint pupils",
+      "algorithm",
+      "CPG8.6",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "8.6",
+      "CPG 8.6",
+      "8.6 Opioids",
+      "CPG 8.6 Opioids",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "poisoning",
+      "toxicity",
+      "narcan",
+      "opiates",
+      "Opioids"
     ],
     "type": "algorithm",
     "domains": [
@@ -1432,7 +2715,12 @@
     "page_start": 146,
     "page_end": 147,
     "aliases": [
-      "nerve agents"
+      "nerve agents",
+      "8.7",
+      "CPG 8.7",
+      "CPG8.7",
+      "8.7 Organophosphates",
+      "CPG 8.7 Organophosphates"
     ],
     "keywords": [
       "atropine",
@@ -1440,7 +2728,17 @@
       "nerve agent",
       "SLUDGE",
       "DUMBBELS",
-      "2-PAM"
+      "2-PAM",
+      "algorithm",
+      "CPG8.7",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "8.7",
+      "CPG 8.7",
+      "8.7 Organophosphates",
+      "CPG 8.7 Organophosphates",
+      "Organophosphates"
     ],
     "type": "algorithm",
     "domains": [
@@ -1458,14 +2756,29 @@
     "page_start": 148,
     "page_end": 150,
     "aliases": [
-      "stimulant toxicity"
+      "stimulant toxicity",
+      "8.8",
+      "CPG 8.8",
+      "CPG8.8",
+      "8.8 Psychostimulants",
+      "CPG 8.8 Psychostimulants"
     ],
     "keywords": [
       "methamphetamine",
       "cocaine",
       "tachycardia",
       "hypertension",
-      "agitation"
+      "agitation",
+      "algorithm",
+      "CPG8.8",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "8.8",
+      "CPG 8.8",
+      "8.8 Psychostimulants",
+      "CPG 8.8 Psychostimulants",
+      "Psychostimulants"
     ],
     "type": "algorithm",
     "domains": [
@@ -1483,13 +2796,31 @@
     "page_start": 151,
     "page_end": 152,
     "aliases": [
-      "tca toxicity"
+      "tca toxicity",
+      "TA",
+      "8.9",
+      "CPG 8.9",
+      "CPG8.9",
+      "8.9 Tricyclic Antidepressants",
+      "CPG 8.9 Tricyclic Antidepressants"
     ],
     "keywords": [
       "sodium bicarbonate",
       "qrs widening",
       "TCA",
-      "widened QRS"
+      "widened QRS",
+      "algorithm",
+      "CPG8.9",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "TA",
+      "8.9",
+      "CPG 8.9",
+      "8.9 Tricyclic Antidepressants",
+      "CPG 8.9 Tricyclic Antidepressants",
+      "Tricyclic",
+      "Antidepressants"
     ],
     "type": "algorithm",
     "domains": [
@@ -1508,14 +2839,40 @@
     "page_end": 155,
     "aliases": [
       "ethanol intoxication",
-      "hypoglycemia screen"
+      "hypoglycemia screen",
+      "AI",
+      "8.10",
+      "CPG 8.10",
+      "CPG8.10",
+      "8.10 Alcohol Intoxication",
+      "CPG 8.10 Alcohol Intoxication"
     ],
     "keywords": [
       "monitoring",
       "hypoglycaemia screen",
       "ethanol",
       "trauma screen",
-      "hypoglycemia screen"
+      "hypoglycemia screen",
+      "algorithm",
+      "CPG8.10",
+      "Toxicology and Toxinology",
+      "adult",
+      "AI",
+      "8.10",
+      "CPG 8.10",
+      "8.10 Alcohol Intoxication",
+      "CPG 8.10 Alcohol Intoxication",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "hypoglycemia",
+      "low sugar",
+      "low blood glucose",
+      "dextrose",
+      "glucagon",
+      "Alcohol",
+      "Intoxication"
     ],
     "type": "algorithm",
     "domains": [
@@ -1532,12 +2889,27 @@
     "page_start": 156,
     "page_end": 159,
     "aliases": [
-      "bites and stings"
+      "bites and stings",
+      "8.11",
+      "CPG 8.11",
+      "CPG8.11",
+      "8.11 Envenomation",
+      "CPG 8.11 Envenomation"
     ],
     "keywords": [
       "snakebite",
       "scorpion",
-      "antivenom"
+      "antivenom",
+      "algorithm",
+      "CPG8.11",
+      "Toxicology and Toxinology",
+      "adult",
+      "peds",
+      "8.11",
+      "CPG 8.11",
+      "8.11 Envenomation",
+      "CPG 8.11 Envenomation",
+      "Envenomation"
     ],
     "type": "algorithm",
     "domains": [
@@ -1556,11 +2928,40 @@
     "page_end": 162,
     "aliases": [
       "heat stroke",
-      "heat exhaustion"
+      "heat exhaustion",
+      "Heat Related Disorders",
+      "HRD",
+      "9.1",
+      "CPG 9.1",
+      "CPG9.1",
+      "9.1 Heat-Related Disorders",
+      "CPG 9.1 Heat-Related Disorders"
     ],
     "keywords": [
       "cooling",
-      "fluids"
+      "fluids",
+      "algorithm",
+      "CPG9.1",
+      "Environmental",
+      "adult",
+      "peds",
+      "Heat Related Disorders",
+      "HRD",
+      "9.1",
+      "CPG 9.1",
+      "9.1 Heat-Related Disorders",
+      "CPG 9.1 Heat-Related Disorders",
+      "CVA",
+      "FAST",
+      "BEFAST",
+      "facial droop",
+      "arm weakness",
+      "speech difficulty",
+      "large vessel occlusion",
+      "LVO",
+      "Heat",
+      "Related",
+      "Disorders"
     ],
     "type": "algorithm",
     "domains": [
@@ -1579,10 +2980,31 @@
     "page_end": 166,
     "aliases": [
       "hypothermia",
-      "frostbite"
+      "frostbite",
+      "Cold Related Disorders",
+      "CRD",
+      "9.2",
+      "CPG 9.2",
+      "CPG9.2",
+      "9.2 Cold-Related Disorders",
+      "CPG 9.2 Cold-Related Disorders"
     ],
     "keywords": [
-      "rewarming"
+      "rewarming",
+      "algorithm",
+      "CPG9.2",
+      "Environmental",
+      "adult",
+      "peds",
+      "Cold Related Disorders",
+      "CRD",
+      "9.2",
+      "CPG 9.2",
+      "9.2 Cold-Related Disorders",
+      "CPG 9.2 Cold-Related Disorders",
+      "Cold",
+      "Related",
+      "Disorders"
     ],
     "type": "algorithm",
     "domains": [
@@ -1605,7 +3027,20 @@
       "Major Hemorrhage and Haemorrhagic Shock",
       "Major Haemorrhage and Hemorrhagic Shock",
       "major haemorrhage",
-      "Major Haemorrhage & Haemorrhagic Shock"
+      "Major Haemorrhage & Haemorrhagic Shock",
+      "MHHS",
+      "10.1",
+      "CPG 10.1",
+      "CPG10.1",
+      "10.1 Major Haemorrhage and Haemorrhagic Shock",
+      "CPG 10.1 Major Haemorrhage and Haemorrhagic Shock",
+      "Major haemorrhage and Haemorrhagic Shock",
+      "Major hemorrhage & Haemorrhagic Shock",
+      "Major Haemorrhage & hemorrhagic Shock",
+      "10.1 Major hemorrhage and Haemorrhagic Shock",
+      "10.1 Major Haemorrhage and hemorrhagic Shock",
+      "CPG 10.1 Major hemorrhage and Haemorrhagic Shock",
+      "CPG 10.1 Major Haemorrhage and hemorrhagic Shock"
     ],
     "keywords": [
       "txa",
@@ -1615,7 +3050,46 @@
       "pelvic binder",
       "Major Hemorrhage and Haemorrhagic Shock",
       "Major Haemorrhage and Hemorrhagic Shock",
-      "major haemorrhage"
+      "major haemorrhage",
+      "algorithm",
+      "CPG10.1",
+      "Trauma",
+      "adult",
+      "peds",
+      "Major Haemorrhage & Haemorrhagic Shock",
+      "MHHS",
+      "10.1",
+      "CPG 10.1",
+      "10.1 Major Haemorrhage and Haemorrhagic Shock",
+      "CPG 10.1 Major Haemorrhage and Haemorrhagic Shock",
+      "Major haemorrhage and Haemorrhagic Shock",
+      "Major Hemorrhage and hemorrhagic Shock",
+      "major hemorrhage",
+      "Major hemorrhage & Haemorrhagic Shock",
+      "Major Haemorrhage & hemorrhagic Shock",
+      "10.1 Major hemorrhage and Haemorrhagic Shock",
+      "10.1 Major Haemorrhage and hemorrhagic Shock",
+      "CPG 10.1 Major hemorrhage and Haemorrhagic Shock",
+      "CPG 10.1 Major Haemorrhage and hemorrhagic Shock",
+      "Major hemorrhage & hemorrhagic Shock",
+      "10.1 Major hemorrhage and hemorrhagic Shock",
+      "CPG 10.1 Major hemorrhage and hemorrhagic Shock",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "hemorrhage",
+      "bleeding",
+      "major bleed",
+      "blood loss",
+      "tranexamic acid",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Major",
+      "Haemorrhage",
+      "Haemorrhagic",
+      "Shock"
     ],
     "type": "algorithm",
     "domains": [
@@ -1633,7 +3107,12 @@
     "page_start": 169,
     "page_end": 170,
     "aliases": [
-      "tbi"
+      "tbi",
+      "10.2",
+      "CPG 10.2",
+      "CPG10.2",
+      "10.2 Traumatic Brain Injury",
+      "CPG 10.2 Traumatic Brain Injury"
     ],
     "keywords": [
       "gcs",
@@ -1643,7 +3122,32 @@
       "head-up 30°",
       "avoid hypotension",
       "avoid hypoxia",
-      "seizure prophylaxis (per local)"
+      "seizure prophylaxis (per local)",
+      "algorithm",
+      "CPG10.2",
+      "Trauma",
+      "adult",
+      "peds",
+      "TBI",
+      "10.2",
+      "CPG 10.2",
+      "10.2 Traumatic Brain Injury",
+      "CPG 10.2 Traumatic Brain Injury",
+      "seizures",
+      "fit",
+      "convulsion",
+      "status epilepticus",
+      "midazolam",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "head trauma",
+      "glasgow coma scale",
+      "consciousness",
+      "neuro assessment",
+      "Traumatic",
+      "Brain"
     ],
     "type": "algorithm",
     "domains": [
@@ -1660,7 +3164,14 @@
     "title": "Spinal Trauma",
     "page_start": 171,
     "page_end": 173,
-    "aliases": [],
+    "aliases": [
+      "ST",
+      "10.3",
+      "CPG 10.3",
+      "CPG10.3",
+      "10.3 Spinal Trauma",
+      "CPG 10.3 Spinal Trauma"
+    ],
     "keywords": [
       "smr",
       "nexus",
@@ -1668,7 +3179,25 @@
       "inline stabilisation",
       "collar (selective)",
       "log roll",
-      "neurological exam"
+      "neurological exam",
+      "algorithm",
+      "CPG10.3",
+      "Trauma",
+      "adult",
+      "peds",
+      "ST",
+      "10.3",
+      "CPG 10.3",
+      "10.3 Spinal Trauma",
+      "CPG 10.3 Spinal Trauma",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "spine injury",
+      "c-spine",
+      "spinal motion restriction",
+      "Spinal"
     ],
     "type": "algorithm",
     "domains": [
@@ -1685,7 +3214,14 @@
     "title": "Chest Trauma",
     "page_start": 174,
     "page_end": 176,
-    "aliases": [],
+    "aliases": [
+      "CT",
+      "10.4",
+      "CPG 10.4",
+      "CPG10.4",
+      "10.4 Chest Trauma",
+      "CPG 10.4 Chest Trauma"
+    ],
     "keywords": [
       "pneumothorax",
       "haemothorax",
@@ -1694,7 +3230,25 @@
       "decompression",
       "needle decompression",
       "ventilated patient",
-      "open pneumothorax 3-sided dressing"
+      "open pneumothorax 3-sided dressing",
+      "algorithm",
+      "CPG10.4",
+      "Trauma",
+      "adult",
+      "peds",
+      "CT",
+      "10.4",
+      "CPG 10.4",
+      "10.4 Chest Trauma",
+      "CPG 10.4 Chest Trauma",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "thoracic trauma",
+      "chest injury",
+      "flail chest",
+      "Chest"
     ],
     "type": "algorithm",
     "domains": [
@@ -1711,7 +3265,14 @@
     "title": "Abdominal Trauma",
     "page_start": 177,
     "page_end": 178,
-    "aliases": [],
+    "aliases": [
+      "AT",
+      "10.5",
+      "CPG 10.5",
+      "CPG10.5",
+      "10.5 Abdominal Trauma",
+      "CPG 10.5 Abdominal Trauma"
+    ],
     "keywords": [
       "bleeding",
       "FAST",
@@ -1719,7 +3280,28 @@
       "solid organ injury",
       "seatbelt sign",
       "hypotension",
-      "pain control"
+      "pain control",
+      "algorithm",
+      "CPG10.5",
+      "Trauma",
+      "adult",
+      "peds",
+      "AT",
+      "10.5",
+      "CPG 10.5",
+      "10.5 Abdominal Trauma",
+      "CPG 10.5 Abdominal Trauma",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "Abdominal"
     ],
     "type": "algorithm",
     "domains": [
@@ -1738,7 +3320,14 @@
     "page_end": 180,
     "aliases": [
       "pelvic fracture",
-      "hemorrhage control"
+      "hemorrhage control",
+      "PT",
+      "10.6",
+      "CPG 10.6",
+      "CPG10.6",
+      "10.6 Pelvic Trauma",
+      "CPG 10.6 Pelvic Trauma",
+      "haemorrhage control"
     ],
     "keywords": [
       "binder",
@@ -1748,7 +3337,27 @@
       "binder over trochanters",
       "don’t over-tighten",
       "hemodynamic instability",
-      "hemorrhage control"
+      "hemorrhage control",
+      "algorithm",
+      "CPG10.6",
+      "Trauma",
+      "adult",
+      "peds",
+      "PT",
+      "10.6",
+      "CPG 10.6",
+      "10.6 Pelvic Trauma",
+      "CPG 10.6 Pelvic Trauma",
+      "hemorrhage",
+      "major bleed",
+      "blood loss",
+      "TXA",
+      "tranexamic acid",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Pelvic"
     ],
     "type": "algorithm",
     "domains": [
@@ -1766,7 +3375,13 @@
     "page_start": 181,
     "page_end": 182,
     "aliases": [
-      "extremity trauma"
+      "extremity trauma",
+      "LT",
+      "10.7",
+      "CPG 10.7",
+      "CPG10.7",
+      "10.7 Limb Trauma",
+      "CPG 10.7 Limb Trauma"
     ],
     "keywords": [
       "fracture",
@@ -1777,7 +3392,22 @@
       "splint",
       "traction",
       "analgesia",
-      "open fracture dressing"
+      "open fracture dressing",
+      "algorithm",
+      "CPG10.7",
+      "Trauma",
+      "adult",
+      "peds",
+      "LT",
+      "10.7",
+      "CPG 10.7",
+      "10.7 Limb Trauma",
+      "CPG 10.7 Limb Trauma",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Limb"
     ],
     "type": "algorithm",
     "domains": [
@@ -1795,11 +3425,31 @@
     "page_start": 183,
     "page_end": 184,
     "aliases": [
-      "pregnant trauma"
+      "pregnant trauma",
+      "TP",
+      "10.8",
+      "CPG 10.8",
+      "CPG10.8",
+      "10.8 Trauma in Pregnancy",
+      "CPG 10.8 Trauma in Pregnancy"
     ],
     "keywords": [
       "positioning",
-      "rh"
+      "rh",
+      "algorithm",
+      "CPG10.8",
+      "Trauma",
+      "adult",
+      "TP",
+      "10.8",
+      "CPG 10.8",
+      "10.8 Trauma in Pregnancy",
+      "CPG 10.8 Trauma in Pregnancy",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Pregnancy"
     ],
     "type": "algorithm",
     "domains": [
@@ -1815,7 +3465,13 @@
     "title": "Burns",
     "page_start": 185,
     "page_end": 187,
-    "aliases": [],
+    "aliases": [
+      "10.9",
+      "CPG 10.9",
+      "CPG10.9",
+      "10.9 Burns",
+      "CPG 10.9 Burns"
+    ],
     "keywords": [
       "tbsa",
       "fluids",
@@ -1826,7 +3482,35 @@
       "stop the burn",
       "cover/cling film",
       "TBSA chart",
-      "airway burns"
+      "airway burns",
+      "algorithm",
+      "CPG10.9",
+      "Trauma",
+      "adult",
+      "peds",
+      "10.9",
+      "CPG 10.9",
+      "10.9 Burns",
+      "CPG 10.9 Burns",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "burn injury",
+      "thermal injury",
+      "scald",
+      "fluid resuscitation",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "Burns"
     ],
     "type": "algorithm",
     "domains": [
@@ -1843,7 +3527,14 @@
     "title": "Trauma Bypass Criteria",
     "page_start": 188,
     "page_end": 189,
-    "aliases": [],
+    "aliases": [
+      "TBC",
+      "10.10",
+      "CPG 10.10",
+      "CPG10.10",
+      "10.10 Trauma Bypass Criteria",
+      "CPG 10.10 Trauma Bypass Criteria"
+    ],
     "keywords": [
       "destination",
       "major trauma",
@@ -1851,7 +3542,21 @@
       "bypass",
       "criteria",
       "physiological/anatomical/mechanism",
-      "destination protocol"
+      "destination protocol",
+      "operations",
+      "CPG10.10",
+      "Trauma",
+      "adult",
+      "peds",
+      "TBC",
+      "10.10",
+      "CPG 10.10",
+      "10.10 Trauma Bypass Criteria",
+      "CPG 10.10 Trauma Bypass Criteria",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA"
     ],
     "type": "operations",
     "domains": [
@@ -1868,7 +3573,14 @@
     "title": "Crush Injury",
     "page_start": 190,
     "page_end": 192,
-    "aliases": [],
+    "aliases": [
+      "CI",
+      "10.11",
+      "CPG 10.11",
+      "CPG10.11",
+      "10.11 Crush Injury",
+      "CPG 10.11 Crush Injury"
+    ],
     "keywords": [
       "hyperkalaemia",
       "fluids",
@@ -1880,7 +3592,25 @@
       "renal protection",
       "EKG",
       "12 lead ECG",
-      "12-lead ECG"
+      "12-lead ECG",
+      "algorithm",
+      "CPG10.11",
+      "Trauma",
+      "adult",
+      "peds",
+      "CI",
+      "10.11",
+      "CPG 10.11",
+      "10.11 Crush Injury",
+      "CPG 10.11 Crush Injury",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "12 lead",
+      "cardiac monitoring",
+      "electrocardiogram",
+      "Crush"
     ],
     "type": "algorithm",
     "domains": [
@@ -1899,7 +3629,13 @@
     "page_end": 194,
     "aliases": [
       "ongoing trauma checklist",
-      "trauma care checklist"
+      "trauma care checklist",
+      "OTCC",
+      "10.12",
+      "CPG 10.12",
+      "CPG10.12",
+      "10.12 Ongoing Trauma Care Checklist",
+      "CPG 10.12 Ongoing Trauma Care Checklist"
     ],
     "keywords": [
       "ongoing trauma care",
@@ -1910,7 +3646,30 @@
       "haemorrhage control",
       "splinting",
       "destination",
-      "handover"
+      "handover",
+      "tool",
+      "CPG10.12",
+      "Trauma",
+      "adult",
+      "peds",
+      "OTCC",
+      "10.12",
+      "CPG 10.12",
+      "10.12 Ongoing Trauma Care Checklist",
+      "CPG 10.12 Ongoing Trauma Care Checklist",
+      "hemorrhage control",
+      "hemorrhage",
+      "bleeding",
+      "major bleed",
+      "blood loss",
+      "TXA",
+      "tranexamic acid",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Ongoing",
+      "Care"
     ],
     "type": "tool",
     "domains": [
@@ -1928,7 +3687,14 @@
     "page_start": 195,
     "page_end": 198,
     "aliases": [
-      "RSI"
+      "RSI",
+      "Rapid Sequence Induction RSI",
+      "RSIR",
+      "11.1",
+      "CPG 11.1",
+      "CPG11.1",
+      "11.1 Rapid Sequence Induction - RSI",
+      "CPG 11.1 Rapid Sequence Induction - RSI"
     ],
     "keywords": [
       "induction",
@@ -1945,7 +3711,24 @@
       "paralytic",
       "preoxygenation",
       "apneic oxygenation",
-      "difficult airway"
+      "difficult airway",
+      "procedure",
+      "CPG11.1",
+      "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation",
+      "adult",
+      "peds",
+      "Rapid Sequence Induction RSI",
+      "RSIR",
+      "11.1",
+      "CPG 11.1",
+      "11.1 Rapid Sequence Induction - RSI",
+      "CPG 11.1 Rapid Sequence Induction - RSI",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "Rapid",
+      "Sequence"
     ],
     "type": "procedure",
     "domains": [
@@ -1963,7 +3746,13 @@
     "page_start": 199,
     "page_end": 199,
     "aliases": [
-      "failed airway"
+      "failed airway",
+      "FID",
+      "11.2",
+      "CPG 11.2",
+      "CPG11.2",
+      "11.2 Failed Intubation Drill",
+      "CPG 11.2 Failed Intubation Drill"
     ],
     "keywords": [
       "bvm",
@@ -1976,7 +3765,30 @@
       "call for help",
       "DL vs VL",
       "oxygenation first",
-      "can’t intubate, can’t oxygenate"
+      "can’t intubate, can’t oxygenate",
+      "algorithm",
+      "CPG11.2",
+      "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation",
+      "adult",
+      "peds",
+      "FID",
+      "11.2",
+      "CPG 11.2",
+      "11.2 Failed Intubation Drill",
+      "CPG 11.2 Failed Intubation Drill",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "ETT",
+      "endotracheal tube",
+      "airway",
+      "SGA",
+      "i-gel",
+      "laryngeal tube",
+      "Failed",
+      "Intubation",
+      "Drill"
     ],
     "type": "algorithm",
     "domains": [
@@ -1995,7 +3807,13 @@
     "page_end": 203,
     "aliases": [
       "Safe Sedation",
-      "safe sedation"
+      "safe sedation",
+      "PS",
+      "11.3",
+      "CPG 11.3",
+      "CPG11.3",
+      "11.3 Procedural Sedation",
+      "CPG 11.3 Procedural Sedation"
     ],
     "keywords": [
       "monitoring",
@@ -2008,7 +3826,26 @@
       "risk stratification",
       "monitoring minimums",
       "airway rescue plan",
-      "procedural sedation"
+      "procedural sedation",
+      "procedure",
+      "CPG11.3",
+      "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation",
+      "adult",
+      "peds",
+      "PS",
+      "11.3",
+      "CPG 11.3",
+      "11.3 Procedural Sedation",
+      "CPG 11.3 Procedural Sedation",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "ETCO2",
+      "end tidal CO2",
+      "CO2 monitoring",
+      "Procedural",
+      "Sedation"
     ],
     "type": "procedure",
     "domains": [
@@ -2026,7 +3863,13 @@
     "page_start": 204,
     "page_end": 206,
     "aliases": [
-      "vent settings"
+      "vent settings",
+      "MV",
+      "11.4",
+      "CPG 11.4",
+      "CPG11.4",
+      "11.4 Mechanical Ventilation",
+      "CPG 11.4 Mechanical Ventilation"
     ],
     "keywords": [
       "tv",
@@ -2039,7 +3882,19 @@
       "protective ventilation",
       "plateau pressure",
       "alarm settings",
-      "vent troubleshooting"
+      "vent troubleshooting",
+      "procedure",
+      "CPG11.4",
+      "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation",
+      "adult",
+      "peds",
+      "MV",
+      "11.4",
+      "CPG 11.4",
+      "11.4 Mechanical Ventilation",
+      "CPG 11.4 Mechanical Ventilation",
+      "Mechanical",
+      "Ventilation"
     ],
     "type": "procedure",
     "domains": [
@@ -2058,7 +3913,13 @@
     "page_end": 209,
     "aliases": [
       "rsi checklist",
-      "RSI Quick Reference Guide and Checklist"
+      "RSI Quick Reference Guide and Checklist",
+      "RQRGC",
+      "11.5",
+      "CPG 11.5",
+      "CPG11.5",
+      "11.5 RSI Quick Reference Guide & Checklist",
+      "CPG 11.5 RSI Quick Reference Guide & Checklist"
     ],
     "keywords": [
       "dose",
@@ -2071,7 +3932,21 @@
       "suction",
       "equipment check",
       "drug checklist",
-      "weight-based dosing"
+      "weight-based dosing",
+      "tool",
+      "CPG11.5",
+      "Rapid Sequence Induction, Mechanical Ventilation and Safe Sedation",
+      "adult",
+      "peds",
+      "RSI Quick Reference Guide and Checklist",
+      "RQRGC",
+      "11.5",
+      "CPG 11.5",
+      "11.5 RSI Quick Reference Guide & Checklist",
+      "CPG 11.5 RSI Quick Reference Guide & Checklist",
+      "Quick",
+      "Reference",
+      "Guide"
     ],
     "type": "tool",
     "domains": [
@@ -2088,14 +3963,46 @@
     "title": "Ectopic Pregnancy",
     "page_start": 210,
     "page_end": 211,
-    "aliases": [],
+    "aliases": [
+      "EP",
+      "12.1",
+      "CPG 12.1",
+      "CPG12.1",
+      "12.1 Ectopic Pregnancy",
+      "CPG 12.1 Ectopic Pregnancy"
+    ],
     "keywords": [
       "bleeding",
       "pain",
       "shock",
       "amenorrhea",
       "positive pregnancy test",
-      "referred shoulder pain"
+      "referred shoulder pain",
+      "algorithm",
+      "CPG12.1",
+      "Obstetrics and Gynecology",
+      "adult",
+      "EP",
+      "12.1",
+      "CPG 12.1",
+      "12.1 Ectopic Pregnancy",
+      "CPG 12.1 Ectopic Pregnancy",
+      "Obstetrics and gynaecology",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Ectopic"
     ],
     "type": "algorithm",
     "domains": [
@@ -2112,14 +4019,40 @@
     "page_start": 212,
     "page_end": 213,
     "aliases": [
-      "spontaneous abortion"
+      "spontaneous abortion",
+      "12.2",
+      "CPG 12.2",
+      "CPG12.2",
+      "12.2 Miscarriage",
+      "CPG 12.2 Miscarriage"
     ],
     "keywords": [
       "bleeding",
       "pain",
       "products of conception",
       "expectant management",
-      "Rh status"
+      "Rh status",
+      "algorithm",
+      "CPG12.2",
+      "Obstetrics and Gynecology",
+      "adult",
+      "12.2",
+      "CPG 12.2",
+      "12.2 Miscarriage",
+      "CPG 12.2 Miscarriage",
+      "Obstetrics and gynaecology",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Miscarriage"
     ],
     "type": "algorithm",
     "domains": [
@@ -2136,14 +4069,46 @@
     "page_start": 214,
     "page_end": 215,
     "aliases": [
-      "abruptio placentae"
+      "abruptio placentae",
+      "PA",
+      "12.3",
+      "CPG 12.3",
+      "CPG12.3",
+      "12.3 Placenta Abruption",
+      "CPG 12.3 Placenta Abruption"
     ],
     "keywords": [
       "bleeding",
       "shock",
       "painful bleeding",
       "uterine tenderness",
-      "shock risk"
+      "shock risk",
+      "algorithm",
+      "CPG12.3",
+      "Obstetrics and Gynecology",
+      "adult",
+      "PA",
+      "12.3",
+      "CPG 12.3",
+      "12.3 Placenta Abruption",
+      "CPG 12.3 Placenta Abruption",
+      "Obstetrics and gynaecology",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Placenta",
+      "Abruption"
     ],
     "type": "algorithm",
     "domains": [
@@ -2160,14 +4125,43 @@
     "page_start": 216,
     "page_end": 217,
     "aliases": [
-      "placenta previa"
+      "placenta previa",
+      "PP",
+      "12.4",
+      "CPG 12.4",
+      "CPG12.4",
+      "12.4 Placenta Praevia",
+      "CPG 12.4 Placenta Praevia"
     ],
     "keywords": [
       "bleeding",
       "no pv exam",
       "painless bleeding",
       "no vaginal exam",
-      "placenta over os"
+      "placenta over os",
+      "algorithm",
+      "CPG12.4",
+      "Obstetrics and Gynecology",
+      "adult",
+      "PP",
+      "12.4",
+      "CPG 12.4",
+      "12.4 Placenta Praevia",
+      "CPG 12.4 Placenta Praevia",
+      "Obstetrics and gynaecology",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Placenta",
+      "Praevia"
     ],
     "type": "algorithm",
     "domains": [
@@ -2185,7 +4179,14 @@
     "page_end": 220,
     "aliases": [
       "preeclampsia",
-      "Pre-eclampsia & Eclampsia"
+      "Pre-eclampsia & Eclampsia",
+      "Pre eclampsia and Eclampsia",
+      "PEE",
+      "12.5",
+      "CPG 12.5",
+      "CPG12.5",
+      "12.5 Pre-eclampsia and Eclampsia",
+      "CPG 12.5 Pre-eclampsia and Eclampsia"
     ],
     "keywords": [
       "hypertension",
@@ -2194,7 +4195,30 @@
       "BP ≥140/90",
       "proteinuria",
       "magnesium infusion",
-      "seizure prophylaxis"
+      "seizure prophylaxis",
+      "algorithm",
+      "CPG12.5",
+      "Obstetrics and Gynecology",
+      "adult",
+      "Pre-eclampsia & Eclampsia",
+      "Pre eclampsia and Eclampsia",
+      "PEE",
+      "12.5",
+      "CPG 12.5",
+      "12.5 Pre-eclampsia and Eclampsia",
+      "CPG 12.5 Pre-eclampsia and Eclampsia",
+      "Obstetrics and gynaecology",
+      "seizures",
+      "fit",
+      "convulsion",
+      "status epilepticus",
+      "midazolam",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "eclampsia"
     ],
     "type": "algorithm",
     "domains": [
@@ -2210,11 +4234,36 @@
     "title": "Umbilical Cord Prolapse",
     "page_start": 221,
     "page_end": 222,
-    "aliases": [],
+    "aliases": [
+      "UCP",
+      "12.6",
+      "CPG 12.6",
+      "CPG12.6",
+      "12.6 Umbilical Cord Prolapse",
+      "CPG 12.6 Umbilical Cord Prolapse"
+    ],
     "keywords": [
       "knee-chest",
       "elevate presenting part",
-      "avoid cord compression"
+      "avoid cord compression",
+      "algorithm",
+      "CPG12.6",
+      "Obstetrics and Gynecology",
+      "adult",
+      "UCP",
+      "12.6",
+      "CPG 12.6",
+      "12.6 Umbilical Cord Prolapse",
+      "CPG 12.6 Umbilical Cord Prolapse",
+      "Obstetrics and gynaecology",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Umbilical",
+      "Cord",
+      "Prolapse"
     ],
     "type": "algorithm",
     "domains": [
@@ -2231,7 +4280,13 @@
     "page_start": 223,
     "page_end": 225,
     "aliases": [
-      "precipitous birth"
+      "precipitous birth",
+      "ID",
+      "12.7",
+      "CPG 12.7",
+      "CPG12.7",
+      "12.7 Imminent Delivery",
+      "CPG 12.7 Imminent Delivery"
     ],
     "keywords": [
       "prepare",
@@ -2239,7 +4294,24 @@
       "cord",
       "controlled delivery",
       "perineal support",
-      "nuchal cord"
+      "nuchal cord",
+      "algorithm",
+      "CPG12.7",
+      "Obstetrics and Gynecology",
+      "adult",
+      "ID",
+      "12.7",
+      "CPG 12.7",
+      "12.7 Imminent Delivery",
+      "CPG 12.7 Imminent Delivery",
+      "Obstetrics and gynaecology",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Imminent",
+      "Delivery"
     ],
     "type": "algorithm",
     "domains": [
@@ -2255,13 +4327,38 @@
     "title": "Breech Presentation",
     "page_start": 226,
     "page_end": 227,
-    "aliases": [],
+    "aliases": [
+      "BP",
+      "12.8",
+      "CPG 12.8",
+      "CPG12.8",
+      "12.8 Breech Presentation",
+      "CPG 12.8 Breech Presentation"
+    ],
     "keywords": [
       "hands-off",
       "maternal positioning",
       "hands-off breech",
       "all-fours",
-      "burn-marshall/vujik maneuvers (if local)"
+      "burn-marshall/vujik maneuvers (if local)",
+      "algorithm",
+      "CPG12.8",
+      "Obstetrics and Gynecology",
+      "adult",
+      "BP",
+      "12.8",
+      "CPG 12.8",
+      "12.8 Breech Presentation",
+      "CPG 12.8 Breech Presentation",
+      "burn-marshall/vujik manoeuvres (if local)",
+      "Obstetrics and gynaecology",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Breech",
+      "Presentation"
     ],
     "type": "algorithm",
     "domains": [
@@ -2278,13 +4375,46 @@
     "page_start": 228,
     "page_end": 229,
     "aliases": [
-      "preterm labor"
+      "preterm labor",
+      "Pre term Labour",
+      "PTL",
+      "12.9",
+      "CPG 12.9",
+      "CPG12.9",
+      "12.9 Pre-term Labour",
+      "CPG 12.9 Pre-term Labour",
+      "Pre-term labor",
+      "preterm labour",
+      "12.9 Pre-term labor",
+      "CPG 12.9 Pre-term labor"
     ],
     "keywords": [
       "tocolysis",
       "transfer",
       "tocolysis per protocol",
-      "steroids (hospital)"
+      "steroids (hospital)",
+      "algorithm",
+      "CPG12.9",
+      "Obstetrics and Gynecology",
+      "adult",
+      "Pre term Labour",
+      "PTL",
+      "12.9",
+      "CPG 12.9",
+      "12.9 Pre-term Labour",
+      "CPG 12.9 Pre-term Labour",
+      "Pre-term labor",
+      "preterm labour",
+      "12.9 Pre-term labor",
+      "CPG 12.9 Pre-term labor",
+      "preterm labor",
+      "Obstetrics and gynaecology",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "term"
     ],
     "type": "algorithm",
     "domains": [
@@ -2300,12 +4430,45 @@
     "title": "Post Delivery (or 3rd Stage) Complications",
     "page_start": 230,
     "page_end": 232,
-    "aliases": [],
+    "aliases": [
+      "Post Delivery Complications",
+      "Post Delivery or 3rd Stage Complications",
+      "PD3SC",
+      "12.10",
+      "CPG 12.10",
+      "CPG12.10",
+      "12.10 Post Delivery (or 3rd Stage) Complications",
+      "CPG 12.10 Post Delivery (or 3rd Stage) Complications"
+    ],
     "keywords": [
       "pph",
       "uterotonics",
       "fundal massage",
-      "shock"
+      "shock",
+      "algorithm",
+      "CPG12.10",
+      "Obstetrics and Gynecology",
+      "adult",
+      "Post Delivery Complications",
+      "Post Delivery or 3rd Stage Complications",
+      "PD3SC",
+      "12.10",
+      "CPG 12.10",
+      "12.10 Post Delivery (or 3rd Stage) Complications",
+      "CPG 12.10 Post Delivery (or 3rd Stage) Complications",
+      "Obstetrics and gynaecology",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Post",
+      "Delivery",
+      "Stage",
+      "Complications"
     ],
     "type": "algorithm",
     "domains": [
@@ -2323,7 +4486,13 @@
     "page_end": 233,
     "aliases": [
       "apgar",
-      "Apgar Score"
+      "Apgar Score",
+      "AS",
+      "12.11",
+      "CPG 12.11",
+      "CPG12.11",
+      "12.11 APGAR Score",
+      "CPG 12.11 APGAR Score"
     ],
     "keywords": [
       "neonatal",
@@ -2332,7 +4501,23 @@
       "neonate",
       "1 minute",
       "5 minutes",
-      "10 minutes"
+      "10 minutes",
+      "tool",
+      "CPG12.11",
+      "Obstetrics and Gynecology",
+      "AS",
+      "12.11",
+      "CPG 12.11",
+      "12.11 APGAR Score",
+      "CPG 12.11 APGAR Score",
+      "Obstetrics and gynaecology",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "newborn",
+      "new-born"
     ],
     "type": "tool",
     "domains": [
@@ -2349,11 +4534,38 @@
     "page_start": 234,
     "page_end": 235,
     "aliases": [
-      "ob bypass"
+      "ob bypass",
+      "Obs / Gynae Bypass Criteria",
+      "Obs and Gynae Bypass Criteria",
+      "OGBC",
+      "12.12",
+      "CPG 12.12",
+      "CPG12.12",
+      "12.12 Obs/Gynae Bypass Criteria",
+      "CPG 12.12 Obs/Gynae Bypass Criteria"
     ],
     "keywords": [
       "destination",
-      "criteria"
+      "criteria",
+      "operations",
+      "CPG12.12",
+      "Obstetrics and Gynecology",
+      "adult",
+      "Obs / Gynae Bypass Criteria",
+      "Obs and Gynae Bypass Criteria",
+      "OGBC",
+      "12.12",
+      "CPG 12.12",
+      "12.12 Obs/Gynae Bypass Criteria",
+      "CPG 12.12 Obs/Gynae Bypass Criteria",
+      "Obstetrics and gynaecology",
+      "pregnancy",
+      "pregnant",
+      "maternity",
+      "labour",
+      "labor",
+      "Gynae",
+      "Bypass"
     ],
     "type": "operations",
     "domains": [
@@ -2370,12 +4582,33 @@
     "page_start": 236,
     "page_end": 238,
     "aliases": [
-      "analgesia"
+      "analgesia",
+      "PM",
+      "13.1",
+      "CPG 13.1",
+      "CPG13.1",
+      "13.1 Pain Management",
+      "CPG 13.1 Pain Management"
     ],
     "keywords": [
       "fentanyl",
       "ketamine",
-      "paracetamol"
+      "paracetamol",
+      "algorithm",
+      "CPG13.1",
+      "Other",
+      "adult",
+      "peds",
+      "PM",
+      "13.1",
+      "CPG 13.1",
+      "13.1 Pain Management",
+      "CPG 13.1 Pain Management",
+      "analgesia",
+      "pain relief",
+      "morphine",
+      "Pain",
+      "Management"
     ],
     "type": "algorithm",
     "domains": [
@@ -2393,7 +4626,12 @@
     "page_start": 239,
     "page_end": 242,
     "aliases": [
-      "mci"
+      "mci",
+      "13.2",
+      "CPG 13.2",
+      "CPG13.2",
+      "13.2 Multiple Casualty Incidents",
+      "CPG 13.2 Multiple Casualty Incidents"
     ],
     "keywords": [
       "windscreen",
@@ -2401,7 +4639,20 @@
       "triage",
       "M/ETHANE",
       "triage sieve",
-      "control zone"
+      "control zone",
+      "operations",
+      "CPG13.2",
+      "Other",
+      "adult",
+      "peds",
+      "MCI",
+      "13.2",
+      "CPG 13.2",
+      "13.2 Multiple Casualty Incidents",
+      "CPG 13.2 Multiple Casualty Incidents",
+      "Multiple",
+      "Casualty",
+      "Incidents"
     ],
     "type": "operations",
     "domains": [
@@ -2419,11 +4670,30 @@
     "page_start": 243,
     "page_end": 243,
     "aliases": [
-      "refusal"
+      "refusal",
+      "PRTT",
+      "13.3",
+      "CPG 13.3",
+      "CPG13.3",
+      "13.3 Patient Refusal of Treatment or Transport",
+      "CPG 13.3 Patient Refusal of Treatment or Transport"
     ],
     "keywords": [
       "capacity",
-      "consent"
+      "consent",
+      "operations",
+      "CPG13.3",
+      "Other",
+      "adult",
+      "PRTT",
+      "13.3",
+      "CPG 13.3",
+      "13.3 Patient Refusal of Treatment or Transport",
+      "CPG 13.3 Patient Refusal of Treatment or Transport",
+      "Patient",
+      "Refusal",
+      "Treatment",
+      "Transport"
     ],
     "type": "operations",
     "domains": [
@@ -2440,13 +4710,31 @@
     "page_start": 244,
     "page_end": 245,
     "aliases": [
-      "drowning"
+      "drowning",
+      "SI",
+      "13.4",
+      "CPG 13.4",
+      "CPG13.4",
+      "13.4 Submersion Incident",
+      "CPG 13.4 Submersion Incident"
     ],
     "keywords": [
       "hypoxia",
       "rewarm",
       "drowning",
-      "aspiration"
+      "aspiration",
+      "algorithm",
+      "CPG13.4",
+      "Other",
+      "adult",
+      "peds",
+      "SI",
+      "13.4",
+      "CPG 13.4",
+      "13.4 Submersion Incident",
+      "CPG 13.4 Submersion Incident",
+      "Submersion",
+      "Incident"
     ],
     "type": "algorithm",
     "domains": [
@@ -2464,7 +4752,13 @@
     "page_start": 246,
     "page_end": 246,
     "aliases": [
-      "hazmat"
+      "hazmat",
+      "HI",
+      "13.5",
+      "CPG 13.5",
+      "CPG13.5",
+      "13.5 HAZMAT Incident",
+      "CPG 13.5 HAZMAT Incident"
     ],
     "keywords": [
       "pralidoxime",
@@ -2473,7 +4767,18 @@
       "HAZMAT",
       "PPE",
       "decontamination",
-      "zones hot/warm/cold"
+      "zones hot/warm/cold",
+      "operations",
+      "CPG13.5",
+      "Other",
+      "adult",
+      "peds",
+      "HI",
+      "13.5",
+      "CPG 13.5",
+      "13.5 HAZMAT Incident",
+      "CPG 13.5 HAZMAT Incident",
+      "Incident"
     ],
     "type": "operations",
     "domains": [
@@ -2492,7 +4797,13 @@
     "page_end": 247,
     "aliases": [
       "imist ambo",
-      "IMIST–AMBO Handover"
+      "IMIST–AMBO Handover",
+      "IAH",
+      "13.6",
+      "CPG 13.6",
+      "CPG13.6",
+      "13.6 IMIST-AMBO Handover",
+      "CPG 13.6 IMIST-AMBO Handover"
     ],
     "keywords": [
       "handover",
@@ -2501,7 +4812,20 @@
       "METHANE",
       "windscreen",
       "Identify/Mechanism/Injuries/Signs/Treatment",
-      "AT-MIST"
+      "AT-MIST",
+      "operations",
+      "CPG13.6",
+      "Other",
+      "adult",
+      "peds",
+      "IMIST AMBO Handover",
+      "IAH",
+      "13.6",
+      "CPG 13.6",
+      "13.6 IMIST-AMBO Handover",
+      "CPG 13.6 IMIST-AMBO Handover",
+      "IMIST",
+      "AMBO"
     ],
     "type": "operations",
     "domains": [
@@ -2518,10 +4842,29 @@
     "title": "Sexual Assault",
     "page_start": 248,
     "page_end": 248,
-    "aliases": [],
+    "aliases": [
+      "SA",
+      "13.7",
+      "CPG 13.7",
+      "CPG13.7",
+      "13.7 Sexual Assault",
+      "CPG 13.7 Sexual Assault"
+    ],
     "keywords": [
       "forensic",
-      "support"
+      "support",
+      "operations",
+      "CPG13.7",
+      "Other",
+      "adult",
+      "peds",
+      "SA",
+      "13.7",
+      "CPG 13.7",
+      "13.7 Sexual Assault",
+      "CPG 13.7 Sexual Assault",
+      "Sexual",
+      "Assault"
     ],
     "type": "operations",
     "domains": [
@@ -2542,7 +4885,14 @@
       "epistaxis",
       "nosebleed",
       "non-traumatic epistaxis",
-      "nose bleed"
+      "nose bleed",
+      "Epistaxis (Non traumatic)",
+      "ENT",
+      "13.8",
+      "CPG 13.8",
+      "CPG13.8",
+      "13.8 Epistaxis (Non-traumatic)",
+      "CPG 13.8 Epistaxis (Non-traumatic)"
     ],
     "keywords": [
       "epistaxis",
@@ -2553,7 +4903,24 @@
       "packing",
       "anticoagulants",
       "tranexamic acid",
-      "TXA"
+      "TXA",
+      "algorithm",
+      "CPG13.8",
+      "Other",
+      "adult",
+      "peds",
+      "Epistaxis (Non traumatic)",
+      "ENT",
+      "13.8",
+      "CPG 13.8",
+      "13.8 Epistaxis (Non-traumatic)",
+      "CPG 13.8 Epistaxis (Non-traumatic)",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "nose bleed",
+      "traumatic"
     ],
     "type": "algorithm",
     "domains": [
@@ -2571,14 +4938,36 @@
     "page_start": 252,
     "page_end": 254,
     "aliases": [
-      "geriatrics"
+      "geriatrics",
+      "Elderly Patients",
+      "Elderly Patients >65 years old",
+      "EPYO",
+      "14.1",
+      "CPG 14.1",
+      "CPG14.1",
+      "14.1 Elderly Patients (>65 years old)",
+      "CPG 14.1 Elderly Patients (>65 years old)"
     ],
     "keywords": [
       "frailty",
       "falls",
       "polypharmacy",
       "falls risk",
-      "frailty index"
+      "frailty index",
+      "reference",
+      "CPG14.1",
+      "Vulnerable Patients",
+      "adult",
+      "Elderly Patients",
+      "Elderly Patients >65 years old",
+      "EPYO",
+      "14.1",
+      "CPG 14.1",
+      "14.1 Elderly Patients (>65 years old)",
+      "CPG 14.1 Elderly Patients (>65 years old)",
+      "Elderly",
+      "Patients",
+      "years"
     ],
     "type": "reference",
     "domains": [
@@ -2594,10 +4983,28 @@
     "title": "Bariatric Patients",
     "page_start": 255,
     "page_end": 256,
-    "aliases": [],
+    "aliases": [
+      "BP",
+      "14.2",
+      "CPG 14.2",
+      "CPG14.2",
+      "14.2 Bariatric Patients",
+      "CPG 14.2 Bariatric Patients"
+    ],
     "keywords": [
       "equipment",
-      "positioning"
+      "positioning",
+      "reference",
+      "CPG14.2",
+      "Vulnerable Patients",
+      "adult",
+      "BP",
+      "14.2",
+      "CPG 14.2",
+      "14.2 Bariatric Patients",
+      "CPG 14.2 Bariatric Patients",
+      "Bariatric",
+      "Patients"
     ],
     "type": "reference",
     "domains": [
@@ -2614,7 +5021,13 @@
     "page_start": 257,
     "page_end": 260,
     "aliases": [
-      "dialysis patient"
+      "dialysis patient",
+      "PRRD",
+      "14.3",
+      "CPG 14.3",
+      "CPG14.3",
+      "14.3 Patients Receiving Renal Dialysis",
+      "CPG 14.3 Patients Receiving Renal Dialysis"
     ],
     "keywords": [
       "av fistula",
@@ -2622,7 +5035,20 @@
       "electrolytes",
       "AV fistula care",
       "hyperkalaemia",
-      "fluid balance"
+      "fluid balance",
+      "reference",
+      "CPG14.3",
+      "Vulnerable Patients",
+      "adult",
+      "PRRD",
+      "14.3",
+      "CPG 14.3",
+      "14.3 Patients Receiving Renal Dialysis",
+      "CPG 14.3 Patients Receiving Renal Dialysis",
+      "Patients",
+      "Receiving",
+      "Renal",
+      "Dialysis"
     ],
     "type": "reference",
     "domains": [
@@ -2638,10 +5064,30 @@
     "title": "Continuation of Previously Prescribed Medication",
     "page_start": 261,
     "page_end": 263,
-    "aliases": [],
+    "aliases": [
+      "CPPM",
+      "15.1",
+      "CPG 15.1",
+      "CPG15.1",
+      "15.1 Continuation of Previously Prescribed Medication",
+      "CPG 15.1 Continuation of Previously Prescribed Medication"
+    ],
     "keywords": [
       "medications",
-      "continuation"
+      "continuation",
+      "operations",
+      "CPG15.1",
+      "Inter-facility Transfer Guidelines",
+      "adult",
+      "peds",
+      "CPPM",
+      "15.1",
+      "CPG 15.1",
+      "15.1 Continuation of Previously Prescribed Medication",
+      "CPG 15.1 Continuation of Previously Prescribed Medication",
+      "Previously",
+      "Prescribed",
+      "Medication"
     ],
     "type": "operations",
     "domains": [
@@ -2658,9 +5104,30 @@
     "title": "Use of Specialist Medication During Transfer",
     "page_start": 264,
     "page_end": 264,
-    "aliases": [],
+    "aliases": [
+      "USMDT",
+      "15.2",
+      "CPG 15.2",
+      "CPG15.2",
+      "15.2 Use of Specialist Medication During Transfer",
+      "CPG 15.2 Use of Specialist Medication During Transfer"
+    ],
     "keywords": [
-      "specialist meds"
+      "specialist meds",
+      "operations",
+      "CPG15.2",
+      "Inter-facility Transfer Guidelines",
+      "adult",
+      "peds",
+      "USMDT",
+      "15.2",
+      "CPG 15.2",
+      "15.2 Use of Specialist Medication During Transfer",
+      "CPG 15.2 Use of Specialist Medication During Transfer",
+      "Specialist",
+      "Medication",
+      "During",
+      "Transfer"
     ],
     "type": "operations",
     "domains": [
@@ -2677,10 +5144,32 @@
     "title": "Drug Chart for frequently used transfer medications",
     "page_start": 265,
     "page_end": 267,
-    "aliases": [],
+    "aliases": [
+      "DCFUTM",
+      "15.3",
+      "CPG 15.3",
+      "CPG15.3",
+      "15.3 Drug Chart for frequently used transfer medications",
+      "CPG 15.3 Drug Chart for frequently used transfer medications"
+    ],
     "keywords": [
       "transfer",
-      "doses"
+      "doses",
+      "tool",
+      "CPG15.3",
+      "Inter-facility Transfer Guidelines",
+      "adult",
+      "peds",
+      "DCFUTM",
+      "15.3",
+      "CPG 15.3",
+      "15.3 Drug Chart for frequently used transfer medications",
+      "CPG 15.3 Drug Chart for frequently used transfer medications",
+      "Drug",
+      "Chart",
+      "frequently",
+      "used",
+      "medications"
     ],
     "type": "tool",
     "domains": [
@@ -2697,10 +5186,30 @@
     "title": "AP Transfer of Patients with Infusion Devices",
     "page_start": 268,
     "page_end": 269,
-    "aliases": [],
+    "aliases": [
+      "ATPID",
+      "15.4",
+      "CPG 15.4",
+      "CPG15.4",
+      "15.4 AP Transfer of Patients with Infusion Devices",
+      "CPG 15.4 AP Transfer of Patients with Infusion Devices"
+    ],
     "keywords": [
       "infusions",
-      "transfer"
+      "transfer",
+      "operations",
+      "CPG15.4",
+      "Inter-facility Transfer Guidelines",
+      "adult",
+      "peds",
+      "ATPID",
+      "15.4",
+      "CPG 15.4",
+      "15.4 AP Transfer of Patients with Infusion Devices",
+      "CPG 15.4 AP Transfer of Patients with Infusion Devices",
+      "Patients",
+      "Infusion",
+      "Devices"
     ],
     "type": "operations",
     "domains": [
@@ -2717,9 +5226,24 @@
     "title": "RASS",
     "page_start": 270,
     "page_end": 270,
-    "aliases": [],
+    "aliases": [
+      "15.5",
+      "CPG 15.5",
+      "CPG15.5",
+      "15.5 RASS",
+      "CPG 15.5 RASS"
+    ],
     "keywords": [
-      "sedation score"
+      "sedation score",
+      "tool",
+      "CPG15.5",
+      "Inter-facility Transfer Guidelines",
+      "adult",
+      "15.5",
+      "CPG 15.5",
+      "15.5 RASS",
+      "CPG 15.5 RASS",
+      "RASS"
     ],
     "type": "tool",
     "domains": [
@@ -2735,10 +5259,30 @@
     "title": "Retrieval Service Patient Transfer Checklist",
     "page_start": 271,
     "page_end": 272,
-    "aliases": [],
+    "aliases": [
+      "RSPTC",
+      "15.6",
+      "CPG 15.6",
+      "CPG15.6",
+      "15.6 Retrieval Service Patient Transfer Checklist",
+      "CPG 15.6 Retrieval Service Patient Transfer Checklist"
+    ],
     "keywords": [
       "checklist",
-      "transfer"
+      "transfer",
+      "tool",
+      "CPG15.6",
+      "Inter-facility Transfer Guidelines",
+      "adult",
+      "peds",
+      "RSPTC",
+      "15.6",
+      "CPG 15.6",
+      "15.6 Retrieval Service Patient Transfer Checklist",
+      "CPG 15.6 Retrieval Service Patient Transfer Checklist",
+      "Retrieval",
+      "Service",
+      "Patient"
     ],
     "type": "tool",
     "domains": [
@@ -2755,10 +5299,34 @@
     "title": "Clinical Approach to Scheduled Ambulance Service Transfer Patients",
     "page_start": 273,
     "page_end": 276,
-    "aliases": [],
+    "aliases": [
+      "CASASTP",
+      "16.1",
+      "CPG 16.1",
+      "CPG16.1",
+      "16.1 Clinical Approach to Scheduled Ambulance Service Transfer Patients",
+      "CPG 16.1 Clinical Approach to Scheduled Ambulance Service Transfer Patients"
+    ],
     "keywords": [
       "scheduled transfer",
-      "assessment"
+      "assessment",
+      "operations",
+      "CPG16.1",
+      "Scheduled Ambulance Service Guidelines",
+      "adult",
+      "peds",
+      "CASASTP",
+      "16.1",
+      "CPG 16.1",
+      "16.1 Clinical Approach to Scheduled Ambulance Service Transfer Patients",
+      "CPG 16.1 Clinical Approach to Scheduled Ambulance Service Transfer Patients",
+      "Clinical",
+      "Approach",
+      "Scheduled",
+      "Ambulance",
+      "Service",
+      "Transfer",
+      "Patients"
     ],
     "type": "operations",
     "domains": [
@@ -2779,7 +5347,19 @@
       "covid hypoxaemia",
       "Respiratory Distress/Hypoxemia in Suspected/Confirmed COVID-19 Patients",
       "covid hypoxemia",
-      "hypoxemia"
+      "hypoxemia",
+      "Respiratory Distress / Hypoxaemia in Suspected / Confirmed COVID-19 Patients",
+      "Respiratory Distress and Hypoxaemia in Suspected and Confirmed COVID-19 Patients",
+      "RDHSCCP",
+      "17.1",
+      "CPG 17.1",
+      "CPG17.1",
+      "17.1 Respiratory Distress/Hypoxaemia in Suspected/Confirmed COVID-19 Patients",
+      "CPG 17.1 Respiratory Distress/Hypoxaemia in Suspected/Confirmed COVID-19 Patients",
+      "hypoxaemia",
+      "Respiratory Distress and hypoxemia in Suspected and Confirmed COVID-19 Patients",
+      "17.1 Respiratory Distress/hypoxemia in Suspected/Confirmed COVID-19 Patients",
+      "CPG 17.1 Respiratory Distress/hypoxemia in Suspected/Confirmed COVID-19 Patients"
     ],
     "keywords": [
       "oxygenation",
@@ -2791,7 +5371,38 @@
       "HFNC",
       "Respiratory Distress/Hypoxemia in Suspected/Confirmed COVID-19 Patients",
       "covid hypoxemia",
-      "hypoxemia"
+      "hypoxemia",
+      "algorithm",
+      "CPG17.1",
+      "COVID-19 Clinical Guidelines",
+      "adult",
+      "peds",
+      "Respiratory Distress / Hypoxaemia in Suspected / Confirmed COVID-19 Patients",
+      "Respiratory Distress and Hypoxaemia in Suspected and Confirmed COVID-19 Patients",
+      "RDHSCCP",
+      "17.1",
+      "CPG 17.1",
+      "17.1 Respiratory Distress/Hypoxaemia in Suspected/Confirmed COVID-19 Patients",
+      "CPG 17.1 Respiratory Distress/Hypoxaemia in Suspected/Confirmed COVID-19 Patients",
+      "covid hypoxaemia",
+      "Respiratory Distress and hypoxemia in Suspected and Confirmed COVID-19 Patients",
+      "17.1 Respiratory Distress/hypoxemia in Suspected/Confirmed COVID-19 Patients",
+      "CPG 17.1 Respiratory Distress/hypoxemia in Suspected/Confirmed COVID-19 Patients",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "hypoxia",
+      "low oxygen",
+      "oxygen saturation",
+      "Respiratory",
+      "Distress",
+      "Suspected",
+      "Confirmed",
+      "COVID",
+      "Patients"
     ],
     "type": "algorithm",
     "domains": [
@@ -2809,7 +5420,15 @@
     "page_start": 279,
     "page_end": 280,
     "aliases": [
-      "covid arrest"
+      "covid arrest",
+      "Cardiac Arrest Management in Suspected / Confirmed COVID-19 Patient",
+      "Cardiac Arrest Management in Suspected and Confirmed COVID-19 Patient",
+      "CAMSCCP",
+      "17.2",
+      "CPG 17.2",
+      "CPG17.2",
+      "17.2 Cardiac Arrest Management in Suspected/Confirmed COVID-19 Patient",
+      "CPG 17.2 Cardiac Arrest Management in Suspected/Confirmed COVID-19 Patient"
     ],
     "keywords": [
       "ppe",
@@ -2820,7 +5439,41 @@
       "defib",
       "defibrillator",
       "AED",
-      "shock"
+      "shock",
+      "algorithm",
+      "CPG17.2",
+      "COVID-19 Clinical Guidelines",
+      "adult",
+      "peds",
+      "Cardiac Arrest Management in Suspected / Confirmed COVID-19 Patient",
+      "Cardiac Arrest Management in Suspected and Confirmed COVID-19 Patient",
+      "CAMSCCP",
+      "17.2",
+      "CPG 17.2",
+      "17.2 Cardiac Arrest Management in Suspected/Confirmed COVID-19 Patient",
+      "CPG 17.2 Cardiac Arrest Management in Suspected/Confirmed COVID-19 Patient",
+      "CPR",
+      "resuscitation",
+      "defibrillation",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "Cardiac",
+      "Arrest",
+      "Management",
+      "Suspected",
+      "Confirmed",
+      "COVID",
+      "Patient"
     ],
     "type": "algorithm",
     "domains": [
@@ -2848,7 +5501,12 @@
       "bolus",
       "IV bolus",
       "flush",
-      "AVNRT"
+      "AVNRT",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Adenosine"
     ],
     "type": "drug",
     "domains": [
@@ -2867,7 +5525,10 @@
     "aliases": [
       "epinephrine",
       "epi",
-      "adrenalin"
+      "adrenalin",
+      "Adrenaline / Epinephrine",
+      "Adrenaline and Epinephrine",
+      "AE"
     ],
     "keywords": [
       "anaphylaxis",
@@ -2881,7 +5542,32 @@
       "1:1000 IM",
       "1:10,000 IV",
       "nebulised adrenaline",
-      "post-ROSC hypotension (consult)"
+      "post-ROSC hypotension (consult)",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Adrenaline / Epinephrine",
+      "Adrenaline and Epinephrine",
+      "AE",
+      "allergic reaction",
+      "allergy",
+      "hives",
+      "urticaria",
+      "adrenaline",
+      "epinephrine",
+      "epipen",
+      "CPR",
+      "resuscitation",
+      "defibrillation",
+      "shock",
+      "VF",
+      "VT",
+      "PEA",
+      "asystole",
+      "ROSC",
+      "return of spontaneous circulation",
+      "post cardiac arrest"
     ],
     "type": "drug",
     "domains": [
@@ -2910,7 +5596,15 @@
       "150 mg",
       "infusion",
       "refractory VF",
-      "post-shock drug"
+      "post-shock drug",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "Amiodarone"
     ],
     "type": "drug",
     "domains": [
@@ -2928,12 +5622,23 @@
     "page_end": 292,
     "aliases": [
       "asa",
-      "Disprin"
+      "Disprin",
+      "Aspirin",
+      "Aspirin Acetylsalicylic Acid",
+      "AAA"
     ],
     "keywords": [
       "acs",
       "antiplatelet",
-      "300 mg"
+      "300 mg",
+      "drug",
+      "Formulary",
+      "adult",
+      "Aspirin",
+      "Aspirin Acetylsalicylic Acid",
+      "AAA",
+      "Acetylsalicylic",
+      "Acid"
     ],
     "type": "drug",
     "domains": [
@@ -2954,7 +5659,12 @@
       "organophosphate",
       "0.5 mg",
       "organophosphate dosing",
-      "max 3 mg"
+      "max 3 mg",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Atropine"
     ],
     "type": "drug",
     "domains": [
@@ -2978,7 +5688,24 @@
       "asthma",
       "neb",
       "neb 1 mg",
-      "steroid"
+      "steroid",
+      "drug",
+      "Formulary",
+      "peds",
+      "adult",
+      "wheeze",
+      "bronchospasm",
+      "shortness of breath",
+      "SOB",
+      "salbutamol",
+      "ventolin",
+      "ipratropium",
+      "atrovent",
+      "stridor",
+      "barking cough",
+      "adrenaline nebuliser",
+      "dexamethasone",
+      "Budesonide"
     ],
     "type": "drug",
     "domains": [
@@ -2995,12 +5722,25 @@
     "page_start": 298,
     "page_end": 299,
     "aliases": [
-      "cacl2"
+      "cacl2",
+      "CC"
     ],
     "keywords": [
       "hyperkalaemia",
       "ccb overdose",
-      "calcium 10%"
+      "calcium 10%",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "CC",
+      "poisoning",
+      "toxicity",
+      "OD",
+      "naloxone",
+      "narcan",
+      "Calcium",
+      "Chloride"
     ],
     "type": "drug",
     "domains": [
@@ -3026,7 +5766,11 @@
       "antiplatelet",
       "p2y12",
       "loading dose 300 mg",
-      "maintenance 75 mg"
+      "maintenance 75 mg",
+      "drug",
+      "Formulary",
+      "adult",
+      "Clopidogrel"
     ],
     "type": "drug",
     "domains": [
@@ -3049,7 +5793,29 @@
       "airway oedema",
       "asthma",
       "croup",
-      "steroid"
+      "steroid",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "airway edema",
+      "airway ooedema",
+      "wheeze",
+      "bronchospasm",
+      "shortness of breath",
+      "SOB",
+      "salbutamol",
+      "ventolin",
+      "ipratropium",
+      "atrovent",
+      "breathing",
+      "respiratory",
+      "oxygenation",
+      "ventilation",
+      "stridor",
+      "barking cough",
+      "adrenaline nebuliser",
+      "dexamethasone"
     ],
     "type": "drug",
     "domains": [
@@ -3068,7 +5834,10 @@
     "aliases": [
       "glucose",
       "hypoglycemia",
-      "Dextrose (Oral and IV)"
+      "Dextrose (Oral and IV)",
+      "Dextrose",
+      "Dextrose Oral & IV",
+      "DOI"
     ],
     "keywords": [
       "hypoglycaemia",
@@ -3076,7 +5845,19 @@
       "d50",
       "IV",
       "IO",
-      "hypoglycemia"
+      "hypoglycemia",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Dextrose (Oral and IV)",
+      "Dextrose",
+      "Dextrose Oral & IV",
+      "DOI",
+      "low sugar",
+      "low blood glucose",
+      "glucagon",
+      "Oral"
     ],
     "type": "drug",
     "domains": [
@@ -3098,7 +5879,17 @@
     ],
     "keywords": [
       "nsaid",
-      "pain"
+      "pain",
+      "drug",
+      "Formulary",
+      "adult",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "Diclofenac"
     ],
     "type": "drug",
     "domains": [
@@ -3120,7 +5911,12 @@
     "keywords": [
       "allergy",
       "urticaria",
-      "sedating antihistamine"
+      "sedating antihistamine",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Diphenhydramine"
     ],
     "type": "drug",
     "domains": [
@@ -3148,7 +5944,12 @@
       "qt",
       "iv",
       "im",
-      "ABD"
+      "ABD",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Droperidol"
     ],
     "type": "drug",
     "domains": [
@@ -3175,7 +5976,16 @@
       "IN",
       "50-100 mcg",
       "IN 1.5-2 mcg/kg",
-      "titrate to pain"
+      "titrate to pain",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol"
     ],
     "type": "drug",
     "domains": [
@@ -3198,7 +6008,16 @@
       "diuretic",
       "apo",
       "pulmonary oedema",
-      "IV"
+      "IV",
+      "drug",
+      "Formulary",
+      "adult",
+      "pulmonary edema",
+      "pulmonary ooedema",
+      "acute pulmonary oedema",
+      "acute pulmonary edema",
+      "heart failure",
+      "Furosemide"
     ],
     "type": "drug",
     "domains": [
@@ -3226,7 +6045,26 @@
       "1 mg IM",
       "repeat in 10 min",
       "nausea/vomiting",
-      "hypoglycemia"
+      "hypoglycemia",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "low sugar",
+      "low blood glucose",
+      "dextrose",
+      "glucagon",
+      "poisoning",
+      "toxicity",
+      "OD",
+      "naloxone",
+      "narcan",
+      "vomiting",
+      "antiemetic",
+      "ondansetron",
+      "zofran",
+      "metoclopramide",
+      "reglan"
     ],
     "type": "drug",
     "domains": [
@@ -3249,7 +6087,10 @@
       "Nitrostat",
       "Nitro-Bid",
       "Nitrolingual",
-      "Glycerol Trinitrate – GTN (Sublingual and IV)"
+      "Glycerol Trinitrate – GTN (Sublingual and IV)",
+      "Glycerol Trinitrate – GTN",
+      "Glycerol Trinitrate – GTN Sublingual & IV",
+      "GTGSI"
     ],
     "keywords": [
       "acs",
@@ -3259,7 +6100,17 @@
       "BP > 100",
       "headache",
       "BP target",
-      "contra hypotension"
+      "contra hypotension",
+      "drug",
+      "Formulary",
+      "adult",
+      "Glycerol Trinitrate – GTN (Sublingual and IV)",
+      "Glycerol Trinitrate – GTN",
+      "Glycerol Trinitrate – GTN Sublingual & IV",
+      "GTGSI",
+      "Glycerol",
+      "Trinitrate",
+      "Sublingual"
     ],
     "type": "drug",
     "domains": [
@@ -3280,7 +6131,19 @@
     "keywords": [
       "anaphylaxis",
       "adrenal crisis",
-      "steroid"
+      "steroid",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "allergic reaction",
+      "allergy",
+      "hives",
+      "urticaria",
+      "adrenaline",
+      "epinephrine",
+      "epipen",
+      "Hydrocortisone"
     ],
     "type": "drug",
     "domains": [
@@ -3308,7 +6171,18 @@
       "fever",
       "PO",
       "10 mg/kg peds",
-      "400 mg adult"
+      "400 mg adult",
+      "drug",
+      "Formulary",
+      "peds",
+      "adult",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "Ibuprofen"
     ],
     "type": "drug",
     "domains": [
@@ -3326,12 +6200,27 @@
     "page_end": 335,
     "aliases": [
       "atrovent",
-      "ipratropium"
+      "ipratropium",
+      "IB"
     ],
     "keywords": [
       "asthma",
       "copd",
-      "neb"
+      "neb",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "IB",
+      "wheeze",
+      "bronchospasm",
+      "shortness of breath",
+      "SOB",
+      "salbutamol",
+      "ventolin",
+      "ipratropium",
+      "atrovent",
+      "Bromide"
     ],
     "type": "drug",
     "domains": [
@@ -3361,7 +6250,12 @@
       "0.1-0.3 mg/kg analgesia",
       "1-2 mg/kg IV induction",
       "4-5 mg/kg IM",
-      "emergence reactions"
+      "emergence reactions",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Ketamine"
     ],
     "type": "drug",
     "domains": [
@@ -3387,7 +6281,17 @@
       "IV",
       "30 mg IV",
       "15 mg elderly/renal",
-      "avoid in GI bleed/renal"
+      "avoid in GI bleed/renal",
+      "drug",
+      "Formulary",
+      "adult",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "paracetamol",
+      "Ketorolac"
     ],
     "type": "drug",
     "domains": [
@@ -3404,7 +6308,9 @@
     "page_end": 346,
     "aliases": [
       "mgso4",
-      "magnesium sulfate"
+      "magnesium sulfate",
+      "MS",
+      "magnesium sulphate"
     ],
     "keywords": [
       "asthma",
@@ -3412,7 +6318,24 @@
       "eclampsia",
       "IV",
       "torsades de pointes",
-      "2 g IV"
+      "2 g IV",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "MS",
+      "Magnesium sulfate",
+      "magnesium sulphate",
+      "wheeze",
+      "bronchospasm",
+      "shortness of breath",
+      "SOB",
+      "salbutamol",
+      "ventolin",
+      "ipratropium",
+      "atrovent",
+      "Magnesium",
+      "Sulphate"
     ],
     "type": "drug",
     "domains": [
@@ -3430,11 +6353,20 @@
     "page_end": 348,
     "aliases": [
       "methoxyflurane",
-      "Green Whistle"
+      "Green Whistle",
+      "Methoxyflurane Penthrox",
+      "MP"
     ],
     "keywords": [
       "analgesia",
-      "inhaled"
+      "inhaled",
+      "drug",
+      "Formulary",
+      "adult",
+      "Methoxyflurane",
+      "Methoxyflurane Penthrox",
+      "MP",
+      "Penthrox"
     ],
     "type": "drug",
     "domains": [
@@ -3458,7 +6390,15 @@
       "gastroparesis",
       "nausea",
       "migraine",
-      "10 mg"
+      "10 mg",
+      "drug",
+      "Formulary",
+      "adult",
+      "vomiting",
+      "ondansetron",
+      "zofran",
+      "metoclopramide",
+      "reglan"
     ],
     "type": "drug",
     "domains": [
@@ -3486,7 +6426,16 @@
       "IM",
       "0.1-0.2 mg/kg",
       "5-10 mg IN",
-      "RSI co-induction"
+      "RSI co-induction",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "seizures",
+      "fit",
+      "convulsion",
+      "status epilepticus",
+      "midazolam"
     ],
     "type": "drug",
     "domains": [
@@ -3511,7 +6460,24 @@
       "respiratory depression",
       "IN",
       "IV",
-      "IM"
+      "IM",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "breathing",
+      "dyspnea",
+      "shortness of breath",
+      "SOB",
+      "oxygen",
+      "SpO2",
+      "poisoning",
+      "toxicity",
+      "OD",
+      "naloxone",
+      "narcan",
+      "opiates",
+      "overdose"
     ],
     "type": "drug",
     "domains": [
@@ -3543,7 +6509,14 @@
       "central line preferred",
       "0.05–0.5 mcg/kg/min",
       "central line",
-      "peripheral start acceptable (monitor)"
+      "peripheral start acceptable (monitor)",
+      "drug",
+      "Formulary",
+      "adult",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "Noradrenaline"
     ],
     "type": "drug",
     "domains": [
@@ -3567,7 +6540,16 @@
       "QT",
       "4 mg IV",
       "8 mg PO",
-      "QT prolongation caution"
+      "QT prolongation caution",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "vomiting",
+      "ondansetron",
+      "zofran",
+      "metoclopramide",
+      "reglan"
     ],
     "type": "drug",
     "domains": [
@@ -3587,7 +6569,10 @@
       "acetaminophen",
       "panadol",
       "tylenol",
-      "Paracetamol (Oral and IV)"
+      "Paracetamol (Oral and IV)",
+      "Paracetamol",
+      "Paracetamol Oral & IV",
+      "POI"
     ],
     "keywords": [
       "pain",
@@ -3595,7 +6580,21 @@
       "PO",
       "IV",
       "15 mg/kg",
-      "1 g adult"
+      "1 g adult",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Paracetamol (Oral and IV)",
+      "Paracetamol",
+      "Paracetamol Oral & IV",
+      "POI",
+      "analgesia",
+      "pain relief",
+      "fentanyl",
+      "morphine",
+      "ketamine",
+      "Oral"
     ],
     "type": "drug",
     "domains": [
@@ -3622,7 +6621,14 @@
       "alpha-agonist",
       "50–200 mcg bolus",
       "alpha-1 agonist",
-      "reflex bradycardia"
+      "reflex bradycardia",
+      "drug",
+      "Formulary",
+      "adult",
+      "hypotension",
+      "low blood pressure",
+      "poor perfusion",
+      "Phenylephrine"
     ],
     "type": "drug",
     "domains": [
@@ -3639,11 +6645,21 @@
     "page_end": 368,
     "aliases": [
       "stemetil",
-      "Compazine"
+      "Compazine",
+      "Prochlorperazine",
+      "Prochlorperazine Stemetil",
+      "PS"
     ],
     "keywords": [
       "antiemetic",
-      "vertigo"
+      "vertigo",
+      "drug",
+      "Formulary",
+      "adult",
+      "Prochlorperazine",
+      "Prochlorperazine Stemetil",
+      "PS",
+      "Stemetil"
     ],
     "type": "drug",
     "domains": [
@@ -3669,7 +6685,12 @@
       "IV",
       "0.6-1.2 mg/kg",
       "onset 45-60s",
-      "duration 30-60m"
+      "duration 30-60m",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Rocuronium"
     ],
     "type": "drug",
     "domains": [
@@ -3696,7 +6717,19 @@
       "copd",
       "neb",
       "neb 2.5 mg",
-      "MDI"
+      "MDI",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "wheeze",
+      "bronchospasm",
+      "shortness of breath",
+      "SOB",
+      "salbutamol",
+      "ventolin",
+      "ipratropium",
+      "atrovent"
     ],
     "type": "drug",
     "domains": [
@@ -3715,7 +6748,10 @@
     "aliases": [
       "sux",
       "suxamethonium",
-      "Anectine"
+      "Anectine",
+      "Succinylcholine",
+      "Succinylcholine Suxamethonium",
+      "SS"
     ],
     "keywords": [
       "paralytic",
@@ -3724,7 +6760,19 @@
       "contraindicated hyperkalaemia",
       "contra: burns >24h",
       "contra: crush >24h",
-      "fasciculations"
+      "fasciculations",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Succinylcholine",
+      "Succinylcholine Suxamethonium",
+      "SS",
+      "burn injury",
+      "thermal injury",
+      "scald",
+      "fluid resuscitation",
+      "Suxamethonium"
     ],
     "type": "drug",
     "domains": [
@@ -3743,7 +6791,11 @@
     "aliases": [
       "txa",
       "Cyklokapron",
-      "hemorrhage"
+      "hemorrhage",
+      "Tranexamic Acid",
+      "Tranexamic Acid TXA",
+      "TAT",
+      "haemorrhage"
     ],
     "keywords": [
       "haemorrhage",
@@ -3753,7 +6805,23 @@
       "within 3 hours",
       "1 g IV over 10 min",
       "second gram over 8h (hospital)",
-      "hemorrhage"
+      "hemorrhage",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Tranexamic Acid",
+      "Tranexamic Acid TXA",
+      "TAT",
+      "major bleed",
+      "blood loss",
+      "TXA",
+      "injury",
+      "accident",
+      "RTC",
+      "MVA",
+      "Tranexamic",
+      "Acid"
     ],
     "type": "drug",
     "domains": [
@@ -3775,7 +6843,12 @@
     ],
     "keywords": [
       "paralytic",
-      "rsi"
+      "rsi",
+      "drug",
+      "Formulary",
+      "adult",
+      "peds",
+      "Vecuronium"
     ],
     "type": "drug",
     "domains": [
@@ -3793,7 +6866,8 @@
     "page_end": 383,
     "aliases": [
       "extended pharmacopoeia",
-      "retrieval pharmacopoeia"
+      "retrieval pharmacopoeia",
+      "RSEP"
     ],
     "keywords": [
       "retrieval services",
@@ -3801,7 +6875,14 @@
       "pharmacopoeia",
       "medications",
       "drug list",
-      "retrieval"
+      "retrieval",
+      "reference",
+      "Formulary",
+      "adult",
+      "peds",
+      "RSEP",
+      "Services",
+      "extended"
     ],
     "type": "reference",
     "domains": [
@@ -3820,7 +6901,8 @@
     "aliases": [
       "medication privilege",
       "drug privileges",
-      "medication authorisation"
+      "medication authorisation",
+      "MP"
     ],
     "keywords": [
       "medication privileges",
@@ -3829,7 +6911,13 @@
       "authorization",
       "medications",
       "drug privileges",
-      "formulary"
+      "formulary",
+      "operations",
+      "adult",
+      "peds",
+      "MP",
+      "Medication",
+      "privileges"
     ],
     "type": "operations",
     "domains": [
