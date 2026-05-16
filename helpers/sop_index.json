@@ -17,7 +17,11 @@
       "aliases": [
         "1.2 Uniforms and Personal Hygiene",
         "SOP 1.2 Uniforms and Personal Hygiene",
-        "Uniforms & Personal Hygiene"
+        "Uniforms & Personal Hygiene",
+        "UPH",
+        "1.2",
+        "SOP 1.2",
+        "SOP1.2"
       ],
       "keywords": [
         "Uniforms",
@@ -29,7 +33,17 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "Uniforms & Personal Hygiene",
+        "UPH",
+        "SOP 1.2",
+        "SOP1.2",
+        "1.2 Uniforms and Personal Hygiene",
+        "SOP 1.2 Uniforms and Personal Hygiene",
+        "dress code",
+        "personal hygiene",
+        "appearance"
       ],
       "type": "procedure"
     },
@@ -47,7 +61,17 @@
         "shift swaps",
         "duty exchange",
         "shift exchange",
-        "swaps"
+        "swaps",
+        "LSS",
+        "1.3",
+        "SOP 1.3",
+        "SOP1.3",
+        "Leave and Shift swaps",
+        "1.3 Leave and Shift swaps",
+        "SOP 1.3 Leave and Shift swaps",
+        "Leave & Shift swaps",
+        "shift swops",
+        "swops"
       ],
       "keywords": [
         "Leave",
@@ -65,7 +89,25 @@
         "policy",
         "staff",
         "duty",
-        "exchange"
+        "exchange",
+        "procedure",
+        "Leave & Shift Swops",
+        "LSS",
+        "SOP 1.3",
+        "SOP1.3",
+        "1.3 Leave and Shift Swops",
+        "SOP 1.3 Leave and Shift Swops",
+        "Leave and Shift swaps",
+        "1.3 Leave and Shift swaps",
+        "SOP 1.3 Leave and Shift swaps",
+        "Leave & Shift swaps",
+        "shift swops",
+        "vacation",
+        "annual leave",
+        "sick leave",
+        "roster",
+        "swap",
+        "swop"
       ],
       "type": "procedure"
     },
@@ -78,7 +120,11 @@
       "page_end": 22,
       "aliases": [
         "1.5 Red Rules in Ambulance Service",
-        "SOP 1.5 Red Rules in Ambulance Service"
+        "SOP 1.5 Red Rules in Ambulance Service",
+        "RRAS",
+        "1.5",
+        "SOP 1.5",
+        "SOP1.5"
       ],
       "keywords": [
         "Red",
@@ -90,7 +136,14 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "RRAS",
+        "SOP 1.5",
+        "SOP1.5",
+        "1.5 Red Rules in Ambulance Service",
+        "SOP 1.5 Red Rules in Ambulance Service",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -104,7 +157,15 @@
       "aliases": [
         "1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent Behavior",
         "SOP 1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent Behavior",
-        "Sanctions for Violating Rules & Regulations & Acts of Negligent Behavior"
+        "Sanctions for Violating Rules & Regulations & Acts of Negligent Behavior",
+        "SVRRANB",
+        "1.6",
+        "SOP 1.6",
+        "SOP1.6",
+        "Sanctions for Violating Rules and Regulations and Acts of Negligent behaviour",
+        "1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent behaviour",
+        "SOP 1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent behaviour",
+        "Sanctions for Violating Rules & Regulations & Acts of Negligent behaviour"
       ],
       "keywords": [
         "Sanctions",
@@ -123,7 +184,19 @@
         "staff",
         "negligence",
         "disciplinary action",
-        "violation"
+        "violation",
+        "procedure",
+        "Sanctions for Violating Rules & Regulations & Acts of Negligent Behavior",
+        "SVRRANB",
+        "SOP 1.6",
+        "SOP1.6",
+        "1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent Behavior",
+        "SOP 1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent Behavior",
+        "Sanctions for Violating Rules and Regulations and Acts of Negligent behaviour",
+        "1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent behaviour",
+        "SOP 1.6 Sanctions for Violating Rules and Regulations and Acts of Negligent behaviour",
+        "Sanctions for Violating Rules & Regulations & Acts of Negligent behaviour",
+        "behaviour"
       ],
       "type": "procedure"
     },
@@ -138,7 +211,12 @@
         "1.7 Ambulances Driven by Non-Medical Personnel",
         "SOP 1.7 Ambulances Driven by Non-Medical Personnel",
         "non medical driver",
-        "non-medical driver"
+        "non-medical driver",
+        "Ambulances Driven by Non Medical Personnel",
+        "ADNMP",
+        "1.7",
+        "SOP 1.7",
+        "SOP1.7"
       ],
       "keywords": [
         "Ambulances",
@@ -156,7 +234,13 @@
         "non medical driver",
         "non-medical driver",
         "driver",
-        "driving"
+        "driving",
+        "procedure",
+        "ADNMP",
+        "SOP 1.7",
+        "SOP1.7",
+        "1.7 Ambulances Driven by Non-Medical Personnel",
+        "SOP 1.7 Ambulances Driven by Non-Medical Personnel"
       ],
       "type": "procedure"
     },
@@ -169,7 +253,11 @@
       "page_end": 26,
       "aliases": [
         "1.8 Vehicles Running During Summer Season",
-        "SOP 1.8 Vehicles Running During Summer Season"
+        "SOP 1.8 Vehicles Running During Summer Season",
+        "VRDSS",
+        "1.8",
+        "SOP 1.8",
+        "SOP1.8"
       ],
       "keywords": [
         "Vehicles",
@@ -182,7 +270,14 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "VRDSS",
+        "SOP 1.8",
+        "SOP1.8",
+        "1.8 Vehicles Running During Summer Season",
+        "SOP 1.8 Vehicles Running During Summer Season",
+        "During"
       ],
       "type": "procedure"
     },
@@ -196,7 +291,12 @@
       "aliases": [
         "1.9 Unmarked Rapid Response Vehicle (RRV) Allocation",
         "SOP 1.9 Unmarked Rapid Response Vehicle (RRV) Allocation",
-        "Unmarked Rapid Response Vehicle Allocation"
+        "Unmarked Rapid Response Vehicle Allocation",
+        "Unmarked Rapid Response Vehicle RRV Allocation",
+        "URRVRA",
+        "1.9",
+        "SOP 1.9",
+        "SOP1.9"
       ],
       "keywords": [
         "Unmarked",
@@ -212,7 +312,14 @@
         "Administration",
         "rapid response vehicle",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "Unmarked Rapid Response Vehicle Allocation",
+        "URRVRA",
+        "SOP 1.9",
+        "SOP1.9",
+        "1.9 Unmarked Rapid Response Vehicle (RRV) Allocation",
+        "SOP 1.9 Unmarked Rapid Response Vehicle (RRV) Allocation"
       ],
       "type": "procedure"
     },
@@ -227,7 +334,11 @@
         "1.11 Photo/Video Recording",
         "SOP 1.11 Photo/Video Recording",
         "Photo and Video Recording",
-        "Photo / Video Recording"
+        "Photo / Video Recording",
+        "PVR",
+        "1.11",
+        "SOP 1.11",
+        "SOP1.11"
       ],
       "keywords": [
         "Photo",
@@ -239,7 +350,14 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "Photo and Video Recording",
+        "PVR",
+        "SOP 1.11",
+        "SOP1.11",
+        "1.11 Photo/Video Recording",
+        "SOP 1.11 Photo/Video Recording"
       ],
       "type": "procedure"
     },
@@ -252,7 +370,12 @@
       "page_end": 29,
       "aliases": [
         "1.12 WOQOD e-Fueling System",
-        "SOP 1.12 WOQOD e-Fueling System"
+        "SOP 1.12 WOQOD e-Fueling System",
+        "WOQOD e Fueling System",
+        "WEFS",
+        "1.12",
+        "SOP 1.12",
+        "SOP1.12"
       ],
       "keywords": [
         "WOQOD",
@@ -267,7 +390,13 @@
         "petrol",
         "fuel",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "WEFS",
+        "SOP 1.12",
+        "SOP1.12",
+        "1.12 WOQOD e-Fueling System",
+        "SOP 1.12 WOQOD e-Fueling System"
       ],
       "type": "procedure"
     },
@@ -280,7 +409,11 @@
       "page_end": 31,
       "aliases": [
         "1.13 Management Notification Process",
-        "SOP 1.13 Management Notification Process"
+        "SOP 1.13 Management Notification Process",
+        "MNP",
+        "1.13",
+        "SOP 1.13",
+        "SOP1.13"
       ],
       "keywords": [
         "Management",
@@ -292,7 +425,13 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "MNP",
+        "SOP 1.13",
+        "SOP1.13",
+        "1.13 Management Notification Process",
+        "SOP 1.13 Management Notification Process"
       ],
       "type": "procedure"
     },
@@ -305,7 +444,11 @@
       "page_end": 40,
       "aliases": [
         "1.14 Absenteeism Management",
-        "SOP 1.14 Absenteeism Management"
+        "SOP 1.14 Absenteeism Management",
+        "AM",
+        "1.14",
+        "SOP 1.14",
+        "SOP1.14"
       ],
       "keywords": [
         "Absenteeism",
@@ -316,7 +459,13 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "AM",
+        "SOP 1.14",
+        "SOP1.14",
+        "1.14 Absenteeism Management",
+        "SOP 1.14 Absenteeism Management"
       ],
       "type": "procedure"
     },
@@ -329,7 +478,11 @@
       "page_end": 43,
       "aliases": [
         "1.15 Performance Improvement Process",
-        "SOP 1.15 Performance Improvement Process"
+        "SOP 1.15 Performance Improvement Process",
+        "PIP",
+        "1.15",
+        "SOP 1.15",
+        "SOP1.15"
       ],
       "keywords": [
         "Performance",
@@ -341,7 +494,13 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "PIP",
+        "SOP 1.15",
+        "SOP1.15",
+        "1.15 Performance Improvement Process",
+        "SOP 1.15 Performance Improvement Process"
       ],
       "type": "procedure"
     },
@@ -355,7 +514,11 @@
       "aliases": [
         "1.16 HMCAS Procurement and Contract Process",
         "SOP 1.16 HMCAS Procurement and Contract Process",
-        "HMCAS Procurement & Contract Process"
+        "HMCAS Procurement & Contract Process",
+        "HPCP",
+        "1.16",
+        "SOP 1.16",
+        "SOP1.16"
       ],
       "keywords": [
         "HMCAS",
@@ -370,7 +533,14 @@
         "hamad medical corporation ambulance service",
         "ambulance service",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "HMCAS Procurement & Contract Process",
+        "HPCP",
+        "SOP 1.16",
+        "SOP1.16",
+        "1.16 HMCAS Procurement and Contract Process",
+        "SOP 1.16 HMCAS Procurement and Contract Process"
       ],
       "type": "procedure"
     },
@@ -383,7 +553,11 @@
       "page_end": 51,
       "aliases": [
         "1.17 Disclosure of HMCAS Staff Identification to External Security Agencies",
-        "SOP 1.17 Disclosure of HMCAS Staff Identification to External Security Agencies"
+        "SOP 1.17 Disclosure of HMCAS Staff Identification to External Security Agencies",
+        "DHSIESA",
+        "1.17",
+        "SOP 1.17",
+        "SOP1.17"
       ],
       "keywords": [
         "Disclosure",
@@ -400,7 +574,13 @@
         "Administration",
         "hamad medical corporation ambulance service",
         "ambulance service",
-        "policy"
+        "policy",
+        "procedure",
+        "DHSIESA",
+        "SOP 1.17",
+        "SOP1.17",
+        "1.17 Disclosure of HMCAS Staff Identification to External Security Agencies",
+        "SOP 1.17 Disclosure of HMCAS Staff Identification to External Security Agencies"
       ],
       "type": "procedure"
     },
@@ -413,7 +593,11 @@
       "page_end": 59,
       "aliases": [
         "1.19 Conducting a Quality Improvement Activity in HMCASG",
-        "SOP 1.19 Conducting a Quality Improvement Activity in HMCASG"
+        "SOP 1.19 Conducting a Quality Improvement Activity in HMCASG",
+        "CQIAH",
+        "1.19",
+        "SOP 1.19",
+        "SOP1.19"
       ],
       "keywords": [
         "Conducting",
@@ -427,7 +611,13 @@
         "General",
         "Administration",
         "policy",
-        "staff"
+        "staff",
+        "procedure",
+        "CQIAH",
+        "SOP 1.19",
+        "SOP1.19",
+        "1.19 Conducting a Quality Improvement Activity in HMCASG",
+        "SOP 1.19 Conducting a Quality Improvement Activity in HMCASG"
       ],
       "type": "procedure"
     },
@@ -441,7 +631,11 @@
       "aliases": [
         "2.1 Personal Protection & Safety",
         "SOP 2.1 Personal Protection & Safety",
-        "Personal Protection and Safety"
+        "Personal Protection and Safety",
+        "PPS",
+        "2.1",
+        "SOP 2.1",
+        "SOP2.1"
       ],
       "keywords": [
         "Personal",
@@ -452,7 +646,14 @@
         "2.1",
         "Health",
         "Security",
-        "risk"
+        "risk",
+        "procedure",
+        "Personal Protection and Safety",
+        "PPS",
+        "SOP 2.1",
+        "SOP2.1",
+        "2.1 Personal Protection & Safety",
+        "SOP 2.1 Personal Protection & Safety"
       ],
       "type": "procedure"
     },
@@ -465,7 +666,11 @@
       "page_end": 67,
       "aliases": [
         "2.1.A Management of Ambulance in the Event of Fire",
-        "SOP 2.1.A Management of Ambulance in the Event of Fire"
+        "SOP 2.1.A Management of Ambulance in the Event of Fire",
+        "MAEF",
+        "2.1.A",
+        "SOP 2.1.A",
+        "SOP2.1.A"
       ],
       "keywords": [
         "Management",
@@ -478,7 +683,13 @@
         "Health",
         "Safety",
         "Security",
-        "risk"
+        "risk",
+        "procedure",
+        "MAEF",
+        "SOP 2.1.A",
+        "SOP2.1.A",
+        "2.1.A Management of Ambulance in the Event of Fire",
+        "SOP 2.1.A Management of Ambulance in the Event of Fire"
       ],
       "type": "procedure"
     },
@@ -492,7 +703,11 @@
       "aliases": [
         "2.2 Medical Waste Handling",
         "SOP 2.2 Medical Waste Handling",
-        "biohazard waste"
+        "biohazard waste",
+        "MWH",
+        "2.2",
+        "SOP 2.2",
+        "SOP2.2"
       ],
       "keywords": [
         "Medical",
@@ -505,7 +720,15 @@
         "Safety",
         "Security",
         "biohazard",
-        "risk"
+        "risk",
+        "procedure",
+        "MWH",
+        "SOP 2.2",
+        "SOP2.2",
+        "2.2 Medical Waste Handling",
+        "SOP 2.2 Medical Waste Handling",
+        "medical waste",
+        "sharps"
       ],
       "type": "procedure"
     },
@@ -520,7 +743,12 @@
         "2.3 Social Cleaning and Simple Decontamination of Vehicles and Non-Critical Equipment",
         "SOP 2.3 Social Cleaning and Simple Decontamination of Vehicles and Non-Critical Equipment",
         "Social Cleaning & Simple Decontamination of Vehicles & Non-Critical Equipment",
-        "decon"
+        "decon",
+        "Social Cleaning and Simple Decontamination of Vehicles and Non Critical Equipment",
+        "SCSDVNCE",
+        "2.3",
+        "SOP 2.3",
+        "SOP2.3"
       ],
       "keywords": [
         "Social",
@@ -539,7 +767,16 @@
         "Security",
         "decon",
         "contamination",
-        "risk"
+        "risk",
+        "procedure",
+        "Social Cleaning & Simple Decontamination of Vehicles & Non-Critical Equipment",
+        "SCSDVNCE",
+        "SOP 2.3",
+        "SOP2.3",
+        "2.3 Social Cleaning and Simple Decontamination of Vehicles and Non-Critical Equipment",
+        "SOP 2.3 Social Cleaning and Simple Decontamination of Vehicles and Non-Critical Equipment",
+        "infection control",
+        "disinfection"
       ],
       "type": "procedure"
     },
@@ -553,7 +790,11 @@
       "aliases": [
         "2.3.A Maintenance and Cleaning of HMCAS Response and Medication Bags",
         "SOP 2.3.A Maintenance and Cleaning of HMCAS Response and Medication Bags",
-        "Maintenance & Cleaning of HMCAS Response & Medication Bags"
+        "Maintenance & Cleaning of HMCAS Response & Medication Bags",
+        "MCHRMB",
+        "2.3.A",
+        "SOP 2.3.A",
+        "SOP2.3.A"
       ],
       "keywords": [
         "Maintenance",
@@ -570,7 +811,17 @@
         "Security",
         "hamad medical corporation ambulance service",
         "ambulance service",
-        "risk"
+        "risk",
+        "procedure",
+        "Maintenance & Cleaning of HMCAS Response & Medication Bags",
+        "MCHRMB",
+        "SOP 2.3.A",
+        "SOP2.3.A",
+        "2.3.A Maintenance and Cleaning of HMCAS Response and Medication Bags",
+        "SOP 2.3.A Maintenance and Cleaning of HMCAS Response and Medication Bags",
+        "decontamination",
+        "infection control",
+        "disinfection"
       ],
       "type": "procedure"
     },
@@ -583,7 +834,11 @@
       "page_end": 80,
       "aliases": [
         "2.3.B Infection Control in HMCAS Supply Chain",
-        "SOP 2.3.B Infection Control in HMCAS Supply Chain"
+        "SOP 2.3.B Infection Control in HMCAS Supply Chain",
+        "ICHSC",
+        "2.3.B",
+        "SOP 2.3.B",
+        "SOP2.3.B"
       ],
       "keywords": [
         "Infection",
@@ -599,7 +854,13 @@
         "Security",
         "hamad medical corporation ambulance service",
         "ambulance service",
-        "risk"
+        "risk",
+        "procedure",
+        "ICHSC",
+        "SOP 2.3.B",
+        "SOP2.3.B",
+        "2.3.B Infection Control in HMCAS Supply Chain",
+        "SOP 2.3.B Infection Control in HMCAS Supply Chain"
       ],
       "type": "procedure"
     },
@@ -612,7 +873,11 @@
       "page_end": 83,
       "aliases": [
         "2.4 Deep Cleaning of Patient Transporting Vehicles",
-        "SOP 2.4 Deep Cleaning of Patient Transporting Vehicles"
+        "SOP 2.4 Deep Cleaning of Patient Transporting Vehicles",
+        "DCPTV",
+        "2.4",
+        "SOP 2.4",
+        "SOP2.4"
       ],
       "keywords": [
         "Deep",
@@ -626,7 +891,16 @@
         "Health",
         "Safety",
         "Security",
-        "risk"
+        "risk",
+        "procedure",
+        "DCPTV",
+        "SOP 2.4",
+        "SOP2.4",
+        "2.4 Deep Cleaning of Patient Transporting Vehicles",
+        "SOP 2.4 Deep Cleaning of Patient Transporting Vehicles",
+        "decontamination",
+        "infection control",
+        "disinfection"
       ],
       "type": "procedure"
     },
@@ -640,7 +914,11 @@
       "aliases": [
         "2.5 Management of Occupational Exposure to Blood and Body Fluids",
         "SOP 2.5 Management of Occupational Exposure to Blood and Body Fluids",
-        "Management of Occupational Exposure to Blood & Body Fluids"
+        "Management of Occupational Exposure to Blood & Body Fluids",
+        "MOEBBF",
+        "2.5",
+        "SOP 2.5",
+        "SOP2.5"
       ],
       "keywords": [
         "Management",
@@ -658,7 +936,14 @@
         "occupational exposure",
         "needle stick",
         "needlestick",
-        "risk"
+        "risk",
+        "procedure",
+        "Management of Occupational Exposure to Blood & Body Fluids",
+        "MOEBBF",
+        "SOP 2.5",
+        "SOP2.5",
+        "2.5 Management of Occupational Exposure to Blood and Body Fluids",
+        "SOP 2.5 Management of Occupational Exposure to Blood and Body Fluids"
       ],
       "type": "procedure"
     },
@@ -671,7 +956,11 @@
       "page_end": 89,
       "aliases": [
         "2.6 Oxygen Management by Ambulance Services",
-        "SOP 2.6 Oxygen Management by Ambulance Services"
+        "SOP 2.6 Oxygen Management by Ambulance Services",
+        "OMAS",
+        "2.6",
+        "SOP 2.6",
+        "SOP2.6"
       ],
       "keywords": [
         "Oxygen",
@@ -685,7 +974,14 @@
         "Security",
         "cylinder",
         "oxygen cylinder",
-        "risk"
+        "risk",
+        "procedure",
+        "OMAS",
+        "SOP 2.6",
+        "SOP2.6",
+        "2.6 Oxygen Management by Ambulance Services",
+        "SOP 2.6 Oxygen Management by Ambulance Services",
+        "Services"
       ],
       "type": "procedure"
     },
@@ -699,7 +995,11 @@
       "aliases": [
         "2.7.A Use of Spoke and Hub Facilities",
         "SOP 2.7.A Use of Spoke and Hub Facilities",
-        "Use of Spoke & Hub Facilities"
+        "Use of Spoke & Hub Facilities",
+        "USHF",
+        "2.7.A",
+        "SOP 2.7.A",
+        "SOP2.7.A"
       ],
       "keywords": [
         "Spoke",
@@ -712,7 +1012,14 @@
         "Vehicles",
         "Equipment",
         "facility",
-        "vehicle"
+        "vehicle",
+        "procedure",
+        "Use of Spoke & Hub Facilities",
+        "USHF",
+        "SOP 2.7.A",
+        "SOP2.7.A",
+        "2.7.A Use of Spoke and Hub Facilities",
+        "SOP 2.7.A Use of Spoke and Hub Facilities"
       ],
       "type": "procedure"
     },
@@ -725,7 +1032,11 @@
       "page_end": 94,
       "aliases": [
         "2.7.B Helipad Base Security",
-        "SOP 2.7.B Helipad Base Security"
+        "SOP 2.7.B Helipad Base Security",
+        "HBS",
+        "2.7.B",
+        "SOP 2.7.B",
+        "SOP2.7.B"
       ],
       "keywords": [
         "Helipad",
@@ -738,7 +1049,13 @@
         "Vehicles",
         "Equipment",
         "facility",
-        "vehicle"
+        "vehicle",
+        "procedure",
+        "HBS",
+        "SOP 2.7.B",
+        "SOP2.7.B",
+        "2.7.B Helipad Base Security",
+        "SOP 2.7.B Helipad Base Security"
       ],
       "type": "procedure"
     },
@@ -751,7 +1068,11 @@
       "page_end": 98,
       "aliases": [
         "2.7.C Traka Key Management System",
-        "SOP 2.7.C Traka Key Management System"
+        "SOP 2.7.C Traka Key Management System",
+        "TKMS",
+        "2.7.C",
+        "SOP 2.7.C",
+        "SOP2.7.C"
       ],
       "keywords": [
         "Traka",
@@ -766,7 +1087,13 @@
         "Vehicles",
         "Equipment",
         "facility",
-        "vehicle"
+        "vehicle",
+        "procedure",
+        "TKMS",
+        "SOP 2.7.C",
+        "SOP2.7.C",
+        "2.7.C Traka Key Management System",
+        "SOP 2.7.C Traka Key Management System"
       ],
       "type": "procedure"
     },
@@ -779,7 +1106,11 @@
       "page_end": 99,
       "aliases": [
         "2.8 Use of Tobacco Products",
-        "SOP 2.8 Use of Tobacco Products"
+        "SOP 2.8 Use of Tobacco Products",
+        "UTP",
+        "2.8",
+        "SOP 2.8",
+        "SOP2.8"
       ],
       "keywords": [
         "Tobacco",
@@ -790,7 +1121,13 @@
         "Health",
         "Safety",
         "Security",
-        "risk"
+        "risk",
+        "procedure",
+        "UTP",
+        "SOP 2.8",
+        "SOP2.8",
+        "2.8 Use of Tobacco Products",
+        "SOP 2.8 Use of Tobacco Products"
       ],
       "type": "procedure"
     },
@@ -804,7 +1141,11 @@
       "aliases": [
         "2.9 Fitness to Operate",
         "SOP 2.9 Fitness to Operate",
-        "fitness for duty"
+        "fitness for duty",
+        "FO",
+        "2.9",
+        "SOP 2.9",
+        "SOP2.9"
       ],
       "keywords": [
         "Fitness",
@@ -817,7 +1158,13 @@
         "Security",
         "fitness for duty",
         "risk",
-        "duty"
+        "duty",
+        "procedure",
+        "FO",
+        "SOP 2.9",
+        "SOP2.9",
+        "2.9 Fitness to Operate",
+        "SOP 2.9 Fitness to Operate"
       ],
       "type": "procedure"
     },
@@ -830,7 +1177,11 @@
       "page_end": 104,
       "aliases": [
         "2.10 Ambulance Service Fatigue Management",
-        "SOP 2.10 Ambulance Service Fatigue Management"
+        "SOP 2.10 Ambulance Service Fatigue Management",
+        "ASFM",
+        "2.10",
+        "SOP 2.10",
+        "SOP2.10"
       ],
       "keywords": [
         "Ambulance",
@@ -844,7 +1195,14 @@
         "Security",
         "tiredness",
         "rest",
-        "risk"
+        "risk",
+        "procedure",
+        "ASFM",
+        "SOP 2.10",
+        "SOP2.10",
+        "2.10 Ambulance Service Fatigue Management",
+        "SOP 2.10 Ambulance Service Fatigue Management",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -857,7 +1215,11 @@
       "page_end": 105,
       "aliases": [
         "2.11 Workplace Violence",
-        "SOP 2.11 Workplace Violence"
+        "SOP 2.11 Workplace Violence",
+        "WV",
+        "2.11",
+        "SOP 2.11",
+        "SOP2.11"
       ],
       "keywords": [
         "Workplace",
@@ -870,7 +1232,13 @@
         "Security",
         "assault",
         "staff safety",
-        "risk"
+        "risk",
+        "procedure",
+        "WV",
+        "SOP 2.11",
+        "SOP2.11",
+        "2.11 Workplace Violence",
+        "SOP 2.11 Workplace Violence"
       ],
       "type": "procedure"
     },
@@ -883,7 +1251,11 @@
       "page_end": 111,
       "aliases": [
         "2.12 Hand Hygiene",
-        "SOP 2.12 Hand Hygiene"
+        "SOP 2.12 Hand Hygiene",
+        "HH",
+        "2.12",
+        "SOP 2.12",
+        "SOP2.12"
       ],
       "keywords": [
         "Hand",
@@ -896,7 +1268,13 @@
         "Security",
         "hand washing",
         "infection control",
-        "risk"
+        "risk",
+        "procedure",
+        "HH",
+        "SOP 2.12",
+        "SOP2.12",
+        "2.12 Hand Hygiene",
+        "SOP 2.12 Hand Hygiene"
       ],
       "type": "procedure"
     },
@@ -909,7 +1287,11 @@
       "page_end": 116,
       "aliases": [
         "3.1 NCC Call Routing",
-        "SOP 3.1 NCC Call Routing"
+        "SOP 3.1 NCC Call Routing",
+        "NCR",
+        "3.1",
+        "SOP 3.1",
+        "SOP3.1"
       ],
       "keywords": [
         "NCC",
@@ -922,7 +1304,13 @@
         "national command centre",
         "call center",
         "call centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "NCR",
+        "SOP 3.1",
+        "SOP3.1",
+        "3.1 NCC Call Routing",
+        "SOP 3.1 NCC Call Routing"
       ],
       "type": "procedure"
     },
@@ -935,7 +1323,11 @@
       "page_end": 123,
       "aliases": [
         "3.2 NCC Call Taking",
-        "SOP 3.2 NCC Call Taking"
+        "SOP 3.2 NCC Call Taking",
+        "NCT",
+        "3.2",
+        "SOP 3.2",
+        "SOP3.2"
       ],
       "keywords": [
         "NCC",
@@ -948,7 +1340,13 @@
         "national command centre",
         "call center",
         "call centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "NCT",
+        "SOP 3.2",
+        "SOP3.2",
+        "3.2 NCC Call Taking",
+        "SOP 3.2 NCC Call Taking"
       ],
       "type": "procedure"
     },
@@ -961,7 +1359,11 @@
       "page_end": 127,
       "aliases": [
         "3.3 NCC Call Dispatching",
-        "SOP 3.3 NCC Call Dispatching"
+        "SOP 3.3 NCC Call Dispatching",
+        "NCD",
+        "3.3",
+        "SOP 3.3",
+        "SOP3.3"
       ],
       "keywords": [
         "NCC",
@@ -974,7 +1376,13 @@
         "national command centre",
         "call center",
         "call centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "NCD",
+        "SOP 3.3",
+        "SOP3.3",
+        "3.3 NCC Call Dispatching",
+        "SOP 3.3 NCC Call Dispatching"
       ],
       "type": "procedure"
     },
@@ -994,7 +1402,12 @@
         "telephone CPR",
         "dispatcher CPR",
         "DNR",
-        "do not resuscitate"
+        "do not resuscitate",
+        "Obvious Death, Expected Death & Pre Arrival CPR Instructions",
+        "ODEDPACI",
+        "3.4",
+        "SOP 3.4",
+        "SOP3.4"
       ],
       "keywords": [
         "Obvious",
@@ -1019,7 +1432,14 @@
         "call",
         "telephone",
         "DNR",
-        "do not resuscitate"
+        "do not resuscitate",
+        "procedure",
+        "Obvious Death, Expected Death and Pre-Arrival CPR Instructions",
+        "ODEDPACI",
+        "SOP 3.4",
+        "SOP3.4",
+        "3.4 Obvious Death, Expected Death & Pre-Arrival CPR Instructions",
+        "SOP 3.4 Obvious Death, Expected Death & Pre-Arrival CPR Instructions"
       ],
       "type": "procedure"
     },
@@ -1034,7 +1454,11 @@
         "3.5 First Party Caller (Patient) “Not Found on Arrival”",
         "SOP 3.5 First Party Caller (Patient) “Not Found on Arrival”",
         "First Party Caller “Not Found on Arrival”",
-        "First Party Caller (Patient) Not Found on Arrival"
+        "First Party Caller (Patient) Not Found on Arrival",
+        "FPCPNFA",
+        "3.5",
+        "SOP 3.5",
+        "SOP3.5"
       ],
       "keywords": [
         "First",
@@ -1048,7 +1472,14 @@
         "Communications",
         "3.5",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "First Party Caller “Not Found on Arrival”",
+        "FPCPNFA",
+        "SOP 3.5",
+        "SOP3.5",
+        "3.5 First Party Caller (Patient) “Not Found on Arrival”",
+        "SOP 3.5 First Party Caller (Patient) “Not Found on Arrival”"
       ],
       "type": "procedure"
     },
@@ -1061,7 +1492,11 @@
       "page_end": 133,
       "aliases": [
         "3.6 High Risk Pregnancy Complications",
-        "SOP 3.6 High Risk Pregnancy Complications"
+        "SOP 3.6 High Risk Pregnancy Complications",
+        "HRPC",
+        "3.6",
+        "SOP 3.6",
+        "SOP3.6"
       ],
       "keywords": [
         "High",
@@ -1072,7 +1507,13 @@
         "Communications",
         "3.6",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "HRPC",
+        "SOP 3.6",
+        "SOP3.6",
+        "3.6 High Risk Pregnancy Complications",
+        "SOP 3.6 High Risk Pregnancy Complications"
       ],
       "type": "procedure"
     },
@@ -1085,7 +1526,11 @@
       "page_end": 134,
       "aliases": [
         "3.7.A The Emergency Rule",
-        "SOP 3.7.A The Emergency Rule"
+        "SOP 3.7.A The Emergency Rule",
+        "ER",
+        "3.7.A",
+        "SOP 3.7.A",
+        "SOP3.7.A"
       ],
       "keywords": [
         "Emergency",
@@ -1094,7 +1539,13 @@
         "Communications",
         "3.7.A",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "ER",
+        "SOP 3.7.A",
+        "SOP3.7.A",
+        "3.7.A The Emergency Rule",
+        "SOP 3.7.A The Emergency Rule"
       ],
       "type": "procedure"
     },
@@ -1107,7 +1558,11 @@
       "page_end": 135,
       "aliases": [
         "3.8 Dispatching with Mobile Data Terminals",
-        "SOP 3.8 Dispatching with Mobile Data Terminals"
+        "SOP 3.8 Dispatching with Mobile Data Terminals",
+        "DMDT",
+        "3.8",
+        "SOP 3.8",
+        "SOP3.8"
       ],
       "keywords": [
         "Dispatching",
@@ -1118,7 +1573,13 @@
         "Communications",
         "3.8",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "DMDT",
+        "SOP 3.8",
+        "SOP3.8",
+        "3.8 Dispatching with Mobile Data Terminals",
+        "SOP 3.8 Dispatching with Mobile Data Terminals"
       ],
       "type": "procedure"
     },
@@ -1132,7 +1593,11 @@
       "aliases": [
         "3.9 Daily Operations in the Communications Centres",
         "SOP 3.9 Daily Operations in the Communications Centres",
-        "centers"
+        "centers",
+        "DOCC",
+        "3.9",
+        "SOP 3.9",
+        "SOP3.9"
       ],
       "keywords": [
         "Daily",
@@ -1143,7 +1608,13 @@
         "3.9",
         "centers",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "DOCC",
+        "SOP 3.9",
+        "SOP3.9",
+        "3.9 Daily Operations in the Communications Centres",
+        "SOP 3.9 Daily Operations in the Communications Centres"
       ],
       "type": "procedure"
     },
@@ -1156,7 +1627,11 @@
       "page_end": 141,
       "aliases": [
         "3.10 Telephone System Failure",
-        "SOP 3.10 Telephone System Failure"
+        "SOP 3.10 Telephone System Failure",
+        "TSF",
+        "3.10",
+        "SOP 3.10",
+        "SOP3.10"
       ],
       "keywords": [
         "Telephone",
@@ -1166,7 +1641,13 @@
         "Communications",
         "3.10",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "TSF",
+        "SOP 3.10",
+        "SOP3.10",
+        "3.10 Telephone System Failure",
+        "SOP 3.10 Telephone System Failure"
       ],
       "type": "procedure"
     },
@@ -1179,7 +1660,11 @@
       "page_end": 145,
       "aliases": [
         "3.11 Radio System Failure",
-        "SOP 3.11 Radio System Failure"
+        "SOP 3.11 Radio System Failure",
+        "RSF",
+        "3.11",
+        "SOP 3.11",
+        "SOP3.11"
       ],
       "keywords": [
         "Radio",
@@ -1189,7 +1674,15 @@
         "Communications",
         "3.11",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "RSF",
+        "SOP 3.11",
+        "SOP3.11",
+        "3.11 Radio System Failure",
+        "SOP 3.11 Radio System Failure",
+        "communication",
+        "call sign"
       ],
       "type": "procedure"
     },
@@ -1202,7 +1695,11 @@
       "page_end": 150,
       "aliases": [
         "3.12 NJM Shutdown",
-        "SOP 3.12 NJM Shutdown"
+        "SOP 3.12 NJM Shutdown",
+        "NS",
+        "3.12",
+        "SOP 3.12",
+        "SOP3.12"
       ],
       "keywords": [
         "NJM",
@@ -1212,7 +1709,13 @@
         "3.12",
         "najm",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "NS",
+        "SOP 3.12",
+        "SOP3.12",
+        "3.12 NJM Shutdown",
+        "SOP 3.12 NJM Shutdown"
       ],
       "type": "procedure"
     },
@@ -1226,7 +1729,12 @@
       "aliases": [
         "3.13 Access to The Healthcare Coordination Center (HCC)",
         "SOP 3.13 Access to The Healthcare Coordination Center (HCC)",
-        "Access to The Healthcare Coordination Center"
+        "Access to The Healthcare Coordination Center",
+        "Access to The Healthcare Coordination Center HCC",
+        "AHCCH",
+        "3.13",
+        "SOP 3.13",
+        "SOP3.13"
       ],
       "keywords": [
         "Access",
@@ -1240,7 +1748,14 @@
         "healthcare coordination center",
         "healthcare coordination centre",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "Access to The Healthcare Coordination Center",
+        "AHCCH",
+        "SOP 3.13",
+        "SOP3.13",
+        "3.13 Access to The Healthcare Coordination Center (HCC)",
+        "SOP 3.13 Access to The Healthcare Coordination Center (HCC)"
       ],
       "type": "procedure"
     },
@@ -1255,7 +1770,11 @@
         "3.14 Call-For-Service Coordination Between National Command Center and Healthcare Coordination Center",
         "SOP 3.14 Call-For-Service Coordination Between National Command Center and Healthcare Coordination Center",
         "Call-For-Service Coordination Between National Command Center & Healthcare Coordination Center",
-        "call for service"
+        "call for service",
+        "Call For Service Coordination Between National Command Center and Healthcare Coordination Center",
+        "3.14",
+        "SOP 3.14",
+        "SOP3.14"
       ],
       "keywords": [
         "Call",
@@ -1269,7 +1788,14 @@
         "Communications",
         "3.14",
         "call for service",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "Call-For-Service Coordination Between National Command Center & Healthcare Coordination Center",
+        "SOP 3.14",
+        "SOP3.14",
+        "3.14 Call-For-Service Coordination Between National Command Center and Healthcare Coordination Center",
+        "SOP 3.14 Call-For-Service Coordination Between National Command Center and Healthcare Coordination Center",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -1282,7 +1808,11 @@
       "page_end": 164,
       "aliases": [
         "3.15 Capturing Unit Status in MDT",
-        "SOP 3.15 Capturing Unit Status in MDT"
+        "SOP 3.15 Capturing Unit Status in MDT",
+        "CUSM",
+        "3.15",
+        "SOP 3.15",
+        "SOP3.15"
       ],
       "keywords": [
         "Capturing",
@@ -1295,7 +1825,13 @@
         "mobile data terminal",
         "mobile data terminals",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "CUSM",
+        "SOP 3.15",
+        "SOP3.15",
+        "3.15 Capturing Unit Status in MDT",
+        "SOP 3.15 Capturing Unit Status in MDT"
       ],
       "type": "procedure"
     },
@@ -1308,7 +1844,11 @@
       "page_end": 165,
       "aliases": [
         "3.16 Major Incident Response On Call Phones",
-        "SOP 3.16 Major Incident Response On Call Phones"
+        "SOP 3.16 Major Incident Response On Call Phones",
+        "MIRCP",
+        "3.16",
+        "SOP 3.16",
+        "SOP3.16"
       ],
       "keywords": [
         "Major",
@@ -1319,7 +1859,16 @@
         "Major Incident Response On Call Phones",
         "Communications",
         "3.16",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "MIRCP",
+        "SOP 3.16",
+        "SOP3.16",
+        "3.16 Major Incident Response On Call Phones",
+        "SOP 3.16 Major Incident Response On Call Phones",
+        "MCI",
+        "mass casualty",
+        "disaster"
       ],
       "type": "procedure"
     },
@@ -1333,7 +1882,12 @@
       "aliases": [
         "3.17 Management of Call Sign Communications Equipment Sets (CCES)",
         "SOP 3.17 Management of Call Sign Communications Equipment Sets (CCES)",
-        "Management of Call Sign Communications Equipment Sets"
+        "Management of Call Sign Communications Equipment Sets",
+        "Management of Call Sign Communications Equipment Sets CCES",
+        "MCSCESC",
+        "3.17",
+        "SOP 3.17",
+        "SOP3.17"
       ],
       "keywords": [
         "Management",
@@ -1346,7 +1900,14 @@
         "Management of Call Sign Communications Equipment Sets (CCES)",
         "3.17",
         "call sign communications equipment sets",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "Management of Call Sign Communications Equipment Sets",
+        "MCSCESC",
+        "SOP 3.17",
+        "SOP3.17",
+        "3.17 Management of Call Sign Communications Equipment Sets (CCES)",
+        "SOP 3.17 Management of Call Sign Communications Equipment Sets (CCES)"
       ],
       "type": "procedure"
     },
@@ -1359,7 +1920,11 @@
       "page_end": 173,
       "aliases": [
         "3.18 CareMonX CAD Shutdown",
-        "SOP 3.18 CareMonX CAD Shutdown"
+        "SOP 3.18 CareMonX CAD Shutdown",
+        "CCS",
+        "3.18",
+        "SOP 3.18",
+        "SOP3.18"
       ],
       "keywords": [
         "CareMonX",
@@ -1371,7 +1936,13 @@
         "computer aided dispatch",
         "dispatch system",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "CCS",
+        "SOP 3.18",
+        "SOP3.18",
+        "3.18 CareMonX CAD Shutdown",
+        "SOP 3.18 CareMonX CAD Shutdown"
       ],
       "type": "procedure"
     },
@@ -1384,7 +1955,11 @@
       "page_end": 177,
       "aliases": [
         "3.19.A NCC Evacuation Plan",
-        "SOP 3.19.A NCC Evacuation Plan"
+        "SOP 3.19.A NCC Evacuation Plan",
+        "NEP",
+        "3.19.A",
+        "SOP 3.19.A",
+        "SOP3.19.A"
       ],
       "keywords": [
         "NCC",
@@ -1398,7 +1973,13 @@
         "call center",
         "call centre",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "NEP",
+        "SOP 3.19.A",
+        "SOP3.19.A",
+        "3.19.A NCC Evacuation Plan",
+        "SOP 3.19.A NCC Evacuation Plan"
       ],
       "type": "procedure"
     },
@@ -1411,7 +1992,11 @@
       "page_end": 182,
       "aliases": [
         "3.19.B HCC Evacuation Plan",
-        "SOP 3.19.B HCC Evacuation Plan"
+        "SOP 3.19.B HCC Evacuation Plan",
+        "HEP",
+        "3.19.B",
+        "SOP 3.19.B",
+        "SOP3.19.B"
       ],
       "keywords": [
         "HCC",
@@ -1423,7 +2008,13 @@
         "healthcare coordination center",
         "healthcare coordination centre",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "HEP",
+        "SOP 3.19.B",
+        "SOP3.19.B",
+        "3.19.B HCC Evacuation Plan",
+        "SOP 3.19.B HCC Evacuation Plan"
       ],
       "type": "procedure"
     },
@@ -1436,7 +2027,11 @@
       "page_end": 191,
       "aliases": [
         "3.20 Customer Service Communications For Healthcare Coordination Service Call Centers",
-        "SOP 3.20 Customer Service Communications For Healthcare Coordination Service Call Centers"
+        "SOP 3.20 Customer Service Communications For Healthcare Coordination Service Call Centers",
+        "CSCHCSCC",
+        "3.20",
+        "SOP 3.20",
+        "SOP3.20"
       ],
       "keywords": [
         "Customer",
@@ -1447,7 +2042,14 @@
         "Centers",
         "Customer Service Communications For Healthcare Coordination Service Call Centers",
         "3.20",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "CSCHCSCC",
+        "SOP 3.20",
+        "SOP3.20",
+        "3.20 Customer Service Communications For Healthcare Coordination Service Call Centers",
+        "SOP 3.20 Customer Service Communications For Healthcare Coordination Service Call Centers",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -1460,7 +2062,11 @@
       "page_end": 197,
       "aliases": [
         "3.21 HCC Call Routing",
-        "SOP 3.21 HCC Call Routing"
+        "SOP 3.21 HCC Call Routing",
+        "HCR",
+        "3.21",
+        "SOP 3.21",
+        "SOP3.21"
       ],
       "keywords": [
         "HCC",
@@ -1471,7 +2077,13 @@
         "3.21",
         "healthcare coordination center",
         "healthcare coordination centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "HCR",
+        "SOP 3.21",
+        "SOP3.21",
+        "3.21 HCC Call Routing",
+        "SOP 3.21 HCC Call Routing"
       ],
       "type": "procedure"
     },
@@ -1484,7 +2096,11 @@
       "page_end": 204,
       "aliases": [
         "3.22 HCC Call Taking",
-        "SOP 3.22 HCC Call Taking"
+        "SOP 3.22 HCC Call Taking",
+        "HCT",
+        "3.22",
+        "SOP 3.22",
+        "SOP3.22"
       ],
       "keywords": [
         "HCC",
@@ -1495,7 +2111,13 @@
         "3.22",
         "healthcare coordination center",
         "healthcare coordination centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "HCT",
+        "SOP 3.22",
+        "SOP3.22",
+        "3.22 HCC Call Taking",
+        "SOP 3.22 HCC Call Taking"
       ],
       "type": "procedure"
     },
@@ -1508,7 +2130,11 @@
       "page_end": 209,
       "aliases": [
         "3.23 HCC Call Dispatching",
-        "SOP 3.23 HCC Call Dispatching"
+        "SOP 3.23 HCC Call Dispatching",
+        "HCD",
+        "3.23",
+        "SOP 3.23",
+        "SOP3.23"
       ],
       "keywords": [
         "HCC",
@@ -1519,7 +2145,13 @@
         "3.23",
         "healthcare coordination center",
         "healthcare coordination centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "HCD",
+        "SOP 3.23",
+        "SOP3.23",
+        "3.23 HCC Call Dispatching",
+        "SOP 3.23 HCC Call Dispatching"
       ],
       "type": "procedure"
     },
@@ -1532,7 +2164,11 @@
       "page_end": 212,
       "aliases": [
         "3.24 Managing Offshore Calls at NCC",
-        "SOP 3.24 Managing Offshore Calls at NCC"
+        "SOP 3.24 Managing Offshore Calls at NCC",
+        "MOCN",
+        "3.24",
+        "SOP 3.24",
+        "SOP3.24"
       ],
       "keywords": [
         "Managing",
@@ -1549,7 +2185,13 @@
         "sea",
         "remote offshore",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "MOCN",
+        "SOP 3.24",
+        "SOP3.24",
+        "3.24 Managing Offshore Calls at NCC",
+        "SOP 3.24 Managing Offshore Calls at NCC"
       ],
       "type": "procedure"
     },
@@ -1562,7 +2204,11 @@
       "page_end": 214,
       "aliases": [
         "3.26 HMCAS Information Systems On Call",
-        "SOP 3.26 HMCAS Information Systems On Call"
+        "SOP 3.26 HMCAS Information Systems On Call",
+        "HISC",
+        "3.26",
+        "SOP 3.26",
+        "SOP3.26"
       ],
       "keywords": [
         "HMCAS",
@@ -1574,7 +2220,13 @@
         "3.26",
         "hamad medical corporation ambulance service",
         "ambulance service",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "HISC",
+        "SOP 3.26",
+        "SOP3.26",
+        "3.26 HMCAS Information Systems On Call",
+        "SOP 3.26 HMCAS Information Systems On Call"
       ],
       "type": "procedure"
     },
@@ -1587,7 +2239,11 @@
       "page_end": 217,
       "aliases": [
         "3.27 EMD Certification",
-        "SOP 3.27 EMD Certification"
+        "SOP 3.27 EMD Certification",
+        "EC",
+        "3.27",
+        "SOP 3.27",
+        "SOP3.27"
       ],
       "keywords": [
         "EMD",
@@ -1596,7 +2252,13 @@
         "Communications",
         "3.27",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "EC",
+        "SOP 3.27",
+        "SOP3.27",
+        "3.27 EMD Certification",
+        "SOP 3.27 EMD Certification"
       ],
       "type": "procedure"
     },
@@ -1610,7 +2272,11 @@
       "aliases": [
         "3.28 IT Equipment Allocation and Use",
         "SOP 3.28 IT Equipment Allocation and Use",
-        "IT Equipment Allocation & Use"
+        "IT Equipment Allocation & Use",
+        "IEAU",
+        "3.28",
+        "SOP 3.28",
+        "SOP3.28"
       ],
       "keywords": [
         "IT",
@@ -1620,7 +2286,14 @@
         "Communications",
         "3.28",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "IT Equipment Allocation & Use",
+        "IEAU",
+        "SOP 3.28",
+        "SOP3.28",
+        "3.28 IT Equipment Allocation and Use",
+        "SOP 3.28 IT Equipment Allocation and Use"
       ],
       "type": "procedure"
     },
@@ -1634,7 +2307,11 @@
       "aliases": [
         "3.29 DHP and Training Requirements for Ambulance Service Medical Dispatchers",
         "SOP 3.29 DHP and Training Requirements for Ambulance Service Medical Dispatchers",
-        "DHP & Training Requirements for Ambulance Service Medical Dispatchers"
+        "DHP & Training Requirements for Ambulance Service Medical Dispatchers",
+        "DTRASMD",
+        "3.29",
+        "SOP 3.29",
+        "SOP3.29"
       ],
       "keywords": [
         "DHP",
@@ -1649,7 +2326,15 @@
         "department of healthcare professions",
         "licensure",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "DHP & Training Requirements for Ambulance Service Medical Dispatchers",
+        "DTRASMD",
+        "SOP 3.29",
+        "SOP3.29",
+        "3.29 DHP and Training Requirements for Ambulance Service Medical Dispatchers",
+        "SOP 3.29 DHP and Training Requirements for Ambulance Service Medical Dispatchers",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -1662,7 +2347,11 @@
       "page_end": 231,
       "aliases": [
         "3.30 Handling Participant Cases",
-        "SOP 3.30 Handling Participant Cases"
+        "SOP 3.30 Handling Participant Cases",
+        "HPC",
+        "3.30",
+        "SOP 3.30",
+        "SOP3.30"
       ],
       "keywords": [
         "Handling",
@@ -1672,7 +2361,13 @@
         "Communications",
         "3.30",
         "dispatch",
-        "call"
+        "call",
+        "procedure",
+        "HPC",
+        "SOP 3.30",
+        "SOP3.30",
+        "3.30 Handling Participant Cases",
+        "SOP 3.30 Handling Participant Cases"
       ],
       "type": "procedure"
     },
@@ -1688,7 +2383,11 @@
         "SOP 4.1.A Patient & Family Rights – Consent, Privacy & Confidentiality",
         "Patient and Family Rights – Consent, Privacy and Confidentiality",
         "Patient & Family Rights - Consent, Privacy & Confidentiality",
-        "patient rights"
+        "patient rights",
+        "PFRCPC",
+        "4.1.A",
+        "SOP 4.1.A",
+        "SOP4.1.A"
       ],
       "keywords": [
         "Patient",
@@ -1703,7 +2402,14 @@
         "Emergency",
         "Operations",
         "patient care",
-        "patient rights"
+        "patient rights",
+        "procedure",
+        "Patient and Family Rights – Consent, Privacy and Confidentiality",
+        "PFRCPC",
+        "SOP 4.1.A",
+        "SOP4.1.A",
+        "4.1.A Patient & Family Rights – Consent, Privacy & Confidentiality",
+        "SOP 4.1.A Patient & Family Rights – Consent, Privacy & Confidentiality"
       ],
       "type": "procedure"
     },
@@ -1717,7 +2423,11 @@
       "aliases": [
         "4.1.B Abuse and Neglect of Children and Adults",
         "SOP 4.1.B Abuse and Neglect of Children and Adults",
-        "Abuse & Neglect of Children & Adults"
+        "Abuse & Neglect of Children & Adults",
+        "ANCA",
+        "4.1.B",
+        "SOP 4.1.B",
+        "SOP4.1.B"
       ],
       "keywords": [
         "Abuse",
@@ -1729,7 +2439,14 @@
         "4.1.B",
         "Emergency",
         "Operations",
-        "patient care"
+        "patient care",
+        "procedure",
+        "Abuse & Neglect of Children & Adults",
+        "ANCA",
+        "SOP 4.1.B",
+        "SOP4.1.B",
+        "4.1.B Abuse and Neglect of Children and Adults",
+        "SOP 4.1.B Abuse and Neglect of Children and Adults"
       ],
       "type": "procedure"
     },
@@ -1744,7 +2461,11 @@
         "4.1.C Confirmation of DHP Qualifications of Clinical Escorts and/or First Responders On Scene",
         "SOP 4.1.C Confirmation of DHP Qualifications of Clinical Escorts and/or First Responders On Scene",
         "Confirmation of DHP Qualifications of Clinical Escorts and and or First Responders On Scene",
-        "Confirmation of DHP Qualifications of Clinical Escorts and / or First Responders On Scene"
+        "Confirmation of DHP Qualifications of Clinical Escorts and / or First Responders On Scene",
+        "CDQCEFRS",
+        "4.1.C",
+        "SOP 4.1.C",
+        "SOP4.1.C"
       ],
       "keywords": [
         "Confirmation",
@@ -1762,7 +2483,14 @@
         "Operations",
         "department of healthcare professions",
         "licensure",
-        "patient care"
+        "patient care",
+        "procedure",
+        "Confirmation of DHP Qualifications of Clinical Escorts and and or First Responders On Scene",
+        "CDQCEFRS",
+        "SOP 4.1.C",
+        "SOP4.1.C",
+        "4.1.C Confirmation of DHP Qualifications of Clinical Escorts and/or First Responders On Scene",
+        "SOP 4.1.C Confirmation of DHP Qualifications of Clinical Escorts and/or First Responders On Scene"
       ],
       "type": "procedure"
     },
@@ -1775,7 +2503,11 @@
       "page_end": 243,
       "aliases": [
         "4.2.A Routine Operational Shift Handover Vehicle Checking",
-        "SOP 4.2.A Routine Operational Shift Handover Vehicle Checking"
+        "SOP 4.2.A Routine Operational Shift Handover Vehicle Checking",
+        "ROSHVC",
+        "4.2.A",
+        "SOP 4.2.A",
+        "SOP4.2.A"
       ],
       "keywords": [
         "Routine",
@@ -1789,7 +2521,17 @@
         "4.2.A",
         "Check",
         "Safety",
-        "vehicle check"
+        "vehicle check",
+        "procedure",
+        "ROSHVC",
+        "SOP 4.2.A",
+        "SOP4.2.A",
+        "4.2.A Routine Operational Shift Handover Vehicle Checking",
+        "SOP 4.2.A Routine Operational Shift Handover Vehicle Checking",
+        "duty",
+        "roster",
+        "swap",
+        "swop"
       ],
       "type": "procedure"
     },
@@ -1805,7 +2547,12 @@
         "SOP 4.2.B Non-Routine Operational and Non-Operational Service Vehicle Checking",
         "Non-Routine Operational & Non-Operational Service Vehicle Checking",
         "non routine",
-        "non operational"
+        "non operational",
+        "Non Routine Operational and Non Operational Service Vehicle Checking",
+        "NRONOSVC",
+        "4.2.B",
+        "SOP 4.2.B",
+        "SOP4.2.B"
       ],
       "keywords": [
         "Non",
@@ -1822,7 +2569,19 @@
         "Safety",
         "non routine",
         "non operational",
-        "vehicle check"
+        "vehicle check",
+        "procedure",
+        "Non-Routine Operational & Non-Operational Service Vehicle Checking",
+        "NRONOSVC",
+        "SOP 4.2.B",
+        "SOP4.2.B",
+        "4.2.B Non-Routine Operational and Non-Operational Service Vehicle Checking",
+        "SOP 4.2.B Non-Routine Operational and Non-Operational Service Vehicle Checking",
+        "duty",
+        "roster",
+        "swap",
+        "swop",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -1836,7 +2595,11 @@
       "aliases": [
         "4.3.A Issuing & Maintenance of Medical Equipment & Supplies",
         "SOP 4.3.A Issuing & Maintenance of Medical Equipment & Supplies",
-        "Issuing and Maintenance of Medical Equipment and Supplies"
+        "Issuing and Maintenance of Medical Equipment and Supplies",
+        "IMMES",
+        "4.3.A",
+        "SOP 4.3.A",
+        "SOP4.3.A"
       ],
       "keywords": [
         "Issuing",
@@ -1848,7 +2611,14 @@
         "Medical Equipment & Medication Management",
         "4.3.A",
         "Medication",
-        "Management"
+        "Management",
+        "procedure",
+        "Issuing and Maintenance of Medical Equipment and Supplies",
+        "IMMES",
+        "SOP 4.3.A",
+        "SOP4.3.A",
+        "4.3.A Issuing & Maintenance of Medical Equipment & Supplies",
+        "SOP 4.3.A Issuing & Maintenance of Medical Equipment & Supplies"
       ],
       "type": "procedure"
     },
@@ -1862,7 +2632,11 @@
       "aliases": [
         "4.3.B Management of Non-Controlled Medications by Ambulance Paramedics & Critical Care Paramedics",
         "SOP 4.3.B Management of Non-Controlled Medications by Ambulance Paramedics & Critical Care Paramedics",
-        "Management of Non-Controlled Medications by Ambulance Paramedics and Critical Care Paramedics"
+        "Management of Non-Controlled Medications by Ambulance Paramedics and Critical Care Paramedics",
+        "Management of Non Controlled Medications by Ambulance Paramedics & Critical Care Paramedics",
+        "4.3.B",
+        "SOP 4.3.B",
+        "SOP4.3.B"
       ],
       "keywords": [
         "Management",
@@ -1879,7 +2653,13 @@
         "Medical",
         "Equipment",
         "Medication",
-        "supplies"
+        "supplies",
+        "procedure",
+        "Management of Non-Controlled Medications by Ambulance Paramedics and Critical Care Paramedics",
+        "SOP 4.3.B",
+        "SOP4.3.B",
+        "4.3.B Management of Non-Controlled Medications by Ambulance Paramedics & Critical Care Paramedics",
+        "SOP 4.3.B Management of Non-Controlled Medications by Ambulance Paramedics & Critical Care Paramedics"
       ],
       "type": "procedure"
     },
@@ -1895,7 +2675,11 @@
         "SOP 4.3.C Controlled Medicines Management by Critical Care Paramedics",
         "controlled medications",
         "controlled drugs",
-        "controlled drug"
+        "controlled drug",
+        "CMMCCP",
+        "4.3.C",
+        "SOP 4.3.C",
+        "SOP4.3.C"
       ],
       "keywords": [
         "Controlled",
@@ -1915,7 +2699,13 @@
         "controlled drug",
         "narcotics",
         "supplies",
-        "medications"
+        "medications",
+        "procedure",
+        "CMMCCP",
+        "SOP 4.3.C",
+        "SOP4.3.C",
+        "4.3.C Controlled Medicines Management by Critical Care Paramedics",
+        "SOP 4.3.C Controlled Medicines Management by Critical Care Paramedics"
       ],
       "type": "procedure"
     },
@@ -1930,7 +2720,11 @@
         "4.3.D Near Patient Blood Testing",
         "SOP 4.3.D Near Patient Blood Testing",
         "point of care testing",
-        "POCT"
+        "POCT",
+        "NPBT",
+        "4.3.D",
+        "SOP 4.3.D",
+        "SOP4.3.D"
       ],
       "keywords": [
         "Near",
@@ -1949,7 +2743,13 @@
         "blood testing",
         "supplies",
         "point",
-        "care"
+        "care",
+        "procedure",
+        "NPBT",
+        "SOP 4.3.D",
+        "SOP4.3.D",
+        "4.3.D Near Patient Blood Testing",
+        "SOP 4.3.D Near Patient Blood Testing"
       ],
       "type": "procedure"
     },
@@ -1963,7 +2763,11 @@
       "aliases": [
         "4.3.E High Alert and Look Alike Sound Alike Medications",
         "SOP 4.3.E High Alert and Look Alike Sound Alike Medications",
-        "High Alert & Look Alike Sound Alike Medications"
+        "High Alert & Look Alike Sound Alike Medications",
+        "HALASAM",
+        "4.3.E",
+        "SOP 4.3.E",
+        "SOP4.3.E"
       ],
       "keywords": [
         "High",
@@ -1981,7 +2785,14 @@
         "Management",
         "LASA",
         "look-alike sound-alike",
-        "supplies"
+        "supplies",
+        "procedure",
+        "High Alert & Look Alike Sound Alike Medications",
+        "HALASAM",
+        "SOP 4.3.E",
+        "SOP4.3.E",
+        "4.3.E High Alert and Look Alike Sound Alike Medications",
+        "SOP 4.3.E High Alert and Look Alike Sound Alike Medications"
       ],
       "type": "procedure"
     },
@@ -1995,7 +2806,12 @@
       "aliases": [
         "4.3.F Administration of High Alert and Look-Alike and Sound Alike Medication",
         "SOP 4.3.F Administration of High Alert and Look-Alike and Sound Alike Medication",
-        "Administration of High Alert & Look-Alike & Sound Alike Medication"
+        "Administration of High Alert & Look-Alike & Sound Alike Medication",
+        "Administration of High Alert and Look Alike and Sound Alike Medication",
+        "AHALASAM",
+        "4.3.F",
+        "SOP 4.3.F",
+        "SOP4.3.F"
       ],
       "keywords": [
         "Administration",
@@ -2013,7 +2829,14 @@
         "Management",
         "LASA",
         "look alike sound alike medication",
-        "supplies"
+        "supplies",
+        "procedure",
+        "Administration of High Alert & Look-Alike & Sound Alike Medication",
+        "AHALASAM",
+        "SOP 4.3.F",
+        "SOP4.3.F",
+        "4.3.F Administration of High Alert and Look-Alike and Sound Alike Medication",
+        "SOP 4.3.F Administration of High Alert and Look-Alike and Sound Alike Medication"
       ],
       "type": "procedure"
     },
@@ -2026,7 +2849,11 @@
       "page_end": 265,
       "aliases": [
         "4.3.G LP15 Transmission Guidelines",
-        "SOP 4.3.G LP15 Transmission Guidelines"
+        "SOP 4.3.G LP15 Transmission Guidelines",
+        "LTG",
+        "4.3.G",
+        "SOP 4.3.G",
+        "SOP4.3.G"
       ],
       "keywords": [
         "LP15",
@@ -2041,7 +2868,13 @@
         "Management",
         "lifepak 15",
         "lp 15",
-        "supplies"
+        "supplies",
+        "procedure",
+        "LTG",
+        "SOP 4.3.G",
+        "SOP4.3.G",
+        "4.3.G LP15 Transmission Guidelines",
+        "SOP 4.3.G LP15 Transmission Guidelines"
       ],
       "type": "procedure"
     },
@@ -2054,7 +2887,11 @@
       "page_end": 267,
       "aliases": [
         "4.3.G.1 ZOLL X Transmission Guidelines",
-        "SOP 4.3.G.1 ZOLL X Transmission Guidelines"
+        "SOP 4.3.G.1 ZOLL X Transmission Guidelines",
+        "ZXTG",
+        "4.3.G.1",
+        "SOP 4.3.G.1",
+        "SOP4.3.G.1"
       ],
       "keywords": [
         "ZOLL",
@@ -2069,7 +2906,13 @@
         "Management",
         "zoll x series",
         "zoll x",
-        "supplies"
+        "supplies",
+        "procedure",
+        "ZXTG",
+        "SOP 4.3.G.1",
+        "SOP4.3.G.1",
+        "4.3.G.1 ZOLL X Transmission Guidelines",
+        "SOP 4.3.G.1 ZOLL X Transmission Guidelines"
       ],
       "type": "procedure"
     },
@@ -2083,7 +2926,11 @@
       "aliases": [
         "4.3.H Discarding Paracetamol and Ibuprofen Syrup",
         "SOP 4.3.H Discarding Paracetamol and Ibuprofen Syrup",
-        "Discarding Paracetamol & Ibuprofen Syrup"
+        "Discarding Paracetamol & Ibuprofen Syrup",
+        "DPIS",
+        "4.3.H",
+        "SOP 4.3.H",
+        "SOP4.3.H"
       ],
       "keywords": [
         "Discarding",
@@ -2097,7 +2944,14 @@
         "Equipment",
         "Medication",
         "Management",
-        "supplies"
+        "supplies",
+        "procedure",
+        "Discarding Paracetamol & Ibuprofen Syrup",
+        "DPIS",
+        "SOP 4.3.H",
+        "SOP4.3.H",
+        "4.3.H Discarding Paracetamol and Ibuprofen Syrup",
+        "SOP 4.3.H Discarding Paracetamol and Ibuprofen Syrup"
       ],
       "type": "procedure"
     },
@@ -2111,7 +2965,11 @@
       "aliases": [
         "4.3.I Selecting Ambulance Service Medications and Equipment",
         "SOP 4.3.I Selecting Ambulance Service Medications and Equipment",
-        "Selecting Ambulance Service Medications & Equipment"
+        "Selecting Ambulance Service Medications & Equipment",
+        "SASME",
+        "4.3.I",
+        "SOP 4.3.I",
+        "SOP4.3.I"
       ],
       "keywords": [
         "Selecting",
@@ -2124,7 +2982,15 @@
         "Medical",
         "Medication",
         "Management",
-        "supplies"
+        "supplies",
+        "procedure",
+        "Selecting Ambulance Service Medications & Equipment",
+        "SASME",
+        "SOP 4.3.I",
+        "SOP4.3.I",
+        "4.3.I Selecting Ambulance Service Medications and Equipment",
+        "SOP 4.3.I Selecting Ambulance Service Medications and Equipment",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -2138,7 +3004,11 @@
       "aliases": [
         "4.3.J Air Lifting and Moving Devices",
         "SOP 4.3.J Air Lifting and Moving Devices",
-        "Air Lifting & Moving Devices"
+        "Air Lifting & Moving Devices",
+        "ALMD",
+        "4.3.J",
+        "SOP 4.3.J",
+        "SOP4.3.J"
       ],
       "keywords": [
         "Air",
@@ -2152,7 +3022,14 @@
         "Equipment",
         "Medication",
         "Management",
-        "supplies"
+        "supplies",
+        "procedure",
+        "Air Lifting & Moving Devices",
+        "ALMD",
+        "SOP 4.3.J",
+        "SOP4.3.J",
+        "4.3.J Air Lifting and Moving Devices",
+        "SOP 4.3.J Air Lifting and Moving Devices"
       ],
       "type": "procedure"
     },
@@ -2166,7 +3043,11 @@
       "aliases": [
         "4.3.K Transporting HMCAS Medications and Staff Travelling During Duty",
         "SOP 4.3.K Transporting HMCAS Medications and Staff Travelling During Duty",
-        "Transporting HMCAS Medications & Staff Travelling During Duty"
+        "Transporting HMCAS Medications & Staff Travelling During Duty",
+        "THMSTDD",
+        "4.3.K",
+        "SOP 4.3.K",
+        "SOP4.3.K"
       ],
       "keywords": [
         "Transporting",
@@ -2184,7 +3065,15 @@
         "Management",
         "hamad medical corporation ambulance service",
         "ambulance service",
-        "supplies"
+        "supplies",
+        "procedure",
+        "Transporting HMCAS Medications & Staff Travelling During Duty",
+        "THMSTDD",
+        "SOP 4.3.K",
+        "SOP4.3.K",
+        "4.3.K Transporting HMCAS Medications and Staff Travelling During Duty",
+        "SOP 4.3.K Transporting HMCAS Medications and Staff Travelling During Duty",
+        "During"
       ],
       "type": "procedure"
     },
@@ -2199,7 +3088,12 @@
         "4.4 Emergency Unit Distribution - Hub and Spoke Model",
         "SOP 4.4 Emergency Unit Distribution - Hub and Spoke Model",
         "Emergency Unit Distribution - Hub & Spoke Model",
-        "spoke and hub"
+        "spoke and hub",
+        "Emergency Unit Distribution Hub and Spoke Model",
+        "EUDHSM",
+        "4.4",
+        "SOP 4.4",
+        "SOP4.4"
       ],
       "keywords": [
         "Emergency",
@@ -2213,7 +3107,14 @@
         "4.4",
         "Operations",
         "spoke and hub",
-        "patient care"
+        "patient care",
+        "procedure",
+        "Emergency Unit Distribution - Hub & Spoke Model",
+        "EUDHSM",
+        "SOP 4.4",
+        "SOP4.4",
+        "4.4 Emergency Unit Distribution - Hub and Spoke Model",
+        "SOP 4.4 Emergency Unit Distribution - Hub and Spoke Model"
       ],
       "type": "procedure"
     },
@@ -2228,7 +3129,11 @@
         "4.5.A Activation Via Control Centre",
         "SOP 4.5.A Activation Via Control Centre",
         "center",
-        "emergency activation"
+        "emergency activation",
+        "AVCC",
+        "4.5.A",
+        "SOP 4.5.A",
+        "SOP4.5.A"
       ],
       "keywords": [
         "Activation",
@@ -2243,7 +3148,13 @@
         "center",
         "control centre",
         "dispatch",
-        "emergency activation"
+        "emergency activation",
+        "procedure",
+        "AVCC",
+        "SOP 4.5.A",
+        "SOP4.5.A",
+        "4.5.A Activation Via Control Centre",
+        "SOP 4.5.A Activation Via Control Centre"
       ],
       "type": "procedure"
     },
@@ -2257,7 +3168,12 @@
       "aliases": [
         "4.5.B Non-Control Centre Activation",
         "SOP 4.5.B Non-Control Centre Activation",
-        "center"
+        "center",
+        "Non Control Centre Activation",
+        "NCCA",
+        "4.5.B",
+        "SOP 4.5.B",
+        "SOP4.5.B"
       ],
       "keywords": [
         "Non",
@@ -2271,7 +3187,13 @@
         "Unit",
         "center",
         "control centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "NCCA",
+        "SOP 4.5.B",
+        "SOP4.5.B",
+        "4.5.B Non-Control Centre Activation",
+        "SOP 4.5.B Non-Control Centre Activation"
       ],
       "type": "procedure"
     },
@@ -2285,7 +3207,11 @@
       "aliases": [
         "4.5.C Radio Communication & Reporting",
         "SOP 4.5.C Radio Communication & Reporting",
-        "Radio Communication and Reporting"
+        "Radio Communication and Reporting",
+        "RCR",
+        "4.5.C",
+        "SOP 4.5.C",
+        "SOP4.5.C"
       ],
       "keywords": [
         "Radio",
@@ -2298,7 +3224,15 @@
         "Unit",
         "Activation",
         "control centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "Radio Communication and Reporting",
+        "RCR",
+        "SOP 4.5.C",
+        "SOP4.5.C",
+        "4.5.C Radio Communication & Reporting",
+        "SOP 4.5.C Radio Communication & Reporting",
+        "call sign"
       ],
       "type": "procedure"
     },
@@ -2311,7 +3245,11 @@
       "page_end": 293,
       "aliases": [
         "4.5.D Use of Mobile Data Terminals",
-        "SOP 4.5.D Use of Mobile Data Terminals"
+        "SOP 4.5.D Use of Mobile Data Terminals",
+        "UMDT",
+        "4.5.D",
+        "SOP 4.5.D",
+        "SOP4.5.D"
       ],
       "keywords": [
         "Mobile",
@@ -2324,7 +3262,13 @@
         "Unit",
         "Activation",
         "control centre",
-        "dispatch"
+        "dispatch",
+        "procedure",
+        "UMDT",
+        "SOP 4.5.D",
+        "SOP4.5.D",
+        "4.5.D Use of Mobile Data Terminals",
+        "SOP 4.5.D Use of Mobile Data Terminals"
       ],
       "type": "procedure"
     },
@@ -2337,7 +3281,11 @@
       "page_end": 294,
       "aliases": [
         "4.5.E Delta Dispatch Process",
-        "SOP 4.5.E Delta Dispatch Process"
+        "SOP 4.5.E Delta Dispatch Process",
+        "DDP",
+        "4.5.E",
+        "SOP 4.5.E",
+        "SOP4.5.E"
       ],
       "keywords": [
         "Delta",
@@ -2349,7 +3297,13 @@
         "Emergency",
         "Unit",
         "Activation",
-        "control centre"
+        "control centre",
+        "procedure",
+        "DDP",
+        "SOP 4.5.E",
+        "SOP4.5.E",
+        "4.5.E Delta Dispatch Process",
+        "SOP 4.5.E Delta Dispatch Process"
       ],
       "type": "procedure"
     },
@@ -2365,7 +3319,11 @@
         "SOP 4.5.F Cancellation of Charlie or LifeFlight",
         "Life Flight",
         "Charlie activation",
-        "Charlie cancellation"
+        "Charlie cancellation",
+        "CCL",
+        "4.5.F",
+        "SOP 4.5.F",
+        "SOP4.5.F"
       ],
       "keywords": [
         "Cancellation",
@@ -2385,7 +3343,14 @@
         "control centre",
         "dispatch",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "CCL",
+        "SOP 4.5.F",
+        "SOP4.5.F",
+        "4.5.F Cancellation of Charlie or LifeFlight",
+        "SOP 4.5.F Cancellation of Charlie or LifeFlight",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -2398,7 +3363,11 @@
       "page_end": 303,
       "aliases": [
         "4.6.A Driving of Emergency Vehicles",
-        "SOP 4.6.A Driving of Emergency Vehicles"
+        "SOP 4.6.A Driving of Emergency Vehicles",
+        "DEV",
+        "4.6.A",
+        "SOP 4.6.A",
+        "SOP4.6.A"
       ],
       "keywords": [
         "Driving",
@@ -2409,7 +3378,13 @@
         "4.6.A",
         "Unit",
         "Response",
-        "emergency vehicle"
+        "emergency vehicle",
+        "procedure",
+        "DEV",
+        "SOP 4.6.A",
+        "SOP4.6.A",
+        "4.6.A Driving of Emergency Vehicles",
+        "SOP 4.6.A Driving of Emergency Vehicles"
       ],
       "type": "procedure"
     },
@@ -2422,7 +3397,11 @@
       "page_end": 304,
       "aliases": [
         "4.6.B Prayer During HMCAS Working Hours",
-        "SOP 4.6.B Prayer During HMCAS Working Hours"
+        "SOP 4.6.B Prayer During HMCAS Working Hours",
+        "PDHWH",
+        "4.6.B",
+        "SOP 4.6.B",
+        "SOP4.6.B"
       ],
       "keywords": [
         "Prayer",
@@ -2438,7 +3417,14 @@
         "hamad medical corporation ambulance service",
         "ambulance service",
         "driving",
-        "emergency vehicle"
+        "emergency vehicle",
+        "procedure",
+        "PDHWH",
+        "SOP 4.6.B",
+        "SOP4.6.B",
+        "4.6.B Prayer During HMCAS Working Hours",
+        "SOP 4.6.B Prayer During HMCAS Working Hours",
+        "During"
       ],
       "type": "procedure"
     },
@@ -2453,7 +3439,11 @@
         "4.6.C Emergency Response and Non-Emergency Driving During Adverse Weather Conditions",
         "SOP 4.6.C Emergency Response and Non-Emergency Driving During Adverse Weather Conditions",
         "Emergency Response & Non-Emergency Driving During Adverse Weather Conditions",
-        "non emergency"
+        "non emergency",
+        "Emergency Response and Non Emergency Driving During Adverse Weather Conditions",
+        "4.6.C",
+        "SOP 4.6.C",
+        "SOP4.6.C"
       ],
       "keywords": [
         "Emergency",
@@ -2468,7 +3458,14 @@
         "4.6.C",
         "Unit",
         "non emergency",
-        "emergency vehicle"
+        "emergency vehicle",
+        "procedure",
+        "Emergency Response & Non-Emergency Driving During Adverse Weather Conditions",
+        "SOP 4.6.C",
+        "SOP4.6.C",
+        "4.6.C Emergency Response and Non-Emergency Driving During Adverse Weather Conditions",
+        "SOP 4.6.C Emergency Response and Non-Emergency Driving During Adverse Weather Conditions",
+        "During"
       ],
       "type": "procedure"
     },
@@ -2481,7 +3478,11 @@
       "page_end": 309,
       "aliases": [
         "4.6.D RTA While Driving Emergency Vehicles",
-        "SOP 4.6.D RTA While Driving Emergency Vehicles"
+        "SOP 4.6.D RTA While Driving Emergency Vehicles",
+        "RWDEV",
+        "4.6.D",
+        "SOP 4.6.D",
+        "SOP4.6.D"
       ],
       "keywords": [
         "RTA",
@@ -2496,7 +3497,13 @@
         "Response",
         "road traffic accident",
         "traffic accident",
-        "emergency vehicle"
+        "emergency vehicle",
+        "procedure",
+        "RWDEV",
+        "SOP 4.6.D",
+        "SOP4.6.D",
+        "4.6.D RTA While Driving Emergency Vehicles",
+        "SOP 4.6.D RTA While Driving Emergency Vehicles"
       ],
       "type": "procedure"
     },
@@ -2510,7 +3517,12 @@
       "aliases": [
         "4.7.A Emergency Scene Arrival and Size-Up",
         "SOP 4.7.A Emergency Scene Arrival and Size-Up",
-        "Emergency Scene Arrival & Size-Up"
+        "Emergency Scene Arrival & Size-Up",
+        "Emergency Scene Arrival and Size Up",
+        "ESASU",
+        "4.7.A",
+        "SOP 4.7.A",
+        "SOP4.7.A"
       ],
       "keywords": [
         "Emergency",
@@ -2522,7 +3534,14 @@
         "Emergency Scene Management",
         "4.7.A",
         "Management",
-        "safety"
+        "safety",
+        "procedure",
+        "Emergency Scene Arrival & Size-Up",
+        "ESASU",
+        "SOP 4.7.A",
+        "SOP4.7.A",
+        "4.7.A Emergency Scene Arrival and Size-Up",
+        "SOP 4.7.A Emergency Scene Arrival and Size-Up"
       ],
       "type": "procedure"
     },
@@ -2536,7 +3555,12 @@
       "aliases": [
         "4.7.B Preparing a Landing Zone (LZ)",
         "SOP 4.7.B Preparing a Landing Zone (LZ)",
-        "Preparing a Landing Zone"
+        "Preparing a Landing Zone",
+        "Preparing a Landing Zone LZ",
+        "PLZL",
+        "4.7.B",
+        "SOP 4.7.B",
+        "SOP4.7.B"
       ],
       "keywords": [
         "Preparing",
@@ -2552,7 +3576,14 @@
         "landing zone",
         "helipad",
         "safety",
-        "arrival"
+        "arrival",
+        "procedure",
+        "Preparing a Landing Zone",
+        "PLZL",
+        "SOP 4.7.B",
+        "SOP4.7.B",
+        "4.7.B Preparing a Landing Zone (LZ)",
+        "SOP 4.7.B Preparing a Landing Zone (LZ)"
       ],
       "type": "procedure"
     },
@@ -2565,7 +3596,11 @@
       "page_end": 320,
       "aliases": [
         "4.7.C Scene Safety",
-        "SOP 4.7.C Scene Safety"
+        "SOP 4.7.C Scene Safety",
+        "SS",
+        "4.7.C",
+        "SOP 4.7.C",
+        "SOP4.7.C"
       ],
       "keywords": [
         "Scene",
@@ -2575,7 +3610,13 @@
         "4.7.C",
         "Emergency",
         "Management",
-        "arrival"
+        "arrival",
+        "procedure",
+        "SS",
+        "SOP 4.7.C",
+        "SOP4.7.C",
+        "4.7.C Scene Safety",
+        "SOP 4.7.C Scene Safety"
       ],
       "type": "procedure"
     },
@@ -2589,7 +3630,11 @@
       "aliases": [
         "4.8.A Selecting Appropriate Receiving Facilities for Special Clinical Cases",
         "SOP 4.8.A Selecting Appropriate Receiving Facilities for Special Clinical Cases",
-        "receiving facility"
+        "receiving facility",
+        "SARFSCC",
+        "4.8.A",
+        "SOP 4.8.A",
+        "SOP4.8.A"
       ],
       "keywords": [
         "Selecting",
@@ -2608,7 +3653,13 @@
         "transport",
         "receiving facility",
         "hospital destination",
-        "destination hospital"
+        "destination hospital",
+        "procedure",
+        "SARFSCC",
+        "SOP 4.8.A",
+        "SOP4.8.A",
+        "4.8.A Selecting Appropriate Receiving Facilities for Special Clinical Cases",
+        "SOP 4.8.A Selecting Appropriate Receiving Facilities for Special Clinical Cases"
       ],
       "type": "procedure"
     },
@@ -2622,7 +3673,11 @@
       "aliases": [
         "4.8.B Patient Handover and Endorsement",
         "SOP 4.8.B Patient Handover and Endorsement",
-        "Patient Handover & Endorsement"
+        "Patient Handover & Endorsement",
+        "PHE",
+        "4.8.B",
+        "SOP 4.8.B",
+        "SOP4.8.B"
       ],
       "keywords": [
         "Patient",
@@ -2633,7 +3688,14 @@
         "4.8.B",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "Patient Handover & Endorsement",
+        "PHE",
+        "SOP 4.8.B",
+        "SOP4.8.B",
+        "4.8.B Patient Handover and Endorsement",
+        "SOP 4.8.B Patient Handover and Endorsement"
       ],
       "type": "procedure"
     },
@@ -2648,7 +3710,11 @@
         "4.8.C Communications for Verbal Orders Given Via Radio/Telephone",
         "SOP 4.8.C Communications for Verbal Orders Given Via Radio/Telephone",
         "Communications for Verbal Orders Given Via Radio and Telephone",
-        "Communications for Verbal Orders Given Via Radio / Telephone"
+        "Communications for Verbal Orders Given Via Radio / Telephone",
+        "CVOGVRT",
+        "4.8.C",
+        "SOP 4.8.C",
+        "SOP4.8.C"
       ],
       "keywords": [
         "Communications",
@@ -2664,7 +3730,17 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "Communications for Verbal Orders Given Via Radio and Telephone",
+        "CVOGVRT",
+        "SOP 4.8.C",
+        "SOP4.8.C",
+        "4.8.C Communications for Verbal Orders Given Via Radio/Telephone",
+        "SOP 4.8.C Communications for Verbal Orders Given Via Radio/Telephone",
+        "communication",
+        "dispatch",
+        "call sign"
       ],
       "type": "procedure"
     },
@@ -2682,7 +3758,12 @@
         "non transport",
         "refusal",
         "refusal of transport",
-        "patient refusal"
+        "patient refusal",
+        "Non Transport and Release of Patients",
+        "NTRP",
+        "4.8.D",
+        "SOP 4.8.D",
+        "SOP4.8.D"
       ],
       "keywords": [
         "Non",
@@ -2698,7 +3779,14 @@
         "non transport",
         "refusal",
         "refusal of transport",
-        "patient refusal"
+        "patient refusal",
+        "procedure",
+        "Non-Transport & Release of Patients",
+        "NTRP",
+        "SOP 4.8.D",
+        "SOP4.8.D",
+        "4.8.D Non-Transport and Release of Patients",
+        "SOP 4.8.D Non-Transport and Release of Patients"
       ],
       "type": "procedure"
     },
@@ -2711,7 +3799,11 @@
       "page_end": 334,
       "aliases": [
         "4.8.E Safeguarding Patient’s Valuables",
-        "SOP 4.8.E Safeguarding Patient’s Valuables"
+        "SOP 4.8.E Safeguarding Patient’s Valuables",
+        "SPSV",
+        "4.8.E",
+        "SOP 4.8.E",
+        "SOP4.8.E"
       ],
       "keywords": [
         "Safeguarding",
@@ -2722,7 +3814,13 @@
         "4.8.E",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "SPSV",
+        "SOP 4.8.E",
+        "SOP4.8.E",
+        "4.8.E Safeguarding Patient’s Valuables",
+        "SOP 4.8.E Safeguarding Patient’s Valuables"
       ],
       "type": "procedure"
     },
@@ -2735,7 +3833,11 @@
       "page_end": 336,
       "aliases": [
         "4.8.F Management of Patients in Police Custody",
-        "SOP 4.8.F Management of Patients in Police Custody"
+        "SOP 4.8.F Management of Patients in Police Custody",
+        "MPPC",
+        "4.8.F",
+        "SOP 4.8.F",
+        "SOP4.8.F"
       ],
       "keywords": [
         "Management",
@@ -2748,7 +3850,13 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "MPPC",
+        "SOP 4.8.F",
+        "SOP4.8.F",
+        "4.8.F Management of Patients in Police Custody",
+        "SOP 4.8.F Management of Patients in Police Custody"
       ],
       "type": "procedure"
     },
@@ -2763,7 +3871,11 @@
         "4.8.G Patient Escorts/Accompaniment",
         "SOP 4.8.G Patient Escorts/Accompaniment",
         "Patient Escorts and Accompaniment",
-        "Patient Escorts / Accompaniment"
+        "Patient Escorts / Accompaniment",
+        "PEA",
+        "4.8.G",
+        "SOP 4.8.G",
+        "SOP4.8.G"
       ],
       "keywords": [
         "Patient",
@@ -2774,7 +3886,14 @@
         "4.8.G",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "Patient Escorts and Accompaniment",
+        "PEA",
+        "SOP 4.8.G",
+        "SOP4.8.G",
+        "4.8.G Patient Escorts/Accompaniment",
+        "SOP 4.8.G Patient Escorts/Accompaniment"
       ],
       "type": "procedure"
     },
@@ -2787,7 +3906,11 @@
       "page_end": 340,
       "aliases": [
         "4.8.H Rendezvous with Critical Care Paramedic",
-        "SOP 4.8.H Rendezvous with Critical Care Paramedic"
+        "SOP 4.8.H Rendezvous with Critical Care Paramedic",
+        "RCCP",
+        "4.8.H",
+        "SOP 4.8.H",
+        "SOP4.8.H"
       ],
       "keywords": [
         "Rendezvous",
@@ -2800,7 +3923,13 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "RCCP",
+        "SOP 4.8.H",
+        "SOP4.8.H",
+        "4.8.H Rendezvous with Critical Care Paramedic",
+        "SOP 4.8.H Rendezvous with Critical Care Paramedic"
       ],
       "type": "procedure"
     },
@@ -2813,7 +3942,11 @@
       "page_end": 341,
       "aliases": [
         "4.8.I Stopping the Ambulance for Clinical Procedures",
-        "SOP 4.8.I Stopping the Ambulance for Clinical Procedures"
+        "SOP 4.8.I Stopping the Ambulance for Clinical Procedures",
+        "SACP",
+        "4.8.I",
+        "SOP 4.8.I",
+        "SOP4.8.I"
       ],
       "keywords": [
         "Stopping",
@@ -2825,7 +3958,14 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "SACP",
+        "SOP 4.8.I",
+        "SOP4.8.I",
+        "4.8.I Stopping the Ambulance for Clinical Procedures",
+        "SOP 4.8.I Stopping the Ambulance for Clinical Procedures",
+        "Procedures"
       ],
       "type": "procedure"
     },
@@ -2838,7 +3978,11 @@
       "page_end": 343,
       "aliases": [
         "4.8.J Emergency Blood Transfer Protocol",
-        "SOP 4.8.J Emergency Blood Transfer Protocol"
+        "SOP 4.8.J Emergency Blood Transfer Protocol",
+        "EBTP",
+        "4.8.J",
+        "SOP 4.8.J",
+        "SOP4.8.J"
       ],
       "keywords": [
         "Emergency",
@@ -2851,7 +3995,13 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "EBTP",
+        "SOP 4.8.J",
+        "SOP4.8.J",
+        "4.8.J Emergency Blood Transfer Protocol",
+        "SOP 4.8.J Emergency Blood Transfer Protocol"
       ],
       "type": "procedure"
     },
@@ -2865,7 +4015,11 @@
       "aliases": [
         "4.8.K Prevention and Management of Patient Falls",
         "SOP 4.8.K Prevention and Management of Patient Falls",
-        "Prevention & Management of Patient Falls"
+        "Prevention & Management of Patient Falls",
+        "PMPF",
+        "4.8.K",
+        "SOP 4.8.K",
+        "SOP4.8.K"
       ],
       "keywords": [
         "Prevention",
@@ -2877,7 +4031,14 @@
         "4.8.K",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "Prevention & Management of Patient Falls",
+        "PMPF",
+        "SOP 4.8.K",
+        "SOP4.8.K",
+        "4.8.K Prevention and Management of Patient Falls",
+        "SOP 4.8.K Prevention and Management of Patient Falls"
       ],
       "type": "procedure"
     },
@@ -2890,7 +4051,12 @@
       "page_end": 346,
       "aliases": [
         "4.8.L Utilization of Clinical-2 Radio Channel",
-        "SOP 4.8.L Utilization of Clinical-2 Radio Channel"
+        "SOP 4.8.L Utilization of Clinical-2 Radio Channel",
+        "Utilization of Clinical 2 Radio Channel",
+        "UCRC",
+        "4.8.L",
+        "SOP 4.8.L",
+        "SOP4.8.L"
       ],
       "keywords": [
         "Utilization",
@@ -2903,7 +4069,16 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "UCRC",
+        "SOP 4.8.L",
+        "SOP4.8.L",
+        "4.8.L Utilization of Clinical-2 Radio Channel",
+        "SOP 4.8.L Utilization of Clinical-2 Radio Channel",
+        "communication",
+        "dispatch",
+        "call sign"
       ],
       "type": "procedure"
     },
@@ -2916,7 +4091,11 @@
       "page_end": 349,
       "aliases": [
         "4.8.M Cohorting of Patients Awaiting Beds at Hamad General Hospital",
-        "SOP 4.8.M Cohorting of Patients Awaiting Beds at Hamad General Hospital"
+        "SOP 4.8.M Cohorting of Patients Awaiting Beds at Hamad General Hospital",
+        "CPABHGH",
+        "4.8.M",
+        "SOP 4.8.M",
+        "SOP4.8.M"
       ],
       "keywords": [
         "Cohorting",
@@ -2932,7 +4111,13 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "CPABHGH",
+        "SOP 4.8.M",
+        "SOP4.8.M",
+        "4.8.M Cohorting of Patients Awaiting Beds at Hamad General Hospital",
+        "SOP 4.8.M Cohorting of Patients Awaiting Beds at Hamad General Hospital"
       ],
       "type": "procedure"
     },
@@ -2947,7 +4132,12 @@
         "4.8.N Brought in Dead (BID) Process Pathway",
         "SOP 4.8.N Brought in Dead (BID) Process Pathway",
         "Brought in Dead Process Pathway",
-        "BID"
+        "BID",
+        "Brought in Dead BID Process Pathway",
+        "BDBPP",
+        "4.8.N",
+        "SOP 4.8.N",
+        "SOP4.8.N"
       ],
       "keywords": [
         "Brought",
@@ -2963,7 +4153,14 @@
         "Transportation",
         "brought in dead",
         "dead on arrival",
-        "transport"
+        "transport",
+        "procedure",
+        "Brought in Dead Process Pathway",
+        "BDBPP",
+        "SOP 4.8.N",
+        "SOP4.8.N",
+        "4.8.N Brought in Dead (BID) Process Pathway",
+        "SOP 4.8.N Brought in Dead (BID) Process Pathway"
       ],
       "type": "procedure"
     },
@@ -2978,7 +4175,11 @@
         "4.8.O Transporting Immunocompromised/Chemotherapy Patients",
         "SOP 4.8.O Transporting Immunocompromised/Chemotherapy Patients",
         "Transporting Immunocompromised and Chemotherapy Patients",
-        "Transporting Immunocompromised / Chemotherapy Patients"
+        "Transporting Immunocompromised / Chemotherapy Patients",
+        "TICP",
+        "4.8.O",
+        "SOP 4.8.O",
+        "SOP4.8.O"
       ],
       "keywords": [
         "Transporting",
@@ -2991,7 +4192,14 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "Transporting Immunocompromised and Chemotherapy Patients",
+        "TICP",
+        "SOP 4.8.O",
+        "SOP4.8.O",
+        "4.8.O Transporting Immunocompromised/Chemotherapy Patients",
+        "SOP 4.8.O Transporting Immunocompromised/Chemotherapy Patients"
       ],
       "type": "procedure"
     },
@@ -3006,7 +4214,11 @@
         "4.8.P Transporting Patients with Suspected or Known Infectious Disease (Emerging and Re-Emerging Diseases)",
         "SOP 4.8.P Transporting Patients with Suspected or Known Infectious Disease (Emerging and Re-Emerging Diseases)",
         "Transporting Patients with Suspected or Known Infectious Disease (Emerging & Re-Emerging Diseases)",
-        "Transporting Patients with Suspected or Known Infectious Disease"
+        "Transporting Patients with Suspected or Known Infectious Disease",
+        "Transporting Patients with Suspected or Known Infectious Disease (Emerging and Re Emerging Diseases)",
+        "4.8.P",
+        "SOP 4.8.P",
+        "SOP4.8.P"
       ],
       "keywords": [
         "Transporting",
@@ -3024,7 +4236,14 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "Transporting Patients with Suspected or Known Infectious Disease (Emerging & Re-Emerging Diseases)",
+        "Transporting Patients with Suspected or Known Infectious Disease",
+        "SOP 4.8.P",
+        "SOP4.8.P",
+        "4.8.P Transporting Patients with Suspected or Known Infectious Disease (Emerging and Re-Emerging Diseases)",
+        "SOP 4.8.P Transporting Patients with Suspected or Known Infectious Disease (Emerging and Re-Emerging Diseases)"
       ],
       "type": "procedure"
     },
@@ -3038,7 +4257,12 @@
       "aliases": [
         "4.8.Q Vulnerable and High-Risk Patient Transportation",
         "SOP 4.8.Q Vulnerable and High-Risk Patient Transportation",
-        "Vulnerable & High-Risk Patient Transportation"
+        "Vulnerable & High-Risk Patient Transportation",
+        "Vulnerable and High Risk Patient Transportation",
+        "VHRPT",
+        "4.8.Q",
+        "SOP 4.8.Q",
+        "SOP4.8.Q"
       ],
       "keywords": [
         "Vulnerable",
@@ -3050,7 +4274,14 @@
         "Patient Treatment and Transportation",
         "4.8.Q",
         "Treatment",
-        "transport"
+        "transport",
+        "procedure",
+        "Vulnerable & High-Risk Patient Transportation",
+        "VHRPT",
+        "SOP 4.8.Q",
+        "SOP4.8.Q",
+        "4.8.Q Vulnerable and High-Risk Patient Transportation",
+        "SOP 4.8.Q Vulnerable and High-Risk Patient Transportation"
       ],
       "type": "procedure"
     },
@@ -3063,7 +4294,11 @@
       "page_end": 355,
       "aliases": [
         "4.8.R Transporting Patients with Suspected or Known Infectious Disease in the Green Bus",
-        "SOP 4.8.R Transporting Patients with Suspected or Known Infectious Disease in the Green Bus"
+        "SOP 4.8.R Transporting Patients with Suspected or Known Infectious Disease in the Green Bus",
+        "TPSKIDGB",
+        "4.8.R",
+        "SOP 4.8.R",
+        "SOP4.8.R"
       ],
       "keywords": [
         "Transporting",
@@ -3080,7 +4315,13 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "TPSKIDGB",
+        "SOP 4.8.R",
+        "SOP4.8.R",
+        "4.8.R Transporting Patients with Suspected or Known Infectious Disease in the Green Bus",
+        "SOP 4.8.R Transporting Patients with Suspected or Known Infectious Disease in the Green Bus"
       ],
       "type": "procedure"
     },
@@ -3093,7 +4334,11 @@
       "page_end": 357,
       "aliases": [
         "4.8.S Cancellation of Responding CCP Units",
-        "SOP 4.8.S Cancellation of Responding CCP Units"
+        "SOP 4.8.S Cancellation of Responding CCP Units",
+        "CRCU",
+        "4.8.S",
+        "SOP 4.8.S",
+        "SOP4.8.S"
       ],
       "keywords": [
         "Cancellation",
@@ -3107,7 +4352,13 @@
         "Treatment",
         "Transportation",
         "critical care paramedic",
-        "transport"
+        "transport",
+        "procedure",
+        "CRCU",
+        "SOP 4.8.S",
+        "SOP4.8.S",
+        "4.8.S Cancellation of Responding CCP Units",
+        "SOP 4.8.S Cancellation of Responding CCP Units"
       ],
       "type": "procedure"
     },
@@ -3121,7 +4372,11 @@
       "aliases": [
         "4.8.T Request & Dispatch of Specialized Unit",
         "SOP 4.8.T Request & Dispatch of Specialized Unit",
-        "Request and Dispatch of Specialized Unit"
+        "Request and Dispatch of Specialized Unit",
+        "RDSU",
+        "4.8.T",
+        "SOP 4.8.T",
+        "SOP4.8.T"
       ],
       "keywords": [
         "Request",
@@ -3134,7 +4389,14 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "Request and Dispatch of Specialized Unit",
+        "RDSU",
+        "SOP 4.8.T",
+        "SOP4.8.T",
+        "4.8.T Request & Dispatch of Specialized Unit",
+        "SOP 4.8.T Request & Dispatch of Specialized Unit"
       ],
       "type": "procedure"
     },
@@ -3147,7 +4409,11 @@
       "page_end": 364,
       "aliases": [
         "4.8.U Mental Health Transfers",
-        "SOP 4.8.U Mental Health Transfers"
+        "SOP 4.8.U Mental Health Transfers",
+        "MHT",
+        "4.8.U",
+        "SOP 4.8.U",
+        "SOP4.8.U"
       ],
       "keywords": [
         "Mental",
@@ -3159,7 +4425,13 @@
         "Patient",
         "Treatment",
         "Transportation",
-        "transport"
+        "transport",
+        "procedure",
+        "MHT",
+        "SOP 4.8.U",
+        "SOP4.8.U",
+        "4.8.U Mental Health Transfers",
+        "SOP 4.8.U Mental Health Transfers"
       ],
       "type": "procedure"
     },
@@ -3174,7 +4446,10 @@
         "4.9.A Electronic Patient Care Recording",
         "SOP 4.9.A Electronic Patient Care Recording",
         "PCR",
-        "ePCR"
+        "ePCR",
+        "4.9.A",
+        "SOP 4.9.A",
+        "SOP4.9.A"
       ],
       "keywords": [
         "Electronic",
@@ -3188,7 +4463,12 @@
         "ePCR",
         "electronic patient care record",
         "records",
-        "reporting"
+        "reporting",
+        "procedure",
+        "SOP 4.9.A",
+        "SOP4.9.A",
+        "4.9.A Electronic Patient Care Recording",
+        "SOP 4.9.A Electronic Patient Care Recording"
       ],
       "type": "procedure"
     },
@@ -3206,7 +4486,11 @@
         "Reporting of Occurrences/Variations/Accidents and Adverse Drug Reactions",
         "Reporting of Occurrences and Variations and Accidents (OVA) and Adverse Drug Reactions",
         "Reporting of Occurrences / Variations / Accidents (OVA) and Adverse Drug Reactions",
-        "ADR"
+        "ADR",
+        "ROVAOADR",
+        "4.9.B",
+        "SOP 4.9.B",
+        "SOP4.9.B"
       ],
       "keywords": [
         "Reporting",
@@ -3223,7 +4507,16 @@
         "incident reporting",
         "ADR",
         "drug reaction",
-        "records"
+        "records",
+        "procedure",
+        "Reporting of Occurrences/Variations/Accidents (OVA) & Adverse Drug Reactions",
+        "Reporting of Occurrences and Variations and Accidents (OVA) and Adverse Drug Reactions",
+        "Reporting of Occurrences/Variations/Accidents and Adverse Drug Reactions",
+        "ROVAOADR",
+        "SOP 4.9.B",
+        "SOP4.9.B",
+        "4.9.B Reporting of Occurrences/Variations/Accidents (OVA) and Adverse Drug Reactions",
+        "SOP 4.9.B Reporting of Occurrences/Variations/Accidents (OVA) and Adverse Drug Reactions"
       ],
       "type": "procedure"
     },
@@ -3236,7 +4529,11 @@
       "page_end": 371,
       "aliases": [
         "4.9.C Accurate Identification of Patients",
-        "SOP 4.9.C Accurate Identification of Patients"
+        "SOP 4.9.C Accurate Identification of Patients",
+        "AIP",
+        "4.9.C",
+        "SOP 4.9.C",
+        "SOP4.9.C"
       ],
       "keywords": [
         "Accurate",
@@ -3246,7 +4543,13 @@
         "Documentation",
         "4.9.C",
         "records",
-        "reporting"
+        "reporting",
+        "procedure",
+        "AIP",
+        "SOP 4.9.C",
+        "SOP4.9.C",
+        "4.9.C Accurate Identification of Patients",
+        "SOP 4.9.C Accurate Identification of Patients"
       ],
       "type": "procedure"
     },
@@ -3262,7 +4565,11 @@
         "SOP 4.9.D Care and Management of the Electronic Patient Care Record Platform",
         "Care & Management of the Electronic Patient Care Record Platform",
         "PCR",
-        "ePCR"
+        "ePCR",
+        "CMEPCRP",
+        "4.9.D",
+        "SOP 4.9.D",
+        "SOP4.9.D"
       ],
       "keywords": [
         "Care",
@@ -3278,7 +4585,14 @@
         "ePCR",
         "electronic PCR",
         "records",
-        "reporting"
+        "reporting",
+        "procedure",
+        "Care & Management of the Electronic Patient Care Record Platform",
+        "CMEPCRP",
+        "SOP 4.9.D",
+        "SOP4.9.D",
+        "4.9.D Care and Management of the Electronic Patient Care Record Platform",
+        "SOP 4.9.D Care and Management of the Electronic Patient Care Record Platform"
       ],
       "type": "procedure"
     },
@@ -3293,7 +4607,11 @@
         "4.10.A MIR First Unit on Scene",
         "SOP 4.10.A MIR First Unit on Scene",
         "MCI First Unit on Scene",
-        "multiple casualty incident first unit"
+        "multiple casualty incident first unit",
+        "MFUS",
+        "4.10.A",
+        "SOP 4.10.A",
+        "SOP4.10.A"
       ],
       "keywords": [
         "MIR",
@@ -3311,7 +4629,15 @@
         "incident response",
         "MCI",
         "multiple casualty incident",
-        "mass casualty incident"
+        "mass casualty incident",
+        "procedure",
+        "MFUS",
+        "SOP 4.10.A",
+        "SOP4.10.A",
+        "4.10.A MIR First Unit on Scene",
+        "SOP 4.10.A MIR First Unit on Scene",
+        "mass casualty",
+        "disaster"
       ],
       "type": "procedure"
     },
@@ -3326,7 +4652,11 @@
         "4.10.B Major Incident Scene Setup",
         "SOP 4.10.B Major Incident Scene Setup",
         "MCI Scene Setup",
-        "multiple casualty incident scene setup"
+        "multiple casualty incident scene setup",
+        "MISS",
+        "4.10.B",
+        "SOP 4.10.B",
+        "SOP4.10.B"
       ],
       "keywords": [
         "Major",
@@ -3343,7 +4673,15 @@
         "incident response",
         "MCI",
         "multiple casualty incident",
-        "mass casualty incident"
+        "mass casualty incident",
+        "procedure",
+        "MISS",
+        "SOP 4.10.B",
+        "SOP4.10.B",
+        "4.10.B Major Incident Scene Setup",
+        "SOP 4.10.B Major Incident Scene Setup",
+        "mass casualty",
+        "disaster"
       ],
       "type": "procedure"
     },
@@ -3359,7 +4697,12 @@
         "SOP 4.10.C Decontamination (Decon) Setup (Scene Layout), Response and Mitigation",
         "Decontamination (Decon) Setup (Scene Layout), Response & Mitigation",
         "Decontamination Setup, Response and Mitigation",
-        "decon"
+        "decon",
+        "Decontamination Decon Setup Scene Layout , Response and Mitigation",
+        "DDSSLRM",
+        "4.10.C",
+        "SOP 4.10.C",
+        "SOP4.10.C"
       ],
       "keywords": [
         "Decontamination",
@@ -3378,7 +4721,18 @@
         "major incident response",
         "contamination",
         "major incident",
-        "incident response"
+        "incident response",
+        "procedure",
+        "Decontamination (Decon) Setup (Scene Layout), Response & Mitigation",
+        "Decontamination Setup , Response and Mitigation",
+        "DDSSLRM",
+        "SOP 4.10.C",
+        "SOP4.10.C",
+        "4.10.C Decontamination (Decon) Setup (Scene Layout), Response and Mitigation",
+        "SOP 4.10.C Decontamination (Decon) Setup (Scene Layout), Response and Mitigation",
+        "MCI",
+        "mass casualty",
+        "disaster"
       ],
       "type": "procedure"
     },
@@ -3392,7 +4746,11 @@
       "aliases": [
         "4.11.A.1 Daily LifeFlight Operations",
         "SOP 4.11.A.1 Daily LifeFlight Operations",
-        "Life Flight"
+        "Life Flight",
+        "DLO",
+        "4.11.A.1",
+        "SOP 4.11.A.1",
+        "SOP4.11.A.1"
       ],
       "keywords": [
         "Daily",
@@ -3405,7 +4763,14 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "DLO",
+        "SOP 4.11.A.1",
+        "SOP4.11.A.1",
+        "4.11.A.1 Daily LifeFlight Operations",
+        "SOP 4.11.A.1 Daily LifeFlight Operations",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3418,7 +4783,11 @@
       "page_end": 402,
       "aliases": [
         "4.11.A.2 Helicopter Operations at Hamad General Hospital",
-        "SOP 4.11.A.2 Helicopter Operations at Hamad General Hospital"
+        "SOP 4.11.A.2 Helicopter Operations at Hamad General Hospital",
+        "HOHGH",
+        "4.11.A.2",
+        "SOP 4.11.A.2",
+        "SOP4.11.A.2"
       ],
       "keywords": [
         "Helicopter",
@@ -3431,7 +4800,14 @@
         "4.11.A.2",
         "LifeFlight",
         "Life Flight",
-        "air ambulance"
+        "air ambulance",
+        "procedure",
+        "HOHGH",
+        "SOP 4.11.A.2",
+        "SOP4.11.A.2",
+        "4.11.A.2 Helicopter Operations at Hamad General Hospital",
+        "SOP 4.11.A.2 Helicopter Operations at Hamad General Hospital",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3445,7 +4821,11 @@
       "aliases": [
         "4.11.A.3 Helicopter Operating Sites",
         "SOP 4.11.A.3 Helicopter Operating Sites",
-        "helipad sites"
+        "helipad sites",
+        "HOS",
+        "4.11.A.3",
+        "SOP 4.11.A.3",
+        "SOP4.11.A.3"
       ],
       "keywords": [
         "Helicopter",
@@ -3458,7 +4838,15 @@
         "Life Flight",
         "air ambulance",
         "helipad",
-        "landing site"
+        "landing site",
+        "procedure",
+        "HOS",
+        "SOP 4.11.A.3",
+        "SOP4.11.A.3",
+        "4.11.A.3 Helicopter Operating Sites",
+        "SOP 4.11.A.3 Helicopter Operating Sites",
+        "HEMS",
+        "Operating"
       ],
       "type": "procedure"
     },
@@ -3471,7 +4859,11 @@
       "page_end": 410,
       "aliases": [
         "4.11.A.4 Flight Following",
-        "SOP 4.11.A.4 Flight Following"
+        "SOP 4.11.A.4 Flight Following",
+        "FF",
+        "4.11.A.4",
+        "SOP 4.11.A.4",
+        "SOP4.11.A.4"
       ],
       "keywords": [
         "Flight",
@@ -3483,7 +4875,14 @@
         "Operations",
         "Life Flight",
         "helicopter",
-        "air ambulance"
+        "air ambulance",
+        "procedure",
+        "FF",
+        "SOP 4.11.A.4",
+        "SOP4.11.A.4",
+        "4.11.A.4 Flight Following",
+        "SOP 4.11.A.4 Flight Following",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3498,7 +4897,11 @@
         "4.11.A.5 LifeFlight Crew Configuration & Scheduling",
         "SOP 4.11.A.5 LifeFlight Crew Configuration & Scheduling",
         "LifeFlight Crew Configuration and Scheduling",
-        "Life Flight"
+        "Life Flight",
+        "LCCS",
+        "4.11.A.5",
+        "SOP 4.11.A.5",
+        "SOP4.11.A.5"
       ],
       "keywords": [
         "LifeFlight",
@@ -3513,7 +4916,15 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "LifeFlight Crew Configuration and Scheduling",
+        "LCCS",
+        "SOP 4.11.A.5",
+        "SOP4.11.A.5",
+        "4.11.A.5 LifeFlight Crew Configuration & Scheduling",
+        "SOP 4.11.A.5 LifeFlight Crew Configuration & Scheduling",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3528,7 +4939,11 @@
         "4.11.A.6 General & Clinical Responsibilities during a LifeFlight Shift",
         "SOP 4.11.A.6 General & Clinical Responsibilities during a LifeFlight Shift",
         "General and Clinical Responsibilities during a LifeFlight Shift",
-        "Life Flight"
+        "Life Flight",
+        "GCRDLS",
+        "4.11.A.6",
+        "SOP 4.11.A.6",
+        "SOP4.11.A.6"
       ],
       "keywords": [
         "General",
@@ -3544,7 +4959,20 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "General and Clinical Responsibilities during a LifeFlight Shift",
+        "GCRDLS",
+        "SOP 4.11.A.6",
+        "SOP4.11.A.6",
+        "4.11.A.6 General & Clinical Responsibilities during a LifeFlight Shift",
+        "SOP 4.11.A.6 General & Clinical Responsibilities during a LifeFlight Shift",
+        "duty",
+        "roster",
+        "swap",
+        "swop",
+        "HEMS",
+        "during"
       ],
       "type": "procedure"
     },
@@ -3558,7 +4986,11 @@
       "aliases": [
         "4.11.A.7 Deceased Patient on LifeFlight",
         "SOP 4.11.A.7 Deceased Patient on LifeFlight",
-        "Life Flight"
+        "Life Flight",
+        "DPL",
+        "4.11.A.7",
+        "SOP 4.11.A.7",
+        "SOP4.11.A.7"
       ],
       "keywords": [
         "Deceased",
@@ -3572,7 +5004,14 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "DPL",
+        "SOP 4.11.A.7",
+        "SOP4.11.A.7",
+        "4.11.A.7 Deceased Patient on LifeFlight",
+        "SOP 4.11.A.7 Deceased Patient on LifeFlight",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3588,7 +5027,12 @@
         "SOP 4.11.A.8 Non-Emergency and Ad Hoc LifeFlight Missions",
         "Non-Emergency & Ad Hoc LifeFlight Missions",
         "Life Flight",
-        "non emergency"
+        "non emergency",
+        "Non Emergency and Ad Hoc LifeFlight Missions",
+        "NEAHLM",
+        "4.11.A.8",
+        "SOP 4.11.A.8",
+        "SOP4.11.A.8"
       ],
       "keywords": [
         "Non",
@@ -3606,7 +5050,15 @@
         "air ambulance",
         "non emergency",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "Non-Emergency & Ad Hoc LifeFlight Missions",
+        "NEAHLM",
+        "SOP 4.11.A.8",
+        "SOP4.11.A.8",
+        "4.11.A.8 Non-Emergency and Ad Hoc LifeFlight Missions",
+        "SOP 4.11.A.8 Non-Emergency and Ad Hoc LifeFlight Missions",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3621,7 +5073,11 @@
         "4.11.A.9 Leave and Duty Exchange on LifeFlight",
         "SOP 4.11.A.9 Leave and Duty Exchange on LifeFlight",
         "Leave & Duty Exchange on LifeFlight",
-        "Life Flight"
+        "Life Flight",
+        "LDEL",
+        "4.11.A.9",
+        "SOP 4.11.A.9",
+        "SOP4.11.A.9"
       ],
       "keywords": [
         "Leave",
@@ -3636,7 +5092,18 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "Leave & Duty Exchange on LifeFlight",
+        "LDEL",
+        "SOP 4.11.A.9",
+        "SOP4.11.A.9",
+        "4.11.A.9 Leave and Duty Exchange on LifeFlight",
+        "SOP 4.11.A.9 Leave and Duty Exchange on LifeFlight",
+        "vacation",
+        "annual leave",
+        "sick leave",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3650,7 +5117,11 @@
       "aliases": [
         "4.11.A.10 Management of Bariatric Patients by LifeFlight",
         "SOP 4.11.A.10 Management of Bariatric Patients by LifeFlight",
-        "Life Flight"
+        "Life Flight",
+        "MBPL",
+        "4.11.A.10",
+        "SOP 4.11.A.10",
+        "SOP4.11.A.10"
       ],
       "keywords": [
         "Management",
@@ -3667,7 +5138,14 @@
         "obese",
         "heavy patient",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "MBPL",
+        "SOP 4.11.A.10",
+        "SOP4.11.A.10",
+        "4.11.A.10 Management of Bariatric Patients by LifeFlight",
+        "SOP 4.11.A.10 Management of Bariatric Patients by LifeFlight",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3682,7 +5160,11 @@
         "4.11.A.11 LifeFlight Hot Loading Procedure",
         "SOP 4.11.A.11 LifeFlight Hot Loading Procedure",
         "Life Flight",
-        "rotors running loading"
+        "rotors running loading",
+        "LHLP",
+        "4.11.A.11",
+        "SOP 4.11.A.11",
+        "SOP4.11.A.11"
       ],
       "keywords": [
         "LifeFlight",
@@ -3701,7 +5183,13 @@
         "Life",
         "Flight",
         "rotors",
-        "running"
+        "running",
+        "LHLP",
+        "SOP 4.11.A.11",
+        "SOP4.11.A.11",
+        "4.11.A.11 LifeFlight Hot Loading Procedure",
+        "SOP 4.11.A.11 LifeFlight Hot Loading Procedure",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3716,7 +5204,11 @@
         "4.11.A.12 LifeFlight Configuration & Passenger Safety",
         "SOP 4.11.A.12 LifeFlight Configuration & Passenger Safety",
         "LifeFlight Configuration and Passenger Safety",
-        "Life Flight"
+        "Life Flight",
+        "LCPS",
+        "4.11.A.12",
+        "SOP 4.11.A.12",
+        "SOP4.11.A.12"
       ],
       "keywords": [
         "LifeFlight",
@@ -3731,7 +5223,15 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "LifeFlight Configuration and Passenger Safety",
+        "LCPS",
+        "SOP 4.11.A.12",
+        "SOP4.11.A.12",
+        "4.11.A.12 LifeFlight Configuration & Passenger Safety",
+        "SOP 4.11.A.12 LifeFlight Configuration & Passenger Safety",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3744,7 +5244,11 @@
       "page_end": 427,
       "aliases": [
         "4.11.A.13 Latex Allergy Precautions",
-        "SOP 4.11.A.13 Latex Allergy Precautions"
+        "SOP 4.11.A.13 Latex Allergy Precautions",
+        "LAP",
+        "4.11.A.13",
+        "SOP 4.11.A.13",
+        "SOP4.11.A.13"
       ],
       "keywords": [
         "Latex",
@@ -3758,7 +5262,14 @@
         "Life Flight",
         "helicopter",
         "air ambulance",
-        "latex precautions"
+        "latex precautions",
+        "procedure",
+        "LAP",
+        "SOP 4.11.A.13",
+        "SOP4.11.A.13",
+        "4.11.A.13 Latex Allergy Precautions",
+        "SOP 4.11.A.13 Latex Allergy Precautions",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3773,7 +5284,11 @@
         "4.11.A.14 LifeFlight Offshore activation and Operations",
         "SOP 4.11.A.14 LifeFlight Offshore activation and Operations",
         "LifeFlight Offshore activation & Operations",
-        "Life Flight"
+        "Life Flight",
+        "LOAO",
+        "4.11.A.14",
+        "SOP 4.11.A.14",
+        "SOP4.11.A.14"
       ],
       "keywords": [
         "LifeFlight",
@@ -3789,7 +5304,15 @@
         "sea",
         "remote offshore",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "LifeFlight Offshore activation & Operations",
+        "LOAO",
+        "SOP 4.11.A.14",
+        "SOP4.11.A.14",
+        "4.11.A.14 LifeFlight Offshore activation and Operations",
+        "SOP 4.11.A.14 LifeFlight Offshore activation and Operations",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3803,7 +5326,11 @@
       "aliases": [
         "4.11.A.15 LifeFlight Self Dispatch",
         "SOP 4.11.A.15 LifeFlight Self Dispatch",
-        "Life Flight"
+        "Life Flight",
+        "LSD",
+        "4.11.A.15",
+        "SOP 4.11.A.15",
+        "SOP4.11.A.15"
       ],
       "keywords": [
         "LifeFlight",
@@ -3817,7 +5344,14 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "LSD",
+        "SOP 4.11.A.15",
+        "SOP4.11.A.15",
+        "4.11.A.15 LifeFlight Self Dispatch",
+        "SOP 4.11.A.15 LifeFlight Self Dispatch",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3830,7 +5364,11 @@
       "page_end": 436,
       "aliases": [
         "4.11.B.1 Use of Medical Crew Restraints",
-        "SOP 4.11.B.1 Use of Medical Crew Restraints"
+        "SOP 4.11.B.1 Use of Medical Crew Restraints",
+        "UMCR",
+        "4.11.B.1",
+        "SOP 4.11.B.1",
+        "SOP4.11.B.1"
       ],
       "keywords": [
         "Medical",
@@ -3846,7 +5384,14 @@
         "helicopter",
         "air ambulance",
         "seatbelts",
-        "aviation safety"
+        "aviation safety",
+        "procedure",
+        "UMCR",
+        "SOP 4.11.B.1",
+        "SOP4.11.B.1",
+        "4.11.B.1 Use of Medical Crew Restraints",
+        "SOP 4.11.B.1 Use of Medical Crew Restraints",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3860,7 +5405,11 @@
       "aliases": [
         "4.11.B.2 Physical Fitness & Assessment Procedure",
         "SOP 4.11.B.2 Physical Fitness & Assessment Procedure",
-        "Physical Fitness and Assessment Procedure"
+        "Physical Fitness and Assessment Procedure",
+        "PFAP",
+        "4.11.B.2",
+        "SOP 4.11.B.2",
+        "SOP4.11.B.2"
       ],
       "keywords": [
         "Physical",
@@ -3876,7 +5425,14 @@
         "Life Flight",
         "helicopter",
         "air ambulance",
-        "aviation safety"
+        "aviation safety",
+        "Physical Fitness and Assessment Procedure",
+        "PFAP",
+        "SOP 4.11.B.2",
+        "SOP4.11.B.2",
+        "4.11.B.2 Physical Fitness & Assessment Procedure",
+        "SOP 4.11.B.2 Physical Fitness & Assessment Procedure",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3890,7 +5446,11 @@
       "aliases": [
         "4.11.B.3 Fitness to Fly",
         "SOP 4.11.B.3 Fitness to Fly",
-        "aviation fitness"
+        "aviation fitness",
+        "FF",
+        "4.11.B.3",
+        "SOP 4.11.B.3",
+        "SOP4.11.B.3"
       ],
       "keywords": [
         "Fitness",
@@ -3906,7 +5466,14 @@
         "air ambulance",
         "aviation fitness",
         "aviation safety",
-        "aviation"
+        "aviation",
+        "procedure",
+        "FF",
+        "SOP 4.11.B.3",
+        "SOP4.11.B.3",
+        "4.11.B.3 Fitness to Fly",
+        "SOP 4.11.B.3 Fitness to Fly",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3921,7 +5488,12 @@
         "4.11.B.4 Cleaning of LifeFlight (LF) Helicopters",
         "SOP 4.11.B.4 Cleaning of LifeFlight (LF) Helicopters",
         "Cleaning of LifeFlight Helicopters",
-        "Life Flight"
+        "Life Flight",
+        "Cleaning of LifeFlight LF Helicopters",
+        "CLLH",
+        "4.11.B.4",
+        "SOP 4.11.B.4",
+        "SOP4.11.B.4"
       ],
       "keywords": [
         "Cleaning",
@@ -3938,7 +5510,18 @@
         "air ambulance",
         "aviation safety",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "Cleaning of LifeFlight Helicopters",
+        "CLLH",
+        "SOP 4.11.B.4",
+        "SOP4.11.B.4",
+        "4.11.B.4 Cleaning of LifeFlight (LF) Helicopters",
+        "SOP 4.11.B.4 Cleaning of LifeFlight (LF) Helicopters",
+        "decontamination",
+        "infection control",
+        "disinfection",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3952,7 +5535,11 @@
       "aliases": [
         "4.11.C.1 LifeFlight Personal Protective Equipment",
         "SOP 4.11.C.1 LifeFlight Personal Protective Equipment",
-        "Life Flight"
+        "Life Flight",
+        "LPPE",
+        "4.11.C.1",
+        "SOP 4.11.C.1",
+        "SOP4.11.C.1"
       ],
       "keywords": [
         "LifeFlight",
@@ -3966,7 +5553,14 @@
         "helicopter",
         "air ambulance",
         "Life",
-        "Flight"
+        "Flight",
+        "procedure",
+        "LPPE",
+        "SOP 4.11.C.1",
+        "SOP4.11.C.1",
+        "4.11.C.1 LifeFlight Personal Protective Equipment",
+        "SOP 4.11.C.1 LifeFlight Personal Protective Equipment",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -3979,7 +5573,11 @@
       "page_end": 452,
       "aliases": [
         "4.11.C.2 Care of Personal Protective Equipment",
-        "SOP 4.11.C.2 Care of Personal Protective Equipment"
+        "SOP 4.11.C.2 Care of Personal Protective Equipment",
+        "CPPE",
+        "4.11.C.2",
+        "SOP 4.11.C.2",
+        "SOP4.11.C.2"
       ],
       "keywords": [
         "Care",
@@ -3992,7 +5590,14 @@
         "LifeFlight",
         "Life Flight",
         "helicopter",
-        "air ambulance"
+        "air ambulance",
+        "procedure",
+        "CPPE",
+        "SOP 4.11.C.2",
+        "SOP4.11.C.2",
+        "4.11.C.2 Care of Personal Protective Equipment",
+        "SOP 4.11.C.2 Care of Personal Protective Equipment",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -4006,7 +5611,11 @@
       "aliases": [
         "4.11.C.3 Medical Equipment, Consumables and Asset Management",
         "SOP 4.11.C.3 Medical Equipment, Consumables and Asset Management",
-        "Medical Equipment, Consumables & Asset Management"
+        "Medical Equipment, Consumables & Asset Management",
+        "MECAM",
+        "4.11.C.3",
+        "SOP 4.11.C.3",
+        "SOP4.11.C.3"
       ],
       "keywords": [
         "Medical",
@@ -4020,7 +5629,15 @@
         "LifeFlight",
         "Life Flight",
         "helicopter",
-        "air ambulance"
+        "air ambulance",
+        "procedure",
+        "Medical Equipment, Consumables & Asset Management",
+        "MECAM",
+        "SOP 4.11.C.3",
+        "SOP4.11.C.3",
+        "4.11.C.3 Medical Equipment, Consumables and Asset Management",
+        "SOP 4.11.C.3 Medical Equipment, Consumables and Asset Management",
+        "HEMS"
       ],
       "type": "procedure"
     },
@@ -4033,7 +5650,11 @@
       "page_end": 459,
       "aliases": [
         "5.1.A Retrieval Services Driving",
-        "SOP 5.1.A Retrieval Services Driving"
+        "SOP 5.1.A Retrieval Services Driving",
+        "RSD",
+        "5.1.A",
+        "SOP 5.1.A",
+        "SOP5.1.A"
       ],
       "keywords": [
         "Retrieval",
@@ -4044,7 +5665,14 @@
         "General",
         "RS",
         "retrieval services",
-        "transfer"
+        "transfer",
+        "procedure",
+        "RSD",
+        "SOP 5.1.A",
+        "SOP5.1.A",
+        "5.1.A Retrieval Services Driving",
+        "SOP 5.1.A Retrieval Services Driving",
+        "Services"
       ],
       "type": "procedure"
     },
@@ -4057,7 +5685,11 @@
       "page_end": 461,
       "aliases": [
         "5.1.B Management of Emergency Patients by Retrieval Units",
-        "SOP 5.1.B Management of Emergency Patients by Retrieval Units"
+        "SOP 5.1.B Management of Emergency Patients by Retrieval Units",
+        "MEPRU",
+        "5.1.B",
+        "SOP 5.1.B",
+        "SOP5.1.B"
       ],
       "keywords": [
         "Management",
@@ -4071,7 +5703,13 @@
         "General",
         "RS",
         "retrieval services",
-        "transfer"
+        "transfer",
+        "procedure",
+        "MEPRU",
+        "SOP 5.1.B",
+        "SOP5.1.B",
+        "5.1.B Management of Emergency Patients by Retrieval Units",
+        "SOP 5.1.B Management of Emergency Patients by Retrieval Units"
       ],
       "type": "procedure"
     },
@@ -4084,7 +5722,11 @@
       "page_end": 464,
       "aliases": [
         "5.1.C Airport Operations",
-        "SOP 5.1.C Airport Operations"
+        "SOP 5.1.C Airport Operations",
+        "AO",
+        "5.1.C",
+        "SOP 5.1.C",
+        "SOP5.1.C"
       ],
       "keywords": [
         "Airport",
@@ -4097,7 +5739,13 @@
         "RS",
         "retrieval services",
         "airside",
-        "transfer"
+        "transfer",
+        "procedure",
+        "AO",
+        "SOP 5.1.C",
+        "SOP5.1.C",
+        "5.1.C Airport Operations",
+        "SOP 5.1.C Airport Operations"
       ],
       "type": "procedure"
     },
@@ -4111,7 +5759,12 @@
       "aliases": [
         "5.2.A Scheduled Ambulance Service (SAS) Supervisor Duties",
         "SOP 5.2.A Scheduled Ambulance Service (SAS) Supervisor Duties",
-        "Scheduled Ambulance Service Supervisor Duties"
+        "Scheduled Ambulance Service Supervisor Duties",
+        "Scheduled Ambulance Service SAS Supervisor Duties",
+        "SASSSD",
+        "5.2.A",
+        "SOP 5.2.A",
+        "SOP5.2.A"
       ],
       "keywords": [
         "Scheduled",
@@ -4122,7 +5775,15 @@
         "Scheduled Ambulance Service (SAS) Supervisor Duties",
         "Scheduled Ambulance Service (SAS)",
         "5.2.A",
-        "scheduled ambulance service"
+        "scheduled ambulance service",
+        "procedure",
+        "Scheduled Ambulance Service Supervisor Duties",
+        "SASSSD",
+        "SOP 5.2.A",
+        "SOP5.2.A",
+        "5.2.A Scheduled Ambulance Service (SAS) Supervisor Duties",
+        "SOP 5.2.A Scheduled Ambulance Service (SAS) Supervisor Duties",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -4135,7 +5796,11 @@
       "page_end": 474,
       "aliases": [
         "5.3.A Emergency Transfers from HGH ED to Heart Hospital",
-        "SOP 5.3.A Emergency Transfers from HGH ED to Heart Hospital"
+        "SOP 5.3.A Emergency Transfers from HGH ED to Heart Hospital",
+        "ETHEHH",
+        "5.3.A",
+        "SOP 5.3.A",
+        "SOP5.3.A"
       ],
       "keywords": [
         "Emergency",
@@ -4154,7 +5819,13 @@
         "emergency department",
         "interfacility",
         "inter facility",
-        "transfer"
+        "transfer",
+        "procedure",
+        "ETHEHH",
+        "SOP 5.3.A",
+        "SOP5.3.A",
+        "5.3.A Emergency Transfers from HGH ED to Heart Hospital",
+        "SOP 5.3.A Emergency Transfers from HGH ED to Heart Hospital"
       ],
       "type": "procedure"
     },
@@ -4170,7 +5841,17 @@
         "SOP 5.3.B Paediatric Emergency Centre (PEC) Transfers",
         "Paediatric Emergency Centre Transfers",
         "center",
-        "pediatric"
+        "pediatric",
+        "Paediatric Emergency Centre PEC Transfers",
+        "PECPT",
+        "5.3.B",
+        "SOP 5.3.B",
+        "SOP5.3.B",
+        "pediatric Emergency Centre (PEC) Transfers",
+        "5.3.B pediatric Emergency Centre (PEC) Transfers",
+        "SOP 5.3.B pediatric Emergency Centre (PEC) Transfers",
+        "pediatric Emergency Centre Transfers",
+        "paediatric"
       ],
       "keywords": [
         "Paediatric",
@@ -4190,7 +5871,20 @@
         "pediatric",
         "interfacility",
         "inter facility",
-        "transfer"
+        "transfer",
+        "procedure",
+        "Paediatric Emergency Centre Transfers",
+        "PECPT",
+        "SOP 5.3.B",
+        "SOP5.3.B",
+        "5.3.B Paediatric Emergency Centre (PEC) Transfers",
+        "SOP 5.3.B Paediatric Emergency Centre (PEC) Transfers",
+        "pediatric Emergency Centre (PEC) Transfers",
+        "5.3.B pediatric Emergency Centre (PEC) Transfers",
+        "SOP 5.3.B pediatric Emergency Centre (PEC) Transfers",
+        "pediatric Emergency Centre Transfers",
+        "pediatric emergency centre",
+        "paediatric emergency center"
       ],
       "type": "procedure"
     },
@@ -4204,7 +5898,12 @@
       "aliases": [
         "5.3.C Neonatal Intensive Care Unit (NICU) Transfers",
         "SOP 5.3.C Neonatal Intensive Care Unit (NICU) Transfers",
-        "Neonatal Intensive Care Unit Transfers"
+        "Neonatal Intensive Care Unit Transfers",
+        "Neonatal Intensive Care Unit NICU Transfers",
+        "NICUNT",
+        "5.3.C",
+        "SOP 5.3.C",
+        "SOP5.3.C"
       ],
       "keywords": [
         "Neonatal",
@@ -4222,7 +5921,14 @@
         "neonatal intensive care unit",
         "interfacility",
         "inter facility",
-        "transfer"
+        "transfer",
+        "procedure",
+        "Neonatal Intensive Care Unit Transfers",
+        "NICUNT",
+        "SOP 5.3.C",
+        "SOP5.3.C",
+        "5.3.C Neonatal Intensive Care Unit (NICU) Transfers",
+        "SOP 5.3.C Neonatal Intensive Care Unit (NICU) Transfers"
       ],
       "type": "procedure"
     },
@@ -4235,7 +5941,12 @@
       "page_end": 483,
       "aliases": [
         "5.3.E Ambulatory Patient Transport to Carry-Out Interfacility Transfers",
-        "SOP 5.3.E Ambulatory Patient Transport to Carry-Out Interfacility Transfers"
+        "SOP 5.3.E Ambulatory Patient Transport to Carry-Out Interfacility Transfers",
+        "Ambulatory Patient Transport to Carry Out Interfacility Transfers",
+        "APTCOIT",
+        "5.3.E",
+        "SOP 5.3.E",
+        "SOP5.3.E"
       ],
       "keywords": [
         "Ambulatory",
@@ -4253,7 +5964,13 @@
         "inter facility",
         "walking patient",
         "ambulatory transfer",
-        "transfer"
+        "transfer",
+        "procedure",
+        "APTCOIT",
+        "SOP 5.3.E",
+        "SOP5.3.E",
+        "5.3.E Ambulatory Patient Transport to Carry-Out Interfacility Transfers",
+        "SOP 5.3.E Ambulatory Patient Transport to Carry-Out Interfacility Transfers"
       ],
       "type": "procedure"
     },
@@ -4266,7 +5983,11 @@
       "page_end": 487,
       "aliases": [
         "5.4.A.2 High Acuity Adult Transfers",
-        "SOP 5.4.A.2 High Acuity Adult Transfers"
+        "SOP 5.4.A.2 High Acuity Adult Transfers",
+        "HAAT",
+        "5.4.A.2",
+        "SOP 5.4.A.2",
+        "SOP5.4.A.2"
       ],
       "keywords": [
         "High",
@@ -4278,7 +5999,13 @@
         "5.4.A.2",
         "Retrieval",
         "Operations",
-        "critical care transfer"
+        "critical care transfer",
+        "procedure",
+        "HAAT",
+        "SOP 5.4.A.2",
+        "SOP5.4.A.2",
+        "5.4.A.2 High Acuity Adult Transfers",
+        "SOP 5.4.A.2 High Acuity Adult Transfers"
       ],
       "type": "procedure"
     },
@@ -4294,7 +6021,11 @@
         "SOP 5.4.A.3.2 Commercial Flight Operations: Repatriation to Qatar Upon Commercial Aircraft",
         "Commercial Flight Operations - Repatriation to Qatar Upon Commercial Aircraft",
         "Commercial Flight Operations Repatriation to Qatar Upon Commercial Aircraft",
-        "repatriation flight"
+        "repatriation flight",
+        "CFORQUCA",
+        "5.4.A.3.2",
+        "SOP 5.4.A.3.2",
+        "SOP5.4.A.3.2"
       ],
       "keywords": [
         "Commercial",
@@ -4309,7 +6040,13 @@
         "5.4.A.3.2",
         "Retrieval",
         "airline",
-        "critical care transfer"
+        "critical care transfer",
+        "procedure",
+        "CFORQUCA",
+        "SOP 5.4.A.3.2",
+        "SOP5.4.A.3.2",
+        "5.4.A.3.2 Commercial Flight Operations: Repatriation to Qatar Upon Commercial Aircraft",
+        "SOP 5.4.A.3.2 Commercial Flight Operations: Repatriation to Qatar Upon Commercial Aircraft"
       ],
       "type": "procedure"
     },
@@ -4323,7 +6060,12 @@
       "aliases": [
         "5.4.A.8 Extracorporeal Membrane Oxygenation (ECMO) Patient Transfers",
         "SOP 5.4.A.8 Extracorporeal Membrane Oxygenation (ECMO) Patient Transfers",
-        "Extracorporeal Membrane Oxygenation Patient Transfers"
+        "Extracorporeal Membrane Oxygenation Patient Transfers",
+        "Extracorporeal Membrane Oxygenation ECMO Patient Transfers",
+        "EMOEPT",
+        "5.4.A.8",
+        "SOP 5.4.A.8",
+        "SOP5.4.A.8"
       ],
       "keywords": [
         "Extracorporeal",
@@ -4338,7 +6080,14 @@
         "Retrieval",
         "Operations",
         "extracorporeal membrane oxygenation",
-        "critical care transfer"
+        "critical care transfer",
+        "procedure",
+        "Extracorporeal Membrane Oxygenation Patient Transfers",
+        "EMOEPT",
+        "SOP 5.4.A.8",
+        "SOP5.4.A.8",
+        "5.4.A.8 Extracorporeal Membrane Oxygenation (ECMO) Patient Transfers",
+        "SOP 5.4.A.8 Extracorporeal Membrane Oxygenation (ECMO) Patient Transfers"
       ],
       "type": "procedure"
     },
@@ -4351,7 +6100,11 @@
       "page_end": 499,
       "aliases": [
         "5.4.A.9 Aeromedical Transport of Bariatric Patients Using QEAF Aircraft",
-        "SOP 5.4.A.9 Aeromedical Transport of Bariatric Patients Using QEAF Aircraft"
+        "SOP 5.4.A.9 Aeromedical Transport of Bariatric Patients Using QEAF Aircraft",
+        "ATBPQA",
+        "5.4.A.9",
+        "SOP 5.4.A.9",
+        "SOP5.4.A.9"
       ],
       "keywords": [
         "Aeromedical",
@@ -4368,7 +6121,13 @@
         "qatar emiri air force",
         "obese",
         "heavy patient",
-        "critical care transfer"
+        "critical care transfer",
+        "procedure",
+        "ATBPQA",
+        "SOP 5.4.A.9",
+        "SOP5.4.A.9",
+        "5.4.A.9 Aeromedical Transport of Bariatric Patients Using QEAF Aircraft",
+        "SOP 5.4.A.9 Aeromedical Transport of Bariatric Patients Using QEAF Aircraft"
       ],
       "type": "procedure"
     },
@@ -4381,7 +6140,11 @@
       "page_end": 503,
       "aliases": [
         "5.4.A.10 Aeromedical Logistic Planning Considerations",
-        "SOP 5.4.A.10 Aeromedical Logistic Planning Considerations"
+        "SOP 5.4.A.10 Aeromedical Logistic Planning Considerations",
+        "ALPC",
+        "5.4.A.10",
+        "SOP 5.4.A.10",
+        "SOP5.4.A.10"
       ],
       "keywords": [
         "Aeromedical",
@@ -4393,7 +6156,13 @@
         "5.4.A.10",
         "Retrieval",
         "Operations",
-        "critical care transfer"
+        "critical care transfer",
+        "procedure",
+        "ALPC",
+        "SOP 5.4.A.10",
+        "SOP5.4.A.10",
+        "5.4.A.10 Aeromedical Logistic Planning Considerations",
+        "SOP 5.4.A.10 Aeromedical Logistic Planning Considerations"
       ],
       "type": "procedure"
     },
@@ -4406,7 +6175,11 @@
       "page_end": 505,
       "aliases": [
         "5.4.A.13 Emergency Ration Packs",
-        "SOP 5.4.A.13 Emergency Ration Packs"
+        "SOP 5.4.A.13 Emergency Ration Packs",
+        "ERP",
+        "5.4.A.13",
+        "SOP 5.4.A.13",
+        "SOP5.4.A.13"
       ],
       "keywords": [
         "Emergency",
@@ -4419,7 +6192,13 @@
         "Operations",
         "emergency food",
         "rations",
-        "critical care transfer"
+        "critical care transfer",
+        "procedure",
+        "ERP",
+        "SOP 5.4.A.13",
+        "SOP5.4.A.13",
+        "5.4.A.13 Emergency Ration Packs",
+        "SOP 5.4.A.13 Emergency Ration Packs"
       ],
       "type": "procedure"
     },
@@ -4432,7 +6211,11 @@
       "page_end": 516,
       "aliases": [
         "5.4.E.1 Retrieval Service Operational Currency",
-        "SOP 5.4.E.1 Retrieval Service Operational Currency"
+        "SOP 5.4.E.1 Retrieval Service Operational Currency",
+        "RSOC",
+        "5.4.E.1",
+        "SOP 5.4.E.1",
+        "SOP5.4.E.1"
       ],
       "keywords": [
         "Retrieval",
@@ -4443,7 +6226,14 @@
         "5.4.E.1",
         "Quality",
         "Management",
-        "Improvement"
+        "Improvement",
+        "procedure",
+        "RSOC",
+        "SOP 5.4.E.1",
+        "SOP5.4.E.1",
+        "5.4.E.1 Retrieval Service Operational Currency",
+        "SOP 5.4.E.1 Retrieval Service Operational Currency",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -4458,7 +6248,11 @@
         "5.4.F.4 Management and Administration of Blood Products",
         "SOP 5.4.F.4 Management and Administration of Blood Products",
         "Management & Administration of Blood Products",
-        "blood transfusion"
+        "blood transfusion",
+        "MABP",
+        "5.4.F.4",
+        "SOP 5.4.F.4",
+        "SOP5.4.F.4"
       ],
       "keywords": [
         "Management",
@@ -4473,7 +6267,14 @@
         "Assurance",
         "Improvement",
         "transfusion",
-        "quality assurance"
+        "quality assurance",
+        "procedure",
+        "Management & Administration of Blood Products",
+        "MABP",
+        "SOP 5.4.F.4",
+        "SOP5.4.F.4",
+        "5.4.F.4 Management and Administration of Blood Products",
+        "SOP 5.4.F.4 Management and Administration of Blood Products"
       ],
       "type": "procedure"
     },
@@ -4487,7 +6288,11 @@
       "aliases": [
         "5.4.F.6 Patient Handover & Endorsement",
         "SOP 5.4.F.6 Patient Handover & Endorsement",
-        "Patient Handover and Endorsement"
+        "Patient Handover and Endorsement",
+        "PHE",
+        "5.4.F.6",
+        "SOP 5.4.F.6",
+        "SOP5.4.F.6"
       ],
       "keywords": [
         "Patient",
@@ -4500,7 +6305,14 @@
         "Quality",
         "Assurance",
         "Improvement",
-        "quality assurance"
+        "quality assurance",
+        "procedure",
+        "Patient Handover and Endorsement",
+        "PHE",
+        "SOP 5.4.F.6",
+        "SOP5.4.F.6",
+        "5.4.F.6 Patient Handover & Endorsement",
+        "SOP 5.4.F.6 Patient Handover & Endorsement"
       ],
       "type": "procedure"
     },
@@ -4513,7 +6325,11 @@
       "page_end": 527,
       "aliases": [
         "5.4.G.1 Use of the ParAid Stretcher",
-        "SOP 5.4.G.1 Use of the ParAid Stretcher"
+        "SOP 5.4.G.1 Use of the ParAid Stretcher",
+        "UPS",
+        "5.4.G.1",
+        "SOP 5.4.G.1",
+        "SOP5.4.G.1"
       ],
       "keywords": [
         "ParAid",
@@ -4523,7 +6339,13 @@
         "5.4.G.1",
         "Retrieval",
         "Equipment",
-        "retrieval equipment"
+        "retrieval equipment",
+        "procedure",
+        "UPS",
+        "SOP 5.4.G.1",
+        "SOP5.4.G.1",
+        "5.4.G.1 Use of the ParAid Stretcher",
+        "SOP 5.4.G.1 Use of the ParAid Stretcher"
       ],
       "type": "procedure"
     },
@@ -4536,7 +6358,11 @@
       "page_end": 528,
       "aliases": [
         "5.4.G.2 Securing of Equipment During Transfer",
-        "SOP 5.4.G.2 Securing of Equipment During Transfer"
+        "SOP 5.4.G.2 Securing of Equipment During Transfer",
+        "SEDT",
+        "5.4.G.2",
+        "SOP 5.4.G.2",
+        "SOP5.4.G.2"
       ],
       "keywords": [
         "Securing",
@@ -4546,7 +6372,14 @@
         "Retrieval Service Equipment",
         "5.4.G.2",
         "Retrieval",
-        "retrieval equipment"
+        "retrieval equipment",
+        "procedure",
+        "SEDT",
+        "SOP 5.4.G.2",
+        "SOP5.4.G.2",
+        "5.4.G.2 Securing of Equipment During Transfer",
+        "SOP 5.4.G.2 Securing of Equipment During Transfer",
+        "During"
       ],
       "type": "procedure"
     },
@@ -4562,7 +6395,10 @@
         "SOP 5.4.G.3 Cold Chain Medication Use and Sign Out by RS Critical Care Paramedics & Doctors",
         "Cold Chain Medication Use and Sign Out by RS Critical Care Paramedics and Doctors",
         "Cold Chain Medication Use & Sign Out by RS Critical Care Paramedics & Doctors",
-        "refrigerated medication"
+        "refrigerated medication",
+        "5.4.G.3",
+        "SOP 5.4.G.3",
+        "SOP5.4.G.3"
       ],
       "keywords": [
         "Cold",
@@ -4584,7 +6420,14 @@
         "temperature controlled medication",
         "refrigerated medication",
         "retrieval equipment",
-        "refrigerated"
+        "refrigerated",
+        "procedure",
+        "Cold Chain Medication Use and Sign Out by RS Critical Care Paramedics and Doctors",
+        "Cold Chain Medication Use & Sign Out by RS Critical Care Paramedics & Doctors",
+        "SOP 5.4.G.3",
+        "SOP5.4.G.3",
+        "5.4.G.3 Cold Chain Medication Use and Sign Out by RS Critical Care Paramedics & Doctors",
+        "SOP 5.4.G.3 Cold Chain Medication Use and Sign Out by RS Critical Care Paramedics & Doctors"
       ],
       "type": "procedure"
     },
@@ -4599,7 +6442,10 @@
         "5.4.G.4 Controlled Medicines Management by RS Critical Care Paramedics & Medical Doctors",
         "SOP 5.4.G.4 Controlled Medicines Management by RS Critical Care Paramedics & Medical Doctors",
         "Controlled Medicines Management by RS Critical Care Paramedics and Medical Doctors",
-        "controlled medications"
+        "controlled medications",
+        "5.4.G.4",
+        "SOP 5.4.G.4",
+        "SOP5.4.G.4"
       ],
       "keywords": [
         "Controlled",
@@ -4620,7 +6466,13 @@
         "controlled medications",
         "narcotics",
         "retrieval equipment",
-        "medications"
+        "medications",
+        "procedure",
+        "Controlled Medicines Management by RS Critical Care Paramedics and Medical Doctors",
+        "SOP 5.4.G.4",
+        "SOP5.4.G.4",
+        "5.4.G.4 Controlled Medicines Management by RS Critical Care Paramedics & Medical Doctors",
+        "SOP 5.4.G.4 Controlled Medicines Management by RS Critical Care Paramedics & Medical Doctors"
       ],
       "type": "procedure"
     },
@@ -4634,7 +6486,11 @@
       "aliases": [
         "6.1 Staffing of Events and Sealine Camping Season",
         "SOP 6.1 Staffing of Events and Sealine Camping Season",
-        "Staffing of Events & Sealine Camping Season"
+        "Staffing of Events & Sealine Camping Season",
+        "SESCS",
+        "6.1",
+        "SOP 6.1",
+        "SOP6.1"
       ],
       "keywords": [
         "Staffing",
@@ -4648,7 +6504,14 @@
         "Emergency",
         "Planning",
         "camping season",
-        "preparedness"
+        "preparedness",
+        "procedure",
+        "Staffing of Events & Sealine Camping Season",
+        "SESCS",
+        "SOP 6.1",
+        "SOP6.1",
+        "6.1 Staffing of Events and Sealine Camping Season",
+        "SOP 6.1 Staffing of Events and Sealine Camping Season"
       ],
       "type": "procedure"
     },
@@ -4661,7 +6524,12 @@
       "page_end": 544,
       "aliases": [
         "6.2 Adverse Weather Preparedness, Response And Recovery",
-        "SOP 6.2 Adverse Weather Preparedness, Response And Recovery"
+        "SOP 6.2 Adverse Weather Preparedness, Response And Recovery",
+        "Adverse Weather Preparedness, Response & Recovery",
+        "AWPRR",
+        "6.2",
+        "SOP 6.2",
+        "SOP6.2"
       ],
       "keywords": [
         "Adverse",
@@ -4674,7 +6542,14 @@
         "6.2",
         "Events",
         "Emergency",
-        "Planning"
+        "Planning",
+        "procedure",
+        "Adverse Weather Preparedness, Response & Recovery",
+        "AWPRR",
+        "SOP 6.2",
+        "SOP6.2",
+        "6.2 Adverse Weather Preparedness, Response And Recovery",
+        "SOP 6.2 Adverse Weather Preparedness, Response And Recovery"
       ],
       "type": "procedure"
     },
@@ -4690,7 +6565,11 @@
         "SOP 6.3 Drill/Event Planning & Management",
         "Drill/Event Planning and Management",
         "Drill and Event Planning & Management",
-        "Drill / Event Planning & Management"
+        "Drill / Event Planning & Management",
+        "DEPM",
+        "6.3",
+        "SOP 6.3",
+        "SOP6.3"
       ],
       "keywords": [
         "Drill",
@@ -4702,7 +6581,15 @@
         "6.3",
         "Events",
         "Emergency",
-        "preparedness"
+        "preparedness",
+        "procedure",
+        "Drill/Event Planning and Management",
+        "Drill and Event Planning & Management",
+        "DEPM",
+        "SOP 6.3",
+        "SOP6.3",
+        "6.3 Drill/Event Planning & Management",
+        "SOP 6.3 Drill/Event Planning & Management"
       ],
       "type": "procedure"
     },
@@ -4716,7 +6603,10 @@
       "aliases": [
         "7.1 Orientation of All HMCAS Ambulance Paramedic and Critical Care Paramedic Staff",
         "SOP 7.1 Orientation of All HMCAS Ambulance Paramedic and Critical Care Paramedic Staff",
-        "Orientation of All HMCAS Ambulance Paramedic & Critical Care Paramedic Staff"
+        "Orientation of All HMCAS Ambulance Paramedic & Critical Care Paramedic Staff",
+        "7.1",
+        "SOP 7.1",
+        "SOP7.1"
       ],
       "keywords": [
         "Orientation",
@@ -4732,7 +6622,13 @@
         "hamad medical corporation ambulance service",
         "ambulance service",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "Orientation of All HMCAS Ambulance Paramedic & Critical Care Paramedic Staff",
+        "SOP 7.1",
+        "SOP7.1",
+        "7.1 Orientation of All HMCAS Ambulance Paramedic and Critical Care Paramedic Staff",
+        "SOP 7.1 Orientation of All HMCAS Ambulance Paramedic and Critical Care Paramedic Staff"
       ],
       "type": "procedure"
     },
@@ -4746,7 +6642,10 @@
       "aliases": [
         "7.2 Annual Training Requirements and Minimum Patient Facing Hours for Ambulance Paramedics and Critical Care Paramedics",
         "SOP 7.2 Annual Training Requirements and Minimum Patient Facing Hours for Ambulance Paramedics and Critical Care Paramedics",
-        "Annual Training Requirements & Minimum Patient Facing Hours for Ambulance Paramedics & Critical Care Paramedics"
+        "Annual Training Requirements & Minimum Patient Facing Hours for Ambulance Paramedics & Critical Care Paramedics",
+        "7.2",
+        "SOP 7.2",
+        "SOP7.2"
       ],
       "keywords": [
         "Annual",
@@ -4763,7 +6662,13 @@
         "Annual Training Requirements and Minimum Patient Facing Hours for Ambulance Paramedics and Critical Care Paramedics",
         "7.2",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "Annual Training Requirements & Minimum Patient Facing Hours for Ambulance Paramedics & Critical Care Paramedics",
+        "SOP 7.2",
+        "SOP7.2",
+        "7.2 Annual Training Requirements and Minimum Patient Facing Hours for Ambulance Paramedics and Critical Care Paramedics",
+        "SOP 7.2 Annual Training Requirements and Minimum Patient Facing Hours for Ambulance Paramedics and Critical Care Paramedics"
       ],
       "type": "procedure"
     },
@@ -4776,7 +6681,11 @@
       "page_end": 558,
       "aliases": [
         "7.3 Required Safety Courses for All HMCAS Staff",
-        "SOP 7.3 Required Safety Courses for All HMCAS Staff"
+        "SOP 7.3 Required Safety Courses for All HMCAS Staff",
+        "RSCAHS",
+        "7.3",
+        "SOP 7.3",
+        "SOP7.3"
       ],
       "keywords": [
         "Required",
@@ -4790,7 +6699,13 @@
         "hamad medical corporation ambulance service",
         "ambulance service",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "RSCAHS",
+        "SOP 7.3",
+        "SOP7.3",
+        "7.3 Required Safety Courses for All HMCAS Staff",
+        "SOP 7.3 Required Safety Courses for All HMCAS Staff"
       ],
       "type": "procedure"
     },
@@ -4803,7 +6718,11 @@
       "page_end": 559,
       "aliases": [
         "7.4 Reporting of Compliance with Mandatory Clinical Training",
-        "SOP 7.4 Reporting of Compliance with Mandatory Clinical Training"
+        "SOP 7.4 Reporting of Compliance with Mandatory Clinical Training",
+        "RCMCT",
+        "7.4",
+        "SOP 7.4",
+        "SOP7.4"
       ],
       "keywords": [
         "Reporting",
@@ -4814,7 +6733,13 @@
         "Reporting of Compliance with Mandatory Clinical Training",
         "7.4",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "RCMCT",
+        "SOP 7.4",
+        "SOP7.4",
+        "7.4 Reporting of Compliance with Mandatory Clinical Training",
+        "SOP 7.4 Reporting of Compliance with Mandatory Clinical Training"
       ],
       "type": "procedure"
     },
@@ -4828,7 +6753,11 @@
       "aliases": [
         "7.5 Scheduling of Core HMCAS CPD Courses for APs and CCPs",
         "SOP 7.5 Scheduling of Core HMCAS CPD Courses for APs and CCPs",
-        "Scheduling of Core HMCAS CPD Courses for APs & CCPs"
+        "Scheduling of Core HMCAS CPD Courses for APs & CCPs",
+        "SCHCCAC",
+        "7.5",
+        "SOP 7.5",
+        "SOP7.5"
       ],
       "keywords": [
         "Scheduling",
@@ -4847,7 +6776,14 @@
         "ambulance paramedics",
         "critical care paramedics",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "Scheduling of Core HMCAS CPD Courses for APs & CCPs",
+        "SCHCCAC",
+        "SOP 7.5",
+        "SOP7.5",
+        "7.5 Scheduling of Core HMCAS CPD Courses for APs and CCPs",
+        "SOP 7.5 Scheduling of Core HMCAS CPD Courses for APs and CCPs"
       ],
       "type": "procedure"
     },
@@ -4860,7 +6796,11 @@
       "page_end": 561,
       "aliases": [
         "7.6 Driver Training",
-        "SOP 7.6 Driver Training"
+        "SOP 7.6 Driver Training",
+        "DT",
+        "7.6",
+        "SOP 7.6",
+        "SOP7.6"
       ],
       "keywords": [
         "Driver",
@@ -4868,7 +6808,13 @@
         "Driver Training",
         "7.6",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "DT",
+        "SOP 7.6",
+        "SOP7.6",
+        "7.6 Driver Training",
+        "SOP 7.6 Driver Training"
       ],
       "type": "procedure"
     },
@@ -4881,7 +6827,11 @@
       "page_end": 565,
       "aliases": [
         "7.7 Return to Clinical Practice Following a Break in Service",
-        "SOP 7.7 Return to Clinical Practice Following a Break in Service"
+        "SOP 7.7 Return to Clinical Practice Following a Break in Service",
+        "RCPFBS",
+        "7.7",
+        "SOP 7.7",
+        "SOP7.7"
       ],
       "keywords": [
         "Return",
@@ -4893,7 +6843,14 @@
         "Training",
         "7.7",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "RCPFBS",
+        "SOP 7.7",
+        "SOP7.7",
+        "7.7 Return to Clinical Practice Following a Break in Service",
+        "SOP 7.7 Return to Clinical Practice Following a Break in Service",
+        "Service"
       ],
       "type": "procedure"
     },
@@ -4909,7 +6866,11 @@
         "SOP 7.9 Maintaining Licensure with DHP and Privileging",
         "Maintaining Licensure with DHP & Privileging",
         "license",
-        "privileges"
+        "privileges",
+        "MLDP",
+        "7.9",
+        "SOP 7.9",
+        "SOP7.9"
       ],
       "keywords": [
         "Maintaining",
@@ -4924,7 +6885,14 @@
         "privileges",
         "scope of practice",
         "education",
-        "competency"
+        "competency",
+        "procedure",
+        "Maintaining Licensure with DHP & Privileging",
+        "MLDP",
+        "SOP 7.9",
+        "SOP7.9",
+        "7.9 Maintaining Licensure with DHP and Privileging",
+        "SOP 7.9 Maintaining Licensure with DHP and Privileging"
       ],
       "type": "procedure"
     },
@@ -4937,7 +6905,11 @@
       "page_end": 573,
       "aliases": [
         "8.4 Clinical Desk Process Flows",
-        "SOP 8.4 Clinical Desk Process Flows"
+        "SOP 8.4 Clinical Desk Process Flows",
+        "CDPF",
+        "8.4",
+        "SOP 8.4",
+        "SOP8.4"
       ],
       "keywords": [
         "Clinical",
@@ -4950,7 +6922,13 @@
         "clinical triage",
         "transfer desk",
         "triage",
-        "escalation"
+        "escalation",
+        "procedure",
+        "CDPF",
+        "SOP 8.4",
+        "SOP8.4",
+        "8.4 Clinical Desk Process Flows",
+        "SOP 8.4 Clinical Desk Process Flows"
       ],
       "type": "procedure"
     },
@@ -4964,7 +6942,11 @@
       "aliases": [
         "8.5 Clinical Desk Onboarding and Currency",
         "SOP 8.5 Clinical Desk Onboarding and Currency",
-        "Clinical Desk Onboarding & Currency"
+        "Clinical Desk Onboarding & Currency",
+        "CDOC",
+        "8.5",
+        "SOP 8.5",
+        "SOP8.5"
       ],
       "keywords": [
         "Clinical",
@@ -4977,7 +6959,14 @@
         "clinical triage",
         "transfer desk",
         "triage",
-        "escalation"
+        "escalation",
+        "procedure",
+        "Clinical Desk Onboarding & Currency",
+        "CDOC",
+        "SOP 8.5",
+        "SOP8.5",
+        "8.5 Clinical Desk Onboarding and Currency",
+        "SOP 8.5 Clinical Desk Onboarding and Currency"
       ],
       "type": "procedure"
     },
@@ -4990,7 +6979,11 @@
       "page_end": 586,
       "aliases": [
         "8.6 Clinical Desk Daily Operations",
-        "SOP 8.6 Clinical Desk Daily Operations"
+        "SOP 8.6 Clinical Desk Daily Operations",
+        "CDDO",
+        "8.6",
+        "SOP 8.6",
+        "SOP8.6"
       ],
       "keywords": [
         "Clinical",
@@ -5003,7 +6996,13 @@
         "clinical triage",
         "transfer desk",
         "triage",
-        "escalation"
+        "escalation",
+        "procedure",
+        "CDDO",
+        "SOP 8.6",
+        "SOP8.6",
+        "8.6 Clinical Desk Daily Operations",
+        "SOP 8.6 Clinical Desk Daily Operations"
       ],
       "type": "procedure"
     },
@@ -5016,7 +7015,11 @@
       "page_end": 591,
       "aliases": [
         "8.7 Clinical Desk Phone Call Management",
-        "SOP 8.7 Clinical Desk Phone Call Management"
+        "SOP 8.7 Clinical Desk Phone Call Management",
+        "CDPCM",
+        "8.7",
+        "SOP 8.7",
+        "SOP8.7"
       ],
       "keywords": [
         "Clinical",
@@ -5030,7 +7033,13 @@
         "clinical triage",
         "transfer desk",
         "triage",
-        "escalation"
+        "escalation",
+        "procedure",
+        "CDPCM",
+        "SOP 8.7",
+        "SOP8.7",
+        "8.7 Clinical Desk Phone Call Management",
+        "SOP 8.7 Clinical Desk Phone Call Management"
       ],
       "type": "procedure"
     },
@@ -5045,7 +7054,12 @@
         "8.8 Hospital Pre-Arrival Notification",
         "SOP 8.8 Hospital Pre-Arrival Notification",
         "prearrival",
-        "pre arrival"
+        "pre arrival",
+        "Hospital Pre Arrival Notification",
+        "HPAN",
+        "8.8",
+        "SOP 8.8",
+        "SOP8.8"
       ],
       "keywords": [
         "Hospital",
@@ -5064,7 +7078,13 @@
         "clinical triage",
         "transfer desk",
         "triage",
-        "escalation"
+        "escalation",
+        "procedure",
+        "HPAN",
+        "SOP 8.8",
+        "SOP8.8",
+        "8.8 Hospital Pre-Arrival Notification",
+        "SOP 8.8 Hospital Pre-Arrival Notification"
       ],
       "type": "procedure"
     },
@@ -5077,7 +7097,11 @@
       "page_end": 600,
       "aliases": [
         "8.9 Transfer Escalation to the Clinical Desk",
-        "SOP 8.9 Transfer Escalation to the Clinical Desk"
+        "SOP 8.9 Transfer Escalation to the Clinical Desk",
+        "TECD",
+        "8.9",
+        "SOP 8.9",
+        "SOP8.9"
       ],
       "keywords": [
         "Transfer",
@@ -5090,7 +7114,13 @@
         "clinical triage",
         "transfer desk",
         "clinical escalation",
-        "triage"
+        "triage",
+        "procedure",
+        "TECD",
+        "SOP 8.9",
+        "SOP8.9",
+        "8.9 Transfer Escalation to the Clinical Desk",
+        "SOP 8.9 Transfer Escalation to the Clinical Desk"
       ],
       "type": "procedure"
     },
@@ -5105,7 +7135,11 @@
         "Appendix 1.2-1 Uniform Entitlement",
         "SOP Appendix 1.2-1 Uniform Entitlement",
         "uniform allowance",
-        "Appendix Uniform Entitlement"
+        "Appendix Uniform Entitlement",
+        "UE",
+        "Appendix 1.2-1",
+        "SOP Appendix 1.2-1",
+        "SOPAppendix 1.2-1"
       ],
       "keywords": [
         "Uniform",
@@ -5116,7 +7150,15 @@
         "uniform allowance",
         "form",
         "checklist",
-        "allowance"
+        "allowance",
+        "UE",
+        "SOP Appendix 1.2-1",
+        "SOPAppendix 1.2-1",
+        "Appendix 1.2-1 Uniform Entitlement",
+        "SOP Appendix 1.2-1 Uniform Entitlement",
+        "dress code",
+        "personal hygiene",
+        "appearance"
       ],
       "type": "appendix"
     },
@@ -5131,7 +7173,11 @@
         "Appendix 1.2-2 HMCAS Rank Insignia",
         "SOP Appendix 1.2-2 HMCAS Rank Insignia",
         "rank badge",
-        "Appendix HMCAS Rank Insignia"
+        "Appendix HMCAS Rank Insignia",
+        "HRI",
+        "Appendix 1.2-2",
+        "SOP Appendix 1.2-2",
+        "SOPAppendix 1.2-2"
       ],
       "keywords": [
         "HMCAS",
@@ -5146,7 +7192,12 @@
         "rank badge",
         "form",
         "checklist",
-        "badge"
+        "badge",
+        "HRI",
+        "SOP Appendix 1.2-2",
+        "SOPAppendix 1.2-2",
+        "Appendix 1.2-2 HMCAS Rank Insignia",
+        "SOP Appendix 1.2-2 HMCAS Rank Insignia"
       ],
       "type": "appendix"
     },
@@ -5161,7 +7212,11 @@
         "Appendix 1.2-3 Washing Instructions",
         "SOP Appendix 1.2-3 Washing Instructions",
         "laundry instructions",
-        "Appendix Washing Instructions"
+        "Appendix Washing Instructions",
+        "WI",
+        "Appendix 1.2-3",
+        "SOP Appendix 1.2-3",
+        "SOPAppendix 1.2-3"
       ],
       "keywords": [
         "Washing",
@@ -5171,7 +7226,12 @@
         "Appendix 1.2-3",
         "laundry",
         "form",
-        "checklist"
+        "checklist",
+        "WI",
+        "SOP Appendix 1.2-3",
+        "SOPAppendix 1.2-3",
+        "Appendix 1.2-3 Washing Instructions",
+        "SOP Appendix 1.2-3 Washing Instructions"
       ],
       "type": "appendix"
     },
@@ -5185,7 +7245,11 @@
       "aliases": [
         "Appendix 1.2-4 Uniform Request Form",
         "SOP Appendix 1.2-4 Uniform Request Form",
-        "Appendix Uniform Request Form"
+        "Appendix Uniform Request Form",
+        "URF",
+        "Appendix 1.2-4",
+        "SOP Appendix 1.2-4",
+        "SOPAppendix 1.2-4"
       ],
       "keywords": [
         "Uniform",
@@ -5194,7 +7258,15 @@
         "Uniform Request Form",
         "Appendix",
         "Appendix 1.2-4",
-        "checklist"
+        "checklist",
+        "URF",
+        "SOP Appendix 1.2-4",
+        "SOPAppendix 1.2-4",
+        "Appendix 1.2-4 Uniform Request Form",
+        "SOP Appendix 1.2-4 Uniform Request Form",
+        "dress code",
+        "personal hygiene",
+        "appearance"
       ],
       "type": "appendix"
     },
@@ -5208,7 +7280,11 @@
       "aliases": [
         "Appendix 1.2-5 End of Service Uniform Checklist",
         "SOP Appendix 1.2-5 End of Service Uniform Checklist",
-        "Appendix End of Service Uniform Checklist"
+        "Appendix End of Service Uniform Checklist",
+        "ESUC",
+        "Appendix 1.2-5",
+        "SOP Appendix 1.2-5",
+        "SOPAppendix 1.2-5"
       ],
       "keywords": [
         "End",
@@ -5217,7 +7293,16 @@
         "End of Service Uniform Checklist",
         "Appendix",
         "Appendix 1.2-5",
-        "form"
+        "form",
+        "ESUC",
+        "SOP Appendix 1.2-5",
+        "SOPAppendix 1.2-5",
+        "Appendix 1.2-5 End of Service Uniform Checklist",
+        "SOP Appendix 1.2-5 End of Service Uniform Checklist",
+        "dress code",
+        "personal hygiene",
+        "appearance",
+        "Service"
       ],
       "type": "appendix"
     },
@@ -5233,7 +7318,11 @@
         "SOP Appendix 3.14 List of Health Facilities to be Processed with MPDS Protocols 33 & 37 (NCC Communications Only)",
         "List of Health Facilities to be Processed with MPDS Protocols 33 and 37 (NCC Communications Only)",
         "List of Health Facilities to be Processed with MPDS Protocols 33 & 37",
-        "Appendix List of Health Facilities to be Processed with MPDS Protocols 33 & 37 (NCC Communications Only)"
+        "Appendix List of Health Facilities to be Processed with MPDS Protocols 33 & 37 (NCC Communications Only)",
+        "List of Health Facilities to be Processed with MPDS Protocols 33 & 37 NCC Communications Only",
+        "Appendix 3.14",
+        "SOP Appendix 3.14",
+        "SOPAppendix 3.14"
       ],
       "keywords": [
         "List",
@@ -5258,7 +7347,13 @@
         "call center",
         "call centre",
         "form",
-        "checklist"
+        "checklist",
+        "List of Health Facilities to be Processed with MPDS Protocols 33 and 37 (NCC Communications Only)",
+        "List of Health Facilities to be Processed with MPDS Protocols 33 & 37",
+        "SOP Appendix 3.14",
+        "SOPAppendix 3.14",
+        "Appendix 3.14 List of Health Facilities to be Processed with MPDS Protocols 33 & 37 (NCC Communications Only)",
+        "SOP Appendix 3.14 List of Health Facilities to be Processed with MPDS Protocols 33 & 37 (NCC Communications Only)"
       ],
       "type": "appendix"
     },
@@ -5274,7 +7369,12 @@
         "SOP Appendix 3.22 Inter-Facility Patient Transfers",
         "interfacility",
         "inter facility",
-        "Appendix Inter-Facility Patient Transfers"
+        "Appendix Inter-Facility Patient Transfers",
+        "Inter Facility Patient Transfers",
+        "IFPT",
+        "Appendix 3.22",
+        "SOP Appendix 3.22",
+        "SOPAppendix 3.22"
       ],
       "keywords": [
         "Inter",
@@ -5287,7 +7387,12 @@
         "interfacility",
         "inter facility",
         "form",
-        "checklist"
+        "checklist",
+        "IFPT",
+        "SOP Appendix 3.22",
+        "SOPAppendix 3.22",
+        "Appendix 3.22 Inter-Facility Patient Transfers",
+        "SOP Appendix 3.22 Inter-Facility Patient Transfers"
       ],
       "type": "appendix"
     },
@@ -5301,7 +7406,12 @@
       "aliases": [
         "Appendix 3.24 NCC-LF Offshore Checklist",
         "SOP Appendix 3.24 NCC-LF Offshore Checklist",
-        "Appendix NCC-LF Offshore Checklist"
+        "Appendix NCC-LF Offshore Checklist",
+        "NCC LF Offshore Checklist",
+        "NLOC",
+        "Appendix 3.24",
+        "SOP Appendix 3.24",
+        "SOPAppendix 3.24"
       ],
       "keywords": [
         "NCC",
@@ -5318,7 +7428,15 @@
         "lifeflight",
         "sea",
         "remote offshore",
-        "form"
+        "form",
+        "NLOC",
+        "SOP Appendix 3.24",
+        "SOPAppendix 3.24",
+        "Appendix 3.24 NCC-LF Offshore Checklist",
+        "SOP Appendix 3.24 NCC-LF Offshore Checklist",
+        "helicopter",
+        "air ambulance",
+        "HEMS"
       ],
       "type": "appendix"
     },
@@ -5335,7 +7453,11 @@
         "Emergency Unit Distribution – Current Hub & Spoke Locations",
         "Emergency Unit Distribution - Current Hub and Spoke Locations",
         "spoke and hub",
-        "Appendix Emergency Unit Distribution – Current Hub and Spoke Locations"
+        "Appendix Emergency Unit Distribution – Current Hub and Spoke Locations",
+        "EUDCHSL",
+        "Appendix 4.4.A",
+        "SOP Appendix 4.4.A",
+        "SOPAppendix 4.4.A"
       ],
       "keywords": [
         "Emergency",
@@ -5349,7 +7471,14 @@
         "Appendix 4.4.A",
         "spoke and hub",
         "form",
-        "checklist"
+        "checklist",
+        "Emergency Unit Distribution – Current Hub & Spoke Locations",
+        "EUDCHSL",
+        "SOP Appendix 4.4.A",
+        "SOPAppendix 4.4.A",
+        "Appendix 4.4.A Emergency Unit Distribution – Current Hub and Spoke Locations",
+        "SOP Appendix 4.4.A Emergency Unit Distribution – Current Hub and Spoke Locations",
+        "Current"
       ],
       "type": "appendix"
     },
@@ -5365,7 +7494,11 @@
         "SOP Appendix 4.4.B Map of Current Hub and Spoke Doha",
         "Map of Current Hub & Spoke Doha",
         "spoke and hub",
-        "Appendix Map of Current Hub and Spoke Doha"
+        "Appendix Map of Current Hub and Spoke Doha",
+        "MCHSD",
+        "Appendix 4.4.B",
+        "SOP Appendix 4.4.B",
+        "SOPAppendix 4.4.B"
       ],
       "keywords": [
         "Map",
@@ -5377,7 +7510,14 @@
         "Appendix 4.4.B",
         "spoke and hub",
         "form",
-        "checklist"
+        "checklist",
+        "Map of Current Hub & Spoke Doha",
+        "MCHSD",
+        "SOP Appendix 4.4.B",
+        "SOPAppendix 4.4.B",
+        "Appendix 4.4.B Map of Current Hub and Spoke Doha",
+        "SOP Appendix 4.4.B Map of Current Hub and Spoke Doha",
+        "Current"
       ],
       "type": "appendix"
     },
@@ -5393,7 +7533,11 @@
         "SOP Appendix 4.4.C Map of Current Hub and Spoke Qatar",
         "Map of Current Hub & Spoke Qatar",
         "spoke and hub",
-        "Appendix Map of Current Hub and Spoke Qatar"
+        "Appendix Map of Current Hub and Spoke Qatar",
+        "MCHSQ",
+        "Appendix 4.4.C",
+        "SOP Appendix 4.4.C",
+        "SOPAppendix 4.4.C"
       ],
       "keywords": [
         "Map",
@@ -5405,7 +7549,14 @@
         "Appendix 4.4.C",
         "spoke and hub",
         "form",
-        "checklist"
+        "checklist",
+        "Map of Current Hub & Spoke Qatar",
+        "MCHSQ",
+        "SOP Appendix 4.4.C",
+        "SOPAppendix 4.4.C",
+        "Appendix 4.4.C Map of Current Hub and Spoke Qatar",
+        "SOP Appendix 4.4.C Map of Current Hub and Spoke Qatar",
+        "Current"
       ],
       "type": "appendix"
     },
@@ -5419,7 +7570,11 @@
       "aliases": [
         "Appendix 4.4.D Unit Availability Escalation Procedures",
         "SOP Appendix 4.4.D Unit Availability Escalation Procedures",
-        "Appendix Unit Availability Escalation Procedures"
+        "Appendix Unit Availability Escalation Procedures",
+        "UAEP",
+        "Appendix 4.4.D",
+        "SOP Appendix 4.4.D",
+        "SOPAppendix 4.4.D"
       ],
       "keywords": [
         "Unit",
@@ -5429,7 +7584,13 @@
         "Appendix",
         "Appendix 4.4.D",
         "form",
-        "checklist"
+        "checklist",
+        "UAEP",
+        "SOP Appendix 4.4.D",
+        "SOPAppendix 4.4.D",
+        "Appendix 4.4.D Unit Availability Escalation Procedures",
+        "SOP Appendix 4.4.D Unit Availability Escalation Procedures",
+        "Procedures"
       ],
       "type": "appendix"
     },
@@ -5444,7 +7605,11 @@
         "Appendix 4.7.B-1 Designated Helicopter Operating Sites",
         "SOP Appendix 4.7.B-1 Designated Helicopter Operating Sites",
         "helipad sites",
-        "Appendix Designated Helicopter Operating Sites"
+        "Appendix Designated Helicopter Operating Sites",
+        "DHOS",
+        "Appendix 4.7.B-1",
+        "SOP Appendix 4.7.B-1",
+        "SOPAppendix 4.7.B-1"
       ],
       "keywords": [
         "Designated",
@@ -5456,7 +7621,13 @@
         "helipad",
         "landing site",
         "form",
-        "checklist"
+        "checklist",
+        "DHOS",
+        "SOP Appendix 4.7.B-1",
+        "SOPAppendix 4.7.B-1",
+        "Appendix 4.7.B-1 Designated Helicopter Operating Sites",
+        "SOP Appendix 4.7.B-1 Designated Helicopter Operating Sites",
+        "Operating"
       ],
       "type": "appendix"
     },
@@ -5470,7 +7641,11 @@
       "aliases": [
         "Appendix 4.7.B-2 Important Aircraft Safety Rules",
         "SOP Appendix 4.7.B-2 Important Aircraft Safety Rules",
-        "Appendix Important Aircraft Safety Rules"
+        "Appendix Important Aircraft Safety Rules",
+        "IASR",
+        "Appendix 4.7.B-2",
+        "SOP Appendix 4.7.B-2",
+        "SOPAppendix 4.7.B-2"
       ],
       "keywords": [
         "Important",
@@ -5481,7 +7656,12 @@
         "Appendix",
         "Appendix 4.7.B-2",
         "form",
-        "checklist"
+        "checklist",
+        "IASR",
+        "SOP Appendix 4.7.B-2",
+        "SOPAppendix 4.7.B-2",
+        "Appendix 4.7.B-2 Important Aircraft Safety Rules",
+        "SOP Appendix 4.7.B-2 Important Aircraft Safety Rules"
       ],
       "type": "appendix"
     },
@@ -5495,7 +7675,11 @@
       "aliases": [
         "Appendix 4.8.A Trauma Bypass Criteria",
         "SOP Appendix 4.8.A Trauma Bypass Criteria",
-        "Appendix Trauma Bypass Criteria"
+        "Appendix Trauma Bypass Criteria",
+        "TBC",
+        "Appendix 4.8.A",
+        "SOP Appendix 4.8.A",
+        "SOPAppendix 4.8.A"
       ],
       "keywords": [
         "Trauma",
@@ -5505,7 +7689,16 @@
         "Appendix",
         "Appendix 4.8.A",
         "form",
-        "checklist"
+        "checklist",
+        "TBC",
+        "SOP Appendix 4.8.A",
+        "SOPAppendix 4.8.A",
+        "Appendix 4.8.A Trauma Bypass Criteria",
+        "SOP Appendix 4.8.A Trauma Bypass Criteria",
+        "injury",
+        "accident",
+        "RTC",
+        "MVA"
       ],
       "type": "appendix"
     },
@@ -5520,7 +7713,11 @@
         "Appendix 4.8.M Key Roles and Functions of Staff Cohorting",
         "SOP Appendix 4.8.M Key Roles and Functions of Staff Cohorting",
         "Key Roles & Functions of Staff Cohorting",
-        "Appendix Key Roles and Functions of Staff Cohorting"
+        "Appendix Key Roles and Functions of Staff Cohorting",
+        "KRFSC",
+        "Appendix 4.8.M",
+        "SOP Appendix 4.8.M",
+        "SOPAppendix 4.8.M"
       ],
       "keywords": [
         "Key",
@@ -5532,7 +7729,13 @@
         "Appendix",
         "Appendix 4.8.M",
         "form",
-        "checklist"
+        "checklist",
+        "Key Roles & Functions of Staff Cohorting",
+        "KRFSC",
+        "SOP Appendix 4.8.M",
+        "SOPAppendix 4.8.M",
+        "Appendix 4.8.M Key Roles and Functions of Staff Cohorting",
+        "SOP Appendix 4.8.M Key Roles and Functions of Staff Cohorting"
       ],
       "type": "appendix"
     },
@@ -5548,7 +7751,12 @@
         "SOP Appendix 4.8.N Brought in Dead (BID) Admission Process Pathway",
         "Brought in Dead Admission Process Pathway",
         "BID",
-        "Appendix Brought in Dead (BID) Admission Process Pathway"
+        "Appendix Brought in Dead (BID) Admission Process Pathway",
+        "Brought in Dead BID Admission Process Pathway",
+        "BDBAPP",
+        "Appendix 4.8.N",
+        "SOP Appendix 4.8.N",
+        "SOPAppendix 4.8.N"
       ],
       "keywords": [
         "Brought",
@@ -5563,7 +7771,13 @@
         "brought in dead",
         "dead on arrival",
         "form",
-        "checklist"
+        "checklist",
+        "Brought in Dead Admission Process Pathway",
+        "BDBAPP",
+        "SOP Appendix 4.8.N",
+        "SOPAppendix 4.8.N",
+        "Appendix 4.8.N Brought in Dead (BID) Admission Process Pathway",
+        "SOP Appendix 4.8.N Brought in Dead (BID) Admission Process Pathway"
       ],
       "type": "appendix"
     },
@@ -5578,7 +7792,11 @@
         "Appendix 4.11.A.2 LifeFlight HOTEL ECHO Helipad Activation Process",
         "SOP Appendix 4.11.A.2 LifeFlight HOTEL ECHO Helipad Activation Process",
         "Life Flight",
-        "Appendix LifeFlight HOTEL ECHO Helipad Activation Process"
+        "Appendix LifeFlight HOTEL ECHO Helipad Activation Process",
+        "LHEHAP",
+        "Appendix 4.11.A.2",
+        "SOP Appendix 4.11.A.2",
+        "SOPAppendix 4.11.A.2"
       ],
       "keywords": [
         "LifeFlight",
@@ -5596,7 +7814,13 @@
         "form",
         "checklist",
         "Life",
-        "Flight"
+        "Flight",
+        "LHEHAP",
+        "SOP Appendix 4.11.A.2",
+        "SOPAppendix 4.11.A.2",
+        "Appendix 4.11.A.2 LifeFlight HOTEL ECHO Helipad Activation Process",
+        "SOP Appendix 4.11.A.2 LifeFlight HOTEL ECHO Helipad Activation Process",
+        "HEMS"
       ],
       "type": "appendix"
     },
@@ -5611,7 +7835,12 @@
         "Appendix 5.4.A.3.2-1 Medical Information Form (MEDIF)",
         "SOP Appendix 5.4.A.3.2-1 Medical Information Form (MEDIF)",
         "Medical Information Form",
-        "Appendix Medical Information Form (MEDIF)"
+        "Appendix Medical Information Form (MEDIF)",
+        "Medical Information Form MEDIF",
+        "MIFM",
+        "Appendix 5.4.A.3.2-1",
+        "SOP Appendix 5.4.A.3.2-1",
+        "SOPAppendix 5.4.A.3.2-1"
       ],
       "keywords": [
         "Medical",
@@ -5622,7 +7851,12 @@
         "Appendix",
         "Appendix 5.4.A.3.2-1",
         "medical information form",
-        "checklist"
+        "checklist",
+        "MIFM",
+        "SOP Appendix 5.4.A.3.2-1",
+        "SOPAppendix 5.4.A.3.2-1",
+        "Appendix 5.4.A.3.2-1 Medical Information Form (MEDIF)",
+        "SOP Appendix 5.4.A.3.2-1 Medical Information Form (MEDIF)"
       ],
       "type": "appendix"
     },
@@ -5636,7 +7870,11 @@
       "aliases": [
         "Appendix 5.4.A.3.2-2 Medical Attaché Request Form",
         "SOP Appendix 5.4.A.3.2-2 Medical Attaché Request Form",
-        "Appendix Medical Attaché Request Form"
+        "Appendix Medical Attaché Request Form",
+        "MARF",
+        "Appendix 5.4.A.3.2-2",
+        "SOP Appendix 5.4.A.3.2-2",
+        "SOPAppendix 5.4.A.3.2-2"
       ],
       "keywords": [
         "Medical",
@@ -5646,7 +7884,12 @@
         "Medical Attaché Request Form",
         "Appendix",
         "Appendix 5.4.A.3.2-2",
-        "checklist"
+        "checklist",
+        "MARF",
+        "SOP Appendix 5.4.A.3.2-2",
+        "SOPAppendix 5.4.A.3.2-2",
+        "Appendix 5.4.A.3.2-2 Medical Attaché Request Form",
+        "SOP Appendix 5.4.A.3.2-2 Medical Attaché Request Form"
       ],
       "type": "appendix"
     },
@@ -5660,7 +7903,11 @@
       "aliases": [
         "Appendix 5.4.A.3.2-3 Medical Team Member Emergency Contact Form",
         "SOP Appendix 5.4.A.3.2-3 Medical Team Member Emergency Contact Form",
-        "Appendix Medical Team Member Emergency Contact Form"
+        "Appendix Medical Team Member Emergency Contact Form",
+        "MTMECF",
+        "Appendix 5.4.A.3.2-3",
+        "SOP Appendix 5.4.A.3.2-3",
+        "SOPAppendix 5.4.A.3.2-3"
       ],
       "keywords": [
         "Medical",
@@ -5672,7 +7919,12 @@
         "Medical Team Member Emergency Contact Form",
         "Appendix",
         "Appendix 5.4.A.3.2-3",
-        "checklist"
+        "checklist",
+        "MTMECF",
+        "SOP Appendix 5.4.A.3.2-3",
+        "SOPAppendix 5.4.A.3.2-3",
+        "Appendix 5.4.A.3.2-3 Medical Team Member Emergency Contact Form",
+        "SOP Appendix 5.4.A.3.2-3 Medical Team Member Emergency Contact Form"
       ],
       "type": "appendix"
     },
@@ -5686,7 +7938,11 @@
       "aliases": [
         "Appendix 5.4.A.3.2-4 Mission Tasking Form",
         "SOP Appendix 5.4.A.3.2-4 Mission Tasking Form",
-        "Appendix Mission Tasking Form"
+        "Appendix Mission Tasking Form",
+        "MTF",
+        "Appendix 5.4.A.3.2-4",
+        "SOP Appendix 5.4.A.3.2-4",
+        "SOPAppendix 5.4.A.3.2-4"
       ],
       "keywords": [
         "Mission",
@@ -5695,7 +7951,12 @@
         "Mission Tasking Form",
         "Appendix",
         "Appendix 5.4.A.3.2-4",
-        "checklist"
+        "checklist",
+        "MTF",
+        "SOP Appendix 5.4.A.3.2-4",
+        "SOPAppendix 5.4.A.3.2-4",
+        "Appendix 5.4.A.3.2-4 Mission Tasking Form",
+        "SOP Appendix 5.4.A.3.2-4 Mission Tasking Form"
       ],
       "type": "appendix"
     },
@@ -5709,7 +7970,11 @@
       "aliases": [
         "Appendix 5.4.A.3.2-7 Acknowledgement of Agreement on High Risk Travel",
         "SOP Appendix 5.4.A.3.2-7 Acknowledgement of Agreement on High Risk Travel",
-        "Appendix Acknowledgement of Agreement on High Risk Travel"
+        "Appendix Acknowledgement of Agreement on High Risk Travel",
+        "AAHRT",
+        "Appendix 5.4.A.3.2-7",
+        "SOP Appendix 5.4.A.3.2-7",
+        "SOPAppendix 5.4.A.3.2-7"
       ],
       "keywords": [
         "Acknowledgement",
@@ -5721,7 +7986,12 @@
         "Appendix",
         "Appendix 5.4.A.3.2-7",
         "form",
-        "checklist"
+        "checklist",
+        "AAHRT",
+        "SOP Appendix 5.4.A.3.2-7",
+        "SOPAppendix 5.4.A.3.2-7",
+        "Appendix 5.4.A.3.2-7 Acknowledgement of Agreement on High Risk Travel",
+        "SOP Appendix 5.4.A.3.2-7 Acknowledgement of Agreement on High Risk Travel"
       ],
       "type": "appendix"
     },
@@ -5737,7 +8007,12 @@
         "SOP Appendix 8.8.1 Hospital Pre-Arrival Notification Process",
         "prearrival",
         "pre arrival",
-        "Appendix Hospital Pre-Arrival Notification Process"
+        "Appendix Hospital Pre-Arrival Notification Process",
+        "Hospital Pre Arrival Notification Process",
+        "HPANP",
+        "Appendix 8.8.1",
+        "SOP Appendix 8.8.1",
+        "SOPAppendix 8.8.1"
       ],
       "keywords": [
         "Hospital",
@@ -5753,7 +8028,12 @@
         "prearrival notification",
         "hospital notification",
         "form",
-        "checklist"
+        "checklist",
+        "HPANP",
+        "SOP Appendix 8.8.1",
+        "SOPAppendix 8.8.1",
+        "Appendix 8.8.1 Hospital Pre-Arrival Notification Process",
+        "SOP Appendix 8.8.1 Hospital Pre-Arrival Notification Process"
       ],
       "type": "appendix"
     },
@@ -5770,7 +8050,11 @@
         "Clinical Triage of Interfacility Transfers: Schedule & Immediate Process Flow",
         "Clinical Triage of Interfacility Transfers - Schedule and Immediate Process Flow",
         "Clinical Triage of Interfacility Transfers Schedule and Immediate Process Flow",
-        "Appendix Clinical Triage of Interfacility Transfers: Schedule and Immediate Process Flow"
+        "Appendix Clinical Triage of Interfacility Transfers: Schedule and Immediate Process Flow",
+        "CTITSIPF",
+        "Appendix 8.9.A",
+        "SOP Appendix 8.9.A",
+        "SOPAppendix 8.9.A"
       ],
       "keywords": [
         "Clinical",
@@ -5785,7 +8069,13 @@
         "Appendix",
         "Appendix 8.9.A",
         "form",
-        "checklist"
+        "checklist",
+        "Clinical Triage of Interfacility Transfers: Schedule & Immediate Process Flow",
+        "CTITSIPF",
+        "SOP Appendix 8.9.A",
+        "SOPAppendix 8.9.A",
+        "Appendix 8.9.A Clinical Triage of Interfacility Transfers: Schedule and Immediate Process Flow",
+        "SOP Appendix 8.9.A Clinical Triage of Interfacility Transfers: Schedule and Immediate Process Flow"
       ],
       "type": "appendix"
     },
@@ -5799,7 +8089,11 @@
       "aliases": [
         "Appendix 8.9.B Clinical Desk Transfer Triage Matrix",
         "SOP Appendix 8.9.B Clinical Desk Transfer Triage Matrix",
-        "Appendix Clinical Desk Transfer Triage Matrix"
+        "Appendix Clinical Desk Transfer Triage Matrix",
+        "CDTTM",
+        "Appendix 8.9.B",
+        "SOP Appendix 8.9.B",
+        "SOPAppendix 8.9.B"
       ],
       "keywords": [
         "Clinical",
@@ -5813,7 +8107,12 @@
         "clinical triage",
         "transfer desk",
         "form",
-        "checklist"
+        "checklist",
+        "CDTTM",
+        "SOP Appendix 8.9.B",
+        "SOPAppendix 8.9.B",
+        "Appendix 8.9.B Clinical Desk Transfer Triage Matrix",
+        "SOP Appendix 8.9.B Clinical Desk Transfer Triage Matrix"
       ],
       "type": "appendix"
     },
@@ -5827,7 +8126,11 @@
       "aliases": [
         "Appendix 8.9.C PHCC Escalation Additional Questions",
         "SOP Appendix 8.9.C PHCC Escalation Additional Questions",
-        "Appendix PHCC Escalation Additional Questions"
+        "Appendix PHCC Escalation Additional Questions",
+        "PEAQ",
+        "Appendix 8.9.C",
+        "SOP Appendix 8.9.C",
+        "SOPAppendix 8.9.C"
       ],
       "keywords": [
         "PHCC",
@@ -5839,7 +8142,12 @@
         "Appendix 8.9.C",
         "primary health care corporation",
         "form",
-        "checklist"
+        "checklist",
+        "PEAQ",
+        "SOP Appendix 8.9.C",
+        "SOPAppendix 8.9.C",
+        "Appendix 8.9.C PHCC Escalation Additional Questions",
+        "SOP Appendix 8.9.C PHCC Escalation Additional Questions"
       ],
       "type": "appendix"
     }
