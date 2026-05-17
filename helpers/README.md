@@ -24,6 +24,7 @@ Shared app helpers:
 ```text
 flowcharts.json
 formulary.json
+websites.json
 ```
 
 RSI:
@@ -48,6 +49,7 @@ https://docs.niwashibase.com/helpers/cpm_index.json
 https://docs.niwashibase.com/helpers/pat_index.json
 https://docs.niwashibase.com/helpers/flowcharts.json
 https://docs.niwashibase.com/helpers/formulary.json
+https://docs.niwashibase.com/helpers/websites.json
 https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
 https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
 https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
@@ -66,6 +68,7 @@ urlIndex: "https://docs.niwashibase.com/helpers/cpg_index.json"
 urlSopIndex: "https://docs.niwashibase.com/helpers/sop_index.json"
 urlFlowcharts: "https://docs.niwashibase.com/helpers/flowcharts.json"
 urlFormulary: "https://docs.niwashibase.com/helpers/formulary.json"
+urlWebsites: "https://docs.niwashibase.com/helpers/websites.json"
 urlPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page="
 urlSearchBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search="
 ```
@@ -193,6 +196,77 @@ General rules:
 - Validate JSON before upload.
 
 If formulary pages change after a CPG update, update `formulary.json` and increase the matching document/config version so Android refreshes its cached data.
+
+## Websites Helper
+
+File:
+
+```text
+websites.json
+```
+
+Used for:
+
+- iOS webapp Websites list
+- Android Websites list
+- Remote website titles, categories, subtitles, links, and icon URLs
+
+Live URL:
+
+```text
+https://docs.niwashibase.com/helpers/websites.json
+```
+
+Android app-config entry:
+
+```json
+"websites": {
+  "enabled": true,
+  "schema_version": "0.1",
+  "version": "0.1",
+  "url": "https://docs.niwashibase.com/helpers/websites.json",
+  "fallback_asset": "websites.json"
+}
+```
+
+Helper shape:
+
+```json
+{
+  "helper_type": "websites",
+  "schema_version": "0.1",
+  "version": "0.1",
+  "websites": [
+    {
+      "id": "oracle",
+      "enabled": true,
+      "title": "Oracle",
+      "category": "HMCAS",
+      "subtitle": "Leave, salary, and HR services",
+      "url": "http://ebusiness.hamad.qa",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_oracle.png"
+    }
+  ]
+}
+```
+
+Rules:
+
+- Keep `id` stable when possible; Android can use it for cache identity.
+- `enabled: false` hides a website without deleting it from the helper.
+- Missing `enabled` should be treated as enabled by apps.
+- `title` and `url` are required for a usable website entry.
+- `category`, `subtitle`, and `icon_url` are optional but recommended.
+- Host website icons under `https://docs.niwashibase.com/website-icons/`.
+- Increase helper `version` when website text, URLs, enabled states, order, or icon URLs change.
+- Keep helper top-level `version` and `schema_version` synchronized with Android app config.
+- iOS webapp may ignore Android-only fields, but should not break when they are present.
+
+Remote icon guidance:
+
+- If an icon image changes but the URL stays the same, increase the websites helper `version` and Android app-config `websites.version`.
+- Prefer changing the icon filename or adding a URL cache-busting query if CDN/browser cache causes stale icons.
+- Android should cache remote icons and fall back to a letter/icon placeholder when an icon is unavailable.
 
 ## RSI Checklist Helper
 
