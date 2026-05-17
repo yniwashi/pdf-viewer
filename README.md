@@ -45,7 +45,7 @@ https://github.com/yniwashi/pdf-viewer/blob/main/docs/README.md
 helpers/
 ```
 
-Stores JSON and HTML helper files such as document indexes, flowcharts, formulary, RSI checklist HTML, and pediatric dosing helpers.
+Stores JSON and HTML helper files such as document indexes, flowcharts, formulary, websites, RSI checklist HTML, and pediatric dosing helpers.
 
 Folder guide:
 
@@ -97,17 +97,22 @@ https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search=adeno
 
 The iOS webapp uses this repository directly for document viewing and helper JSON files.
 
-Current iOS-style helper examples:
+Current iOS-style helper and viewer examples:
 
 ```js
 urlIndex: "https://docs.niwashibase.com/helpers/cpg_index.json"
+urlSopIndex: "https://docs.niwashibase.com/helpers/sop_index.json"
+urlCpmIndex: "https://docs.niwashibase.com/helpers/cpm_index.json"
 urlFlowcharts: "https://docs.niwashibase.com/helpers/flowcharts.json"
 urlFormulary: "https://docs.niwashibase.com/helpers/formulary.json"
+urlWebsites: "https://docs.niwashibase.com/helpers/websites.json"
 urlPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page="
+urlSopPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/sop-101qq9f2w.pdf#page="
+urlCpmPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpm-202e9d33q.pdf#page="
 urlSearchBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search="
 ```
 
-Do not remove or rename these files unless the iOS webapp has been updated.
+The iOS webapp preloads and locally caches shared helper data for up to 7 days, then refreshes in the background when the app opens. Do not remove or rename these files unless the iOS webapp has been updated.
 
 ### Android App
 
@@ -164,6 +169,13 @@ Shared helpers:
 ```text
 https://docs.niwashibase.com/helpers/flowcharts.json
 https://docs.niwashibase.com/helpers/formulary.json
+https://docs.niwashibase.com/helpers/websites.json
+```
+
+Website icons:
+
+```text
+https://docs.niwashibase.com/website-icons/web_oracle.png
 ```
 
 Android-specific helpers:
@@ -202,5 +214,6 @@ docs.niwashibase.com
 - Avoid spaces in filenames. Use `-` or `_`.
 - Use exact direct URLs. Folder URLs may return `404` because GitHub Pages does not list directories.
 - After replacing PDFs, update matching index JSON files if page numbers changed.
+- Keep `helpers/websites.json` and `website-icons/` available for the iOS Websites tool.
 - For Android, increase the matching version in `ambulance_app_config.json` when a document/helper should refresh.
 - Browser/CDN cache may temporarily show old files. Test in a private window or wait for GitHub Pages cache to expire.
