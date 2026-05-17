@@ -1,5 +1,6 @@
 # Helpers Guide
 
+
 The `helpers/` folder stores JSON and HTML helper files served from:
 
 ```text
@@ -61,19 +62,22 @@ https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
 
 The iOS webapp reads helper files directly from `docs.niwashibase.com`.
 
-Known iOS-style helper URLs:
+Known iOS-style helper and viewer URLs:
 
 ```js
 urlIndex: "https://docs.niwashibase.com/helpers/cpg_index.json"
 urlSopIndex: "https://docs.niwashibase.com/helpers/sop_index.json"
+urlCpmIndex: "https://docs.niwashibase.com/helpers/cpm_index.json"
 urlFlowcharts: "https://docs.niwashibase.com/helpers/flowcharts.json"
 urlFormulary: "https://docs.niwashibase.com/helpers/formulary.json"
 urlWebsites: "https://docs.niwashibase.com/helpers/websites.json"
 urlPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page="
+urlSopPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/sop-101qq9f2w.pdf#page="
+urlCpmPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpm-202e9d33q.pdf#page="
 urlSearchBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search="
 ```
 
-Do not rename helper files without updating the iOS webapp.
+The iOS webapp preloads CPG, SOP, CPM, flowcharts, formulary, and websites helper data when the app opens. It keeps helper data in local storage for up to 7 days and refreshes in the background. Do not rename helper files without updating the iOS webapp.
 
 ### Android App
 
@@ -138,7 +142,7 @@ Rules:
 - Add aliases for common alternate spelling or wording.
 - Add keywords for symptom/search matching.
 - Use document number fields such as `sop_number`, `cpm_number`, or `pat_number` when available.
-- Android Search should tolerate optional fields and ignore invalid items.
+- iOS and Android search should tolerate optional fields and ignore invalid items.
 
 When a PDF update changes page numbers:
 
@@ -258,15 +262,18 @@ Rules:
 - `title` and `url` are required for a usable website entry.
 - `category`, `subtitle`, and `icon_url` are optional but recommended.
 - Host website icons under `https://docs.niwashibase.com/website-icons/`.
-- Increase helper `version` when website text, URLs, enabled states, order, or icon URLs change.
-- Keep helper top-level `version` and `schema_version` synchronized with Android app config.
+- Increase helper `version` when website text, URLs, enabled states, order, or icon URLs change if Android needs a forced refresh.
+- Keep helper top-level `version` and `schema_version` synchronized with Android app config when publishing Android-facing changes.
+- The iOS webapp uses the same helper, displays a searchable alphabetical list, lets users filter by category, and loads icons from `icon_url`.
+- The iOS webapp caches the websites helper for up to 7 days and refreshes in the background when the app opens.
 - iOS webapp may ignore Android-only fields, but should not break when they are present.
 
 Remote icon guidance:
 
-- If an icon image changes but the URL stays the same, increase the websites helper `version` and Android app-config `websites.version`.
+- Host icons under `https://docs.niwashibase.com/website-icons/`.
+- The iOS webapp warms enabled website icons after loading `websites.json` and falls back to a letter tile when an icon is unavailable.
+- If an icon image changes but the URL stays the same, increase the websites helper `version` and Android app-config `websites.version` when Android needs a forced refresh.
 - Prefer changing the icon filename or adding a URL cache-busting query if CDN/browser cache causes stale icons.
-- Android should cache remote icons and fall back to a letter/icon placeholder when an icon is unavailable.
 
 ## RSI Checklist Helper
 
