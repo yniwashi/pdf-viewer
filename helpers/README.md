@@ -1,5 +1,10 @@
 # Helpers Guide
 
+This file belongs in:
+
+```text
+yniwashi/pdf-viewer/helpers/README.md
+```
 
 The `helpers/` folder stores JSON and HTML helper files served from:
 
@@ -26,6 +31,7 @@ Shared app helpers:
 flowcharts.json
 formulary.json
 websites.json
+as_call.json
 ```
 
 RSI:
@@ -51,6 +57,7 @@ https://docs.niwashibase.com/helpers/pat_index.json
 https://docs.niwashibase.com/helpers/flowcharts.json
 https://docs.niwashibase.com/helpers/formulary.json
 https://docs.niwashibase.com/helpers/websites.json
+https://docs.niwashibase.com/helpers/as_call.json
 https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
 https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
 https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
@@ -71,13 +78,14 @@ urlCpmIndex: "https://docs.niwashibase.com/helpers/cpm_index.json"
 urlFlowcharts: "https://docs.niwashibase.com/helpers/flowcharts.json"
 urlFormulary: "https://docs.niwashibase.com/helpers/formulary.json"
 urlWebsites: "https://docs.niwashibase.com/helpers/websites.json"
+urlAsCall: "https://docs.niwashibase.com/helpers/as_call.json"
 urlPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page="
 urlSopPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/sop-101qq9f2w.pdf#page="
 urlCpmPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpm-202e9d33q.pdf#page="
 urlSearchBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#search="
 ```
 
-The iOS webapp preloads CPG, SOP, CPM, flowcharts, formulary, and websites helper data when the app opens. It keeps helper data in local storage for up to 7 days and refreshes in the background. Do not rename helper files without updating the iOS webapp.
+The iOS webapp preloads CPG, SOP, CPM, flowcharts, formulary, websites, and AS-Call helper data when the app opens. It keeps helper data in local storage for up to 7 days and refreshes in the background. Do not rename helper files without updating the iOS webapp.
 
 ### Android App
 
@@ -274,6 +282,77 @@ Remote icon guidance:
 - The iOS webapp warms enabled website icons after loading `websites.json` and falls back to a letter tile when an icon is unavailable.
 - If an icon image changes but the URL stays the same, increase the websites helper `version` and Android app-config `websites.version` when Android needs a forced refresh.
 - Prefer changing the icon filename or adding a URL cache-busting query if CDN/browser cache causes stale icons.
+
+## AS-Call Helper
+
+File:
+
+```text
+as_call.json
+```
+
+Used for:
+
+- iOS webapp AS-Call list
+- Android AS-Call list
+- Remote contact names and phone numbers
+
+Live URL:
+
+```text
+https://docs.niwashibase.com/helpers/as_call.json
+```
+
+Android app-config entry:
+
+```json
+"as_call": {
+  "enabled": true,
+  "schema_version": "0.1",
+  "version": "0.1",
+  "url": "https://docs.niwashibase.com/helpers/as_call.json",
+  "fallback_asset": "as_call.json"
+}
+```
+
+Current helper shape:
+
+```json
+{
+  "addressbook": {
+    "Scheduling": 40328200,
+    "CC Emergency": 44398833
+  }
+}
+```
+
+Preferred future shape if per-contact disabling is needed:
+
+```json
+{
+  "helper_type": "as_call",
+  "schema_version": "0.1",
+  "version": "0.1",
+  "contacts": [
+    {
+      "id": "scheduling",
+      "enabled": true,
+      "name": "Scheduling",
+      "number": "40328200"
+    }
+  ]
+}
+```
+
+Rules:
+
+- The current `addressbook` shape is supported for compatibility.
+- The future `contacts` array supports `enabled: false` to hide one contact without deleting it.
+- Missing `enabled` should be treated as enabled by apps.
+- Contact `name` and `number` are required.
+- Store numbers as strings in the future shape so leading zeroes are preserved if they are ever needed.
+- Increase Android app-config `as_call.version` when names, numbers, enabled states, or order change and Android needs a forced refresh.
+- Keep bundled fallback `assets/as_call.json` updated before release builds.
 
 ## RSI Checklist Helper
 
