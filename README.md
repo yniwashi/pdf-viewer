@@ -170,6 +170,7 @@ Shared helpers:
 https://docs.niwashibase.com/helpers/flowcharts.json
 https://docs.niwashibase.com/helpers/formulary.json
 https://docs.niwashibase.com/helpers/websites.json
+https://docs.niwashibase.com/helpers/as_call.json
 ```
 
 Website icons:
