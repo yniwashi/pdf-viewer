@@ -1,0 +1,196 @@
+{
+  "helper_type": "websites",
+  "schema_version": "0.1",
+  "version": "0.1",
+  "websites": [
+    {
+      "id": "ambulance_app_linktree",
+      "enabled": true,
+      "title": "Ambulance App Linktree",
+      "category": "App",
+      "subtitle": "Main app links",
+      "url": "https://linktr.ee/ambulance999",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_ambulance_linktree.png"
+    },
+    {
+      "id": "ambulance_app_website",
+      "enabled": true,
+      "title": "Ambulance App Website",
+      "category": "App",
+      "subtitle": "Website",
+      "url": "https://www.niwashibase.com/",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_ambulance_website.png"
+    },
+    {
+      "id": "hmc_license_refresh",
+      "enabled": true,
+      "title": "HMC License Refresh",
+      "category": "HMCAS",
+      "subtitle": "Open every 90 days to keep license active",
+      "url": "https://access.hamad.qa",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_microsoft.png"
+    },
+    {
+      "id": "oracle",
+      "enabled": true,
+      "title": "Oracle",
+      "category": "HMCAS",
+      "subtitle": "Leave, salary, and HR services",
+      "url": "http://ebusiness.hamad.qa",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_oracle.png"
+    },
+    {
+      "id": "hmc_email",
+      "enabled": true,
+      "title": "HMC Email",
+      "category": "HMCAS",
+      "subtitle": "Outlook web mail",
+      "url": "https://outlook.office365.com/mail",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hmc_email.png"
+    },
+    {
+      "id": "hmc_ova",
+      "enabled": true,
+      "title": "HMC OVA",
+      "category": "HMCAS",
+      "subtitle": "Operational vehicle application",
+      "url": "https://rmpf-hamadqa.msappproxy.net/RL6_Prod/Homecenter/Client/Login.aspx/",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hmc_ova.png"
+    },
+    {
+      "id": "hamad_app_store",
+      "enabled": true,
+      "title": "Hamad App Store",
+      "category": "HMC",
+      "subtitle": "Mobile app store",
+      "url": "https://mobilestore.hamad.qa/",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hamad_app_store.png"
+    },
+    {
+      "id": "hmc_apps",
+      "enabled": true,
+      "title": "HMC Apps",
+      "category": "HMC",
+      "subtitle": "Azure app portal",
+      "url": "https://myapps.hamad.qa/",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hmc_apps.png"
+    },
+    {
+      "id": "selfservice_portal",
+      "enabled": true,
+      "title": "SelfService Portal",
+      "category": "HMC",
+      "subtitle": "HMC self-service portal",
+      "url": "https://selfservice.hamad.qa/m/home",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_microsoft.png"
+    },
+    {
+      "id": "install_ms_office",
+      "enabled": true,
+      "title": "Install MS Office",
+      "category": "HMC",
+      "subtitle": "Office installation page",
+      "url": "https://portal.office.com/account#installs",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_microsoft.png"
+    },
+    {
+      "id": "account_security_settings",
+      "enabled": true,
+      "title": "Account Security Settings",
+      "category": "HMC",
+      "subtitle": "Microsoft sign-in security info",
+      "url": "https://mysignins.microsoft.com/security-info",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_microsoft.png"
+    },
+    {
+      "id": "my_hmc_account_devices",
+      "enabled": true,
+      "title": "My HMC Account Devices",
+      "category": "HMC",
+      "subtitle": "Registered account devices",
+      "url": "https://myaccount.microsoft.com/device-list",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_microsoft.png"
+    },
+    {
+      "id": "e_taleem",
+      "enabled": true,
+      "title": "E-Taleem",
+      "category": "Training",
+      "subtitle": "Training courses",
+      "url": "https://lms.etaleem.qa/index",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hmc.png"
+    },
+    {
+      "id": "questbase",
+      "enabled": true,
+      "title": "Questbase",
+      "category": "Training",
+      "subtitle": "Training tests",
+      "url": "https://auth.questbase.com/#/account/emstraining.ems",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_questbase.png"
+    },
+    {
+      "id": "picu_doc_on_call",
+      "enabled": true,
+      "title": "PICU Doc On Call",
+      "category": "Resources",
+      "subtitle": "Podcast episodes",
+      "url": "https://picudoconcall.org/episodes",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_picu_podcast.png"
+    },
+    {
+      "id": "dhp_cpd_portfolio",
+      "enabled": true,
+      "title": "DHP CPD Portfolio",
+      "category": "DHP",
+      "subtitle": "CPD portfolio login",
+      "url": "https://accreditation.moph.gov.qa/_layouts/15/Accred_Website/Login/AccreditationUserLogin.aspx?ReturnUrl=%2f_layouts%2f15%2fAuthenticate.aspx%3fSource%3d%252F&Source=%2F",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_dhp.png"
+    },
+    {
+      "id": "dhp_licensing_login",
+      "enabled": true,
+      "title": "DHP Licensing Login",
+      "category": "DHP",
+      "subtitle": "Licensing portal",
+      "url": "https://dhpportal.moph.gov.qa/en/_layouts/15/LogIn.aspx?ReturnUrl=%2fen%2f_layouts%2fAuthenticate.aspx%3fSource=%2Fen%2FPages%2Fdefault%2Easpx",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_dhp.png"
+    },
+    {
+      "id": "upcoming_cpd_activities",
+      "enabled": true,
+      "title": "Upcoming CPD Activities",
+      "category": "DHP",
+      "subtitle": "CPD activity list",
+      "url": "https://accreditation.moph.gov.qa/_layouts/15/Accred_Website/Other/UpcomingCPDActivityList.aspx",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_dhp.png"
+    },
+    {
+      "id": "hmc_my_health",
+      "enabled": true,
+      "title": "HMC My Health",
+      "category": "HMC",
+      "subtitle": "Patient portal",
+      "url": "https://www.hamad.qa/EN/Patient-Information/Patient-Portal/Pages/default.aspx",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hmc.png"
+    },
+    {
+      "id": "hmc_sogha_website",
+      "enabled": true,
+      "title": "HMC Sogha Website",
+      "category": "HMC",
+      "subtitle": "Sogha website",
+      "url": "https://soghahealth-hamadqa.msappproxy.net/Pages/default.aspx",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hmc.png"
+    },
+    {
+      "id": "sogha_digital_card",
+      "enabled": true,
+      "title": "Sogha Digital Card",
+      "category": "HMC",
+      "subtitle": "Download digital card",
+      "url": "https://itawasol.hamad.qa/EN/HR-Portal/Sogha/Pages/SOGHA-Digital-Card.aspx",
+      "icon_url": "https://docs.niwashibase.com/website-icons/web_hmc.png"
+    }
+  ]
+}
