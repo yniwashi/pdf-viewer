@@ -1098,7 +1098,7 @@
       "sections": [
         {
           "id": "droperidol_abd_sedation",
-          "enabled": true,
+          "enabled": false,
           "applies_to": [
             "ccp_months",
             "ccp_years"
@@ -1191,13 +1191,7 @@
         "show_warning": false,
         "reason": "No concentration guide is defined for Droperidol in this helper; show dose only unless a future concentration guide is added."
       },
-      "warnings": [
-        {
-          "level": "caution",
-          "title": "Dose only",
-          "message": "This helper currently shows the Droperidol dose only. It does not calculate a draw-up volume."
-        }
-      ],
+      "warnings": [],
       "app_unused_metadata": {
         "content_version": "production-2026-05-10",
         "disabled_reason": "Kept in the helper for future reactivation/review; hidden from the app while disabled.",
@@ -3125,7 +3119,7 @@
       "sections": [
         {
           "id": "noradrenaline_septic_shock",
-          "enabled": true,
+          "enabled": false,
           "applies_to": [
             "ccp_months",
             "ccp_years"
@@ -3163,7 +3157,7 @@
         "subtitle": "Vasopressor"
       },
       "availability": {
-        "enabled": true,
+        "enabled": false,
         "profiles": [
           "ccp_months",
           "ccp_years"
