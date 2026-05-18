@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "helper_type": "ccp_pediatric_dosing",
-  "version": "0.2",
+  "version": "0.1",
   "status": "active",
   "medications": [
     {
@@ -3121,7 +3121,7 @@
     {
       "id": "noradrenaline",
       "name": "Noradrenaline",
-      "enabled": true,
+      "enabled": false,
       "sections": [
         {
           "id": "noradrenaline_septic_shock",
