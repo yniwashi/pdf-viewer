@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "helper_type": "ccp_pediatric_dosing",
-  "version": "0.1",
+  "version": "0.2",
   "status": "active",
   "medications": [
     {
@@ -489,7 +489,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "After 3rd shock. Repeat twice up to 15mg per kg\nMAX Dose is 300mg (Up to a total of 3 doses).\nRef. Dose Calculation: {weight_kg} kg x 5mg",
+          "notes_template": "After 3rd shock. Repeat twice up to 15mg per kg.\nMAX Dose is 300mg (Up to a total of 3 doses).\n\nRef. Dose Calculation: {weight_kg} kg x 5mg",
           "ui": {
             "sort_order": 10,
             "priority": "high",
@@ -521,7 +521,7 @@
             }
           },
           "route": "IV/IO infusion",
-          "notes_template": "Over 20 to 60 minutes\nMAX dose of 300mg.\nRef. Dose Calculation: {weight_kg} kg x 5mg",
+          "notes_template": "Over 20 to 60 minutes.\nMAX dose of 300mg.\n\nRef. Dose Calculation: {weight_kg} kg x 5mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -617,7 +617,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "MIN single dose is 0.1 mg and MAX single dose 0.5 mg. Repeat once if required.\nRef. Dose Calculation: {weight_kg} kg x 0.02mg",
+          "notes_template": "MIN single dose is 0.1 mg and MAX single dose 0.5 mg.\nRepeat once if required.\n\nRef. Dose Calculation: {weight_kg} kg x 0.02mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -649,7 +649,7 @@
             }
           },
           "route": "IV/IO or IM",
-          "notes_template": "MAX dose is 2 mg. Repeat PRN every 5 minutes, until clinical condition improves.\nRef. Dose Calculation: {weight_kg} kg x 0.05mg",
+          "notes_template": "MAX dose is 2 mg. Repeat PRN every 5 minutes, until clinical condition improves.\n\nRef. Dose Calculation: {weight_kg} kg x 0.05mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -743,7 +743,7 @@
             }
           },
           "route": "PO/IM/IV/IO",
-          "notes_template": "Max dose 12 mg\nSingle dose\nRef. Dose Calculation: {weight_kg} kg x 0.6mg",
+          "notes_template": "Max dose 12 mg.\nSingle dose.\n\nRef. Dose Calculation: {weight_kg} kg x 0.6mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -869,7 +869,7 @@
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Repeat if patient remains hypoglycemic.\nRef. Dose Calculation: {weight_kg} kg x {dose_factor}ml",
+          "notes_template": "Repeat if patient remains hypoglycemic.\n\nRef. Dose Calculation: {weight_kg} kg x {dose_factor}ml",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -902,7 +902,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "Repeat if patient remains hypoglycemic.\nRef. Dose Calculation: {weight_kg} kg x 2.5ml",
+          "notes_template": "Repeat if patient remains hypoglycemic.\n\nRef. Dose Calculation: {weight_kg} kg x 2.5ml",
           "ui": {
             "sort_order": 20,
             "priority": "high",
@@ -1020,7 +1020,7 @@
             ]
           },
           "route": "IV/IO/IM",
-          "notes_template": "MAX dose is 50 mg.\nRef. Dose Calculation: {weight_kg} kg x 1mg",
+          "notes_template": "MAX dose is 50 mg.\n\nRef. Dose Calculation: {weight_kg} kg x 1mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -1147,7 +1147,7 @@
             ]
           },
           "route": "IV/IM",
-          "notes_template": "Single MAXIMUM dose of 10 mg\nDose may be repeated once after 15 minutes if required\n\nTotal MAXIMUM dose 20 mg\n\nRef. Dose Calculation: {weight_kg} kg x 0.1mg - {weight_kg} kg x 0.2mg",
+          "notes_template": "Single MAXIMUM dose of 10 mg.\nDose may be repeated once after 15 minutes if required.\n\nTotal MAXIMUM dose 20 mg.\n\nRef. Dose Calculation:\n{weight_kg} kg x 0.1mg - {weight_kg} kg x 0.2mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -1243,7 +1243,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "MAX Total Dose 2 mcg/kg\nRef. Dose Calculation: {weight_kg} kg x 1mcg",
+          "notes_template": "MAX Total Dose 2 mcg/kg.\n\nRef. Dose Calculation: {weight_kg} kg x 1mcg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -1274,7 +1274,7 @@
             }
           },
           "route": "IN",
-          "notes_template": "MAX dose per nostril is 0.3 to 0.5 ml.\nRef. Dose Calculation: {weight_kg} kg x 2mcg",
+          "notes_template": "MAX dose per nostril is 0.3 to 0.5 ml.\n\nRef. Dose Calculation: {weight_kg} kg x 2mcg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -1454,7 +1454,7 @@
         {
           "level": "caution",
           "title": "High-risk medication",
-          "message": "Check indication, route, dose, and monitoring before administration."
+          "message": "Verify indication, route, dose, concentration, and continuous monitoring, including EtCO₂"
         }
       ],
       "app_unused_metadata": {
@@ -1623,7 +1623,7 @@
             }
           },
           "route": "IV/IO/IM",
-          "notes_template": "MAX dose is 200mg\nSingle dose\nRef. Dose Calculation: {weight_kg} kg x 5mg",
+          "notes_template": "MAX dose is 200mg.\nSingle dose.\n\nRef. Dose Calculation: {weight_kg} kg x 5mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2486,7 +2486,7 @@
             ]
           },
           "route_when_calculated": "IV/IO",
-          "notes_template_when_calculated": "Ref. Dose Calculation:\n{weight_kg} kg x 1mg",
+          "notes_template_when_calculated": "Ref. Dose Calculation: {weight_kg} kg x 1mg",
           "notes_when_not_indicated": "Not indicated in this age group for intubation",
           "ui": {
             "sort_order": 70,
@@ -2604,7 +2604,7 @@
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. Dose Calculation:\n{weight_kg} kg x 0.5mg",
+          "notes_template": "Ref. Dose Calculation: {weight_kg} kg x 0.5mg",
           "ui": {
             "sort_order": 90,
             "priority": "high",
@@ -2664,7 +2664,7 @@
             ]
           },
           "route": "IV/IO infusion",
-          "notes": "Ref. Dose Calculation: 0.01 - 0.05mg/kg/min\n{weight_kg} kg x 0.01mg - {weight_kg} kg x 0.05mg\n\nTitrated to maintain sedation post RSI.\nDilute 200 mg (4 ml) Ketamine with 16 ml NS to a total of 20 ml to give a concentration of 10 mg/ml.\nStart infusion at desired range and titrate to effect.",
+          "notes": "Ref. Dose Calculation: 0.01 - 0.05mg/kg/min.\n{weight_kg} kg x 0.01mg - {weight_kg} kg x 0.05mg\n\nTitrated to maintain sedation post RSI.\nDilute 200 mg (4 ml) Ketamine with 16 ml NS to a total of 20 ml to give a concentration of 10 mg/ml.\nStart infusion at desired range and titrate to effect.",
           "ui": {
             "sort_order": 100,
             "priority": "normal",
@@ -2766,7 +2766,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation:\n{weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
+          "notes_template": "MAX dose is 2g.\nInfused over 20 minutes.\n\nRef. Dose Calculation:\n{weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2799,7 +2799,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\n\nRef. Dose Calculation:\n{weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
+          "notes_template": "MAX dose is 2g.\nInfused over 20 minutes.\n\nRef. Dose Calculation:\n{weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -2838,15 +2838,7 @@
         "badge": "CCP"
       },
       "concentration": {
-        "mode": "user_entered",
-        "remember_last_used": true,
-        "show_warning": true,
-        "guide_id": "magnesium_sulfate",
-        "guide": {
-          "amount": 1,
-          "unit": "g",
-          "volume_ml": 10
-        }
+        "mode": "not_required"
       },
       "warnings": [],
       "app_unused_metadata": {
@@ -2854,8 +2846,8 @@
         "reference_query": "Magnesium Sulphate",
         "result_format": {
           "show_dose": true,
-          "show_volume": true,
-          "show_concentration_used": true,
+          "show_volume": false,
+          "show_concentration_used": false,
           "use_default_result_format": true
         },
         "review_status": "production_ready",
@@ -2890,7 +2882,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "MAX single dose of 5mg to MAX total dose of 10mg\nRepeat PRN after 5 minutes\nRef. Dose Calculation: {weight_kg} kg x 0.1mg",
+          "notes_template": "MAX single dose of 5mg to MAX total dose of 10mg.\nRepeat PRN after 5 minutes.\n\nRef. Dose Calculation: {weight_kg} kg x 0.1mg",
           "ui": {
             "sort_order": 10,
             "priority": "high",
@@ -2922,7 +2914,7 @@
             }
           },
           "route": "IM",
-          "notes_template": "Max single dose of 10mg\nRepeat PRN after 15 minutes\nRef. Dose Calculation: {weight_kg} kg x 0.2mg",
+          "notes_template": "Max single dose of 10mg.\nRepeat PRN after 15 minutes.\n\nRef. Dose Calculation: {weight_kg} kg x 0.2mg",
           "ui": {
             "sort_order": 20,
             "priority": "high",
@@ -2954,7 +2946,7 @@
             }
           },
           "route": "IN/Buccal",
-          "notes_template": "MAX of 1ml per nostril/dose\nRef. Dose Calculation: {weight_kg} kg x 0.2mg",
+          "notes_template": "MAX of 1ml per nostril/dose.\n\nRef. Dose Calculation: {weight_kg} kg x 0.2mg",
           "ui": {
             "sort_order": 30,
             "priority": "high",
@@ -3007,7 +2999,7 @@
         {
           "level": "caution",
           "title": "High-risk medication",
-          "message": "Check indication, route, dose, and monitoring before administration."
+          "message": "Verify indication, route, dose, concentration, and continuous monitoring, including EtCO₂"
         }
       ],
       "app_unused_metadata": {
@@ -3055,7 +3047,7 @@
             }
           },
           "route": "IV/IO/IM",
-          "notes_template": "MAX single dose is 0.4mg\nMAX total dose 2mg\nRepeat PRN every 2-3 minutes\n\nRef. Dose Calculation: {weight_kg} kg x 0.01mg",
+          "notes_template": "MAX single dose is 0.4mg.\nMAX total dose 2mg.\nRepeat PRN every 2-3 minutes.\n\nRef. Dose Calculation: {weight_kg} kg x 0.01mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -3127,6 +3119,104 @@
       }
     },
     {
+      "id": "noradrenaline",
+      "name": "Noradrenaline",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "noradrenaline_septic_shock",
+          "enabled": true,
+          "applies_to": [
+            "ccp_months",
+            "ccp_years"
+          ],
+          "indication": "Septic Shock",
+          "dose_rule": {
+            "type": "weight_based_rate_range",
+            "min_factor": 0.05,
+            "max_factor": 0.1,
+            "unit": "mcg",
+            "time": "min",
+            "app_unused_metadata": {
+              "per": "kg"
+            }
+          },
+          "route": "IV/IO Infusion",
+          "notes_template": "Increase rate by 0.05mcg/kg/min if required\nDilution: add 2 x 4mg/4ml amps into 500ml NS, creating\n8mg/500ml (16mcg/ml). Draw 50ml of Noradrenaline\nsolution into 50ml syringe and start infusion at above dose.\n\nRef. Dose Calculation:\n{weight_kg} kg x 0.05mcg - {weight_kg} kg x 0.1mcg",
+          "ui": {
+            "sort_order": 10,
+            "priority": "high",
+            "badge": null,
+            "accent_color": "#8E24AA"
+          },
+          "display": {
+            "title": "Septic Shock",
+            "show_route": true,
+            "show_notes": true,
+            "show_volume_calculator": false
+          }
+        }
+      ],
+      "display": {
+        "name": "Noradrenaline",
+        "short_name": "Noradrenaline",
+        "subtitle": "Vasopressor"
+      },
+      "availability": {
+        "enabled": true,
+        "profiles": [
+          "ccp_months",
+          "ccp_years"
+        ],
+        "requires_scope": "CCP"
+      },
+      "ui": {
+        "group": "Resuscitation",
+        "sort_order": 175,
+        "theme_color": "#CE93D8",
+        "background_color": "#CE93D8",
+        "text_color": "#111827",
+        "accent_color": "#8E24AA",
+        "icon_key": "cardiac",
+        "badge": "CCP"
+      },
+      "concentration": {
+        "mode": "not_required",
+        "show_warning": false,
+        "reason": "Noradrenaline is prepared using the dilution described in the notes; no concentration-based draw-up volume is calculated in this helper."
+      },
+      "warnings": [
+        {
+          "level": "caution",
+          "title": "High-risk medication",
+          "message": "Verify indication, route, dose, concentration, and continuous monitoring, including EtCO2."
+        }
+      ],
+      "app_unused_metadata": {
+        "content_version": "draft-2026-05-19",
+        "reference_query": "Noradrenaline",
+        "result_format": {
+          "show_dose": true,
+          "show_volume": false,
+          "show_concentration_used": false,
+          "use_default_result_format": true
+        },
+        "review_status": "draft_review_needed",
+        "search": {
+          "aliases": [
+            "Noradrenaline",
+            "Norepinephrine"
+          ],
+          "keywords": [
+            "septic shock",
+            "vasopressor",
+            "inotrope",
+            "infusion"
+          ]
+        }
+      }
+    },
+    {
       "id": "ondansetron",
       "name": "Ondansetron",
       "enabled": true,
@@ -3149,7 +3239,7 @@
             }
           },
           "route": "IV/IM",
-          "notes_template": "MAX dose is 4 mg. Given Slowly.\nDilution: 4 mg (2 ml) + 8 ml NaCl = 4 mg/10 ml = 0.4 mg/1 ml\n\nRef. Dose Calculation: {weight_kg} kg x 0.1mg",
+          "notes_template": "MAX dose is 4 mg. Given Slowly.\nDilution: 4 mg (2 ml) + 8 ml NaCl = 4 mg/10 ml = 0.4 mg/1 ml.\n\nRef. Dose Calculation: {weight_kg} kg x 0.1mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -3269,7 +3359,7 @@
             ]
           },
           "route": "PO",
-          "notes_template": "Paracetamol syrup: 120mg/5ml\n\nRef. Dose Calculation: {weight_kg} kg x 15mg",
+          "notes_template": "Paracetamol syrup: 120mg/5ml.\n\nRef. Dose Calculation: {weight_kg} kg x 15mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -3280,7 +3370,7 @@
             "title": "Pain and/or fever (Oral)",
             "show_route": true,
             "show_notes": true,
-            "show_volume_calculator": true
+            "show_volume_calculator": false
           }
         },
         {
@@ -3347,7 +3437,7 @@
             ]
           },
           "route": "IV",
-          "notes_template": "MAX dose is 20mg/kg.\nUndiluted: 1000mg/100ml = 10mg/1ml\n\nRef. Dose Calculation: {weight_kg} kg x {dose_factor}mg",
+          "notes_template": "MAX dose is 20mg/kg.\nUndiluted: 1000mg/100ml = 10mg/1ml.\n\nRef. Dose Calculation: {weight_kg} kg x {dose_factor}mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -3457,7 +3547,7 @@
               {
                 "when": {
                   "profile": "ccp_years",
-                  "weight_kg_min_exclusive": 28
+                  "weight_kg_min_exclusive": 29
                 },
                 "rule": {
                   "type": "weight_based_single",
@@ -3471,7 +3561,7 @@
             ]
           },
           "route_when_calculated": "IV",
-          "notes_template_when_calculated": "NOTE: AGE RESTRICTIONS FOR RSI STANDARDIZED TO ≥ 8 YEARS FOR BOTH MEDICAL AND TRAUMA\nUndiluted: 10 mg/1 ml.\nRef. Dose Calculation: {weight_kg} kg x 1.5mg",
+          "notes_template_when_calculated": "AGE RESTRICTIONS FOR RSI STANDARDIZED TO:\nAge ≥ 8 YEARS FOR BOTH MEDICAL AND TRAUMA.\nUndiluted: 10 mg/1 ml.\n\nRef. Dose Calculation: {weight_kg} kg x 1.5mg",
           "notes_when_not_indicated": "Rocuronium not indicated in this age group for PRE intubation.",
           "ui": {
             "sort_order": 10,
@@ -3519,7 +3609,7 @@
               {
                 "when": {
                   "profile": "ccp_years",
-                  "weight_kg_min_exclusive": 28
+                  "weight_kg_min_exclusive": 29
                 },
                 "rule": {
                   "type": "static",
@@ -3583,7 +3673,7 @@
         {
           "level": "caution",
           "title": "High-risk medication",
-          "message": "Check indication, route, dose, and monitoring before administration."
+          "message": "Verify indication, route, dose, concentration, and continuous monitoring, including EtCO₂"
         },
         {
           "level": "caution",
@@ -3649,7 +3739,7 @@
               {
                 "when": {
                   "profile": "ccp_years",
-                  "weight_kg_min_exclusive": 21
+                  "weight_kg_min_exclusive": 22
                 },
                 "rule": {
                   "type": "static_range",
@@ -3694,7 +3784,7 @@
             }
           },
           "route": "IV/IO infusion",
-          "notes_template": "MAX dose is 250mcg\nInfused over 10 minutes\n\nRef. Dose Calculation: {weight_kg} kg x 10mcg",
+          "notes_template": "MAX dose is 250mcg.\nInfused over 10 minutes.\n\nRef. Dose Calculation: {weight_kg} kg x 10mcg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -3738,13 +3828,7 @@
         "show_warning": false,
         "reason": "Nebulized Salbutamol uses a prepared nebule dose, and no concentration guide is defined here for IV/IO volume conversion."
       },
-      "warnings": [
-        {
-          "level": "caution",
-          "title": "Dose only",
-          "message": "This helper currently shows the Salbutamol dose only. It does not calculate a draw-up volume."
-        }
-      ],
+      "warnings": [],
       "app_unused_metadata": {
         "content_version": "production-2026-05-10",
         "reference_query": "Salbutamol",
@@ -3792,7 +3876,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "Paediatric (<14 years old) with (major trauma < 3 hours old) with suspected or confirmed (major haemorrhage)\nInfused over 10 minutes\nMAX of 1g\n\nRef. Dose Calculation: {weight_kg} kg x 15mg",
+          "notes_template": "Paediatric (<14 years old) WITH (major trauma < 3 hours old)\nWITH suspected or confirmed (major haemorrhage).\n\nInfused over 10 minutes.\nMAX of 1g.\n\nRef. Dose Calculation: {weight_kg} kg x 15mg",
           "ui": {
             "sort_order": 10,
             "priority": "high",
