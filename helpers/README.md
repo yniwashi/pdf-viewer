@@ -1,6 +1,5 @@
 # Helpers Guide
 
-
 The `helpers/` folder stores JSON and HTML helper files served from:
 
 ```text
@@ -467,6 +466,45 @@ Important:
 
 ## Pediatric Helper Rendering Contract
 
+The pediatric helpers now keep Android-used data at the normal medication/section/rule locations and move non-rendered documentation/editor fields into:
+
+```json
+"app_unused_metadata": {}
+```
+
+Android does not read `app_unused_metadata`. It is safe for editor notes, review history, schema notes, search hints that are not used by Android, and other helper documentation.
+
+Do not move dose, route, indication, warning, UI color, enabled, availability, concentration, or section fields into `app_unused_metadata`; Android needs those in their normal positions.
+
+Top-level Android-used fields:
+
+```text
+schema_version
+helper_type
+version
+status
+medications
+```
+
+Top-level fields currently kept only as `app_unused_metadata`:
+
+```text
+source
+app_support_contract
+input_profiles
+dose_formatting
+concentration_guides
+excluded_tools
+review_flags
+ui_contract
+default_result_format
+default_concentration_behavior
+section_schema_contract
+schema_version_history
+medication_lifecycle_contract
+editor_guide
+```
+
 ### Medication Button Grid
 
 Each visible medication becomes one AP/CCP medication button.
@@ -491,16 +529,36 @@ ui.text_color -> app default
 ui.accent_color -> fallback ui.theme_color -> app default
 ```
 
-Metadata only for now:
+Medication fields used by Android:
 
 ```text
-display.subtitle
-ui.badge
-ui.icon_key
-ui.group
-search.aliases
-search.keywords
+id
+name
+enabled
+availability.enabled
+display.name
+ui.sort_order
+ui.background_color
+ui.text_color
+ui.theme_color
+ui.accent_color
+warnings
+concentration
+sections
 ```
+
+Medication fields currently kept only as `app_unused_metadata`:
+
+```text
+content_version
+disabled_reason
+reference_query
+result_format
+review_status
+search
+```
+
+Important: Android Search does not use `search` from pediatric dosing helpers. Android Search uses document/formulary/flowchart/search targets instead.
 
 ### Medication Sheet
 
@@ -511,7 +569,6 @@ display.name / name / id
 warnings[].title
 warnings[].message
 warnings[].level
-reference_query or formulary_reference.query
 concentration, when concentration.mode = user_entered
 ```
 
@@ -526,17 +583,23 @@ notes / notes_template / notes_template_when_calculated / notes_when_not_indicat
 display.show_volume_calculator
 ```
 
-Section fields currently metadata only:
+Section fields read by Android but not visibly rendered today:
 
 ```text
 ui.badge
-ui.priority
-ui.accent_color
-display.show_route
-display.show_notes
 ```
 
-Section `ui.badge` used to render above the indication and looked confusing. Current Android does not render section badges in AP/CCP medication sheets.
+Section `ui.badge` is parsed into the model but current Android does not render section badges in AP/CCP medication sheets.
+
+Dose-rule fields currently kept only as dose-rule `app_unused_metadata`:
+
+```text
+per
+dose_text
+selection
+```
+
+Do not move any active dose-rule calculation field into `app_unused_metadata`.
 
 ## Pediatric Empty String And Null Rules
 
@@ -602,17 +665,84 @@ Do not add a new dose rule type unless Android code is updated first.
 
 ## Pediatric Common Editing Tasks
 
+For every editing task below:
+
+1. Edit the helper JSON.
+2. Validate JSON.
+3. If publishing remotely, increase the helper top-level `version`.
+4. Increase the matching helper `version` in `ambulance_app_config.json`.
+5. Upload both files.
+6. Test the affected AP/CCP Months and Years flows.
+
 ### Update A Dose
 
 1. Find medication by `id`.
 2. Find section by `section.id`.
 3. Update only the relevant `dose_rule` values.
 4. Update notes only if the explanation changed.
-5. Validate JSON.
-6. Increase helper `version` when publishing.
-7. Update matching helper `version` in app config.
-8. Upload helper and app config.
-9. Test AP/CCP Months and Years as applicable.
+5. Do not change `schema_version` unless Android code changes.
+
+Common dose fields:
+
+```text
+factor
+min_factor
+max_factor
+amount
+min
+max
+unit
+time
+display
+reason
+```
+
+For conditional rules, edit the matching `overrides[].when` condition or the nested `overrides[].rule`. If no override matches, Android uses `default`.
+
+For tiered rules, edit `age_tiers`, `weight_tiers`, `block_when`, or `no_matching_tier`.
+
+### Update An Indication
+
+1. Find medication by `id`.
+2. Find section by `section.id`.
+3. Edit `indication`.
+4. If `indication` is missing, Android can fall back to `display.title`.
+5. Bump helper/app-config `version` before publishing.
+
+### Update A Route
+
+Edit the normal route:
+
+```json
+"route": "IV/IO"
+```
+
+Use these only when the route should change depending on the result:
+
+```json
+"route_when_calculated": "IV/IO",
+"route_when_not_indicated": "-"
+```
+
+### Update Notes
+
+Use:
+
+```text
+notes
+notes_template
+notes_template_when_calculated
+notes_when_not_indicated
+```
+
+Supported placeholders:
+
+```text
+{weight_kg}
+{dose_factor}
+```
+
+Lines with unsupported `{...}` placeholders are hidden by Android so raw placeholders do not appear to users.
 
 ### Hide A Medication Temporarily
 
@@ -636,6 +766,19 @@ Do not add a new dose rule type unless Android code is updated first.
 
 Delete the medication object from the `medications` array.
 
+### Add A Medication
+
+1. Add a new object to `medications`.
+2. Use a stable lowercase `id`, for example `new_medication_name`.
+3. Add `name` or `display.name`.
+4. Set `enabled: true`.
+5. Set `availability.enabled: true`.
+6. Add `ui.sort_order` and button colors.
+7. Add at least one enabled section with `applies_to`.
+8. Add a supported `dose_rule`.
+9. Add `concentration` if volume-to-draw support is needed.
+10. Validate and test Months and Years.
+
 ### Hide A Section Temporarily
 
 ```json
@@ -645,6 +788,37 @@ Delete the medication object from the `medications` array.
 ### Remove A Section Permanently
 
 Delete the section object from the medication `sections` array.
+
+### Add A Section
+
+Required section fields:
+
+```text
+id
+enabled
+applies_to
+indication or display.title
+dose_rule
+route
+```
+
+Example:
+
+```json
+{
+  "id": "example_section",
+  "enabled": true,
+  "applies_to": ["ccp_months", "ccp_years"],
+  "indication": "Example indication",
+  "dose_rule": {
+    "type": "weight_based_single",
+    "factor": 1,
+    "unit": "mg"
+  },
+  "route": "IV/IO",
+  "notes_template": "Based on {dose_factor} mg/kg."
+}
+```
 
 ### Change Button Color
 
@@ -682,7 +856,49 @@ Use `not_required` when no draw-up volume should be calculated:
 }
 ```
 
-The app remembers the last concentration used by the user. The original package concentration remains a guide only.
+The app remembers the last concentration used by the user per medication. The original package concentration remains a guide only.
+
+To edit a concentration guide:
+
+1. Find medication by `id`.
+2. Edit medication-level `concentration.guide`.
+3. Keep `amount`, `unit`, and `volume_ml` numeric/valid.
+4. Use `unit` as one of:
+
+```text
+mcg
+mg
+g
+```
+
+5. Keep `mode: "user_entered"` if Android should show the concentration card and calculate volume.
+6. Use `mode: "not_required"` if Android should not show the concentration card.
+
+Android calculates volume only when all are true:
+
+- medication `concentration.mode` is `user_entered`
+- user saved a valid concentration in the app
+- section dose can be parsed as a single dose or dose range in `mcg`, `mg`, or `g`
+- route looks injectable/nebulized and is not an infusion
+- section `display.show_volume_calculator` is not `false`
+
+### Update Metadata Only
+
+Use `app_unused_metadata` for notes that Android should not use:
+
+```json
+"app_unused_metadata": {
+  "review_status": "reviewed",
+  "content_version": "2026-05-18",
+  "search": {
+    "aliases": ["example"]
+  }
+}
+```
+
+Metadata-only changes do not affect Android behavior. If you want installed Android devices to download the changed file anyway, bump helper/app-config `version`. If the change is only for your records and does not need to reach installed apps, a version bump is not clinically necessary.
+
+Do not place active fields inside `app_unused_metadata`. Android will ignore them.
 
 ## Pediatric Version Rules
 
@@ -691,9 +907,13 @@ Change helper `version` when:
 - dose changes
 - indication changes
 - route changes
+- notes or warning text changes
+- concentration guide or concentration mode changes
 - medication added/removed
 - section added/removed
+- medication or section enabled/disabled
 - button color/order changes and you need installed devices to refresh
+- metadata changes that you still want installed Android apps to download/cache
 
 Change `schema_version` only when:
 
