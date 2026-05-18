@@ -851,6 +851,20 @@
                     "per": "kg"
                   }
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "weight_based_single",
+                  "factor": 2,
+                  "unit": "ml",
+                  "app_unused_metadata": {
+                    "per": "kg"
+                  }
+                }
               }
             ]
           },
@@ -932,13 +946,7 @@
         "show_warning": false,
         "reason": "Dose is already calculated in ml/kg for Dextrose 10%; no concentration conversion is needed."
       },
-      "warnings": [
-        {
-          "level": "caution",
-          "title": "Use Dextrose 10%",
-          "message": "This dose is calculated for Dextrose 10%. Use the correct dextrose preparation."
-        }
-      ],
+      "warnings": [],
       "app_unused_metadata": {
         "content_version": "production-2026-05-10",
         "reference_query": "Dextrose",
