@@ -1896,7 +1896,7 @@
             "no_matching_tier": {
               "type": "not_indicated",
               "display": "-",
-              "reason": "No dose tier is defined for the entered age or weight."
+              "reason": "Not for use in <7kg (<1 year old)\nAge 1-2 years dose is 50mg\nAge 3-7 years dose is 100mg\nAge 8-14 years dose is 200mg"
             },
             "app_unused_metadata": {
               "selection": "weight_tiers_when_direct_weight_entered_else_age_tiers"
@@ -2020,7 +2020,7 @@
             ]
           },
           "route": "NEB",
-          "notes": "Neb should be mixed to a volume of 5 ml\n\nIpratropium Bromide should not routinely be administered on its own.\nIpratropium Bromide can be administered together with Salbutamol in the same nebuliser. \nIpratropium Bromide is a single dose. If additional doses are required then request for CCP assistance.",
+          "notes": "Neb should be mixed to a volume of 5 ml\n\nIpratropium Bromide should not routinely be administered on its own.\n\nIpratropium Bromide can be administered together with Salbutamol in the same nebuliser.\n\nIpratropium Bromide is a single dose. If additional doses are required then request for CCP assistance.",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2064,13 +2064,7 @@
         "show_warning": false,
         "reason": "Nebulized Ipratropium is supplied/administered as a nebule dose in the current app logic; no concentration-based volume calculation is needed."
       },
-      "warnings": [
-        {
-          "level": "caution",
-          "title": "Nebulized dose",
-          "message": "This helper shows the nebulized Ipratropium dose only. Use the correct nebule preparation."
-        }
-      ],
+      "warnings": [],
       "app_unused_metadata": {
         "content_version": "production-2026-05-10",
         "reference_query": "Ipratropium Bromide",
@@ -2128,11 +2122,22 @@
                   "display": "-",
                   "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
               }
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. IV/IO Dose Calculation:\n{weight_kg} kg x 0.25mg - {weight_kg} kg x 0.5mg",
+          "notes_template": "Repeat PRN\n\nRef. IV/IO Dose Calculation:\n{weight_kg} kg x 0.25mg - {weight_kg} kg x 0.5mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2176,11 +2181,22 @@
                   "display": "-",
                   "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
               }
             ]
           },
           "route": "IM/IN",
-          "notes_template": "Ref. IM/IN Dose Calculation:\n{weight_kg} kg x 0.5mg - {weight_kg} kg x 1mg",
+          "notes_template": "Repeat PRN\n\nRef. IM/IN Dose Calculation:\n{weight_kg} kg x 0.5mg - {weight_kg} kg x 1mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -2217,6 +2233,17 @@
                 "when": {
                   "profile": "ccp_months",
                   "age_months_max": 2
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
                 },
                 "rule": {
                   "type": "not_indicated",
@@ -2270,6 +2297,17 @@
                   "display": "-",
                   "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
               }
             ]
           },
@@ -2317,11 +2355,22 @@
                   "display": "-",
                   "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
               }
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. IV/IO Dose Calculation: {weight_kg} kg x 1mg",
+          "notes_template": "Ref. IV/IO Dose Calculation:\n{weight_kg} kg x 1mg",
           "ui": {
             "sort_order": 50,
             "priority": "normal",
@@ -2364,11 +2413,22 @@
                   "display": "-",
                   "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
               }
             ]
           },
           "route": "IM/IN",
-          "notes_template": "Ref. IM/IN Dose Calculation: {weight_kg} kg x 2mg",
+          "notes_template": "Ref. IM/IN Dose Calculation:\n{weight_kg} kg x 2mg",
           "ui": {
             "sort_order": 60,
             "priority": "normal",
@@ -2412,7 +2472,7 @@
               },
               {
                 "when": {
-                  "weight_kg_min_exclusive": 28
+                  "weight_kg_min_exclusive": 29
                 },
                 "rule": {
                   "type": "weight_based_single",
@@ -2426,7 +2486,7 @@
             ]
           },
           "route_when_calculated": "IV/IO",
-          "notes_template_when_calculated": "Ref. Dose Calculation: {weight_kg} kg x 1mg",
+          "notes_template_when_calculated": "Ref. Dose Calculation:\n{weight_kg} kg x 1mg",
           "notes_when_not_indicated": "Not indicated in this age group for intubation",
           "ui": {
             "sort_order": 70,
@@ -2471,7 +2531,7 @@
               },
               {
                 "when": {
-                  "weight_kg_min_exclusive": 28
+                  "weight_kg_min_exclusive": 29
                 },
                 "rule": {
                   "type": "weight_based_single",
@@ -2529,11 +2589,22 @@
                   "display": "-",
                   "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
               }
             ]
           },
           "route": "IV/IO",
-          "notes_template": "Ref. Dose Calculation: {weight_kg} kg x 0.5mg",
+          "notes_template": "Ref. Dose Calculation:\n{weight_kg} kg x 0.5mg",
           "ui": {
             "sort_order": 90,
             "priority": "high",
@@ -2578,11 +2649,22 @@
                   "display": "-",
                   "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
                 }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "not_indicated",
+                  "display": "-",
+                  "reason": "Ketamine Not For Use For Patients Less Than 3 Months Old"
+                }
               }
             ]
           },
           "route": "IV/IO infusion",
-          "notes": "Titrated to maintain sedation post RSI\nDilute 200 mg (4 ml) Ketamine with 16 ml NS to a total of 20 ml to give a concentration of 10 mg/ml.\nStart infusion at desired range and titrate to effect.",
+          "notes": "Ref. Dose Calculation: 0.01 - 0.05mg/kg/min\n{weight_kg} kg x 0.01mg - {weight_kg} kg x 0.05mg\n\nTitrated to maintain sedation post RSI.\nDilute 200 mg (4 ml) Ketamine with 16 ml NS to a total of 20 ml to give a concentration of 10 mg/ml.\nStart infusion at desired range and titrate to effect.",
           "ui": {
             "sort_order": 100,
             "priority": "normal",
@@ -2635,7 +2717,7 @@
         {
           "level": "caution",
           "title": "High-risk medication",
-          "message": "Check indication, route, dose, and monitoring before administration."
+          "message": "Verify indication, route, dose, concentration, and continuous monitoring, including EtCO₂"
         }
       ],
       "app_unused_metadata": {
@@ -2684,7 +2766,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation: {weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
+          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation:\n{weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
           "ui": {
             "sort_order": 10,
             "priority": "normal",
@@ -2695,7 +2777,7 @@
             "title": "Bronchoconstriction",
             "show_route": true,
             "show_notes": true,
-            "show_volume_calculator": true
+            "show_volume_calculator": false
           }
         },
         {
@@ -2717,7 +2799,7 @@
             }
           },
           "route": "IV/IO",
-          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\nRef. Dose Calculation: {weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
+          "notes_template": "MAX dose is 2g\nInfused over 20 minutes\n\nRef. Dose Calculation:\n{weight_kg} kg x 25mg - {weight_kg} kg x 50mg",
           "ui": {
             "sort_order": 20,
             "priority": "normal",
@@ -2728,7 +2810,7 @@
             "title": "Torsades de Pointes",
             "show_route": true,
             "show_notes": true,
-            "show_volume_calculator": true
+            "show_volume_calculator": false
           }
         }
       ],
