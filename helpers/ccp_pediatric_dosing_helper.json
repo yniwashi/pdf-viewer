@@ -1092,188 +1092,6 @@
       }
     },
     {
-      "id": "ibuprofen",
-      "name": "Ibuprofen",
-      "enabled": true,
-      "sections": [
-        {
-          "id": "ibuprofen_pain_inflammation_fever",
-          "enabled": true,
-          "applies_to": [
-            "ccp_months",
-            "ccp_years"
-          ],
-          "indication": "Mild to moderate pain relief / Anti-inflammatory / Reduce fever",
-          "dose_rule": {
-            "type": "age_or_weight_tier",
-            "block_when": [
-              {
-                "profile": "ccp_months",
-                "age_months_max": 11,
-                "reason": "Not for use in <7kg (<1 year old)"
-              },
-              {
-                "weight_kg_max_exclusive": 7,
-                "reason": "Not for use in <7kg (<1 year old)"
-              }
-            ],
-            "age_tiers": [
-              {
-                "profile": "ccp_months",
-                "age_months_min": 12,
-                "age_months_max": 12,
-                "rule": {
-                  "type": "static",
-                  "amount": 50,
-                  "unit": "mg"
-                }
-              },
-              {
-                "profile": "ccp_years",
-                "age_years_min": 1,
-                "age_years_max": 2,
-                "rule": {
-                  "type": "static",
-                  "amount": 50,
-                  "unit": "mg"
-                }
-              },
-              {
-                "profile": "ccp_years",
-                "age_years_min": 3,
-                "age_years_max": 7,
-                "rule": {
-                  "type": "static",
-                  "amount": 100,
-                  "unit": "mg"
-                }
-              },
-              {
-                "profile": "ccp_years",
-                "age_years_min": 8,
-                "age_years_max": 14,
-                "rule": {
-                  "type": "static",
-                  "amount": 200,
-                  "unit": "mg"
-                }
-              }
-            ],
-            "weight_tiers": [
-              {
-                "weight_kg_min": 10,
-                "weight_kg_max": 13,
-                "rule": {
-                  "type": "static",
-                  "amount": 50,
-                  "unit": "mg"
-                }
-              },
-              {
-                "weight_kg_min": 14,
-                "weight_kg_max": 30,
-                "rule": {
-                  "type": "static",
-                  "amount": 100,
-                  "unit": "mg"
-                }
-              },
-              {
-                "weight_kg_min": 31,
-                "weight_kg_max": 49,
-                "rule": {
-                  "type": "static",
-                  "amount": 200,
-                  "unit": "mg"
-                }
-              }
-            ],
-            "no_matching_tier": {
-              "type": "not_indicated",
-              "display": "-",
-              "reason": "No dose tier is defined for the entered age or weight."
-            },
-            "app_unused_metadata": {
-              "selection": "weight_tiers_when_direct_weight_entered_else_age_tiers"
-            }
-          },
-          "route": "PO (Oral)",
-          "notes": "Not for use in <7kg (<1 year old). Use age tiers when age is entered; use weight tiers when direct weight is entered.",
-          "ui": {
-            "sort_order": 10,
-            "priority": "normal",
-            "badge": "PO",
-            "accent_color": "#D97706"
-          },
-          "display": {
-            "title": "Mild to moderate pain relief / Anti-inflammatory / Reduce fever",
-            "show_route": true,
-            "show_notes": true,
-            "show_volume_calculator": false,
-            "dose_label": "Dose"
-          }
-        }
-      ],
-      "display": {
-        "name": "Ibuprofen",
-        "short_name": "Ibuprofen",
-        "subtitle": "Analgesia / Anti-inflammatory"
-      },
-      "availability": {
-        "enabled": true,
-        "profiles": [
-          "ccp_months",
-          "ccp_years"
-        ],
-        "requires_scope": "CCP"
-      },
-      "ui": {
-        "group": "Analgesia / Anti-inflammatory",
-        "sort_order": 80,
-        "theme_color": "#FFE082",
-        "background_color": "#FFE082",
-        "text_color": "#111827",
-        "accent_color": "#F9A825",
-        "icon_key": "analgesia",
-        "badge": "CCP"
-      },
-      "concentration": {
-        "mode": "not_required",
-        "show_warning": false,
-        "reason": "Ibuprofen is an oral medication in this helper; no concentration-based draw-up volume is calculated."
-      },
-      "warnings": [
-        {
-          "level": "caution",
-          "title": "Oral medication",
-          "message": "This helper shows the oral Ibuprofen dose only. It does not calculate a draw-up volume."
-        }
-      ],
-      "app_unused_metadata": {
-        "content_version": "production-2026-05-10",
-        "reference_query": "Ibuprofen",
-        "result_format": {
-          "show_dose": true,
-          "show_volume": false,
-          "show_concentration_used": false,
-          "dose_is_administration_volume": false,
-          "use_default_result_format": false
-        },
-        "review_status": "production_ready",
-        "search": {
-          "aliases": [
-            "Ibuprofen"
-          ],
-          "keywords": [
-            "pain",
-            "fever",
-            "anti-inflammatory",
-            "oral"
-          ]
-        }
-      }
-    },
-    {
       "id": "droperidol",
       "name": "Droperidol",
       "enabled": false,
@@ -1360,7 +1178,7 @@
       },
       "ui": {
         "group": "Sedation",
-        "sort_order": 90,
+        "sort_order": 80,
         "theme_color": "#FFCC80",
         "background_color": "#FFCC80",
         "text_color": "#111827",
@@ -1613,7 +1431,7 @@
       },
       "ui": {
         "group": "Analgesia / Sedation",
-        "sort_order": 100,
+        "sort_order": 90,
         "theme_color": "#81D4FA",
         "background_color": "#81D4FA",
         "text_color": "#111827",
@@ -1747,7 +1565,7 @@
       },
       "ui": {
         "group": "Endocrine",
-        "sort_order": 110,
+        "sort_order": 100,
         "theme_color": "#B39DDB",
         "background_color": "#B39DDB",
         "text_color": "#111827",
@@ -1760,13 +1578,7 @@
         "show_warning": false,
         "reason": "Glucagon preparation/reconstitution can vary; this helper shows dose only and does not calculate a draw-up volume."
       },
-      "warnings": [
-        {
-          "level": "caution",
-          "title": "Prepare according to product",
-          "message": "This helper shows the Glucagon dose only. Prepare and administer according to the product supplied."
-        }
-      ],
+      "warnings": [],
       "app_unused_metadata": {
         "content_version": "production-2026-05-10",
         "reference_query": "Glucagon",
@@ -1810,7 +1622,7 @@
               "per": "kg"
             }
           },
-          "route": "IV/IO",
+          "route": "IV/IO/IM",
           "notes_template": "MAX dose is 200mg\nSingle dose\nRef. Dose Calculation: {weight_kg} kg x 5mg",
           "ui": {
             "sort_order": 10,
@@ -1879,7 +1691,7 @@
             "weight_tiers": [
               {
                 "weight_kg_min": 1,
-                "weight_kg_max": 15,
+                "weight_kg_max": 16,
                 "rule": {
                   "type": "static",
                   "amount": 25,
@@ -1887,8 +1699,8 @@
                 }
               },
               {
-                "weight_kg_min": 16,
-                "weight_kg_max": 34,
+                "weight_kg_min": 17,
+                "weight_kg_max": 37,
                 "rule": {
                   "type": "static",
                   "amount": 50,
@@ -1896,7 +1708,7 @@
                 }
               },
               {
-                "weight_kg_min": 35,
+                "weight_kg_min": 38,
                 "rule": {
                   "type": "static",
                   "amount": 100,
@@ -1910,7 +1722,7 @@
             }
           },
           "route": "IV/IM",
-          "notes": "Single dose. Use age tiers when age is entered; use weight tiers when direct weight is entered.",
+          "notes": "Single dose.\nAge 0-4 years dose is 25mg\nAge 5-10 years dose is 50mg\nAge > 10 years dose is 100mg",
           "ui": {
             "sort_order": 20,
             "priority": "high",
@@ -1940,7 +1752,7 @@
       },
       "ui": {
         "group": "Steroid",
-        "sort_order": 120,
+        "sort_order": 110,
         "theme_color": "#BCAAA4",
         "background_color": "#BCAAA4",
         "text_color": "#111827",
@@ -1980,6 +1792,182 @@
             "asthma",
             "allergic reaction",
             "adrenal crisis"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ibuprofen",
+      "name": "Ibuprofen",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "ibuprofen_pain_inflammation_fever",
+          "enabled": true,
+          "applies_to": [
+            "ccp_months",
+            "ccp_years"
+          ],
+          "indication": "Mild to moderate pain relief / Anti-inflammatory / Reduce fever",
+          "dose_rule": {
+            "type": "age_or_weight_tier",
+            "block_when": [
+              {
+                "profile": "ccp_months",
+                "age_months_max": 11,
+                "reason": "Not for use in <7kg (<1 year old)"
+              },
+              {
+                "weight_kg_max_exclusive": 7,
+                "reason": "Not for use in <7kg (<1 year old)"
+              }
+            ],
+            "age_tiers": [
+              {
+                "profile": "ccp_months",
+                "age_months_min": 12,
+                "age_months_max": 12,
+                "rule": {
+                  "type": "static",
+                  "amount": 50,
+                  "unit": "mg"
+                }
+              },
+              {
+                "profile": "ccp_years",
+                "age_years_min": 1,
+                "age_years_max": 2,
+                "rule": {
+                  "type": "static",
+                  "amount": 50,
+                  "unit": "mg"
+                }
+              },
+              {
+                "profile": "ccp_years",
+                "age_years_min": 3,
+                "age_years_max": 7,
+                "rule": {
+                  "type": "static",
+                  "amount": 100,
+                  "unit": "mg"
+                }
+              },
+              {
+                "profile": "ccp_years",
+                "age_years_min": 8,
+                "age_years_max": 14,
+                "rule": {
+                  "type": "static",
+                  "amount": 200,
+                  "unit": "mg"
+                }
+              }
+            ],
+            "weight_tiers": [
+              {
+                "weight_kg_min": 10,
+                "weight_kg_max": 13,
+                "rule": {
+                  "type": "static",
+                  "amount": 50,
+                  "unit": "mg"
+                }
+              },
+              {
+                "weight_kg_min": 14,
+                "weight_kg_max": 30,
+                "rule": {
+                  "type": "static",
+                  "amount": 100,
+                  "unit": "mg"
+                }
+              },
+              {
+                "weight_kg_min": 31,
+                "weight_kg_max": 49,
+                "rule": {
+                  "type": "static",
+                  "amount": 200,
+                  "unit": "mg"
+                }
+              }
+            ],
+            "no_matching_tier": {
+              "type": "not_indicated",
+              "display": "-",
+              "reason": "No dose tier is defined for the entered age or weight."
+            },
+            "app_unused_metadata": {
+              "selection": "weight_tiers_when_direct_weight_entered_else_age_tiers"
+            }
+          },
+          "route": "PO (Oral)",
+          "notes": "Not for use in <7kg (<1 year old)\nAge 1-2 years dose is 50mg\nAge 3-7 years dose is 100mg\nAge 8-14 years dose is 200mg",
+          "ui": {
+            "sort_order": 10,
+            "priority": "normal",
+            "badge": "PO",
+            "accent_color": "#D97706"
+          },
+          "display": {
+            "title": "Mild to moderate pain relief / Anti-inflammatory / Reduce fever",
+            "show_route": true,
+            "show_notes": true,
+            "show_volume_calculator": false,
+            "dose_label": "Dose"
+          }
+        }
+      ],
+      "display": {
+        "name": "Ibuprofen",
+        "short_name": "Ibuprofen",
+        "subtitle": "Analgesia / Anti-inflammatory"
+      },
+      "availability": {
+        "enabled": true,
+        "profiles": [
+          "ccp_months",
+          "ccp_years"
+        ],
+        "requires_scope": "CCP"
+      },
+      "ui": {
+        "group": "Analgesia / Anti-inflammatory",
+        "sort_order": 120,
+        "theme_color": "#FFE082",
+        "background_color": "#FFE082",
+        "text_color": "#111827",
+        "accent_color": "#F9A825",
+        "icon_key": "analgesia",
+        "badge": "CCP"
+      },
+      "concentration": {
+        "mode": "not_required",
+        "show_warning": false,
+        "reason": "Ibuprofen is an oral medication in this helper; no concentration-based draw-up volume is calculated."
+      },
+      "warnings": [],
+      "app_unused_metadata": {
+        "content_version": "production-2026-05-10",
+        "reference_query": "Ibuprofen",
+        "result_format": {
+          "show_dose": true,
+          "show_volume": false,
+          "show_concentration_used": false,
+          "dose_is_administration_volume": false,
+          "use_default_result_format": false
+        },
+        "review_status": "production_ready",
+        "search": {
+          "aliases": [
+            "Ibuprofen"
+          ],
+          "keywords": [
+            "pain",
+            "fever",
+            "anti-inflammatory",
+            "oral"
           ]
         }
       }
