@@ -26,6 +26,7 @@ flowcharts.json
 formulary.json
 websites.json
 as_call.json
+hos_sites.json
 ```
 
 RSI:
@@ -52,6 +53,7 @@ https://docs.niwashibase.com/helpers/flowcharts.json
 https://docs.niwashibase.com/helpers/formulary.json
 https://docs.niwashibase.com/helpers/websites.json
 https://docs.niwashibase.com/helpers/as_call.json
+https://docs.niwashibase.com/helpers/hos_sites.json
 https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
 https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
 https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
@@ -73,6 +75,7 @@ urlFlowcharts: "https://docs.niwashibase.com/helpers/flowcharts.json"
 urlFormulary: "https://docs.niwashibase.com/helpers/formulary.json"
 urlWebsites: "https://docs.niwashibase.com/helpers/websites.json"
 urlAsCall: "https://docs.niwashibase.com/helpers/as_call.json"
+urlHosSites: "https://docs.niwashibase.com/helpers/hos_sites.json"
 urlPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpg-81w9d1f.pdf#page="
 urlSopPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/sop-101qq9f2w.pdf#page="
 urlCpmPageBase: "https://docs.niwashibase.com/viewer/web/?file=/docs/cpm-202e9d33q.pdf#page="
@@ -347,6 +350,153 @@ Rules:
 - Store numbers as strings in the future shape so leading zeroes are preserved if they are ever needed.
 - Increase Android app-config `as_call.version` when names, numbers, enabled states, or order change and Android needs a forced refresh.
 - Keep bundled fallback `assets/as_call.json` updated before release builds.
+
+## HOS Sites Helper
+
+File:
+
+```text
+hos_sites.json
+```
+
+Used for:
+
+- Android HOS site lookup after the app is wired to the helper
+- Future iOS/webapp HOS site lookup if implemented
+- Remote HOS site names, active/closed/restricted state, order, and encoded location references
+
+Live URL:
+
+```text
+https://docs.niwashibase.com/helpers/hos_sites.json
+```
+
+Android app-config entry:
+
+```json
+"hos_sites": {
+  "enabled": true,
+  "schema_version": "0.1",
+  "version": "0.1",
+  "url": "https://docs.niwashibase.com/helpers/hos_sites.json",
+  "fallback_asset": "hos_sites.json"
+}
+```
+
+Helper shape:
+
+```json
+{
+  "helper_type": "hos_sites",
+  "schema_version": "0.1",
+  "version": "0.1",
+  "sites": [
+    {
+      "id": "hos_1",
+      "enabled": true,
+      "status": "active",
+      "hos_number": 1,
+      "title": "HOS 1",
+      "name": "Al Shamal Health Center",
+      "details": "Select an app for directions, or enter another HOS",
+      "location_ref": "v1:encoded_value_here",
+      "display_order": 1
+    }
+  ]
+}
+```
+
+Rules:
+
+- Keep `id` stable when possible. Use `hos_1`, `hos_2`, etc.
+- `enabled: false` hides or disables the site remotely without deleting it.
+- `status` can be `active`, `closed`, `restricted`, or `inactive`.
+- Apps should show directions only for enabled active sites.
+- `hos_number` is the number users enter in the HOS screen.
+- `title` is usually `HOS X`.
+- `name` is the location/site display text.
+- `details` is optional supporting text.
+- `location_ref` is required for enabled active sites.
+- `display_order` controls list/order behavior.
+- Increase helper `version` when adding, removing, renaming, enabling/disabling, reordering, or changing a site location.
+- Keep helper top-level `version` synchronized with Android app-config `hos_sites.version`.
+- Change `schema_version` only when the helper contract changes and app code supports that new contract.
+- Keep bundled fallback `assets/hos_sites.json` updated before release builds.
+
+### HOS Location Reference Encoding
+
+`location_ref` is light obfuscation only. It prevents plain latitude/longitude from being obvious to a casual reader, but it is not encryption and is not a security boundary. The app must decode it to real coordinates before opening Maps/Waze.
+
+Encoding scheme `hos_ref_v1`:
+
+1. Start with decimal coordinates.
+2. Convert to integer E5 values:
+
+```text
+lat_e5 = round(lat * 100000)
+lng_e5 = round(lng * 100000)
+```
+
+3. Apply fixed offsets:
+
+```text
+encoded_lat = lat_e5 + 73129
+encoded_lng = lng_e5 - 41857
+```
+
+4. Join as `encoded_lat:encoded_lng`.
+5. Base64URL encode the joined string and remove `=` padding.
+6. Prefix with `v1:`.
+
+Decode by reversing those steps:
+
+1. Remove `v1:`.
+2. Base64URL decode, adding padding if needed.
+3. Split on `:`.
+4. `lat_e5 = encoded_lat - 73129`.
+5. `lng_e5 = encoded_lng + 41857`.
+6. `lat = lat_e5 / 100000`.
+7. `lng = lng_e5 / 100000`.
+
+Example Python encoder:
+
+```python
+import base64
+
+def encode_location_ref(lat, lng):
+    encoded_lat = round(lat * 100000) + 73129
+    encoded_lng = round(lng * 100000) - 41857
+    payload = f"{encoded_lat}:{encoded_lng}".encode("utf-8")
+    return "v1:" + base64.urlsafe_b64encode(payload).decode("ascii").rstrip("=")
+```
+
+Example Kotlin decoder:
+
+```kotlin
+fun decodeHosLocationRef(ref: String): Pair<Double, Double>? {
+    if (!ref.startsWith("v1:")) return null
+    val raw = ref.removePrefix("v1:")
+    val padded = raw + "=".repeat((4 - raw.length % 4) % 4)
+    val decoded = android.util.Base64.decode(
+        padded,
+        android.util.Base64.URL_SAFE or android.util.Base64.NO_WRAP,
+    ).toString(Charsets.UTF_8)
+    val parts = decoded.split(":")
+    if (parts.size != 2) return null
+    val latE5 = parts[0].toLongOrNull()?.minus(73129) ?: return null
+    val lngE5 = parts[1].toLongOrNull()?.plus(41857) ?: return null
+    return latE5 / 100000.0 to lngE5 / 100000.0
+}
+```
+
+How to update one HOS site:
+
+1. Edit the matching item in `hos_sites.json`.
+2. If disabling, set `enabled` to `false` and set `status` to `closed`, `restricted`, or `inactive`.
+3. If changing coordinates, replace `location_ref` with the updated encoded value.
+4. Increase helper top-level `version`.
+5. Increase matching `hos_sites.version` in Android app config.
+6. Validate JSON before uploading.
 
 ## RSI Checklist Helper
 
