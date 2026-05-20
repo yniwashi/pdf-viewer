@@ -1,61 +1,349 @@
 {
-  "addressbook": {
-    "Scheduling": 40328200,
-    "CC Emergency": 44398833,
-    "CC Retrieval": 2359701,
-    "Delta 1": 55847683,
-    "Delta 2": 55847682,
-    "Delta 2.1": 55228573,
-    "Delta 3": 50189729,
-    "Delta 4": 55140768,
-    "Delta 4.1": 55337298,
-    "Delta 5": 55288378,
-    "Delta 5.1": 55625899,
-    "Delta 6": 55847696,
-    "Delta 7": 55295042,
-    "Delta 8": 55127578,
-    "Delta 9": 55246452,
-    "Delta 10": 55093082,
-    "DTL": 2359728,
-    "EMS Store": 44397760,
-    "HMC HR": 44391901,
-    "IT Help Desk": 44391444,
-    "LF Oscar": 55175193,
-    "LF Production On-Call": 50303858,
-    "Mike Access": 33608536,
-    "MDT Support 1": 44526520,
-    "MDT Support 2": 44526751,
-    "NCC Oscar": 2359753,
-    "NCC Oscar Operation": 2359723,
-    "Oscar Alpha 1": 33535156,
-    "Oscar Alpha 2": 55847687,
-    "Oscar Command Desk": 2359723,
-    "Oscar Effectiveness": 55298657,
-    "Oscar Production": 55262639,
-    "Production 1": 55138051,
-    "Production 2": 55104048,
-    "Production 4": 33696423,
-    "Production 5": 55067574,
-    "Production 6": 55175520,
-    "Production 7": 55131054,
-    "Production 8": 55158730,
-    "PTL": 2359726,
-    "Romeo 1": 55043387,
-    "Romeo 1.1": 66886738,
-    "Romeo 2 (WWRC)": 55136837,
-    "Romeo 4": 55237316,
-    "Romeo 5": 55493275,
-    "Romeo 6": 55141860,
-    "Romeo 7": 55339760,
-    "Romeo 7.1": 33631552,
-    "Romeo 8": 33092815,
-    "SAS 1": 55198447,
-    "SAS 2": 55120814,
-    "SAS 3": 55229347,
-    "SAS 1 - Oscar": 55847686,
-    "SAS 2 - Oscar": 55148490,
-    "HCC Communication": 44398555,
-    "Secretary (Joan)": 44390074,
-    "Vehicle Control": 55847697
-  }
+  "helper_type": "as_call",
+  "schema_version": "0.1",
+  "version": "0.1",
+  "contacts": [
+    {
+      "id": "cc_emergency",
+      "enabled": true,
+      "name": "CC Emergency",
+      "number_ref": "v1:MDA1NTYwMTE"
+    },
+    {
+      "id": "cc_retrieval",
+      "enabled": true,
+      "name": "CC Retrieval",
+      "number_ref": "v1:ODc0NjIwOQ"
+    },
+    {
+      "id": "delta_1",
+      "enabled": true,
+      "name": "Delta 1",
+      "number_ref": "v1:MDUzNDE1MjI"
+    },
+    {
+      "id": "delta_10",
+      "enabled": true,
+      "name": "Delta 10",
+      "number_ref": "v1:OTU3MDY3MjI"
+    },
+    {
+      "id": "delta_2",
+      "enabled": true,
+      "name": "Delta 2",
+      "number_ref": "v1:OTUzNDE1MjI"
+    },
+    {
+      "id": "delta_2_1",
+      "enabled": true,
+      "name": "Delta 2.1",
+      "number_ref": "v1:MDQyNTk5MjI"
+    },
+    {
+      "id": "delta_3",
+      "enabled": true,
+      "name": "Delta 3",
+      "number_ref": "v1:Njk0NjU4NzI"
+    },
+    {
+      "id": "delta_4",
+      "enabled": true,
+      "name": "Delta 4",
+      "number_ref": "v1:NTM0NzE4MjI"
+    },
+    {
+      "id": "delta_4_1",
+      "enabled": true,
+      "name": "Delta 4.1",
+      "number_ref": "v1:NTY5NDAwMjI"
+    },
+    {
+      "id": "delta_5",
+      "enabled": true,
+      "name": "Delta 5",
+      "number_ref": "v1:NTQwNTU5MjI"
+    },
+    {
+      "id": "delta_5_1",
+      "enabled": true,
+      "name": "Delta 5.1",
+      "number_ref": "v1:NjY1MjkzMjI"
+    },
+    {
+      "id": "delta_6",
+      "enabled": true,
+      "name": "Delta 6",
+      "number_ref": "v1:MzYzNDE1MjI"
+    },
+    {
+      "id": "delta_7",
+      "enabled": true,
+      "name": "Delta 7",
+      "number_ref": "v1:OTE3MjY5MjI"
+    },
+    {
+      "id": "delta_8",
+      "enabled": true,
+      "name": "Delta 8",
+      "number_ref": "v1:NTQyNDk4MjI"
+    },
+    {
+      "id": "delta_9",
+      "enabled": true,
+      "name": "Delta 9",
+      "number_ref": "v1:OTIxMzE5MjI"
+    },
+    {
+      "id": "dtl",
+      "enabled": true,
+      "name": "DTL",
+      "number_ref": "v1:NTk0NjIwOQ"
+    },
+    {
+      "id": "ems_store",
+      "enabled": true,
+      "name": "EMS Store",
+      "number_ref": "v1:NzM0NDYwMTE"
+    },
+    {
+      "id": "hcc_communication",
+      "enabled": true,
+      "name": "HCC Communication",
+      "number_ref": "v1:MjIyNTYwMTE"
+    },
+    {
+      "id": "hmc_hr",
+      "enabled": true,
+      "name": "HMC HR",
+      "number_ref": "v1:ODc2ODYwMTE"
+    },
+    {
+      "id": "it_help_desk",
+      "enabled": true,
+      "name": "IT Help Desk",
+      "number_ref": "v1:MTExODYwMTE"
+    },
+    {
+      "id": "lf_oscar",
+      "enabled": true,
+      "name": "LF Oscar",
+      "number_ref": "v1:MDY4MjQ4MjI"
+    },
+    {
+      "id": "lf_production_on_call",
+      "enabled": true,
+      "name": "LF Production On-Call",
+      "number_ref": "v1:NTI1MDcwNzI"
+    },
+    {
+      "id": "mdt_support_1",
+      "enabled": true,
+      "name": "MDT Support 1",
+      "number_ref": "v1:NzkyMzkyMTE"
+    },
+    {
+      "id": "mdt_support_2",
+      "enabled": true,
+      "name": "MDT Support 2",
+      "number_ref": "v1:ODI0MzkyMTE"
+    },
+    {
+      "id": "mike_access",
+      "enabled": true,
+      "name": "Mike Access",
+      "number_ref": "v1:MzAyNTczMDA"
+    },
+    {
+      "id": "ncc_oscar",
+      "enabled": true,
+      "name": "NCC Oscar",
+      "number_ref": "v1:MDI0NjIwOQ"
+    },
+    {
+      "id": "ncc_oscar_operation",
+      "enabled": true,
+      "name": "NCC Oscar Operation",
+      "number_ref": "v1:MDk0NjIwOQ"
+    },
+    {
+      "id": "oscar_alpha_1",
+      "enabled": true,
+      "name": "Oscar Alpha 1",
+      "number_ref": "v1:MzI4MjAyMDA"
+    },
+    {
+      "id": "oscar_alpha_2",
+      "enabled": true,
+      "name": "Oscar Alpha 2",
+      "number_ref": "v1:NDUzNDE1MjI"
+    },
+    {
+      "id": "oscar_command_desk",
+      "enabled": true,
+      "name": "Oscar Command Desk",
+      "number_ref": "v1:MDk0NjIwOQ"
+    },
+    {
+      "id": "oscar_effectiveness",
+      "enabled": true,
+      "name": "Oscar Effectiveness",
+      "number_ref": "v1:NDIzNTY5MjI"
+    },
+    {
+      "id": "oscar_production",
+      "enabled": true,
+      "name": "Oscar Production",
+      "number_ref": "v1:NjAzOTM5MjI"
+    },
+    {
+      "id": "production_1",
+      "enabled": true,
+      "name": "Production 1",
+      "number_ref": "v1:ODI3NTA4MjI"
+    },
+    {
+      "id": "production_2",
+      "enabled": true,
+      "name": "Production 2",
+      "number_ref": "v1:NTE3MTc4MjI"
+    },
+    {
+      "id": "production_4",
+      "enabled": true,
+      "name": "Production 4",
+      "number_ref": "v1:MDkxMzYzMDA"
+    },
+    {
+      "id": "production_5",
+      "enabled": true,
+      "name": "Production 5",
+      "number_ref": "v1:MTQyNDM3MjI"
+    },
+    {
+      "id": "production_6",
+      "enabled": true,
+      "name": "Production 6",
+      "number_ref": "v1:NzkyMjQ4MjI"
+    },
+    {
+      "id": "production_7",
+      "enabled": true,
+      "name": "Production 7",
+      "number_ref": "v1:MTI3ODA4MjI"
+    },
+    {
+      "id": "production_8",
+      "enabled": true,
+      "name": "Production 8",
+      "number_ref": "v1:NzA0NTI4MjI"
+    },
+    {
+      "id": "ptl",
+      "enabled": true,
+      "name": "PTL",
+      "number_ref": "v1:Mzk0NjIwOQ"
+    },
+    {
+      "id": "romeo_1",
+      "enabled": true,
+      "name": "Romeo 1",
+      "number_ref": "v1:NDUwMDE3MjI"
+    },
+    {
+      "id": "romeo_1_1",
+      "enabled": true,
+      "name": "Romeo 1.1",
+      "number_ref": "v1:NTA0MzU1MzM"
+    },
+    {
+      "id": "romeo_2_wwrc",
+      "enabled": true,
+      "name": "Romeo 2 (WWRC)",
+      "number_ref": "v1:NDA1MzA4MjI"
+    },
+    {
+      "id": "romeo_4",
+      "enabled": true,
+      "name": "Romeo 4",
+      "number_ref": "v1:MzgwNDA5MjI"
+    },
+    {
+      "id": "romeo_5",
+      "enabled": true,
+      "name": "Romeo 5",
+      "number_ref": "v1:MjQ5MDYxMjI"
+    },
+    {
+      "id": "romeo_6",
+      "enabled": true,
+      "name": "Romeo 6",
+      "number_ref": "v1:NzM1ODE4MjI"
+    },
+    {
+      "id": "romeo_7",
+      "enabled": true,
+      "name": "Romeo 7",
+      "number_ref": "v1:NzM0NjAwMjI"
+    },
+    {
+      "id": "romeo_7_1",
+      "enabled": true,
+      "name": "Romeo 7.1",
+      "number_ref": "v1:OTIyODAzMDA"
+    },
+    {
+      "id": "romeo_8",
+      "enabled": true,
+      "name": "Romeo 8",
+      "number_ref": "v1:Mjg1OTY3MDA"
+    },
+    {
+      "id": "sas_1",
+      "enabled": true,
+      "name": "SAS 1",
+      "number_ref": "v1:NDExNTY4MjI"
+    },
+    {
+      "id": "sas_1_oscar",
+      "enabled": true,
+      "name": "SAS 1 - Oscar",
+      "number_ref": "v1:MzUzNDE1MjI"
+    },
+    {
+      "id": "sas_2",
+      "enabled": true,
+      "name": "SAS 2",
+      "number_ref": "v1:MTg1Nzk4MjI"
+    },
+    {
+      "id": "sas_2_oscar",
+      "enabled": true,
+      "name": "SAS 2 - Oscar",
+      "number_ref": "v1:NzYxNTE4MjI"
+    },
+    {
+      "id": "sas_3",
+      "enabled": true,
+      "name": "SAS 3",
+      "number_ref": "v1:NDEwNjk5MjI"
+    },
+    {
+      "id": "scheduling",
+      "enabled": true,
+      "name": "Scheduling",
+      "number_ref": "v1:Nzc5NTkwNzE"
+    },
+    {
+      "id": "secretary_joan",
+      "enabled": true,
+      "name": "Secretary (Joan)",
+      "number_ref": "v1:MTQ3NzYwMTE"
+    },
+    {
+      "id": "vehicle_control",
+      "enabled": true,
+      "name": "Vehicle Control",
+      "number_ref": "v1:NDYzNDE1MjI"
+    }
+  ]
 }
