@@ -4,12 +4,12 @@
   "version": "0.1",
   "enabled": true,
   "events": {
-    "main_button_opened": true,
+    "main_button_opened": false,
     "search_button_opened": true,
     "stay_connected_button_opened": true,
     "cpr_button_opened": true,
     "waafells_button_opened": true,
-    "rsi_button_opened": true,
+    "rsi_button_opened": false,
     "ventilator_settings_button_opened": true,
     "pediatrics_button_opened": false,
     "guidelines_button_opened": true,
@@ -102,7 +102,7 @@
     "update_dialog_shown": false,
     "update_download_pressed": false,
     "push_notification_opened": false,
-    "notices_item_opened": false,
+    "notices_item_marked_read": false,
     "as_call_call_confirmed": true,
     "issue_report_method_selected": false
   },
@@ -156,7 +156,7 @@
       "calculators_map_opened": "MAP calculator opened.",
       "calculators_rbs_converter_opened": "RBS Converter opened.",
       "calculators_burn_surface_area_opened": "Burn Surface Area calculator opened.",
-      "calculator_calculate_pressed": "A calculator calculate action was pressed. Do not log inputs or result.",
+      "calculator_calculate_pressed": "A calculator calculate action was pressed. Log calculator ID only; do not log inputs or result.",
       "adult_infusion_reference_opened": "Adult infusion reference opened.",
       "pediatric_infusion_reference_opened": "Pediatric infusion reference opened.",
       "infusion_medication_selected": "An infusion medication was selected. Log medication ID only if enabled.",
@@ -206,7 +206,7 @@
       "update_dialog_shown": "The app update dialog was shown. Log update type only if needed.",
       "update_download_pressed": "The user pressed the update/download action. Do not log full download URL.",
       "push_notification_opened": "The user opened the app by tapping an Android push notification. This is different from tapping the in-app Notices bell. Do not log notification title/body.",
-      "notices_item_opened": "An in-app notice item/card was opened or interacted with. Log notice ID only if acceptable.",
+      "notices_item_marked_read": "An in-app notice item was marked as read. Do not log notice title or body; notice ID only if explicitly accepted.",
       "as_call_call_confirmed": "The user confirmed the AS-Call call action and opened the dialer. Do not log contact name or number.",
       "issue_report_method_selected": "The user selected an issue report sending method. Log method only, not description text."
     }
