@@ -893,16 +893,49 @@
           ],
           "indication": "Hypoglycemia in cardiac arrest or ROSC",
           "dose_rule": {
-            "type": "weight_based_single",
-            "factor": 2.5,
-            "unit": "ml",
-            "max": 50,
-            "app_unused_metadata": {
-              "per": "kg"
-            }
+            "type": "conditional",
+            "default": {
+              "type": "weight_based_single",
+              "factor": 2.5,
+              "max": 50,
+              "unit": "ml",
+              "app_unused_metadata": {
+                "per": "kg"
+              }
+            },
+            "overrides": [
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "age_months_max": 2
+                },
+                "rule": {
+                  "type": "weight_based_single",
+                  "factor": 2,
+                  "unit": "ml",
+                  "app_unused_metadata": {
+                    "per": "kg"
+                  }
+                }
+              },
+              {
+                "when": {
+                  "profile": "ccp_months",
+                  "weight_kg_max": 4
+                },
+                "rule": {
+                  "type": "weight_based_single",
+                  "factor": 2,
+                  "unit": "ml",
+                  "app_unused_metadata": {
+                    "per": "kg"
+                  }
+                }
+              }
+            ]
           },
           "route": "IV/IO",
-          "notes_template": "Repeat if patient remains hypoglycemic.\n\nRef. Dose Calculation: {weight_kg} kg x 2.5ml",
+          "notes_template": "Repeat if patient remains hypoglycemic.\n\nRef. Dose Calculation: {weight_kg} kg x {dose_factor}ml",
           "ui": {
             "sort_order": 20,
             "priority": "high",
