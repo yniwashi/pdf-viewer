@@ -6,7 +6,20 @@ The `helpers/` folder stores JSON and HTML helper files served from:
 https://docs.niwashibase.com/helpers/
 ```
 
-These files are used by the iOS webapp and the Android Ambulance app.
+Current migration state:
+
+- iOS webapp still reads helper files directly from `https://docs.niwashibase.com/helpers/`.
+- Android now reads lightweight helper/app-data files through the API:
+
+```text
+https://api.niwashibase.com/api/v1/ambulance/app-data/{resource}
+```
+
+- The API Worker serves Android app-data from Cloudflare R2 bucket `ambulance-app-configs`, folder `app-data/`.
+- Until iOS is migrated, helper updates must be published to both:
+  - `docs.niwashibase.com/helpers/` for iOS;
+  - R2 `app-data/` for Android.
+- PDFs and website icons remain on `docs.niwashibase.com` for now.
 
 ## Current Helper Files
 
@@ -42,7 +55,7 @@ ccp_pediatric_dosing_helper.json
 ap_pediatric_dosing_helper.json
 ```
 
-## Live URLs
+## Live iOS / Docs Helper URLs
 
 ```text
 https://docs.niwashibase.com/helpers/cpg_index.json
@@ -58,6 +71,92 @@ https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
 https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
 https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
 ```
+
+## Android API/R2 App-Data URLs
+
+Android app config should point lightweight helper/index URLs to:
+
+```text
+https://api.niwashibase.com/api/v1/ambulance/app-data/cpg-index
+https://api.niwashibase.com/api/v1/ambulance/app-data/sop-index
+https://api.niwashibase.com/api/v1/ambulance/app-data/cpm-index
+https://api.niwashibase.com/api/v1/ambulance/app-data/pat-index
+https://api.niwashibase.com/api/v1/ambulance/app-data/flowcharts
+https://api.niwashibase.com/api/v1/ambulance/app-data/formulary
+https://api.niwashibase.com/api/v1/ambulance/app-data/websites
+https://api.niwashibase.com/api/v1/ambulance/app-data/as-call
+https://api.niwashibase.com/api/v1/ambulance/app-data/hos-sites
+https://api.niwashibase.com/api/v1/ambulance/app-data/analytics-config
+https://api.niwashibase.com/api/v1/ambulance/app-data/rsi-checklist
+https://api.niwashibase.com/api/v1/ambulance/app-data/ccp-pediatric-dosing
+https://api.niwashibase.com/api/v1/ambulance/app-data/ap-pediatric-dosing
+```
+
+R2 object mapping:
+
+```text
+app-data/cpg_index.json
+app-data/sop_index.json
+app-data/cpm_index.json
+app-data/pat_index.json
+app-data/flowcharts.json
+app-data/formulary.json
+app-data/websites.json
+app-data/as_call.json
+app-data/hos_sites.json
+app-data/analytics_config.json
+app-data/rsi_checklist_js_android.html
+app-data/ccp_pediatric_dosing_helper.json
+app-data/ap_pediatric_dosing_helper.json
+```
+
+Local TEMP helper drafts are stored in:
+
+```text
+/mnt/e/code assist/apps - work/android projects/TEMP/App Data/
+```
+
+Private staff-review helper files are not app-data and are stored separately in:
+
+```text
+/mnt/d/programming/Ambulance Private/Staff Review/
+```
+
+Do not store private staff review files in TEMP because TEMP is backed up to GitHub.
+
+## How-To: Publish A Helper Update
+
+Use this for document indexes, flowcharts, formulary, websites, AS-Call, HOS, analytics config, RSI HTML, or pediatric dosing helpers.
+
+1. Edit the helper file locally.
+2. Validate the JSON if the helper is JSON.
+3. Upload the docs helper copy for iOS if iOS still uses that helper:
+
+```text
+https://docs.niwashibase.com/helpers/
+```
+
+4. Upload the Android R2 copy:
+
+```text
+ambulance-app-configs/app-data/
+```
+
+5. Increase the matching helper/document version in Android app config when Android needs to refresh its cache.
+6. Upload the changed app config to R2.
+7. Test the Android API route:
+
+```text
+https://api.niwashibase.com/api/v1/ambulance/app-data/{resource}
+```
+
+8. Test the affected app screen.
+
+Important:
+
+- Editing the helper without increasing the matching app-config version may leave Android users on cached data.
+- Editing the R2 helper without updating the docs helper can leave iOS users on old data.
+- Editing the docs helper without updating R2 can leave Android users on old data.
 
 ## Used By
 
@@ -86,7 +185,17 @@ The iOS webapp preloads CPG, SOP, CPM, flowcharts, formulary, websites, and AS-C
 
 ### Android App
 
-Android version `2.1+` reads most helper URLs and versions from `ambulance_app_config.json`, hosted in the `yazan414` Gist.
+Android version `2.1+` reads most helper URLs and versions from `ambulance_app_config.json`.
+
+Current Android app config source is the NiwashiBase API backed by Cloudflare R2:
+
+```text
+https://api.niwashibase.com/api/v1/ambulance/app-config/production
+https://api.niwashibase.com/api/v1/ambulance/app-config/testing
+https://api.niwashibase.com/api/v1/ambulance/app-config/backup
+```
+
+The Android helper URLs inside app config now use API/R2 app-data endpoints. Do not point Android helper URLs back to docs unless intentionally rolling back.
 
 App config guide:
 
@@ -233,7 +342,7 @@ Android app-config entry:
   "enabled": true,
   "schema_version": "0.1",
   "version": "0.1",
-  "url": "https://docs.niwashibase.com/helpers/websites.json",
+  "url": "https://api.niwashibase.com/api/v1/ambulance/app-data/websites",
   "fallback_asset": "websites.json"
 }
 ```
@@ -252,7 +361,7 @@ Helper shape:
       "title": "Oracle",
       "category": "HMCAS",
       "subtitle": "Leave, salary, and HR services",
-      "url": "http://ebusiness.hamad.qa",
+      "url": "https://ebusiness.hamad.qa/",
       "icon_url": "https://docs.niwashibase.com/website-icons/web_oracle.png"
     }
   ]
@@ -267,6 +376,9 @@ Rules:
 - `title` and `url` are required for a usable website entry.
 - `category`, `subtitle`, and `icon_url` are optional but recommended.
 - Host website icons under `https://docs.niwashibase.com/website-icons/`.
+- Android accepts website destination URLs only when they are valid `https://` browser links with a host.
+- Android accepts `icon_url` only when it is valid HTTPS under `niwashibase.com` or a subdomain such as `docs.niwashibase.com`.
+- Do not use `http://`, `file:`, `javascript:`, `content:`, or other non-browser/non-HTTPS schemes.
 - Increase helper `version` when website text, URLs, enabled states, order, or icon URLs change if Android needs a forced refresh.
 - Keep helper top-level `version` and `schema_version` synchronized with Android app config when publishing Android-facing changes.
 - The iOS webapp uses the same helper, displays a searchable alphabetical list, lets users filter by category, and loads icons from `icon_url`.
@@ -292,7 +404,7 @@ Used for:
 
 - iOS webapp AS-Call list
 - Android AS-Call list
-- Remote contact names and phone numbers
+- Remote contact names and lightly obfuscated phone references
 
 Live URL:
 
@@ -307,23 +419,12 @@ Android app-config entry:
   "enabled": true,
   "schema_version": "0.1",
   "version": "0.1",
-  "url": "https://docs.niwashibase.com/helpers/as_call.json",
+  "url": "https://api.niwashibase.com/api/v1/ambulance/app-data/as-call",
   "fallback_asset": "as_call.json"
 }
 ```
 
 Current helper shape:
-
-```json
-{
-  "addressbook": {
-    "Scheduling": 40328200,
-    "CC Emergency": 44398833
-  }
-}
-```
-
-Preferred future shape if per-contact disabling is needed:
 
 ```json
 {
@@ -335,21 +436,86 @@ Preferred future shape if per-contact disabling is needed:
       "id": "scheduling",
       "enabled": true,
       "name": "Scheduling",
-      "number": "40328200"
+      "number_ref": "v1:Nzc5NTkwNzE"
     }
   ]
 }
 ```
 
+Legacy shape still accepted by Android during transition:
+
+```json
+{
+  "addressbook": {
+    "Scheduling": 40328200,
+    "CC Emergency": 44398833
+  }
+}
+```
+
 Rules:
 
-- The current `addressbook` shape is supported for compatibility.
-- The future `contacts` array supports `enabled: false` to hide one contact without deleting it.
+- Use the `contacts` array for new edits.
+- `enabled: false` hides one contact without deleting it.
 - Missing `enabled` should be treated as enabled by apps.
-- Contact `name` and `number` are required.
-- Store numbers as strings in the future shape so leading zeroes are preserved if they are ever needed.
+- Contact `name` and `number_ref` are required for the obfuscated shape.
+- Android also accepts legacy plain `number` for transition only, but new helper updates should use `number_ref`.
+- Decoded numbers are accepted only if they contain normal phone characters: digits, `+`, `#`, `*`, spaces, hyphen, and parentheses.
 - Increase Android app-config `as_call.version` when names, numbers, enabled states, or order change and Android needs a forced refresh.
 - Keep bundled fallback `assets/as_call.json` updated before release builds.
+
+### AS-Call Number Reference Encoding
+
+`number_ref` is light obfuscation only. It prevents phone numbers from being obvious to a casual reader, but it is not encryption and is not a security boundary. The app decodes it before showing and dialing the number.
+
+Encoding scheme `as_call_ref_v1`:
+
+1. Start with the phone number as text.
+2. Replace each digit with `(digit + 7) mod 10`.
+3. Replace these optional phone characters:
+
+```text
++ -> p
+*  -> s
+#  -> h
+space -> _
+-  -> d
+(  -> l
+)  -> r
+```
+
+4. Reverse the transformed string.
+5. Base64URL encode it and remove `=` padding.
+6. Prefix with `v1:`.
+
+Decode by reversing those steps.
+
+Example Python encoder:
+
+```python
+import base64
+
+def encode_as_call_number_ref(number):
+    replacements = {
+        "+": "p",
+        "*": "s",
+        "#": "h",
+        " ": "_",
+        "-": "d",
+        "(": "l",
+        ")": "r",
+    }
+    transformed = []
+    for char in str(number).strip():
+        if char.isdigit():
+            transformed.append(str((int(char) + 7) % 10))
+        elif char in replacements:
+            transformed.append(replacements[char])
+        else:
+            raise ValueError(f"Unsupported phone character: {char}")
+    payload = "".join(transformed)[::-1].encode("utf-8")
+    return "v1:" + base64.urlsafe_b64encode(payload).decode("ascii").rstrip("=")
+```
 
 ## HOS Sites Helper
 
@@ -378,7 +544,7 @@ Android app-config entry:
   "enabled": true,
   "schema_version": "0.1",
   "version": "0.1",
-  "url": "https://docs.niwashibase.com/helpers/hos_sites.json",
+  "url": "https://api.niwashibase.com/api/v1/ambulance/app-data/hos-sites",
   "fallback_asset": "hos_sites.json"
 }
 ```
@@ -524,7 +690,7 @@ App config entry:
   "id": "rsi_checklist",
   "type": "html",
   "version": "4.0",
-  "url": "https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html",
+  "url": "https://api.niwashibase.com/api/v1/ambulance/app-data/rsi-checklist",
   "show_image": true
 }
 ```
@@ -569,7 +735,7 @@ Android app config entries:
   "age_groups": ["months", "years"],
   "schema_version": "0.1",
   "version": "0.1",
-  "url": "https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json",
+  "url": "https://api.niwashibase.com/api/v1/ambulance/app-data/ccp-pediatric-dosing",
   "fallback_asset": "ccp_pediatric_dosing_helper.json",
   "enabled": true
 }
@@ -582,7 +748,7 @@ Android app config entries:
   "age_groups": ["months", "years"],
   "schema_version": "0.1",
   "version": "0.1",
-  "url": "https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json",
+  "url": "https://api.niwashibase.com/api/v1/ambulance/app-data/ap-pediatric-dosing",
   "fallback_asset": "ap_pediatric_dosing_helper.json",
   "enabled": true
 }
