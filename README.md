@@ -122,20 +122,28 @@ The Android app does not hardcode every docs URL in the UI. Version `2.1+` reads
 ambulance_app_config.json
 ```
 
-The app config is hosted separately in a `yazan414` Gist:
+The Android app config is served separately by Cloudflare Worker + R2:
 
 ```text
-https://gist.github.com/yazan414/2ed2d30193b3dedffcf789981ad14c0e
+https://api.niwashibase.com/api/v1/ambulance/app-config/production
+https://api.niwashibase.com/api/v1/ambulance/app-config/testing
+https://api.niwashibase.com/api/v1/ambulance/app-config/backup
 ```
 
-The Android app config points to files hosted here, for example:
+The Android app config points PDFs and website icons to this docs host, for example:
 
 ```text
 https://docs.niwashibase.com/docs/cpg-81w9d1f.pdf
-https://docs.niwashibase.com/helpers/cpg_index.json
-https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
-https://docs.niwashibase.com/helpers/ccp_pediatric_dosing_helper.json
-https://docs.niwashibase.com/helpers/ap_pediatric_dosing_helper.json
+https://docs.niwashibase.com/website-icons/web_oracle.png
+```
+
+Android lightweight helper/index files are served through the API/R2 app-data routes, for example:
+
+```text
+https://api.niwashibase.com/api/v1/ambulance/app-data/cpg-index
+https://api.niwashibase.com/api/v1/ambulance/app-data/rsi-checklist
+https://api.niwashibase.com/api/v1/ambulance/app-data/ccp-pediatric-dosing
+https://api.niwashibase.com/api/v1/ambulance/app-data/ap-pediatric-dosing
 ```
 
 Full Android app config guide:
@@ -218,3 +226,14 @@ docs.niwashibase.com
 - Keep `helpers/websites.json` and `website-icons/` available for the iOS Websites tool.
 - For Android, increase the matching version in `ambulance_app_config.json` when a document/helper should refresh.
 - Browser/CDN cache may temporarily show old files. Test in a private window or wait for GitHub Pages cache to expire.
+
+## How-To: Publish A Docs Host Change
+
+1. Edit the file in the `yniwashi/pdf-viewer` repository.
+2. Commit/push to the GitHub Pages branch.
+3. Wait for GitHub Pages deployment/cache if needed.
+4. Test the direct `https://docs.niwashibase.com/...` URL.
+5. If Android should refresh cached content, update the matching version in R2 app config.
+6. If the same helper is used by Android, also upload the Android copy to R2 `app-data/`.
+
+Do not delete or rename existing PDF/helper paths until both Android and iOS have been updated away from the old path.
