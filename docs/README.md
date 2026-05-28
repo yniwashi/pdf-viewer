@@ -1,5 +1,6 @@
 # Documents Guide
 
+
 The `docs/` folder stores the PDF documents served from:
 
 ```text
@@ -90,10 +91,12 @@ https://github.com/yniwashi/pdf-viewer/blob/main/viewer/README.md
 
 Android version `2.1+` reads document URLs and versions from `ambulance_app_config.json`.
 
-The live app config is hosted in the `yazan414` Gist:
+The live app config is served by Cloudflare Worker + R2:
 
 ```text
-https://gist.github.com/yazan414/2ed2d30193b3dedffcf789981ad14c0e
+https://api.niwashibase.com/api/v1/ambulance/app-config/production
+https://api.niwashibase.com/api/v1/ambulance/app-config/testing
+https://api.niwashibase.com/api/v1/ambulance/app-config/backup
 ```
 
 The app config guide is in:
@@ -109,7 +112,7 @@ Document entries look like this:
   "type": "CPG",
   "version": "2.5",
   "pdf_url": "https://docs.niwashibase.com/docs/cpg-81w9d1f.pdf",
-  "index_url": "https://docs.niwashibase.com/helpers/cpg_index.json"
+  "index_url": "https://api.niwashibase.com/api/v1/ambulance/app-data/cpg-index"
 }
 ```
 
@@ -124,7 +127,9 @@ To force Android devices to refresh a document:
 1. Upload the new PDF and/or index JSON.
 2. Update `pdf_url` or `index_url` in app config if the filename changed.
 3. Increase the matching document `version`.
-4. Save the app config Gist.
+4. Upload the updated app config JSON to R2.
+
+Until iOS is migrated, keep the docs helper copy and R2 app-data copy synchronized when document indexes change.
 
 ## Updating A PDF Without Changing Filename
 
@@ -138,6 +143,42 @@ Use this when you want links to keep working.
 6. Test viewer page links.
 7. Test Android Guidelines/Search if the update affects Android.
 8. Test iOS webapp links if the update affects iOS.
+
+## How-To: Update A Document Index
+
+Use this when the PDF page numbers, search aliases, keywords, or document sections change.
+
+1. Edit the matching helper:
+
+```text
+cpg_index.json
+sop_index.json
+cpm_index.json
+pat_index.json
+```
+
+2. Validate the JSON.
+3. Upload the helper to the docs helper path for iOS:
+
+```text
+https://docs.niwashibase.com/helpers/
+```
+
+4. Upload the same helper to R2 `app-data/` for Android:
+
+```text
+app-data/cpg_index.json
+app-data/sop_index.json
+app-data/cpm_index.json
+app-data/pat_index.json
+```
+
+5. Increase the matching document `version` in Android app config.
+6. Upload the updated app config to R2.
+7. Test:
+   - direct helper URL;
+   - Android Guidelines/Search;
+   - iOS webapp search/page links.
 
 Example:
 
@@ -208,7 +249,7 @@ The Android RSI checklist HTML is stored in `helpers/`, not `docs/`, but it is c
 Current Android RSI helper:
 
 ```text
-https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html
+https://api.niwashibase.com/api/v1/ambulance/app-data/rsi-checklist
 ```
 
 App config entry:
@@ -218,7 +259,7 @@ App config entry:
   "id": "rsi_checklist",
   "type": "html",
   "version": "4.0",
-  "url": "https://docs.niwashibase.com/helpers/rsi_checklist_js_android.html",
+  "url": "https://api.niwashibase.com/api/v1/ambulance/app-data/rsi-checklist",
   "show_image": true
 }
 ```
@@ -235,8 +276,14 @@ __ANDROID_RSI_AUDIO_BASE__
 
 3. Increase RSI `version` in app config.
 4. Set `show_image` to `true` or `false`.
-5. Save app config.
-6. Test the RSI screen in Android.
+5. Upload the Android copy to R2:
+
+```text
+app-data/rsi_checklist_js_android.html
+```
+
+6. Upload app config to R2.
+7. Test the RSI screen in Android.
 
 Android downloads the remote RSI HTML, replaces placeholders with local app asset/resource paths, caches the processed HTML, and displays the cached processed copy.
 
