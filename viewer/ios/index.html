@@ -1,0 +1,384 @@
+<!--
+CHANGELOG (2026-06-05):
+- Add Android-aligned PDF viewer entry for the iOS Ambulance App Guidelines screen.
+- Support #page= deep links when opened from the iOS App.
+-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Ambulance PDF Viewer</title>
+  <link rel="stylesheet" href="web/pdf_viewer.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #eef3fa;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+      position: relative;
+      touch-action: none;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+    #toolbar {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 20;
+      min-height: 56px;
+      padding: 8px 10px;
+      background: #f7faff;
+      border-bottom: 1px solid #c9d7ea;
+      box-shadow: 0 2px 10px rgba(15, 35, 60, 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 6px;
+    }
+    .searchRow {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+      width: 100%;
+    }
+    #searchInput {
+      min-width: 64px;
+      flex: 1;
+      height: 38px;
+      box-sizing: border-box;
+      border: 1px solid #b8c7dc;
+      border-radius: 10px;
+      padding: 0 10px;
+      color: #111827;
+      background: #fff;
+      font-size: 13px;
+      outline: none;
+    }
+    #matchCount {
+      width: 56px;
+      text-align: center;
+      color: #53647a;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 13px;
+    }
+    .toolButton {
+      width: 34px;
+      height: 38px;
+      border: 0;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      background: #2196f3;
+    }
+    #findPrev {
+      background: #7890a8;
+    }
+    #searchActionRow {
+      display: none;
+      width: 100%;
+    }
+    #runSearch {
+      width: 100%;
+      height: 34px;
+      border: 0;
+      border-radius: 9px;
+      color: #fff;
+      background: #0d63b2;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    #viewerContainer {
+      position: absolute;
+      top: 56px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      overflow: auto;
+      touch-action: pan-x pan-y;
+    }
+    #loadingState {
+      position: absolute;
+      top: 56px;
+      right: 0;
+      left: 0;
+      z-index: 5;
+      padding: 10px;
+      color: #52657d;
+      background: rgba(247, 250, 255, 0.95);
+      border-bottom: 1px solid #d9e3f0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .pdfViewer .page {
+      margin: 10px auto;
+      border: 0;
+      box-shadow: 0 4px 18px rgba(15, 35, 60, 0.18);
+    }
+    .textLayer {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      opacity: 1;
+    }
+    .textLayer .highlight {
+      margin: 0;
+      padding: 0;
+      border-radius: 2px;
+      background: rgba(255, 235, 59, 0.56);
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+    .textLayer .highlight.selected {
+      background: rgba(255, 183, 77, 0.66);
+    }
+    @media (max-width: 420px) {
+      #searchInput {
+        font-size: 12px;
+        padding: 0 8px;
+      }
+      #matchCount {
+        width: 52px;
+      }
+      .toolButton {
+        width: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="toolbar">
+    <div class="searchRow">
+      <input id="searchInput" type="search" placeholder="Search PDF text" autocomplete="off">
+      <button id="findPrev" class="toolButton" type="button">&lt;</button>
+      <button id="findNext" class="toolButton" type="button">&gt;</button>
+      <div id="matchCount">0 matches</div>
+    </div>
+    <div id="searchActionRow">
+      <button id="runSearch" type="button">Search</button>
+    </div>
+  </div>
+
+  <div id="loadingState">Loading document...</div>
+
+  <div id="viewerContainer">
+    <div id="viewer" class="pdfViewer"></div>
+  </div>
+
+  <script src="build/pdf.min.js"></script>
+  <script src="web/pdf_viewer.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const file = params.get("file");
+      const documentName = params.get("doc") || "PDF";
+      const initialSearch = params.get("search") || "";
+      const initialPage = Math.max(1, parseInt(new URLSearchParams(window.location.hash.replace(/^#/, "")).get("page") || "1", 10) || 1);
+
+      const searchInput = document.getElementById("searchInput");
+      const matchCount = document.getElementById("matchCount");
+      const loadingState = document.getElementById("loadingState");
+      const toolbar = document.getElementById("toolbar");
+      const searchActionRow = document.getElementById("searchActionRow");
+      const runSearchButton = document.getElementById("runSearch");
+      const FIND_STATE_PENDING = 3;
+      searchInput.placeholder = "Search " + documentName;
+      loadingState.textContent = "Loading " + documentName + "...";
+      searchInput.value = initialSearch;
+      let lastQuery = "";
+      let hasActiveSearch = false;
+      let searchPending = false;
+      let pendingFindTimer = null;
+      let pinchStartDistance = 0;
+      let pinchStartScale = 1;
+      let pinchZoomTimer = null;
+
+      function syncToolbarHeight() {
+        const toolbarHeight = toolbar.offsetHeight;
+        container.style.top = toolbarHeight + "px";
+        loadingState.style.top = toolbarHeight + "px";
+      }
+
+      function setSearchButtonVisible(visible) {
+        searchActionRow.style.display = visible ? "flex" : "none";
+        window.requestAnimationFrame(syncToolbarHeight);
+      }
+
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "build/pdf.worker.min.js";
+
+      const eventBus = new pdfjsViewer.EventBus();
+      const container = document.getElementById("viewerContainer");
+      const viewer = document.getElementById("viewer");
+      const linkService = new pdfjsViewer.PDFLinkService({ eventBus });
+      const findController = new pdfjsViewer.PDFFindController({
+        eventBus,
+        linkService,
+        updateMatchesCountOnProgress: false,
+      });
+      const pdfViewer = new pdfjsViewer.PDFViewer({
+        container,
+        viewer,
+        eventBus,
+        linkService,
+        findController,
+        textLayerMode: 2,
+      });
+      linkService.setViewer(pdfViewer);
+      syncToolbarHeight();
+      window.addEventListener("resize", syncToolbarHeight);
+
+      eventBus.on("pagesinit", function () {
+        pdfViewer.currentScaleValue = "page-width";
+        if (initialPage > 1) {
+          pdfViewer.currentPageNumber = Math.min(initialPage, pdfViewer.pagesCount || initialPage);
+        }
+        loadingState.style.display = "none";
+        syncToolbarHeight();
+        if (initialSearch) {
+          runFind(false, false);
+        }
+      });
+
+      eventBus.on("updatefindmatchescount", function (evt) {
+        searchPending = false;
+        const current = evt.matchesCount && evt.matchesCount.current ? evt.matchesCount.current : 0;
+        const total = evt.matchesCount && evt.matchesCount.total ? evt.matchesCount.total : 0;
+        matchCount.textContent = total > 0 ? current + "/" + total : (searchInput.value.trim() ? "0 matches" : "0 matches");
+      });
+
+      eventBus.on("updatefindcontrolstate", function (evt) {
+        if (evt.state === FIND_STATE_PENDING) {
+          searchPending = true;
+          matchCount.textContent = "Searching...";
+          return;
+        }
+        searchPending = false;
+        if (evt.matchesCount && evt.matchesCount.total > 0) {
+          matchCount.textContent = evt.matchesCount.current + "/" + evt.matchesCount.total;
+        } else {
+          matchCount.textContent = searchInput.value.trim() ? "0 matches" : "0 matches";
+        }
+      });
+
+      function runFind(previous, again) {
+        const query = searchInput.value.trim();
+        if (!query) {
+          lastQuery = "";
+          hasActiveSearch = false;
+          searchPending = false;
+          setSearchButtonVisible(false);
+          matchCount.textContent = "0 matches";
+          return;
+        }
+        const sameQuery = query === lastQuery && hasActiveSearch;
+        const findType = again && sameQuery ? "again" : "";
+        lastQuery = query;
+        hasActiveSearch = true;
+        searchPending = true;
+        setSearchButtonVisible(false);
+        matchCount.textContent = "Searching...";
+        if (pendingFindTimer) {
+          window.clearTimeout(pendingFindTimer);
+        }
+        // Let the UI paint the searching state before PDF.js starts its heavier text scan on older phones.
+        pendingFindTimer = window.setTimeout(function () {
+          eventBus.dispatch("find", {
+            source: window,
+            type: findType,
+            query,
+            phraseSearch: true,
+            caseSensitive: false,
+            entireWord: false,
+            // Highlighting every match at once is slow on large PDFs; selected-match highlight keeps navigation responsive.
+            highlightAll: false,
+            findPrevious: previous,
+          });
+        }, 60);
+      }
+
+      function distanceBetweenTouches(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+      }
+
+      function setPdfScale(nextScale) {
+        const clampedScale = Math.max(0.25, Math.min(4, nextScale));
+        pdfViewer.currentScaleValue = String(clampedScale);
+      }
+
+      function handlePinchMove(event) {
+        if (event.touches.length !== 2 || pinchStartDistance <= 0) return;
+        event.preventDefault();
+        const currentDistance = distanceBetweenTouches(event.touches);
+        const nextScale = pinchStartScale * (currentDistance / pinchStartDistance);
+        if (pinchZoomTimer) {
+          window.cancelAnimationFrame(pinchZoomTimer);
+        }
+        // Pinch gestures are converted to PDF.js scale changes so the page rerenders sharply instead of bitmap-zooming the WebView.
+        pinchZoomTimer = window.requestAnimationFrame(function () {
+          setPdfScale(nextScale);
+        });
+      }
+
+      document.getElementById("findNext").addEventListener("click", function () {
+        runFind(false, true);
+      });
+      document.getElementById("findPrev").addEventListener("click", function () {
+        runFind(true, true);
+      });
+      runSearchButton.addEventListener("click", function () {
+        runFind(false, false);
+        searchInput.blur();
+      });
+      searchInput.addEventListener("input", function () {
+        hasActiveSearch = false;
+        setSearchButtonVisible(!!searchInput.value.trim());
+        matchCount.textContent = searchInput.value.trim() ? "Press >" : "0 matches";
+      });
+      searchInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          runFind(false, false);
+          searchInput.blur();
+        }
+      });
+      container.addEventListener("touchstart", function (event) {
+        if (event.touches.length === 2) {
+          event.preventDefault();
+          pinchStartDistance = distanceBetweenTouches(event.touches);
+          pinchStartScale = pdfViewer.currentScale || 1;
+        }
+      }, { passive: false });
+      container.addEventListener("touchmove", handlePinchMove, { passive: false });
+      container.addEventListener("touchend", function (event) {
+        if (event.touches.length < 2) {
+          pinchStartDistance = 0;
+          pinchStartScale = pdfViewer.currentScale || 1;
+        }
+      }, { passive: false });
+
+      if (!file) {
+        matchCount.textContent = "No PDF";
+        loadingState.textContent = "No PDF selected";
+        return;
+      }
+
+      loadingState.textContent = "Loading " + documentName + "...";
+      pdfjsLib.getDocument({ url: file }).promise.then(function (pdfDocument) {
+        pdfViewer.setDocument(pdfDocument);
+        linkService.setDocument(pdfDocument, null);
+      }).catch(function () {
+        matchCount.textContent = "Load error";
+        loadingState.textContent = "Unable to load PDF";
+      });
+    })();
+  </script>
+</body>
+</html>
