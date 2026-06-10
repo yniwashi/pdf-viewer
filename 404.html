@@ -1,0 +1,353 @@
+<!--
+  CHANGELOG (2026-06-10):
+  - Add a branded GitHub Pages 404 page for missing iOS site routes/resources.
+  - Add public iOS and Android website links for users who need the platform pages.
+  - Add the Ambulance, iOS, and Android logos to the action/platform links.
+  - Use local platform logo assets, rename Main Website to Ambulance Website, and move it into the platform link section.
+  - Place the Ambulance Website link below iOS/Android as a full-width helpful link.
+  - Add support channel links from the iOS Access Gate Worker.
+  - Make helpful and support links full-width rows for a better mobile layout.
+  - Enlarge the 404 status text for stronger visual hierarchy.
+  - Point Return Home to the public Ambulance Website for docs.niwashibase.com.
+  - Keep the iOS logo black in both themes because link icons sit on a white tile.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Page Not Found | Ambulance</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f9fc">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f9fc;
+      --surface: #ffffff;
+      --surface-2: #f1f5fb;
+      --border: #e7ecf3;
+      --text: #0c1230;
+      --muted: #616b86;
+      --accent: #1f6fff;
+      --accent-strong: #0a57d9;
+      --shadow: 0 16px 44px rgba(15, 23, 42, .14);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --surface: #171a21;
+        --surface-2: #12151c;
+        --border: #232a37;
+        --text: #eef2ff;
+        --muted: #9aa6c3;
+        --accent: #2f81f7;
+        --accent-strong: #1769e8;
+        --shadow: 0 18px 48px rgba(0, 0, 0, .36);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, system-ui, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top, color-mix(in oklab, var(--accent) 10%, transparent), transparent 36rem),
+        var(--bg);
+      color: var(--text);
+      padding:
+        calc(env(safe-area-inset-top) + 18px)
+        calc(env(safe-area-inset-right) + 16px)
+        calc(env(safe-area-inset-bottom) + 18px)
+        calc(env(safe-area-inset-left) + 16px);
+    }
+
+    main {
+      min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 36px);
+      display: grid;
+      place-items: center;
+    }
+
+    .card {
+      width: min(100%, 620px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: clamp(22px, 5vw, 34px);
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 8px;
+      background: linear-gradient(90deg, #0d63b2, #1283d6, #0d63b2);
+    }
+
+    .logo {
+      width: 86px;
+      height: 86px;
+      object-fit: contain;
+      border-radius: 18px;
+      background: #ffffff;
+      margin: 6px auto 18px;
+      box-shadow: 0 8px 18px rgba(13, 99, 178, .16);
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--accent);
+      font-size: clamp(58px, 16vw, 92px);
+      line-height: .9;
+      font-weight: 950;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 7vw, 42px);
+      line-height: 1.05;
+      font-weight: 950;
+    }
+
+    p {
+      margin: 14px auto 0;
+      max-width: 38rem;
+      color: var(--muted);
+      font-size: clamp(15px, 3.6vw, 17px);
+      line-height: 1.55;
+      font-weight: 650;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      justify-content: center;
+      min-height: 52px;
+      min-width: min(100%, 220px);
+      padding: 14px 22px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, var(--accent), var(--accent-strong));
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 900;
+      box-shadow: 0 12px 24px rgba(13, 91, 181, .26);
+    }
+
+    .btn.secondary {
+      background: var(--surface-2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      box-shadow: none;
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid color-mix(in oklab, var(--accent) 45%, #ffffff);
+      outline-offset: 3px;
+    }
+
+    .hint {
+      margin-top: 16px;
+      padding: 11px 13px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .link-section {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .link-section h2 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 950;
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .link-card {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 13px;
+      min-height: 78px;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface-2);
+      color: var(--text);
+      text-decoration: none;
+      text-align: left;
+    }
+
+    .link-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      object-fit: contain;
+      background: #ffffff;
+      border: 1px solid color-mix(in oklab, var(--border) 74%, #ffffff);
+      padding: 8px;
+    }
+
+    .link-copy {
+      min-width: 0;
+    }
+
+    .link-card strong {
+      font-size: 16px;
+      font-weight: 950;
+    }
+
+    .link-card span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    .link-card:focus-visible {
+      outline: 3px solid color-mix(in oklab, var(--accent) 45%, #ffffff);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding:
+          calc(env(safe-area-inset-top) + 12px)
+          calc(env(safe-area-inset-right) + 10px)
+          calc(env(safe-area-inset-bottom) + 12px)
+          calc(env(safe-area-inset-left) + 10px);
+      }
+
+      .card {
+        border-radius: 18px;
+        padding: 22px 14px 18px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .link-card {
+        grid-template-columns: 46px 1fr;
+        min-height: 76px;
+        padding: 12px;
+      }
+
+      .link-icon {
+        width: 46px;
+        height: 46px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <img class="logo" src="/install/images/logo.png" alt="Ambulance App logo">
+      <p class="eyebrow">404</p>
+      <h1 id="page-title">Page Not Found</h1>
+      <p>The requested page, document, or resource could not be found. It may have moved, expired, or the link may be incorrect.</p>
+      <div class="actions">
+        <a class="btn" href="https://www.niwashibase.com/">Return Home</a>
+      </div>
+      <div class="link-section" aria-labelledby="platform-title">
+        <h2 id="platform-title">Helpful links</h2>
+        <div class="link-grid">
+          <a class="link-card" href="https://www.niwashibase.com/ios/">
+            <img class="link-icon" src="/assets/images/apple_logo_black.png" alt="" aria-hidden="true">
+            <span class="link-copy">
+              <strong>iOS</strong>
+              <span>Download and update information</span>
+            </span>
+          </a>
+          <a class="link-card" href="https://www.niwashibase.com/android/">
+            <img class="link-icon" src="/assets/images/android_logo.png" alt="" aria-hidden="true">
+            <span class="link-copy">
+              <strong>Android</strong>
+              <span>Download and update information</span>
+            </span>
+          </a>
+          <a class="link-card full" href="https://www.niwashibase.com/">
+            <img class="link-icon" src="/install/images/logo.png" alt="" aria-hidden="true">
+            <span class="link-copy">
+              <strong>Ambulance Website</strong>
+              <span>News, support, and app information</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="link-section" aria-labelledby="support-title">
+        <h2 id="support-title">Support channels</h2>
+        <div class="link-grid">
+          <a class="link-card" href="mailto:support@niwashibase.com?subject=Ambulance%20App%20Support">
+            <img class="link-icon" src="/ambulance/images/email.png" alt="" aria-hidden="true">
+            <span class="link-copy">
+              <strong>Email</strong>
+              <span>Contact Ambulance App Support</span>
+            </span>
+          </a>
+          <a class="link-card" href="https://t.me/+EAcWKnoaRq05YzY0" target="_blank" rel="noopener">
+            <img class="link-icon" src="/ambulance/images/telegram.png" alt="" aria-hidden="true">
+            <span class="link-copy">
+              <strong>Telegram</strong>
+              <span>Open the support channel</span>
+            </span>
+          </a>
+          <a class="link-card" href="https://discord.gg/qc8fK3yd92" target="_blank" rel="noopener">
+            <img class="link-icon" src="/ambulance/images/discord.png" alt="" aria-hidden="true">
+            <span class="link-copy">
+              <strong>Discord</strong>
+              <span>Open the support server</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <p class="hint">If you were opening an Ambulance App link, return home and open the section again.</p>
+    </section>
+  </main>
+</body>
+</html>
